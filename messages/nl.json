@@ -1,0 +1,577 @@
+{
+  "metadata": {
+    "title": "CORE829 — Digitaal bureau voor maatwerk software, webapps en AI",
+    "description": "CORE829 ontwerpt en ontwikkelt maatwerk webapps, B2B-automatiseringen, AI-systemen en marketing voor bedrijven die precisie willen, geen ruis. Enterprise-kwaliteit, minimalistisch design.",
+    "services": "Services page",
+    "contact": "Contact page",
+    "about": "About page",
+    "method": "Method page",
+    "blog": "Blog page",
+    "careers": "Careers page",
+    "pricing": "Pricing page"
+  },
+  "nav": {
+    "services": "Diensten",
+    "clients": "Klanten",
+    "method": "Methode",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "Vraag een consultatie aan",
+    "blog": "Blog",
+    "careers": "Vacatures",
+    "pricing": "Prijzen"
+  },
+  "hero": {
+    "badge": "Nieuw: Home-Made AI Setup nu beschikbaar voor MKB",
+    "headline": [
+      "Wij bouwen software",
+      "die echte problemen",
+      "oplost."
+    ],
+    "subtitle": "CORE829 is een digitaal bureau dat maatwerk webapps, AI-automatiseringen en platforms ontwerpt en ontwikkelt voor B2B- en B2C-bedrijven. Enterprise-kwaliteit, zonder ruis.",
+    "ctaPrimary": "Vraag een consultatie aan",
+    "ctaSecondary": "Bekijk hoe we werken"
+  },
+  "trustedBy": {
+    "label": "Met wie we hebben gewerkt"
+  },
+  "stats": [
+    {
+      "value": 5,
+      "suffix": "",
+      "label": "Enterprise-klanten begeleid"
+    },
+    {
+      "value": 8,
+      "suffix": "",
+      "label": "Geïntegreerde diensten"
+    },
+    {
+      "value": 3,
+      "suffix": "",
+      "label": "Samenwerkingsmodellen"
+    }
+  ],
+  "problem": {
+    "kicker": "Het probleem",
+    "title": "Slechte digitalisering kost meer dan je denkt",
+    "items": [
+      {
+        "title": "Software die niet past",
+        "desc": "Te veel mkb-bedrijven gebruiken generieke tools die negeren hoe het bedrijf echt werkt, met handmatig werk en verloren tijd als gevolg."
+      },
+      {
+        "title": "Adviseurs die niet leveren",
+        "desc": "Te veel IT-projecten blijven halverwege steken of leveren oplossingen die niemand kan gebruiken, met kosten die uit de hand lopen."
+      },
+      {
+        "title": "AI als trend, niet als waarde",
+        "desc": "Lege wrappers en demo's die automatisering beloven maar de echte data en processen van het bedrijf nooit aanraken."
+      }
+    ]
+  },
+  "solution": {
+    "kicker": "De oplossing",
+    "title": "Acht diensten, één kwaliteitsstandaard",
+    "subtitle": "Van strategie tot productie wordt elk project in-house begeleid, met een bewust beperkt aantal klanten.",
+    "services": [
+      {
+        "id": "automations",
+        "title": "B2B-automatiseringen",
+        "desc": "We automatiseren repetitieve processen tussen afdelingen en bedrijfstools (CRM, ERP, e-mail, facturatie), waardoor handmatig werk en foutmarges afnemen.",
+        "bullets": [
+          "Integratie tussen bestaande systemen",
+          "Workflows op triggers en events",
+          "Automatische interne notificaties",
+          "Vermindering van repetitieve taken"
+        ]
+      },
+      {
+        "id": "webdesign",
+        "title": "Webdesign",
+        "desc": "Maatwerk design van websites en interfaces, gedreven door merkidentiteit, performance en conversie — niet door generieke templates.",
+        "bullets": [
+          "Maatwerk UI/UX",
+          "Herbruikbaar design system",
+          "Prototyping en iteratieve review",
+          "Conversiegerichte optimalisatie"
+        ]
+      },
+      {
+        "id": "desktop",
+        "title": "Uitvoerbare Software",
+        "desc": "We ontwikkelen dedicated desktopsoftware voor verticale behoeften waar een webapp niet volstaat: interne tools, offline utilities, lokale automatiseringen.",
+        "bullets": [
+          "Cross-platform desktopapplicaties",
+          "Interne bedrijfstools",
+          "Integratie met hardware en lokale systemen",
+          "Packaging en distributie"
+        ]
+      },
+      {
+        "id": "webapp",
+        "title": "Webapps",
+        "desc": "Maatwerk full-stack webapplicaties — B2B/B2C-platforms, beheersystemen, verticale CRM's — ontworpen rond de echte processen van de klant.",
+        "bullets": [
+          "Maatwerk full-stack architectuur",
+          "Rollen en rechten (RBAC)",
+          "Dashboards en reporting",
+          "API- en betalingsintegraties"
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "SEO-indexering",
+        "desc": "Technische en inhoudelijke optimalisatie voor organische vindbaarheid: structuur, performance, semantiek en aanwezigheid in zoekmachines.",
+        "bullets": [
+          "Technische SEO (Core Web Vitals, schema markup)",
+          "Content- en keywordstructuur",
+          "On-page optimalisatie",
+          "Positiemonitoring"
+        ]
+      },
+      {
+        "id": "delivery",
+        "title": "Server Delivery",
+        "desc": "We beheren infrastructuur, deployment en productiereleases: van repository tot server, met betrouwbare pipelines en schaalbare omgevingen.",
+        "bullets": [
+          "CI/CD (GitHub → Vercel en verder)",
+          "Staging- en productieomgevingen",
+          "Schaalbaarheid en uptime-monitoring",
+          "Backup en disaster recovery"
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "Home-Made AI Setup",
+        "desc": "We ontwerpen en installeren maatwerk AI-oplossingen voor uw bedrijf — geen generieke wrappers, maar systemen gebouwd op de echte data en processen van de klant.",
+        "bullets": [
+          "AI-automatiseringen op interne processen",
+          "Maatwerk assistenten en agents",
+          "AI-integratie in bestaande software",
+          "Teamtraining en adoptie"
+        ]
+      },
+      {
+        "id": "marketing",
+        "title": "360° Marketing (Organisch & Paid)",
+        "desc": "We dekken de volledige digitale groei af: organische social media, content en betaalde advertising op Meta Ads en Google Ads, met één strategie.",
+        "bullets": [
+          "Organisch social media-beheer en groei",
+          "Contentstrategie",
+          "Meta Ads-campagnes",
+          "Google Ads-campagnes"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Hoe we werken",
+    "title": "Een transparant proces, van probleem naar waarde",
+    "subtitle": "Vier stappen, geen verrassingen, meetbare resultaten.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "We analyseren het bedrijf, de processen en de data. We definiëren meetbare doelen voordat we een regel code schrijven."
+      },
+      {
+        "title": "Design & Build",
+        "desc": "We ontwerpen interfaces en architectuur, daarna ontwikkelen we in korte iteraties met constante controles."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Testen, deployment en productierelease met betrouwbare pipelines. Geen verrassingen bij de lancering."
+      },
+      {
+        "title": "Growth",
+        "desc": "We monitoren, optimaliseren en evolueren het product in de tijd, met duidelijke metrics."
+      }
+    ]
+  },
+  "caseStudies": {
+    "kicker": "Klanten & Case Studies",
+    "title": "Echte projecten, concrete resultaten",
+    "subtitle": "Een bewust beperkt aantal klanten voor end-to-end leveringskwaliteit.",
+    "viewSite": "Bekijk de website",
+    "stackLabel": "Stack",
+    "projects": [
+      {
+        "id": "iwhome",
+        "name": "IWHome",
+        "domain": "iwhome.app",
+        "sector": "Installatie van kozijnen en ramen (Italië)",
+        "what": "Een compleet B2B/B2C-beheerplatform voor een bedrijf in kozijninstallatie.",
+        "stack": "React, Convex, Clerk",
+        "details": [
+          "5 RBAC-rollen: admin, leverancier, medewerker, klant, basisgebruiker",
+          "Gecentraliseerd transactiemodel op IWHome",
+          "Split-payment-logica met verplicht betaalbewijs",
+          "Automatische PDF-generatie",
+          "9-stappen orderworkflow"
+        ],
+        "tags": [
+          "Webapp",
+          "B2B-automatiseringen",
+          "AI Setup"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "doctor-haus",
+        "name": "Doctor Haus",
+        "domain": "doctor-haus.com",
+        "sector": "Modulaire geprefabriceerde bouwsystemen — merk van Montaggi Srl",
+        "what": "Een complete Next.js 15-website met groen/oranje palet, internationalisering, GSAP scroll trail, 3D-hero en een multi-step productconfigurator.",
+        "stack": "Next.js 15, Convex, React Three Fiber, Zustand, Resend",
+        "details": [
+          "Internationalisering met next-intl",
+          "GSAP scroll trail en 3D-hero (React Three Fiber)",
+          "'Overige oplossingen'-pagina met 6 productfamilies",
+          "Multi-step productconfigurator op basis van Convex-schema",
+          "E-mailverzending via Resend"
+        ],
+        "tags": [
+          "Webdesign",
+          "Webapp",
+          "3D/Motion"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "winex",
+        "name": "Winex",
+        "domain": "winex.ro",
+        "sector": "Productie van kozijnen in PVC en aluminium",
+        "what": "Digitale diensten specifiek voor de kozijnenwereld, los van de fysieke verkoop van ramen — inclusief verticale producten zoals een offerteconfigurator en een verticaal CRM.",
+        "stack": "Webapp, Verticaal CRM",
+        "details": [
+          "Configurator en calculator voor kozijnoffertes",
+          "Verticaal CRM voor kozijnenfabrikanten",
+          "Digitale producten los van fysieke verkoop"
+        ],
+        "tags": [
+          "B2B-automatiseringen",
+          "Webapp",
+          "CRM"
+        ],
+        "mockup": "crm"
+      },
+      {
+        "id": "revive",
+        "name": "Revive App",
+        "domain": "getrevive.app",
+        "sector": "Gecureerd fashion-platform, duurzame en minimalistische collecties",
+        "what": "Een complete B2C-webapp met onboarding, persoonlijk dashboard en geïntegreerde AI-functies.",
+        "stack": "Webapp, AI",
+        "details": [
+          "Onboarding en persoonlijk dashboard",
+          "AI-functies: outfit-scanner, kledinganalyse",
+          "Community-omgeving",
+          "Affiliate-programma"
+        ],
+        "tags": [
+          "Webapp",
+          "AI Setup",
+          "Webdesign"
+        ],
+        "mockup": "fashion"
+      },
+      {
+        "id": "bidwyz",
+        "name": "Bidwyz",
+        "domain": "bidwyz.com",
+        "sector": "Online veilingmarktplaats met AI-ondersteuning",
+        "what": "Een veilingplatform met AI-matching, geavanceerd bieden en betalingsbeveiliging — een cloud-native architectuur met sterke AI-component.",
+        "stack": "Cloud-native, AI",
+        "details": [
+          "AI-matching tussen kopers en verkopers",
+          "Proxy bidding en real-time updates",
+          "Betalingsbeveiliging",
+          "AI-gebaseerde analyses en insights"
+        ],
+        "tags": [
+          "Webapp",
+          "AI Setup",
+          "B2B-automatiseringen"
+        ],
+        "mockup": "auction"
+      }
+    ]
+  },
+  "features": {
+    "kicker": "Capabilities",
+    "title": "Transversale skills, enterprise-standaard",
+    "subtitle": "De technische fundamenten die elk project deelt.",
+    "items": [
+      {
+        "id": "ai",
+        "icon": "Bot",
+        "title": "Home-Made AI",
+        "desc": "AI-systemen gebouwd op de echte data en processen van het bedrijf, geen generieke wrappers."
+      },
+      {
+        "id": "security",
+        "icon": "ShieldCheck",
+        "title": "OWASP-beveiliging",
+        "desc": "Security headers, server-side validatie en zero secrets blootgesteld aan de client."
+      },
+      {
+        "id": "seo",
+        "icon": "TrendingUp",
+        "title": "Technische SEO",
+        "desc": "Core Web Vitals, schema markup en correcte semantiek om gevonden te worden."
+      },
+      {
+        "id": "automations",
+        "icon": "Workflow",
+        "title": "Automatiseringen",
+        "desc": "Pipelines en workflows die handmatig werk tussen bedrijfstools elimineren."
+      },
+      {
+        "id": "performance",
+        "icon": "Gauge",
+        "title": "Performance",
+        "desc": "Geoptimaliseerde bundles, animaties op compositing layers, beheerde LCP."
+      },
+      {
+        "id": "realtime",
+        "icon": "Zap",
+        "title": "Realtime",
+        "desc": "In realtime gesynchroniseerde data met een Convex-architectuur."
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Hoe we de offerte opbouwen",
+    "title": "Geen vaste-prijs-pakketten. Een offerte rond u gebouwd.",
+    "subtitle": "Elk project is anders. We werken per project of in continuïteit, met transparante modellen.",
+    "models": [
+      {
+        "title": "Gesloten project",
+        "desc": "Voor initiatieven met duidelijke scope en doelen: vaste prijs, gedefinieerde timing, geen verrassingen.",
+        "points": [
+          "Gedefinieerde, gedeelde scope",
+          "Duidelijke roadmap en mijlpalen",
+          "Prijs vooraf overeengekomen"
+        ]
+      },
+      {
+        "title": "Maandelijks retainer",
+        "desc": "Voor bedrijven die een continu technologiepartner willen: ontwikkeling, onderhoud en optimalisatie op maandelijkse basis.",
+        "points": [
+          "Continue ontwikkelprioriteiten",
+          "Onderhoud en monitoring",
+          "Overeengekomen SLA's"
+        ]
+      },
+      {
+        "title": "Revenue-share / Partnership",
+        "desc": "Voor digitale producten met groeipotentieel: we bouwen samen en delen het risico.",
+        "points": [
+          "Afstemming op succescriteria",
+          "Gedeelde investering",
+          "Focus op groei en tractie"
+        ]
+      }
+    ],
+    "cta": "Vraag een offerte aan"
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Veelgestelde vragen",
+    "items": [
+      {
+        "q": "Wat voor projecten ontwikkelt CORE829?",
+        "a": "We bouwen full-stack webapps, maatwerk websites, B2B-automatiseringen, desktop-/uitvoerbare software en geïntegreerde AI-oplossingen. We dekken de hele cyclus: design, ontwikkeling, deployment en marketing."
+      },
+      {
+        "q": "Hoe lang duurt een project gemiddeld?",
+        "a": "Dat hangt af van de scope. De meest voorkomende projecten (websites en webapps) duren 4 tot 12 weken. In de offertefase definiëren we duidelijke tijdlijnen en mijlpalen."
+      },
+      {
+        "q": "Werkt u ook met bedrijven buiten Italië?",
+        "a": "Ja. We werken volledig online met klanten in heel Europa. We zijn juridisch geregistreerd in Roemenië en werken in het Engels en andere talen."
+      },
+      {
+        "q": "Biedt u onderhoud na de lancering?",
+        "a": "Ja. Elk project kan een onderhoudsplan bevatten: monitoring, updates, backups en continue verbeteringen. Optioneel en afgestemd met de klant."
+      },
+      {
+        "q": "Hoe werkt een offerteaanvraag?",
+        "a": "Vul het contactformulier in met een beschrijving van het project. We reageren binnen 24-48 werkuren met een eerste inschatting, daarna plannen we een discovery-call."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Heeft u een project in gedachten?",
+    "subtitle": "Laten we praten. Vertel ons het probleem dat u wilt oplossen en we stellen een concrete oplossing voor.",
+    "cta": "Laten we over uw project praten"
+  },
+  "contact": {
+    "name": "Voor- en achternaam",
+    "namePlaceholder": "Mario Rossi",
+    "email": "E-mail",
+    "emailPlaceholder": "naam@bedrijf.nl",
+    "company": "Bedrijf",
+    "companyPlaceholder": "Uw bedrijf (optioneel)",
+    "service": "Diensten van interesse",
+    "serviceHint": "Selecteer één of meer diensten",
+    "budget": "Geschat budget",
+    "budgetPlaceholder": "Selecteer een categorie",
+    "budgetOptions": [
+      "Onder € 5.000",
+      "€ 5.000 – € 15.000",
+      "€ 15.000 – € 40.000",
+      "Boven € 40.000"
+    ],
+    "message": "Beschrijf het project",
+    "messagePlaceholder": "Wat moeten we bouwen?",
+    "submit": "Verzoek verzenden",
+    "success": "Verzoek verzonden. We reageren binnen 24-48 werkuren.",
+    "error": "Er ging iets mis. Probeer het binnenkort opnieuw.",
+    "required": "Vul de verplichte velden in.",
+    "invalidEmail": "Voer een geldig e-mailadres in."
+  },
+  "footer": {
+    "tagline": "Minimal-premium digitaal bureau. We ontwerpen en ontwikkelen maatwerk software.",
+    "colServices": "Diensten",
+    "colClients": "Klanten",
+    "colCompany": "Bedrijf",
+    "companyAbout": "Over ons",
+    "companyMethod": "Methode",
+    "companyContact": "Contact",
+    "rights": "© {year} CORE829 — Alle rechten voorbehouden.",
+    "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
+    "privacy": "Privacybeleid",
+    "terms": "Gebruiksvoorwaarden",
+    "colServicesAll": "Alle diensten",
+    "colPricing": "Prijzen",
+    "colBlog": "Blog",
+    "companyAboutFull": "Over ons",
+    "colCareers": "Vacatures"
+  },
+  "privacy": {
+    "title": "Privacybeleid",
+    "updated": "Laatst bijgewerkt: {date}",
+    "intro": "Dit privacybeleid legt uit hoe CORE829 SRL persoonsgegevens verzamelt, gebruikt en beschermt, in overeenstemming met de AVG (EU-verordening 2016/679).",
+    "sections": [
+      {
+        "title": "1. Verwerkingsverantwoordelijke",
+        "body": "CORE829 SRL, geregistreerd in Roemenië, is de verwerkingsverantwoordelijke voor de persoonsgegevens die via deze website worden verzameld. U kunt ons bereiken via het contactformulier."
+      },
+      {
+        "title": "2. Gegevens die we verzamelen",
+        "body": "We verzamelen alleen de gegevens die u vrijwillig verstrekt via de contact- en offerteformulieren: naam, e-mail, bedrijf, diensten van interesse, geschat budget en de inhoud van uw bericht."
+      },
+      {
+        "title": "3. Verwerkingsdoeleinden",
+        "body": "Gegevens worden verwerkt om contact- en offerteverzoeken te beantwoorden, de commerciële relatie te beheren en wettelijke verplichtingen na te komen. We verkopen uw gegevens nooit."
+      },
+      {
+        "title": "4. Rechtsgrondslag",
+        "body": "De rechtsgrondslag is de toestemming die u geeft bij het verzenden van een formulier en het gerechtvaardigde belang om zakelijke verzoeken te beantwoorden (Art. 6 AVG)."
+      },
+      {
+        "title": "5. Bewaartermijn",
+        "body": "Gegevens worden bewaard zolang nodig voor de beschreven doeleinden en in ieder geval niet langer dan wettelijk vereist."
+      },
+      {
+        "title": "6. Uw rechten",
+        "body": "U heeft recht op inzage, rectificatie, verwijdering en overdraagbaarheid van uw gegevens, en op bezwaar tegen de verwerking. U kunt deze rechten uitoefenen door contact met ons op te nemen."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Gebruiksvoorwaarden",
+    "updated": "Laatst bijgewerkt: {date}",
+    "intro": "Deze gebruiksvoorwaarden regelen het gebruik van de website core829.net en van de diensten van CORE829 SRL.",
+    "sections": [
+      {
+        "title": "1. Aanvaarding van de voorwaarden",
+        "body": "Door toegang tot deze website aanvaardt u deze voorwaarden. Bent u het er niet mee eens, gebruik de website dan niet."
+      },
+      {
+        "title": "2. Diensten",
+        "body": "CORE829 biedt softwareontwerp en -ontwikkeling, webapps, automatiseringen, AI-systemen en digitale marketing aan. Specifieke projecten worden geregeld via afzonderlijke overeenkomsten."
+      },
+      {
+        "title": "3. Intellectueel eigendom",
+        "body": "Alle inhoud van deze website is eigendom van CORE829 SRL. Deliverables voor klanten vallen onder de voorwaarden van het individuele contract."
+      },
+      {
+        "title": "4. Beperking van aansprakelijkheid",
+        "body": "De website wordt 'as is' aangeboden. CORE829 is niet aansprakelijk voor schade die voortvloeit uit het gebruik van de website, voor zover de wet dit toestaat."
+      },
+      {
+        "title": "5. Toepasselijk recht",
+        "body": "Deze voorwaarden worden beheerst door Roemeens recht. Geschillen vallen onder de bevoegdheid van de bevoegde Roemeense rechtbanken."
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "desc": "The page you are looking for doesn't exist or has been moved.",
+    "back": "Back to home"
+  },
+  "servicesPage": {
+    "kicker": "Services",
+    "title": "Our Services",
+    "subtitle": "Minimal-premium digital agency.",
+    "projectTitle": "Project",
+    "projectDesc": "Custom software development.",
+    "retainerTitle": "Retainer",
+    "retainerDesc": "Ongoing partnership.",
+    "partnershipTitle": "Partnership",
+    "partnershipDesc": "Strategic collaboration.",
+    "cta": "Get in touch"
+  },
+  "contactPage": {
+    "kicker": "Contact",
+    "title": "Let's build together",
+    "subtitle": "Start your project with a consultation."
+  },
+  "aboutPage": {
+    "kicker": "About",
+    "title": "Who we are",
+    "subtitle": "Enterprise-grade quality, minimal design.",
+    "missionTitle": "Our mission",
+    "mission": "Build precision software that solves real problems.",
+    "valuesTitle": "Our values",
+    "values": [
+      "Precision",
+      "Minimalism",
+      "Quality"
+    ]
+  },
+  "methodPage": {
+    "kicker": "Method",
+    "title": "How we work",
+    "subtitle": "No noise, just engineered clarity.",
+    "approachTitle": "Our approach",
+    "approach": "Discover, design, deliver with focus."
+  },
+  "blogPage": {
+    "kicker": "Blog",
+    "title": "Insights",
+    "subtitle": "Thoughts on technology, strategy and design.",
+    "comingSoon": "Coming soon"
+  },
+  "careersPage": {
+    "kicker": "Careers",
+    "title": "Join our team",
+    "subtitle": "Build the future with us.",
+    "comingSoon": "Coming soon"
+  },
+  "pricingPage": {
+    "kicker": "Pricing",
+    "title": "Transparent pricing",
+    "subtitle": "Simple, predictable plans for every need.",
+    "projectTitle": "Project",
+    "projectDesc": "One-time delivery.",
+    "retainerTitle": "Retainer",
+    "retainerDesc": "Monthly engagement.",
+    "partnershipTitle": "Partnership",
+    "partnershipDesc": "Custom agreement.",
+    "cta": "Schedule a consultation"
+  }
+}

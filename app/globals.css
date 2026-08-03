@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   CORE829 — DESIGN TOKEN (vincolante, nessuna deviazione)
+   ============================================================ */
+:root {
+  --color-background: #ffffff; /* Bianco — background primario */
+  --color-foreground: #1a1a1a; /* Nero/Graphite — testo e elementi grafici */
+  --color-foreground-muted: #4a4a4a; /* Graphite più chiaro — testo secondario */
+  --color-accent: #e11d2e; /* Rosso — accenti, CTA, hover, badge */
+  --color-accent-hover: #c4121f; /* Rosso scuro — hover/active */
+  --color-border: #e5e5e5; /* Grigio chiaro — separatori/bordi */
+  --color-surface: #f7f7f7; /* Off-white — sezioni alternate / card */
+
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SFMono-Regular", monospace;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: auto;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .container-core829 {
+    @apply mx-auto w-full max-w-container px-6 sm:px-8 lg:px-12;
+  }
+
+  /* Kicker: etichetta tecnica mono uppercase */
+  .kicker {
+    @apply font-mono text-xs uppercase tracking-[0.25em] text-accent;
+  }
+
+  /* Testo tecnico mono */
+  .tech-label {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-foreground-muted;
+  }
+
+  /* Link ghost con underline rosso animato */
+  .link-ghost {
+    @apply relative inline-flex items-center gap-2 text-foreground no-underline;
+  }
+  .link-ghost::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  .link-ghost:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* Input di base per form */
+  .input-core829 {
+    @apply w-full rounded-none border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-foreground-muted placeholder:opacity-60 transition-colors focus:border-foreground focus:outline-none;
+  }
+}
+
+/* ============================================================
+   ANIMAZIONI
+   ============================================================ */
+
+/* Marquee infinito (logo clienti) — pausa su hover */
+@keyframes core829-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: core829-marquee var(--marquee-duration, 40s) linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+.marquee-track-reverse {
+  animation-direction: reverse;
+}
+
+/* Reveal base (GSAP gestisce opacity/transform inline) */
+.will-reveal {
+  will-change: transform, opacity;
+}
+
+/* Riduci le animazioni se richiesto dal sistema operativo */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation-play-state: paused;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

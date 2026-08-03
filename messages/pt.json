@@ -1,0 +1,577 @@
+{
+  "metadata": {
+    "title": "CORE829 — Agência digital de software à medida, webapps e IA",
+    "description": "A CORE829 concebe e desenvolve webapps à medida, automatizações B2B, sistemas de IA e marketing para empresas que querem precisão, não ruído. Qualidade enterprise, design minimalista.",
+    "services": "Services page",
+    "contact": "Contact page",
+    "about": "About page",
+    "method": "Method page",
+    "blog": "Blog page",
+    "careers": "Careers page",
+    "pricing": "Pricing page"
+  },
+  "nav": {
+    "services": "Serviços",
+    "clients": "Clientes",
+    "method": "Método",
+    "faq": "FAQ",
+    "contact": "Contacto",
+    "cta": "Solicitar uma consultoria",
+    "blog": "Blog",
+    "careers": "Carreiras",
+    "pricing": "Preços"
+  },
+  "hero": {
+    "badge": "Novo: Setup de IA Home-Made disponível para PME",
+    "headline": [
+      "Construímos software",
+      "que resolve",
+      "problemas reais."
+    ],
+    "subtitle": "A CORE829 é uma agência digital que concebe e desenvolve webapps, automatizações de IA e plataformas à medida para empresas B2B e B2C. Qualidade enterprise, sem ruído.",
+    "ctaPrimary": "Solicitar uma consultoria",
+    "ctaSecondary": "Ver como trabalhamos"
+  },
+  "trustedBy": {
+    "label": "Com quem trabalhámos"
+  },
+  "stats": [
+    {
+      "value": 5,
+      "suffix": "",
+      "label": "Clientes enterprise acompanhados"
+    },
+    {
+      "value": 8,
+      "suffix": "",
+      "label": "Serviços integrados"
+    },
+    {
+      "value": 3,
+      "suffix": "",
+      "label": "Modelos de colaboração"
+    }
+  ],
+  "problem": {
+    "kicker": "O problema",
+    "title": "A digitalização mal feita custa caro",
+    "items": [
+      {
+        "title": "Software que não se adapta",
+        "desc": "Demasiadas PME usam ferramentas genéricas que ignoram como a empresa funciona realmente, gerando trabalho manual e tempo perdido."
+      },
+      {
+        "title": "Consultorias que não entregam",
+        "desc": "Demasiados projetos IT ficam a meio ou produzem soluções que ninguém sabe usar, com custos fora de controlo."
+      },
+      {
+        "title": "IA como moda, não como valor",
+        "desc": "Wrappers e demos vazios que prometem automatização mas nunca tocam nos dados e processos reais da empresa."
+      }
+    ]
+  },
+  "solution": {
+    "kicker": "A solução",
+    "title": "Oito serviços, um único padrão de qualidade",
+    "subtitle": "Da estratégia à produção, cada projeto é acompanhado in-house com uma carga de clientes deliberadamente limitada.",
+    "services": [
+      {
+        "id": "automations",
+        "title": "Automatizações B2B",
+        "desc": "Automatizamos processos repetitivos entre departamentos e ferramentas empresariais (CRM, ERP, email, faturação), reduzindo trabalho manual e margem de erro.",
+        "bullets": [
+          "Integração entre sistemas existentes",
+          "Workflows sobre triggers e eventos",
+          "Automatizações de notificações internas",
+          "Redução de tarefas repetitivas"
+        ]
+      },
+      {
+        "id": "webdesign",
+        "title": "Criação WebDesign",
+        "desc": "Design de sites e interfaces à medida, guiado pela identidade da marca, desempenho e conversão, não por templates genéricos.",
+        "bullets": [
+          "UI/UX à medida",
+          "Design system reutilizável",
+          "Prototipagem e revisão iterativa",
+          "Otimização orientada à conversão"
+        ]
+      },
+      {
+        "id": "desktop",
+        "title": "Criação de Software Executável",
+        "desc": "Desenvolvemos software de desktop e executáveis dedicados para necessidades verticais onde uma webapp não chega: ferramentas internas, utilitários offline, automatizações locais.",
+        "bullets": [
+          "Aplicações desktop cross-platform",
+          "Ferramentas internas empresariais",
+          "Integração com hardware e sistemas locais",
+          "Packaging e distribuição"
+        ]
+      },
+      {
+        "id": "webapp",
+        "title": "Criação de Webapps",
+        "desc": "Aplicações web full-stack à medida — plataformas B2B/B2C, gestões, CRMs verticais — desenhadas sobre os processos reais do cliente.",
+        "bullets": [
+          "Arquitetura full-stack à medida",
+          "Funções e permissões (RBAC)",
+          "Dashboards e reporting",
+          "Integrações de API e pagamentos"
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "Indexação SEO",
+        "desc": "Otimização técnica e de conteúdo para visibilidade orgânica: estrutura, desempenho, semântica e presença nos motores de busca.",
+        "bullets": [
+          "SEO técnico (Core Web Vitals, schema markup)",
+          "Estrutura de conteúdo e keywords",
+          "Otimização on-page",
+          "Monitorização de posicionamento"
+        ]
+      },
+      {
+        "id": "delivery",
+        "title": "Server Delivery",
+        "desc": "Gerimos infraestrutura, deployment e entrada em produção: do repositório ao servidor, com pipelines fiáveis e ambientes escaláveis.",
+        "bullets": [
+          "CI/CD (GitHub → Vercel e mais)",
+          "Gestão de ambientes staging/produção",
+          "Escalabilidade e monitorização de uptime",
+          "Backup e disaster recovery"
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "Setup de IA Home-Made",
+        "desc": "Concebemos e instalamos soluções de IA à medida para a empresa — não wrappers genéricos, mas sistemas construídos sobre os dados e processos reais do cliente.",
+        "bullets": [
+          "Automatizações de IA em processos internos",
+          "Assistentes e agentes custom",
+          "Integração de IA em software existente",
+          "Formação da equipa para a utilização"
+        ]
+      },
+      {
+        "id": "marketing",
+        "title": "Marketing 360° (Orgânico e Paid)",
+        "desc": "Cobrimos todo o crescimento digital: social media orgânico, conteúdo e publicidade paga em Meta Ads e Google Ads, com uma estratégia unificada.",
+        "bullets": [
+          "Gestão e crescimento social orgânico",
+          "Content strategy",
+          "Campanhas Meta Ads",
+          "Campanhas Google Ads"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Como trabalhamos",
+    "title": "Um processo transparente, do problema ao valor",
+    "subtitle": "Quatro passos, zero surpresas, resultados mensuráveis.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "Analisamos o negócio, os processos e os dados. Definimos objetivos mensuráveis antes de escrever uma linha de código."
+      },
+      {
+        "title": "Design & Build",
+        "desc": "Desenhamos interfaces e arquitetura, depois desenvolvemos em iterações curtas com verificações constantes."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Testes, deployment e entrada em produção com pipelines fiáveis. Sem surpresas no lançamento."
+      },
+      {
+        "title": "Growth",
+        "desc": "Monitorizamos, otimizamos e fazemos evoluir o produto no tempo, com métricas claras."
+      }
+    ]
+  },
+  "caseStudies": {
+    "kicker": "Clientes & Case Studies",
+    "title": "Projetos reais, resultados concretos",
+    "subtitle": "Uma carga de clientes deliberadamente limitada para garantir qualidade de entrega de ponta a ponta.",
+    "viewSite": "Visitar o site",
+    "stackLabel": "Stack",
+    "projects": [
+      {
+        "id": "iwhome",
+        "name": "IWHome",
+        "domain": "iwhome.app",
+        "sector": "Instalação de caixilharia e janelas (Itália)",
+        "what": "Uma plataforma completa de gestão B2B/B2C para uma empresa de instalação de caixilharia.",
+        "stack": "React, Convex, Clerk",
+        "details": [
+          "5 funções RBAC: admin, fornecedor, colaborador, cliente, utilizador base",
+          "Modelo de transação centralizado na IWHome",
+          "Lógica de pagamento split com comprovativo de pagamento obrigatório",
+          "Geração automática de PDF",
+          "Workflow de pedido em 9 passos"
+        ],
+        "tags": [
+          "Webapp",
+          "Automatizações B2B",
+          "Setup IA"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "doctor-haus",
+        "name": "Doctor Haus",
+        "domain": "doctor-haus.com",
+        "sector": "Estruturas pré-fabricadas modulares — marca da Montaggi Srl",
+        "what": "Site Next.js 15 completo com paleta verde/laranja, internacionalização, scroll trail GSAP, hero 3D e configurador de produto multi-step.",
+        "stack": "Next.js 15, Convex, React Three Fiber, Zustand, Resend",
+        "details": [
+          "Internacionalização com next-intl",
+          "Scroll trail GSAP e hero 3D (React Three Fiber)",
+          "Página 'Outras Soluções' com 6 famílias de produto",
+          "Configurador de produto multi-step com schema Convex",
+          "Envio de email via Resend"
+        ],
+        "tags": [
+          "WebDesign",
+          "Webapp",
+          "3D/Motion"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "winex",
+        "name": "Winex",
+        "domain": "winex.ro",
+        "sector": "Produção de caixilharia em PVC e alumínio",
+        "what": "Serviços digitais dedicados ao mundo da caixilharia, distintos da venda física de janelas — incluindo produtos verticais como um configurador/calculadora de orçamentos e um CRM vertical.",
+        "stack": "Webapp, CRM vertical",
+        "details": [
+          "Configurador e calculadora de orçamentos de caixilharia",
+          "CRM vertical para caixilhistas",
+          "Produtos digitais distintos da venda física"
+        ],
+        "tags": [
+          "Automatizações B2B",
+          "Webapp",
+          "CRM"
+        ],
+        "mockup": "crm"
+      },
+      {
+        "id": "revive",
+        "name": "Revive App",
+        "domain": "getrevive.app",
+        "sector": "Plataforma de moda curada, coleções sustentáveis e minimalistas",
+        "what": "Uma webapp B2C completa com onboarding, dashboard pessoal e funcionalidades de IA integradas.",
+        "stack": "Webapp, IA",
+        "details": [
+          "Onboarding e dashboard pessoal",
+          "Funcionalidades de IA: scanner de outfits, análise de peças",
+          "Área de comunidade",
+          "Programa de afiliados"
+        ],
+        "tags": [
+          "Webapp",
+          "Setup IA",
+          "WebDesign"
+        ],
+        "mockup": "fashion"
+      },
+      {
+        "id": "bidwyz",
+        "name": "Bidwyz",
+        "domain": "bidwyz.com",
+        "sector": "Marketplace de leilões online potenciado por inteligência artificial",
+        "what": "Plataforma de compra e venda em leilão com matching de IA, licitações avançadas e segurança de pagamentos — uma arquitetura cloud-native com forte componente de IA.",
+        "stack": "Cloud-native, IA",
+        "details": [
+          "Matching de IA entre compradores e vendedores",
+          "Proxy bidding e atualizações em tempo real",
+          "Segurança de pagamentos",
+          "Análises e insights baseados em IA"
+        ],
+        "tags": [
+          "Webapp",
+          "Setup IA",
+          "Automatizações B2B"
+        ],
+        "mockup": "auction"
+      }
+    ]
+  },
+  "features": {
+    "kicker": "Capabilities",
+    "title": "Competências transversais, padrão enterprise",
+    "subtitle": "As fundações técnicas que cada projeto partilha.",
+    "items": [
+      {
+        "id": "ai",
+        "icon": "Bot",
+        "title": "IA Home-Made",
+        "desc": "Sistemas de IA construídos sobre os dados e processos reais da empresa, não wrappers genéricos."
+      },
+      {
+        "id": "security",
+        "icon": "ShieldCheck",
+        "title": "Segurança OWASP",
+        "desc": "Headers de segurança, validação server-side e zero secrets expostos ao cliente."
+      },
+      {
+        "id": "seo",
+        "icon": "TrendingUp",
+        "title": "SEO técnico",
+        "desc": "Core Web Vitals, schema markup e semântica correta para ser encontrado."
+      },
+      {
+        "id": "automations",
+        "icon": "Workflow",
+        "title": "Automatizações",
+        "desc": "Pipelines e workflows que eliminam trabalho manual entre ferramentas empresariais."
+      },
+      {
+        "id": "performance",
+        "icon": "Gauge",
+        "title": "Desempenho",
+        "desc": "Bundles otimizados, animações em compositing layers, LCP controlado."
+      },
+      {
+        "id": "realtime",
+        "icon": "Zap",
+        "title": "Tempo real",
+        "desc": "Dados sincronizados em tempo real com arquitetura Convex."
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Como construímos o orçamento",
+    "title": "Sem pacotes a preço fixo. Um orçamento feito à sua medida.",
+    "subtitle": "Cada projeto é diferente. Trabalhamos por projeto ou em continuidade, com modelos transparentes.",
+    "models": [
+      {
+        "title": "Projeto fechado",
+        "desc": "Para iniciativas com âmbito e objetivos claros: cotação fixa, prazos definidos, zero surpresas.",
+        "points": [
+          "Âmbito definido e partilhado",
+          "Roadmap e marcos claros",
+          "Preço acordado antecipadamente"
+        ]
+      },
+      {
+        "title": "Retainer mensal",
+        "desc": "Para quem quer um parceiro tecnológico contínuo: desenvolvimento, manutenção e otimização numa base mensal.",
+        "points": [
+          "Prioridades contínuas de desenvolvimento",
+          "Manutenção e monitorização",
+          "SLAs acordados"
+        ]
+      },
+      {
+        "title": "Revenue-share / Parceria",
+        "desc": "Para produtos digitais com potencial de crescimento: construímos juntos e partilhamos o risco.",
+        "points": [
+          "Alinhamento em métricas de sucesso",
+          "Investimento partilhado",
+          "Foco em crescimento e tração"
+        ]
+      }
+    ],
+    "cta": "Solicitar um orçamento"
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "q": "Que tipo de projetos a CORE829 desenvolve?",
+        "a": "Desenvolvemos webapps full-stack, sites à medida, automatizações B2B, software de desktop/executável e soluções de IA integradas. Cobrimos todo o ciclo: design, desenvolvimento, deployment e marketing."
+      },
+      {
+        "q": "Quanto tempo demora, em média, um projeto?",
+        "a": "Depende do âmbito. Os projetos mais comuns (sites e webapps) demoram entre 4 e 12 semanas. Definimos prazos e marcos claros na fase de orçamento."
+      },
+      {
+        "q": "Trabalham também com empresas fora de Itália?",
+        "a": "Sim. Trabalhamos totalmente online com clientes em toda a Europa. Estamos legalmente registados na Roménia e operamos em inglês e noutros idiomas."
+      },
+      {
+        "q": "Oferecem manutenção após o lançamento?",
+        "a": "Sim. Cada projeto pode incluir um plano de manutenção: monitorização, atualizações, backups e melhorias contínuas. É opcional e acordado com o cliente."
+      },
+      {
+        "q": "Como funciona o pedido de orçamento?",
+        "a": "Preencha o formulário de contacto com uma descrição do projeto. Respondemos em 24-48 horas úteis com uma primeira avaliação e depois organizamos uma chamada de discovery."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Tem um projeto em mente?",
+    "subtitle": "Vamos falar. Conte-nos o problema que quer resolver e propomos uma solução concreta.",
+    "cta": "Vamos falar do seu projeto"
+  },
+  "contact": {
+    "name": "Nome e apelido",
+    "namePlaceholder": "Mario Rossi",
+    "email": "Email",
+    "emailPlaceholder": "nome@empresa.pt",
+    "company": "Empresa",
+    "companyPlaceholder": "A sua empresa (opcional)",
+    "service": "Serviços de interesse",
+    "serviceHint": "Selecione um ou mais serviços",
+    "budget": "Orçamento estimado",
+    "budgetPlaceholder": "Selecione uma faixa",
+    "budgetOptions": [
+      "Abaixo de 5.000 €",
+      "5.000 – 15.000 €",
+      "15.000 – 40.000 €",
+      "Acima de 40.000 €"
+    ],
+    "message": "Descreva o projeto",
+    "messagePlaceholder": "O que precisamos de construir?",
+    "submit": "Enviar pedido",
+    "success": "Pedido enviado. Respondemos em 24-48 horas úteis.",
+    "error": "Algo correu mal. Tente novamente em breve.",
+    "required": "Preencha os campos obrigatórios.",
+    "invalidEmail": "Introduza um endereço de email válido."
+  },
+  "footer": {
+    "tagline": "Agência digital minimal-premium. Concebemos e desenvolvemos software à medida.",
+    "colServices": "Serviços",
+    "colClients": "Clientes",
+    "colCompany": "Empresa",
+    "companyAbout": "Sobre nós",
+    "companyMethod": "Método",
+    "companyContact": "Contacto",
+    "rights": "© {year} CORE829 — Todos os direitos reservados.",
+    "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "colServicesAll": "Todos os serviços",
+    "colPricing": "Preços",
+    "colBlog": "Blog",
+    "companyAboutFull": "Sobre nós",
+    "colCareers": "Carreiras"
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "updated": "Última atualização: {date}",
+    "intro": "Esta política de privacidade explica como a CORE829 SRL recolhe, utiliza e protege os dados pessoais, em conformidade com o RGPD (Regulamento UE 2016/679).",
+    "sections": [
+      {
+        "title": "1. Responsável pelo tratamento",
+        "body": "A CORE829 SRL, registada na Roménia, é a responsável pelo tratamento dos dados pessoais recolhidos através deste site. Pode contactar-nos através do formulário de contacto."
+      },
+      {
+        "title": "2. Dados que recolhemos",
+        "body": "Recolhemos apenas os dados fornecidos voluntariamente através dos formulários de contacto e orçamento: nome, email, empresa, serviços de interesse, orçamento estimado e o conteúdo da sua mensagem."
+      },
+      {
+        "title": "3. Finalidades do tratamento",
+        "body": "Os dados são tratados para responder a pedidos de contacto e orçamento, gerir a relação comercial e cumprir obrigações legais. Nunca vendemos os seus dados."
+      },
+      {
+        "title": "4. Base legal",
+        "body": "A base legal é o consentimento expresso ao enviar um formulário e o interesse legítimo em responder a pedidos comerciais (Art. 6 RGPD)."
+      },
+      {
+        "title": "5. Conservação",
+        "body": "Os dados são conservados pelo tempo necessário para as finalidades descritas e, em qualquer caso, não mais do que o previsto na lei."
+      },
+      {
+        "title": "6. Os seus direitos",
+        "body": "Tem direito de acesso, retificação, eliminação e portabilidade dos seus dados, bem como de oposição ao tratamento. Pode exercer estes direitos contactando-nos."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Termos de Serviço",
+    "updated": "Última atualização: {date}",
+    "intro": "Estes termos de serviço regem a utilização do site core829.net e dos serviços da CORE829 SRL.",
+    "sections": [
+      {
+        "title": "1. Aceitação dos termos",
+        "body": "Ao aceder a este site aceita estes termos. Se não concordar, pedimos que não utilize o site."
+      },
+      {
+        "title": "2. Serviços",
+        "body": "A CORE829 oferece serviços de conceção e desenvolvimento de software, webapps, automatizações, sistemas de IA e marketing digital. Os projetos específicos são regidos por contratos separados."
+      },
+      {
+        "title": "3. Propriedade intelectual",
+        "body": "Todos os conteúdos deste site são propriedade da CORE829 SRL. Os deliverables produzidos para clientes estão sujeitos aos termos do contrato individual."
+      },
+      {
+        "title": "4. Limitação de responsabilidade",
+        "body": "O site é fornecido 'tal como está'. A CORE829 não é responsável por danos decorrentes da utilização do site, na medida permitida pela lei."
+      },
+      {
+        "title": "5. Lei aplicável",
+        "body": "Estes termos são regidos pela lei romena. Qualquer litígio estará sujeito à jurisdição dos tribunais romenos competentes."
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "desc": "The page you are looking for doesn't exist or has been moved.",
+    "back": "Back to home"
+  },
+  "servicesPage": {
+    "kicker": "Services",
+    "title": "Our Services",
+    "subtitle": "Minimal-premium digital agency.",
+    "projectTitle": "Project",
+    "projectDesc": "Custom software development.",
+    "retainerTitle": "Retainer",
+    "retainerDesc": "Ongoing partnership.",
+    "partnershipTitle": "Partnership",
+    "partnershipDesc": "Strategic collaboration.",
+    "cta": "Get in touch"
+  },
+  "contactPage": {
+    "kicker": "Contact",
+    "title": "Let's build together",
+    "subtitle": "Start your project with a consultation."
+  },
+  "aboutPage": {
+    "kicker": "About",
+    "title": "Who we are",
+    "subtitle": "Enterprise-grade quality, minimal design.",
+    "missionTitle": "Our mission",
+    "mission": "Build precision software that solves real problems.",
+    "valuesTitle": "Our values",
+    "values": [
+      "Precision",
+      "Minimalism",
+      "Quality"
+    ]
+  },
+  "methodPage": {
+    "kicker": "Method",
+    "title": "How we work",
+    "subtitle": "No noise, just engineered clarity.",
+    "approachTitle": "Our approach",
+    "approach": "Discover, design, deliver with focus."
+  },
+  "blogPage": {
+    "kicker": "Blog",
+    "title": "Insights",
+    "subtitle": "Thoughts on technology, strategy and design.",
+    "comingSoon": "Coming soon"
+  },
+  "careersPage": {
+    "kicker": "Careers",
+    "title": "Join our team",
+    "subtitle": "Build the future with us.",
+    "comingSoon": "Coming soon"
+  },
+  "pricingPage": {
+    "kicker": "Pricing",
+    "title": "Transparent pricing",
+    "subtitle": "Simple, predictable plans for every need.",
+    "projectTitle": "Project",
+    "projectDesc": "One-time delivery.",
+    "retainerTitle": "Retainer",
+    "retainerDesc": "Monthly engagement.",
+    "partnershipTitle": "Partnership",
+    "partnershipDesc": "Custom agreement.",
+    "cta": "Schedule a consultation"
+  }
+}

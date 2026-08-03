@@ -1,0 +1,577 @@
+{
+  "metadata": {
+    "title": "CORE829 — Agenție digitală pentru software la comandă, webapp și AI",
+    "description": "CORE829 proiectează și dezvoltă webapp-uri la comandă, automatizări B2B, sisteme AI și marketing pentru companii care vor precizie, nu zgomot. Calitate enterprise, design minimal.",
+    "services": "Services page",
+    "contact": "Contact page",
+    "about": "About page",
+    "method": "Method page",
+    "blog": "Blog page",
+    "careers": "Careers page",
+    "pricing": "Pricing page"
+  },
+  "nav": {
+    "services": "Servicii",
+    "clients": "Clienți",
+    "method": "Metodă",
+    "faq": "Întrebări",
+    "contact": "Contact",
+    "cta": "Solicită o consultanță",
+    "blog": "Blog",
+    "careers": "Cariere",
+    "pricing": "Prețuri"
+  },
+  "hero": {
+    "badge": "Nou: Setup AI Home-Made disponibil pentru IMM-uri",
+    "headline": [
+      "Construim software",
+      "care rezolvă",
+      "probleme reale."
+    ],
+    "subtitle": "CORE829 este o agenție digitală care proiectează și dezvoltă webapp-uri, automatizări AI și platforme la comandă pentru companii B2B și B2C. Calitate enterprise, fără zgomot.",
+    "ctaPrimary": "Solicită o consultanță",
+    "ctaSecondary": "Vezi cum lucrăm"
+  },
+  "trustedBy": {
+    "label": "Cu cine am lucrat"
+  },
+  "stats": [
+    {
+      "value": 5,
+      "suffix": "",
+      "label": "Clienți enterprise urmăriți"
+    },
+    {
+      "value": 8,
+      "suffix": "",
+      "label": "Servicii integrate"
+    },
+    {
+      "value": 3,
+      "suffix": "",
+      "label": "Modele de colaborare"
+    }
+  ],
+  "problem": {
+    "kicker": "Problema",
+    "title": "Digitalizarea făcută prost costă scump",
+    "items": [
+      {
+        "title": "Software care nu se adaptează",
+        "desc": "Prea multe IMM-uri folosesc unelte generice care ignoră cum funcționează de fapt compania, generând muncă manuală și timp pierdut."
+      },
+      {
+        "title": "Consultanți care nu livrează",
+        "desc": "Prea multe proiecte IT rămân la jumătate sau produc soluții pe care nimeni nu știe să le folosească, cu costuri necontrolate."
+      },
+      {
+        "title": "AI ca modă, nu ca valoare",
+        "desc": "Wrappere și demo-uri goale care promit automatizare, dar nu ating niciodată datele și procesele reale ale companiei."
+      }
+    ]
+  },
+  "solution": {
+    "kicker": "Soluția",
+    "title": "Opt servicii, un singur standard de calitate",
+    "subtitle": "De la strategie la producție, fiecare proiect este gestionat intern, cu un număr de clienți deliberat limitat.",
+    "services": [
+      {
+        "id": "automations",
+        "title": "Automatizări B2B",
+        "desc": "Automatizăm procese repetitive între departamente și instrumente de afaceri (CRM, ERP, email, facturare), reducând munca manuală și marja de eroare.",
+        "bullets": [
+          "Integrare între sistemele existente",
+          "Workflow pe trigger și evenimente",
+          "Automatizări de notificări interne",
+          "Reducerea sarcinilor repetitive"
+        ]
+      },
+      {
+        "id": "webdesign",
+        "title": "Creare WebDesign",
+        "desc": "Design de site-uri și interfețe la comandă, ghidat de identitatea de brand, performanță și conversie, nu de template-uri generice.",
+        "bullets": [
+          "UI/UX la comandă",
+          "Design system reutilizabil",
+          "Prototipare și revizuire iterativă",
+          "Optimizare orientată pe conversie"
+        ]
+      },
+      {
+        "id": "desktop",
+        "title": "Creare Software Executabile",
+        "desc": "Dezvoltăm software desktop și executabile dedicate pentru nevoi verticale unde o webapp nu e suficientă: unelte interne, aplicații offline, automatizări locale.",
+        "bullets": [
+          "Aplicații desktop cross-platform",
+          "Instrumente interne de companie",
+          "Integrare cu hardware și sisteme locale",
+          "Packaging și distribuție"
+        ]
+      },
+      {
+        "id": "webapp",
+        "title": "Creare WebApp",
+        "desc": "Aplicații web full-stack la comandă — platforme B2B/B2C, gestiuni, CRM verticale — proiectate pe procesele reale ale clientului.",
+        "bullets": [
+          "Arhitectură full-stack la comandă",
+          "Roluri și permisiuni (RBAC)",
+          "Dashboard și raportare",
+          "Integrări API și plăți"
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "Indexare SEO",
+        "desc": "Optimizare tehnică și de conținut pentru vizibilitate organică: structură, performanță, semantică și prezență în motoarele de căutare.",
+        "bullets": [
+          "SEO tehnic (Core Web Vitals, schema markup)",
+          "Structură conținut și cuvinte cheie",
+          "Optimizare on-page",
+          "Monitorizare poziții"
+        ]
+      },
+      {
+        "id": "delivery",
+        "title": "Server Delivery",
+        "desc": "Gestionăm infrastructura, deployment-ul și punerea în producție: de la repository la server, cu pipeline fiabile și medii scalabile.",
+        "bullets": [
+          "CI/CD (GitHub → Vercel și nu numai)",
+          "Gestionarea mediilor staging/producție",
+          "Scalabilitate și monitorizare uptime",
+          "Backup și disaster recovery"
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "Setup Inteligență Artificială Home-Made",
+        "desc": "Proiectăm și instalăm soluții AI la comandă pentru companie — nu wrappere generice, ci sisteme construite pe datele și procesele reale ale clientului.",
+        "bullets": [
+          "Automatizări AI pe procese interne",
+          "Asistenți și agenți custom",
+          "Integrare AI în software existent",
+          "Formarea echipei pentru utilizare"
+        ]
+      },
+      {
+        "id": "marketing",
+        "title": "Marketing 360° (Organic și Paid)",
+        "desc": "Acoperim întreaga creștere digitală: social media organic, content și publicitate plătită pe Meta Ads și Google Ads, cu strategie unificată.",
+        "bullets": [
+          "Gestionare și creștere social organică",
+          "Content strategy",
+          "Campanii Meta Ads",
+          "Campanii Google Ads"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Cum lucrăm",
+    "title": "Un proces transparent, de la problemă la valoare",
+    "subtitle": "Patru pași, fără surprize, rezultate măsurabile.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "Analizăm afacerea, procesele și datele. Definim obiective măsurabile înainte de a scrie o singură linie de cod."
+      },
+      {
+        "title": "Design & Build",
+        "desc": "Proiectăm interfețele și arhitectura, apoi dezvoltăm în iterații scurte cu verificări constante."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Testare, deploy și punere în producție cu pipeline fiabile. Fără surprize la lansare."
+      },
+      {
+        "title": "Growth",
+        "desc": "Monitorizăm, optimizăm și evoluăm produsul în timp, cu metrici clare."
+      }
+    ]
+  },
+  "caseStudies": {
+    "kicker": "Clienți & Case Study",
+    "title": "Proiecte reale, rezultate concrete",
+    "subtitle": "Un număr de clienți deliberat limitat pentru calitate de livrare end-to-end.",
+    "viewSite": "Vizitează site-ul",
+    "stackLabel": "Stack",
+    "projects": [
+      {
+        "id": "iwhome",
+        "name": "IWHome",
+        "domain": "iwhome.app",
+        "sector": "Instalare tâmplărie și ferestre (Italia)",
+        "what": "Platformă completă de gestionare B2B/B2C pentru o companie de instalare tâmplărie.",
+        "stack": "React, Convex, Clerk",
+        "details": [
+          "5 roluri RBAC: admin, furnizor, colaborator, client, utilizator de bază",
+          "Model de tranzacție centralizat pe IWHome",
+          "Logică de plată split cu dovadă de plată obligatorie",
+          "Generare automată de PDF",
+          "Workflow comandă în 9 pași"
+        ],
+        "tags": [
+          "WebApp",
+          "Automatizări B2B",
+          "Setup AI"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "doctor-haus",
+        "name": "Doctor Haus",
+        "domain": "doctor-haus.com",
+        "sector": "Structuri prefabricate modulare — brand al Montaggi Srl",
+        "what": "Site Next.js 15 complet cu paletă verde/portocaliu, internaționalizare, scroll trail GSAP, hero 3D și configurator de produs multi-step.",
+        "stack": "Next.js 15, Convex, React Three Fiber, Zustand, Resend",
+        "details": [
+          "Internaționalizare cu next-intl",
+          "Scroll trail GSAP și hero 3D (React Three Fiber)",
+          "Pagină 'Alte Soluții' cu 6 familii de produse",
+          "Configurator de produs multi-step cu schema Convex",
+          "Trimitere email prin Resend"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp",
+          "3D/Motion"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "winex",
+        "name": "Winex",
+        "domain": "winex.ro",
+        "sector": "Producție tâmplărie din PVC și aluminiu",
+        "what": "Servicii digitale dedicate lumii producătorilor de tâmplărie, distincte de vânzarea fizică a ferestrelor — inclusiv un configurator/calculator de oferte și un CRM vertical.",
+        "stack": "WebApp, CRM vertical",
+        "details": [
+          "Configurator și calculator de oferte pentru tâmplărie",
+          "CRM vertical pentru producători de tâmplărie",
+          "Produse digitale distincte de vânzarea fizică"
+        ],
+        "tags": [
+          "Automatizări B2B",
+          "WebApp",
+          "CRM"
+        ],
+        "mockup": "crm"
+      },
+      {
+        "id": "revive",
+        "name": "Revive App",
+        "domain": "getrevive.app",
+        "sector": "Platformă fashion curatoriată, colecții sustenabile și minimaliste",
+        "what": "WebApp B2C completă cu onboarding, dashboard personal și funcționalități AI integrate.",
+        "stack": "WebApp, AI",
+        "details": [
+          "Onboarding și dashboard personal",
+          "Funcționalități AI: scanner outfit, analiza articolelor",
+          "Zonă comunitate",
+          "Program de afiliați"
+        ],
+        "tags": [
+          "WebApp",
+          "Setup AI",
+          "WebDesign"
+        ],
+        "mockup": "fashion"
+      },
+      {
+        "id": "bidwyz",
+        "name": "Bidwyz",
+        "domain": "bidwyz.com",
+        "sector": "Marketplace de licitații online potențat de inteligență artificială",
+        "what": "Platformă de vânzare-cumpărare la licitație cu matching AI, bidding avansat și securitatea plăților — arhitectură cloud-native cu componentă AI puternică.",
+        "stack": "Cloud-native, AI",
+        "details": [
+          "Matching AI între cumpărători și vânzători",
+          "Proxy bidding și actualizări real-time",
+          "Securitatea plăților",
+          "Analize și insight-uri bazate pe AI"
+        ],
+        "tags": [
+          "WebApp",
+          "Setup AI",
+          "Automatizări B2B"
+        ],
+        "mockup": "auction"
+      }
+    ]
+  },
+  "features": {
+    "kicker": "Capabilități",
+    "title": "Competențe transversale, standard enterprise",
+    "subtitle": "Fundațiile tehnice pe care fiecare proiect le împarte.",
+    "items": [
+      {
+        "id": "ai",
+        "icon": "Bot",
+        "title": "AI Home-Made",
+        "desc": "Sisteme AI construite pe datele și procesele reale ale companiei, nu wrappere generice."
+      },
+      {
+        "id": "security",
+        "icon": "ShieldCheck",
+        "title": "Securitate OWASP",
+        "desc": "Header-e de securitate, validare server-side și zero secret expuse la client."
+      },
+      {
+        "id": "seo",
+        "icon": "TrendingUp",
+        "title": "SEO tehnic",
+        "desc": "Core Web Vitals, schema markup și semantică corectă pentru a fi găsit."
+      },
+      {
+        "id": "automations",
+        "icon": "Workflow",
+        "title": "Automatizări",
+        "desc": "Pipeline și workflow care elimină munca manuală între instrumentele de business."
+      },
+      {
+        "id": "performance",
+        "icon": "Gauge",
+        "title": "Performanță",
+        "desc": "Bundle optimizate, animații pe compositing layer, LCP sub control."
+      },
+      {
+        "id": "realtime",
+        "icon": "Zap",
+        "title": "Realtime",
+        "desc": "Date sincronizate în timp real cu arhitectură Convex."
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Cum construim oferta",
+    "title": "Fără pachete cu preț fix. O ofertă construită pe tine.",
+    "subtitle": "Fiecare proiect este diferit. Lucrăm pe proiect sau în continuitate, cu modele transparente.",
+    "models": [
+      {
+        "title": "Proiect închis",
+        "desc": "Pentru inițiative cu scop și obiective clare: ofertă fixă, termene definite, zero surprize.",
+        "points": [
+          "Scop definit și împărtășit",
+          "Roadmap și milestone clare",
+          "Preț stabilit de la început"
+        ]
+      },
+      {
+        "title": "Retainer lunar",
+        "desc": "Pentru companiile care vor un partener tehnologic continuu: dezvoltare, mentenanță și optimizare lunară.",
+        "points": [
+          "Priorități continue de dezvoltare",
+          "Mentenanță și monitorizare",
+          "SLA agreate"
+        ]
+      },
+      {
+        "title": "Revenue-share / Parteneriat",
+        "desc": "Pentru produse digitale cu potențial de creștere: construim împreună și împărțim riscul.",
+        "points": [
+          "Aliniere pe metrici de succes",
+          "Investiție partajată",
+          "Focus pe creștere și tracțiune"
+        ]
+      }
+    ],
+    "cta": "Solicită o ofertă"
+  },
+  "faq": {
+    "kicker": "Întrebări frecvente",
+    "title": "Întrebări frecvente",
+    "items": [
+      {
+        "q": "Ce tip de proiecte dezvoltă CORE829?",
+        "a": "Dezvoltăm webapp-uri full-stack, site-uri la comandă, automatizări B2B, software desktop/executabil și soluții AI integrate. Acoperim întregul ciclu: design, dezvoltare, deployment și marketing."
+      },
+      {
+        "q": "Cât durează în medie un proiect?",
+        "a": "Depinde de amploare. Cele mai comune proiecte (site-uri și webapp) durează între 4 și 12 săptămâni. Definim termene și milestone clare în faza de ofertare."
+      },
+      {
+        "q": "Lucrați și cu companii din afara Italiei?",
+        "a": "Da, lucrăm integral online cu clienți din toată Europa. Suntem înregistrați legal în România și operăm în engleză și alte limbi."
+      },
+      {
+        "q": "Oferiți mentenanță după lansare?",
+        "a": "Da. Fiecare proiect poate include un plan de mentenanță: monitorizare, actualizări, backup și îmbunătățiri continue. Este opțional și agreat cu clientul."
+      },
+      {
+        "q": "Cum funcționează solicitarea de ofertă?",
+        "a": "Completează formularul de contact cu o descriere a proiectului. Îți răspundem în 24-48 de ore lucrătoare cu o primă evaluare, apoi organizăm o call de discovery."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Ai un proiect în minte?",
+    "subtitle": "Să vorbim. Spune-ne problema pe care vrei să o rezolvi și îți propunem o soluție concretă.",
+    "cta": "Să vorbim despre proiectul tău"
+  },
+  "contact": {
+    "name": "Nume și prenume",
+    "namePlaceholder": "Mario Rossi",
+    "email": "Email",
+    "emailPlaceholder": "nume@companie.ro",
+    "company": "Companie",
+    "companyPlaceholder": "Compania ta (opțional)",
+    "service": "Servicii de interes",
+    "serviceHint": "Selectează unul sau mai multe servicii",
+    "budget": "Buget estimativ",
+    "budgetPlaceholder": "Selectează o categorie",
+    "budgetOptions": [
+      "Sub 5.000 €",
+      "5.000 – 15.000 €",
+      "15.000 – 40.000 €",
+      "Peste 40.000 €"
+    ],
+    "message": "Descrie proiectul",
+    "messagePlaceholder": "Ce trebuie să construim?",
+    "submit": "Trimite solicitarea",
+    "success": "Solicitare trimisă. Îți răspundem în 24-48 de ore lucrătoare.",
+    "error": "Ceva nu a mers bine. Încearcă din nou în curând.",
+    "required": "Completează câmpurile obligatorii.",
+    "invalidEmail": "Introdu o adresă de email validă."
+  },
+  "footer": {
+    "tagline": "Agenție digitală minimal-premium. Proiectăm și dezvoltăm software la comandă.",
+    "colServices": "Servicii",
+    "colClients": "Clienți",
+    "colCompany": "Companie",
+    "companyAbout": "Despre noi",
+    "companyMethod": "Metodă",
+    "companyContact": "Contact",
+    "rights": "© {year} CORE829 — Toate drepturile rezervate.",
+    "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
+    "privacy": "Politica de confidențialitate",
+    "terms": "Termeni și condiții",
+    "colServicesAll": "Toate serviciile",
+    "colPricing": "Prețuri",
+    "colBlog": "Blog",
+    "companyAboutFull": "Despre noi",
+    "colCareers": "Cariere"
+  },
+  "privacy": {
+    "title": "Politica de confidențialitate",
+    "updated": "Ultima actualizare: {date}",
+    "intro": "Această politică de confidențialitate explică modul în care CORE829 SRL colectează, utilizează și protejează datele personale, în conformitate cu GDPR (Regulamentul UE 2016/679).",
+    "sections": [
+      {
+        "title": "1. Operatorul de date",
+        "body": "CORE829 SRL, înregistrată în România, este operatorul de date pentru datele personale colectate prin acest site. Ne poți contacta prin formularul de contact."
+      },
+      {
+        "title": "2. Datele pe care le colectăm",
+        "body": "Colectăm doar datele furnizate voluntar prin formularele de contact și solicitare de ofertă: nume, email, companie, servicii de interes, buget estimativ și conținutul mesajului."
+      },
+      {
+        "title": "3. Scopurile prelucrării",
+        "body": "Datele sunt prelucrate pentru a răspunde cererilor de contact și ofertă, pentru gestionarea relației comerciale și pentru îndeplinirea obligațiilor legale. Nu vindem niciodată datele tale."
+      },
+      {
+        "title": "4. Temeiul legal",
+        "body": "Temeiul legal este consimțământul exprimat la trimiterea formularului și interesul legitim de a răspunde cererilor comerciale (Art. 6 GDPR)."
+      },
+      {
+        "title": "5. Perioada de păstrare",
+        "body": "Datele sunt păstrate pe durata necesară scopurilor descrise și, în orice caz, nu mai mult decât prevede legea."
+      },
+      {
+        "title": "6. Drepturile tale",
+        "body": "Ai dreptul de acces, rectificare, ștergere și portabilitate a datelor, precum și dreptul de a te opune prelucrării. Poți exercita aceste drepturi contactându-ne."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Termeni și condiții",
+    "updated": "Ultima actualizare: {date}",
+    "intro": "Acești termeni și condiții reglementează utilizarea site-ului core829.net și a serviciilor CORE829 SRL.",
+    "sections": [
+      {
+        "title": "1. Acceptarea termenilor",
+        "body": "Prin accesarea acestui site accepți acești termeni. Dacă nu ești de acord, te rugăm să nu utilizezi site-ul."
+      },
+      {
+        "title": "2. Servicii",
+        "body": "CORE829 oferă servicii de proiectare și dezvoltare software, webapp, automatizări, sisteme AI și marketing digital. Proiectele specifice sunt reglementate prin contracte separate."
+      },
+      {
+        "title": "3. Proprietate intelectuală",
+        "body": "Toate conținuturile acestui site sunt proprietatea CORE829 SRL. Livrabilele produse pentru clienți sunt supuse termenilor contractului individual."
+      },
+      {
+        "title": "4. Limitarea răspunderii",
+        "body": "Site-ul este furnizat 'ca atare'. CORE829 nu este responsabilă pentru daunele rezultate din utilizarea site-ului, în limitele permise de lege."
+      },
+      {
+        "title": "5. Legea aplicabilă",
+        "body": "Acești termeni sunt guvernați de legea română. Orice litigiu va fi supus jurisdicției instanțelor române competente."
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "desc": "The page you are looking for doesn't exist or has been moved.",
+    "back": "Back to home"
+  },
+  "servicesPage": {
+    "kicker": "Services",
+    "title": "Our Services",
+    "subtitle": "Minimal-premium digital agency.",
+    "projectTitle": "Project",
+    "projectDesc": "Custom software development.",
+    "retainerTitle": "Retainer",
+    "retainerDesc": "Ongoing partnership.",
+    "partnershipTitle": "Partnership",
+    "partnershipDesc": "Strategic collaboration.",
+    "cta": "Get in touch"
+  },
+  "contactPage": {
+    "kicker": "Contact",
+    "title": "Let's build together",
+    "subtitle": "Start your project with a consultation."
+  },
+  "aboutPage": {
+    "kicker": "About",
+    "title": "Who we are",
+    "subtitle": "Enterprise-grade quality, minimal design.",
+    "missionTitle": "Our mission",
+    "mission": "Build precision software that solves real problems.",
+    "valuesTitle": "Our values",
+    "values": [
+      "Precision",
+      "Minimalism",
+      "Quality"
+    ]
+  },
+  "methodPage": {
+    "kicker": "Method",
+    "title": "How we work",
+    "subtitle": "No noise, just engineered clarity.",
+    "approachTitle": "Our approach",
+    "approach": "Discover, design, deliver with focus."
+  },
+  "blogPage": {
+    "kicker": "Blog",
+    "title": "Insights",
+    "subtitle": "Thoughts on technology, strategy and design.",
+    "comingSoon": "Coming soon"
+  },
+  "careersPage": {
+    "kicker": "Careers",
+    "title": "Join our team",
+    "subtitle": "Build the future with us.",
+    "comingSoon": "Coming soon"
+  },
+  "pricingPage": {
+    "kicker": "Pricing",
+    "title": "Transparent pricing",
+    "subtitle": "Simple, predictable plans for every need.",
+    "projectTitle": "Project",
+    "projectDesc": "One-time delivery.",
+    "retainerTitle": "Retainer",
+    "retainerDesc": "Monthly engagement.",
+    "partnershipTitle": "Partnership",
+    "partnershipDesc": "Custom agreement.",
+    "cta": "Schedule a consultation"
+  }
+}

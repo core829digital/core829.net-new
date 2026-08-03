@@ -1,0 +1,577 @@
+{
+  "metadata": {
+    "title": "CORE829 — Agenzia digitale per software su misura, webapp e AI",
+    "description": "CORE829 progetta e sviluppa webapp su misura, automazioni B2B, sistemi AI e marketing per aziende che vogliono precisione, non rumore. Qualità enterprise, design minimale.",
+    "services": "Services page",
+    "contact": "Contact page",
+    "about": "About page",
+    "method": "Method page",
+    "blog": "Blog page",
+    "careers": "Careers page",
+    "pricing": "Pricing page"
+  },
+  "nav": {
+    "services": "Servizi",
+    "clients": "Clienti",
+    "method": "Metodo",
+    "faq": "FAQ",
+    "contact": "Contatti",
+    "cta": "Richiedi una consulenza",
+    "blog": "Blog",
+    "careers": "Lavora con noi",
+    "pricing": "Prezzi"
+  },
+  "hero": {
+    "badge": "Nuovo: Setup AI Home-Made disponibile per PMI",
+    "headline": [
+      "Costruiamo software",
+      "che risolve",
+      "problemi veri."
+    ],
+    "subtitle": "CORE829 è un'agenzia digitale che progetta e sviluppa webapp, automazioni AI e piattaforme su misura per aziende B2B e B2C. Qualità enterprise, senza rumore.",
+    "ctaPrimary": "Richiedi una consulenza",
+    "ctaSecondary": "Scopri come lavoriamo"
+  },
+  "trustedBy": {
+    "label": "Con chi abbiamo lavorato"
+  },
+  "stats": [
+    {
+      "value": 5,
+      "suffix": "",
+      "label": "Clienti enterprise seguiti"
+    },
+    {
+      "value": 8,
+      "suffix": "",
+      "label": "Servizi integrati"
+    },
+    {
+      "value": 3,
+      "suffix": "",
+      "label": "Modelli di collaborazione"
+    }
+  ],
+  "problem": {
+    "kicker": "Il problema",
+    "title": "La digitalizzazione fatta male costa caro",
+    "items": [
+      {
+        "title": "Software che non si adatta",
+        "desc": "Troppe PMI usano strumenti generici che ignorano come funziona davvero l'azienda, generando lavoro manuale e tempo perso."
+      },
+      {
+        "title": "Consulenze che non consegnano",
+        "desc": "Troppi progetti IT si fermano a metà o producono soluzioni che nessuno sa usare, con costi fuori controllo."
+      },
+      {
+        "title": "AI come moda, non come valore",
+        "desc": "Wrapper e demo vuote che promettono automazione ma non toccano mai i dati e i processi reali dell'azienda."
+      }
+    ]
+  },
+  "solution": {
+    "kicker": "La soluzione",
+    "title": "Otto servizi, un unico standard di qualità",
+    "subtitle": "Dalla strategia alla messa in produzione, ogni progetto è seguito in-house con un carico clienti volutamente limitato.",
+    "services": [
+      {
+        "id": "automations",
+        "title": "Automazioni B2B",
+        "desc": "Automatizziamo processi ripetitivi tra reparti e strumenti aziendali (CRM, gestionali, email, fatturazione), riducendo lavoro manuale e margine d'errore.",
+        "bullets": [
+          "Integrazione tra sistemi esistenti",
+          "Workflow su trigger ed eventi",
+          "Automazioni di notifiche interne",
+          "Riduzione dei task ripetitivi"
+        ]
+      },
+      {
+        "id": "webdesign",
+        "title": "Creazione WebDesign",
+        "desc": "Design di siti e interfacce su misura, guidati da identità di brand, performance e conversione, non da template generici.",
+        "bullets": [
+          "UI/UX su misura",
+          "Design system riutilizzabile",
+          "Prototipazione e revisione iterativa",
+          "Ottimizzazione conversion-oriented"
+        ]
+      },
+      {
+        "id": "desktop",
+        "title": "Creazione Software Eseguibili",
+        "desc": "Sviluppiamo software desktop ed eseguibili dedicati per esigenze verticali dove una webapp non basta: strumenti interni, tool offline, automazioni locali.",
+        "bullets": [
+          "Applicazioni desktop cross-platform",
+          "Strumenti interni aziendali",
+          "Integrazione con hardware e sistemi locali",
+          "Packaging e distribuzione"
+        ]
+      },
+      {
+        "id": "webapp",
+        "title": "Creazione WebApp",
+        "desc": "Applicazioni web full-stack su misura — piattaforme B2B/B2C, gestionali, CRM verticali — progettate sui processi reali del cliente.",
+        "bullets": [
+          "Architettura full-stack su misura",
+          "Ruoli e permessi (RBAC)",
+          "Dashboard e reportistica",
+          "Integrazioni API e pagamenti"
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "Indicizzazione SEO",
+        "desc": "Ottimizzazione tecnica e dei contenuti per la visibilità organica: struttura, performance, semantica e presenza sui motori di ricerca.",
+        "bullets": [
+          "SEO tecnica (Core Web Vitals, schema markup)",
+          "Struttura contenuti e keyword",
+          "Ottimizzazione on-page",
+          "Monitoraggio posizionamento"
+        ]
+      },
+      {
+        "id": "delivery",
+        "title": "Server Delivery",
+        "desc": "Gestiamo infrastruttura, deployment e messa in produzione: dal repository al server, con pipeline affidabili e ambienti scalabili.",
+        "bullets": [
+          "CI/CD (GitHub → Vercel e non solo)",
+          "Gestione ambienti staging/produzione",
+          "Scalabilità e monitoraggio uptime",
+          "Backup e disaster recovery"
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "Setup Intelligenza Artificiale Home-Made",
+        "desc": "Progettiamo e installiamo soluzioni AI su misura per l'azienda — non wrapper generici, ma sistemi costruiti sui dati e i processi reali del cliente.",
+        "bullets": [
+          "Automazioni AI su processi interni",
+          "Assistenti e agenti custom",
+          "Integrazione AI in software esistenti",
+          "Formazione del team all'uso"
+        ]
+      },
+      {
+        "id": "marketing",
+        "title": "Marketing a 360 Gradi (Organico e Paid)",
+        "desc": "Copriamo l'intera crescita digitale: social media organico, content e advertising a pagamento su Meta Ads e Google Ads, con strategia unificata.",
+        "bullets": [
+          "Gestione e crescita social organica",
+          "Content strategy",
+          "Campagne Meta Ads",
+          "Campagne Google Ads"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Come lavoriamo",
+    "title": "Un processo trasparente, dal problema al valore",
+    "subtitle": "Quattro step, zero sorprese, risultati misurabili.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "Analizziamo il business, i processi e i dati. Definiamo obiettivi misurabili prima di scrivere una riga di codice."
+      },
+      {
+        "title": "Design & Build",
+        "desc": "Progettiamo interfacce e architettura, poi sviluppiamo in iterazioni brevi con verifiche costanti."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Test, deploy e messa in produzione con pipeline affidabili. Nessuna sorpresa al lancio."
+      },
+      {
+        "title": "Growth",
+        "desc": "Monitoriamo, ottimizziamo e facciamo evolvere il prodotto nel tempo, con metriche chiare."
+      }
+    ]
+  },
+  "caseStudies": {
+    "kicker": "Clienti & Case Study",
+    "title": "Progetti reali, risultati concreti",
+    "subtitle": "Un carico clienti volutamente limitato per garantire qualità di delivery end-to-end.",
+    "viewSite": "Visita il sito",
+    "stackLabel": "Stack",
+    "projects": [
+      {
+        "id": "iwhome",
+        "name": "IWHome",
+        "domain": "iwhome.app",
+        "sector": "Installazione infissi e serramenti (Italia)",
+        "what": "Piattaforma di gestione B2B/B2C completa per un'azienda di installazione infissi.",
+        "stack": "React, Convex, Clerk",
+        "details": [
+          "5 ruoli RBAC: admin, fornitore, collaboratore, cliente, utente base",
+          "Modello di transazione centralizzato su IWHome",
+          "Logica di pagamento split con prova di pagamento obbligatoria",
+          "Generazione automatica di PDF",
+          "Workflow ordine a 9 step"
+        ],
+        "tags": [
+          "WebApp",
+          "Automazioni B2B",
+          "Setup AI"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "doctor-haus",
+        "name": "Doctor Haus",
+        "domain": "doctor-haus.com",
+        "sector": "Strutture prefabbricate modulari — brand di Montaggi Srl",
+        "what": "Sito Next.js 15 completo con palette verde/arancio, internazionalizzazione, scroll trail GSAP, hero 3D e configuratore prodotto multi-step.",
+        "stack": "Next.js 15, Convex, React Three Fiber, Zustand, Resend",
+        "details": [
+          "Internazionalizzazione con next-intl",
+          "Scroll trail GSAP e hero 3D (React Three Fiber)",
+          "Pagina 'Altre Soluzioni' con 6 famiglie di prodotto",
+          "Configuratore prodotto multi-step con schema Convex",
+          "Invio email via Resend"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp",
+          "3D/Motion"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "winex",
+        "name": "Winex",
+        "domain": "winex.ro",
+        "sector": "Produzione infissi (serramenti) in PVC e alluminio",
+        "what": "Servizi digitali dedicati al mondo dei serramentisti, distinti dalla vendita fisica degli infissi — inclusi un configuratore/calcolatore preventivi e un CRM verticale.",
+        "stack": "WebApp, CRM verticale",
+        "details": [
+          "Configuratore e calcolatore preventivi infissi",
+          "CRM verticale per serramentisti",
+          "Prodotti digitali distinti dalla vendita fisica"
+        ],
+        "tags": [
+          "Automazioni B2B",
+          "WebApp",
+          "CRM"
+        ],
+        "mockup": "crm"
+      },
+      {
+        "id": "revive",
+        "name": "Revive App",
+        "domain": "getrevive.app",
+        "sector": "Piattaforma fashion curata, collezioni sostenibili e minimaliste",
+        "what": "WebApp B2C completa con onboarding, dashboard personale e funzionalità AI integrate.",
+        "stack": "WebApp, AI",
+        "details": [
+          "Onboarding e dashboard personale",
+          "Funzionalità AI: scanner outfit, analisi capi",
+          "Area community",
+          "Programma affiliati"
+        ],
+        "tags": [
+          "WebApp",
+          "Setup AI",
+          "WebDesign"
+        ],
+        "mockup": "fashion"
+      },
+      {
+        "id": "bidwyz",
+        "name": "Bidwyz",
+        "domain": "bidwyz.com",
+        "sector": "Marketplace di aste online potenziato dall'intelligenza artificiale",
+        "what": "Piattaforma di compravendita ad asta con matching AI, bidding avanzato e sicurezza dei pagamenti — architettura cloud-native con forte componente AI-driven.",
+        "stack": "Cloud-native, AI",
+        "details": [
+          "Matching AI tra acquirenti e venditori",
+          "Proxy bidding e aggiornamenti real-time",
+          "Sicurezza dei pagamenti",
+          "Analisi e insight basati su AI"
+        ],
+        "tags": [
+          "WebApp",
+          "Setup AI",
+          "Automazioni B2B"
+        ],
+        "mockup": "auction"
+      }
+    ]
+  },
+  "features": {
+    "kicker": "Capabilities",
+    "title": "Competenze trasversali, standard enterprise",
+    "subtitle": "Le fondamenta tecniche che ogni progetto condivide.",
+    "items": [
+      {
+        "id": "ai",
+        "icon": "Bot",
+        "title": "AI Home-Made",
+        "desc": "Sistemi AI costruiti sui dati e processi reali dell'azienda, non wrapper generici."
+      },
+      {
+        "id": "security",
+        "icon": "ShieldCheck",
+        "title": "Sicurezza OWASP",
+        "desc": "Header di sicurezza, validazione server-side e zero secret esposti al client."
+      },
+      {
+        "id": "seo",
+        "icon": "TrendingUp",
+        "title": "SEO tecnica",
+        "desc": "Core Web Vitals, schema markup e semantica corretta per essere trovati."
+      },
+      {
+        "id": "automations",
+        "icon": "Workflow",
+        "title": "Automazioni",
+        "desc": "Pipeline e workflow che eliminano lavoro manuale tra strumenti aziendali."
+      },
+      {
+        "id": "performance",
+        "icon": "Gauge",
+        "title": "Performance",
+        "desc": "Bundle ottimizzati, animazioni su compositing layer, LCP sotto controllo."
+      },
+      {
+        "id": "realtime",
+        "icon": "Zap",
+        "title": "Realtime",
+        "desc": "Dati sincronizzati in tempo reale con architettura Convex."
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Come costruiamo il preventivo",
+    "title": "Niente pacchetti a prezzo fisso. Un preventivo su misura.",
+    "subtitle": "Ogni progetto è diverso. Lavoriamo a progetto o in continuità, con modelli trasparenti.",
+    "models": [
+      {
+        "title": "Progetto chiuso",
+        "desc": "Per iniziative con perimetro e obiettivi chiari: quotazione fissa, tempi definiti, zero sorprese.",
+        "points": [
+          "Perimetro definito e condiviso",
+          "Roadmap e milestone chiare",
+          "Prezzo concordato a monte"
+        ]
+      },
+      {
+        "title": "Retainer mensile",
+        "desc": "Per chi vuole un partner tecnologico continuativo: sviluppo, manutenzione e ottimizzazioni su base mensile.",
+        "points": [
+          "Priorità continue di sviluppo",
+          "Manutenzione e monitoraggio",
+          "SLA concordati"
+        ]
+      },
+      {
+        "title": "Revenue-share / Partnership",
+        "desc": "Per prodotti digitali con potenziale di crescita: costruiamo insieme e condividiamo il rischio.",
+        "points": [
+          "Allineamento su metriche di successo",
+          "Investimento condiviso",
+          "Focus su crescita e trazione"
+        ]
+      }
+    ],
+    "cta": "Richiedi un preventivo"
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Che tipo di progetti sviluppa CORE829?",
+        "a": "Sviluppiamo webapp full-stack, siti su misura, automazioni B2B, software desktop/eseguibili e soluzioni AI integrate. Copriamo l'intero ciclo: design, sviluppo, deployment e marketing."
+      },
+      {
+        "q": "Quanto tempo richiede in media un progetto?",
+        "a": "Dipende dal perimetro. I progetti più comuni (siti e webapp) richiedono da 4 a 12 settimane. Definiamo tempi e milestone chiare in fase di preventivo."
+      },
+      {
+        "q": "Lavorate anche con aziende fuori dall'Italia?",
+        "a": "Sì, lavoriamo interamente online con clienti in tutta Europa. Siamo legalmente registrati in Romania e operiamo in inglese e altre lingue."
+      },
+      {
+        "q": "Offrite manutenzione dopo il lancio?",
+        "a": "Sì. Ogni progetto può includere un piano di manutenzione: monitoraggio, aggiornamenti, backup e miglioramenti continui. È opzionale e concordato con il cliente."
+      },
+      {
+        "q": "Come funziona la richiesta di preventivo?",
+        "a": "Compila il form di contatto con una descrizione del progetto. Ti rispondiamo entro 24-48 ore lavorative con un primo quadro di massima, poi organizziamo una call di discovery."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Hai un progetto in mente?",
+    "subtitle": "Parliamone. Raccontaci il problema che vuoi risolvere e ti proponiamo una soluzione concreta.",
+    "cta": "Parliamo del tuo progetto"
+  },
+  "contact": {
+    "name": "Nome e cognome",
+    "namePlaceholder": "Mario Rossi",
+    "email": "Email",
+    "emailPlaceholder": "nome@azienda.it",
+    "company": "Azienda",
+    "companyPlaceholder": "La tua azienda (opzionale)",
+    "service": "Servizi di interesse",
+    "serviceHint": "Seleziona uno o più servizi",
+    "budget": "Budget indicativo",
+    "budgetPlaceholder": "Seleziona una fascia",
+    "budgetOptions": [
+      "Sotto i 5.000 €",
+      "5.000 – 15.000 €",
+      "15.000 – 40.000 €",
+      "Oltre 40.000 €"
+    ],
+    "message": "Descrivi il progetto",
+    "messagePlaceholder": "Cosa dobbiamo costruire?",
+    "submit": "Invia richiesta",
+    "success": "Richiesta inviata. Ti rispondiamo entro 24-48 ore lavorative.",
+    "error": "Qualcosa è andato storto. Riprova tra poco.",
+    "required": "Compila i campi obbligatori.",
+    "invalidEmail": "Inserisci un indirizzo email valido."
+  },
+  "footer": {
+    "tagline": "Agenzia digitale minimal-premium. Progettiamo e sviluppiamo software su misura.",
+    "colServices": "Servizi",
+    "colClients": "Clienti",
+    "colCompany": "Azienda",
+    "companyAbout": "Chi siamo",
+    "companyMethod": "Metodo",
+    "companyContact": "Contatti",
+    "rights": "© {year} CORE829 — Tutti i diritti riservati.",
+    "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
+    "privacy": "Privacy Policy",
+    "terms": "Termini di Servizio",
+    "colServicesAll": "Tutti i servizi",
+    "colPricing": "Prezzi",
+    "colBlog": "Blog",
+    "companyAboutFull": "Chi siamo",
+    "colCareers": "Lavora con noi"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Ultimo aggiornamento: {date}",
+    "intro": "La presente Privacy Policy spiega come CORE829 SRL raccoglie, utilizza e protegge i dati personali, in conformità al GDPR (Regolamento UE 2016/679).",
+    "sections": [
+      {
+        "title": "1. Titolare del trattamento",
+        "body": "CORE829 SRL, con sede in Romania, è il titolare del trattamento dei dati personali raccolti attraverso questo sito. Puoi contattarci tramite il form di contatto."
+      },
+      {
+        "title": "2. Dati che raccogliamo",
+        "body": "Raccogliamo solo i dati forniti volontariamente tramite i form di contatto e richiesta preventivo: nome, email, azienda, servizi di interesse, budget indicativo e contenuto del messaggio."
+      },
+      {
+        "title": "3. Finalità del trattamento",
+        "body": "I dati sono trattati per rispondere alle richieste di contatto e preventivo, gestire il rapporto commerciale e adempiere agli obblighi di legge. Non vendiamo mai i tuoi dati."
+      },
+      {
+        "title": "4. Base giuridica",
+        "body": "La base giuridica è il consenso espresso all'invio del form e l'interesse legittimo a rispondere alle richieste commerciali (Art. 6 GDPR)."
+      },
+      {
+        "title": "5. Conservazione",
+        "body": "I dati sono conservati per il tempo necessario alle finalità descritte e comunque non oltre quanto previsto dalla legge."
+      },
+      {
+        "title": "6. I tuoi diritti",
+        "body": "Hai il diritto di accesso, rettifica, cancellazione e portabilità dei tuoi dati, nonché di opposizione al trattamento. Puoi esercitare questi diritti contattandoci."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Termini di Servizio",
+    "updated": "Ultimo aggiornamento: {date}",
+    "intro": "I presenti Termini di Servizio regolano l'uso del sito core829.net e dei servizi di CORE829 SRL.",
+    "sections": [
+      {
+        "title": "1. Accettazione dei termini",
+        "body": "Accedendo a questo sito accetti i presenti termini. Se non sei d'accordo, ti preghiamo di non utilizzare il sito."
+      },
+      {
+        "title": "2. Servizi",
+        "body": "CORE829 offre servizi di progettazione e sviluppo software, webapp, automazioni, sistemi AI e marketing digitale. I progetti specifici sono regolati da contratti separati."
+      },
+      {
+        "title": "3. Proprietà intellettuale",
+        "body": "Tutti i contenuti di questo sito sono di proprietà di CORE829 SRL. I deliverable prodotti per i clienti sono soggetti ai termini del singolo contratto."
+      },
+      {
+        "title": "4. Limitazione di responsabilità",
+        "body": "Il sito è fornito 'così com'è'. CORE829 non è responsabile dei danni derivanti dall'uso del sito, nei limiti consentiti dalla legge."
+      },
+      {
+        "title": "5. Legge applicabile",
+        "body": "I presenti termini sono regolati dalla legge rumena. Ogni controversia sarà sottoposta alla giurisdizione dei tribunali rumeni competenti."
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "desc": "The page you are looking for doesn't exist or has been moved.",
+    "back": "Back to home"
+  },
+  "servicesPage": {
+    "kicker": "Services",
+    "title": "Our Services",
+    "subtitle": "Minimal-premium digital agency.",
+    "projectTitle": "Project",
+    "projectDesc": "Custom software development.",
+    "retainerTitle": "Retainer",
+    "retainerDesc": "Ongoing partnership.",
+    "partnershipTitle": "Partnership",
+    "partnershipDesc": "Strategic collaboration.",
+    "cta": "Get in touch"
+  },
+  "contactPage": {
+    "kicker": "Contact",
+    "title": "Let's build together",
+    "subtitle": "Start your project with a consultation."
+  },
+  "aboutPage": {
+    "kicker": "About",
+    "title": "Who we are",
+    "subtitle": "Enterprise-grade quality, minimal design.",
+    "missionTitle": "Our mission",
+    "mission": "Build precision software that solves real problems.",
+    "valuesTitle": "Our values",
+    "values": [
+      "Precision",
+      "Minimalism",
+      "Quality"
+    ]
+  },
+  "methodPage": {
+    "kicker": "Method",
+    "title": "How we work",
+    "subtitle": "No noise, just engineered clarity.",
+    "approachTitle": "Our approach",
+    "approach": "Discover, design, deliver with focus."
+  },
+  "blogPage": {
+    "kicker": "Blog",
+    "title": "Insights",
+    "subtitle": "Thoughts on technology, strategy and design.",
+    "comingSoon": "Coming soon"
+  },
+  "careersPage": {
+    "kicker": "Careers",
+    "title": "Join our team",
+    "subtitle": "Build the future with us.",
+    "comingSoon": "Coming soon"
+  },
+  "pricingPage": {
+    "kicker": "Pricing",
+    "title": "Transparent pricing",
+    "subtitle": "Simple, predictable plans for every need.",
+    "projectTitle": "Project",
+    "projectDesc": "One-time delivery.",
+    "retainerTitle": "Retainer",
+    "retainerDesc": "Monthly engagement.",
+    "partnershipTitle": "Partnership",
+    "partnershipDesc": "Custom agreement.",
+    "cta": "Schedule a consultation"
+  }
+}

@@ -1,0 +1,103 @@
+"use client";
+
+import { useTranslations, useMessages } from "next-intl";
+import { ArrowRight } from "lucide-react";
+import SplitWords from "@/components/animations/SplitWords";
+import CountUp from "@/components/animations/CountUp";
+import Badge from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
+import ClientCarousel from "@/components/sections/ClientCarousel";
+import { TrustpilotWidget } from "@/components/Trustpilot";
+import { SocialLinks } from "@/components/SocialIcons";
+
+interface Stat {
+  value: number;
+  suffix: string;
+  label: string;
+}
+
+/**
+ * Hero: badge announcement, headline animata parola-per-parola,
+ * carousel automatico dei clienti, CTAs e statistiche con count-up.
+ */
+export default function Hero() {
+  const t = useTranslations("hero");
+  const messages = useMessages();
+  const m = messages as unknown as { stats: Stat[]; hero: { headline: string[] } };
+  const stats = m.stats;
+  const headline = m.hero.headline;
+
+  return (
+    <section
+      id="hero"
+      className="relative overflow-hidden pt-16"
+    >
+      {/* Elementi decorativi */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-40 top-24 h-96 w-96 rounded-full border border-border/60"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-16 top-40 h-48 w-48 rounded-full border border-accent/20"
+      />
+
+      <div className="container-core829 grid min-h-[calc(100vh-4rem)] items-center gap-16 py-20 lg:grid-cols-2">
+        <div>
+          <Badge>
+            <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden />
+            {t("badge")}
+          </Badge>
+
+          <SplitWords
+            lines={headline}
+            className="mt-8 text-display font-semibold text-foreground"
+          />
+
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted">
+            {t("subtitle")}
+          </p>
+
+          <div className="mt-10 flex flex-wrap items-center gap-4">
+            <Button href="#contatti" variant="primary">
+              {t("ctaPrimary")}
+              <ArrowRight className="h-4 w-4" aria-hidden />
+            </Button>
+            <Button href="#metodo" variant="secondary">
+              {t("ctaSecondary")}
+            </Button>
+          </div>
+
+          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-5 border-t border-border pt-8">
+            <TrustpilotWidget />
+            <SocialLinks
+              className="gap-2"
+              iconClassName="h-10 w-10"
+            />
+          </div>
+
+          <div className="mt-14 grid grid-cols-3 gap-6">
+            {stats.map((stat, i) => (
+              <div key={i}>
+                <p className="text-4xl font-semibold tracking-tight text-foreground">
+                  <CountUp value={stat.value} suffix={stat.suffix} />
+                </p>
+                <p className="mt-2 max-w-[10rem] text-sm leading-snug text-foreground-muted">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="relative">
+          <div
+            aria-hidden
+            className="absolute -left-6 -top-6 z-20 h-3 w-3 bg-accent"
+          />
+          <ClientCarousel />
+        </div>
+      </div>
+    </section>
+  );
+}

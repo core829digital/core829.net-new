@@ -19,7 +19,8 @@
     "cta": "Vraag een consultatie aan",
     "blog": "Blog",
     "careers": "Vacatures",
-    "pricing": "Prijzen"
+    "pricing": "Prijzen",
+    "informazioni": "Informatie"
   },
   "hero": {
     "badge": "Nieuw: Home-Made AI Setup nu beschikbaar voor MKB",
@@ -448,7 +449,9 @@
     "colPricing": "Prijzen",
     "colBlog": "Blog",
     "companyAboutFull": "Over ons",
-    "colCareers": "Vacatures"
+    "colCareers": "Vacatures",
+    "gdpr": "AVG",
+    "cookiePolicy": "Cookiebeleid"
   },
   "privacy": {
     "title": "Privacybeleid",
@@ -573,5 +576,73 @@
     "partnershipTitle": "Partnership",
     "partnershipDesc": "Custom agreement.",
     "cta": "Schedule a consultation"
+  },
+  "servicesDetail": {
+    "back": "Alle diensten",
+    "whatIncluded": "Wat is inbegrepen",
+    "cta": "Advies aanvragen",
+    "allServices": "Alle diensten bekijken",
+    "previous": "Vorige dienst",
+    "next": "Volgende dienst"
+  },
+  "gdpr": {
+    "title": "AVG",
+    "intro": "Deze pagina legt uit hoe CORE829 SRL persoonsgegevens verwerkt in overeenstemming met de AVG (EU-verordening 2016/679) en de toepasselijke Roemeense wetgeving inzake de bescherming van persoonsgegevens.",
+    "sections": [
+      {
+        "title": "1. Verwerkingsverantwoordelijke",
+        "body": "CORE829 SRL, met statutaire zetel in Roemenië, is de verwerkingsverantwoordelijke voor de persoonsgegevens die via deze website en haar diensten worden verwerkt. U kunt ons bereiken via het contactformulier of per e-mail op hello@core829.net."
+      },
+      {
+        "title": "2. Gegevens die wij verwerken",
+        "body": "Wij verwerken uitsluitend de gegevens die u vrijwillig verstrekt via onze contact- en offerteformulieren: naam, e-mail, bedrijf, diensten van interesse, indicatief budget en de inhoud van uw bericht. Daarnaast verwerken wij minimale technische gegevens (IP-adres, browsertype) voor de beveiliging en werking van de website."
+      },
+      {
+        "title": "3. Rechtsgronden voor verwerking",
+        "body": "Wij verwerken persoonsgegevens op de volgende rechtsgronden: uw toestemming (art. 6(1)(a) AVG) voor communicatie; de uitvoering van een overeenkomst of precontractuele maatregelen (art. 6(1)(b) AVG) voor offerteaanvragen; het gerechtvaardigd belang (art. 6(1)(f) AVG) voor de beveiliging en verbetering van de website."
+      },
+      {
+        "title": "4. Rechten van de betrokkene",
+        "body": "Op grond van de AVG heeft u recht op inzage, rectificatie, verwijdering, beperking en overdraagbaarheid van uw persoonsgegevens, evenals het recht om bezwaar te maken tegen de verwerking. U heeft ook het recht om uw toestemming op elk moment in te trekken en een klacht in te dienen bij de bevoegde toezichthoudende autoriteit (ANSPDCP in Roemenië)."
+      },
+      {
+        "title": "5. Bewaartermijn",
+        "body": "Persoonsgegevens die via formulieren worden verzameld, worden uitsluitend bewaard gedurende de tijd die nodig is om verzoeken te beantwoorden en eventuele contractuele relaties te beheren, overeenkomstig de wettelijke bewaartermijnen."
+      },
+      {
+        "title": "6. Doorgifte van gegevens",
+        "body": "Wij geven geen persoonsgegevens door buiten de Europese Economische Ruimte. Waar externe leveranciers gegevens namens ons verwerken, zijn zij gebonden aan passende verwerkersovereenkomsten."
+      },
+      {
+        "title": "7. Contact",
+        "body": "Voor vragen over de verwerking van uw persoonsgegevens of om uw rechten uit te oefenen, schrijft u naar hello@core829.net. Wij antwoorden binnen 30 dagen."
+      }
+    ]
+  },
+  "cookiePolicy": {
+    "title": "Cookiebeleid",
+    "intro": "Dit cookiebeleid legt uit wat cookies zijn en hoe CORE829 SRL cookies en vergelijkbare technologieën gebruikt op de website core829.net.",
+    "sections": [
+      {
+        "title": "1. Wat zijn cookies",
+        "body": "Cookies zijn kleine tekstbestanden die op uw apparaat worden opgeslagen wanneer u een website bezoekt. Ze stellen de website in staat uw voorkeuren te onthouden en te begrijpen hoe bezoekers de site gebruiken."
+      },
+      {
+        "title": "2. Cookies die wij gebruiken",
+        "body": "Wij gebruiken strikt noodzakelijke cookies voor de werking van de website en voorkeurscookies om uw taalkeuze te onthouden. Met uw toestemming kunnen wij analysetools gebruiken om verkeer te meten en onze inhoud te verbeteren."
+      },
+      {
+        "title": "3. Cookies van derden",
+        "body": "Sommige cookies worden geplaatst door diensten van derden die in de website zijn geïntegreerd, zoals analyse- en advertentieplatforms. Deze derden kunnen de verzamelde gegevens verwerken volgens hun eigen privacybeleid."
+      },
+      {
+        "title": "4. Cookies beheren",
+        "body": "U kunt cookies beheren of verwijderen via de instellingen van uw browser. Het blokkeren van bepaalde cookies kan de functionaliteit van de website beïnvloeden, zoals het onthouden van uw taalkeuze."
+      },
+      {
+        "title": "5. Toestemming",
+        "body": "Waar cookies niet strikt noodzakelijk zijn, vragen wij uw toestemming voordat wij ze installeren. U kunt uw voorkeuren op elk moment wijzigen door de browsercookies te wissen en de website opnieuw te bezoeken."
+      }
+    ]
   }
 }

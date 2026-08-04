@@ -19,7 +19,8 @@
     "cta": "Solicitar una consultoría",
     "blog": "Blog",
     "careers": "Empleo",
-    "pricing": "Precios"
+    "pricing": "Precios",
+    "informazioni": "Información"
   },
   "hero": {
     "badge": "Nuevo: Setup de IA Home-Made disponible para pymes",
@@ -448,7 +449,9 @@
     "colPricing": "Precios",
     "colBlog": "Blog",
     "companyAboutFull": "Sobre nosotros",
-    "colCareers": "Empleo"
+    "colCareers": "Empleo",
+    "gdpr": "GDPR",
+    "cookiePolicy": "Política de Cookies"
   },
   "privacy": {
     "title": "Política de privacidad",
@@ -573,5 +576,73 @@
     "partnershipTitle": "Partnership",
     "partnershipDesc": "Custom agreement.",
     "cta": "Schedule a consultation"
+  },
+  "servicesDetail": {
+    "back": "Todos los servicios",
+    "whatIncluded": "Qué incluye",
+    "cta": "Solicita una consulta",
+    "allServices": "Ver todos los servicios",
+    "previous": "Servicio anterior",
+    "next": "Servicio siguiente"
+  },
+  "gdpr": {
+    "title": "GDPR",
+    "intro": "Esta página explica cómo CORE829 SRL trata los datos personales de conformidad con el GDPR (Reglamento UE 2016/679) y la legislación rumana aplicable en materia de protección de datos personales.",
+    "sections": [
+      {
+        "title": "1. Responsable del tratamiento",
+        "body": "CORE829 SRL, con domicilio social en Rumanía, es el responsable del tratamiento de los datos personales tratados a través de este sitio web y sus servicios. Puedes contactarnos a través del formulario de contacto o por correo electrónico en hello@core829.net."
+      },
+      {
+        "title": "2. Datos que tratamos",
+        "body": "Tratamos únicamente los datos que proporcionas voluntariamente a través de nuestros formularios de contacto y solicitud de presupuesto: nombre, correo electrónico, empresa, servicios de interés, presupuesto indicativo y el contenido de tu mensaje. También tratamos datos técnicos mínimos (dirección IP, tipo de navegador) para la seguridad y el funcionamiento del sitio web."
+      },
+      {
+        "title": "3. Base jurídica del tratamiento",
+        "body": "Tratamos los datos personales sobre las siguientes bases jurídicas: tu consentimiento (art. 6(1)(a) GDPR) para las comunicaciones; la ejecución de un contrato o medidas precontractuales (art. 6(1)(b) GDPR) para las solicitudes de presupuesto; el interés legítimo (art. 6(1)(f) GDPR) para la seguridad y mejora del sitio web."
+      },
+      {
+        "title": "4. Derechos del interesado",
+        "body": "Conforme al GDPR tienes derecho de acceso, rectificación, supresión, limitación y portabilidad de tus datos personales, así como el derecho a oponerte al tratamiento. También tienes derecho a retirar el consentimiento en cualquier momento y a presentar una reclamación ante la autoridad de control competente (ANSPDCP en Rumanía)."
+      },
+      {
+        "title": "5. Conservación de los datos",
+        "body": "Los datos personales recogidos a través de formularios se conservan solo durante el tiempo necesario para responder a las solicitudes y gestionar cualquier relación contractual, de acuerdo con los plazos legales de conservación."
+      },
+      {
+        "title": "6. Transferencias de datos",
+        "body": "No transferimos datos personales fuera del Espacio Económico Europeo. Cuando terceros proveedores tratan datos por nuestra cuenta, están sujetos a los correspondientes acuerdos de tratamiento de datos."
+      },
+      {
+        "title": "7. Contacto",
+        "body": "Para cualquier pregunta sobre el tratamiento de tus datos personales o para ejercer tus derechos, escribe a hello@core829.net. Responderemos dentro de 30 días."
+      }
+    ]
+  },
+  "cookiePolicy": {
+    "title": "Política de Cookies",
+    "intro": "Esta Política de Cookies explica qué son las cookies y cómo CORE829 SRL utiliza cookies y tecnologías similares en el sitio web core829.net.",
+    "sections": [
+      {
+        "title": "1. Qué son las cookies",
+        "body": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas un sitio web. Permiten que el sitio recuerde tus preferencias y comprenda cómo los visitantes utilizan el sitio."
+      },
+      {
+        "title": "2. Cookies que utilizamos",
+        "body": "Utilizamos cookies estrictamente necesarias para el funcionamiento del sitio y cookies de preferencia para recordar tu elección de idioma. Podemos utilizar cookies de análisis para medir el tráfico y mejorar nuestros contenidos, previo consentimiento."
+      },
+      {
+        "title": "3. Cookies de terceros",
+        "body": "Algunas cookies son establecidas por servicios de terceros integrados en el sitio web, como plataformas de análisis y publicidad. Estos terceros pueden tratar los datos recogidos según sus propias políticas de privacidad."
+      },
+      {
+        "title": "4. Gestión de cookies",
+        "body": "Puedes gestionar o eliminar las cookies a través de la configuración de tu navegador. El bloqueo de ciertas cookies puede afectar al funcionamiento del sitio web, como recordar tu preferencia de idioma."
+      },
+      {
+        "title": "5. Consentimiento",
+        "body": "Cuando las cookies no son estrictamente necesarias, solicitamos tu consentimiento antes de instalarlas. Puedes cambiar tus preferencias en cualquier momento borrando las cookies del navegador y volviendo a visitar el sitio."
+      }
+    ]
   }
 }

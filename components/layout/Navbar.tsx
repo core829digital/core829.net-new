@@ -1,37 +1,25 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { smoothScrollTo } from "@/lib/scrollTo";
 import { Button } from "@/components/ui/Button";
+import { SERVICES_META } from "@/lib/constants";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { SocialLinks } from "@/components/SocialIcons";
 
-interface NavLink {
-  key: "services" | "clients" | "method" | "faq" | "contact" | "blog" | "careers" | "pricing";
-  href: string;
-}
-
-const LINKS: NavLink[] = [
-  { key: "services", href: "#servizi" },
-  { key: "clients", href: "#clienti" },
-  { key: "method", href: "#metodo" },
-  { key: "faq", href: "#faq" },
-  { key: "contact", href: "#contatti" },
-  { key: "blog", href: "/blog" },
-  { key: "careers", href: "/careers" },
-  { key: "pricing", href: "/prezzi" },
-];
-
 /**
- * Navbar sticky con hide-on-scroll-down / show-on-scroll-up
- * e menu full-screen su mobile con animazione staggered.
+ * Navbar sticky con hide-on-scroll-down / show-on-scroll-up.
+ * Desktop: dropdown "Servizi" (8 pagine) + dropdown "Informazioni"
+ *          (Blog, Lavora con noi, Prezzi). Mobile: full-screen overlay
+ *          con sottomenus espandibili.
  */
 export default function Navbar() {
   const t = useTranslations("nav");
+  const tServices = useTranslations("solution.services");
   const [hidden, setHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -73,6 +61,7 @@ export default function Navbar() {
       )}
     >
       <div className="container-core829 flex h-16 items-center justify-between">
+        {/* Logo */}
         <a
           href="#hero"
           onClick={(e) => {
@@ -88,20 +77,28 @@ export default function Navbar() {
           />
         </a>
 
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Main">
-          {LINKS.map((link) => (
-            <a
-              key={link.key}
-              href={link.href}
-              onClick={(e) => {
-                e.preventDefault();
-                smoothScrollTo(link.href);
-              }}
-              className="link-ghost text-sm"
-            >
-              {t(link.key)}
-            </a>
-          ))}
+        {/* Desktop navigation */}
+        <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
+          <DesktopDropdown
+            label={t("services")}
+            href="/servizi"
+            items={SERVICES_META.map((s, i) => ({
+              key: s.key,
+              label: tServices(`${i}.title`),
+              href: `/servizi/${s.key}`,
+            }))}
+          />
+
+          <DesktopDropdown
+            label={t("informazioni")}
+            items={[
+              { key: "blog", label: t("blog"), href: "/blog" },
+              { key: "careers", label: t("careers"), href: "/careers" },
+              { key: "pricing", label: t("pricing"), href: "/prezzi" },
+            ]}
+          />
+
+          <NavLink href="#contatti">{t("contact")}</NavLink>
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
@@ -111,6 +108,7 @@ export default function Navbar() {
           </Button>
         </div>
 
+        {/* Mobile menu toggle */}
         <div className="flex items-center gap-1 lg:hidden">
           <LanguageSwitcher />
           <button
@@ -125,44 +123,46 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Mobile full-screen menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
             className="fixed inset-0 top-16 z-40 flex flex-col bg-background lg:hidden"
           >
-            <nav className="flex flex-1 flex-col justify-center gap-2 px-8">
-              {LINKS.map((link, i) => (
-                <motion.a
-                  key={link.key}
-                  href={link.href}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  transition={{ delay: 0.06 * i, duration: 0.35 }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    goTo(link.href);
-                  }}
-                  className="border-b border-border py-5 text-3xl font-semibold tracking-tight text-foreground"
-                >
-                  <span className="mr-3 font-mono text-sm text-accent">
-                    0{i + 1}
-                  </span>
-                  {t(link.key)}
-                </motion.a>
-              ))}
-            </nav>
+            <MobileNav
+              nav={[
+                {
+                  key: "services",
+                  label: t("services"),
+                  children: SERVICES_META.map((s, i) => ({
+                    key: s.key,
+                    label: tServices(`${i}.title`),
+                    href: `/servizi/${s.key}`,
+                  })),
+                },{
+                  key: "informazioni",
+                  label: t("informazioni"),
+                  children: [
+                    { key: "blog", label: t("blog"), href: "/blog" },
+                    { key: "careers", label: t("careers"), href: "/careers" },
+                    { key: "pricing", label: t("pricing"), href: "/prezzi" },
+                  ],
+                },
+                { key: "contact", label: t("contact"), href: "#contatti" },
+              ]}
+              onNavigate={goTo}
+            />
             <div className="px-8 pb-12">
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
                 transition={{ delay: 0.35 }}
-                className="space-y-8"
+                className="space-y-8 pt-8 border-t border-border"
               >
                 <Button
                   href="#contatti"
@@ -172,7 +172,7 @@ export default function Navbar() {
                 >
                   {t("cta")}
                 </Button>
-                <div className="flex flex-wrap gap-3 border-t border-border pt-8">
+                <div className="flex flex-wrap gap-3">
                   <SocialLinks />
                 </div>
               </motion.div>
@@ -181,5 +181,187 @@ export default function Navbar() {
         )}
       </AnimatePresence>
     </header>
+  );
+}
+
+function NavLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  const handleClick = (e: React.MouseEvent) => {
+    if (href.startsWith("#contatti")) {
+      e.preventDefault();
+      smoothScrollTo("#contatti");
+    }
+  };
+  return (
+    <a
+      href={href}
+      onClick={handleClick}
+      className="link-ghost text-sm"
+    >
+      {children}
+    </a>
+  );
+}
+
+function DesktopDropdown({
+  label,
+  items,
+  href,
+}: {
+  label: string;
+  items: { key: string; label: string; href: string }[];
+  href?: string;
+}) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div
+      className="relative flex items-center"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      {href ? (
+        <a
+          href={href}
+          onClick={() => setOpen(false)}
+          className="link-ghost flex items-center gap-1 text-sm"
+          aria-haspopup="menu"
+        >
+          {label}
+        </a>
+      ) : (
+        <button
+          type="button"
+          onClick={() => setOpen(!open)}
+          className="link-ghost flex items-center gap-1 text-sm"
+          aria-haspopup="menu"
+          aria-expanded={open}
+        >
+          {label}
+        </button>
+      )}
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        aria-label={`Apri menu ${label}`}
+        aria-expanded={open}
+        className="flex items-center justify-center p-0.5 text-foreground-muted hover:text-foreground"
+      >
+        <ChevronDown
+          className={cn("h-3 w-3 transition-transform duration-200", open && "rotate-180")}
+        />
+      </button>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            id="menu"
+            role="menu"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 8 }}
+            transition={{ duration: 0.2 }}
+            className="absolute top-full left-0 mt-2 w-56 rounded-lg border border-border bg-background/95 p-2 shadow-lg backdrop-blur-md"
+          >
+            {items.map((item) => (
+              <a
+                key={item.key}
+                href={item.href}
+                className="block rounded-md px-3 py-2 text-sm text-foreground-muted hover:bg-surface hover:text-foreground"
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+interface MobileNavItem {
+  key: string;
+  label: string;
+  href?: string;
+  children?: MobileNavItem[];
+}
+
+function MobileNav({
+  nav,
+  onNavigate,
+}: {
+  nav: MobileNavItem[];
+  onNavigate: (href: string) => void;
+}) {
+  const [openSub, setOpenSub] = useState<string | null>(null);
+
+  return (
+    <nav className="flex flex-1 flex-col gap-2 border-b border-border px-8">
+      {nav.map((item) => (
+        <div key={item.key} className="border-b border-border/30">
+          {item.children ? (
+            <>
+              <button
+                type="button"
+                onClick={() =>
+                  setOpenSub(openSub === item.key ? null : item.key)
+                }
+                className="flex w-full items-center justify-between border-b border-border/30 py-5 text-2xl font-semibold tracking-tight text-foreground"
+              >
+                <span>{item.label}</span>
+                <ChevronDown
+                  className={cn(
+                    "h-5 w-5 transition-transform duration-200",
+                    openSub === item.key && "rotate-180"
+                  )}
+                />
+              </button>
+              <AnimatePresence initial={false}>
+                {openSub === item.key && (
+                  <motion.div
+                    key="submenu"
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.25 }}
+                    className="overflow-hidden"
+                  >
+                    {item.children.map((child) => (
+                      <a
+                        key={child.key}
+                        href={child.href!}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          onNavigate(child.href!);
+                        }}
+                        className="block border-t border-border/30 py-4 text-xl font-medium text-foreground-muted hover:text-foreground"
+                      >
+                        {child.label}
+                      </a>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </>
+          ) : (
+            <a
+              href={item.href!}
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate(item.href!);
+              }}
+              className="block border-b border-border/30 py-5 text-2xl font-semibold tracking-tight text-foreground hover:text-accent"
+            >
+              {item.label}
+            </a>
+          )}
+        </div>
+      ))}
+    </nav>
   );
 }

@@ -16,7 +16,7 @@ export default async function LegalDoc({
   namespace,
 }: {
   locale: string;
-  namespace: "privacy" | "terms";
+  namespace: "privacy" | "terms" | "gdpr" | "cookiePolicy";
 }) {
   const t = await getTranslations({ locale, namespace });
   const messages = await getMessages({ locale });

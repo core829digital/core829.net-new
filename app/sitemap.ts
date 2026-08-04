@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/privacy-policy",
     "/termini-di-servizio",
+    "/gdpr",
+    "/cookie-policy",
     "/servizi",
     "/contatti",
     "/chi-siamo",
@@ -18,6 +20,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/careers",
     "/prezzi",
   ];
+
+  const serviceSlugs = [
+    "automations",
+    "webdesign",
+    "desktop",
+    "webapp",
+    "seo",
+    "delivery",
+    "ai",
+    "marketing",
+  ];
+
+  const servicePaths = serviceSlugs.map((slug) => `/servizi/${slug}`);
 
   const buildUrl = (locale: string, path: string) =>
     `${baseUrl}/${locale}${path === "/" ? "" : path}`;
@@ -41,11 +56,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     buildEntry(defaultLocale, path)
   );
 
+  const defaultServiceEntries = servicePaths.map((path) =>
+    buildEntry(defaultLocale, path)
+  );
+
   const localizedEntries = staticPaths.flatMap((path) =>
     locales
       .filter((locale) => locale !== defaultLocale)
       .map((locale) => buildEntry(locale, path))
   );
 
-  return [...defaultEntries, ...localizedEntries];
+  const localizedServiceEntries = servicePaths.flatMap((path) =>
+    locales
+      .filter((locale) => locale !== defaultLocale)
+      .map((locale) => buildEntry(locale, path))
+  );
+
+  return [
+    ...defaultEntries,
+    ...defaultServiceEntries,
+    ...localizedEntries,
+    ...localizedServiceEntries,
+  ];
 }

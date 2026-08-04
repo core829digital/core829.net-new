@@ -19,7 +19,8 @@
     "cta": "Solicită o consultanță",
     "blog": "Blog",
     "careers": "Cariere",
-    "pricing": "Prețuri"
+    "pricing": "Prețuri",
+    "informazioni": "Informații"
   },
   "hero": {
     "badge": "Nou: Setup AI Home-Made disponibil pentru IMM-uri",
@@ -448,7 +449,9 @@
     "colPricing": "Prețuri",
     "colBlog": "Blog",
     "companyAboutFull": "Despre noi",
-    "colCareers": "Cariere"
+    "colCareers": "Cariere",
+    "gdpr": "GDPR",
+    "cookiePolicy": "Politica de cookie-uri"
   },
   "privacy": {
     "title": "Politica de confidențialitate",
@@ -573,5 +576,73 @@
     "partnershipTitle": "Partnership",
     "partnershipDesc": "Custom agreement.",
     "cta": "Schedule a consultation"
+  },
+  "servicesDetail": {
+    "back": "Toate serviciile",
+    "whatIncluded": "Ce include",
+    "cta": "Solicită o consultație",
+    "allServices": "Toate serviciile",
+    "previous": "Serviciul anterior",
+    "next": "Următorul serviciu"
+  },
+  "gdpr": {
+    "title": "GDPR",
+    "intro": "Această pagină explică modul în care CORE829 SRL prelucrează datele personale în conformitate cu GDPR (Regulamentul UE 2016/679) și cu legislația română aplicabilă privind protecția datelor personale.",
+    "sections": [
+      {
+        "title": "1. Operator de date",
+        "body": "CORE829 SRL, cu sediul social în România, este operatorul de date pentru datele personale prelucrate prin acest site web și serviciile sale. Ne puteți contacta prin formularul de contact sau prin e-mail la hello@core829.net."
+      },
+      {
+        "title": "2. Datele pe care le prelucrăm",
+        "body": "Prelucrăm doar datele furnizate voluntar prin formularele noastre de contact și de cerere de ofertă: nume, e-mail, companie, servicii de interes, buget orientativ și conținutul mesajului dumneavoastră. Prelucrăm, de asemenea, date tehnice minime (adresa IP, tipul browserului) pentru securitatea și funcționarea site-ului."
+      },
+      {
+        "title": "3. Temeiul juridic al prelucrării",
+        "body": "Prelucrăm datele personale pe următoarele temeiuri juridice: consimțământul dumneavoastră (art. 6(1)(a) GDPR) pentru comunicări; executarea unui contract sau măsuri precontractuale (art. 6(1)(b) GDPR) pentru cererile de ofertă; interesul legitim (art. 6(1)(f) GDPR) pentru securitatea și îmbunătățirea site-ului."
+      },
+      {
+        "title": "4. Drepturile persoanei vizate",
+        "body": "În conformitate cu GDPR, aveți dreptul de acces, rectificare, ștergere, restricționare și portabilitate a datelor personale, precum și dreptul de a vă opune prelucrării. Aveți, de asemenea, dreptul de a vă retrage consimțământul în orice moment și de a depune o plângere la autoritatea de supraveghere competentă (ANSPDCP în România)."
+      },
+      {
+        "title": "5. Păstrarea datelor",
+        "body": "Datele personale colectate prin formulare sunt păstrate doar pentru perioada necesară pentru a răspunde solicitărilor și a gestiona orice relație contractuală, în conformitate cu termenele legale de păstrare."
+      },
+      {
+        "title": "6. Transferul datelor",
+        "body": "Nu transferăm date personale în afara Spațiului Economic European. Acolo unde furnizorii terți prelucrează date în numele nostru, aceștia sunt obligați prin acorduri adecvate de prelucrare a datelor."
+      },
+      {
+        "title": "7. Contact",
+        "body": "Pentru orice întrebare privind prelucrarea datelor dumneavoastră personale sau pentru exercitarea drepturilor, scrieți la hello@core829.net. Vom răspunde în termen de 30 de zile."
+      }
+    ]
+  },
+  "cookiePolicy": {
+    "title": "Politica de cookie-uri",
+    "intro": "Această politică de cookie-uri explică ce sunt cookie-urile și modul în care CORE829 SRL utilizează cookie-uri și tehnologii similare pe site-ul core829.net.",
+    "sections": [
+      {
+        "title": "1. Ce sunt cookie-urile",
+        "body": "Cookie-urile sunt fișiere text mici stocate pe dispozitivul dumneavoastră atunci când vizitați un site web. Acestea permit site-ului să vă rețină preferințele și să înțeleagă modul în care vizitatorii folosesc site-ul."
+      },
+      {
+        "title": "2. Cookie-urile pe care le utilizăm",
+        "body": "Utilizăm cookie-uri strict necesare pentru funcționarea site-ului și cookie-uri de preferință pentru a reține alegerea limbii. Putem utiliza cookie-uri de analiză pentru a măsura traficul și a îmbunătăți conținutul, cu consimțământul dumneavoastră."
+      },
+      {
+        "title": "3. Cookie-uri terțe",
+        "body": "Unele cookie-uri sunt setate de servicii terțe integrate în site, cum ar fi platformele de analiză și publicitate. Aceste terțe părți pot prelucra datele colectate conform propriilor politici de confidențialitate."
+      },
+      {
+        "title": "4. Gestionarea cookie-urilor",
+        "body": "Puteți gestiona sau șterge cookie-urile prin setările browserului dumneavoastră. Blocarea anumitor cookie-uri poate afecta funcționalitatea site-ului, cum ar fi reținerea preferinței de limbă."
+      },
+      {
+        "title": "5. Consimțământ",
+        "body": "Acolo unde cookie-urile nu sunt strict necesare, solicităm consimțământul dumneavoastră înainte de a le instala. Vă puteți modifica preferințele oricând prin ștergerea cookie-urilor browserului și revenirea pe site."
+      }
+    ]
   }
 }

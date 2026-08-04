@@ -181,7 +181,7 @@ export default function Footer() {
           <p className="text-xs text-foreground-muted">
             {t("rights", { year })}
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <Link
               href="/privacy-policy"
               className="text-xs text-foreground-muted transition-colors hover:text-accent"
@@ -193,6 +193,18 @@ export default function Footer() {
               className="text-xs text-foreground-muted transition-colors hover:text-accent"
             >
               {t("terms")}
+            </Link>
+            <Link
+              href="/gdpr"
+              className="text-xs text-foreground-muted transition-colors hover:text-accent"
+            >
+              {t("gdpr")}
+            </Link>
+            <Link
+              href="/cookie-policy"
+              className="text-xs text-foreground-muted transition-colors hover:text-accent"
+            >
+              {t("cookiePolicy")}
             </Link>
           </div>
         </div>

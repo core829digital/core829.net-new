@@ -19,7 +19,8 @@
     "cta": "预约咨询",
     "blog": "博客",
     "careers": "招聘",
-    "pricing": "定价"
+    "pricing": "定价",
+    "informazioni": "信息"
   },
   "hero": {
     "badge": "新品：Home-Made AI Setup 现已面向中小企业开放",
@@ -109,7 +110,9 @@
     "colPricing": "定价",
     "colBlog": "博客",
     "companyAboutFull": "关于我们",
-    "colCareers": "招聘"
+    "colCareers": "招聘",
+    "gdpr": "GDPR",
+    "cookiePolicy": "Cookie Policy"
   },
   "problem": {
     "kicker": "The problem",
@@ -526,5 +529,75 @@
     "partnershipTitle": "Partnership",
     "partnershipDesc": "Custom agreement.",
     "cta": "Schedule a consultation"
+  },
+  "servicesDetail": {
+    "back": "All services",
+    "whatIncluded": "What's included",
+    "cta": "Request a consultation",
+    "allServices": "View all services",
+    "previous": "Previous service",
+    "next": "Next service"
+  },
+  "gdpr": {
+    "title": "GDPR",
+    "updated": "Last updated: {date}",
+    "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
+    "sections": [
+      {
+        "title": "1. Data Controller",
+        "body": "CORE829 SRL, with registered office in Romania, is the data controller for the personal data processed through this website and its services. You can contact us through the contact form or by email at hello@core829.net."
+      },
+      {
+        "title": "2. Data we process",
+        "body": "We process only the data you provide voluntarily through our contact and quote request forms: name, email, company, services of interest, indicative budget and the content of your message. We also process minimal technical data (IP address, browser type) for the security and operation of the website."
+      },
+      {
+        "title": "3. Legal basis for processing",
+        "body": "We process personal data on the following legal bases: your consent (art. 6(1)(a) GDPR) for communications; the execution of a contract or pre-contractual measures (art. 6(1)(b) GDPR) for quote requests; legitimate interest (art. 6(1)(f) GDPR) for the security and improvement of the website."
+      },
+      {
+        "title": "4. Data subject rights",
+        "body": "Under the GDPR you have the right to access, rectify, erase, restrict and port your personal data, as well as the right to object to the processing. You also have the right to withdraw consent at any time and to lodge a complaint with the competent supervisory authority (ANSPDCP in Romania)."
+      },
+      {
+        "title": "5. Data retention",
+        "body": "Personal data collected through forms is retained only for the time necessary to respond to requests and manage any contractual relationship, in accordance with the legal retention periods."
+      },
+      {
+        "title": "6. Data transfers",
+        "body": "We do not transfer personal data outside the European Economic Area. Where third-party service providers process data on our behalf, they are bound by appropriate data processing agreements."
+      },
+      {
+        "title": "7. Contact",
+        "body": "For any question regarding the processing of your personal data, or to exercise your rights, write to hello@core829.net. We will respond within 30 days."
+      }
+    ]
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "updated": "Last updated: {date}",
+    "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
+    "sections": [
+      {
+        "title": "1. What are cookies",
+        "body": "Cookies are small text files stored on your device when you visit a website. They allow the website to remember your preferences and to understand how visitors use the site."
+      },
+      {
+        "title": "2. Cookies we use",
+        "body": "We use strictly necessary cookies for the functioning of the website and preferences cookies to remember your language choice. We may use analytics cookies to measure traffic and improve our content, where your consent has been obtained."
+      },
+      {
+        "title": "3. Third-party cookies",
+        "body": "Some cookies are set by third-party services integrated into the website, such as analytics and advertising platforms. These third parties may process the data collected according to their own privacy policies."
+      },
+      {
+        "title": "4. Managing cookies",
+        "body": "You can manage or delete cookies through your browser settings. Blocking certain cookies may affect the functionality of the website, such as remembering your language preference."
+      },
+      {
+        "title": "5. Consent",
+        "body": "Where cookies are not strictly necessary, we request your consent before installing them. You can change your preferences at any time by clearing your browser cookies and revisiting the website."
+      }
+    ]
   }
 }

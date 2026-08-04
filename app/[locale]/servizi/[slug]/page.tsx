@@ -1,0 +1,146 @@
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
+import { Check, ArrowLeft, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/Button";
+import { Link } from "@/i18n/navigation";
+import { SERVICES_META } from "@/lib/constants";
+
+interface PageProps {
+  params: Promise<{ locale: string; slug: string }>;
+}
+
+export function generateStaticParams() {
+  return SERVICES_META.map((service) => ({ slug: service.key }));
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const index = SERVICES_META.findIndex((s) => s.key === slug);
+  const tServices = await getTranslations({ locale, namespace: "solution.services" });
+
+  if (index === -1) {
+    return { title: `404 — CORE829` };
+  }
+
+  return {
+    title: `${tServices(`${index}.title`)} — CORE829`,
+    description: tServices(`${index}.desc`),
+  };
+}
+
+export default async function ServiceDetailPage({ params }: PageProps) {
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
+
+  const index = SERVICES_META.findIndex((s) => s.key === slug);
+
+  if (index === -1) {
+    return (
+      <main>
+        <section className="container-core829 py-24 lg:py-32">
+          <h1 className="text-section-title">404</h1>
+        </section>
+      </main>
+    );
+  }
+
+  const t = await getTranslations({ locale, namespace: "servicesDetail" });
+  const tServices = await getTranslations({ locale, namespace: "solution.services" });
+  const Icon = SERVICES_META[index].icon;
+  const prev = SERVICES_META[(index - 1 + SERVICES_META.length) % SERVICES_META.length];
+  const next = SERVICES_META[(index + 1) % SERVICES_META.length];
+
+  return (
+    <main>
+      <section className="container-core829 py-24 lg:py-32">
+        <Link
+          href="/servizi"
+          className="inline-flex items-center gap-2 text-sm text-foreground-muted transition-colors hover:text-accent"
+        >
+          <ArrowLeft className="h-4 w-4" aria-hidden />
+          {t("back")}
+        </Link>
+
+        <div className="mt-10 flex items-start gap-6">
+          <span className="flex h-16 w-16 shrink-0 items-center justify-center bg-foreground text-white">
+            <Icon className="h-7 w-7" aria-hidden />
+          </span>
+          <span className="font-mono text-sm tracking-widest text-foreground-muted">
+            0{index + 1}
+          </span>
+        </div>
+
+        <h1 className="mt-8 max-w-3xl text-section-title">
+          {tServices(`${index}.title`)}
+        </h1>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground-muted">
+          {tServices(`${index}.desc`)}
+        </p>
+
+        <div className="mt-16 max-w-3xl border-t border-border pt-10">
+          <h2 className="text-xl font-semibold tracking-tight">
+            {t("whatIncluded")}
+          </h2>
+          <ul className="mt-6 space-y-4">
+            {tServices
+              .raw(`${index}.bullets`)
+              .map((bullet: string, j: number) => (
+                <li
+                  key={j}
+                  className="flex items-start gap-3 text-foreground-muted"
+                >
+                  <Check className="mt-1 h-4 w-4 shrink-0 text-accent" aria-hidden />
+                  <span className="leading-relaxed">{bullet}</span>
+                </li>
+              ))}
+          </ul>
+        </div>
+
+        <div className="mt-14 flex flex-wrap gap-4">
+          <Button href="#contatti" variant="primary">
+            {t("cta")}
+          </Button>
+          <Button href="/servizi" variant="secondary">
+            {t("allServices")}
+          </Button>
+        </div>
+      </section>
+
+      <section className="border-t border-border bg-surface">
+        <div className="container-core829 flex flex-col gap-4 py-10 sm:flex-row sm:items-center sm:justify-between">
+          <Link
+            href={`/servizi/${prev.key}`}
+            className="group inline-flex items-center gap-3 text-sm text-foreground-muted transition-colors hover:text-foreground"
+          >
+            <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" aria-hidden />
+            <span>
+              <span className="block text-xs uppercase tracking-widest text-foreground-muted/70">
+                {t("previous")}
+              </span>
+              <span className="mt-1 block font-semibold">
+                {tServices(`${(index - 1 + SERVICES_META.length) % SERVICES_META.length}.title`)}
+              </span>
+            </span>
+          </Link>
+          <Link
+            href={`/servizi/${next.key}`}
+            className="group inline-flex items-center justify-end gap-3 text-right text-sm text-foreground-muted transition-colors hover:text-foreground"
+          >
+            <span>
+              <span className="block text-xs uppercase tracking-widest text-foreground-muted/70">
+                {t("next")}
+              </span>
+              <span className="mt-1 block font-semibold">
+                {tServices(`${(index + 1) % SERVICES_META.length}.title`)}
+              </span>
+            </span>
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden />
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+}

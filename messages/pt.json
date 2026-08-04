@@ -31,7 +31,9 @@
     ],
     "subtitle": "A CORE829 é uma agência digital que concebe e desenvolve webapps, automatizações de IA e plataformas à medida para empresas B2B e B2C. Qualidade enterprise, sem ruído.",
     "ctaPrimary": "Solicitar uma consultoria",
-    "ctaSecondary": "Ver como trabalhamos"
+    "ctaSecondary": "Ver como trabalhamos",
+    "serverCtaLabel": "Novo: servidores sob medida",
+    "serverCtaHint": "Com parceiros oficiais Intel e NVIDIA"
   },
   "trustedBy": {
     "label": "Com quem trabalhámos"
@@ -76,6 +78,18 @@
     "title": "Oito serviços, um único padrão de qualidade",
     "subtitle": "Da estratégia à produção, cada projeto é acompanhado in-house com uma carga de clientes deliberadamente limitada.",
     "services": [
+  {
+      "id": "server",
+      "title": "Servidores Personalizados",
+      "desc": "Servidores sob medida para qualquer necessidade: IA, renderização, armazenamento, gaming ou hospedagem. Gerimos todo o processo sob demanda — design, componentes e construção — com parceiros Intel e NVIDIA para qualidade enterprise garantida.",
+      "bullets": [
+        "Qualquer tipo de build e caso de uso",
+        "Componentes com parceiros Intel e NVIDIA",
+        "Gestão completa de design e construção",
+        "Garantia de satisfação a 360°",
+        "Envio na Europa e nas Américas"
+      ]
+  },
       {
         "id": "automations",
         "title": "Automatizações B2B",
@@ -585,7 +599,38 @@
     "partnershipCta": "Torne-se parceiro",
     "helloCta": "Pedir mais informações"
   },
-  "servicesDetail": {
+  "serverPage": {
+    "kicker": "Novo serviço",
+    "title": "Servidores sob medida, geridos por nós do início ao fim",
+    "subtitle": "Precisa de um servidor para IA, renderização, armazenamento, gaming ou hospedagem? Nós não produzimos nem enviamos diretamente: gerimos todo o processo por si. Sob seu pedido projetamos o build, selecionamos componentes, supervisionamos a construção e garantimos que receba exatamente o produto que deseja. É assim que construímos confiança.",
+    "manageKicker": "Como funciona",
+    "manageTitle": "Você escolhe, nós gerimos tudo",
+    "manageIntro": "O nosso papel é garantir o resultado: não somos uma fábrica, somos o parceiro que orquestra cada etapa para que você obtenha o que quer, sem surpresas.",
+    "step1Title": "Você solicita",
+    "step1Desc": "Conte-nos sobre o caso de uso, a carga de trabalho e o orçamento. Mesmo apenas uma ideia: nós o guiamos na definição.",
+    "step2Title": "Projetamos o build",
+    "step2Desc": "Definimos configuração, componentes e desempenho-alvo. Com os parceiros Intel e NVIDIA, cada escolha é enterprise-grade.",
+    "step3Title": "A produção é gerida por nós",
+    "step3Desc": "Não construímos nós mesmos: coordenamos os nossos parceiros de produção para que o build seja realizado conforme as especificações acordadas.",
+    "step4Title": "Você recebe exatamente o que quer",
+    "step4Desc": "Verificamos qualidade e testes antes de o produto chegar até si. Se algo estiver errado, nós corrigimos. Sem compromissos.",
+    "partnersTitle": "Porquê Intel e NVIDIA",
+    "partnersIntro": "Confiámos na Intel e na NVIDIA porque são a referência absoluta em desempenho, estabilidade e longevidade. Mas a nossa vantagem é mais ampla: trabalhamos com um ecossistema de parceiros que nos permite cobrir as necessidades do cliente a 360°.",
+    "partner360Title": "Um ecossistema de parceiros para a satisfação do cliente",
+    "partner360Desc": "Servidores, componentes, arrefecimento, armazenamento, networking: cada necessidade é coberta por um parceiro especializado que nos ajuda a garantir a sua satisfação. É esta rede que nos permite prometer — e cumprir — um resultado completo.",
+    "intelTitle": "Intel",
+    "intelDesc": "Processadores com o poder multiplataforma mais difundido do mundo: fiabilidade e desempenho constante em IA, computação e uso diário.",
+    "nvidiaTitle": "NVIDIA",
+    "nvidiaDesc": "As GPUs mais procuradas para IA e renderização: a plataforma padrão para acelerar as cargas de trabalho mais pesadas.",
+    "scopeTitle": "Um único limite, dito com clareza",
+    "scopeDesc": "Para garantir qualidade e suporte constantes, enviamos apenas na Europa e nas Américas. Se o seu servidor tiver de ir para outro lugar, infelizmente não podemos avançar.",
+    "carouselTitle": "Do design à entrega",
+    "carouselIntro": "Cada servidor segue o mesmo caminho: pedido, design, build gerido e verificação final antes da entrega.",
+    "ctaTitle": "Conte-nos sobre o seu projeto",
+    "ctaDesc": "Partilhe o seu caso de uso: propomos a configuração certa, com orçamento claro e prazos fiáveis.",
+    "ctaButton": "Solicitar uma consulta"
+  },
+"servicesDetail": {
     "back": "Todos os serviços",
     "whatIncluded": "O que está incluído",
     "cta": "Solicitar uma consulta",

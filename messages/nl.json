@@ -31,7 +31,9 @@
     ],
     "subtitle": "CORE829 is een digitaal bureau dat maatwerk webapps, AI-automatiseringen en platforms ontwerpt en ontwikkelt voor B2B- en B2C-bedrijven. Enterprise-kwaliteit, zonder ruis.",
     "ctaPrimary": "Vraag een consultatie aan",
-    "ctaSecondary": "Bekijk hoe we werken"
+    "ctaSecondary": "Bekijk hoe we werken",
+    "serverCtaLabel": "Nieuw: maatwerk servers",
+    "serverCtaHint": "Met officiële Intel- en NVIDIA-partners"
   },
   "trustedBy": {
     "label": "Met wie we hebben gewerkt"
@@ -76,6 +78,18 @@
     "title": "Acht diensten, één kwaliteitsstandaard",
     "subtitle": "Van strategie tot productie wordt elk project in-house begeleid, met een bewust beperkt aantal klanten.",
     "services": [
+  {
+      "id": "server",
+      "title": "Maatwerk Servers",
+      "desc": "Maatwerk servers voor elke behoefte: AI, rendering, opslag, gaming of hosting. We beheren het hele proces op aanvraag — ontwerp, componenten en bouw — met Intel- en NVIDIA-partners voor gegarandeerde enterprise-kwaliteit.",
+      "bullets": [
+        "Elk type build en gebruiksscenario",
+        "Componenten via Intel- en NVIDIA-partners",
+        "Volledig beheer van ontwerp en bouw",
+        "360° tevredenheidsgarantie",
+        "Verzending in Europa en Amerika"
+      ]
+  },
       {
         "id": "automations",
         "title": "B2B-automatiseringen",
@@ -585,7 +599,38 @@
     "partnershipCta": "Word partner",
     "helloCta": "Vraag meer informatie"
   },
-  "servicesDetail": {
+  "serverPage": {
+    "kicker": "Nieuwe dienst",
+    "title": "Maatwerk servers, door ons van begin tot eind beheerd",
+    "subtitle": "Heb je een server nodig voor AI, rendering, opslag, gaming of hosting? Wij produceren en verzenden niet direct: we beheren het hele proces voor jou. Op jouw verzoek ontwerpen we de build, selecteren we componenten, coördineren we de bouw en zorgen we ervoor dat je precies het product krijgt dat je wilt. Zo bouwen we vertrouwen op.",
+    "manageKicker": "Zo werkt het",
+    "manageTitle": "Jij kiest, wij beheren alles",
+    "manageIntro": "Onze rol is het resultaat te garanderen: we zijn geen fabriek, we zijn de partner die elke stap orkestreert zodat je krijgt wat je wilt, zonder verrassingen.",
+    "step1Title": "Jij vraagt aan",
+    "step1Desc": "Vertel ons over de use case, de workload en het budget. Zelfs alleen een idee: wij begeleiden je bij de definitie.",
+    "step2Title": "We ontwerpen de build",
+    "step2Desc": "We bepalen configuratie, componenten en doelprestaties. Met Intel- en NVIDIA-partners is elke keuze enterprise-grade.",
+    "step3Title": "De productie beheren wij",
+    "step3Desc": "We bouwen niet zelf: we coördineren onze productiepartners zodat de build volgens de afgesproken specificaties wordt gerealiseerd.",
+    "step4Title": "Je krijgt precies wat je wilt",
+    "step4Desc": "We controleren kwaliteit en tests voordat het product bij je aankomt. Klopt er iets niet, dan lossen wij het op. Geen compromissen.",
+    "partnersTitle": "Waarom Intel en NVIDIA",
+    "partnersIntro": "We vertrouwen op Intel en NVIDIA omdat ze de absolute maatstaf zijn voor prestaties, stabiliteit en levensduur. Maar ons voordeel is breder: we werken met een ecosysteem van partners waarmee we de behoeften van de klant 360° kunnen dekken.",
+    "partner360Title": "Een partnerecosysteem voor klanttevredenheid",
+    "partner360Desc": "Servers, componenten, koeling, opslag, netwerk: elke behoefte wordt gedekt door een gespecialiseerde partner die helpt jouw tevredenheid te garanderen. Dit netwerk stelt ons in staat een volledig resultaat te beloven — en te leveren.",
+    "intelTitle": "Intel",
+    "intelDesc": "Processors met de meest wijdverspreide multiplatform-kracht ter wereld: betrouwbaarheid en constante doorvoer in AI, rekenwerk en dagelijks gebruik.",
+    "nvidiaTitle": "NVIDIA",
+    "nvidiaDesc": "De meest gevraagde GPU's voor AI en rendering: het standaardplatform om de zwaarste workloads te versnellen.",
+    "scopeTitle": "Eén enkele grens, duidelijk gesteld",
+    "scopeDesc": "Om je constante kwaliteit en ondersteuning te garanderen, verzenden we alleen binnen Europa en Amerika. Moet je server elders naartoe, dan kunnen we helaas niet doorgaan.",
+    "carouselTitle": "Van ontwerp tot levering",
+    "carouselIntro": "Elke server volgt hetzelfde pad: aanvraag, ontwerp, beheerde build en definitieve controle vóór levering.",
+    "ctaTitle": "Vertel ons over je project",
+    "ctaDesc": "Deel je use case: we stellen de juiste configuratie voor, met een duidelijke offerte en betrouwbare planning.",
+    "ctaButton": "Een consult aanvragen"
+  },
+"servicesDetail": {
     "back": "Alle diensten",
     "whatIncluded": "Wat is inbegrepen",
     "cta": "Advies aanvragen",

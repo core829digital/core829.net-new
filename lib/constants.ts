@@ -24,6 +24,7 @@ export interface ServiceMeta {
  * Gli anchor id permettono al footer di puntare alle singole card.
  */
 export const SERVICES_META: ServiceMeta[] = [
+  { key: "server", anchorId: "servizio-server", icon: Server },
   { key: "automations", anchorId: "servizio-automazioni", icon: Workflow },
   { key: "webdesign", anchorId: "servizio-webdesign", icon: PenTool },
   { key: "desktop", anchorId: "servizio-desktop", icon: Terminal },

@@ -31,7 +31,9 @@
     ],
     "subtitle": "CORE829 ist eine Digitalagentur, die maßgeschneiderte Web-Apps, KI-Automatisierungen und Plattformen für B2B- und B2C-Unternehmen entwirft und entwickelt. Enterprise-Qualität, ohne Lärm.",
     "ctaPrimary": "Beratung anfragen",
-    "ctaSecondary": "So arbeiten wir"
+    "ctaSecondary": "So arbeiten wir",
+    "serverCtaLabel": "Neu: maßgeschneiderte Server",
+    "serverCtaHint": "Mit offiziellen Intel- und NVIDIA-Partnern"
   },
   "trustedBy": {
     "label": "Mit wem wir gearbeitet haben"
@@ -76,6 +78,18 @@
     "title": "Acht Leistungen, ein einziger Qualitätsstandard",
     "subtitle": "Von der Strategie bis zur Produktion wird jedes Projekt in-house betreut, mit bewusst begrenzter Kundenanzahl.",
     "services": [
+  {
+      "id": "server",
+      "title": "Individuelle Server",
+      "desc": "Maßgeschneiderte Server für jeden Bedarf: KI, Rendering, Speicher, Gaming oder Hosting. Wir verwalten den gesamten Prozess auf Anfrage — Design, Komponenten und Bau — mit Intel- und NVIDIA-Partnern für garantierte Enterprise-Qualität.",
+      "bullets": [
+        "Jeder Build-Typ und Anwendungsfall",
+        "Komponenten über Intel- und NVIDIA-Partner",
+        "Vollständige Design- und Build-Verwaltung",
+        "360°-Zufriedenheitsgarantie",
+        "Versand in Europa und Amerika"
+      ]
+  },
       {
         "id": "automations",
         "title": "B2B-Automatisierungen",
@@ -585,7 +599,38 @@
     "partnershipCta": "Partner werden",
     "helloCta": "Weitere Informationen anfragen"
   },
-  "servicesDetail": {
+  "serverPage": {
+    "kicker": "Neuer Service",
+    "title": "Maßgeschneiderte Server, von uns von Anfang bis Ende gemanagt",
+    "subtitle": "Brauchst du einen Server für KI, Rendering, Speicher, Gaming oder Hosting? Wir produzieren und liefern nicht selbst: Wir verwalten den gesamten Prozess für dich. Auf deine Anfrage hin entwerfen wir den Build, wählen Komponenten aus, betreuen die Fertigung und stellen sicher, dass du genau das Produkt erhältst, das du willst. So schaffen wir Vertrauen.",
+    "manageKicker": "So funktioniert es",
+    "manageTitle": "Du wählst, wir managen alles",
+    "manageIntro": "Unsere Aufgabe ist es, das Ergebnis zu garantieren: Wir sind keine Fabrik, sondern der Partner, der jeden Schritt orchestriert, damit du ohne Überraschungen bekommst, was du willst.",
+    "step1Title": "Du forderst an",
+    "step1Desc": "Erzähl uns vom Anwendungsfall, Workload und Budget. Auch nur eine Idee genügt: Wir begleiten dich bei der Definition.",
+    "step2Title": "Wir entwerfen den Build",
+    "step2Desc": "Wir definieren Konfiguration, Komponenten und Zielperformance. Mit Intel- und NVIDIA-Partnern ist jede Wahl Enterprise-grade.",
+    "step3Title": "Die Produktion managen wir",
+    "step3Desc": "Wir bauen nicht selbst: Wir koordinieren unsere Produktionspartner, damit der Build nach den vereinbarten Spezifikationen umgesetzt wird.",
+    "step4Title": "Du bekommst genau das, was du willst",
+    "step4Desc": "Wir prüfen Qualität und Tests, bevor das Produkt bei dir ankommt. Wenn etwas nicht stimmt, beheben wir es. Keine Kompromisse.",
+    "partnersTitle": "Warum Intel und NVIDIA",
+    "partnersIntro": "Wir setzen auf Intel und NVIDIA, weil sie der absolute Maßstab für Leistung, Stabilität und Langlebigkeit sind. Aber unser Vorteil ist größer: Wir arbeiten mit einem Ökosystem von Partnern, das es uns erlaubt, die Bedürfnisse des Kunden zu 360° abzudecken.",
+    "partner360Title": "Ein Partnernetzwerk für Kundenzufriedenheit",
+    "partner360Desc": "Server, Komponenten, Kühlung, Speicher, Netzwerk: Jedes Bedürfnis deckt ein spezialisierter Partner ab, der hilft, deine Zufriedenheit zu garantieren. Dieses Netzwerk ermöglicht es uns, ein vollständiges Ergebnis zu versprechen — und zu liefern.",
+    "intelTitle": "Intel",
+    "intelDesc": "Prozessoren mit der weltweit größten Multiplattform-Leistung: Zuverlässigkeit und konstante Durchsatzleistung in KI, Computing und Alltag.",
+    "nvidiaTitle": "NVIDIA",
+    "nvidiaDesc": "Die gefragtesten GPUs für KI und Rendering: die Standardplattform zur Beschleunigung der schwersten Workloads.",
+    "scopeTitle": "Eine einzige Grenze, klar benannt",
+    "scopeDesc": "Um dir gleichbleibende Qualität und Support zu garantieren, versenden wir nur innerhalb Europas und Amerikas. Soll dein Server woanders hin, können wir leider nicht fortfahren.",
+    "carouselTitle": "Vom Design bis zur Lieferung",
+    "carouselIntro": "Jeder Server durchläuft denselben Weg: Anfrage, Design, gemanagter Build und finale Prüfung vor der Lieferung.",
+    "ctaTitle": "Erzähl uns von deinem Projekt",
+    "ctaDesc": "Teile deinen Anwendungsfall: Wir schlagen die richtige Konfiguration vor, mit klarem Angebot und verlässlichen Zeitplänen.",
+    "ctaButton": "Beratung anfragen"
+  },
+"servicesDetail": {
     "back": "Alle Leistungen",
     "whatIncluded": "Was enthalten ist",
     "cta": "Beratung anfragen",

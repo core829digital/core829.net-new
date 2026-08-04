@@ -5,6 +5,7 @@ import { Check, ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
 import { SERVICES_META } from "@/lib/constants";
+import ServerServicePage from "@/components/services/ServerServicePage";
 
 interface PageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -52,6 +53,46 @@ export default async function ServiceDetailPage({ params }: PageProps) {
   const Icon = SERVICES_META[index].icon;
   const prev = SERVICES_META[(index - 1 + SERVICES_META.length) % SERVICES_META.length];
   const next = SERVICES_META[(index + 1) % SERVICES_META.length];
+
+  if (slug === "server") {
+    return (
+      <main>
+        <ServerServicePage />
+        <section className="border-t border-border bg-surface">
+          <div className="container-core829 flex flex-col gap-4 py-10 sm:flex-row sm:items-center sm:justify-between">
+            <Link
+              href={`/servizi/${prev.key}`}
+              className="group inline-flex items-center gap-3 text-sm text-foreground-muted transition-colors hover:text-foreground"
+            >
+              <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" aria-hidden />
+              <span>
+                <span className="block text-xs uppercase tracking-widest text-foreground-muted/70">
+                  {t("previous")}
+                </span>
+                <span className="mt-1 block font-semibold">
+                  {tServices(`${(index - 1 + SERVICES_META.length) % SERVICES_META.length}.title`)}
+                </span>
+              </span>
+            </Link>
+            <Link
+              href={`/servizi/${next.key}`}
+              className="group inline-flex items-center justify-end gap-3 text-right text-sm text-foreground-muted transition-colors hover:text-foreground"
+            >
+              <span>
+                <span className="block text-xs uppercase tracking-widest text-foreground-muted/70">
+                  {t("next")}
+                </span>
+                <span className="mt-1 block font-semibold">
+                  {tServices(`${(index + 1) % SERVICES_META.length}.title`)}
+                </span>
+              </span>
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden />
+            </Link>
+          </div>
+        </section>
+      </main>
+    );
+  }
 
   return (
     <main>

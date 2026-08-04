@@ -1,11 +1,12 @@
 "use client";
 
 import { useTranslations, useMessages } from "next-intl";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Server } from "lucide-react";
 import SplitWords from "@/components/animations/SplitWords";
 import CountUp from "@/components/animations/CountUp";
 import Badge from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
+import { Link } from "@/i18n/navigation";
 import ClientCarousel from "@/components/sections/ClientCarousel";
 import { TrustpilotWidget } from "@/components/Trustpilot";
 import { SocialLinks } from "@/components/SocialIcons";
@@ -66,6 +67,26 @@ export default function Hero() {
             <Button href="#metodo" variant="secondary">
               {t("ctaSecondary")}
             </Button>
+          </div>
+
+          <div className="mt-8">
+            <Link
+              href="/servizi/server"
+              className="group inline-flex items-center gap-4 border border-border bg-surface p-4 pr-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:shadow-lg"
+            >
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent">
+                <Server className="h-5 w-5" aria-hidden />
+              </span>
+              <span className="flex flex-col gap-0.5">
+                <span className="flex items-center gap-2 text-sm font-semibold text-foreground">
+                  {t("serverCtaLabel")}
+                  <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
+                </span>
+                <span className="text-xs text-foreground-muted">
+                  {t("serverCtaHint")}
+                </span>
+              </span>
+            </Link>
           </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-5 border-t border-border pt-8">

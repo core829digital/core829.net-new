@@ -31,7 +31,9 @@
     ],
     "subtitle": "CORE829 est une agence digitale qui conçoit et développe des webapps, des automatisations IA et des plateformes sur mesure pour les entreprises B2B et B2C. Qualité enterprise, sans bruit.",
     "ctaPrimary": "Demander une consultation",
-    "ctaSecondary": "Découvrir notre méthode"
+    "ctaSecondary": "Découvrir notre méthode",
+    "serverCtaLabel": "Nouveau : serveurs sur mesure",
+    "serverCtaHint": "Avec des partenaires officiels Intel et NVIDIA"
   },
   "trustedBy": {
     "label": "Avec qui nous avons travaillé"
@@ -76,6 +78,18 @@
     "title": "Huit services, un seul standard de qualité",
     "subtitle": "De la stratégie à la mise en production, chaque projet est géré en interne avec un nombre de clients volontairement limité.",
     "services": [
+  {
+      "id": "server",
+      "title": "Serveurs Personnalisés",
+      "desc": "Serveurs sur mesure pour tous les besoins : IA, rendu, stockage, gaming ou hébergement. Nous gérons tout le processus sur demande — conception, composants et construction — avec des partenaires Intel et NVIDIA pour une qualité enterprise garantie.",
+      "bullets": [
+        "Tout type de build et cas d'usage",
+        "Composants via les partenaires Intel et NVIDIA",
+        "Gestion complète de la conception et du build",
+        "Garantie de satisfaction à 360°",
+        "Expédition en Europe et en Amérique"
+      ]
+  },
       {
         "id": "automations",
         "title": "Automatisations B2B",
@@ -585,7 +599,38 @@
     "partnershipCta": "Devenir partenaire",
     "helloCta": "Demander plus d'informations"
   },
-  "servicesDetail": {
+  "serverPage": {
+    "kicker": "Nouveau service",
+    "title": "Serveurs sur mesure, gérés par nous du début à la fin",
+    "subtitle": "Besoin d'un serveur pour l'IA, le rendu, le stockage, le gaming ou l'hébergement ? Nous ne produisons ni n'expédions directement : nous gérons tout le processus pour vous. Sur votre demande, nous concevons le build, sélectionnons les composants, supervisons sa construction et veillons à ce que vous receviez exactement le produit souhaité. C'est ainsi que nous créons la confiance.",
+    "manageKicker": "Comment ça marche",
+    "manageTitle": "Vous choisissez, nous gérons tout",
+    "manageIntro": "Notre rôle est de garantir le résultat : nous ne sommes pas une usine, nous sommes le partenaire qui orchestre chaque étape pour que vous obteniez ce que vous voulez, sans surprise.",
+    "step1Title": "Vous demandez",
+    "step1Desc": "Parlez-nous du cas d'usage, de la charge de travail et du budget. Même une simple idée : nous vous guidons dans la définition.",
+    "step2Title": "Nous concevons le build",
+    "step2Desc": "Nous définissons configuration, composants et performances cibles. Avec les partenaires Intel et NVIDIA, chaque choix est de niveau enterprise.",
+    "step3Title": "La production est gérée par nous",
+    "step3Desc": "Nous ne construisons pas nous-mêmes : nous coordonnons nos partenaires producteurs pour que le build soit réalisé selon les spécifications convenues.",
+    "step4Title": "Vous recevez exactement ce que vous voulez",
+    "step4Desc": "Nous vérifions qualité et tests avant que le produit ne vous parvienne. Si quelque chose ne va pas, nous le corrigeons. Aucun compromis.",
+    "partnersTitle": "Pourquoi Intel et NVIDIA",
+    "partnersIntro": "Nous nous appuyons sur Intel et NVIDIA parce qu'ils sont la référence absolue en matière de performance, de stabilité et de longévité. Mais notre avantage est plus large : nous collaborons avec un écosystème de partenaires qui nous permet de couvrir les besoins du client à 360°.",
+    "partner360Title": "Un écosystème de partenaires pour la satisfaction client",
+    "partner360Desc": "Serveurs, composants, refroidissement, stockage, réseau : chaque besoin est couvert par un partenaire spécialisé qui nous aide à garantir votre satisfaction. C'est ce réseau qui nous permet de promettre — et de tenir — un résultat complet.",
+    "intelTitle": "Intel",
+    "intelDesc": "Des processeurs avec la puissance multiplateforme la plus répandue au monde : fiabilité et débit constant en IA, calcul et usage quotidien.",
+    "nvidiaTitle": "NVIDIA",
+    "nvidiaDesc": "Les GPU les plus demandées pour l'IA et le rendu : la plateforme standard pour accélérer les workloads les plus lourds.",
+    "scopeTitle": "Une seule limite, dite clairement",
+    "scopeDesc": "Pour vous garantir une qualité et un support constants, nous expédions uniquement en Europe et en Amérique. Si votre serveur doit aller ailleurs, nous ne pouvons malheureusement pas procéder.",
+    "carouselTitle": "De la conception à la livraison",
+    "carouselIntro": "Chaque serveur suit le même parcours : demande, conception, build géré et vérification finale avant la livraison.",
+    "ctaTitle": "Parlez-nous de votre projet",
+    "ctaDesc": "Partagez votre cas d'usage : nous proposons la configuration adaptée, avec un devis clair et des délais fiables.",
+    "ctaButton": "Demander une consultation"
+  },
+"servicesDetail": {
     "back": "Tous les services",
     "whatIncluded": "Ce qui est inclus",
     "cta": "Demander une consultation",

@@ -31,7 +31,9 @@
     ],
     "subtitle": "CORE829 este o agenție digitală care proiectează și dezvoltă webapp-uri, automatizări AI și platforme la comandă pentru companii B2B și B2C. Calitate enterprise, fără zgomot.",
     "ctaPrimary": "Solicită o consultanță",
-    "ctaSecondary": "Vezi cum lucrăm"
+    "ctaSecondary": "Vezi cum lucrăm",
+    "serverCtaLabel": "Nou: servere la cerere",
+    "serverCtaHint": "Cu parteneri oficiali Intel și NVIDIA"
   },
   "trustedBy": {
     "label": "Cu cine am lucrat"
@@ -76,6 +78,18 @@
     "title": "Opt servicii, un singur standard de calitate",
     "subtitle": "De la strategie la producție, fiecare proiect este gestionat intern, cu un număr de clienți deliberat limitat.",
     "services": [
+  {
+      "id": "server",
+      "title": "Servere Personalizate",
+      "desc": "Servere la cerere pentru orice nevoie: AI, randare, stocare, gaming sau hosting. Gestionăm întregul proces la cerere — proiectare, componente și construcție — cu parteneri Intel și NVIDIA pentru calitate enterprise garantată.",
+      "bullets": [
+        "Orice tip de build și scenariu de utilizare",
+        "Componente prin partenerii Intel și NVIDIA",
+        "Gestionare completă a proiectării și construcției",
+        "Garanție de satisfacție la 360°",
+        "Livrare în Europa și America"
+      ]
+  },
       {
         "id": "automations",
         "title": "Automatizări B2B",
@@ -585,7 +599,38 @@
     "partnershipCta": "Devino partener",
     "helloCta": "Solicită mai multe informații"
   },
-  "servicesDetail": {
+  "serverPage": {
+    "kicker": "Serviciu nou",
+    "title": "Servere la cerere, gestionate de noi de la început până la final",
+    "subtitle": "Ai nevoie de un server pentru AI, randare, stocare, gaming sau hosting? Noi nu producem și nu livrăm direct: gestionăm întregul proces pentru tine. La cererea ta proiectăm build-ul, selectăm componentele, coordonăm construcția și ne asigurăm că primești exact produsul pe care ți-l dorești. Așa construim încredere.",
+    "manageKicker": "Cum funcționează",
+    "manageTitle": "Tu alegi, noi gestionăm totul",
+    "manageIntro": "Rolul nostru este să garantăm rezultatul: nu suntem o fabrică, suntem partenerul care orchestrează fiecare pas pentru a obține exact ceea ce vrei, fără surprize.",
+    "step1Title": "Tu soliciți",
+    "step1Desc": "Spune-ne despre cazul de utilizare, sarcina de lucru și buget. Chiar și doar o idee: te ghidăm noi în definire.",
+    "step2Title": "Proiectăm build-ul",
+    "step2Desc": "Definim configurația, componentele și performanța țintă. Cu partenerii Intel și NVIDIA, fiecare alegere este de nivel enterprise.",
+    "step3Title": "Producția este gestionată de noi",
+    "step3Desc": "Nu construim noi: coordonăm partenerii noștri de producție pentru ca build-ul să fie realizat conform specificațiilor convenite.",
+    "step4Title": "Primești exact ceea ce îți dorești",
+    "step4Desc": "Verificăm calitatea și testele înainte ca produsul să ajungă la tine. Dacă ceva nu e în regulă, reparăm noi. Fără compromisuri.",
+    "partnersTitle": "De ce Intel și NVIDIA",
+    "partnersIntro": "Ne bazăm pe Intel și NVIDIA pentru că sunt reperul absolut în performanță, stabilitate și longevitate. Dar avantajul nostru este mai larg: lucrăm cu un ecosistem de parteneri care ne permite să acoperim nevoile clientului la 360°.",
+    "partner360Title": "Un ecosistem de parteneri pentru satisfacția clientului",
+    "partner360Desc": "Servere, componente, răcire, stocare, networking: fiecare nevoie este acoperită de un partener specializat care ne ajută să garantăm satisfacția ta. Această rețea ne permite să promitem — și să livrăm — un rezultat complet.",
+    "intelTitle": "Intel",
+    "intelDesc": "Procesoare cu cea mai răspândită putere multiplatformă din lume: fiabilitate și randament constant în AI, calcul și utilizare zilnică.",
+    "nvidiaTitle": "NVIDIA",
+    "nvidiaDesc": "Cele mai căutate GPU-uri pentru AI și randare: platforma standard pentru accelerarea celor mai grele sarcini de lucru.",
+    "scopeTitle": "O singură limită, spusă clar",
+    "scopeDesc": "Pentru a-ți garanta o calitate și un suport constante, livrăm doar în Europa și America. Dacă serverul tău trebuie să ajungă în altă parte, din păcate nu putem continua.",
+    "carouselTitle": "De la proiectare la livrare",
+    "carouselIntro": "Fiecare server urmează același drum: solicitare, proiectare, build gestionat și verificare finală înainte de livrare.",
+    "ctaTitle": "Spune-ne despre proiectul tău",
+    "ctaDesc": "Împărtășește-ne cazul tău de utilizare: propunem configurația potrivită, cu o ofertă clară și termene fiabile.",
+    "ctaButton": "Solicită o consultație"
+  },
+"servicesDetail": {
     "back": "Toate serviciile",
     "whatIncluded": "Ce include",
     "cta": "Solicită o consultație",

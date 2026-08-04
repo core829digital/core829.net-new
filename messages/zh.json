@@ -31,7 +31,9 @@
     ],
     "subtitle": "CORE829是一家数字代理公司，为B2B和B2C企业设计并开发定制Web应用、AI自动化与平台。企业级品质，无噪音。",
     "ctaPrimary": "预约咨询",
-    "ctaSecondary": "了解我们的工作方式"
+    "ctaSecondary": "了解我们的工作方式",
+    "serverCtaLabel": "New: custom servers",
+    "serverCtaHint": "With official Intel and NVIDIA partners"
   },
   "trustedBy": {
     "label": "我们曾合作过的客户"
@@ -139,6 +141,18 @@
     "title": "Eight services, one standard of quality",
     "subtitle": "From strategy to production, every project is handled in-house with a deliberately limited client load.",
     "services": [
+  {
+      "id": "server",
+      "title": "Custom Servers",
+      "desc": "Custom servers for any need: AI, rendering, storage, gaming or hosting. We manage the entire on-request process — design, components and build — with Intel and NVIDIA partners for guaranteed enterprise-grade quality.",
+      "bullets": [
+        "Any build type and use case",
+        "Components via Intel and NVIDIA partners",
+        "Full design and build management",
+        "360° satisfaction guarantee",
+        "Shipping across Europe and America"
+      ]
+  },
       {
         "id": "automations",
         "title": "B2B Automations",
@@ -538,7 +552,38 @@
     "partnershipCta": "Become a partner",
     "helloCta": "Ask for more info"
   },
-  "servicesDetail": {
+  "serverPage": {
+    "kicker": "New service",
+    "title": "Custom servers, managed by us from start to finish",
+    "subtitle": "Need a server for AI, rendering, storage, gaming or hosting? We don't produce or ship directly: we manage the entire process for you. On your request we design the build, select components, oversee its construction and make sure you receive exactly the product you want. That's how we build trust.",
+    "manageKicker": "How it works",
+    "manageTitle": "You choose, we manage everything",
+    "manageIntro": "Our job is to guarantee the outcome: we are not a factory, we are the partner who orchestrates every step so you get what you want, with no surprises.",
+    "step1Title": "You request",
+    "step1Desc": "Tell us about the use case, workload and budget. Even just an idea: we'll guide you through the definition.",
+    "step2Title": "We design the build",
+    "step2Desc": "We define configuration, components and target performance. With Intel and NVIDIA partners, every choice is enterprise-grade.",
+    "step3Title": "Production is managed by us",
+    "step3Desc": "We don't build ourselves: we coordinate our production partners so the build is realized to the agreed specifications.",
+    "step4Title": "You get exactly what you want",
+    "step4Desc": "We check quality and testing before the product reaches you. If something is off, we fix it. No compromises.",
+    "partnersTitle": "Why Intel and NVIDIA",
+    "partnersIntro": "We rely on Intel and NVIDIA because they are the absolute benchmark for performance, stability and longevity. But our advantage is broader: we work with an ecosystem of partners that lets us cover the client's needs 360°.",
+    "partner360Title": "A partner ecosystem for customer satisfaction",
+    "partner360Desc": "Servers, components, cooling, storage, networking: every need is covered by a specialized partner that helps us guarantee your satisfaction. It's this network that lets us promise — and deliver — a complete result.",
+    "intelTitle": "Intel",
+    "intelDesc": "Processors with the most widespread multiplatform power in the world: reliability and consistent throughput in AI, compute and daily use.",
+    "nvidiaTitle": "NVIDIA",
+    "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
+    "scopeTitle": "One single limit, stated clearly",
+    "scopeDesc": "To guarantee you consistent quality and support, we only ship within Europe and America. If your server must go elsewhere, we unfortunately cannot proceed.",
+    "carouselTitle": "From design to delivery",
+    "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
+    "ctaTitle": "Tell us about your project",
+    "ctaDesc": "Share your use case: we'll propose the right configuration, with a clear quote and reliable timelines.",
+    "ctaButton": "Request a consultation"
+  },
+"servicesDetail": {
     "back": "All services",
     "whatIncluded": "What's included",
     "cta": "Request a consultation",

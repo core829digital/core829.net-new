@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { smoothScrollTo } from "@/lib/scrollTo";
-import { serviceAnchorIds, clientAnchorIds, COMPANY } from "@/lib/constants";
+import { serviceAnchorIds, clientAnchorIds, COMPANY, EMAILS } from "@/lib/constants";
 import { SocialLinks } from "@/components/SocialIcons";
 import { TrustpilotWidget } from "@/components/Trustpilot";
 
@@ -17,6 +17,7 @@ const CLIENT_ANCHORS = clientAnchorIds;
  */
 export default function Footer() {
   const t = useTranslations("footer");
+  const tEmails = useTranslations("contactEmails");
   const tServices = useTranslations("solution.services");
   const tCaseStudies = useTranslations("caseStudies.projects");
   const year = new Date().getFullYear();
@@ -173,6 +174,40 @@ export default function Footer() {
             hello@core829.net
             <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
           </a>
+        </div>
+      </div>
+
+      {/* Email directory */}
+      <div className="border-t border-border">
+        <div className="container-core829 py-12">
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
+            <div className="max-w-sm">
+              <p className="tech-label">{tEmails("heading")}</p>
+              <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
+                {tEmails("intro")}
+              </p>
+            </div>
+            <ul className="grid flex-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {EMAILS.map(({ key, address }) => (
+                <li key={key}>
+                  <a
+                    href={`mailto:${address}`}
+                    className="group block h-full border border-border bg-background p-5 transition-colors duration-300 hover:border-accent"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-widest text-accent">
+                      {tEmails(`${key}.label`)}
+                    </span>
+                    <span className="mt-2 block break-all text-sm font-medium text-foreground">
+                      {address}
+                    </span>
+                    <span className="mt-2 block text-xs leading-relaxed text-foreground-muted">
+                      {tEmails(`${key}.desc`)}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
 

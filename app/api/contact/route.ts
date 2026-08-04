@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { LEAD_EMAIL } from "@/lib/constants";
 
 interface ContactPayload {
   name: string;
@@ -100,7 +101,7 @@ export async function POST(request: Request) {
     const resend = new Resend(apiKey);
     await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev",
-      to: process.env.CONTACT_RECIPIENT_EMAIL ?? email,
+      to: process.env.CONTACT_RECIPIENT_EMAIL ?? LEAD_EMAIL,
       subject: `Nuova richiesta da ${name}`,
       text: [
         `Nome: ${name}`,

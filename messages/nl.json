@@ -406,7 +406,9 @@
   "finalCta": {
     "title": "Heeft u een project in gedachten?",
     "subtitle": "Laten we praten. Vertel ons het probleem dat u wilt oplossen en we stellen een concrete oplossing voor.",
-    "cta": "Laten we over uw project praten"
+    "cta": "Laten we over uw project praten",
+    "existingClient": "Al een actieve klant?",
+    "projectsMail": "de projectafdeling antwoordt u rechtstreeks."
   },
   "contact": {
     "name": "Voor- en achternaam",
@@ -531,7 +533,9 @@
   "contactPage": {
     "kicker": "Contact",
     "title": "Let's build together",
-    "subtitle": "Start your project with a consultation."
+    "subtitle": "Start your project with a consultation.",
+    "existingClient": "Al klant?",
+    "projectsMail": "om te communiceren met de projectafdeling."
   },
   "aboutPage": {
     "kicker": "About",
@@ -575,7 +579,11 @@
     "retainerDesc": "Monthly engagement.",
     "partnershipTitle": "Partnership",
     "partnershipDesc": "Custom agreement.",
-    "cta": "Schedule a consultation"
+    "cta": "Schedule a consultation",
+    "contactSales": "Contacteer Sales",
+    "contactSalesHint": "Voor de aankoop van onze producten of grootschalige projecten kunt u rechtstreeks contact opnemen met ons salesteam.",
+    "partnershipCta": "Word partner",
+    "helloCta": "Vraag meer informatie"
   },
   "servicesDetail": {
     "back": "Alle diensten",
@@ -583,7 +591,9 @@
     "cta": "Advies aanvragen",
     "allServices": "Alle diensten bekijken",
     "previous": "Vorige dienst",
-    "next": "Volgende dienst"
+    "next": "Volgende dienst",
+    "existingClient": "Actieve klant?",
+    "projectsMail": "Neem contact op met de projectafdeling om uw project te volgen en updates aan te vragen."
   },
   "gdpr": {
     "title": "AVG",
@@ -644,5 +654,29 @@
         "body": "Waar cookies niet strikt noodzakelijk zijn, vragen wij uw toestemming voordat wij ze installeren. U kunt uw voorkeuren op elk moment wijzigen door de browsercookies te wissen en de website opnieuw te bezoeken."
       }
     ]
+  },
+  "contactEmails": {
+    "heading": "Contact",
+    "intro": "Kies de mailbox die past bij uw aanvraag. We antwoorden binnen 24–48 werkuren.",
+    "hello": {
+      "label": "Klantenservice",
+      "desc": "Voor algemene vragen, informatieverzoeken en ondersteuning over de website en onze diensten."
+    },
+    "office": {
+      "label": "Kantoor CORE829",
+      "desc": "Voor administratieve, facturerings- en bedrijfszaken."
+    },
+    "partnerships": {
+      "label": "Partnerships",
+      "desc": "Voor bureaus, resellers en bedrijven die met ons willen samenwerken."
+    },
+    "sales": {
+      "label": "Verkoop",
+      "desc": "Voor de aankoop van onze producten of grote projecten. Ons team stelt een op maat gemaakt voorstel op."
+    },
+    "projects": {
+      "label": "Projecten",
+      "desc": "Voor actieve klanten: de projectafdeling communiceert vanaf dit adres."
+    }
   }
 }

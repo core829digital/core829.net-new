@@ -23,6 +23,7 @@ export default async function ChiSiamoPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "aboutPage" });
+  const tEmails = await getTranslations({ locale, namespace: "contactEmails" });
 
   return (
     <main>
@@ -55,6 +56,37 @@ export default async function ChiSiamoPage({
               ))}
             </ul>
           </div>
+        </div>
+
+        <div className="mt-16 grid gap-8 md:grid-cols-2">
+          <a
+            href="mailto:hello@core829.net"
+            className="group border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent"
+          >
+            <span className="block text-xs font-semibold uppercase tracking-widest text-accent">
+              {tEmails("hello.label")}
+            </span>
+            <span className="mt-2 block break-all text-sm font-medium text-foreground">
+              hello@core829.net
+            </span>
+            <span className="mt-2 block text-sm leading-relaxed text-foreground-muted">
+              {tEmails("hello.desc")}
+            </span>
+          </a>
+          <a
+            href="mailto:office@core829.net"
+            className="group border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent"
+          >
+            <span className="block text-xs font-semibold uppercase tracking-widest text-accent">
+              {tEmails("office.label")}
+            </span>
+            <span className="mt-2 block break-all text-sm font-medium text-foreground">
+              office@core829.net
+            </span>
+            <span className="mt-2 block text-sm leading-relaxed text-foreground-muted">
+              {tEmails("office.desc")}
+            </span>
+          </a>
         </div>
       </section>
     </main>

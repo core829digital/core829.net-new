@@ -406,7 +406,9 @@
   "finalCta": {
     "title": "Ai un proiect în minte?",
     "subtitle": "Să vorbim. Spune-ne problema pe care vrei să o rezolvi și îți propunem o soluție concretă.",
-    "cta": "Să vorbim despre proiectul tău"
+    "cta": "Să vorbim despre proiectul tău",
+    "existingClient": "Ești deja un client activ?",
+    "projectsMail": "departamentul de proiecte îți răspunde direct."
   },
   "contact": {
     "name": "Nume și prenume",
@@ -531,7 +533,9 @@
   "contactPage": {
     "kicker": "Contact",
     "title": "Let's build together",
-    "subtitle": "Start your project with a consultation."
+    "subtitle": "Start your project with a consultation.",
+    "existingClient": "Ești deja client?",
+    "projectsMail": "pentru a comunica cu departamentul de proiecte."
   },
   "aboutPage": {
     "kicker": "About",
@@ -575,7 +579,11 @@
     "retainerDesc": "Monthly engagement.",
     "partnershipTitle": "Partnership",
     "partnershipDesc": "Custom agreement.",
-    "cta": "Schedule a consultation"
+    "cta": "Schedule a consultation",
+    "contactSales": "Contactează Vânzările",
+    "contactSalesHint": "Pentru achiziționarea produselor noastre sau a proiectelor la scară largă, contactează direct echipa de vânzări.",
+    "partnershipCta": "Devino partener",
+    "helloCta": "Solicită mai multe informații"
   },
   "servicesDetail": {
     "back": "Toate serviciile",
@@ -583,7 +591,9 @@
     "cta": "Solicită o consultație",
     "allServices": "Toate serviciile",
     "previous": "Serviciul anterior",
-    "next": "Următorul serviciu"
+    "next": "Următorul serviciu",
+    "existingClient": "Client activ?",
+    "projectsMail": "Contactează departamentul de proiecte pentru a urmări proiectul tău și a solicita actualizări."
   },
   "gdpr": {
     "title": "GDPR",
@@ -644,5 +654,29 @@
         "body": "Acolo unde cookie-urile nu sunt strict necesare, solicităm consimțământul dumneavoastră înainte de a le instala. Vă puteți modifica preferințele oricând prin ștergerea cookie-urilor browserului și revenirea pe site."
       }
     ]
+  },
+  "contactEmails": {
+    "heading": "Contact",
+    "intro": "Alegeți căsuța care se potrivește cererii dumneavoastră. Răspundem în 24–48 de ore lucrătoare.",
+    "hello": {
+      "label": "Suport clienți",
+      "desc": "Pentru întrebări generale, solicitări de informații și suport privind site-ul și serviciile."
+    },
+    "office": {
+      "label": "Oficiu CORE829",
+      "desc": "Pentru probleme administrative, de facturare și corporative."
+    },
+    "partnerships": {
+      "label": "Parteneriate",
+      "desc": "Pentru agenții, revânzători și companii care doresc să colaboreze cu noi."
+    },
+    "sales": {
+      "label": "Vânzări",
+      "desc": "Pentru achiziționarea produselor noastre sau a proiectelor mari. Echipa noastră va pregăti o propunere personalizată."
+    },
+    "projects": {
+      "label": "Proiecte",
+      "desc": "Pentru clienții activi: departamentul de proiecte comunică de la această adresă."
+    }
   }
 }

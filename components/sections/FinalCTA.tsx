@@ -23,6 +23,20 @@ export default function FinalCTA() {
 
         <RevealOnScroll className="mt-14 max-w-2xl">
           <ContactForm />
+          <div className="mt-8 border-t border-border pt-6">
+            <p className="text-sm font-semibold text-foreground">
+              {t("existingClient")}
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
+              <a
+                href="mailto:projects@core829.net"
+                className="font-medium text-foreground underline decoration-accent/50 underline-offset-4 transition-colors hover:text-accent"
+              >
+                projects@core829.net
+              </a>{" "}
+              — {t("projectsMail")}
+            </p>
+          </div>
         </RevealOnScroll>
       </div>
     </section>

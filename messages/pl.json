@@ -67,7 +67,9 @@
   "finalCta": {
     "title": "Masz projekt w głowie?",
     "subtitle": "Porozmawiajmy. Opowiedz nam o problemie, który chcesz rozwiązać, a zaproponujemy konkretne rozwiązanie.",
-    "cta": "Porozmawiajmy o Twoim projekcie"
+    "cta": "Porozmawiajmy o Twoim projekcie",
+    "existingClient": "Already an active client?",
+    "projectsMail": "the projects department answers you directly."
   },
   "contact": {
     "name": "Imię i nazwisko",
@@ -484,7 +486,9 @@
   "contactPage": {
     "kicker": "Contact",
     "title": "Let's build together",
-    "subtitle": "Start your project with a consultation."
+    "subtitle": "Start your project with a consultation.",
+    "existingClient": "Already a client?",
+    "projectsMail": "to communicate with the projects department."
   },
   "aboutPage": {
     "kicker": "About",
@@ -528,7 +532,11 @@
     "retainerDesc": "Monthly engagement.",
     "partnershipTitle": "Partnership",
     "partnershipDesc": "Custom agreement.",
-    "cta": "Schedule a consultation"
+    "cta": "Schedule a consultation",
+    "contactSales": "Contact Sales",
+    "contactSalesHint": "For the purchase of our products or large-scale projects, contact our sales team directly.",
+    "partnershipCta": "Become a partner",
+    "helloCta": "Ask for more info"
   },
   "servicesDetail": {
     "back": "All services",
@@ -536,7 +544,9 @@
     "cta": "Request a consultation",
     "allServices": "View all services",
     "previous": "Previous service",
-    "next": "Next service"
+    "next": "Next service",
+    "existingClient": "Active client?",
+    "projectsMail": "Contact the projects department to track your project and request updates."
   },
   "gdpr": {
     "title": "GDPR",
@@ -599,5 +609,29 @@
         "body": "Where cookies are not strictly necessary, we request your consent before installing them. You can change your preferences at any time by clearing your browser cookies and revisiting the website."
       }
     ]
+  },
+  "contactEmails": {
+    "heading": "Contact",
+    "intro": "Choose the mailbox that fits your request. We reply within 24–48 working hours.",
+    "hello": {
+      "label": "Customer support",
+      "desc": "For general questions, requests for information and support on the website and our services."
+    },
+    "office": {
+      "label": "Office CORE829",
+      "desc": "For administrative, billing and corporate matters."
+    },
+    "partnerships": {
+      "label": "Partnerships",
+      "desc": "For agencies, resellers and companies that want to collaborate with us."
+    },
+    "sales": {
+      "label": "Sales",
+      "desc": "For purchasing our products or large projects. Our team will prepare a tailored proposal."
+    },
+    "projects": {
+      "label": "Projects",
+      "desc": "For active clients: the project department communicates from this address."
+    }
   }
 }

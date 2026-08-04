@@ -107,6 +107,19 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             {t("allServices")}
           </Button>
         </div>
+
+        <p className="mt-8 text-sm text-foreground-muted">
+          <span className="font-semibold text-foreground">
+            {t("existingClient")}
+          </span>{" "}
+          <a
+            href="mailto:projects@core829.net"
+            className="font-medium text-foreground underline decoration-accent/50 underline-offset-4 transition-colors hover:text-accent"
+          >
+            projects@core829.net
+          </a>{" "}
+          — {t("projectsMail")}
+        </p>
       </section>
 
       <section className="border-t border-border bg-surface">

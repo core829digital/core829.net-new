@@ -406,7 +406,9 @@
   "finalCta": {
     "title": "Haben Sie ein Projekt im Kopf?",
     "subtitle": "Sprechen wir darüber. Erzählen Sie uns das Problem, das Sie lösen wollen, und wir schlagen eine konkrete Lösung vor.",
-    "cta": "Sprechen wir über Ihr Projekt"
+    "cta": "Sprechen wir über Ihr Projekt",
+    "existingClient": "Bereits aktiver Kunde?",
+    "projectsMail": "die Projektabteilung antwortet Ihnen direkt."
   },
   "contact": {
     "name": "Vor- und Nachname",
@@ -531,7 +533,9 @@
   "contactPage": {
     "kicker": "Contact",
     "title": "Let's build together",
-    "subtitle": "Start your project with a consultation."
+    "subtitle": "Start your project with a consultation.",
+    "existingClient": "Bereits Kunde?",
+    "projectsMail": "um mit der Projektabteilung zu kommunizieren."
   },
   "aboutPage": {
     "kicker": "About",
@@ -575,7 +579,11 @@
     "retainerDesc": "Monthly engagement.",
     "partnershipTitle": "Partnership",
     "partnershipDesc": "Custom agreement.",
-    "cta": "Schedule a consultation"
+    "cta": "Schedule a consultation",
+    "contactSales": "Vertrieb kontaktieren",
+    "contactSalesHint": "Für den Kauf unserer Produkte oder größerer Projekte kontaktieren Sie direkt unser Vertriebsteam.",
+    "partnershipCta": "Partner werden",
+    "helloCta": "Weitere Informationen anfragen"
   },
   "servicesDetail": {
     "back": "Alle Leistungen",
@@ -583,7 +591,9 @@
     "cta": "Beratung anfragen",
     "allServices": "Alle Leistungen anzeigen",
     "previous": "Vorherige Leistung",
-    "next": "Nächste Leistung"
+    "next": "Nächste Leistung",
+    "existingClient": "Aktiver Kunde?",
+    "projectsMail": "Kontaktieren Sie die Projektabteilung, um Ihr Projekt zu verfolgen und Updates anzufordern."
   },
   "gdpr": {
     "title": "DSGVO",
@@ -644,5 +654,29 @@
         "body": "Soweit Cookies nicht unbedingt erforderlich sind, holen wir vor ihrer Installation Ihre Einwilligung ein. Sie können Ihre Präferenzen jederzeit ändern, indem Sie die Browser-Cookies löschen und die Website erneut besuchen."
       }
     ]
+  },
+  "contactEmails": {
+    "heading": "Kontakt",
+    "intro": "Wählen Sie das Postfach, das zu Ihrer Anfrage passt. Wir antworten innerhalb von 24–48 Arbeitsstunden.",
+    "hello": {
+      "label": "Kundensupport",
+      "desc": "Für allgemeine Fragen, Informationsanfragen und Support zu Website und Leistungen."
+    },
+    "office": {
+      "label": "Büro CORE829",
+      "desc": "Für administrative, Abrechnungs- und Unternehmensangelegenheiten."
+    },
+    "partnerships": {
+      "label": "Partnerschaften",
+      "desc": "Für Agenturen, Reseller und Unternehmen, die mit uns zusammenarbeiten möchten."
+    },
+    "sales": {
+      "label": "Vertrieb",
+      "desc": "Für den Kauf unserer Produkte oder größerer Projekte. Unser Team erstellt ein maßgeschneidertes Angebot."
+    },
+    "projects": {
+      "label": "Projekte",
+      "desc": "Für aktive Kunden: Die Projektabteilung kommuniziert von dieser Adresse."
+    }
   }
 }

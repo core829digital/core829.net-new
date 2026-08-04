@@ -110,6 +110,21 @@ export const COMPANY = {
   email: "hello@core829.net",
 };
 
+/**
+ * Caselle di posta aziendali, ciascuna pensata per uno scenario di contatto.
+ * `key` coincide con la chiave i18n (contactEmails.<key>.label / .desc).
+ */
+export const EMAILS = [
+  { key: "hello", address: "hello@core829.net" },
+  { key: "office", address: "office@core829.net" },
+  { key: "partnerships", address: "partnerships@core829.net" },
+  { key: "sales", address: "sales@core829.net" },
+  { key: "projects", address: "projects@core829.net" },
+] as const;
+
+/** Indirizzo predefinito ricevente per i nuovi lead dal form. */
+export const LEAD_EMAIL = "hello@core829.net";
+
 /** Icone per la bento grid delle capability trasversali. */
 export const FEATURE_ICON_MAP: Record<string, LucideIcon> = {
   Bot,

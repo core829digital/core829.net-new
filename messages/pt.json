@@ -406,7 +406,9 @@
   "finalCta": {
     "title": "Tem um projeto em mente?",
     "subtitle": "Vamos falar. Conte-nos o problema que quer resolver e propomos uma solução concreta.",
-    "cta": "Vamos falar do seu projeto"
+    "cta": "Vamos falar do seu projeto",
+    "existingClient": "Já é um cliente ativo?",
+    "projectsMail": "o departamento de projetos responde diretamente."
   },
   "contact": {
     "name": "Nome e apelido",
@@ -531,7 +533,9 @@
   "contactPage": {
     "kicker": "Contact",
     "title": "Let's build together",
-    "subtitle": "Start your project with a consultation."
+    "subtitle": "Start your project with a consultation.",
+    "existingClient": "Já é cliente?",
+    "projectsMail": "para comunicar com o departamento de projetos."
   },
   "aboutPage": {
     "kicker": "About",
@@ -575,7 +579,11 @@
     "retainerDesc": "Monthly engagement.",
     "partnershipTitle": "Partnership",
     "partnershipDesc": "Custom agreement.",
-    "cta": "Schedule a consultation"
+    "cta": "Schedule a consultation",
+    "contactSales": "Contactar Vendas",
+    "contactSalesHint": "Para comprar os nossos produtos ou projetos de grande escala, contacte diretamente a nossa equipa de vendas.",
+    "partnershipCta": "Torne-se parceiro",
+    "helloCta": "Pedir mais informações"
   },
   "servicesDetail": {
     "back": "Todos os serviços",
@@ -583,7 +591,9 @@
     "cta": "Solicitar uma consulta",
     "allServices": "Ver todos os serviços",
     "previous": "Serviço anterior",
-    "next": "Próximo serviço"
+    "next": "Próximo serviço",
+    "existingClient": "Cliente ativo?",
+    "projectsMail": "Contacte o departamento de projetos para acompanhar o seu projeto e solicitar atualizações."
   },
   "gdpr": {
     "title": "RGPD",
@@ -644,5 +654,29 @@
         "body": "Quando os cookies não são estritamente necessários, solicitamos o seu consentimento antes de os instalar. Pode alterar as suas preferências em qualquer momento, apagando os cookies do navegador e voltando a visitar o site."
       }
     ]
+  },
+  "contactEmails": {
+    "heading": "Contacto",
+    "intro": "Escolha a caixa de correio que corresponde ao seu pedido. Respondemos dentro de 24–48 horas úteis.",
+    "hello": {
+      "label": "Apoio ao cliente",
+      "desc": "Para perguntas gerais, pedidos de informação e apoio sobre o site e os serviços."
+    },
+    "office": {
+      "label": "Escritório CORE829",
+      "desc": "Para questões administrativas, de faturação e empresariais."
+    },
+    "partnerships": {
+      "label": "Parcerias",
+      "desc": "Para agências, revendedores e empresas que queiram colaborar connosco."
+    },
+    "sales": {
+      "label": "Vendas",
+      "desc": "Para comprar os nossos produtos ou projetos de grande dimensão. A nossa equipa preparará uma proposta à medida."
+    },
+    "projects": {
+      "label": "Projetos",
+      "desc": "Para clientes ativos: o departamento de projetos comunica a partir deste endereço."
+    }
   }
 }

@@ -3,7 +3,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { smoothScrollTo } from "@/lib/scrollTo";
+import { useGoToSection } from "@/lib/useGoToSection";
 import { serviceAnchorIds, clientAnchorIds, COMPANY, EMAILS } from "@/lib/constants";
 import { SocialLinks } from "@/components/SocialIcons";
 import { TrustpilotWidget } from "@/components/Trustpilot";
@@ -21,10 +21,11 @@ export default function Footer() {
   const tServices = useTranslations("solution.services");
   const tCaseStudies = useTranslations("caseStudies.projects");
   const year = new Date().getFullYear();
+  const goToSection = useGoToSection();
 
   const goTo = (hash: string) => (e: React.MouseEvent) => {
     e.preventDefault();
-    smoothScrollTo(hash);
+    goToSection(hash);
   };
 
   return (

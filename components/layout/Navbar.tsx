@@ -5,7 +5,8 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
-import { smoothScrollTo } from "@/lib/scrollTo";
+import { Link, useRouter } from "@/i18n/navigation";
+import { useGoToSection } from "@/lib/useGoToSection";
 import { Button } from "@/components/ui/Button";
 import { SERVICES_META } from "@/lib/constants";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -22,6 +23,8 @@ export default function Navbar() {
   const tServices = useTranslations("solution.services");
   const [hidden, setHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const goToSection = useGoToSection();
+  const router = useRouter();
 
   useEffect(() => {
     let lastY = window.scrollY;
@@ -50,7 +53,11 @@ export default function Navbar() {
 
   const goTo = (href: string) => {
     setMenuOpen(false);
-    setTimeout(() => smoothScrollTo(href), 60);
+    if (href.startsWith("#")) {
+      setTimeout(() => goToSection(href), 60);
+      return;
+    }
+    router.push(href);
   };
 
   return (
@@ -61,21 +68,19 @@ export default function Navbar() {
       )}
     >
       <div className="container-core829 flex h-16 items-center justify-between">
-        {/* Logo */}
-        <a
-          href="#hero"
-          onClick={(e) => {
-            e.preventDefault();
-            smoothScrollTo("#hero");
-          }}
+        {/* Logo → home */}
+        <Link
+          href="/"
+          onClick={() => setMenuOpen(false)}
           className="flex items-center"
+          aria-label="CORE829"
         >
           <img
             src="/core829-logo/829black%20trsp.png"
             alt="CORE829"
             className="h-8 w-auto"
           />
-        </a>
+        </Link>
 
         {/* Desktop navigation */}
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
@@ -191,10 +196,11 @@ function NavLink({
   href: string;
   children: React.ReactNode;
 }) {
+  const goToSection = useGoToSection();
   const handleClick = (e: React.MouseEvent) => {
-    if (href.startsWith("#contatti")) {
+    if (href.startsWith("#")) {
       e.preventDefault();
-      smoothScrollTo("#contatti");
+      goToSection(href);
     }
   };
   return (
@@ -226,14 +232,14 @@ function DesktopDropdown({
       onMouseLeave={() => setOpen(false)}
     >
       {href ? (
-        <a
+        <Link
           href={href}
           onClick={() => setOpen(false)}
           className="link-ghost flex items-center gap-1 text-sm"
           aria-haspopup="menu"
         >
           {label}
-        </a>
+        </Link>
       ) : (
         <button
           type="button"
@@ -265,17 +271,17 @@ function DesktopDropdown({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 8 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full left-0 mt-2 w-56 rounded-lg border border-border bg-background/95 p-2 shadow-lg backdrop-blur-md"
+            className="absolute top-full left-0 mt-2 w-56 rounded-lg border border-white/60 bg-white/80 p-2 shadow-2xl shadow-black/20 backdrop-blur-xl"
           >
             {items.map((item) => (
-              <a
+              <Link
                 key={item.key}
                 href={item.href}
                 className="block rounded-md px-3 py-2 text-sm text-foreground-muted hover:bg-surface hover:text-foreground"
                 onClick={() => setOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </motion.div>
         )}

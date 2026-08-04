@@ -5,6 +5,7 @@ import { getTranslations, getMessages, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import SmoothScrollProvider from "@/app/providers/SmoothScrollProvider";
+import ResolvePendingHash from "@/components/ResolvePendingHash";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { TrustpilotScript } from "@/components/Trustpilot";
@@ -96,6 +97,7 @@ export default async function LocaleLayout({
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <SmoothScrollProvider>
+            <ResolvePendingHash />
             <Navbar />
             <main>{children}</main>
             <Footer />

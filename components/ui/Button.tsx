@@ -8,7 +8,7 @@ import type {
   Ref,
 } from "react";
 import { cn } from "@/lib/utils";
-import { smoothScrollTo } from "@/lib/scrollTo";
+import { useGoToSection } from "@/lib/useGoToSection";
 
 type Variant = "primary" | "secondary" | "ghost";
 
@@ -39,6 +39,7 @@ export const Button = forwardRef<
   AnchorProps | ButtonProps
 >(function Button({ className, variant = "primary", ...props }, ref) {
   const classes = cn(base, variants[variant], className);
+  const goToSection = useGoToSection();
 
   if (isAnchor(props)) {
     const { href, target, onClick, children, ...rest } = props;
@@ -53,7 +54,7 @@ export const Button = forwardRef<
         onClick={(e) => {
           if (isHash) {
             e.preventDefault();
-            smoothScrollTo(href);
+            goToSection(href);
           }
           onClick?.(e);
         }}

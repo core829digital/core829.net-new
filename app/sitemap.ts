@@ -25,11 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "server",
     "automations",
     "webdesign",
-    "desktop",
     "webapp",
+    "desktop",
     "seo",
     "delivery",
-    "ai",
     "marketing",
   ];
 

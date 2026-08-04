@@ -1,7 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Check } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { SERVICES_META } from "@/lib/constants";
 
 interface Props {
@@ -11,14 +12,20 @@ interface Props {
 /**
  * Card singola servizio per la pagina /servizi. Riproduce lo stile della
  * griglia in Solution.tsx: badge icona nero, hover bordo rosso + lift,
- * numerazione 01-08 e bullet list.
+ * numerazione 01-08 e bullet list. L'intera card è un link alla pagina
+ * dedicata del servizio.
  */
 export default function ServiceCard({ index }: Props) {
   const t = useTranslations("solution.services");
+  const tDetail = useTranslations("servicesDetail");
   const Icon = SERVICES_META[index].icon;
+  const slug = SERVICES_META[index].key;
 
   return (
-    <article className="group flex flex-col border border-border bg-background p-8 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl">
+    <Link
+      href={`/servizi/${slug}`}
+      className="group flex flex-col border border-border bg-background p-8 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl"
+    >
       <div className="flex items-start justify-between">
         <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent">
           <Icon className="h-5 w-5" aria-hidden />
@@ -46,6 +53,11 @@ export default function ServiceCard({ index }: Props) {
           </li>
         ))}
       </ul>
-    </article>
+
+      <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-accent">
+        {tDetail("learnMore")}
+        <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden />
+      </span>
+    </Link>
   );
 }

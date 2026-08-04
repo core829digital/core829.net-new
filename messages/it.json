@@ -23,7 +23,7 @@
     "informazioni": "Informazioni"
   },
   "hero": {
-    "badge": "Nuovo: Setup AI Home-Made disponibile per PMI",
+    "badge": "Nuovo: Server su misura con partner Intel e NVIDIA",
     "headline": [
       "Costruiamo software",
       "che risolve",
@@ -78,18 +78,18 @@
     "title": "Otto servizi, un unico standard di qualità",
     "subtitle": "Dalla strategia alla messa in produzione, ogni progetto è seguito in-house con un carico clienti volutamente limitato.",
     "services": [
-  {
-      "id": "server",
-      "title": "Server Personalizzati",
-      "desc": "Server su misura per qualsiasi esigenza: AI, rendering, storage, gaming o hosting. Gestiamo l'intero processo su richiesta: progettazione, componenti e costruzione, con partner Intel e NVIDIA per qualità enterprise garantita.",
-      "bullets": [
-        "Qualsiasi build e caso d'uso",
-        "Componenti con partner Intel e NVIDIA",
-        "Progettazione e gestione completa del build",
-        "Garanzia di soddisfazione a 360°",
-        "Spedizione in Europa e America"
-      ]
-  },
+      {
+        "id": "server",
+        "title": "Server Personalizzati",
+        "desc": "Server su misura per qualsiasi esigenza: AI, rendering, storage, gaming o hosting. Gestiamo l'intero processo su richiesta: progettazione, componenti e costruzione, con partner Intel e NVIDIA per qualità enterprise garantita.",
+        "bullets": [
+          "Qualsiasi build e caso d'uso",
+          "Componenti con partner Intel e NVIDIA",
+          "Progettazione e gestione completa del build",
+          "Garanzia di soddisfazione a 360°",
+          "Spedizione in Europa e America"
+        ]
+      },
       {
         "id": "automations",
         "title": "Automazioni B2B",
@@ -113,17 +113,6 @@
         ]
       },
       {
-        "id": "desktop",
-        "title": "Creazione Software Eseguibili",
-        "desc": "Sviluppiamo software desktop ed eseguibili dedicati per esigenze verticali dove una webapp non basta: strumenti interni, tool offline, automazioni locali.",
-        "bullets": [
-          "Applicazioni desktop cross-platform",
-          "Strumenti interni aziendali",
-          "Integrazione con hardware e sistemi locali",
-          "Packaging e distribuzione"
-        ]
-      },
-      {
         "id": "webapp",
         "title": "Creazione WebApp",
         "desc": "Applicazioni web full-stack su misura — piattaforme B2B/B2C, gestionali, CRM verticali — progettate sui processi reali del cliente.",
@@ -132,6 +121,17 @@
           "Ruoli e permessi (RBAC)",
           "Dashboard e reportistica",
           "Integrazioni API e pagamenti"
+        ]
+      },
+      {
+        "id": "desktop",
+        "title": "Creazione Software Eseguibili",
+        "desc": "Sviluppiamo software desktop ed eseguibili dedicati per esigenze verticali dove una webapp non basta: strumenti interni, tool offline, automazioni locali.",
+        "bullets": [
+          "Applicazioni desktop cross-platform",
+          "Strumenti interni aziendali",
+          "Integrazione con hardware e sistemi locali",
+          "Packaging e distribuzione"
         ]
       },
       {
@@ -154,17 +154,6 @@
           "Gestione ambienti staging/produzione",
           "Scalabilità e monitoraggio uptime",
           "Backup e disaster recovery"
-        ]
-      },
-      {
-        "id": "ai",
-        "title": "Setup Intelligenza Artificiale Home-Made",
-        "desc": "Progettiamo e installiamo soluzioni AI su misura per l'azienda — non wrapper generici, ma sistemi costruiti sui dati e i processi reali del cliente.",
-        "bullets": [
-          "Automazioni AI su processi interni",
-          "Assistenti e agenti custom",
-          "Integrazione AI in software esistenti",
-          "Formazione del team all'uso"
         ]
       },
       {
@@ -320,9 +309,9 @@
     "items": [
       {
         "id": "ai",
-        "icon": "Bot",
-        "title": "AI Home-Made",
-        "desc": "Sistemi AI costruiti sui dati e processi reali dell'azienda, non wrapper generici."
+        "icon": "Server",
+        "title": "Server su misura",
+        "desc": "Build personalizzate con componenti ufficiali Intel e NVIDIA: AI, rendering, storage o hosting, gestite dal processo CORE829."
       },
       {
         "id": "security",
@@ -630,7 +619,7 @@
     "ctaDesc": "Parlaci del tuo caso d'uso: ti proponiamo la configurazione giusta, con preventivo chiaro e tempistiche certe.",
     "ctaButton": "Richiedi una consulenza"
   },
-"servicesDetail": {
+  "servicesDetail": {
     "back": "Tutti i servizi",
     "whatIncluded": "Cosa include",
     "cta": "Richiedi una consulenza",
@@ -638,7 +627,8 @@
     "previous": "Servizio precedente",
     "next": "Servizio successivo",
     "existingClient": "Sei un cliente attivo?",
-    "projectsMail": "Contatta il dipartimento progetti per seguire il tuo progetto e richiedere aggiornamenti."
+    "projectsMail": "Contatta il dipartimento progetti per seguire il tuo progetto e richiedere aggiornamenti.",
+    "learnMore": "Scopri di più"
   },
   "gdpr": {
     "title": "GDPR",

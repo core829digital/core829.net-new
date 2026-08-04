@@ -23,7 +23,7 @@
     "informazioni": "Informations"
   },
   "hero": {
-    "badge": "Nouveau : Setup IA Home-Made disponible pour les PME",
+    "badge": "Nouveau : Serveurs sur mesure avec partenaires Intel et NVIDIA",
     "headline": [
       "Nous construisons",
       "des logiciels qui",
@@ -78,18 +78,18 @@
     "title": "Huit services, un seul standard de qualité",
     "subtitle": "De la stratégie à la mise en production, chaque projet est géré en interne avec un nombre de clients volontairement limité.",
     "services": [
-  {
-      "id": "server",
-      "title": "Serveurs Personnalisés",
-      "desc": "Serveurs sur mesure pour tous les besoins : IA, rendu, stockage, gaming ou hébergement. Nous gérons tout le processus sur demande — conception, composants et construction — avec des partenaires Intel et NVIDIA pour une qualité enterprise garantie.",
-      "bullets": [
-        "Tout type de build et cas d'usage",
-        "Composants via les partenaires Intel et NVIDIA",
-        "Gestion complète de la conception et du build",
-        "Garantie de satisfaction à 360°",
-        "Expédition en Europe et en Amérique"
-      ]
-  },
+      {
+        "id": "server",
+        "title": "Serveurs Personnalisés",
+        "desc": "Serveurs sur mesure pour tous les besoins : IA, rendu, stockage, gaming ou hébergement. Nous gérons tout le processus sur demande — conception, composants et construction — avec des partenaires Intel et NVIDIA pour une qualité enterprise garantie.",
+        "bullets": [
+          "Tout type de build et cas d'usage",
+          "Composants via les partenaires Intel et NVIDIA",
+          "Gestion complète de la conception et du build",
+          "Garantie de satisfaction à 360°",
+          "Expédition en Europe et en Amérique"
+        ]
+      },
       {
         "id": "automations",
         "title": "Automatisations B2B",
@@ -113,17 +113,6 @@
         ]
       },
       {
-        "id": "desktop",
-        "title": "Création de Logiciels Exécutables",
-        "desc": "Nous développons des logiciels desktop et exécutables dédiés pour des besoins verticaux où une webapp ne suffit pas : outils internes, utilitaires hors ligne, automatisations locales.",
-        "bullets": [
-          "Applications desktop cross-platform",
-          "Outils internes d'entreprise",
-          "Intégration matériel et systèmes locaux",
-          "Packaging et distribution"
-        ]
-      },
-      {
         "id": "webapp",
         "title": "Création de Webapps",
         "desc": "Applications web full-stack sur mesure — plateformes B2B/B2C, outils de gestion, CRM verticaux — conçues sur les processus réels du client.",
@@ -132,6 +121,17 @@
           "Rôles et permissions (RBAC)",
           "Dashboards et reporting",
           "Intégrations API et paiements"
+        ]
+      },
+      {
+        "id": "desktop",
+        "title": "Création de Logiciels Exécutables",
+        "desc": "Nous développons des logiciels desktop et exécutables dédiés pour des besoins verticaux où une webapp ne suffit pas : outils internes, utilitaires hors ligne, automatisations locales.",
+        "bullets": [
+          "Applications desktop cross-platform",
+          "Outils internes d'entreprise",
+          "Intégration matériel et systèmes locaux",
+          "Packaging et distribution"
         ]
       },
       {
@@ -154,17 +154,6 @@
           "Gestion des environnements staging/production",
           "Scalabilité et monitoring uptime",
           "Sauvegardes et reprise après sinistre"
-        ]
-      },
-      {
-        "id": "ai",
-        "title": "Setup IA Home-Made",
-        "desc": "Nous concevons et installons des solutions IA sur mesure pour l'entreprise — pas des wrappers génériques, mais des systèmes construits sur les données et processus réels du client.",
-        "bullets": [
-          "Automatisations IA sur processus internes",
-          "Assistants et agents custom",
-          "Intégration IA dans les logiciels existants",
-          "Formation de l'équipe à l'usage"
         ]
       },
       {
@@ -320,9 +309,9 @@
     "items": [
       {
         "id": "ai",
-        "icon": "Bot",
-        "title": "IA Home-Made",
-        "desc": "Des systèmes IA construits sur les données et processus réels de l'entreprise, pas des wrappers génériques."
+        "icon": "Server",
+        "title": "Serveurs sur mesure",
+        "desc": "Builds personnalisés avec des composants officiels Intel et NVIDIA — IA, rendu, stockage ou hébergement — gérés par le processus CORE829."
       },
       {
         "id": "security",
@@ -630,7 +619,7 @@
     "ctaDesc": "Partagez votre cas d'usage : nous proposons la configuration adaptée, avec un devis clair et des délais fiables.",
     "ctaButton": "Demander une consultation"
   },
-"servicesDetail": {
+  "servicesDetail": {
     "back": "Tous les services",
     "whatIncluded": "Ce qui est inclus",
     "cta": "Demander une consultation",
@@ -638,7 +627,8 @@
     "previous": "Service précédent",
     "next": "Service suivant",
     "existingClient": "Client actif ?",
-    "projectsMail": "Contactez le département projets pour suivre votre projet et demander des mises à jour."
+    "projectsMail": "Contactez le département projets pour suivre votre projet et demander des mises à jour.",
+    "learnMore": "En savoir plus"
   },
   "gdpr": {
     "title": "RGPD",

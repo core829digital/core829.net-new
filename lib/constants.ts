@@ -5,7 +5,7 @@ import {
   LayoutGrid,
   TrendingUp,
   Server,
-  Bot,
+  Rocket,
   Megaphone,
   ShieldCheck,
   Gauge,
@@ -27,15 +27,12 @@ export const SERVICES_META: ServiceMeta[] = [
   { key: "server", anchorId: "servizio-server", icon: Server },
   { key: "automations", anchorId: "servizio-automazioni", icon: Workflow },
   { key: "webdesign", anchorId: "servizio-webdesign", icon: PenTool },
-  { key: "desktop", anchorId: "servizio-desktop", icon: Terminal },
   { key: "webapp", anchorId: "servizio-webapp", icon: LayoutGrid },
+  { key: "desktop", anchorId: "servizio-desktop", icon: Terminal },
   { key: "seo", anchorId: "servizio-seo", icon: TrendingUp },
-  { key: "delivery", anchorId: "servizio-delivery", icon: Server },
-  { key: "ai", anchorId: "servizio-ai", icon: Bot },
+  { key: "delivery", anchorId: "servizio-delivery", icon: Rocket },
   { key: "marketing", anchorId: "servizio-marketing", icon: Megaphone },
 ];
-
-export const serviceAnchorIds = SERVICES_META.map((s) => ({ id: s.anchorId }));
 
 export interface ClientMeta {
   key: string;
@@ -128,7 +125,7 @@ export const LEAD_EMAIL = "hello@core829.net";
 
 /** Icone per la bento grid delle capability trasversali. */
 export const FEATURE_ICON_MAP: Record<string, LucideIcon> = {
-  Bot,
+  Server,
   ShieldCheck,
   TrendingUp,
   Workflow,

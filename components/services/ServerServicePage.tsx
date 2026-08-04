@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
@@ -18,6 +19,10 @@ const SERVER_IMAGES = [
 
 const INTEL_LOGO = "/server-service/intel_PNG1.png";
 const NVIDIA_LOGO = "/server-service/Nvidia-Logo-PNG-Picture.png";
+
+const SERVICE_IMG_SIZES = "(max-width: 1024px) 90vw, 48vw";
+
+const MotionImage = motion.create(Image);
 
 /**
  * Pagina dedicata al servizio Server Personalizzati.
@@ -98,12 +103,13 @@ export default function ServerServicePage() {
               />
               <div className="relative aspect-square overflow-hidden border border-border bg-surface">
                 <AnimatePresence initial={false}>
-                  <motion.img
+                  <MotionImage
                     key={index}
                     src={SERVER_IMAGES[index].src}
                     alt={SERVER_IMAGES[index].alt}
-                    loading="eager"
-                    decoding="async"
+                    fill
+                    sizes={SERVICE_IMG_SIZES}
+                    priority={index === 0}
                     className="absolute inset-0 h-full w-full object-cover"
                     initial={{ opacity: 0, x: 40 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -209,10 +215,11 @@ export default function ServerServicePage() {
           {/* Intel */}
           <div className="group flex flex-col border border-border bg-background p-10 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl">
             <div className="flex h-16 w-16 items-center justify-center border border-border p-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={INTEL_LOGO}
                 alt="Intel"
+                width={80}
+                height={80}
                 loading="lazy"
                 className="max-h-full max-w-full object-contain"
               />
@@ -226,10 +233,11 @@ export default function ServerServicePage() {
           {/* NVIDIA */}
           <div className="group flex flex-col border border-border bg-background p-10 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl">
             <div className="flex h-16 w-16 items-center justify-center border border-border p-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={NVIDIA_LOGO}
                 alt="NVIDIA"
+                width={80}
+                height={80}
                 loading="lazy"
                 className="max-h-full max-w-full object-contain"
               />

@@ -23,7 +23,7 @@
     "informazioni": "Informationen"
   },
   "hero": {
-    "badge": "Neu: Home-Made KI-Setup jetzt für KMU verfügbar",
+    "badge": "Neu: Maßgeschneiderte Server mit Intel- und NVIDIA-Partnern",
     "headline": [
       "Wir bauen Software,",
       "die echte Probleme",
@@ -78,18 +78,18 @@
     "title": "Acht Leistungen, ein einziger Qualitätsstandard",
     "subtitle": "Von der Strategie bis zur Produktion wird jedes Projekt in-house betreut, mit bewusst begrenzter Kundenanzahl.",
     "services": [
-  {
-      "id": "server",
-      "title": "Individuelle Server",
-      "desc": "Maßgeschneiderte Server für jeden Bedarf: KI, Rendering, Speicher, Gaming oder Hosting. Wir verwalten den gesamten Prozess auf Anfrage — Design, Komponenten und Bau — mit Intel- und NVIDIA-Partnern für garantierte Enterprise-Qualität.",
-      "bullets": [
-        "Jeder Build-Typ und Anwendungsfall",
-        "Komponenten über Intel- und NVIDIA-Partner",
-        "Vollständige Design- und Build-Verwaltung",
-        "360°-Zufriedenheitsgarantie",
-        "Versand in Europa und Amerika"
-      ]
-  },
+      {
+        "id": "server",
+        "title": "Individuelle Server",
+        "desc": "Maßgeschneiderte Server für jeden Bedarf: KI, Rendering, Speicher, Gaming oder Hosting. Wir verwalten den gesamten Prozess auf Anfrage — Design, Komponenten und Bau — mit Intel- und NVIDIA-Partnern für garantierte Enterprise-Qualität.",
+        "bullets": [
+          "Jeder Build-Typ und Anwendungsfall",
+          "Komponenten über Intel- und NVIDIA-Partner",
+          "Vollständige Design- und Build-Verwaltung",
+          "360°-Zufriedenheitsgarantie",
+          "Versand in Europa und Amerika"
+        ]
+      },
       {
         "id": "automations",
         "title": "B2B-Automatisierungen",
@@ -113,17 +113,6 @@
         ]
       },
       {
-        "id": "desktop",
-        "title": "Ausführbare Software",
-        "desc": "Wir entwickeln dedizierte Desktop-Software für vertikale Anforderungen, wo eine Web-App nicht reicht: interne Tools, Offline-Utilities, lokale Automatisierungen.",
-        "bullets": [
-          "Cross-platform Desktop-Anwendungen",
-          "Interne Unternehmenswerkzeuge",
-          "Integration von Hardware und lokalen Systemen",
-          "Packaging und Distribution"
-        ]
-      },
-      {
         "id": "webapp",
         "title": "Web-Apps",
         "desc": "Maßgeschneiderte Full-Stack-Webanwendungen – B2B/B2C-Plattformen, Verwaltungstools, vertikale CRMs – entworfen um die realen Prozesse des Kunden.",
@@ -132,6 +121,17 @@
           "Rollen und Berechtigungen (RBAC)",
           "Dashboards und Reporting",
           "API- und Zahlungsintegrationen"
+        ]
+      },
+      {
+        "id": "desktop",
+        "title": "Ausführbare Software",
+        "desc": "Wir entwickeln dedizierte Desktop-Software für vertikale Anforderungen, wo eine Web-App nicht reicht: interne Tools, Offline-Utilities, lokale Automatisierungen.",
+        "bullets": [
+          "Cross-platform Desktop-Anwendungen",
+          "Interne Unternehmenswerkzeuge",
+          "Integration von Hardware und lokalen Systemen",
+          "Packaging und Distribution"
         ]
       },
       {
@@ -154,17 +154,6 @@
           "Staging- und Produktionsumgebungen",
           "Skalierbarkeit und Uptime-Monitoring",
           "Backup und Disaster Recovery"
-        ]
-      },
-      {
-        "id": "ai",
-        "title": "Home-Made KI-Setup",
-        "desc": "Wir entwerfen und installieren maßgeschneiderte KI-Lösungen für Ihr Unternehmen – keine generischen Wrapper, sondern Systeme auf den echten Daten und Prozessen des Kunden.",
-        "bullets": [
-          "KI-Automatisierungen interner Prozesse",
-          "Individuelle Assistenten und Agenten",
-          "KI-Integration in bestehende Software",
-          "Team-Training und Adoption"
         ]
       },
       {
@@ -320,9 +309,9 @@
     "items": [
       {
         "id": "ai",
-        "icon": "Bot",
-        "title": "Home-Made KI",
-        "desc": "KI-Systeme auf den echten Daten und Prozessen des Unternehmens, keine generischen Wrapper."
+        "icon": "Server",
+        "title": "Maßgeschneiderte Server",
+        "desc": "Individuelle Builds mit offiziellen Intel- und NVIDIA-Komponenten — KI, Rendering, Storage oder Hosting — im CORE829-Prozess."
       },
       {
         "id": "security",
@@ -630,7 +619,7 @@
     "ctaDesc": "Teile deinen Anwendungsfall: Wir schlagen die richtige Konfiguration vor, mit klarem Angebot und verlässlichen Zeitplänen.",
     "ctaButton": "Beratung anfragen"
   },
-"servicesDetail": {
+  "servicesDetail": {
     "back": "Alle Leistungen",
     "whatIncluded": "Was enthalten ist",
     "cta": "Beratung anfragen",
@@ -638,7 +627,8 @@
     "previous": "Vorherige Leistung",
     "next": "Nächste Leistung",
     "existingClient": "Aktiver Kunde?",
-    "projectsMail": "Kontaktieren Sie die Projektabteilung, um Ihr Projekt zu verfolgen und Updates anzufordern."
+    "projectsMail": "Kontaktieren Sie die Projektabteilung, um Ihr Projekt zu verfolgen und Updates anzufordern.",
+    "learnMore": "Mehr erfahren"
   },
   "gdpr": {
     "title": "DSGVO",

@@ -23,7 +23,7 @@
     "informazioni": "Informații"
   },
   "hero": {
-    "badge": "Nou: Setup AI Home-Made disponibil pentru IMM-uri",
+    "badge": "Nou: Servere personalizate cu parteneri Intel și NVIDIA",
     "headline": [
       "Construim software",
       "care rezolvă",
@@ -78,18 +78,18 @@
     "title": "Opt servicii, un singur standard de calitate",
     "subtitle": "De la strategie la producție, fiecare proiect este gestionat intern, cu un număr de clienți deliberat limitat.",
     "services": [
-  {
-      "id": "server",
-      "title": "Servere Personalizate",
-      "desc": "Servere la cerere pentru orice nevoie: AI, randare, stocare, gaming sau hosting. Gestionăm întregul proces la cerere — proiectare, componente și construcție — cu parteneri Intel și NVIDIA pentru calitate enterprise garantată.",
-      "bullets": [
-        "Orice tip de build și scenariu de utilizare",
-        "Componente prin partenerii Intel și NVIDIA",
-        "Gestionare completă a proiectării și construcției",
-        "Garanție de satisfacție la 360°",
-        "Livrare în Europa și America"
-      ]
-  },
+      {
+        "id": "server",
+        "title": "Servere Personalizate",
+        "desc": "Servere la cerere pentru orice nevoie: AI, randare, stocare, gaming sau hosting. Gestionăm întregul proces la cerere — proiectare, componente și construcție — cu parteneri Intel și NVIDIA pentru calitate enterprise garantată.",
+        "bullets": [
+          "Orice tip de build și scenariu de utilizare",
+          "Componente prin partenerii Intel și NVIDIA",
+          "Gestionare completă a proiectării și construcției",
+          "Garanție de satisfacție la 360°",
+          "Livrare în Europa și America"
+        ]
+      },
       {
         "id": "automations",
         "title": "Automatizări B2B",
@@ -113,17 +113,6 @@
         ]
       },
       {
-        "id": "desktop",
-        "title": "Creare Software Executabile",
-        "desc": "Dezvoltăm software desktop și executabile dedicate pentru nevoi verticale unde o webapp nu e suficientă: unelte interne, aplicații offline, automatizări locale.",
-        "bullets": [
-          "Aplicații desktop cross-platform",
-          "Instrumente interne de companie",
-          "Integrare cu hardware și sisteme locale",
-          "Packaging și distribuție"
-        ]
-      },
-      {
         "id": "webapp",
         "title": "Creare WebApp",
         "desc": "Aplicații web full-stack la comandă — platforme B2B/B2C, gestiuni, CRM verticale — proiectate pe procesele reale ale clientului.",
@@ -132,6 +121,17 @@
           "Roluri și permisiuni (RBAC)",
           "Dashboard și raportare",
           "Integrări API și plăți"
+        ]
+      },
+      {
+        "id": "desktop",
+        "title": "Creare Software Executabile",
+        "desc": "Dezvoltăm software desktop și executabile dedicate pentru nevoi verticale unde o webapp nu e suficientă: unelte interne, aplicații offline, automatizări locale.",
+        "bullets": [
+          "Aplicații desktop cross-platform",
+          "Instrumente interne de companie",
+          "Integrare cu hardware și sisteme locale",
+          "Packaging și distribuție"
         ]
       },
       {
@@ -154,17 +154,6 @@
           "Gestionarea mediilor staging/producție",
           "Scalabilitate și monitorizare uptime",
           "Backup și disaster recovery"
-        ]
-      },
-      {
-        "id": "ai",
-        "title": "Setup Inteligență Artificială Home-Made",
-        "desc": "Proiectăm și instalăm soluții AI la comandă pentru companie — nu wrappere generice, ci sisteme construite pe datele și procesele reale ale clientului.",
-        "bullets": [
-          "Automatizări AI pe procese interne",
-          "Asistenți și agenți custom",
-          "Integrare AI în software existent",
-          "Formarea echipei pentru utilizare"
         ]
       },
       {
@@ -320,9 +309,9 @@
     "items": [
       {
         "id": "ai",
-        "icon": "Bot",
-        "title": "AI Home-Made",
-        "desc": "Sisteme AI construite pe datele și procesele reale ale companiei, nu wrappere generice."
+        "icon": "Server",
+        "title": "Servere personalizate",
+        "desc": "Build-uri personalizate cu componente oficiale Intel și NVIDIA — AI, randare, stocare sau hosting — gestionate prin procesul CORE829."
       },
       {
         "id": "security",
@@ -630,7 +619,7 @@
     "ctaDesc": "Împărtășește-ne cazul tău de utilizare: propunem configurația potrivită, cu o ofertă clară și termene fiabile.",
     "ctaButton": "Solicită o consultație"
   },
-"servicesDetail": {
+  "servicesDetail": {
     "back": "Toate serviciile",
     "whatIncluded": "Ce include",
     "cta": "Solicită o consultație",
@@ -638,7 +627,8 @@
     "previous": "Serviciul anterior",
     "next": "Următorul serviciu",
     "existingClient": "Client activ?",
-    "projectsMail": "Contactează departamentul de proiecte pentru a urmări proiectul tău și a solicita actualizări."
+    "projectsMail": "Contactează departamentul de proiecte pentru a urmări proiectul tău și a solicita actualizări.",
+    "learnMore": "Află mai multe"
   },
   "gdpr": {
     "title": "GDPR",

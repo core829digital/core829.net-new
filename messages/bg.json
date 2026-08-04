@@ -23,7 +23,7 @@
     "informazioni": "Информация"
   },
   "hero": {
-    "badge": "Ново: Home-Made AI Setup за малки и средни предприятия",
+    "badge": "Ново: Персонализирани сървъри с партньори Intel и NVIDIA",
     "headline": [
       "Изграждаме софтуер,",
       "който решава",
@@ -141,18 +141,18 @@
     "title": "Eight services, one standard of quality",
     "subtitle": "From strategy to production, every project is handled in-house with a deliberately limited client load.",
     "services": [
-  {
-      "id": "server",
-      "title": "Custom Servers",
-      "desc": "Custom servers for any need: AI, rendering, storage, gaming or hosting. We manage the entire on-request process — design, components and build — with Intel and NVIDIA partners for guaranteed enterprise-grade quality.",
-      "bullets": [
-        "Any build type and use case",
-        "Components via Intel and NVIDIA partners",
-        "Full design and build management",
-        "360° satisfaction guarantee",
-        "Shipping across Europe and America"
-      ]
-  },
+      {
+        "id": "server",
+        "title": "Custom Servers",
+        "desc": "Custom servers for any need: AI, rendering, storage, gaming or hosting. We manage the entire on-request process — design, components and build — with Intel and NVIDIA partners for guaranteed enterprise-grade quality.",
+        "bullets": [
+          "Any build type and use case",
+          "Components via Intel and NVIDIA partners",
+          "Full design and build management",
+          "360° satisfaction guarantee",
+          "Shipping across Europe and America"
+        ]
+      },
       {
         "id": "automations",
         "title": "B2B Automations",
@@ -176,17 +176,6 @@
         ]
       },
       {
-        "id": "desktop",
-        "title": "Executable Software",
-        "desc": "We build dedicated desktop software for vertical needs where a web app isn't enough: internal tools, offline utilities, local automations.",
-        "bullets": [
-          "Cross-platform desktop applications",
-          "Internal company tools",
-          "Hardware and local system integration",
-          "Packaging and distribution"
-        ]
-      },
-      {
         "id": "webapp",
         "title": "Web Apps",
         "desc": "Full-stack custom web applications — B2B/B2C platforms, management tools, vertical CRMs — designed around the client's real processes.",
@@ -195,6 +184,17 @@
           "Roles and permissions (RBAC)",
           "Dashboards and reporting",
           "API and payment integrations"
+        ]
+      },
+      {
+        "id": "desktop",
+        "title": "Executable Software",
+        "desc": "We build dedicated desktop software for vertical needs where a web app isn't enough: internal tools, offline utilities, local automations.",
+        "bullets": [
+          "Cross-platform desktop applications",
+          "Internal company tools",
+          "Hardware and local system integration",
+          "Packaging and distribution"
         ]
       },
       {
@@ -217,17 +217,6 @@
           "Staging and production environments",
           "Scalability and uptime monitoring",
           "Backup and disaster recovery"
-        ]
-      },
-      {
-        "id": "ai",
-        "title": "Home-Made AI Setup",
-        "desc": "We design and install custom AI solutions for your company — not generic wrappers, but systems built on the client's real data and processes.",
-        "bullets": [
-          "AI automations on internal processes",
-          "Custom assistants and agents",
-          "AI integration into existing software",
-          "Team training and adoption"
         ]
       },
       {
@@ -360,9 +349,9 @@
     "items": [
       {
         "id": "ai",
-        "icon": "Bot",
-        "title": "Home-Made AI",
-        "desc": "AI systems built on the company's real data and processes, not generic wrappers."
+        "icon": "Server",
+        "title": "Персонализирани сървъри",
+        "desc": "Индивидуални сборки с официални компоненти Intel и NVIDIA — AI, рендериране, съхранение или хостинг — управлявани от процеса CORE829."
       },
       {
         "id": "security",
@@ -583,7 +572,7 @@
     "ctaDesc": "Share your use case: we'll propose the right configuration, with a clear quote and reliable timelines.",
     "ctaButton": "Request a consultation"
   },
-"servicesDetail": {
+  "servicesDetail": {
     "back": "All services",
     "whatIncluded": "What's included",
     "cta": "Request a consultation",
@@ -591,7 +580,8 @@
     "previous": "Previous service",
     "next": "Next service",
     "existingClient": "Active client?",
-    "projectsMail": "Contact the projects department to track your project and request updates."
+    "projectsMail": "Contact the projects department to track your project and request updates.",
+    "learnMore": "Научете повече"
   },
   "gdpr": {
     "title": "GDPR",

@@ -23,7 +23,7 @@
     "informazioni": "Informatie"
   },
   "hero": {
-    "badge": "Nieuw: Home-Made AI Setup nu beschikbaar voor MKB",
+    "badge": "Nieuw: maatwerk servers met Intel- en NVIDIA-partners",
     "headline": [
       "Wij bouwen software",
       "die echte problemen",
@@ -78,18 +78,18 @@
     "title": "Acht diensten, één kwaliteitsstandaard",
     "subtitle": "Van strategie tot productie wordt elk project in-house begeleid, met een bewust beperkt aantal klanten.",
     "services": [
-  {
-      "id": "server",
-      "title": "Maatwerk Servers",
-      "desc": "Maatwerk servers voor elke behoefte: AI, rendering, opslag, gaming of hosting. We beheren het hele proces op aanvraag — ontwerp, componenten en bouw — met Intel- en NVIDIA-partners voor gegarandeerde enterprise-kwaliteit.",
-      "bullets": [
-        "Elk type build en gebruiksscenario",
-        "Componenten via Intel- en NVIDIA-partners",
-        "Volledig beheer van ontwerp en bouw",
-        "360° tevredenheidsgarantie",
-        "Verzending in Europa en Amerika"
-      ]
-  },
+      {
+        "id": "server",
+        "title": "Maatwerk Servers",
+        "desc": "Maatwerk servers voor elke behoefte: AI, rendering, opslag, gaming of hosting. We beheren het hele proces op aanvraag — ontwerp, componenten en bouw — met Intel- en NVIDIA-partners voor gegarandeerde enterprise-kwaliteit.",
+        "bullets": [
+          "Elk type build en gebruiksscenario",
+          "Componenten via Intel- en NVIDIA-partners",
+          "Volledig beheer van ontwerp en bouw",
+          "360° tevredenheidsgarantie",
+          "Verzending in Europa en Amerika"
+        ]
+      },
       {
         "id": "automations",
         "title": "B2B-automatiseringen",
@@ -113,17 +113,6 @@
         ]
       },
       {
-        "id": "desktop",
-        "title": "Uitvoerbare Software",
-        "desc": "We ontwikkelen dedicated desktopsoftware voor verticale behoeften waar een webapp niet volstaat: interne tools, offline utilities, lokale automatiseringen.",
-        "bullets": [
-          "Cross-platform desktopapplicaties",
-          "Interne bedrijfstools",
-          "Integratie met hardware en lokale systemen",
-          "Packaging en distributie"
-        ]
-      },
-      {
         "id": "webapp",
         "title": "Webapps",
         "desc": "Maatwerk full-stack webapplicaties — B2B/B2C-platforms, beheersystemen, verticale CRM's — ontworpen rond de echte processen van de klant.",
@@ -132,6 +121,17 @@
           "Rollen en rechten (RBAC)",
           "Dashboards en reporting",
           "API- en betalingsintegraties"
+        ]
+      },
+      {
+        "id": "desktop",
+        "title": "Uitvoerbare Software",
+        "desc": "We ontwikkelen dedicated desktopsoftware voor verticale behoeften waar een webapp niet volstaat: interne tools, offline utilities, lokale automatiseringen.",
+        "bullets": [
+          "Cross-platform desktopapplicaties",
+          "Interne bedrijfstools",
+          "Integratie met hardware en lokale systemen",
+          "Packaging en distributie"
         ]
       },
       {
@@ -154,17 +154,6 @@
           "Staging- en productieomgevingen",
           "Schaalbaarheid en uptime-monitoring",
           "Backup en disaster recovery"
-        ]
-      },
-      {
-        "id": "ai",
-        "title": "Home-Made AI Setup",
-        "desc": "We ontwerpen en installeren maatwerk AI-oplossingen voor uw bedrijf — geen generieke wrappers, maar systemen gebouwd op de echte data en processen van de klant.",
-        "bullets": [
-          "AI-automatiseringen op interne processen",
-          "Maatwerk assistenten en agents",
-          "AI-integratie in bestaande software",
-          "Teamtraining en adoptie"
         ]
       },
       {
@@ -320,9 +309,9 @@
     "items": [
       {
         "id": "ai",
-        "icon": "Bot",
-        "title": "Home-Made AI",
-        "desc": "AI-systemen gebouwd op de echte data en processen van het bedrijf, geen generieke wrappers."
+        "icon": "Server",
+        "title": "Maatwerk servers",
+        "desc": "Aangepaste builds met officiële Intel- en NVIDIA-componenten — AI, rendering, opslag of hosting — beheerd via het CORE829-proces."
       },
       {
         "id": "security",
@@ -630,7 +619,7 @@
     "ctaDesc": "Deel je use case: we stellen de juiste configuratie voor, met een duidelijke offerte en betrouwbare planning.",
     "ctaButton": "Een consult aanvragen"
   },
-"servicesDetail": {
+  "servicesDetail": {
     "back": "Alle diensten",
     "whatIncluded": "Wat is inbegrepen",
     "cta": "Advies aanvragen",
@@ -638,7 +627,8 @@
     "previous": "Vorige dienst",
     "next": "Volgende dienst",
     "existingClient": "Actieve klant?",
-    "projectsMail": "Neem contact op met de projectafdeling om uw project te volgen en updates aan te vragen."
+    "projectsMail": "Neem contact op met de projectafdeling om uw project te volgen en updates aan te vragen.",
+    "learnMore": "Meer weten"
   },
   "gdpr": {
     "title": "AVG",

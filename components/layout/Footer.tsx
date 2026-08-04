@@ -4,15 +4,14 @@ import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useGoToSection } from "@/lib/useGoToSection";
-import { serviceAnchorIds, clientAnchorIds, COMPANY, EMAILS } from "@/lib/constants";
+import { SERVICES_META, clientAnchorIds, COMPANY, EMAILS } from "@/lib/constants";
 import { SocialLinks } from "@/components/SocialIcons";
 import { TrustpilotWidget } from "@/components/Trustpilot";
 
-const SERVICE_ANCHORS = serviceAnchorIds;
 const CLIENT_ANCHORS = clientAnchorIds;
 
 /**
- * Footer multi-colonna: Servizi (ancore alle card), Clienti (ancore ai case study),
+ * Footer multi-colonna: Servizi (link alle pagine dedicate), Clienti (ancore ai case study),
  * Azienda, Social. Riga finale con copyright, dati societari placeholder e legali.
  */
 export default function Footer() {
@@ -69,15 +68,14 @@ export default function Footer() {
         <div>
           <p className="tech-label">{t("colServices")}</p>
           <ul className="mt-5 space-y-3">
-            {SERVICE_ANCHORS.map((a, i) => (
-              <li key={a.id}>
-                <a
-                  href={`#${a.id}`}
-                  onClick={goTo(`#${a.id}`)}
+            {SERVICES_META.map((s, i) => (
+              <li key={s.key}>
+                <Link
+                  href={`/servizi/${s.key}`}
                   className="link-ghost text-sm"
                 >
                   {tServices(`${i}.title`)}
-                </a>
+                </Link>
               </li>
             ))}
             <li>

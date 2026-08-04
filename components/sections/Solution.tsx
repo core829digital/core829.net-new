@@ -3,6 +3,7 @@
 import { useTranslations, useMessages } from "next-intl";
 import { Check } from "lucide-react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import { Link } from "@/i18n/navigation";
 import { SERVICES_META } from "@/lib/constants";
 
 interface Service {
@@ -14,7 +15,8 @@ interface Service {
 
 /**
  * "La soluzione" — griglia degli 8 servizi CORE829 con icona in badge nero,
- * hover con bordo rosso e leggero lift.
+ * hover con bordo rosso e leggero lift. Ogni card è un link alla pagina
+ * dedicata del servizio; conserva l'anchor id per il footer.
  */
 export default function Solution() {
   const t = useTranslations("solution");
@@ -37,8 +39,9 @@ export default function Solution() {
             const meta = SERVICES_META[i];
             const Icon = meta?.icon;
             return (
-              <article
+              <Link
                 key={service.id ?? i}
+                href={`/servizi/${meta?.key ?? service.id}`}
                 id={meta?.anchorId}
                 className="group flex flex-col border border-border bg-background p-8 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl"
               >
@@ -66,7 +69,7 @@ export default function Solution() {
                     </li>
                   ))}
                 </ul>
-              </article>
+              </Link>
             );
           })}
         </RevealOnScroll>

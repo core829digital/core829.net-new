@@ -63,8 +63,8 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-40 border-b border-border bg-background/85 backdrop-blur-md transition-transform duration-500",
-        hidden && "-translate-y-full"
+        "fixed inset-x-0 top-0 z-40 border-b border-border bg-background transition-transform duration-500",
+        hidden && !menuOpen && "-translate-y-full"
       )}
     >
       <div className="container-core829 flex h-16 items-center justify-between">
@@ -136,7 +136,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 top-16 z-40 flex flex-col bg-background lg:hidden"
+            className="fixed inset-0 top-16 z-40 flex flex-col overflow-y-auto overscroll-contain bg-background pb-[max(env(safe-area-inset-bottom),1.5rem)] lg:hidden"
           >
             <MobileNav
               nav={[

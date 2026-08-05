@@ -31,7 +31,6 @@ export function generateStaticParams() {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  viewportFit: "cover",
   themeColor: "#ffffff",
 };
 
@@ -67,13 +66,13 @@ export async function generateMetadata({
       siteName: "CORE829",
       locale,
       type: "website",
-      images: [{ url: `${siteUrl}/og-image.svg`, width: 1200, height: 630, alt: "CORE829" }],
+      images: [{ url: `${siteUrl}/og-image.png`, width: 1200, height: 630, alt: "CORE829" }],
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: [`${siteUrl}/og-image.svg`],
+      images: [`${siteUrl}/og-image.png`],
     },
     robots: {
       index: true,

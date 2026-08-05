@@ -54,9 +54,11 @@ export default function SplitWords({
       {lines.map((line, i) => (
         <span key={i} className={lineClassName ?? "block overflow-hidden pb-1"}>
           {line.split(" ").map((word, j) => (
-            <span key={j} className="split-word inline-block will-change-transform">
+            <span
+              key={j}
+              className="split-word mr-[0.28em] inline-block [overflow-wrap:anywhere] will-change-transform last:mr-0"
+            >
               {word}
-              {"\u00A0"}
             </span>
           ))}
         </span>

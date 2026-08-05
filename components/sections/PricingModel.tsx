@@ -31,7 +31,7 @@ export default function PricingModel() {
           {models.map((model, i) => (
             <div
               key={i}
-              className="group flex flex-col border border-border bg-background p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="group flex flex-col border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-8 md:p-10"
             >
               <span className="font-mono text-sm tracking-widest text-accent">
                 0{i + 1}

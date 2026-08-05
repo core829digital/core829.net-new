@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { COMPANY } from "@/lib/constants";
+import { SOCIAL_LINKS } from "@/components/SocialIcons";
 
 /**
  * Dati strutturati JSON-LD: Organization per CORE829 + Service per ciascuno
@@ -19,7 +20,7 @@ export default async function JsonLd() {
       "@type": "Organization",
       name: "CORE829",
       url: siteUrl,
-      logo: `${siteUrl}/core829-logo/829black%20trsp.png`,
+      logo: `${siteUrl}/core829-logo/829black%20trsp.webp`,
     },
     areaServed: "Europe",
   }));
@@ -29,23 +30,27 @@ export default async function JsonLd() {
     "@type": "Organization",
     name: "CORE829",
     url: siteUrl,
-    logo: `${siteUrl}/core829-logo/829black%20trsp.png`,
+    logo: `${siteUrl}/core829-logo/829black%20trsp.webp`,
     email: COMPANY.email,
     description: tMeta("description"),
     legalName: COMPANY.legalName,
-    areaServed: "Europe",
+    areaServed: ["Europe", "Romania", "Italy"],
     telephone: [COMPANY.phoneRo, COMPANY.phoneIt],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Str. Mihai Eminescu, 10",
       addressLocality: "Roman",
+      addressRegion: "Neamț",
       addressCountry: "RO",
     },
     vatID: COMPANY.cui,
+    taxID: COMPANY.cui,
     sameAs: [
       "https://www.trustpilot.com/review/core829.net",
+      ...SOCIAL_LINKS.map((s) => s.href),
     ],
     knowsAbout: [
+      "Custom Servers",
       "Web Applications",
       "Software Development",
       "Artificial Intelligence",

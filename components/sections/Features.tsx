@@ -13,12 +13,12 @@ interface FeatureItem {
 }
 
 const SPANS = [
-  "md:col-span-2 md:row-span-2",
-  "md:col-span-1",
-  "md:col-span-1",
-  "md:col-span-2",
-  "md:col-span-1 md:row-span-2",
-  "md:col-span-2",
+  "lg:col-span-2 lg:row-span-2",
+  "lg:col-span-1",
+  "lg:col-span-1",
+  "lg:col-span-2",
+  "lg:col-span-1 lg:row-span-2",
+  "lg:col-span-2",
 ];
 
 /**
@@ -40,7 +40,7 @@ export default function Features() {
           </div>
         </RevealOnScroll>
 
-        <RevealOnScroll className="mt-16 grid gap-4 md:grid-cols-4 md:auto-rows-[minmax(9rem,auto)]">
+        <RevealOnScroll className="mt-16 grid gap-4 lg:grid-cols-4 lg:auto-rows-[minmax(9rem,auto)]">
           {items.map((item, i) => {
             const Icon = FEATURE_ICON_MAP[item.icon];
             const large = i === 0 || i === 4;

@@ -34,7 +34,7 @@ export function TrustpilotWidget({ className }: { className?: string }) {
   return (
     <div className={cn(className)}>
       <div className="trustpilot-widget" {...TRUSTPILOT_WIDGET_PROPS}>
-        <a href={TRUSTPILOT_REVIEW_URL} target="_blank" rel="noopener">
+        <a href={TRUSTPILOT_REVIEW_URL} target="_blank" rel="noopener noreferrer">
           Trustpilot
         </a>
       </div>

@@ -29,12 +29,12 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border bg-surface">
-      <div className="container-core829 grid grid-cols-2 gap-12 py-16 md:grid-cols-4 lg:grid-cols-6">
+      <div className="container-core829 grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-6">
         {/* Brand */}
         <div className="col-span-2">
           <p className="text-lg font-bold tracking-tight">
             <img
-              src="/core829-logo/829black%20trsp.png"
+              src="/core829-logo/829black%20trsp.webp"
               alt="CORE829"
               className="h-8 w-auto"
             />
@@ -42,7 +42,7 @@ export default function Footer() {
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-foreground-muted">
             {t("tagline")}
           </p>
-          <div className="mt-6 font-mono text-[11px] uppercase tracking-widest text-foreground-muted/70">
+          <div className="mt-6 font-mono text-[11px] uppercase leading-relaxed tracking-widest text-foreground-muted/70">
             <p>CORE829 SRL — Reg. Com. {COMPANY.regCom}</p>
             <p>CUI / CIF {COMPANY.cui}</p>
             <p>{COMPANY.address}</p>

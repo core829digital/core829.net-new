@@ -57,7 +57,7 @@ export default function ClientCarousel() {
               {items.map((item) => (
                 <figure
                   key={item.domain}
-                  className="w-72 shrink-0 border border-border bg-surface sm:w-80"
+                  className="w-[min(18rem,85vw)] shrink-0 border border-border bg-surface sm:w-80"
                 >
                   <div className="relative overflow-hidden">
                     {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -10,15 +10,15 @@ import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
 const SERVER_IMAGES = [
-  { src: "/server-service/2.png", alt: "CORE829 custom server build" },
-  { src: "/server-service/3.png", alt: "CORE829 custom server build" },
-  { src: "/server-service/4.png", alt: "CORE829 custom server build" },
-  { src: "/server-service/5.png", alt: "CORE829 custom server build" },
-  { src: "/server-service/6.png", alt: "CORE829 custom server build" },
+  { src: "/server-service/2.webp", alt: "CORE829 custom server build" },
+  { src: "/server-service/3.webp", alt: "CORE829 custom server build" },
+  { src: "/server-service/4.webp", alt: "CORE829 custom server build" },
+  { src: "/server-service/5.webp", alt: "CORE829 custom server build" },
+  { src: "/server-service/6.webp", alt: "CORE829 custom server build" },
 ];
 
-const INTEL_LOGO = "/server-service/intel_PNG1.png";
-const NVIDIA_LOGO = "/server-service/Nvidia-Logo-PNG-Picture.png";
+const INTEL_LOGO = "/server-service/intel_PNG1.webp";
+const NVIDIA_LOGO = "/server-service/Nvidia-Logo-PNG-Picture.webp";
 
 const SERVICE_IMG_SIZES = "(max-width: 1024px) 90vw, 48vw";
 
@@ -213,7 +213,7 @@ export default function ServerServicePage() {
 
         <RevealOnScroll stagger={0.1} className="mt-16 grid gap-6 lg:grid-cols-2">
           {/* Intel */}
-          <div className="group flex flex-col border border-border bg-background p-10 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl">
+          <div className="group flex flex-col border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl sm:p-8 md:p-10">
             <div className="flex h-16 w-16 items-center justify-center border border-border p-2">
               <Image
                 src={INTEL_LOGO}
@@ -231,7 +231,7 @@ export default function ServerServicePage() {
           </div>
 
           {/* NVIDIA */}
-          <div className="group flex flex-col border border-border bg-background p-10 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl">
+          <div className="group flex flex-col border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl sm:p-8 md:p-10">
             <div className="flex h-16 w-16 items-center justify-center border border-border p-2">
               <Image
                 src={NVIDIA_LOGO}
@@ -250,7 +250,7 @@ export default function ServerServicePage() {
         </RevealOnScroll>
 
         {/* Ecosistema a 360° */}
-        <RevealOnScroll className="mt-16 border border-border bg-surface p-10">
+        <RevealOnScroll className="mt-16 border border-border bg-surface p-6 sm:p-8 md:p-10">
           <div className="grid items-center gap-8 md:grid-cols-[auto_1fr]">
             <span className="flex h-14 w-14 items-center justify-center bg-foreground text-white">
               <span className="font-mono text-sm">360°</span>
@@ -265,7 +265,7 @@ export default function ServerServicePage() {
         </RevealOnScroll>
 
         {/* Limite di spedizione */}
-        <RevealOnScroll className="mt-6 border border-border p-10">
+        <RevealOnScroll className="mt-6 border border-border p-6 sm:p-8 md:p-10">
           <div className="grid items-start gap-6 md:grid-cols-[auto_1fr]">
             <span className="flex h-10 items-center rounded-full border border-accent px-4">
               <span className="font-mono text-sm uppercase tracking-widest text-accent">

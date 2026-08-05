@@ -538,7 +538,9 @@
     "title": "Let's build together",
     "subtitle": "Start your project with a consultation.",
     "existingClient": "Al klant?",
-    "projectsMail": "om te communiceren met de projectafdeling."
+    "projectsMail": "om te communiceren met de projectafdeling.",
+    "companyAddress": "Statutaire zetel",
+    "companyPhones": "Telefoonnummers"
   },
   "aboutPage": {
     "kicker": "About",

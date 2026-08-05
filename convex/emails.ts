@@ -1,5 +1,8 @@
 import { Resend } from "resend";
 
+/** Indirizzo predefinito ricevente per i nuovi lead dal form. */
+const LEAD_EMAIL = "hello@core829.net";
+
 /**
  * Invio email di notifica per le richieste di preventivo.
  * Usa Resend se RESEND_API_KEY è configurato; altrimenti logga in dev.
@@ -30,7 +33,7 @@ export async function sendContactEmail(args: {
 
   await resend.emails.send({
     from,
-    to: process.env.CONTACT_RECIPIENT_EMAIL ?? args.email,
+    to: process.env.CONTACT_RECIPIENT_EMAIL ?? LEAD_EMAIL,
     subject: `Nuova richiesta da ${args.name}`,
     text: [
       `Nome: ${args.name}`,

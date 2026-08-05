@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import ContactForm from "@/components/sections/ContactForm";
+import { COMPANY } from "@/lib/constants";
 
 export async function generateMetadata({
   params,
@@ -49,6 +50,42 @@ export default async function ContattiPage({
               </a>{" "}
               — {t("projectsMail")}
             </p>
+          </div>
+        </div>
+
+        <div className="mt-16 border border-border bg-surface p-8 md:max-w-3xl">
+          <p className="tech-label">{COMPANY.legalName}</p>
+          <div className="mt-6 grid gap-6 sm:grid-cols-2">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted">
+                {t("companyAddress")}
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-foreground">
+                {COMPANY.address}
+              </p>
+              <p className="mt-2 text-xs text-foreground-muted">
+                Reg. Com. {COMPANY.regCom} · CUI {COMPANY.cui}
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted">
+                {t("companyPhones")}
+              </p>
+              <p className="mt-2 space-y-1 text-sm leading-relaxed text-foreground">
+                <a
+                  href={`tel:${COMPANY.phoneRo.replace(/\s/g, "")}`}
+                  className="block transition-colors hover:text-accent"
+                >
+                  RO {COMPANY.phoneRo}
+                </a>
+                <a
+                  href={`tel:${COMPANY.phoneIt.replace(/\s/g, "")}`}
+                  className="block transition-colors hover:text-accent"
+                >
+                  IT {COMPANY.phoneIt}
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </section>

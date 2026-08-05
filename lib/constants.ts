@@ -57,25 +57,27 @@ export const clientAnchorIds = CLIENTS_META.map((c) => ({ id: c.anchorId }));
 /**
  * Screenshot reali dei client (chiave = dominio, come nel file in /public/core829-client-ss).
  * I clienti senza screenshot (es. iwhome) cadono sul mockup astratto.
+ * Convertiti in WebP per prestazioni (q80).
  */
 export const CLIENT_SCREENSHOTS: Record<string, string> = {
-  "iwhome.app": "/core829-client-ss/iwhome.app.png",
-  "doctor-haus.com": "/core829-client-ss/doctor-haus.com.png",
-  "winex.ro": "/core829-client-ss/winex.ro.png",
-  "getrevive.app": "/core829-client-ss/getrevive.app.png",
-  "bidwyz.com": "/core829-client-ss/bidwyz.com.png",
+  "iwhome.app": "/core829-client-ss/iwhome.app.webp",
+  "doctor-haus.com": "/core829-client-ss/doctor-haus.com.webp",
+  "winex.ro": "/core829-client-ss/winex.ro.webp",
+  "getrevive.app": "/core829-client-ss/getrevive.app.webp",
+  "bidwyz.com": "/core829-client-ss/bidwyz.com.webp",
 };
 
 /**
  * Loghi reali dei client (chiave = key in CLIENTS_META, come i file
  * copiati in /public/logos dalla cartella fornita /public/branding+foto).
+ * Convertiti in WebP per prestazioni.
  */
 export const CLIENT_LOGOS: Record<string, string> = {
-  iwhome: "/logos/iwhome.png",
+  iwhome: "/logos/iwhome.webp",
   "doctor-haus": "/logos/doctor-haus.webp",
-  winex: "/logos/winex.png",
-  revive: "/logos/revive.png",
-  bidwyz: "/logos/bidwyz.png",
+  winex: "/logos/winex.webp",
+  revive: "/logos/revive.webp",
+  bidwyz: "/logos/bidwyz.webp",
 };
 
 /**

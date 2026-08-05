@@ -76,7 +76,7 @@ export default function Navbar() {
           aria-label="CORE829"
         >
           <img
-            src="/core829-logo/829black%20trsp.png"
+            src="/core829-logo/829black%20trsp.webp"
             alt="CORE829"
             className="h-8 w-auto"
           />
@@ -271,7 +271,7 @@ function DesktopDropdown({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 8 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full left-0 mt-2 w-56 rounded-lg border border-white/60 bg-white/80 p-2 shadow-2xl shadow-black/20 backdrop-blur-xl"
+            className="absolute top-full left-0 mt-2 w-56 rounded-lg border border-border bg-background p-2 shadow-2xl shadow-black/10"
           >
             {items.map((item) => (
               <Link

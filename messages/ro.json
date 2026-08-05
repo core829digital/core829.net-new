@@ -538,7 +538,9 @@
     "title": "Let's build together",
     "subtitle": "Start your project with a consultation.",
     "existingClient": "Ești deja client?",
-    "projectsMail": "pentru a comunica cu departamentul de proiecte."
+    "projectsMail": "pentru a comunica cu departamentul de proiecte.",
+    "companyAddress": "Sediu social",
+    "companyPhones": "Telefoane"
   },
   "aboutPage": {
     "kicker": "About",

@@ -411,7 +411,8 @@
     "subtitle": "Parliamone. Raccontaci il problema che vuoi risolvere e ti proponiamo una soluzione concreta.",
     "cta": "Parliamo del tuo progetto",
     "existingClient": "Sei già un cliente attivo?",
-    "projectsMail": "il dipartimento progetti ti risponde direttamente."
+    "projectsMail": "il dipartimento progetti ti risponde direttamente.",
+    "kicker": "Contatti"
   },
   "contact": {
     "name": "Nome e cognome",

@@ -58,20 +58,68 @@
   "process": {
     "kicker": "私たちの進め方",
     "title": "問題から価値への透明なプロセス",
-    "subtitle": "4つのステップ、サプライズなし、測定可能な結果。"
+    "subtitle": "4つのステップ、サプライズなし、測定可能な結果。",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "ビジネス、プロセス、データを分析します。コードを1行も書く前に、測定可能な目標を定義します。"
+      },
+      {
+        "title": "Design & Build",
+        "desc": "インターフェースとアーキテクチャを設計し、継続的なチェックを伴う短いイテレーションで開発します。"
+      },
+      {
+        "title": "Delivery",
+        "desc": "信頼性の高いパイプラインでテスト、デプロイ、本番リリースを行います。リリース時に驚きはありません。"
+      },
+      {
+        "title": "Growth",
+        "desc": "明確な指標とともに、製品を長期にわたり監視・最適化・進化させます。"
+      }
+    ]
   },
   "pricing": {
     "kicker": "見積もりの作成方法",
     "title": "固定価格のパッケージはありません。あなたに合わせた見積もり。",
     "subtitle": "プロジェクトはそれぞれ異なります。プロジェクト単位または継続的な透明なモデルで仕事を進めます。",
-    "cta": "見積もりを依頼する"
+    "cta": "見積もりを依頼する",
+    "models": [
+      {
+        "title": "固定スコーププロジェクト",
+        "desc": "明確な範囲と目標のある取り組み向け：固定見積もり、明確なスケジュール、サプライズなし。",
+        "points": [
+          "定義された共有スコープ",
+          "明確なロードマップとマイルストーン",
+          "事前合意の価格"
+        ]
+      },
+      {
+        "title": "月額リテイナー",
+        "desc": "継続的なテクノロジーパートナーを求める方へ：月単位の開発・保守・最適化。",
+        "points": [
+          "継続的な開発優先順位",
+          "保守と監視",
+          "合意したSLA"
+        ]
+      },
+      {
+        "title": "レベニューシェア／パートナーシップ",
+        "desc": "成長の可能性を秘めたデジタル製品向け：一緒に構築し、リスクを共有します。",
+        "points": [
+          "成功指標への整合",
+          "共有投資",
+          "成長とトラクションへの集中"
+        ]
+      }
+    ]
   },
   "finalCta": {
     "title": "プロジェクトのアイデアはありますか？",
     "subtitle": "ぜひお話ししましょう。解決したい問題をお伝えください。具体的な解決策を提案します。",
     "cta": "あなたのプロジェクトについて話しましょう",
     "existingClient": "Already an active client?",
-    "projectsMail": "the projects department answers you directly."
+    "projectsMail": "the projects department answers you directly.",
+    "kicker": "お問い合わせ"
   },
   "contact": {
     "name": "氏名",
@@ -587,7 +635,6 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "updated": "Last updated: {date}",
     "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
     "sections": [
       {
@@ -622,7 +669,6 @@
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
-    "updated": "Last updated: {date}",
     "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
     "sections": [
       {

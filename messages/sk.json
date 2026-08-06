@@ -58,20 +58,68 @@
   "process": {
     "kicker": "Ako pracujeme",
     "title": "Transparentný proces, od problému k hodnote",
-    "subtitle": "Štyri kroky, žiadne prekvapenia, merateľné výsledky."
+    "subtitle": "Štyri kroky, žiadne prekvapenia, merateľné výsledky.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "Analyzujeme biznis, procesy a dáta. Stanovíme merateľné ciele, než napíšeme čo i len jeden riadok kódu."
+      },
+      {
+        "title": "Design & Build",
+        "desc": "Navrhujeme rozhrania a architektúru, potom vyvíjame v krátkych iteráciách s priebežnou kontrolou."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Testovanie, nasadenie a produkčné spustenie so spoľahlivými pipeline. Žiadne prekvapenia na štarte."
+      },
+      {
+        "title": "Growth",
+        "desc": "Produkt v čase monitorujeme, optimalizujeme a rozvíjame s jasnými metrikami."
+      }
+    ]
   },
   "pricing": {
     "kicker": "Ako zostavujeme ponuku",
     "title": "Žiadne balíky s pevnou cenou. Ponuka postavená na vás.",
     "subtitle": "Každý projekt je iný. Pracujeme projektovo alebo priebežne, v transparentných modeloch.",
-    "cta": "Objednať ponuku"
+    "cta": "Objednať ponuku",
+    "models": [
+      {
+        "title": "Projekt s pevným rozsahom",
+        "desc": "Pre iniciatívy s jasným rozsahom a cieľmi: pevná ponuka, stanovené termíny, žiadne prekvapenia.",
+        "points": [
+          "Definovaný a zdieľaný rozsah",
+          "Jasný plán a míľniky",
+          "Cena dohodnutá vopred"
+        ]
+      },
+      {
+        "title": "Mesačný retainer",
+        "desc": "Pre tých, ktorí chcú stáleho technologického partnera: vývoj, údržba a optimalizácia na mesačnej báze.",
+        "points": [
+          "Priebežné vývojové priority",
+          "Údržba a monitorovanie",
+          "Dohodnuté SLA"
+        ]
+      },
+      {
+        "title": "Revenue-share / Partnerstvo",
+        "desc": "Pre digitálne produkty s rastovým potenciálom: staviame spoločne a zdieľame riziko.",
+        "points": [
+          "Zosúladenie na metriky úspechu",
+          "Zdieľaná investícia",
+          "Zameranie na rast a trakciu"
+        ]
+      }
+    ]
   },
   "finalCta": {
     "title": "Máte projekt v hlave?",
     "subtitle": "Porozprávajme sa. Povedzte nám, aký problém chcete vyriešiť, a navrhneme konkrétne riešenie.",
     "cta": "Porozprávajme sa o vašom projekte",
     "existingClient": "Already an active client?",
-    "projectsMail": "the projects department answers you directly."
+    "projectsMail": "the projects department answers you directly.",
+    "kicker": "Kontakt"
   },
   "contact": {
     "name": "Meno a priezvisko",
@@ -587,7 +635,6 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "updated": "Last updated: {date}",
     "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
     "sections": [
       {
@@ -622,7 +669,6 @@
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
-    "updated": "Last updated: {date}",
     "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
     "sections": [
       {

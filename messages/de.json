@@ -411,7 +411,8 @@
     "subtitle": "Sprechen wir darüber. Erzählen Sie uns das Problem, das Sie lösen wollen, und wir schlagen eine konkrete Lösung vor.",
     "cta": "Sprechen wir über Ihr Projekt",
     "existingClient": "Bereits aktiver Kunde?",
-    "projectsMail": "die Projektabteilung antwortet Ihnen direkt."
+    "projectsMail": "die Projektabteilung antwortet Ihnen direkt.",
+    "kicker": "Kontakt"
   },
   "contact": {
     "name": "Vor- und Nachname",

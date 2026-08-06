@@ -58,20 +58,68 @@
   "process": {
     "kicker": "Miten työskentelemme",
     "title": "Läpinäkyvä prosessi, ongelmasta arvoon",
-    "subtitle": "Neljä vaihetta, nolla yllätystä, mitattavia tuloksia."
+    "subtitle": "Neljä vaihetta, nolla yllätystä, mitattavia tuloksia.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "Analysoimme liiketoiminnan, prosessit ja datan. Määrittelemme mitattavat tavoitteet ennen kuin kirjoitamme riviäkään koodia."
+      },
+      {
+        "title": "Design & Build",
+        "desc": "Suunnittelemme käyttöliittymät ja arkkitehtuurin ja kehitämme sitten lyhyissä iteraatioissa jatkuvien tarkistusten kera."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Testaus, käyttöönotto ja tuotantojulkaisu luotettavilla pipelineilla. Ei yllätyksiä lanseerauksessa."
+      },
+      {
+        "title": "Growth",
+        "desc": "Seuraamme, optimoimme ja kehitämme tuotetta ajan mittaan selkein mittarein."
+      }
+    ]
   },
   "pricing": {
     "kicker": "Näin rakennamme tarjouksen",
     "title": "Ei kiinteähintaisia paketteja. Sinulle räätälöity tarjous.",
     "subtitle": "Jokainen projekti on erilainen. Työskentelemme projektilähtöisesti tai jatkuvasti, läpinäkyvillä malleilla.",
-    "cta": "Pyydä tarjous"
+    "cta": "Pyydä tarjous",
+    "models": [
+      {
+        "title": "Kiinteän laajuuden projekti",
+        "desc": "Selkeän laajuuden ja tavoitteiden hankkeille: kiinteä tarjous, määritellyt aikataulut, nolla yllätystä.",
+        "points": [
+          "Määritelty ja jaettu laajuus",
+          "Selkeä tiekartta ja virstanpylväät",
+          "Hinta sovittu etukäteen"
+        ]
+      },
+      {
+        "title": "Kuukausittainen retainer",
+        "desc": "Niille, jotka haluavat jatkuvan teknologiakumppanin: kehitys, ylläpito ja optimoinnit kuukausittain.",
+        "points": [
+          "Jatkuvat kehitysprioriteetit",
+          "Ylläpito ja seuranta",
+          "Sovitut SLA:t"
+        ]
+      },
+      {
+        "title": "Revenue-share / Kumppanuus",
+        "desc": "Kasvupotentiaalia omaaville digituotteille: rakennamme yhdessä ja jaamme riskin.",
+        "points": [
+          "Yhdenmukaisuus menestysmittareihin",
+          "Jaettu investointi",
+          "Keskittyminen kasvuun ja vauhtiin"
+        ]
+      }
+    ]
   },
   "finalCta": {
     "title": "Onko sinulla projekti mielessä?",
     "subtitle": "Puhutaan. Kerro meille ongelma, jonka haluat ratkaista, ja ehdotamme konkreettista ratkaisua.",
     "cta": "Puhutaan projektistasi",
     "existingClient": "Already an active client?",
-    "projectsMail": "the projects department answers you directly."
+    "projectsMail": "the projects department answers you directly.",
+    "kicker": "Yhteystiedot"
   },
   "contact": {
     "name": "Koko nimi",
@@ -587,7 +635,6 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "updated": "Last updated: {date}",
     "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
     "sections": [
       {
@@ -622,7 +669,6 @@
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
-    "updated": "Last updated: {date}",
     "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
     "sections": [
       {

@@ -58,20 +58,68 @@
   "process": {
     "kicker": "Jak pracujemy",
     "title": "Przejrzysty proces, od problemu do wartości",
-    "subtitle": "Cztery kroki, zero niespodzianek, mierzalne rezultaty."
+    "subtitle": "Cztery kroki, zero niespodzianek, mierzalne rezultaty.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "Analizujemy biznes, procesy i dane. Definiujemy mierzalne cele, zanim napiszemy choćby jedną linię kodu."
+      },
+      {
+        "title": "Design & Build",
+        "desc": "Projektujemy interfejsy i architekturę, a następnie rozwijamy w krótkich iteracjach z ciągłą kontrolą."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Testy, wdrożenie i publikacja produkcyjna z niezawodnymi pipeline'ami. Zero niespodzianek na starcie."
+      },
+      {
+        "title": "Growth",
+        "desc": "Monitorujemy, optymalizujemy i rozwijamy produkt w czasie, z jasnymi metrykami."
+      }
+    ]
   },
   "pricing": {
     "kicker": "Jak budujemy wycenę",
     "title": "Żadnych pakietów ze stałą ceną. Wycena dopasowana do Ciebie.",
     "subtitle": "Każdy projekt jest inny. Pracujemy projektowo lub w sposób ciągły, w przejrzystych modelach.",
-    "cta": "Zamów wycenę"
+    "cta": "Zamów wycenę",
+    "models": [
+      {
+        "title": "Projekt o stałym zakresie",
+        "desc": "Dla inicjatyw o jasnym zakresie i celach: stała wycena, określone terminy, zero niespodzianek.",
+        "points": [
+          "Określony i współdzielony zakres",
+          "Jasny roadmap i kamienie milowe",
+          "Cena ustalona z góry"
+        ]
+      },
+      {
+        "title": "Miesięczny retainer",
+        "desc": "Dla tych, którzy chcą stałego partnera technologicznego: rozwój, utrzymanie i optymalizacje w cyklu miesięcznym.",
+        "points": [
+          "Ciągłe priorytety rozwoju",
+          "Utrzymanie i monitoring",
+          "Uzgodnione SLA"
+        ]
+      },
+      {
+        "title": "Revenue-share / Partnerstwo",
+        "desc": "Dla produktów cyfrowych z potencjałem wzrostu: budujemy razem i dzielimy ryzyko.",
+        "points": [
+          "Zgodność z metrykami sukcesu",
+          "Wspólna inwestycja",
+          "Skupienie na wzroście i trakcji"
+        ]
+      }
+    ]
   },
   "finalCta": {
     "title": "Masz projekt w głowie?",
     "subtitle": "Porozmawiajmy. Opowiedz nam o problemie, który chcesz rozwiązać, a zaproponujemy konkretne rozwiązanie.",
     "cta": "Porozmawiajmy o Twoim projekcie",
     "existingClient": "Already an active client?",
-    "projectsMail": "the projects department answers you directly."
+    "projectsMail": "the projects department answers you directly.",
+    "kicker": "Kontakt"
   },
   "contact": {
     "name": "Imię i nazwisko",
@@ -587,7 +635,6 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "updated": "Last updated: {date}",
     "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
     "sections": [
       {
@@ -622,7 +669,6 @@
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
-    "updated": "Last updated: {date}",
     "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
     "sections": [
       {

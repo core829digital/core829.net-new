@@ -58,20 +58,68 @@
   "process": {
     "kicker": "Hogyan dolgozunk",
     "title": "Átlátható folyamat, a problémától az értékig",
-    "subtitle": "Négy lépés, nulla meglepetés, mérhető eredmények."
+    "subtitle": "Négy lépés, nulla meglepetés, mérhető eredmények.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "Elemezzük az üzletet, a folyamatokat és az adatokat. Mérhető célokat tűzünk ki, mielőtt egyetlen sornyi kódot írnánk."
+      },
+      {
+        "title": "Design & Build",
+        "desc": "Felületeket és architektúrát tervezünk, majd rövid iterációkban fejlesztünk, folyamatos ellenőrzéssel."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Tesztelés, üzembe helyezés és éles környezet megbízható pipeline-okkal. Semmilyen meglepetés az induláskor."
+      },
+      {
+        "title": "Growth",
+        "desc": "Folyamatosan figyeljük, optimalizáljuk és fejlesztjük a terméket, világos metrikákkal."
+      }
+    ]
   },
   "pricing": {
     "kicker": "Hogyan építjük fel az árajánlatot",
     "title": "Nincs fix árú csomag. Önre szabott árajánlat.",
     "subtitle": "Minden projekt más. Projektalapúan vagy folyamatosan dolgozunk, átlátható modellekben.",
-    "cta": "Árajánlat kérése"
+    "cta": "Árajánlat kérése",
+    "models": [
+      {
+        "title": "Fix hatókörű projekt",
+        "desc": "Világos hatókörű és célú kezdeményezésekhez: fix ajánlat, meghatározott ütemtervek, nulla meglepetés.",
+        "points": [
+          "Meghatározott és megosztott hatókör",
+          "Világos ütemterv és mérföldkövek",
+          "Előre egyeztetett ár"
+        ]
+      },
+      {
+        "title": "Havi retainer",
+        "desc": "Azoknak, akik folyamatos technológiai partnert szeretnének: havi fejlesztés, karbantartás és optimalizálás.",
+        "points": [
+          "Folyamatos fejlesztési prioritások",
+          "Karbantartás és megfigyelés",
+          "Egyeztetett SLA-k"
+        ]
+      },
+      {
+        "title": "Bevétel-megosztás / Partnerség",
+        "desc": "Növekedési potenciállal rendelkező digitális termékekhez: együtt építünk és megosztjuk a kockázatot.",
+        "points": [
+          "Összehangolás a siker mérőszámaival",
+          "Megosztott befektetés",
+          "Fókusz a növekedésen és a vonzerőn"
+        ]
+      }
+    ]
   },
   "finalCta": {
     "title": "Van egy projekt a fejében?",
     "subtitle": "Beszéljünk róla. Mesélje el, milyen problémát szeretne megoldani, és konkrét megoldást javasolunk.",
     "cta": "Beszéljünk a projektjéről",
     "existingClient": "Already an active client?",
-    "projectsMail": "the projects department answers you directly."
+    "projectsMail": "the projects department answers you directly.",
+    "kicker": "Kapcsolat"
   },
   "contact": {
     "name": "Név",
@@ -587,7 +635,6 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "updated": "Last updated: {date}",
     "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
     "sections": [
       {
@@ -622,7 +669,6 @@
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
-    "updated": "Last updated: {date}",
     "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
     "sections": [
       {

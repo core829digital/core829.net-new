@@ -58,20 +58,68 @@
   "process": {
     "kicker": "Så här arbetar vi",
     "title": "En transparent process, från problem till värde",
-    "subtitle": "Fyra steg, inga överraskningar, mätbara resultat."
+    "subtitle": "Fyra steg, inga överraskningar, mätbara resultat.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "Vi analyserar verksamheten, processerna och datan. Vi definierar mätbara mål innan vi skriver en enda rad kod."
+      },
+      {
+        "title": "Design & Build",
+        "desc": "Vi designar gränssnitt och arkitektur och utvecklar sedan i korta iterationer med kontinuerliga kontroller."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Testning, deploy och produktionslansering med tillförlitliga pipelines. Inga överraskningar vid lanseringen."
+      },
+      {
+        "title": "Growth",
+        "desc": "Vi övervakar, optimerar och utvecklar produkten över tid, med tydliga mätvärden."
+      }
+    ]
   },
   "pricing": {
     "kicker": "Så här bygger vi offerten",
     "title": "Inga paket med fast pris. En offert byggd kring dig.",
     "subtitle": "Varje projekt är unikt. Vi arbetar projektbaserat eller kontinuerligt, med transparenta modeller.",
-    "cta": "Begär en offert"
+    "cta": "Begär en offert",
+    "models": [
+      {
+        "title": "Projekt med fast omfattning",
+        "desc": "För initiativ med tydlig omfattning och mål: fast pris, definierade tidsplaner, noll överraskningar.",
+        "points": [
+          "Definierad och delad omfattning",
+          "Tydlig färdplan och milstolpar",
+          "Pris avtalat i förväg"
+        ]
+      },
+      {
+        "title": "Månatlig retainer",
+        "desc": "För dem som vill ha en kontinuerlig teknikpartner: utveckling, underhåll och optimering på månadsbasis.",
+        "points": [
+          "Löpande utvecklingsprioriteringar",
+          "Underhåll och övervakning",
+          "Överenskomna SLA:er"
+        ]
+      },
+      {
+        "title": "Revenue-share / Partnerskap",
+        "desc": "För digitala produkter med tillväxtpotential: vi bygger tillsammans och delar risken.",
+        "points": [
+          "Anpassning till framgångsmått",
+          "Delad investering",
+          "Fokus på tillväxt och traction"
+        ]
+      }
+    ]
   },
   "finalCta": {
     "title": "Har du ett projekt i tankarna?",
     "subtitle": "Låt oss prata. Berätta om problemet du vill lösa, så föreslår vi en konkret lösning.",
     "cta": "Låt oss prata om ditt projekt",
     "existingClient": "Already an active client?",
-    "projectsMail": "the projects department answers you directly."
+    "projectsMail": "the projects department answers you directly.",
+    "kicker": "Kontakt"
   },
   "contact": {
     "name": "För- och efternamn",
@@ -587,7 +635,6 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "updated": "Last updated: {date}",
     "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
     "sections": [
       {
@@ -622,7 +669,6 @@
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
-    "updated": "Last updated: {date}",
     "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
     "sections": [
       {

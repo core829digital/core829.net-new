@@ -58,20 +58,68 @@
   "process": {
     "kicker": "Nasıl çalışıyoruz",
     "title": "Şeffaf bir süreç: sorundan değere",
-    "subtitle": "Dört adım, sıfır sürpriz, ölçülebilir sonuçlar."
+    "subtitle": "Dört adım, sıfır sürpriz, ölçülebilir sonuçlar.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "İşletmeyi, süreçleri ve verileri analiz ederiz. Tek satır kod yazmadan önce ölçülebilir hedefler tanımlarız."
+      },
+      {
+        "title": "Design & Build",
+        "desc": "Arayüzleri ve mimariyi tasarlarız, ardından sürekli kontrollerle kısa iterasyonlar halinde geliştiririz."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Güvenilir pipeline'larla test, dağıtım ve üretim lansmanı. Lansmanda sürpriz yok."
+      },
+      {
+        "title": "Growth",
+        "desc": "Ürünü zaman içinde net metriklerle izler, optimize eder ve geliştiririz."
+      }
+    ]
   },
   "pricing": {
     "kicker": "Teklifi nasıl oluşturuyoruz",
     "title": "Sabit fiyatlı paket yok. Size özel bir teklif.",
     "subtitle": "Her proje farklıdır. Proje bazlı veya sürekli olarak, şeffaf modellerle çalışıyoruz.",
-    "cta": "Teklif isteyin"
+    "cta": "Teklif isteyin",
+    "models": [
+      {
+        "title": "Sabit kapsamlı proje",
+        "desc": "Kapsamı ve hedefleri net olan girişimler için: sabit fiyat, tanımlı takvimler, sıfır sürpriz.",
+        "points": [
+          "Tanımlanmış ve paylaşılmış kapsam",
+          "Net yol haritası ve kilometre taşları",
+          "Önceden kararlaştırılmış fiyat"
+        ]
+      },
+      {
+        "title": "Aylık retainer",
+        "desc": "Sürekli bir teknoloji ortağı isteyenler için: aylık bazda geliştirme, bakım ve optimizasyon.",
+        "points": [
+          "Sürekli geliştirme öncelikleri",
+          "Bakım ve izleme",
+          "Üzerinde anlaşılan SLA'lar"
+        ]
+      },
+      {
+        "title": "Revenue-share / Ortaklık",
+        "desc": "Büyüme potansiyeli olan dijital ürünler için: birlikte inşa eder, riski paylaşırız.",
+        "points": [
+          "Başarı metrikleriyle uyum",
+          "Ortak yatırım",
+          "Büyüme ve hıza odaklanma"
+        ]
+      }
+    ]
   },
   "finalCta": {
     "title": "Aklınızda bir proje mi var?",
     "subtitle": "Konuşalım. Çözmek istediğiniz sorunu anlatın, somut bir çözüm önerelim.",
     "cta": "Projeniz hakkında konuşalım",
     "existingClient": "Already an active client?",
-    "projectsMail": "the projects department answers you directly."
+    "projectsMail": "the projects department answers you directly.",
+    "kicker": "İletişim"
   },
   "contact": {
     "name": "Ad ve soyad",
@@ -587,7 +635,6 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "updated": "Last updated: {date}",
     "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
     "sections": [
       {
@@ -622,7 +669,6 @@
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
-    "updated": "Last updated: {date}",
     "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
     "sections": [
       {

@@ -411,7 +411,8 @@
     "subtitle": "Să vorbim. Spune-ne problema pe care vrei să o rezolvi și îți propunem o soluție concretă.",
     "cta": "Să vorbim despre proiectul tău",
     "existingClient": "Ești deja un client activ?",
-    "projectsMail": "departamentul de proiecte îți răspunde direct."
+    "projectsMail": "departamentul de proiecte îți răspunde direct.",
+    "kicker": "Contact"
   },
   "contact": {
     "name": "Nume și prenume",

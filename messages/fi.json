@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Pyydä tarjous",
-    "metaDescription": "Pyydä CORE829-tiimiltä räätälöity tarjous projektiisi.",
-    "kicker": "Tarjoukset",
-    "title": "Kerro meille projektistasi",
-    "subtitle": "Täytä lomake: CORE829-tiimi vastaa 1-2 arkipäivän kuluessa räätälöidyllä ehdotuksella.",
-    "submit": "Lähetä pyyntö",
-    "success": "Pyyntö lähetetty. Vastaamme 1-2 arkipäivän kuluessa.",
-    "existingClient": "Oletko jo asiakas?",
-    "clientAreaLink": "Siirry asiakasalueelle",
-    "clientAreaHint": "seurataksesi tarjouksiasi ja historiaasi."
-  },
   "clientArea": {
     "metaTitle": "Asiakasalue",
     "metaDescription": "Kirjaudu CORE829-asiakasalueellesi hallitaksesi tarjouksia ja projektitietoja.",
@@ -781,7 +769,11 @@
     "newQuote": "Uusi tarjous",
     "loading": "Ladataan…",
     "noQuotes": "Sinulla ei ole vielä tarjouspyyntöjä.",
-    "backendUnavailable": "Asiakasalue ei ole vielä määritetty. Yritä myöhemmin uudelleen tai kirjoita projects@core829.net."
+    "backendUnavailable": "Asiakasalue ei ole vielä määritetty. Yritä myöhemmin uudelleen tai kirjoita projects@core829.net.",
+    "success": "Pyyntö lähetetty. Vastaamme 1-2 arkipäivän kuluessa.",
+    "submit": "Lähetä pyyntö",
+    "newQuoteTitle": "Uusi tarjouspyyntö",
+    "newQuoteHint": "Täytä lomake: tiimimme vastaa 1-2 arkipäivän kuluessa."
   },
   "internalArea": {
     "metaTitle": "Sisäinen alue",
@@ -838,6 +830,52 @@
     "client": "Asiakas",
     "partner": "Kumppani",
     "technical": "Tekninen",
-    "admin": "Ylläpitäjä"
+    "admin": "Ylläpitäjä",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Tili keskeytetty",
+    "hint": "Tilisi on keskeytetty. Lisätietoja saat tuesta.",
+    "signOut": "Kirjaudu ulos"
+  },
+  "adminPanel": {
+    "stats.title": "Alustan tilastot",
+    "stats.loading": "Ladataan…",
+    "stats.totalUsers": "Käyttäjät yhteensä",
+    "stats.verifiedUsers": "Vahvistetut sähköpostit",
+    "stats.bannedUsers": "Estetyt käyttäjät",
+    "stats.newUsers30d": "Uudet käyttäjät (30pv)",
+    "stats.totalQuotes": "Tarjouspyynnöt yhteensä",
+    "stats.quotes30d": "Tarjouspyynnöt (30pv)",
+    "stats.publicQuotes": "Julkiselta sivustolta",
+    "stats.clientAreaQuotes": "Asiakasalueelta",
+    "stats.avgCompletionDays": "Keskim. valmistumisaika",
+    "stats.avgFirstResponseHours": "Keskim. ensivaste",
+    "stats.days": "pv",
+    "stats.hours": "h",
+    "users.title": "Käyttäjähallinta",
+    "users.loading": "Ladataan…",
+    "users.unverified": "vahvistamaton sähköposti",
+    "users.bannedBadge": "ESTETTY",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Rooli",
+    "users.ban": "Estä",
+    "users.unban": "Poista esto",
+    "users.banReasonPlaceholder": "Syy (valinnainen)",
+    "users.banReasonLabel": "Estämisen syy",
+    "users.confirmBan": "Vahvista",
+    "users.cancel": "Peruuta",
+    "users.roleSaved": "Rooli päivitetty.",
+    "users.banSaved": "Valmis.",
+    "users.denied": "Toiminto ei ole sallittu. Vain superadmin voi hallita ylläpitäjiä.",
+    "logs.title": "Ylläpitolokit",
+    "logs.loading": "Ladataan…",
+    "logs.empty": "Ei vielä kirjattuja toimintoja.",
+    "logActions.roleUpdate": "Roolin muutos",
+    "logActions.userBan": "Käyttäjä estetty",
+    "logActions.userUnban": "Käyttäjän esto poistettu",
+    "logActions.quoteStatus": "Tarjouspyynnön tila",
+    "logActions.quoteAssign": "Tarjouspyynnön myöntö",
+    "logActions.quoteReply": "Vastaus tarjouspyyntöön"
   }
 }

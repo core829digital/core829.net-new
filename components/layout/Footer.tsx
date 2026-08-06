@@ -139,7 +139,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/preventivo"
+                href="/contatti"
                 className="link-ghost text-sm"
               >
                 {t("companyContact")}

@@ -724,18 +724,6 @@
       "desc": "Voor actieve klanten: de projectafdeling communiceert vanaf dit adres."
     }
   },
-  "preventivo": {
-    "metaTitle": "Offerte aanvragen",
-    "metaDescription": "Vraag een op maat gemaakte offerte aan voor uw project bij het CORE829-team.",
-    "kicker": "Offertes",
-    "title": "Vertel ons over uw project",
-    "subtitle": "Vul het formulier in: het CORE829-team neemt binnen 1-2 werkdagen contact met u op met een op maat gemaakte voorstel.",
-    "submit": "Verzoek versturen",
-    "success": "Verzoek verzonden. We antwoorden binnen 1-2 werkdagen.",
-    "existingClient": "Al klant?",
-    "clientAreaLink": "Naar het klantportaal",
-    "clientAreaHint": "om uw offertes en geschiedenis te volgen."
-  },
   "clientArea": {
     "metaTitle": "Klantportaal",
     "metaDescription": "Log in op uw CORE829-klantportaal om offertes en projectgegevens te beheren.",
@@ -781,7 +769,11 @@
     "newQuote": "Nieuwe offerte",
     "loading": "Laden…",
     "noQuotes": "U heeft nog geen offerteverzoeken.",
-    "backendUnavailable": "De klantomgeving is nog niet geconfigureerd. Probeer het later opnieuw of mail naar projects@core829.net."
+    "backendUnavailable": "De klantomgeving is nog niet geconfigureerd. Probeer het later opnieuw of mail naar projects@core829.net.",
+    "success": "Aanvraag verzonden. We reageren binnen 1-2 werkdagen.",
+    "submit": "Aanvraag versturen",
+    "newQuoteTitle": "Nieuwe offerteaanvraag",
+    "newQuoteHint": "Vul het formulier in: ons team reageert binnen 1-2 werkdagen."
   },
   "internalArea": {
     "metaTitle": "Intern gedeelte",
@@ -838,6 +830,52 @@
     "client": "Klant",
     "partner": "Partner",
     "technical": "Technisch",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Account opgeschort",
+    "hint": "Je account is opgeschort. Neem contact op met de support voor details.",
+    "signOut": "Uitloggen"
+  },
+  "adminPanel": {
+    "stats.title": "Platformstatistieken",
+    "stats.loading": "Laden…",
+    "stats.totalUsers": "Totaal gebruikers",
+    "stats.verifiedUsers": "Geverifieerde e-mails",
+    "stats.bannedUsers": "Gebande gebruikers",
+    "stats.newUsers30d": "Nieuwe gebruikers (30d)",
+    "stats.totalQuotes": "Totaal offertes",
+    "stats.quotes30d": "Offertes (30d)",
+    "stats.publicQuotes": "Van openbare site",
+    "stats.clientAreaQuotes": "Vanuit klantgebied",
+    "stats.avgCompletionDays": "Gemiddelde afrondtijd",
+    "stats.avgFirstResponseHours": "Gemiddelde eerste reactie",
+    "stats.days": "d",
+    "stats.hours": "u",
+    "users.title": "Gebruikersbeheer",
+    "users.loading": "Laden…",
+    "users.unverified": "e-mail niet geverifieerd",
+    "users.bannedBadge": "GEBAND",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Rol",
+    "users.ban": "Bannen",
+    "users.unban": "Debannen",
+    "users.banReasonPlaceholder": "Reden (optioneel)",
+    "users.banReasonLabel": "Banreden",
+    "users.confirmBan": "Bevestigen",
+    "users.cancel": "Annuleren",
+    "users.roleSaved": "Rol bijgewerkt.",
+    "users.banSaved": "Klaar.",
+    "users.denied": "Niet toegestaan. Alleen de superadmin kan beheerders beheren.",
+    "logs.title": "Beheerderslog",
+    "logs.loading": "Laden…",
+    "logs.empty": "Nog geen acties geregistreerd.",
+    "logActions.roleUpdate": "Rolwijziging",
+    "logActions.userBan": "Gebruiker geband",
+    "logActions.userUnban": "Gebruiker gedeband",
+    "logActions.quoteStatus": "Offertestatus",
+    "logActions.quoteAssign": "Offerte toegewezen",
+    "logActions.quoteReply": "Offerte beantwoord"
   }
 }

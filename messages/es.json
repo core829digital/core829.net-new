@@ -724,18 +724,6 @@
       "desc": "Para clientes activos: el departamento de proyectos se comunica desde esta dirección."
     }
   },
-  "preventivo": {
-    "metaTitle": "Solicitar presupuesto",
-    "metaDescription": "Solicita un presupuesto personalizado para tu proyecto al equipo de CORE829.",
-    "kicker": "Presupuestos",
-    "title": "Cuéntanos sobre tu proyecto",
-    "subtitle": "Completa el formulario: el equipo de CORE829 te responderá en 1-2 días laborables con una propuesta a medida.",
-    "submit": "Enviar solicitud",
-    "success": "Solicitud enviada. Responderemos en 1-2 días laborables.",
-    "existingClient": "¿Ya eres cliente?",
-    "clientAreaLink": "Acceder al área de clientes",
-    "clientAreaHint": "para seguir tus presupuestos e historial."
-  },
   "clientArea": {
     "metaTitle": "Área de clientes",
     "metaDescription": "Accede a tu área de clientes de CORE829 para gestionar presupuestos y datos de proyecto.",
@@ -781,7 +769,11 @@
     "newQuote": "Nuevo presupuesto",
     "loading": "Cargando…",
     "noQuotes": "Aún no tienes solicitudes de presupuesto.",
-    "backendUnavailable": "El área de clientes aún no está configurada. Inténtalo más tarde o escríbenos a projects@core829.net."
+    "backendUnavailable": "El área de clientes aún no está configurada. Inténtalo más tarde o escríbenos a projects@core829.net.",
+    "success": "Solicitud enviada. Te responderemos en 1-2 días laborables.",
+    "submit": "Enviar solicitud",
+    "newQuoteTitle": "Nueva solicitud de presupuesto",
+    "newQuoteHint": "Rellena el formulario: nuestro equipo responderá en 1-2 días laborables."
   },
   "internalArea": {
     "metaTitle": "Área reservada",
@@ -838,6 +830,52 @@
     "client": "Cliente",
     "partner": "Socio",
     "technical": "Técnico",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Cuenta suspendida",
+    "hint": "Tu cuenta ha sido suspendida. Contacta con soporte para más detalles.",
+    "signOut": "Cerrar sesión"
+  },
+  "adminPanel": {
+    "stats.title": "Estadísticas de la plataforma",
+    "stats.loading": "Cargando…",
+    "stats.totalUsers": "Usuarios totales",
+    "stats.verifiedUsers": "Correos verificados",
+    "stats.bannedUsers": "Usuarios bloqueados",
+    "stats.newUsers30d": "Nuevos usuarios (30d)",
+    "stats.totalQuotes": "Presupuestos totales",
+    "stats.quotes30d": "Presupuestos (30d)",
+    "stats.publicQuotes": "Desde el sitio público",
+    "stats.clientAreaQuotes": "Desde el área de clientes",
+    "stats.avgCompletionDays": "Tiempo medio de finalización",
+    "stats.avgFirstResponseHours": "Tiempo medio de primera respuesta",
+    "stats.days": "d",
+    "stats.hours": "h",
+    "users.title": "Gestión de usuarios",
+    "users.loading": "Cargando…",
+    "users.unverified": "correo no verificado",
+    "users.bannedBadge": "BLOQUEADO",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Rol",
+    "users.ban": "Bloquear",
+    "users.unban": "Desbloquear",
+    "users.banReasonPlaceholder": "Motivo (opcional)",
+    "users.banReasonLabel": "Motivo del bloqueo",
+    "users.confirmBan": "Confirmar",
+    "users.cancel": "Cancelar",
+    "users.roleSaved": "Rol actualizado.",
+    "users.banSaved": "Operación completada.",
+    "users.denied": "Operación no permitida. Solo el superadmin puede gestionar administradores.",
+    "logs.title": "Registros de administración",
+    "logs.loading": "Cargando…",
+    "logs.empty": "Aún no hay acciones registradas.",
+    "logActions.roleUpdate": "Cambio de rol",
+    "logActions.userBan": "Bloqueo de usuario",
+    "logActions.userUnban": "Desbloqueo de usuario",
+    "logActions.quoteStatus": "Estado del presupuesto",
+    "logActions.quoteAssign": "Asignación de presupuesto",
+    "logActions.quoteReply": "Respuesta al presupuesto"
   }
 }

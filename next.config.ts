@@ -46,6 +46,21 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        // La richiesta di preventivo ora passa dall'area riservata.
+        source: "/preventivo",
+        destination: "/area-riservata",
+        permanent: false,
+      },
+      {
+        source: "/:locale/preventivo",
+        destination: "/:locale/area-riservata",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);

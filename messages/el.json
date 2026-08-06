@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Ζητήστε προσφορά",
-    "metaDescription": "Ζητήστε εξατομικευμένη προσφορά για το έργο σας από την ομάδα της CORE829.",
-    "kicker": "Προσφορές",
-    "title": "Πείτε μας για το έργο σας",
-    "subtitle": "Συμπληρώστε τη φόρμα: η ομάδα της CORE829 θα απαντήσει εντός 1-2 εργάσιμων ημερών με πρόταση στα μέτρα σας.",
-    "submit": "Αποστολή αιτήματος",
-    "success": "Το αίτημα στάλθηκε. Θα απαντήσουμε εντός 1-2 εργάσιμων ημερών.",
-    "existingClient": "Είστε ήδη πελάτης;",
-    "clientAreaLink": "Είσοδος στην περιοχή πελατών",
-    "clientAreaHint": "για να παρακολουθείτε τις προσφορές και το ιστορικό σας."
-  },
   "clientArea": {
     "metaTitle": "Περιοχή πελατών",
     "metaDescription": "Συνδεθείτε στην περιοχή πελατών της CORE829 για να διαχειριστείτε προσφορές και στοιχεία έργου.",
@@ -781,7 +769,11 @@
     "newQuote": "Νέα προσφορά",
     "loading": "Φόρτωση…",
     "noQuotes": "Δεν έχετε ακόμη αιτήσεις προσφοράς.",
-    "backendUnavailable": "Η περιοχή πελατών δεν έχει διαμορφωθεί ακόμα. Δοκιμάστε αργότερα ή γράψτε μας στο projects@core829.net."
+    "backendUnavailable": "Η περιοχή πελατών δεν έχει διαμορφωθεί ακόμα. Δοκιμάστε αργότερα ή γράψτε μας στο projects@core829.net.",
+    "success": "Το αίτημα στάλθηκε. Θα απαντήσουμε εντός 1-2 εργάσιμων ημερών.",
+    "submit": "Αποστολή αιτήματος",
+    "newQuoteTitle": "Νέο αίτημα προσφοράς",
+    "newQuoteHint": "Συμπληρώστε τη φόρμα: η ομάδα μας θα απαντήσει εντός 1-2 εργάσιμων ημερών."
   },
   "internalArea": {
     "metaTitle": "Εσωτερική ζώνη",
@@ -838,6 +830,52 @@
     "client": "Πελάτης",
     "partner": "Συνεργάτης",
     "technical": "Τεχνικός",
-    "admin": "Διαχειριστής"
+    "admin": "Διαχειριστής",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Ο λογαριασμός αναστέλθηκε",
+    "hint": "Ο λογαριασμός σας ανεστάλη. Επικοινωνήστε με την υποστήριξη για λεπτομέρειες.",
+    "signOut": "Αποσύνδεση"
+  },
+  "adminPanel": {
+    "stats.title": "Στατιστικά πλατφόρμας",
+    "stats.loading": "Φόρτωση…",
+    "stats.totalUsers": "Σύνολο χρηστών",
+    "stats.verifiedUsers": "Επαληθευμένα email",
+    "stats.bannedUsers": "Αποκλεισμένοι χρήστες",
+    "stats.newUsers30d": "Νέοι χρήστες (30η)",
+    "stats.totalQuotes": "Σύνολο προσφορών",
+    "stats.quotes30d": "Προσφορές (30η)",
+    "stats.publicQuotes": "Από τον δημόσιο ιστότοπο",
+    "stats.clientAreaQuotes": "Από την περιοχή πελάτη",
+    "stats.avgCompletionDays": "Μέσος χρόνος ολοκλήρωσης",
+    "stats.avgFirstResponseHours": "Μέσος χρόνος 1ης απάντησης",
+    "stats.days": "ημ",
+    "stats.hours": "ω",
+    "users.title": "Διαχείριση χρηστών",
+    "users.loading": "Φόρτωση…",
+    "users.unverified": "μη επαληθευμένο email",
+    "users.bannedBadge": "ΑΠΟΚΛΕΙΣΜΕΝΟΣ",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Ρόλος",
+    "users.ban": "Αποκλεισμός",
+    "users.unban": "Κατάργηση αποκλεισμού",
+    "users.banReasonPlaceholder": "Αιτία (προαιρετικά)",
+    "users.banReasonLabel": "Αιτία αποκλεισμού",
+    "users.confirmBan": "Επιβεβαίωση",
+    "users.cancel": "Ακύρωση",
+    "users.roleSaved": "Ο ρόλος ενημερώθηκε.",
+    "users.banSaved": "Ολοκληρώθηκε.",
+    "users.denied": "Η ενέργεια δεν επιτρέπεται. Μόνο ο superadmin μπορεί να διαχειριστεί διαχειριστές.",
+    "logs.title": "Αρχεία καταγραφής διαχείρισης",
+    "logs.loading": "Φόρτωση…",
+    "logs.empty": "Καμία καταγεγραμμένη ενέργεια.",
+    "logActions.roleUpdate": "Αλλαγή ρόλου",
+    "logActions.userBan": "Αποκλεισμός χρήστη",
+    "logActions.userUnban": "Κατάργηση αποκλεισμού χρήστη",
+    "logActions.quoteStatus": "Κατάσταση προσφοράς",
+    "logActions.quoteAssign": "Ανάθεση προσφοράς",
+    "logActions.quoteReply": "Απάντηση προσφοράς"
   }
 }

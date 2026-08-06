@@ -6,14 +6,16 @@ import { authTables } from "@convex-dev/auth/server";
  * Ruoli utente della piattaforma CORE829:
  * - client: cliente finale, gestisce i propri preventivi
  * - partner: può vedere/gestire i preventivi e collaborare
- * - admin: accesso completo (contact.core829@gmail.com)
  * - technical: operatore del reparto tecnico, gestisce stato preventivi
+ * - admin: gestione utenti, statistiche, log e ban (non il superadmin)
+ * - superadmin: accesso completo e immutabile (contact.core829@gmail.com)
  */
 export const roleValidator = v.union(
   v.literal("client"),
   v.literal("partner"),
   v.literal("admin"),
-  v.literal("technical")
+  v.literal("technical"),
+  v.literal("superadmin")
 );
 
 export const quoteStatusValidator = v.union(
@@ -38,6 +40,9 @@ export default defineSchema({
     phoneVerificationTime: v.optional(v.number()),
     isAnonymous: v.optional(v.boolean()),
     role: v.optional(roleValidator),
+    isBanned: v.optional(v.boolean()),
+    banReason: v.optional(v.string()),
+    bannedAt: v.optional(v.number()),
   })
     .index("email", ["email"])
     .index("phone", ["phone"]),
@@ -66,6 +71,7 @@ export default defineSchema({
     status: quoteStatusValidator,
     assignedTo: v.optional(v.id("users")),
     internalNote: v.optional(v.string()),
+    firstResponseAt: v.optional(v.number()),
     source: v.union(v.literal("public"), v.literal("client_area")),
     createdAt: v.number(),
     updatedAt: v.number(),
@@ -73,6 +79,15 @@ export default defineSchema({
     .index("by_createdAt", ["createdAt"])
     .index("by_userId", ["userId"])
     .index("by_status", ["status"]),
+
+  // Log delle azioni amministrative (ruoli, ban, stati preventivi).
+  adminLogs: defineTable({
+    actor: v.id("users"),
+    action: v.string(),
+    targetUserId: v.optional(v.id("users")),
+    details: v.optional(v.string()),
+    createdAt: v.number(),
+  }).index("by_createdAt", ["createdAt"]),
 
   // Tabella legacy del vecchio form di contatto (dati esistenti preservati).
   contactRequests: defineTable({

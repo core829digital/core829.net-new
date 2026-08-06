@@ -724,18 +724,6 @@
       "desc": "Für aktive Kunden: Die Projektabteilung kommuniziert von dieser Adresse."
     }
   },
-  "preventivo": {
-    "metaTitle": "Angebot anfordern",
-    "metaDescription": "Fordern Sie ein maßgeschneidertes Angebot für Ihr Projekt vom CORE829-Team an.",
-    "kicker": "Angebote",
-    "title": "Erzählen Sie uns von Ihrem Projekt",
-    "subtitle": "Füllen Sie das Formular aus: Das CORE829-Team meldet sich innerhalb von 1-2 Werktagen mit einem maßgeschneiderten Vorschlag.",
-    "submit": "Anfrage senden",
-    "success": "Anfrage gesendet. Wir antworten innerhalb von 1-2 Werktagen.",
-    "existingClient": "Bereits Kunde?",
-    "clientAreaLink": "Zum Kundenbereich",
-    "clientAreaHint": "um Angebote und Verlauf zu verfolgen."
-  },
   "clientArea": {
     "metaTitle": "Kundenbereich",
     "metaDescription": "Melden Sie sich in Ihrem CORE829-Kundenbereich an, um Angebote und Projektdaten zu verwalten.",
@@ -781,7 +769,11 @@
     "newQuote": "Neues Angebot",
     "loading": "Wird geladen…",
     "noQuotes": "Sie haben noch keine Angebotsanfragen.",
-    "backendUnavailable": "Der Kundenbereich ist noch nicht eingerichtet. Versuchen Sie es später erneut oder schreiben Sie an projects@core829.net."
+    "backendUnavailable": "Der Kundenbereich ist noch nicht eingerichtet. Versuchen Sie es später erneut oder schreiben Sie an projects@core829.net.",
+    "success": "Anfrage gesendet. Wir melden uns innerhalb von 1-2 Werktagen.",
+    "submit": "Anfrage senden",
+    "newQuoteTitle": "Neue Anfrage",
+    "newQuoteHint": "Füllen Sie das Formular aus: Unser Team antwortet innerhalb von 1-2 Werktagen."
   },
   "internalArea": {
     "metaTitle": "Interner Bereich",
@@ -838,6 +830,52 @@
     "client": "Kunde",
     "partner": "Partner",
     "technical": "Technisch",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Konto gesperrt",
+    "hint": "Ihr Konto wurde gesperrt. Kontaktieren Sie den Support für Details.",
+    "signOut": "Abmelden"
+  },
+  "adminPanel": {
+    "stats.title": "Plattform-Statistiken",
+    "stats.loading": "Laden…",
+    "stats.totalUsers": "Gesamtnutzer",
+    "stats.verifiedUsers": "Verifizierte E-Mails",
+    "stats.bannedUsers": "Gesperrte Benutzer",
+    "stats.newUsers30d": "Neue Benutzer (30T)",
+    "stats.totalQuotes": "Anfragen gesamt",
+    "stats.quotes30d": "Anfragen (30T)",
+    "stats.publicQuotes": "Vom öffentlichen Standort",
+    "stats.clientAreaQuotes": "Aus dem Kundenbereich",
+    "stats.avgCompletionDays": "Ø Abschlusszeit",
+    "stats.avgFirstResponseHours": "Ø Erstantwort",
+    "stats.days": "T",
+    "stats.hours": "h",
+    "users.title": "Benutzerverwaltung",
+    "users.loading": "Laden…",
+    "users.unverified": "E-Mail nicht verifiziert",
+    "users.bannedBadge": "GESPERRT",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Rolle",
+    "users.ban": "Sperren",
+    "users.unban": "Entsperren",
+    "users.banReasonPlaceholder": "Grund (optional)",
+    "users.banReasonLabel": "Sperrgrund",
+    "users.confirmBan": "Bestätigen",
+    "users.cancel": "Abbrechen",
+    "users.roleSaved": "Rolle aktualisiert.",
+    "users.banSaved": "Abgeschlossen.",
+    "users.denied": "Nicht erlaubt. Nur der Superadmin kann Admins verwalten.",
+    "logs.title": "Administrator-Protokolle",
+    "logs.loading": "Laden…",
+    "logs.empty": "Noch keine Aktionen protokolliert.",
+    "logActions.roleUpdate": "Rollenwechsel",
+    "logActions.userBan": "Benutzersperre",
+    "logActions.userUnban": "Benutzer entsperrt",
+    "logActions.quoteStatus": "Anfragestatus",
+    "logActions.quoteAssign": "Anfrage zugewiesen",
+    "logActions.quoteReply": "Anfrage beantwortet"
   }
 }

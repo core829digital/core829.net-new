@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Árajánlat kérése",
-    "metaDescription": "Kérjen egyedi árajánlatot projektjéhez a CORE829 csapatától.",
-    "kicker": "Árajánlatok",
-    "title": "Meséljen a projektjéről",
-    "subtitle": "Töltse ki az űrlapot: a CORE829 csapat 1-2 munkanapon belül személyre szabott ajánlattal válaszol.",
-    "submit": "Kérés küldése",
-    "success": "Kérés elküldve. 1-2 munkanapon belül válaszolunk.",
-    "existingClient": "Már ügyfelünk?",
-    "clientAreaLink": "Belépés az ügyfélterületre",
-    "clientAreaHint": "ajánlatai és előzményei követéséhez."
-  },
   "clientArea": {
     "metaTitle": "Ügyfélterület",
     "metaDescription": "Jelentkezzen be CORE829-ügyfélterületére ajánlatainak és projekte adatainak kezeléséhez.",
@@ -781,7 +769,11 @@
     "newQuote": "Új ajánlat",
     "loading": "Betöltés…",
     "noQuotes": "Még nincs ajánlatkérése.",
-    "backendUnavailable": "Az ügyfélfelület még nincs beállítva. Próbálja újra később, vagy írjon a projects@core829.net címre."
+    "backendUnavailable": "Az ügyfélfelület még nincs beállítva. Próbálja újra később, vagy írjon a projects@core829.net címre.",
+    "success": "Kérés elküldve. 1-2 munkanapon belül válaszolunk.",
+    "submit": "Kérés elküldése",
+    "newQuoteTitle": "Új árajánlat-kérelem",
+    "newQuoteHint": "Töltsd ki az űrlapot: csapatunk 1-2 munkanapon belül válaszol."
   },
   "internalArea": {
     "metaTitle": "Belső terület",
@@ -838,6 +830,52 @@
     "client": "Ügyfél",
     "partner": "Partner",
     "technical": "Technikai",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Fiók felfüggesztve",
+    "hint": "A fiókod felfüggesztésre került. A részletekért vedd fel a kapcsolatot az ügyfélszolgálattal.",
+    "signOut": "Kijelentkezés"
+  },
+  "adminPanel": {
+    "stats.title": "Platformstatisztikák",
+    "stats.loading": "Betöltés…",
+    "stats.totalUsers": "Összes felhasználó",
+    "stats.verifiedUsers": "Ellenőrzött e-mailek",
+    "stats.bannedUsers": "Letiltott felhasználók",
+    "stats.newUsers30d": "Új felhasználók (30n)",
+    "stats.totalQuotes": "Összes árajánlat",
+    "stats.quotes30d": "Árajánlatok (30n)",
+    "stats.publicQuotes": "A nyilvános oldalról",
+    "stats.clientAreaQuotes": "Az ügyfélterületről",
+    "stats.avgCompletionDays": "Átlagos befejezési idő",
+    "stats.avgFirstResponseHours": "Átlagos első válaszidő",
+    "stats.days": "nap",
+    "stats.hours": "ó",
+    "users.title": "Felhasználókezelés",
+    "users.loading": "Betöltés…",
+    "users.unverified": "nem ellenőrzött e-mail",
+    "users.bannedBadge": "LETILTVA",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Szerepkör",
+    "users.ban": "Letiltás",
+    "users.unban": "Feloldás",
+    "users.banReasonPlaceholder": "Indok (opcionális)",
+    "users.banReasonLabel": "Letiltás indoka",
+    "users.confirmBan": "Megerősítés",
+    "users.cancel": "Mégse",
+    "users.roleSaved": "Szerepkör frissítve.",
+    "users.banSaved": "Kész.",
+    "users.denied": "A művelet nem engedélyezett. Csak a superadmin kezelhet adminokat.",
+    "logs.title": "Adminisztrátori naplók",
+    "logs.loading": "Betöltés…",
+    "logs.empty": "Még nincs rögzített művelet.",
+    "logActions.roleUpdate": "Szerepkörmódosítás",
+    "logActions.userBan": "Felhasználó letiltása",
+    "logActions.userUnban": "Felhasználó feloldása",
+    "logActions.quoteStatus": "Árajánlat állapota",
+    "logActions.quoteAssign": "Árajánlat hozzárendelése",
+    "logActions.quoteReply": "Válasz az árajánlatra"
   }
 }

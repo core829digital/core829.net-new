@@ -724,18 +724,6 @@
       "desc": "Pour les clients actifs : le département projets communique depuis cette adresse."
     }
   },
-  "preventivo": {
-    "metaTitle": "Demander un devis",
-    "metaDescription": "Demandez un devis personnalisé pour votre projet à l'équipe CORE829.",
-    "kicker": "Devis",
-    "title": "Parlez-nous de votre projet",
-    "subtitle": "Remplissez le formulaire : l'équipe CORE829 vous répondra sous 1 à 2 jours ouvrés avec une proposition sur mesure.",
-    "submit": "Envoyer la demande",
-    "success": "Demande envoyée. Nous répondrons sous 1 à 2 jours ouvrés.",
-    "existingClient": "Déjà client ?",
-    "clientAreaLink": "Accéder à l'espace client",
-    "clientAreaHint": "pour suivre vos devis et votre historique."
-  },
   "clientArea": {
     "metaTitle": "Espace client",
     "metaDescription": "Connectez-vous à votre espace client CORE829 pour gérer devis et informations de projet.",
@@ -781,7 +769,11 @@
     "newQuote": "Nouveau devis",
     "loading": "Chargement…",
     "noQuotes": "Vous n'avez pas encore de demande de devis.",
-    "backendUnavailable": "L'espace client n'est pas encore configuré. Réessayez plus tard ou écrivez-nous à projects@core829.net."
+    "backendUnavailable": "L'espace client n'est pas encore configuré. Réessayez plus tard ou écrivez-nous à projects@core829.net.",
+    "success": "Demande envoyée. Nous vous répondrons sous 1 à 2 jours ouvrés.",
+    "submit": "Envoyer la demande",
+    "newQuoteTitle": "Nouvelle demande de devis",
+    "newQuoteHint": "Remplissez le formulaire : notre équipe vous répondra sous 1 à 2 jours ouvrés."
   },
   "internalArea": {
     "metaTitle": "Zone réservée",
@@ -838,6 +830,52 @@
     "client": "Client",
     "partner": "Partenaire",
     "technical": "Technique",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Compte suspendu",
+    "hint": "Votre compte a été suspendu. Contactez le support pour plus de détails.",
+    "signOut": "Se déconnecter"
+  },
+  "adminPanel": {
+    "stats.title": "Statistiques de la plateforme",
+    "stats.loading": "Chargement…",
+    "stats.totalUsers": "Utilisateurs totaux",
+    "stats.verifiedUsers": "E-mails vérifiés",
+    "stats.bannedUsers": "Utilisateurs bannis",
+    "stats.newUsers30d": "Nouveaux utilisateurs (30j)",
+    "stats.totalQuotes": "Devis totaux",
+    "stats.quotes30d": "Devis (30j)",
+    "stats.publicQuotes": "Depuis le site public",
+    "stats.clientAreaQuotes": "Depuis l'espace client",
+    "stats.avgCompletionDays": "Délai moyen d'achèvement",
+    "stats.avgFirstResponseHours": "Délai moyen de 1re réponse",
+    "stats.days": "j",
+    "stats.hours": "h",
+    "users.title": "Gestion des utilisateurs",
+    "users.loading": "Chargement…",
+    "users.unverified": "e-mail non vérifié",
+    "users.bannedBadge": "BANNI",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Rôle",
+    "users.ban": "Bannir",
+    "users.unban": "Débannir",
+    "users.banReasonPlaceholder": "Motif (facultatif)",
+    "users.banReasonLabel": "Motif du ban",
+    "users.confirmBan": "Confirmer",
+    "users.cancel": "Annuler",
+    "users.roleSaved": "Rôle mis à jour.",
+    "users.banSaved": "Opération terminée.",
+    "users.denied": "Opération non autorisée. Seul le superadmin peut gérer les admins.",
+    "logs.title": "Logs administrateurs",
+    "logs.loading": "Chargement…",
+    "logs.empty": "Aucune action enregistrée.",
+    "logActions.roleUpdate": "Changement de rôle",
+    "logActions.userBan": "Ban utilisateur",
+    "logActions.userUnban": "Déban utilisateur",
+    "logActions.quoteStatus": "Statut du devis",
+    "logActions.quoteAssign": "Attribution du devis",
+    "logActions.quoteReply": "Réponse au devis"
   }
 }

@@ -41,10 +41,10 @@ export default async function ContattiPage({
           <h2 className="mt-3 text-section-title">{t("title")}</h2>
           <p className="mt-4 text-foreground-muted">{t("subtitle")}</p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Button href="/preventivo" variant="primary">
+            <Button href="/area-riservata" variant="primary">
               {t("ctaButton")}
             </Button>
-            <Link href="/area-clienti" className="link-ghost text-sm">
+            <Link href="/area-riservata" className="link-ghost text-sm">
               {t("clientAreaLink")}
             </Link>
           </div>

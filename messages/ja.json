@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "見積もりを依頼",
-    "metaDescription": "CORE829 チームにプロジェクトのカスタマイズ見積もりを依頼します。",
-    "kicker": "見積もり",
-    "title": "プロジェクトについて教えてください",
-    "subtitle": "フォームに記入してください。CORE829 チームは 1〜2 営業日以内にオーダーメイドの提案をお返しします。",
-    "submit": "送信",
-    "success": "依頼を送信しました。1〜2 営業日以内に返信します。",
-    "existingClient": "既存のお客様ですか？",
-    "clientAreaLink": "クライアントエリアへ",
-    "clientAreaHint": "見積もりと履歴を確認できます。"
-  },
   "clientArea": {
     "metaTitle": "クライアントエリア",
     "metaDescription": "CORE829 のクライアントエリアにログインして、見積もりとプロジェクト情報を管理します。",
@@ -781,7 +769,11 @@
     "newQuote": "新規見積もり",
     "loading": "読み込み中…",
     "noQuotes": "見積もり依頼はまだありません。",
-    "backendUnavailable": "クライアントエリアはまだ設定されていません。後でもう一度お試しいただくか、projects@core829.net までご連絡ください。"
+    "backendUnavailable": "クライアントエリアはまだ設定されていません。後でもう一度お試しいただくか、projects@core829.net までご連絡ください。",
+    "success": "送信しました。1〜2営業日以内にご返信します。",
+    "submit": "送信する",
+    "newQuoteTitle": "新しい見積依頼",
+    "newQuoteHint": "フォームにご記入ください。担当チームが1〜2営業日以内にご返信します。"
   },
   "internalArea": {
     "metaTitle": "内部エリア",
@@ -838,6 +830,52 @@
     "client": "クライアント",
     "partner": "パートナー",
     "technical": "技術",
-    "admin": "管理者"
+    "admin": "管理者",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "アカウントが停止されました",
+    "hint": "アカウントが停止されました。詳細はサポートにお問い合わせください。",
+    "signOut": "ログアウト"
+  },
+  "adminPanel": {
+    "stats.title": "プラットフォーム統計",
+    "stats.loading": "読み込み中…",
+    "stats.totalUsers": "ユーザー総数",
+    "stats.verifiedUsers": "確認済みメール",
+    "stats.bannedUsers": "停止ユーザー",
+    "stats.newUsers30d": "新規ユーザー（30日）",
+    "stats.totalQuotes": "見積依頼の合計",
+    "stats.quotes30d": "見積依頼（30日）",
+    "stats.publicQuotes": "公開サイトから",
+    "stats.clientAreaQuotes": "クライアントエリアから",
+    "stats.avgCompletionDays": "平均完了時間",
+    "stats.avgFirstResponseHours": "平均初回応答時間",
+    "stats.days": "日",
+    "stats.hours": "時間",
+    "users.title": "ユーザー管理",
+    "users.loading": "読み込み中…",
+    "users.unverified": "未確認メール",
+    "users.bannedBadge": "停止中",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "役割",
+    "users.ban": "停止",
+    "users.unban": "停止解除",
+    "users.banReasonPlaceholder": "理由（任意）",
+    "users.banReasonLabel": "停止理由",
+    "users.confirmBan": "確認",
+    "users.cancel": "キャンセル",
+    "users.roleSaved": "役割を更新しました。",
+    "users.banSaved": "完了しました。",
+    "users.denied": "操作は許可されていません。管理者を管理できるのはスーパー管理者のみです。",
+    "logs.title": "管理ログ",
+    "logs.loading": "読み込み中…",
+    "logs.empty": "記録された操作はまだありません。",
+    "logActions.roleUpdate": "役割の変更",
+    "logActions.userBan": "ユーザー停止",
+    "logActions.userUnban": "ユーザー停止解除",
+    "logActions.quoteStatus": "見積依頼ステータス",
+    "logActions.quoteAssign": "見積依頼の割り当て",
+    "logActions.quoteReply": "見積依頼への返信"
   }
 }

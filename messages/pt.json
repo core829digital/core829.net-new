@@ -724,18 +724,6 @@
       "desc": "Para clientes ativos: o departamento de projetos comunica a partir deste endereço."
     }
   },
-  "preventivo": {
-    "metaTitle": "Pedir orçamento",
-    "metaDescription": "Peça um orçamento personalizado para o seu projeto à equipa CORE829.",
-    "kicker": "Orçamentos",
-    "title": "Fale-nos sobre o seu projeto",
-    "subtitle": "Preencha o formulário: a equipa CORE829 responderá dentro de 1-2 dias úteis com uma proposta à medida.",
-    "submit": "Enviar pedido",
-    "success": "Pedido enviado. Responderemos dentro de 1-2 dias úteis.",
-    "existingClient": "Já é cliente?",
-    "clientAreaLink": "Aceder à área de cliente",
-    "clientAreaHint": "para acompanhar os seus orçamentos e histórico."
-  },
   "clientArea": {
     "metaTitle": "Área de cliente",
     "metaDescription": "Aceda à sua área de cliente CORE829 para gerir orçamentos e dados do projeto.",
@@ -781,7 +769,11 @@
     "newQuote": "Novo orçamento",
     "loading": "A carregar…",
     "noQuotes": "Ainda não tem pedidos de orçamento.",
-    "backendUnavailable": "A área de cliente ainda não está configurada. Tente novamente mais tarde ou escreva para projects@core829.net."
+    "backendUnavailable": "A área de cliente ainda não está configurada. Tente novamente mais tarde ou escreva para projects@core829.net.",
+    "success": "Pedido enviado. Responderemos dentro de 1-2 dias úteis.",
+    "submit": "Enviar pedido",
+    "newQuoteTitle": "Novo pedido de orçamento",
+    "newQuoteHint": "Preencha o formulário: a nossa equipa responderá dentro de 1-2 dias úteis."
   },
   "internalArea": {
     "metaTitle": "Área reservada",
@@ -838,6 +830,52 @@
     "client": "Cliente",
     "partner": "Parceiro",
     "technical": "Técnico",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Conta suspensa",
+    "hint": "A sua conta foi suspensa. Contacte o suporte para mais detalhes.",
+    "signOut": "Sair"
+  },
+  "adminPanel": {
+    "stats.title": "Estatísticas da plataforma",
+    "stats.loading": "A carregar…",
+    "stats.totalUsers": "Utilizadores totais",
+    "stats.verifiedUsers": "E-mails verificados",
+    "stats.bannedUsers": "Utilizadores banidos",
+    "stats.newUsers30d": "Novos utilizadores (30d)",
+    "stats.totalQuotes": "Orçamentos totais",
+    "stats.quotes30d": "Orçamentos (30d)",
+    "stats.publicQuotes": "Do site público",
+    "stats.clientAreaQuotes": "Da área de cliente",
+    "stats.avgCompletionDays": "Tempo médio de conclusão",
+    "stats.avgFirstResponseHours": "Tempo médio de 1ª resposta",
+    "stats.days": "d",
+    "stats.hours": "h",
+    "users.title": "Gestão de utilizadores",
+    "users.loading": "A carregar…",
+    "users.unverified": "e-mail não verificado",
+    "users.bannedBadge": "BANIDO",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Função",
+    "users.ban": "Banir",
+    "users.unban": "Desbanir",
+    "users.banReasonPlaceholder": "Motivo (opcional)",
+    "users.banReasonLabel": "Motivo do ban",
+    "users.confirmBan": "Confirmar",
+    "users.cancel": "Cancelar",
+    "users.roleSaved": "Função atualizada.",
+    "users.banSaved": "Operação concluída.",
+    "users.denied": "Operação não permitida. Apenas o superadmin pode gerir administradores.",
+    "logs.title": "Registos de administração",
+    "logs.loading": "A carregar…",
+    "logs.empty": "Ainda não há ações registadas.",
+    "logActions.roleUpdate": "Alteração de função",
+    "logActions.userBan": "Ban de utilizador",
+    "logActions.userUnban": "Desban de utilizador",
+    "logActions.quoteStatus": "Estado do orçamento",
+    "logActions.quoteAssign": "Atribuição de orçamento",
+    "logActions.quoteReply": "Resposta ao orçamento"
   }
 }

@@ -724,18 +724,6 @@
       "desc": "Pentru clienții activi: departamentul de proiecte comunică de la această adresă."
     }
   },
-  "preventivo": {
-    "metaTitle": "Cere o ofertă",
-    "metaDescription": "Cere o ofertă personalizată pentru proiectul tău de la echipa CORE829.",
-    "kicker": "Oferte",
-    "title": "Spune-ne despre proiectul tău",
-    "subtitle": "Completează formularul: echipa CORE829 îți va răspunde în 1-2 zile lucrătoare cu o propunere personalizată.",
-    "submit": "Trimite cererea",
-    "success": "Cerere trimisă. Vom răspunde în 1-2 zile lucrătoare.",
-    "existingClient": "Ești deja client?",
-    "clientAreaLink": "Accesează zona client",
-    "clientAreaHint": "pentru a urmări ofertele și istoricul tău."
-  },
   "clientArea": {
     "metaTitle": "Zona client",
     "metaDescription": "Conectează-te la zona ta de client CORE829 pentru a gestiona oferte și detalii de proiect.",
@@ -781,7 +769,11 @@
     "newQuote": "Ofertă nouă",
     "loading": "Se încarcă…",
     "noQuotes": "Nu ai încă cereri de ofertă.",
-    "backendUnavailable": "Zona client nu este încă configurată. Încearcă mai târziu sau scrie-ne la projects@core829.net."
+    "backendUnavailable": "Zona client nu este încă configurată. Încearcă mai târziu sau scrie-ne la projects@core829.net.",
+    "success": "Cererea a fost trimisă. Îți vom răspunde în 1-2 zile lucrătoare.",
+    "submit": "Trimite cererea",
+    "newQuoteTitle": "Nouă cerere de ofertă",
+    "newQuoteHint": "Completează formularul: echipa noastră îți va răspunde în 1-2 zile lucrătoare."
   },
   "internalArea": {
     "metaTitle": "Zonă rezervată",
@@ -838,6 +830,52 @@
     "client": "Client",
     "partner": "Partener",
     "technical": "Tehnic",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Cont suspendat",
+    "hint": "Contul tău a fost suspendat. Contactează suportul pentru detalii.",
+    "signOut": "Deconectare"
+  },
+  "adminPanel": {
+    "stats.title": "Statistici platformă",
+    "stats.loading": "Se încarcă…",
+    "stats.totalUsers": "Utilizatori totali",
+    "stats.verifiedUsers": "E-mailuri verificate",
+    "stats.bannedUsers": "Utilizatori blocați",
+    "stats.newUsers30d": "Utilizatori noi (30z)",
+    "stats.totalQuotes": "Cereri de ofertă totale",
+    "stats.quotes30d": "Cereri de ofertă (30z)",
+    "stats.publicQuotes": "De pe site-ul public",
+    "stats.clientAreaQuotes": "Din zona clientului",
+    "stats.avgCompletionDays": "Timp mediu de finalizare",
+    "stats.avgFirstResponseHours": "Timp mediu de prim răspuns",
+    "stats.days": "zile",
+    "stats.hours": "h",
+    "users.title": "Gestionare utilizatori",
+    "users.loading": "Se încarcă…",
+    "users.unverified": "e-mail neverificat",
+    "users.bannedBadge": "BLOCAT",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Rol",
+    "users.ban": "Blochează",
+    "users.unban": "Deblochează",
+    "users.banReasonPlaceholder": "Motiv (opțional)",
+    "users.banReasonLabel": "Motivul blocării",
+    "users.confirmBan": "Confirmă",
+    "users.cancel": "Anulează",
+    "users.roleSaved": "Rol actualizat.",
+    "users.banSaved": "Operațiune finalizată.",
+    "users.denied": "Operațiune nepermisă. Doar superadminul poate gestiona administratorii.",
+    "logs.title": "Jurnale de administrare",
+    "logs.loading": "Se încarcă…",
+    "logs.empty": "Nicio acțiune înregistrată.",
+    "logActions.roleUpdate": "Schimbare rol",
+    "logActions.userBan": "Blocare utilizator",
+    "logActions.userUnban": "Deblocare utilizator",
+    "logActions.quoteStatus": "Stare ofertă",
+    "logActions.quoteAssign": "Atribuire ofertă",
+    "logActions.quoteReply": "Răspuns ofertă"
   }
 }

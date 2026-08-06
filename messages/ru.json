@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Запросить смету",
-    "metaDescription": "Запросите индивидуальную смету для вашего проекта у команды CORE829.",
-    "kicker": "Сметы",
-    "title": "Расскажите о своём проекте",
-    "subtitle": "Заполните форму: команда CORE829 ответит в течение 1-2 рабочих дней индивидуальным предложением.",
-    "submit": "Отправить запрос",
-    "success": "Запрос отправлен. Мы ответим в течение 1-2 рабочих дней.",
-    "existingClient": "Уже клиент?",
-    "clientAreaLink": "Войти в клиентский раздел",
-    "clientAreaHint": "чтобы отслеживать сметы и историю."
-  },
   "clientArea": {
     "metaTitle": "Клиентский раздел",
     "metaDescription": "Войдите в свой клиентский раздел CORE829, чтобы управлять сметами и данными проекта.",
@@ -781,7 +769,11 @@
     "newQuote": "Новая смета",
     "loading": "Загрузка…",
     "noQuotes": "У вас пока нет запросов на смету.",
-    "backendUnavailable": "Клиентская зона ещё не настроена. Повторите попытку позже или напишите на projects@core829.net."
+    "backendUnavailable": "Клиентская зона ещё не настроена. Повторите попытку позже или напишите на projects@core829.net.",
+    "success": "Заявка отправлена. Мы ответим в течение 1-2 рабочих дней.",
+    "submit": "Отправить заявку",
+    "newQuoteTitle": "Новая заявка",
+    "newQuoteHint": "Заполните форму: наша команда ответит в течение 1-2 рабочих дней."
   },
   "internalArea": {
     "metaTitle": "Внутренняя зона",
@@ -838,6 +830,52 @@
     "client": "Клиент",
     "partner": "Партнёр",
     "technical": "Технический",
-    "admin": "Админ"
+    "admin": "Админ",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Аккаунт заблокирован",
+    "hint": "Ваш аккаунт был заблокирован. Свяжитесь с поддержкой для получения подробностей.",
+    "signOut": "Выйти"
+  },
+  "adminPanel": {
+    "stats.title": "Статистика платформы",
+    "stats.loading": "Загрузка…",
+    "stats.totalUsers": "Всего пользователей",
+    "stats.verifiedUsers": "Подтверждённые e-mail",
+    "stats.bannedUsers": "Заблокированные пользователи",
+    "stats.newUsers30d": "Новые пользователи (30д)",
+    "stats.totalQuotes": "Всего заявок",
+    "stats.quotes30d": "Заявки (30д)",
+    "stats.publicQuotes": "С публичного сайта",
+    "stats.clientAreaQuotes": "Из клиентской зоны",
+    "stats.avgCompletionDays": "Среднее время выполнения",
+    "stats.avgFirstResponseHours": "Среднее время 1-го ответа",
+    "stats.days": "дн",
+    "stats.hours": "ч",
+    "users.title": "Управление пользователями",
+    "users.loading": "Загрузка…",
+    "users.unverified": "e-mail не подтверждён",
+    "users.bannedBadge": "ЗАБЛОКИРОВАН",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Роль",
+    "users.ban": "Заблокировать",
+    "users.unban": "Разблокировать",
+    "users.banReasonPlaceholder": "Причина (необязательно)",
+    "users.banReasonLabel": "Причина блокировки",
+    "users.confirmBan": "Подтвердить",
+    "users.cancel": "Отмена",
+    "users.roleSaved": "Роль обновлена.",
+    "users.banSaved": "Готово.",
+    "users.denied": "Операция запрещена. Только superadmin может управлять администраторами.",
+    "logs.title": "Журналы администратора",
+    "logs.loading": "Загрузка…",
+    "logs.empty": "Действий пока нет.",
+    "logActions.roleUpdate": "Изменение роли",
+    "logActions.userBan": "Блокировка пользователя",
+    "logActions.userUnban": "Разблокировка пользователя",
+    "logActions.quoteStatus": "Статус заявки",
+    "logActions.quoteAssign": "Назначение заявки",
+    "logActions.quoteReply": "Ответ на заявку"
   }
 }

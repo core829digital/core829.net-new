@@ -103,7 +103,7 @@ export default function Navbar() {
             ]}
           />
 
-          <NavLink href="/preventivo">{t("contact")}</NavLink>
+          <NavLink href="/contatti">{t("contact")}</NavLink>
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
@@ -157,7 +157,7 @@ export default function Navbar() {
                     { key: "pricing", label: t("pricing"), href: "/prezzi" },
                   ],
                 },
-                { key: "contact", label: t("contact"), href: "/preventivo" },
+                { key: "contact", label: t("contact"), href: "/contatti" },
               ]}
               onNavigate={goTo}
             />

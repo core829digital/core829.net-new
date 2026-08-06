@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Teklif isteyin",
-    "metaDescription": "CORE829 ekibinden projeniz için özel bir teklif isteyin.",
-    "kicker": "Teklifler",
-    "title": "Projenizden bahsedin",
-    "subtitle": "Formu doldurun: CORE829 ekibi size 1-2 iş günü içinde özel bir teklifle dönecektir.",
-    "submit": "Talebi gönder",
-    "success": "Talep gönderildi. 1-2 iş günü içinde yanıt vereceğiz.",
-    "existingClient": "Zaten müşteri misiniz?",
-    "clientAreaLink": "Müşteri alanına girin",
-    "clientAreaHint": "tekliflerinizi ve geçmişinizi takip etmek için."
-  },
   "clientArea": {
     "metaTitle": "Müşteri alanı",
     "metaDescription": "Teklifleri ve proje bilgilerini yönetmek için CORE829 müşteri alanınıza giriş yapın.",
@@ -781,7 +769,11 @@
     "newQuote": "Yeni teklif",
     "loading": "Yükleniyor…",
     "noQuotes": "Henüz teklif talebiniz yok.",
-    "backendUnavailable": "Müşteri alanı henüz yapılandırılmadı. Daha sonra tekrar deneyin veya projects@core829.net adresine yazın."
+    "backendUnavailable": "Müşteri alanı henüz yapılandırılmadı. Daha sonra tekrar deneyin veya projects@core829.net adresine yazın.",
+    "success": "Talep gönderildi. 1-2 iş günü içinde size dönüş yapacağız.",
+    "submit": "Talebi gönder",
+    "newQuoteTitle": "Yeni teklif talebi",
+    "newQuoteHint": "Formu doldurun: ekibimiz 1-2 iş günü içinde yanıt verecek."
   },
   "internalArea": {
     "metaTitle": "İç alan",
@@ -838,6 +830,52 @@
     "client": "Müşteri",
     "partner": "Ortak",
     "technical": "Teknik",
-    "admin": "Yönetici"
+    "admin": "Yönetici",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Hesap askıya alındı",
+    "hint": "Hesabınız askıya alındı. Ayrıntılar için destekle iletişime geçin.",
+    "signOut": "Çıkış yap"
+  },
+  "adminPanel": {
+    "stats.title": "Platform istatistikleri",
+    "stats.loading": "Yükleniyor…",
+    "stats.totalUsers": "Toplam kullanıcı",
+    "stats.verifiedUsers": "Doğrulanmış e-postalar",
+    "stats.bannedUsers": "Yasaklanan kullanıcılar",
+    "stats.newUsers30d": "Yeni kullanıcılar (30g)",
+    "stats.totalQuotes": "Toplam teklif",
+    "stats.quotes30d": "Teklifler (30g)",
+    "stats.publicQuotes": "Genel siteden",
+    "stats.clientAreaQuotes": "Müşteri alanından",
+    "stats.avgCompletionDays": "Ort. tamamlanma süresi",
+    "stats.avgFirstResponseHours": "Ort. ilk yanıt süresi",
+    "stats.days": "g",
+    "stats.hours": "sa",
+    "users.title": "Kullanıcı yönetimi",
+    "users.loading": "Yükleniyor…",
+    "users.unverified": "doğrulanmamış e-posta",
+    "users.bannedBadge": "YASAKLI",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Rol",
+    "users.ban": "Yasakla",
+    "users.unban": "Yasağı kaldır",
+    "users.banReasonPlaceholder": "Gerekçe (isteğe bağlı)",
+    "users.banReasonLabel": "Yasaklama gerekçesi",
+    "users.confirmBan": "Onayla",
+    "users.cancel": "İptal",
+    "users.roleSaved": "Rol güncellendi.",
+    "users.banSaved": "Tamamlandı.",
+    "users.denied": "İşlem izin verilmiyor. Yalnızca superadmin yöneticileri yönetebilir.",
+    "logs.title": "Yönetim günlükleri",
+    "logs.loading": "Yükleniyor…",
+    "logs.empty": "Henüz kayıtlı işlem yok.",
+    "logActions.roleUpdate": "Rol değişikliği",
+    "logActions.userBan": "Kullanıcı yasaklandı",
+    "logActions.userUnban": "Kullanıcı yasağı kaldırıldı",
+    "logActions.quoteStatus": "Teklif durumu",
+    "logActions.quoteAssign": "Teklif ataması",
+    "logActions.quoteReply": "Teklif yanıtı"
   }
 }

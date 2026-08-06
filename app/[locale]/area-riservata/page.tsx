@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
-import InternalArea from "@/components/internal-area/InternalArea";
+import PrivateArea from "@/components/private-area/PrivateArea";
 import ConvexGate from "@/components/providers/ConvexGate";
 
 export async function generateMetadata({
@@ -33,7 +33,7 @@ export default async function AreaRiservataPage({
     <main>
       <section className="container-core829 py-24 lg:py-32">
         <ConvexGate>
-          <InternalArea />
+          <PrivateArea />
         </ConvexGate>
       </section>
     </main>

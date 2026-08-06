@@ -22,7 +22,9 @@ import {
   sendQuoteStatusEmail,
   sendQuoteReplyEmail,
 } from "./emails";
-import { requireUser, hasInternalRole } from "./users";
+import { requireUser } from "./users";
+import { isInternalRole, rankOf } from "./roles";
+import { logAdminAction } from "./admin";
 
 const MAX_NAME = 100;
 const MAX_EMAIL = 254;
@@ -86,6 +88,12 @@ export const submitQuote = mutation({
     }
 
     const userId = await getAuthUserId(ctx);
+    if (userId) {
+      const authed = await ctx.db.get(userId);
+      if (authed && !!authed.isBanned) {
+        throw new Error("Account banned");
+      }
+    }
 
     const quoteId = await ctx.db.insert("quoteRequests", {
       userId: userId ?? undefined,
@@ -189,7 +197,7 @@ export const getMyQuotes = query({
 // ---------- Pannello interno (admin/partner/technical) ----------
 
 function assertInternal(user: { role?: string | null }) {
-  if (!hasInternalRole(user)) {
+  if (!isInternalRole(user.role)) {
     throw new Error("Not authorized");
   }
 }
@@ -219,7 +227,7 @@ export const getQuote = query({
     if (!quote) {
       return null;
     }
-    if (hasInternalRole(user)) {
+    if (isInternalRole(user.role)) {
       return quote;
     }
     if (quote.userId === user._id) {
@@ -242,13 +250,20 @@ export const updateQuoteStatus = mutation({
     if (!quote) {
       throw new Error("Quote not found");
     }
+    const now = Date.now();
     const note = args.internalNote
       ? sanitizeText(args.internalNote, MAX_NOTE, true)
       : quote.internalNote;
     await ctx.db.patch(args.quoteId, {
       status: args.status,
       internalNote: note,
-      updatedAt: Date.now(),
+      firstResponseAt: quote.firstResponseAt ?? now,
+      updatedAt: now,
+    });
+    await logAdminAction(ctx, {
+      actor: user._id,
+      action: "quote.status",
+      details: `${quote._id} -> ${args.status}`,
     });
     await ctx.scheduler.runAfter(
       0,
@@ -265,7 +280,7 @@ export const assignQuote = mutation({
   },
   handler: async (ctx, args) => {
     const user = await requireUser(ctx);
-    if (user.role !== "admin" && user.role !== "technical") {
+    if (rankOf(user.role) < rankOf("technical")) {
       throw new Error("Not authorized");
     }
     const quote = await ctx.db.get(args.quoteId);
@@ -275,6 +290,11 @@ export const assignQuote = mutation({
     await ctx.db.patch(args.quoteId, {
       assignedTo: args.assignedTo,
       updatedAt: Date.now(),
+    });
+    await logAdminAction(ctx, {
+      actor: user._id,
+      action: "quote.assign",
+      details: `${quote._id} -> ${args.assignedTo ?? "none"}`,
     });
   },
 });
@@ -300,9 +320,16 @@ export const replyToQuote = mutation({
     const note = args.internalNote
       ? sanitizeText(args.internalNote, MAX_NOTE, true)
       : quote.internalNote;
+    const now = Date.now();
     await ctx.db.patch(args.quoteId, {
       internalNote: note,
-      updatedAt: Date.now(),
+      firstResponseAt: quote.firstResponseAt ?? now,
+      updatedAt: now,
+    });
+    await logAdminAction(ctx, {
+      actor: user._id,
+      action: "quote.reply",
+      details: quote._id,
     });
     await ctx.scheduler.runAfter(0, internal.quotes.sendQuoteReplyAction, {
       quoteId: args.quoteId,

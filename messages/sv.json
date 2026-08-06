@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Begär offert",
-    "metaDescription": "Begär en skräddarsydd offert för ditt projekt från CORE829-teamet.",
-    "kicker": "Offert",
-    "title": "Berätta om ditt projekt",
-    "subtitle": "Fyll i formuläret: CORE829-teamet återkommer inom 1-2 arbetsdagar med ett skräddarsytt förslag.",
-    "submit": "Skicka förfrågan",
-    "success": "Förfrågan skickad. Vi svarar inom 1-2 arbetsdagar.",
-    "existingClient": "Redan kund?",
-    "clientAreaLink": "Öppna kundområdet",
-    "clientAreaHint": "för att följa dina offerter och historik."
-  },
   "clientArea": {
     "metaTitle": "Kundområde",
     "metaDescription": "Logga in på ditt CORE829-kundområde för att hantera offerter och projektuppgifter.",
@@ -781,7 +769,11 @@
     "newQuote": "Ny offert",
     "loading": "Läser in…",
     "noQuotes": "Du har inga offertförfrågningar ännu.",
-    "backendUnavailable": "Kundområdet är inte konfigurerat ännu. Försök igen senare eller skriv till projects@core829.net."
+    "backendUnavailable": "Kundområdet är inte konfigurerat ännu. Försök igen senare eller skriv till projects@core829.net.",
+    "success": "Förfrågan skickad. Vi svarar inom 1-2 arbetsdagar.",
+    "submit": "Skicka förfrågan",
+    "newQuoteTitle": "Ny offertförfrågan",
+    "newQuoteHint": "Fyll i formuläret: vårt team svarar inom 1-2 arbetsdagar."
   },
   "internalArea": {
     "metaTitle": "Internt område",
@@ -838,6 +830,52 @@
     "client": "Kund",
     "partner": "Partner",
     "technical": "Teknisk",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Konto avstängd",
+    "hint": "Ditt konto har avstängts. Kontakta support för mer information.",
+    "signOut": "Logga ut"
+  },
+  "adminPanel": {
+    "stats.title": "Plattformsstatistik",
+    "stats.loading": "Läser in…",
+    "stats.totalUsers": "Totalt antal användare",
+    "stats.verifiedUsers": "Verifierade e-postmeddelanden",
+    "stats.bannedUsers": "Blockerade användare",
+    "stats.newUsers30d": "Nya användare (30d)",
+    "stats.totalQuotes": "Offertförfrågningar totalt",
+    "stats.quotes30d": "Offertförfrågningar (30d)",
+    "stats.publicQuotes": "Från offentlig webbplats",
+    "stats.clientAreaQuotes": "Från kundområdet",
+    "stats.avgCompletionDays": "Genomsn. slutförandetid",
+    "stats.avgFirstResponseHours": "Genomsn. första svar",
+    "stats.days": "d",
+    "stats.hours": "h",
+    "users.title": "Användarhantering",
+    "users.loading": "Läser in…",
+    "users.unverified": "oeverifierad e-post",
+    "users.bannedBadge": "BLOCKERAD",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Roll",
+    "users.ban": "Blockera",
+    "users.unban": "Avblockera",
+    "users.banReasonPlaceholder": "Orsak (valfritt)",
+    "users.banReasonLabel": "Blockera orsak",
+    "users.confirmBan": "Bekräfta",
+    "users.cancel": "Avbryt",
+    "users.roleSaved": "Roll uppdaterad.",
+    "users.banSaved": "Klart.",
+    "users.denied": "Åtgärden är inte tillåten. Endast superadmin kan hantera administratörer.",
+    "logs.title": "Administrativa loggar",
+    "logs.loading": "Läser in…",
+    "logs.empty": "Inga åtgärder registrerade ännu.",
+    "logActions.roleUpdate": "Rolländring",
+    "logActions.userBan": "Användare blockerad",
+    "logActions.userUnban": "Användare avblockerad",
+    "logActions.quoteStatus": "Offertstatus",
+    "logActions.quoteAssign": "Offert tilldelad",
+    "logActions.quoteReply": "Svar på offert"
   }
 }

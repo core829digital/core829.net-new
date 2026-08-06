@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import {
   Loader2,
@@ -11,10 +11,11 @@ import {
 } from "lucide-react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { Link, useRouter } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import type { Doc, Id } from "@/convex/_generated/dataModel";
+import AdminPanel from "@/components/admin-panel/AdminPanel";
+import { isInternalRole, rankOf } from "@/lib/roles";
 
-const INTERNAL_ROLES = ["admin", "partner", "technical"] as const;
 const STATUSES = [
   "new",
   "in_review",
@@ -35,21 +36,9 @@ type QuoteStatus = (typeof STATUSES)[number];
 export default function InternalArea() {
   const t = useTranslations("internalArea");
   const me = useQuery(api.users.getMyUser);
-  const router = useRouter();
-
-  useEffect(() => {
-    if (me === null) {
-      const id = window.setTimeout(() => {
-        router.replace("/area-clienti");
-      }, 350);
-      return () => window.clearTimeout(id);
-    }
-  }, [me, router]);
 
   const isInternal = useMemo(
-    () =>
-      !!me &&
-      INTERNAL_ROLES.includes((me.user.role ?? "") as (typeof INTERNAL_ROLES)[number]),
+    () => !!me && isInternalRole(me.user.role),
     [me]
   );
 
@@ -68,7 +57,7 @@ export default function InternalArea() {
         <h2 className="mt-4 text-section-title">{t("signedOutTitle")}</h2>
         <p className="mt-4 text-foreground-muted">{t("signedOutHint")}</p>
         <Link
-          href="/area-clienti"
+          href="/area-riservata"
           className="mt-6 inline-flex min-h-11 items-center gap-2 bg-foreground px-8 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent"
         >
           {t("goToClientArea")}
@@ -84,7 +73,7 @@ export default function InternalArea() {
         <h2 className="mt-4 text-section-title">{t("deniedTitle")}</h2>
         <p className="mt-4 text-foreground-muted">{t("deniedHint")}</p>
         <Link
-          href="/area-clienti"
+          href="/area-riservata"
           className="mt-6 inline-flex min-h-11 items-center gap-2 bg-foreground px-8 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent"
         >
           {t("goToClientArea")}
@@ -145,7 +134,9 @@ function QuotesPanel({ userRole }: { userRole: string }) {
         ))}
       </div>
 
-      {userRole === "admin" && <UserManagement />}
+      {rankOf(userRole) >= rankOf("admin") && (
+        <AdminPanel userRole={userRole} />
+      )}
 
       {!quotes ? (
         <p className="text-sm text-foreground-muted">
@@ -245,12 +236,9 @@ function QuoteDetail({
   } | null>(null);
   const [busy, setBusy] = useState(false);
 
-  const canAssign = userRole === "admin" || userRole === "technical";
+  const canAssign = rankOf(userRole) >= rankOf("technical");
   const internalUsers = useMemo(
-    () =>
-      (users ?? []).filter((u) =>
-        INTERNAL_ROLES.includes((u.role ?? "") as (typeof INTERNAL_ROLES)[number])
-      ),
+    () => (users ?? []).filter((u) => isInternalRole(u.role)),
     [users]
   );
 
@@ -485,70 +473,5 @@ function QuoteDetail({
         </p>
       )}
     </div>
-  );
-}
-
-// ---------------------------------------------------------------- Users
-
-function UserManagement() {
-  const t = useTranslations("internalArea");
-  const tRole = useTranslations("userRole");
-  const users = useQuery(api.users.listUsers);
-  const updateUserRole = useMutation(api.users.updateUserRole);
-  const [msg, setMsg] = useState<string | null>(null);
-
-  if (!users) {
-    return (
-      <p className="text-sm text-foreground-muted">
-        <Loader2 className="mr-2 inline h-4 w-4 animate-spin text-accent" aria-hidden />
-        {t("loading")}
-      </p>
-    );
-  }
-
-  return (
-    <section className="border border-border bg-surface p-6 md:p-8">
-      <h3 className="text-base font-semibold">{t("usersSection")}</h3>
-      <div className="mt-4 divide-y divide-border">
-        {users.map((u) => (
-          <div
-            key={u._id}
-            className="flex flex-wrap items-center justify-between gap-3 py-3"
-          >
-            <div className="min-w-0">
-              <p className="truncate text-sm font-medium text-foreground">
-                {u.name || "—"}
-                {!u.emailVerified && (
-                  <span className="ml-2 text-xs text-accent">
-                    {t("unverified")}
-                  </span>
-                )}
-              </p>
-              <p className="truncate text-xs text-foreground-muted">{u.email}</p>
-            </div>
-            <select
-              value={u.role}
-              onChange={(e) => {
-                void updateUserRole({
-                  userId: u._id,
-                  role: e.target.value as never,
-                })
-                  .then(() => setMsg(t("roleSaved")))
-                  .catch(() => setMsg(t("error")));
-              }}
-              className="input-core829 w-auto min-w-32"
-              aria-label={`Ruolo ${u.email}`}
-            >
-              {["client", "partner", "technical", "admin"].map((r) => (
-                <option key={r} value={r}>
-                  {tRole(r)}
-                </option>
-              ))}
-            </select>
-          </div>
-        ))}
-      </div>
-      {msg && <p className="mt-4 text-sm text-foreground">{msg}</p>}
-    </section>
   );
 }

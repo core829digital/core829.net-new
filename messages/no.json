@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Be om tilbud",
-    "metaDescription": "Be om et skreddersydd tilbud for prosjektet ditt fra CORE829-teamet.",
-    "kicker": "Tilbud",
-    "title": "Fortell oss om prosjektet ditt",
-    "subtitle": "Fyll ut skjemaet: CORE829-teamet svarer innen 1-2 virkedager med et tilpasset forslag.",
-    "submit": "Send forespørsel",
-    "success": "Forespørselen er sendt. Vi svarer innen 1-2 virkedager.",
-    "existingClient": "Allerede kunde?",
-    "clientAreaLink": "Åpne kundeområdet",
-    "clientAreaHint": "for å følge tilbudene dine og historikken."
-  },
   "clientArea": {
     "metaTitle": "Kundeområde",
     "metaDescription": "Logg inn på CORE829-kundeområdet ditt for å administrere tilbud og prosjektopplysninger.",
@@ -781,7 +769,11 @@
     "newQuote": "Nytt tilbud",
     "loading": "Laster inn…",
     "noQuotes": "Du har ingen tilbudsforespørsler ennå.",
-    "backendUnavailable": "Kundeområdet er ikke konfigurert ennå. Prøv igjen senere eller skriv til projects@core829.net."
+    "backendUnavailable": "Kundeområdet er ikke konfigurert ennå. Prøv igjen senere eller skriv til projects@core829.net.",
+    "success": "Forespørselen er sendt. Vi svarer innen 1-2 virkedager.",
+    "submit": "Send forespørsel",
+    "newQuoteTitle": "Ny forespørsel om tilbud",
+    "newQuoteHint": "Fyll ut skjemaet: teamet vårt svarer innen 1-2 virkedager."
   },
   "internalArea": {
     "metaTitle": "Internt område",
@@ -838,6 +830,52 @@
     "client": "Kunde",
     "partner": "Partner",
     "technical": "Teknisk",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Konto suspendert",
+    "hint": "Kontoen din er suspendert. Kontakt kundestøtte for detaljer.",
+    "signOut": "Logg ut"
+  },
+  "adminPanel": {
+    "stats.title": "Plattformstatistikk",
+    "stats.loading": "Laster…",
+    "stats.totalUsers": "Totalt antall brukere",
+    "stats.verifiedUsers": "Verifiserte e-poster",
+    "stats.bannedUsers": "Blokkerte brukere",
+    "stats.newUsers30d": "Nye brukere (30d)",
+    "stats.totalQuotes": "Forespørsler totalt",
+    "stats.quotes30d": "Forespørsler (30d)",
+    "stats.publicQuotes": "Fra offentlig nettsted",
+    "stats.clientAreaQuotes": "Fra kundeområdet",
+    "stats.avgCompletionDays": "Gj.sn. fullføringstid",
+    "stats.avgFirstResponseHours": "Gj.sn. første svar",
+    "stats.days": "d",
+    "stats.hours": "t",
+    "users.title": "Brukeradministrasjon",
+    "users.loading": "Laster…",
+    "users.unverified": "ikke-verifisert e-post",
+    "users.bannedBadge": "BLOKKERT",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Rolle",
+    "users.ban": "Blokker",
+    "users.unban": "Avblokker",
+    "users.banReasonPlaceholder": "Årsak (valgfritt)",
+    "users.banReasonLabel": "Blokkeringsårsak",
+    "users.confirmBan": "Bekreft",
+    "users.cancel": "Avbryt",
+    "users.roleSaved": "Rolle oppdatert.",
+    "users.banSaved": "Ferdig.",
+    "users.denied": "Handlingen er ikke tillatt. Bare superadmin kan administrere administratorer.",
+    "logs.title": "Administratorlogger",
+    "logs.loading": "Laster…",
+    "logs.empty": "Ingen registrerte handlinger ennå.",
+    "logActions.roleUpdate": "Rolleendring",
+    "logActions.userBan": "Bruker blokkert",
+    "logActions.userUnban": "Bruker avblokkert",
+    "logActions.quoteStatus": "Forespørselsstatus",
+    "logActions.quoteAssign": "Forespørsel tildelt",
+    "logActions.quoteReply": "Svar på forespørsel"
   }
 }

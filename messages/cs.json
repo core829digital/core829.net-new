@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Požádat o cenovou nabídku",
-    "metaDescription": "Požádejte tým CORE829 o cenovou nabídku šitou na míru vašemu projektu.",
-    "kicker": "Nabídky",
-    "title": "Řekněte nám o svém projektu",
-    "subtitle": "Vyplňte formulář: tým CORE829 odpoví do 1-2 pracovních dnů návrhem na míru.",
-    "submit": "Odeslat žádost",
-    "success": "Žádost odeslána. Odpovíme do 1-2 pracovních dnů.",
-    "existingClient": "Již jste klient?",
-    "clientAreaLink": "Přejít do zóny pro klienty",
-    "clientAreaHint": "pro sledování nabídek a historie."
-  },
   "clientArea": {
     "metaTitle": "Zóna pro klienty",
     "metaDescription": "Přihlaste se do své zóny pro klienty CORE829 a spravujte nabídky a údaje o projektu.",
@@ -781,7 +769,11 @@
     "newQuote": "Nová nabídka",
     "loading": "Načítání…",
     "noQuotes": "Zatím nemáte žádné žádosti o nabídku.",
-    "backendUnavailable": "Klientská zóna ještě není nakonfigurována. Zkuste to později nebo napište na projects@core829.net."
+    "backendUnavailable": "Klientská zóna ještě není nakonfigurována. Zkuste to později nebo napište na projects@core829.net.",
+    "success": "Žádost odeslána. Odpovíme do 1-2 pracovních dnů.",
+    "submit": "Odeslat žádost",
+    "newQuoteTitle": "Nová poptávka",
+    "newQuoteHint": "Vyplňte formulář: náš tým odpoví do 1-2 pracovních dnů."
   },
   "internalArea": {
     "metaTitle": "Vnitřní oblast",
@@ -838,6 +830,52 @@
     "client": "Klient",
     "partner": "Partner",
     "technical": "Technický",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Účet pozastaven",
+    "hint": "Váš účet byl pozastaven. Pro podrobnosti kontaktujte podporu.",
+    "signOut": "Odhlásit se"
+  },
+  "adminPanel": {
+    "stats.title": "Statistiky platformy",
+    "stats.loading": "Načítání…",
+    "stats.totalUsers": "Celkem uživatelů",
+    "stats.verifiedUsers": "Ověřené e-maily",
+    "stats.bannedUsers": "Zablokovaní uživatelé",
+    "stats.newUsers30d": "Noví uživatelé (30d)",
+    "stats.totalQuotes": "Celkem poptávek",
+    "stats.quotes30d": "Poptávky (30d)",
+    "stats.publicQuotes": "Z veřejného webu",
+    "stats.clientAreaQuotes": "Z klientské oblasti",
+    "stats.avgCompletionDays": "Průměrná doba dokončení",
+    "stats.avgFirstResponseHours": "Průměrná doba 1. odpovědi",
+    "stats.days": "d",
+    "stats.hours": "h",
+    "users.title": "Správa uživatelů",
+    "users.loading": "Načítání…",
+    "users.unverified": "neověřený e-mail",
+    "users.bannedBadge": "ZABLOKOVÁN",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Role",
+    "users.ban": "Zablokovat",
+    "users.unban": "Odblokovat",
+    "users.banReasonPlaceholder": "Důvod (volitelné)",
+    "users.banReasonLabel": "Důvod blokace",
+    "users.confirmBan": "Potvrdit",
+    "users.cancel": "Zrušit",
+    "users.roleSaved": "Role aktualizována.",
+    "users.banSaved": "Hotovo.",
+    "users.denied": "Operace není povolena. Pouze superadmin může spravovat administrátory.",
+    "logs.title": "Protokoly administrátora",
+    "logs.loading": "Načítání…",
+    "logs.empty": "Zatím žádné akce.",
+    "logActions.roleUpdate": "Změna role",
+    "logActions.userBan": "Blokace uživatele",
+    "logActions.userUnban": "Odblokování uživatele",
+    "logActions.quoteStatus": "Stav poptávky",
+    "logActions.quoteAssign": "Přiřazení poptávky",
+    "logActions.quoteReply": "Odpověď na poptávku"
   }
 }

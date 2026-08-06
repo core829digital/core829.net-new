@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Request a quote",
-    "metaDescription": "Request a tailored quote for your project from the CORE829 team.",
-    "kicker": "Quotes",
-    "title": "Tell us about your project",
-    "subtitle": "Fill in the form: the CORE829 team will get back to you within 1-2 business days with a tailored proposal.",
-    "submit": "Send request",
-    "success": "Request sent. We will reply within 1-2 business days.",
-    "existingClient": "Already a client?",
-    "clientAreaLink": "Open the client area",
-    "clientAreaHint": "to track your quotes and history."
-  },
   "clientArea": {
     "metaTitle": "Client area",
     "metaDescription": "Log in to your CORE829 client area to manage quotes and project details.",
@@ -781,7 +769,11 @@
     "newQuote": "New quote",
     "loading": "Loading…",
     "noQuotes": "You have no quote requests yet.",
-    "backendUnavailable": "The client area is not configured yet. Try again later or write to projects@core829.net."
+    "backendUnavailable": "The client area is not configured yet. Try again later or write to projects@core829.net.",
+    "success": "Request sent. We'll get back to you within 1-2 business days.",
+    "submit": "Send request",
+    "newQuoteTitle": "New quote request",
+    "newQuoteHint": "Fill in the form: our team will reply within 1-2 business days."
   },
   "internalArea": {
     "metaTitle": "Internal area",
@@ -838,6 +830,52 @@
     "client": "Client",
     "partner": "Partner",
     "technical": "Technical",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Account suspended",
+    "hint": "Your account has been suspended. Contact support for details.",
+    "signOut": "Sign out"
+  },
+  "adminPanel": {
+    "stats.title": "Platform statistics",
+    "stats.loading": "Loading…",
+    "stats.totalUsers": "Total users",
+    "stats.verifiedUsers": "Verified emails",
+    "stats.bannedUsers": "Banned users",
+    "stats.newUsers30d": "New users (30d)",
+    "stats.totalQuotes": "Total quotes",
+    "stats.quotes30d": "Quotes (30d)",
+    "stats.publicQuotes": "From public site",
+    "stats.clientAreaQuotes": "From client area",
+    "stats.avgCompletionDays": "Avg completion time",
+    "stats.avgFirstResponseHours": "Avg first response",
+    "stats.days": "d",
+    "stats.hours": "h",
+    "users.title": "User management",
+    "users.loading": "Loading…",
+    "users.unverified": "unverified email",
+    "users.bannedBadge": "BANNED",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Role",
+    "users.ban": "Ban",
+    "users.unban": "Unban",
+    "users.banReasonPlaceholder": "Reason (optional)",
+    "users.banReasonLabel": "Ban reason",
+    "users.confirmBan": "Confirm",
+    "users.cancel": "Cancel",
+    "users.roleSaved": "Role updated.",
+    "users.banSaved": "Done.",
+    "users.denied": "Operation not allowed. Only the superadmin can manage admins.",
+    "logs.title": "Admin logs",
+    "logs.loading": "Loading…",
+    "logs.empty": "No actions logged yet.",
+    "logActions.roleUpdate": "Role change",
+    "logActions.userBan": "User ban",
+    "logActions.userUnban": "User unban",
+    "logActions.quoteStatus": "Quote status",
+    "logActions.quoteAssign": "Quote assignment",
+    "logActions.quoteReply": "Quote reply"
   }
 }

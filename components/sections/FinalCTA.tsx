@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
 
 /**
- * "Parliamone" — CTA finale che indirizza alla pagina dedicata /preventivo
- * (form di richiesta preventivo con gestione centralizzata).
+ * "Parliamone" — CTA finale che indirizza all'area riservata
+ * (creazione account / accesso per richiedere un preventivo).
  */
 export default function FinalCTA() {
   const t = useTranslations("finalCta");
@@ -25,10 +25,10 @@ export default function FinalCTA() {
 
         <RevealOnScroll className="mt-14 max-w-2xl">
           <div className="flex flex-wrap items-center gap-4">
-            <Button href="/preventivo" variant="primary">
+            <Button href="/area-riservata" variant="primary">
               {t("cta")}
             </Button>
-            <Link href="/area-clienti" className="link-ghost text-sm">
+            <Link href="/area-riservata" className="link-ghost text-sm">
               {t("clientAreaLink")}
             </Link>
           </div>

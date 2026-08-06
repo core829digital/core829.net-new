@@ -3,11 +3,19 @@ import { mutation, query } from "./_generated/server";
 import { getAuthUserId } from "@convex-dev/auth/server";
 import { roleValidator } from "./schema";
 import { sanitizeSingleLine } from "./sanitize";
+import {
+  ADMIN_EMAIL,
+  INTERNAL_ROLES,
+  rankOf,
+  isInternalRole,
+  isProtectedAccount,
+  isBanned,
+} from "./roles";
+import { logAdminAction } from "./admin";
 
-export const ADMIN_EMAIL =
-  process.env.ADMIN_EMAIL ?? "contact.core829@gmail.com";
+export { ADMIN_EMAIL, INTERNAL_ROLES };
 
-/** Helper: ritorna l'utente autenticato o lancia. */
+/** Helper: ritorna l'utente autenticato, non bannato, o lancia. */
 async function requireUser(ctx: any) {
   const userId = await getAuthUserId(ctx);
   if (!userId) {
@@ -17,13 +25,10 @@ async function requireUser(ctx: any) {
   if (!user) {
     throw new Error("User not found");
   }
+  if (isBanned(user)) {
+    throw new Error("Account banned");
+  }
   return user;
-}
-
-const INTERNAL_ROLES = ["admin", "partner", "technical"] as const;
-
-function hasInternalRole(user: { role?: string | null }): boolean {
-  return INTERNAL_ROLES.includes((user.role ?? "") as never);
 }
 
 export const getMyUser = query({
@@ -53,10 +58,8 @@ export const updateProfile = mutation({
     onboardingCompleted: v.optional(v.boolean()),
   },
   handler: async (ctx, args) => {
-    const userId = await getAuthUserId(ctx);
-    if (!userId) {
-      throw new Error("Not authenticated");
-    }
+    const user = await requireUser(ctx);
+    const userId = user._id;
     const existing = await ctx.db
       .query("profiles")
       .withIndex("by_userId", (q) => q.eq("userId", userId))
@@ -88,39 +91,39 @@ export const updateProfile = mutation({
 });
 
 /**
- * Promozione a "admin" dell'email amministratore, solo dopo che
+ * Promozione a "superadmin" dell'email amministratore, solo dopo che
  * l'indirizzo è stato verificato via OTP. Sicura perché senza accesso
- * alla casella email la verifica non può avvenire.
+ * alla casella email la verifica non può avvenire. Il superadmin non può
+ * mai essere bannato (vincolo difensivo riapplicato a ogni chiamata).
  */
 export const claimAdminIfEligible = mutation({
   handler: async (ctx) => {
-    const userId = await getAuthUserId(ctx);
-    if (!userId) {
-      throw new Error("Not authenticated");
-    }
-    const user = await ctx.db.get(userId);
-    if (!user) {
-      throw new Error("User not found");
-    }
+    const user = await requireUser(ctx);
+    const userId = user._id;
     if ((user.email ?? "").toLowerCase() !== ADMIN_EMAIL.toLowerCase()) {
       return { claimed: false, reason: "not_admin_email" };
     }
     if (!user.emailVerificationTime) {
       return { claimed: false, reason: "email_not_verified" };
     }
-    if (user.role !== "admin") {
-      await ctx.db.patch(userId, { role: "admin" });
+    if (user.role !== "superadmin") {
+      await ctx.db.patch(userId, {
+        role: "superadmin",
+        isBanned: undefined,
+        banReason: undefined,
+        bannedAt: undefined,
+      });
     }
-    return { claimed: true, role: "admin" };
+    return { claimed: true, role: "superadmin" };
   },
 });
 
-// ---------- Gestione utenti (solo admin) ----------
+// ---------- Gestione utenti (solo admin/superadmin) ----------
 
 export const listUsers = query({
   handler: async (ctx) => {
     const user = await requireUser(ctx);
-    if (user.role !== "admin") {
+    if (rankOf(user.role) < rankOf("admin")) {
       throw new Error("Not authorized");
     }
     const users = await ctx.db.query("users").collect();
@@ -130,6 +133,10 @@ export const listUsers = query({
       email: u.email ?? "",
       role: u.role ?? "client",
       emailVerified: !!u.emailVerificationTime,
+      isBanned: !!u.isBanned,
+      banReason: u.banReason ?? "",
+      createdAt: u._creationTime,
+      protected: isProtectedAccount(u.email, u.role),
     }));
   },
 });
@@ -138,12 +145,12 @@ export const listUsers = query({
 export const listInternalUsers = query({
   handler: async (ctx) => {
     const user = await requireUser(ctx);
-    if (!hasInternalRole(user)) {
+    if (!isInternalRole(user.role)) {
       throw new Error("Not authorized");
     }
     const users = await ctx.db.query("users").collect();
     return users
-      .filter((u) => INTERNAL_ROLES.includes((u.role ?? "") as never))
+      .filter((u) => isInternalRole(u.role) && !isBanned(u))
       .map((u) => ({
         _id: u._id,
         name: u.name ?? "",
@@ -160,19 +167,37 @@ export const updateUserRole = mutation({
   },
   handler: async (ctx, args) => {
     const actor = await requireUser(ctx);
-    if (actor.role !== "admin") {
+    if (rankOf(actor.role) < rankOf("admin")) {
       throw new Error("Not authorized");
     }
     const target = await ctx.db.get(args.userId);
     if (!target) {
       throw new Error("User not found");
     }
-    // L'admin non può retrocedere sé stesso per evitare lockout.
-    if (args.userId === actor._id && args.role !== "admin") {
-      throw new Error("Cannot demote yourself");
+    // Il superadmin radice è immutabile per chiunque.
+    if (isProtectedAccount(target.email, target.role)) {
+      throw new Error("Cannot modify superadmin");
+    }
+    // Un admin non può gestire né creare altri admin/superadmin.
+    const actorRank = rankOf(actor.role);
+    const targetRank = rankOf(target.role);
+    const nextRank = rankOf(args.role);
+    if (actorRank < rankOf("superadmin")) {
+      if (nextRank >= rankOf("admin")) {
+        throw new Error("Only superadmin can assign admin roles");
+      }
+      if (targetRank >= rankOf("admin")) {
+        throw new Error("Only superadmin can manage admins");
+      }
     }
     await ctx.db.patch(args.userId, { role: args.role });
+    await logAdminAction(ctx, {
+      actor: actor._id,
+      action: "role.update",
+      targetUserId: args.userId,
+      details: `${target.role ?? "client"} -> ${args.role}`,
+    });
   },
 });
 
-export { requireUser, hasInternalRole, INTERNAL_ROLES };
+export { requireUser };

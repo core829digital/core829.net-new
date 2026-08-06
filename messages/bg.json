@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Заявка за оферта",
-    "metaDescription": "Заявете персонализирана оферта за вашия проект от екипа на CORE829.",
-    "kicker": "Оферти",
-    "title": "Разкажете ни за проекта си",
-    "subtitle": "Попълнете формуляра: екипът на CORE829 ще отговори в рамките на 1-2 работни дни с персонализирано предложение.",
-    "submit": "Изпрати заявката",
-    "success": "Заявката е изпратена. Ще отговорим в рамките на 1-2 работни дни.",
-    "existingClient": "Вече сте клиент?",
-    "clientAreaLink": "Влезте в клиентската зона",
-    "clientAreaHint": "за да проследявате офертите и историята си."
-  },
   "clientArea": {
     "metaTitle": "Клиентска зона",
     "metaDescription": "Влезте в клиентската си зона на CORE829, за да управлявате оферти и данни за проекта.",
@@ -781,7 +769,11 @@
     "newQuote": "Нова оферта",
     "loading": "Зареждане…",
     "noQuotes": "Все още нямате заявки за оферта.",
-    "backendUnavailable": "Клиентската зона все още не е конфигурирана. Опитайте по-късно или ни пишете на projects@core829.net."
+    "backendUnavailable": "Клиентската зона все още не е конфигурирана. Опитайте по-късно или ни пишете на projects@core829.net.",
+    "success": "Заявката е изпратена. Ще отговорим в рамките на 1-2 работни дни.",
+    "submit": "Изпрати заявка",
+    "newQuoteTitle": "Нова оферта",
+    "newQuoteHint": "Попълнете формуляра: екипът ни ще отговори в рамките на 1-2 работни дни."
   },
   "internalArea": {
     "metaTitle": "Вътрешна зона",
@@ -838,6 +830,52 @@
     "client": "Клиент",
     "partner": "Партньор",
     "technical": "Технически",
-    "admin": "Админ"
+    "admin": "Админ",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Акаунтът е спрян",
+    "hint": "Акаунтът ви е спрян. За подробности се свържете с поддръжката.",
+    "signOut": "Изход"
+  },
+  "adminPanel": {
+    "stats.title": "Статистика на платформата",
+    "stats.loading": "Зареждане…",
+    "stats.totalUsers": "Общо потребители",
+    "stats.verifiedUsers": "Потвърдени имейли",
+    "stats.bannedUsers": "Блокирани потребители",
+    "stats.newUsers30d": "Нови потребители (30д)",
+    "stats.totalQuotes": "Общо оферти",
+    "stats.quotes30d": "Оферти (30д)",
+    "stats.publicQuotes": "От публичния сайт",
+    "stats.clientAreaQuotes": "От клиентската зона",
+    "stats.avgCompletionDays": "Средно време за изпълнение",
+    "stats.avgFirstResponseHours": "Средно време за 1-ви отговор",
+    "stats.days": "дн",
+    "stats.hours": "ч",
+    "users.title": "Управление на потребители",
+    "users.loading": "Зареждане…",
+    "users.unverified": "непотвърден имейл",
+    "users.bannedBadge": "БЛОКИРАН",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Роля",
+    "users.ban": "Блокирай",
+    "users.unban": "Отблокирай",
+    "users.banReasonPlaceholder": "Причина (по избор)",
+    "users.banReasonLabel": "Причина за блокирането",
+    "users.confirmBan": "Потвърди",
+    "users.cancel": "Отказ",
+    "users.roleSaved": "Ролята е обновена.",
+    "users.banSaved": "Готово.",
+    "users.denied": "Операцията не е разрешена. Само суперадмин може да управлява администратори.",
+    "logs.title": "Административни журнали",
+    "logs.loading": "Зареждане…",
+    "logs.empty": "Все още няма действия.",
+    "logActions.roleUpdate": "Промяна на роля",
+    "logActions.userBan": "Блокиране на потребител",
+    "logActions.userUnban": "Отблокиране на потребител",
+    "logActions.quoteStatus": "Статус на оферта",
+    "logActions.quoteAssign": "Възлагане на оферта",
+    "logActions.quoteReply": "Отговор на оферта"
   }
 }

@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Запросити кошторис",
-    "metaDescription": "Запросіть індивідуальний кошторис для вашого проєкту в команди CORE829.",
-    "kicker": "Кошториси",
-    "title": "Розкажіть про свій проєкт",
-    "subtitle": "Заповніть форму: команда CORE829 відповість протягом 1-2 робочих днів індивідуальною пропозицією.",
-    "submit": "Надіслати запит",
-    "success": "Запит надіслано. Ми відповімо протягом 1-2 робочих днів.",
-    "existingClient": "Уже клієнт?",
-    "clientAreaLink": "Увійти до клієнтського розділу",
-    "clientAreaHint": "щоб відстежувати кошториси та історію."
-  },
   "clientArea": {
     "metaTitle": "Клієнтський розділ",
     "metaDescription": "Увійдіть у свій клієнтський розділ CORE829, щоб керувати кошторисами та даними проєкту.",
@@ -781,7 +769,11 @@
     "newQuote": "Новий кошторис",
     "loading": "Завантаження…",
     "noQuotes": "У вас ще немає запитів на кошторис.",
-    "backendUnavailable": "Клієнтську зону ще не налаштовано. Спробуйте пізніше або напишіть на projects@core829.net."
+    "backendUnavailable": "Клієнтську зону ще не налаштовано. Спробуйте пізніше або напишіть на projects@core829.net.",
+    "success": "Заявку надіслано. Ми відповімо протягом 1-2 робочих днів.",
+    "submit": "Надіслати заявку",
+    "newQuoteTitle": "Нова заявка",
+    "newQuoteHint": "Заповніть форму: наша команда відповість протягом 1-2 робочих днів."
   },
   "internalArea": {
     "metaTitle": "Внутрішня зона",
@@ -838,6 +830,52 @@
     "client": "Клієнт",
     "partner": "Партнер",
     "technical": "Технічний",
-    "admin": "Адмін"
+    "admin": "Адмін",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Акаунт заблоковано",
+    "hint": "Ваш акаунт було заблоковано. Зверніться до підтримки за деталями.",
+    "signOut": "Вийти"
+  },
+  "adminPanel": {
+    "stats.title": "Статистика платформи",
+    "stats.loading": "Завантаження…",
+    "stats.totalUsers": "Усього користувачів",
+    "stats.verifiedUsers": "Підтверджені e-mail",
+    "stats.bannedUsers": "Заблоковані користувачі",
+    "stats.newUsers30d": "Нові користувачі (30д)",
+    "stats.totalQuotes": "Усього заявок",
+    "stats.quotes30d": "Заявки (30д)",
+    "stats.publicQuotes": "З публічного сайту",
+    "stats.clientAreaQuotes": "З клієнтської зони",
+    "stats.avgCompletionDays": "Середній час виконання",
+    "stats.avgFirstResponseHours": "Середній час 1-ї відповіді",
+    "stats.days": "дн",
+    "stats.hours": "год",
+    "users.title": "Керування користувачами",
+    "users.loading": "Завантаження…",
+    "users.unverified": "e-mail не підтверджено",
+    "users.bannedBadge": "ЗАБЛОКОВАНО",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Роль",
+    "users.ban": "Заблокувати",
+    "users.unban": "Розблокувати",
+    "users.banReasonPlaceholder": "Причина (необов'язково)",
+    "users.banReasonLabel": "Причина блокування",
+    "users.confirmBan": "Підтвердити",
+    "users.cancel": "Скасувати",
+    "users.roleSaved": "Роль оновлено.",
+    "users.banSaved": "Готово.",
+    "users.denied": "Операцію заборонено. Лише superadmin може керувати адміністраторами.",
+    "logs.title": "Журнали адміністратора",
+    "logs.loading": "Завантаження…",
+    "logs.empty": "Дій поки немає.",
+    "logActions.roleUpdate": "Зміна ролі",
+    "logActions.userBan": "Блокування користувача",
+    "logActions.userUnban": "Розблокування користувача",
+    "logActions.quoteStatus": "Статус заявки",
+    "logActions.quoteAssign": "Призначення заявки",
+    "logActions.quoteReply": "Відповідь на заявку"
   }
 }

@@ -17,12 +17,12 @@ type Status = "idle" | "submitting" | "success" | "error";
 const BUDGET_KEYS = ["0", "1", "2", "3"] as const;
 
 /**
- * Form di richiesta preventivo (pagina /preventivo).
+ * Form di richiesta preventivo (usato nel client area).
  * Sanitizzazione e rate limit avvengono lato Convex (quotes:submitQuote).
  * Anti-spam leggero: honeypot + timing.
  */
 export default function QuoteForm() {
-  const t = useTranslations("preventivo");
+  const t = useTranslations("clientArea");
   const tContact = useTranslations("contact");
   const messages = useMessages();
   const services = useMemo(

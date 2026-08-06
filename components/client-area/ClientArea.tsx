@@ -14,6 +14,9 @@ import { useQuery, useMutation } from "convex/react";
 import { useConvexAuth, useAuthActions } from "@convex-dev/auth/react";
 import { api } from "@/convex/_generated/api";
 import { Link } from "@/i18n/navigation";
+import { isInternalRole } from "@/lib/roles";
+import QuoteForm from "@/components/forms/QuoteForm";
+import { cn } from "@/lib/utils";
 
 type Step =
   | "signIn"
@@ -21,8 +24,6 @@ type Step =
   | "verify"
   | "forgot"
   | "reset";
-
-const INTERNAL_ROLES = ["admin", "partner", "technical"];
 
 /**
  * Client area: registrazione / accesso con verifica email OTP,
@@ -372,13 +373,14 @@ function Dashboard() {
   const claimAdmin = useMutation(api.users.claimAdminIfEligible);
 
   const [claimed, setClaimed] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     if (!me || claimed) return;
-    const email = (me.user.email ?? "").toLowerCase();
-    if (email === "contact.core829@gmail.com") {
-      void claimAdmin().then(() => setClaimed(true));
-    }
+    // Il backend decide se l'utente è idoneo (email superadmin verificata).
+    void claimAdmin()
+      .then(() => setClaimed(true))
+      .catch(() => {});
   }, [me, claimed, claimAdmin]);
 
   if (!me) {
@@ -391,7 +393,7 @@ function Dashboard() {
 
   const user = me.user;
   const profile = me.profile;
-  const isInternal = INTERNAL_ROLES.includes((user.role ?? "") as never);
+  const isInternal = isInternalRole(user.role);
   const needsOnboarding = !profile?.onboardingCompleted;
 
   return (
@@ -444,14 +446,33 @@ function Dashboard() {
       <section>
         <div className="flex flex-wrap items-center justify-between gap-4">
           <h3 className="text-lg font-semibold">{t("myQuotes")}</h3>
-          <Link
-            href="/preventivo"
+          <button
+            type="button"
+            onClick={() => setShowForm((v) => !v)}
             className="inline-flex min-h-11 items-center gap-2 bg-foreground px-6 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent"
           >
-            {t("newQuote")}
-            <ArrowRight className="h-4 w-4" aria-hidden />
-          </Link>
+            {showForm ? t("cancel") : t("newQuote")}
+            <ArrowRight
+              className={cn(
+                "h-4 w-4 transition-transform duration-300",
+                showForm && "rotate-90"
+              )}
+              aria-hidden
+            />
+          </button>
         </div>
+
+        {showForm && (
+          <section className="mt-6 border border-border bg-surface p-6 md:p-8">
+            <h4 className="text-base font-semibold">{t("newQuoteTitle")}</h4>
+            <p className="mt-1 text-sm text-foreground-muted">
+              {t("newQuoteHint")}
+            </p>
+            <div className="mt-6">
+              <QuoteForm />
+            </div>
+          </section>
+        )}
 
         {!quotes ? (
           <p className="mt-6 text-sm text-foreground-muted">

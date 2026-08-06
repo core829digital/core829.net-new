@@ -724,18 +724,6 @@
       "desc": "Per clienti attivi: il dipartimento progetti comunica da questo indirizzo."
     }
   },
-  "preventivo": {
-    "metaTitle": "Richiedi un preventivo",
-    "metaDescription": "Richiedi un preventivo personalizzato per il tuo progetto con il team CORE829.",
-    "kicker": "Preventivi",
-    "title": "Raccontaci del tuo progetto",
-    "subtitle": "Compila il modulo: il team CORE829 ti risponderà entro 1-2 giorni lavorativi con una proposta su misura.",
-    "submit": "Invia richiesta",
-    "success": "Richiesta inviata. Ti risponderemo entro 1-2 giorni lavorativi.",
-    "existingClient": "Sei già un cliente?",
-    "clientAreaLink": "Accedi al client area",
-    "clientAreaHint": "per seguire i tuoi preventivi e la cronologia."
-  },
   "clientArea": {
     "metaTitle": "Area clienti",
     "metaDescription": "Accedi alla tua area clienti CORE829 per gestire preventivi e dati di progetto.",
@@ -781,7 +769,11 @@
     "newQuote": "Nuovo preventivo",
     "loading": "Caricamento…",
     "noQuotes": "Non hai ancora richieste di preventivo.",
-    "backendUnavailable": "Il client area non è ancora configurato. Riprova più tardi o scrivici a projects@core829.net."
+    "backendUnavailable": "Il client area non è ancora configurato. Riprova più tardi o scrivici a projects@core829.net.",
+    "success": "Richiesta inviata. Ti risponderemo entro 1-2 giorni lavorativi.",
+    "submit": "Invia richiesta",
+    "newQuoteTitle": "Nuova richiesta di preventivo",
+    "newQuoteHint": "Compila il modulo: il team ti risponderà entro 1-2 giorni lavorativi."
   },
   "internalArea": {
     "metaTitle": "Area riservata",
@@ -838,6 +830,52 @@
     "client": "Cliente",
     "partner": "Partner",
     "technical": "Tecnico",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Account sospeso",
+    "hint": "Il tuo account è stato sospeso. Per chiarimenti contatta il supporto.",
+    "signOut": "Esci dall'account"
+  },
+  "adminPanel": {
+    "stats.title": "Statistiche di piattaforma",
+    "stats.loading": "Caricamento…",
+    "stats.totalUsers": "Utenti totali",
+    "stats.verifiedUsers": "Email verificate",
+    "stats.bannedUsers": "Utenti bannati",
+    "stats.newUsers30d": "Nuovi utenti (30g)",
+    "stats.totalQuotes": "Preventivi totali",
+    "stats.quotes30d": "Preventivi (30g)",
+    "stats.publicQuotes": "Da sito pubblico",
+    "stats.clientAreaQuotes": "Da client area",
+    "stats.avgCompletionDays": "Tempo medio completamento",
+    "stats.avgFirstResponseHours": "Tempo medio prima risposta",
+    "stats.days": "gg",
+    "stats.hours": "h",
+    "users.title": "Gestione utenti",
+    "users.loading": "Caricamento…",
+    "users.unverified": "email non verificata",
+    "users.bannedBadge": "BANNATO",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Ruolo",
+    "users.ban": "Banna",
+    "users.unban": "Sblocca",
+    "users.banReasonPlaceholder": "Motivo (opzionale)",
+    "users.banReasonLabel": "Motivo del ban",
+    "users.confirmBan": "Conferma",
+    "users.cancel": "Annulla",
+    "users.roleSaved": "Ruolo aggiornato.",
+    "users.banSaved": "Operazione completata.",
+    "users.denied": "Operazione non consentita. Solo il superadmin può gestire gli admin.",
+    "logs.title": "Log amministrativi",
+    "logs.loading": "Caricamento…",
+    "logs.empty": "Nessuna azione registrata.",
+    "logActions.roleUpdate": "Cambio ruolo",
+    "logActions.userBan": "Ban utente",
+    "logActions.userUnban": "Sblocco utente",
+    "logActions.quoteStatus": "Stato preventivo",
+    "logActions.quoteAssign": "Assegnazione preventivo",
+    "logActions.quoteReply": "Risposta preventivo"
   }
 }

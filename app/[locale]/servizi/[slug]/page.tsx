@@ -141,7 +141,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
 
         <div className="mt-14 flex flex-wrap gap-4">
-          <Button href="/preventivo" variant="primary">
+          <Button href="/area-riservata" variant="primary">
             {t("cta")}
           </Button>
           <Button href="/servizi" variant="secondary">

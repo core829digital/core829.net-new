@@ -724,18 +724,6 @@
       "desc": "For active clients: the project department communicates from this address."
     }
   },
-  "preventivo": {
-    "metaTitle": "Poproś o wycenę",
-    "metaDescription": "Poproś zespół CORE829 o indywidualną wycenę Twojego projektu.",
-    "kicker": "Wyceny",
-    "title": "Opowiedz nam o swoim projekcie",
-    "subtitle": "Wypełnij formularz: zespół CORE829 odpowie w ciągu 1-2 dni roboczych spersonalizowaną propozycją.",
-    "submit": "Wyślij zapytanie",
-    "success": "Zapytanie wysłane. Odpowiemy w ciągu 1-2 dni roboczych.",
-    "existingClient": "Jesteś już klientem?",
-    "clientAreaLink": "Przejdź do strefy klienta",
-    "clientAreaHint": "aby śledzić wyceny i historię."
-  },
   "clientArea": {
     "metaTitle": "Strefa klienta",
     "metaDescription": "Zaloguj się do swojej strefy klienta CORE829, aby zarządzać wycenami i danymi projektu.",
@@ -781,7 +769,11 @@
     "newQuote": "Nowa wycena",
     "loading": "Ładowanie…",
     "noQuotes": "Nie masz jeszcze zapytań ofertowych.",
-    "backendUnavailable": "Strefa klienta nie jest jeszcze skonfigurowana. Spróbuj później lub napisz na projects@core829.net."
+    "backendUnavailable": "Strefa klienta nie jest jeszcze skonfigurowana. Spróbuj później lub napisz na projects@core829.net.",
+    "success": "Wysłano zapytanie. Odpowiemy w ciągu 1-2 dni roboczych.",
+    "submit": "Wyślij zapytanie",
+    "newQuoteTitle": "Nowe zapytanie o wycenę",
+    "newQuoteHint": "Wypełnij formularz: nasz zespół odpowie w ciągu 1-2 dni roboczych."
   },
   "internalArea": {
     "metaTitle": "Strefa wewnętrzna",
@@ -838,6 +830,52 @@
     "client": "Klient",
     "partner": "Partner",
     "technical": "Techniczny",
-    "admin": "Admin"
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "banned": {
+    "title": "Konto zawieszone",
+    "hint": "Twoje konto zostało zawieszone. Skontaktuj się z pomocą, aby uzyskać szczegóły.",
+    "signOut": "Wyloguj się"
+  },
+  "adminPanel": {
+    "stats.title": "Statystyki platformy",
+    "stats.loading": "Ładowanie…",
+    "stats.totalUsers": "Łączna liczba użytkowników",
+    "stats.verifiedUsers": "Zweryfikowane e-maile",
+    "stats.bannedUsers": "Zablokowani użytkownicy",
+    "stats.newUsers30d": "Nowi użytkownicy (30d)",
+    "stats.totalQuotes": "Łącznie wycen",
+    "stats.quotes30d": "Wyceny (30d)",
+    "stats.publicQuotes": "Z publicznej strony",
+    "stats.clientAreaQuotes": "Z obszaru klienta",
+    "stats.avgCompletionDays": "Śr. czas realizacji",
+    "stats.avgFirstResponseHours": "Śr. czas pierwszej odpowiedzi",
+    "stats.days": "dni",
+    "stats.hours": "h",
+    "users.title": "Zarządzanie użytkownikami",
+    "users.loading": "Ładowanie…",
+    "users.unverified": "e-mail niezweryfikowany",
+    "users.bannedBadge": "ZABLOKOWANY",
+    "users.protectedBadge": "Superadmin",
+    "users.roleLabel": "Rola",
+    "users.ban": "Zablokuj",
+    "users.unban": "Odblokuj",
+    "users.banReasonPlaceholder": "Powód (opcjonalnie)",
+    "users.banReasonLabel": "Powód blokady",
+    "users.confirmBan": "Potwierdź",
+    "users.cancel": "Anuluj",
+    "users.roleSaved": "Rola zaktualizowana.",
+    "users.banSaved": "Operacja zakończona.",
+    "users.denied": "Operacja niedozwolona. Tylko superadmin może zarządzać administratorami.",
+    "logs.title": "Dzienniki administratora",
+    "logs.loading": "Ładowanie…",
+    "logs.empty": "Brak zarejestrowanych działań.",
+    "logActions.roleUpdate": "Zmiana roli",
+    "logActions.userBan": "Blokada użytkownika",
+    "logActions.userUnban": "Odblokowanie użytkownika",
+    "logActions.quoteStatus": "Status wyceny",
+    "logActions.quoteAssign": "Przypisanie wyceny",
+    "logActions.quoteReply": "Odpowiedź na wycenę"
   }
 }

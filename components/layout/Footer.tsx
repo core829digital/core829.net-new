@@ -138,9 +138,12 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#contatti" onClick={goTo("#contatti")} className="link-ghost text-sm">
+              <Link
+                href="/preventivo"
+                className="link-ghost text-sm"
+              >
                 {t("companyContact")}
-              </a>
+              </Link>
             </li>
             <li>
               <Link

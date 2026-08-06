@@ -55,7 +55,7 @@ export default function PricingModel() {
         </RevealOnScroll>
 
         <RevealOnScroll className="mt-14 text-center">
-          <Button href="#contatti" variant="primary">
+          <Button href="/preventivo" variant="primary">
             {t("cta")}
           </Button>
         </RevealOnScroll>

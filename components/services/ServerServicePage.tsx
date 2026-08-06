@@ -83,7 +83,7 @@ export default function ServerServicePage() {
                 {t("subtitle")}
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
-                <Button href="#contatti" variant="primary">
+                <Button href="/preventivo" variant="primary">
                   {t("ctaButton")}
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Button>
@@ -290,7 +290,7 @@ export default function ServerServicePage() {
                 {t("ctaDesc")}
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
-                <Button href="#contatti" variant="primary">
+                <Button href="/preventivo" variant="primary">
                   {t("ctaButton")}
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Button>

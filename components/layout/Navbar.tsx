@@ -103,12 +103,12 @@ export default function Navbar() {
             ]}
           />
 
-          <NavLink href="#contatti">{t("contact")}</NavLink>
+          <NavLink href="/preventivo">{t("contact")}</NavLink>
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
           <LanguageSwitcher />
-          <Button href="#contatti" variant="primary" className="px-5">
+          <Button href="/preventivo" variant="primary" className="px-5">
             {t("cta")}
           </Button>
         </div>
@@ -157,7 +157,7 @@ export default function Navbar() {
                     { key: "pricing", label: t("pricing"), href: "/prezzi" },
                   ],
                 },
-                { key: "contact", label: t("contact"), href: "#contatti" },
+                { key: "contact", label: t("contact"), href: "/preventivo" },
               ]}
               onNavigate={goTo}
             />
@@ -170,7 +170,7 @@ export default function Navbar() {
                 className="space-y-8 pt-8 border-t border-border"
               >
                 <Button
-                  href="#contatti"
+                  href="/preventivo"
                   variant="primary"
                   className="w-full"
                   onClick={() => setMenuOpen(false)}

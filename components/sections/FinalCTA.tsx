@@ -2,16 +2,18 @@
 
 import { useTranslations } from "next-intl";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
-import ContactForm from "@/components/sections/ContactForm";
+import { Button } from "@/components/ui/Button";
+import { Link } from "@/i18n/navigation";
 
 /**
- * "Parliamone" — CTA finale con form di richiesta preventivo (id="contatti").
+ * "Parliamone" — CTA finale che indirizza alla pagina dedicata /preventivo
+ * (form di richiesta preventivo con gestione centralizzata).
  */
 export default function FinalCTA() {
   const t = useTranslations("finalCta");
 
   return (
-    <section id="contatti" className="bg-background">
+    <section className="bg-background">
       <div className="container-core829 py-24 lg:py-32">
         <RevealOnScroll>
           <div className="max-w-2xl">
@@ -22,7 +24,14 @@ export default function FinalCTA() {
         </RevealOnScroll>
 
         <RevealOnScroll className="mt-14 max-w-2xl">
-          <ContactForm />
+          <div className="flex flex-wrap items-center gap-4">
+            <Button href="/preventivo" variant="primary">
+              {t("cta")}
+            </Button>
+            <Link href="/area-clienti" className="link-ghost text-sm">
+              {t("clientAreaLink")}
+            </Link>
+          </div>
           <div className="mt-8 border-t border-border pt-6">
             <p className="text-sm font-semibold text-foreground">
               {t("existingClient")}

@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
-import ContactForm from "@/components/sections/ContactForm";
+import { Link } from "@/i18n/navigation";
+import { Button } from "@/components/ui/Button";
 import { COMPANY } from "@/lib/constants";
 
 export async function generateMetadata({
@@ -36,7 +37,17 @@ export default async function ContattiPage({
         </p>
 
         <div className="mt-16 max-w-xl">
-          <ContactForm />
+          <p className="tech-label">{t("kicker")}</p>
+          <h2 className="mt-3 text-section-title">{t("title")}</h2>
+          <p className="mt-4 text-foreground-muted">{t("subtitle")}</p>
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <Button href="/preventivo" variant="primary">
+              {t("ctaButton")}
+            </Button>
+            <Link href="/area-clienti" className="link-ghost text-sm">
+              {t("clientAreaLink")}
+            </Link>
+          </div>
           <div className="mt-8 border-t border-border pt-6">
             <p className="text-sm font-semibold text-foreground">
               {t("existingClient")}

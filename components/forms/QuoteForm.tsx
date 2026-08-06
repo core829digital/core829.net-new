@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations, useMessages } from "next-intl";
 import { Loader2, CheckCircle2, AlertCircle } from "lucide-react";
-import { submitContactRequest } from "@/lib/contact";
+import { useMutation } from "convex/react";
+import { api } from "@/convex/_generated/api";
 import { cn } from "@/lib/utils";
 
 interface Service {
@@ -16,14 +17,21 @@ type Status = "idle" | "submitting" | "success" | "error";
 const BUDGET_KEYS = ["0", "1", "2", "3"] as const;
 
 /**
- * Form di contatto / richiesta preventivo.
- * Protezione anti-spam leggera: honeypot + validazione timing + validazione client.
- * Invio: mutation Convex se configurata, altrimenti API route /api/contact.
+ * Form di richiesta preventivo (pagina /preventivo).
+ * Sanitizzazione e rate limit avvengono lato Convex (quotes:submitQuote).
+ * Anti-spam leggero: honeypot + timing.
  */
-export default function ContactForm() {
-  const t = useTranslations("contact");
+export default function QuoteForm() {
+  const t = useTranslations("preventivo");
+  const tContact = useTranslations("contact");
   const messages = useMessages();
-  const services = (messages.solution as unknown as { services: Service[] }).services;
+  const services = useMemo(
+    () =>
+      (messages.solution as unknown as { services: Service[] }).services ?? [],
+    [messages]
+  );
+
+  const submitQuote = useMutation(api.quotes.submitQuote);
 
   const [status, setStatus] = useState<Status>("idle");
   const [selected, setSelected] = useState<string[]>([]);
@@ -65,17 +73,17 @@ export default function ContactForm() {
     const message = String(formData.get("message") ?? "").trim();
 
     if (!name || !email || !message) {
-      setFormError(t("required"));
+      setFormError(tContact("required"));
       return;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      setFormError(t("invalidEmail"));
+      setFormError(tContact("invalidEmail"));
       return;
     }
 
     setStatus("submitting");
     try {
-      await submitContactRequest({
+      await submitQuote({
         name,
         email,
         company: String(formData.get("company") ?? "").trim() || undefined,
@@ -107,49 +115,54 @@ export default function ContactForm() {
 
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
-          <label htmlFor="contact-name" className="tech-label block">
-            {t("name")} *
+          <label htmlFor="quote-name" className="tech-label block">
+            {tContact("name")} *
           </label>
           <input
-            id="contact-name"
+            id="quote-name"
             name="name"
             type="text"
             required
-            placeholder={t("namePlaceholder")}
+            maxLength={100}
+            placeholder={tContact("namePlaceholder")}
             className="input-core829 mt-2"
           />
         </div>
         <div>
-          <label htmlFor="contact-email" className="tech-label block">
-            {t("email")} *
+          <label htmlFor="quote-email" className="tech-label block">
+            {tContact("email")} *
           </label>
           <input
-            id="contact-email"
+            id="quote-email"
             name="email"
             type="email"
             required
-            placeholder={t("emailPlaceholder")}
+            maxLength={254}
+            placeholder={tContact("emailPlaceholder")}
             className="input-core829 mt-2"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="contact-company" className="tech-label block">
-          {t("company")}
+        <label htmlFor="quote-company" className="tech-label block">
+          {tContact("company")}
         </label>
         <input
-          id="contact-company"
+          id="quote-company"
           name="company"
           type="text"
-          placeholder={t("companyPlaceholder")}
+          maxLength={150}
+          placeholder={tContact("companyPlaceholder")}
           className="input-core829 mt-2"
         />
       </div>
 
       <fieldset>
-        <legend className="tech-label">{t("service")}</legend>
-        <p className="mt-1 text-xs text-foreground-muted">{t("serviceHint")}</p>
+        <legend className="tech-label">{tContact("service")}</legend>
+        <p className="mt-1 text-xs text-foreground-muted">
+          {tContact("serviceHint")}
+        </p>
         <div className="mt-3 flex flex-wrap gap-2">
           {services.map((service, i) => {
             const active = selected.includes(service.id);
@@ -174,36 +187,37 @@ export default function ContactForm() {
       </fieldset>
 
       <div>
-        <label htmlFor="contact-budget" className="tech-label block">
-          {t("budget")}
+        <label htmlFor="quote-budget" className="tech-label block">
+          {tContact("budget")}
         </label>
         <select
-          id="contact-budget"
+          id="quote-budget"
           name="budgetRange"
           className="input-core829 mt-2"
           defaultValue=""
         >
           <option value="" disabled>
-            {t("budgetPlaceholder")}
+            {tContact("budgetPlaceholder")}
           </option>
           {BUDGET_KEYS.map((key) => (
             <option key={key} value={key}>
-              {t(`budgetOptions.${key}`)}
+              {tContact(`budgetOptions.${key}`)}
             </option>
           ))}
         </select>
       </div>
 
       <div>
-        <label htmlFor="contact-message" className="tech-label block">
-          {t("message")} *
+        <label htmlFor="quote-message" className="tech-label block">
+          {tContact("message")} *
         </label>
         <textarea
-          id="contact-message"
+          id="quote-message"
           name="message"
           required
           rows={5}
-          placeholder={t("messagePlaceholder")}
+          maxLength={5000}
+          placeholder={tContact("messagePlaceholder")}
           className="input-core829 mt-2 resize-y"
         />
       </div>
@@ -225,7 +239,7 @@ export default function ContactForm() {
       {status === "error" && (
         <p role="alert" className="flex items-center gap-2 text-sm text-accent">
           <AlertCircle className="h-4 w-4" aria-hidden />
-          {t("error")}
+          {tContact("error")}
         </p>
       )}
 

@@ -60,7 +60,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <Button href="#contatti" variant="primary">
+            <Button href="/preventivo" variant="primary">
               {t("ctaPrimary")}
               <ArrowRight className="h-4 w-4" aria-hidden />
             </Button>

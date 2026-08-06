@@ -776,7 +776,8 @@
     "myQuotes": "Tarjouksesi",
     "newQuote": "Uusi tarjous",
     "loading": "Ladataan…",
-    "noQuotes": "Sinulla ei ole vielä tarjouspyyntöjä."
+    "noQuotes": "Sinulla ei ole vielä tarjouspyyntöjä.",
+    "backendUnavailable": "Asiakasalue ei ole vielä määritetty. Yritä myöhemmin uudelleen tai kirjoita projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Sisäinen alue",

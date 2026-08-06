@@ -776,7 +776,8 @@
     "myQuotes": "Vos devis",
     "newQuote": "Nouveau devis",
     "loading": "Chargement…",
-    "noQuotes": "Vous n'avez pas encore de demande de devis."
+    "noQuotes": "Vous n'avez pas encore de demande de devis.",
+    "backendUnavailable": "L'espace client n'est pas encore configuré. Réessayez plus tard ou écrivez-nous à projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Zone réservée",

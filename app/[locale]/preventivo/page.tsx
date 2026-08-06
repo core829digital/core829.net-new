@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import QuoteForm from "@/components/forms/QuoteForm";
+import ConvexGate from "@/components/providers/ConvexGate";
 import { Link } from "@/i18n/navigation";
 
 export async function generateMetadata({
@@ -41,7 +42,9 @@ export default async function PreventivoPage({
         </p>
 
         <div className="mt-16 max-w-xl">
-          <QuoteForm />
+          <ConvexGate>
+            <QuoteForm />
+          </ConvexGate>
           <div className="mt-8 border-t border-border pt-6">
             <p className="text-sm font-semibold text-foreground">
               {t("existingClient")}

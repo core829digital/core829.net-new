@@ -776,7 +776,8 @@
     "myQuotes": "Vaše nabídky",
     "newQuote": "Nová nabídka",
     "loading": "Načítání…",
-    "noQuotes": "Zatím nemáte žádné žádosti o nabídku."
+    "noQuotes": "Zatím nemáte žádné žádosti o nabídku.",
+    "backendUnavailable": "Klientská zóna ještě není nakonfigurována. Zkuste to později nebo napište na projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Vnitřní oblast",

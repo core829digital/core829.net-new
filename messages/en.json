@@ -776,7 +776,8 @@
     "myQuotes": "Your quotes",
     "newQuote": "New quote",
     "loading": "Loading…",
-    "noQuotes": "You have no quote requests yet."
+    "noQuotes": "You have no quote requests yet.",
+    "backendUnavailable": "The client area is not configured yet. Try again later or write to projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Internal area",

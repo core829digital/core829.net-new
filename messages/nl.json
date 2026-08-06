@@ -776,7 +776,8 @@
     "myQuotes": "Uw offertes",
     "newQuote": "Nieuwe offerte",
     "loading": "Laden…",
-    "noQuotes": "U heeft nog geen offerteverzoeken."
+    "noQuotes": "U heeft nog geen offerteverzoeken.",
+    "backendUnavailable": "De klantomgeving is nog niet geconfigureerd. Probeer het later opnieuw of mail naar projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Intern gedeelte",

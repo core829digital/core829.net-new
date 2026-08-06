@@ -776,7 +776,8 @@
     "myQuotes": "Az Ön ajánlatai",
     "newQuote": "Új ajánlat",
     "loading": "Betöltés…",
-    "noQuotes": "Még nincs ajánlatkérése."
+    "noQuotes": "Még nincs ajánlatkérése.",
+    "backendUnavailable": "Az ügyfélfelület még nincs beállítva. Próbálja újra később, vagy írjon a projects@core829.net címre."
   },
   "internalArea": {
     "metaTitle": "Belső terület",

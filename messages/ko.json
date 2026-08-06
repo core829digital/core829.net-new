@@ -776,7 +776,8 @@
     "myQuotes": "내 견적",
     "newQuote": "새 견적",
     "loading": "불러오는 중…",
-    "noQuotes": "아직 견적 요청이 없습니다."
+    "noQuotes": "아직 견적 요청이 없습니다.",
+    "backendUnavailable": "클라이언트 영역이 아직 구성되지 않았습니다. 나중에 다시 시도하거나 projects@core829.net으로 문의하세요."
   },
   "internalArea": {
     "metaTitle": "내부 영역",

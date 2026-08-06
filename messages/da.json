@@ -776,7 +776,8 @@
     "myQuotes": "Dine tilbud",
     "newQuote": "Nyt tilbud",
     "loading": "Indlæser…",
-    "noQuotes": "Du har endnu ingen tilbudsanmodninger."
+    "noQuotes": "Du har endnu ingen tilbudsanmodninger.",
+    "backendUnavailable": "Kundeområdet er ikke konfigureret endnu. Prøv igen senere eller skriv til projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Internt område",

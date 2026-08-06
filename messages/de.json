@@ -776,7 +776,8 @@
     "myQuotes": "Ihre Angebote",
     "newQuote": "Neues Angebot",
     "loading": "Wird geladen…",
-    "noQuotes": "Sie haben noch keine Angebotsanfragen."
+    "noQuotes": "Sie haben noch keine Angebotsanfragen.",
+    "backendUnavailable": "Der Kundenbereich ist noch nicht eingerichtet. Versuchen Sie es später erneut oder schreiben Sie an projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Interner Bereich",

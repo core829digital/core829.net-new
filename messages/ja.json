@@ -776,7 +776,8 @@
     "myQuotes": "見積もり",
     "newQuote": "新規見積もり",
     "loading": "読み込み中…",
-    "noQuotes": "見積もり依頼はまだありません。"
+    "noQuotes": "見積もり依頼はまだありません。",
+    "backendUnavailable": "クライアントエリアはまだ設定されていません。後でもう一度お試しいただくか、projects@core829.net までご連絡ください。"
   },
   "internalArea": {
     "metaTitle": "内部エリア",

@@ -776,7 +776,8 @@
     "myQuotes": "您的报价",
     "newQuote": "新建报价",
     "loading": "加载中…",
-    "noQuotes": "您还没有报价请求。"
+    "noQuotes": "您还没有报价请求。",
+    "backendUnavailable": "客户专区尚未配置。请稍后重试或写信至 projects@core829.net。"
   },
   "internalArea": {
     "metaTitle": "内部区域",

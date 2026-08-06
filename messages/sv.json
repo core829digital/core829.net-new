@@ -776,7 +776,8 @@
     "myQuotes": "Dina offerter",
     "newQuote": "Ny offert",
     "loading": "Läser in…",
-    "noQuotes": "Du har inga offertförfrågningar ännu."
+    "noQuotes": "Du har inga offertförfrågningar ännu.",
+    "backendUnavailable": "Kundområdet är inte konfigurerat ännu. Försök igen senare eller skriv till projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Internt område",

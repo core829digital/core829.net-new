@@ -776,7 +776,8 @@
     "myQuotes": "Os seus orçamentos",
     "newQuote": "Novo orçamento",
     "loading": "A carregar…",
-    "noQuotes": "Ainda não tem pedidos de orçamento."
+    "noQuotes": "Ainda não tem pedidos de orçamento.",
+    "backendUnavailable": "A área de cliente ainda não está configurada. Tente novamente mais tarde ou escreva para projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Área reservada",

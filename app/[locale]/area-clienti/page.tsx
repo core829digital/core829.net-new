@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import ClientArea from "@/components/client-area/ClientArea";
+import ConvexGate from "@/components/providers/ConvexGate";
 
 export async function generateMetadata({
   params,
@@ -31,7 +32,9 @@ export default async function AreaClientiPage({
   return (
     <main>
       <section className="container-core829 py-24 lg:py-32">
-        <ClientArea />
+        <ConvexGate>
+          <ClientArea />
+        </ConvexGate>
       </section>
     </main>
   );

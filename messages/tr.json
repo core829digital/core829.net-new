@@ -776,7 +776,8 @@
     "myQuotes": "Teklifleriniz",
     "newQuote": "Yeni teklif",
     "loading": "Yükleniyor…",
-    "noQuotes": "Henüz teklif talebiniz yok."
+    "noQuotes": "Henüz teklif talebiniz yok.",
+    "backendUnavailable": "Müşteri alanı henüz yapılandırılmadı. Daha sonra tekrar deneyin veya projects@core829.net adresine yazın."
   },
   "internalArea": {
     "metaTitle": "İç alan",

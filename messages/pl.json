@@ -776,7 +776,8 @@
     "myQuotes": "Twoje wyceny",
     "newQuote": "Nowa wycena",
     "loading": "Ładowanie…",
-    "noQuotes": "Nie masz jeszcze zapytań ofertowych."
+    "noQuotes": "Nie masz jeszcze zapytań ofertowych.",
+    "backendUnavailable": "Strefa klienta nie jest jeszcze skonfigurowana. Spróbuj później lub napisz na projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Strefa wewnętrzna",

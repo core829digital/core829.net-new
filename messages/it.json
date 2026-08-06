@@ -776,7 +776,8 @@
     "myQuotes": "I tuoi preventivi",
     "newQuote": "Nuovo preventivo",
     "loading": "Caricamento…",
-    "noQuotes": "Non hai ancora richieste di preventivo."
+    "noQuotes": "Non hai ancora richieste di preventivo.",
+    "backendUnavailable": "Il client area non è ancora configurato. Riprova più tardi o scrivici a projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Area riservata",

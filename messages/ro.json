@@ -776,7 +776,8 @@
     "myQuotes": "Ofertele tale",
     "newQuote": "Ofertă nouă",
     "loading": "Se încarcă…",
-    "noQuotes": "Nu ai încă cereri de ofertă."
+    "noQuotes": "Nu ai încă cereri de ofertă.",
+    "backendUnavailable": "Zona client nu este încă configurată. Încearcă mai târziu sau scrie-ne la projects@core829.net."
   },
   "internalArea": {
     "metaTitle": "Zonă rezervată",

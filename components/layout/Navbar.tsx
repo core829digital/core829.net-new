@@ -104,16 +104,12 @@ export default function Navbar() {
           />
 
           <NavLink href="/preventivo">{t("contact")}</NavLink>
-
-          <NavLink href="/area-clienti">{t("clientArea")}</NavLink>
-
-          <NavLink href="/area-riservata">{t("internalArea")}</NavLink>
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
           <LanguageSwitcher />
-          <Button href="/preventivo" variant="primary" className="px-5">
-            {t("cta")}
+          <Button href="/area-riservata" variant="primary" className="px-5">
+            {t("internalArea")}
           </Button>
         </div>
 
@@ -162,16 +158,6 @@ export default function Navbar() {
                   ],
                 },
                 { key: "contact", label: t("contact"), href: "/preventivo" },
-                {
-                  key: "clientArea",
-                  label: t("clientArea"),
-                  href: "/area-clienti",
-                },
-                {
-                  key: "internalArea",
-                  label: t("internalArea"),
-                  href: "/area-riservata",
-                },
               ]}
               onNavigate={goTo}
             />
@@ -184,12 +170,12 @@ export default function Navbar() {
                 className="space-y-8 pt-8 border-t border-border"
               >
                 <Button
-                  href="/preventivo"
+                  href="/area-riservata"
                   variant="primary"
                   className="w-full"
                   onClick={() => setMenuOpen(false)}
                 >
-                  {t("cta")}
+                  {t("internalArea")}
                 </Button>
                 <div className="flex flex-wrap gap-3">
                   <SocialLinks />

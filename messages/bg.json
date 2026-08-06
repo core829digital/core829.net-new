@@ -670,7 +670,8 @@
         "title": "7. Contact",
         "body": "For any question regarding the processing of your personal data, or to exercise your rights, write to hello@core829.net. We will respond within 30 days."
       }
-    ]
+    ],
+    "updated": "Последна актуализация: {date}"
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
@@ -696,7 +697,8 @@
         "title": "5. Consent",
         "body": "Where cookies are not strictly necessary, we request your consent before installing them. You can change your preferences at any time by clearing your browser cookies and revisiting the website."
       }
-    ]
+    ],
+    "updated": "Последна актуализация: {date}"
   },
   "contactEmails": {
     "heading": "Contact",

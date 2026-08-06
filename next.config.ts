@@ -12,7 +12,7 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https://core829.net",
       "font-src 'self' data:",
-      "connect-src 'self' https://*.convex.cloud https://widget.trustpilot.com",
+      "connect-src 'self' https://*.convex.cloud wss://*.convex.cloud https://widget.trustpilot.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",

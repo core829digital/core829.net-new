@@ -670,7 +670,8 @@
         "title": "7. Contact",
         "body": "Voor vragen over de verwerking van uw persoonsgegevens of om uw rechten uit te oefenen, schrijft u naar hello@core829.net. Wij antwoorden binnen 30 dagen."
       }
-    ]
+    ],
+    "updated": "Laatst bijgewerkt: {date}"
   },
   "cookiePolicy": {
     "title": "Cookiebeleid",
@@ -696,7 +697,8 @@
         "title": "5. Toestemming",
         "body": "Waar cookies niet strikt noodzakelijk zijn, vragen wij uw toestemming voordat wij ze installeren. U kunt uw voorkeuren op elk moment wijzigen door de browsercookies te wissen en de website opnieuw te bezoeken."
       }
-    ]
+    ],
+    "updated": "Laatst bijgewerkt: {date}"
   },
   "contactEmails": {
     "heading": "Contact",

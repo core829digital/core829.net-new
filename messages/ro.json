@@ -670,7 +670,8 @@
         "title": "7. Contact",
         "body": "Pentru orice întrebare privind prelucrarea datelor dumneavoastră personale sau pentru exercitarea drepturilor, scrieți la hello@core829.net. Vom răspunde în termen de 30 de zile."
       }
-    ]
+    ],
+    "updated": "Ultima actualizare: {date}"
   },
   "cookiePolicy": {
     "title": "Politica de cookie-uri",
@@ -696,7 +697,8 @@
         "title": "5. Consimțământ",
         "body": "Acolo unde cookie-urile nu sunt strict necesare, solicităm consimțământul dumneavoastră înainte de a le instala. Vă puteți modifica preferințele oricând prin ștergerea cookie-urilor browserului și revenirea pe site."
       }
-    ]
+    ],
+    "updated": "Ultima actualizare: {date}"
   },
   "contactEmails": {
     "heading": "Contact",

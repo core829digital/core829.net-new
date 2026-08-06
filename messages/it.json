@@ -670,7 +670,8 @@
         "title": "7. Contatti",
         "body": "Per qualsiasi domanda relativa al trattamento dei tuoi dati personali, o per esercitare i tuoi diritti, scrivi a hello@core829.net. Risponderemo entro 30 giorni."
       }
-    ]
+    ],
+    "updated": "Ultimo aggiornamento: {date}"
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
@@ -696,7 +697,8 @@
         "title": "5. Consenso",
         "body": "Laddove i cookie non siano strettamente necessari, richiediamo il tuo consenso prima di installarli. Puoi modificare le tue preferenze in qualsiasi momento cancellando i cookie del browser e rivisitando il sito."
       }
-    ]
+    ],
+    "updated": "Ultimo aggiornamento: {date}"
   },
   "contactEmails": {
     "heading": "Contatti",

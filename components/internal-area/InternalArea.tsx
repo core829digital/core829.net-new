@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import {
   Loader2,
@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { Link } from "@/i18n/navigation";
+import { Link, useRouter } from "@/i18n/navigation";
 import type { Doc, Id } from "@/convex/_generated/dataModel";
 
 const INTERNAL_ROLES = ["admin", "partner", "technical"] as const;
@@ -35,6 +35,16 @@ type QuoteStatus = (typeof STATUSES)[number];
 export default function InternalArea() {
   const t = useTranslations("internalArea");
   const me = useQuery(api.users.getMyUser);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (me === null) {
+      const id = window.setTimeout(() => {
+        router.replace("/area-clienti");
+      }, 350);
+      return () => window.clearTimeout(id);
+    }
+  }, [me, router]);
 
   const isInternal = useMemo(
     () =>
@@ -43,7 +53,15 @@ export default function InternalArea() {
     [me]
   );
 
-  if (!me) {
+  if (me === undefined) {
+    return (
+      <div className="flex min-h-[40vh] items-center justify-center">
+        <Loader2 className="h-6 w-6 animate-spin text-accent" aria-hidden />
+      </div>
+    );
+  }
+
+  if (me === null) {
     return (
       <div className="mx-auto max-w-md">
         <ShieldCheck className="h-8 w-8 text-accent" aria-hidden />

@@ -13,14 +13,16 @@ const TRUSTPILOT_WIDGET_PROPS = {
 };
 
 /**
- * TrustBox script — inserito nella <head> dell'HTML come da istruzioni Trustpilot.
+ * TrustBox script — caricato dopo l'hydration (afterInteractive) così il
+ * bootstrap Trustpilot non modifica il DOM del widget prima che React
+ * completi l'hydration (evita l'errore di hydration #418).
  */
 export function TrustpilotScript() {
   return (
     <Script
       id="trustpilot-bootstrap"
       src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
-      strategy="beforeInteractive"
+      strategy="afterInteractive"
     />
   );
 }

@@ -20,7 +20,9 @@
     "blog": "Blog",
     "careers": "Empleo",
     "pricing": "Precios",
-    "informazioni": "Información"
+    "informazioni": "Información",
+    "clientArea": "Área de clientes",
+    "internalArea": "Área reservada"
   },
   "hero": {
     "badge": "Nuevo: Servidores personalizados con partners Intel y NVIDIA",

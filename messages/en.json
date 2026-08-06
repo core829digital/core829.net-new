@@ -20,7 +20,9 @@
     "careers": "Careers",
     "pricing": "Pricing",
     "cta": "Request a consultation",
-    "informazioni": "Information"
+    "informazioni": "Information",
+    "clientArea": "Client area",
+    "internalArea": "Reserved area"
   },
   "hero": {
     "badge": "New: Custom Servers built with Intel and NVIDIA partners",

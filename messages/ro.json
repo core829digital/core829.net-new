@@ -20,7 +20,9 @@
     "blog": "Blog",
     "careers": "Cariere",
     "pricing": "Prețuri",
-    "informazioni": "Informații"
+    "informazioni": "Informații",
+    "clientArea": "Zona client",
+    "internalArea": "Zonă rezervată"
   },
   "hero": {
     "badge": "Nou: Servere personalizate cu parteneri Intel și NVIDIA",

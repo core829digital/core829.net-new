@@ -20,7 +20,9 @@
     "blog": "Blog",
     "careers": "Kariyer",
     "pricing": "Fiyatlar",
-    "informazioni": "Bilgi"
+    "informazioni": "Bilgi",
+    "clientArea": "Müşteri alanı",
+    "internalArea": "Özel alan"
   },
   "hero": {
     "badge": "Yeni: Intel ve NVIDIA ortaklarıyla özel sunucular",

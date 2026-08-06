@@ -20,7 +20,9 @@
     "blog": "Blog",
     "careers": "Karriere",
     "pricing": "Priser",
-    "informazioni": "Information"
+    "informazioni": "Information",
+    "clientArea": "Kundeområde",
+    "internalArea": "Beskyttet område"
   },
   "hero": {
     "badge": "Nyt: Tilpassede servere med Intel- og NVIDIA-partnere",

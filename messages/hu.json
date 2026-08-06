@@ -20,7 +20,9 @@
     "blog": "Blog",
     "careers": "Karrier",
     "pricing": "Árak",
-    "informazioni": "Információ"
+    "informazioni": "Információ",
+    "clientArea": "Ügyfélfelület",
+    "internalArea": "Fenntartott terület"
   },
   "hero": {
     "badge": "Újdonság: Egyedi szerverek Intel és NVIDIA partnerekkel",

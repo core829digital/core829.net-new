@@ -20,7 +20,9 @@
     "blog": "Blog",
     "careers": "Kariera",
     "pricing": "Cennik",
-    "informazioni": "Informacje"
+    "informazioni": "Informacje",
+    "clientArea": "Strefa klienta",
+    "internalArea": "Obszar zastrzeżony"
   },
   "hero": {
     "badge": "Nowość: Serwery na zamówienie z partnerami Intel i NVIDIA",

@@ -104,6 +104,10 @@ export default function Navbar() {
           />
 
           <NavLink href="/preventivo">{t("contact")}</NavLink>
+
+          <NavLink href="/area-clienti">{t("clientArea")}</NavLink>
+
+          <NavLink href="/area-riservata">{t("internalArea")}</NavLink>
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
@@ -158,6 +162,16 @@ export default function Navbar() {
                   ],
                 },
                 { key: "contact", label: t("contact"), href: "/preventivo" },
+                {
+                  key: "clientArea",
+                  label: t("clientArea"),
+                  href: "/area-clienti",
+                },
+                {
+                  key: "internalArea",
+                  label: t("internalArea"),
+                  href: "/area-riservata",
+                },
               ]}
               onNavigate={goTo}
             />

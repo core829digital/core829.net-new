@@ -20,7 +20,9 @@
     "blog": "Blog",
     "careers": "Vacatures",
     "pricing": "Prijzen",
-    "informazioni": "Informatie"
+    "informazioni": "Informatie",
+    "clientArea": "Klantomgeving",
+    "internalArea": "Intern gebied"
   },
   "hero": {
     "badge": "Nieuw: maatwerk servers met Intel- en NVIDIA-partners",

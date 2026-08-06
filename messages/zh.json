@@ -20,7 +20,9 @@
     "blog": "博客",
     "careers": "招聘",
     "pricing": "定价",
-    "informazioni": "信息"
+    "informazioni": "信息",
+    "clientArea": "客户专区",
+    "internalArea": "内部区域"
   },
   "hero": {
     "badge": "新品：与英特尔和英伟达合作伙伴打造的定制服务器",

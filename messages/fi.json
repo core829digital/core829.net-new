@@ -20,7 +20,9 @@
     "blog": "Blogi",
     "careers": "Uratoiminta",
     "pricing": "Hinnat",
-    "informazioni": "Tietoa"
+    "informazioni": "Tietoa",
+    "clientArea": "Asiakasalue",
+    "internalArea": "Varattu alue"
   },
   "hero": {
     "badge": "Uutuus: Räätälöidyt palvelimet Intel- ja NVIDIA-kumppaneilla",

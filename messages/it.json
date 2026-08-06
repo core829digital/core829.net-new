@@ -20,7 +20,9 @@
     "blog": "Blog",
     "careers": "Lavora con noi",
     "pricing": "Prezzi",
-    "informazioni": "Informazioni"
+    "informazioni": "Informazioni",
+    "clientArea": "Area clienti",
+    "internalArea": "Area riservata"
   },
   "hero": {
     "badge": "Nuovo: Server su misura con partner Intel e NVIDIA",

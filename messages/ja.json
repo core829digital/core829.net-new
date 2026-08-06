@@ -20,7 +20,9 @@
     "blog": "ブログ",
     "careers": "採用情報",
     "pricing": "料金",
-    "informazioni": "情報"
+    "informazioni": "情報",
+    "clientArea": "クライアントエリア",
+    "internalArea": "限定エリア"
   },
   "hero": {
     "badge": "新着：Intel と NVIDIA パートナーとのカスタムサーバー",

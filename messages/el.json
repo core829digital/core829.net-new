@@ -20,7 +20,9 @@
     "blog": "Blog",
     "careers": "Εργασία",
     "pricing": "Τιμές",
-    "informazioni": "Πληροφορίες"
+    "informazioni": "Πληροφορίες",
+    "clientArea": "Περιοχή πελατών",
+    "internalArea": "Περιορισμένη περιοχή"
   },
   "hero": {
     "badge": "Νέο: Εξατομικευμένοι διακομιστές με συνεργάτες Intel και NVIDIA",

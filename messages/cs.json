@@ -20,7 +20,9 @@
     "blog": "Blog",
     "careers": "Kariéra",
     "pricing": "Ceny",
-    "informazioni": "Informace"
+    "informazioni": "Informace",
+    "clientArea": "Klientská zóna",
+    "internalArea": "Vyhrazená oblast"
   },
   "hero": {
     "badge": "Novinka: Servery na míru s partnery Intel a NVIDIA",

@@ -20,7 +20,9 @@
     "blog": "블로그",
     "careers": "채용",
     "pricing": "가격",
-    "informazioni": "정보"
+    "informazioni": "정보",
+    "clientArea": "클라이언트 영역",
+    "internalArea": "내부 영역"
   },
   "hero": {
     "badge": "새소식: Intel 및 NVIDIA 파트너와 함께하는 맞춤형 서버",

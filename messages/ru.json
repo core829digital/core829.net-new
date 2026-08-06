@@ -20,7 +20,9 @@
     "blog": "Блог",
     "careers": "Карьера",
     "pricing": "Цены",
-    "informazioni": "Информация"
+    "informazioni": "Информация",
+    "clientArea": "Клиентская зона",
+    "internalArea": "Закрытая область"
   },
   "hero": {
     "badge": "Новое: Серверы на заказ с партнерами Intel и NVIDIA",

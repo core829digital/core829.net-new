@@ -20,7 +20,9 @@
     "blog": "Блог",
     "careers": "Кар'єра",
     "pricing": "Ціни",
-    "informazioni": "Інформація"
+    "informazioni": "Інформація",
+    "clientArea": "Клієнтська зона",
+    "internalArea": "Закрита область"
   },
   "hero": {
     "badge": "Нове: Індивідуальні сервери з партнерами Intel та NVIDIA",

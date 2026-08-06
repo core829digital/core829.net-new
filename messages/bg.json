@@ -20,7 +20,9 @@
     "blog": "Блог",
     "careers": "Кариера",
     "pricing": "Цени",
-    "informazioni": "Информация"
+    "informazioni": "Информация",
+    "clientArea": "Клиентска зона",
+    "internalArea": "Резервирана зона"
   },
   "hero": {
     "badge": "Ново: Персонализирани сървъри с партньори Intel и NVIDIA",

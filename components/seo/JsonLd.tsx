@@ -1,17 +1,17 @@
 import { getTranslations } from "next-intl/server";
-import { COMPANY } from "@/lib/constants";
+import { COMPANY, SERVICES_META } from "@/lib/constants";
 import { SOCIAL_LINKS } from "@/components/SocialIcons";
 
 /**
  * Dati strutturati JSON-LD: Organization per CORE829 + Service per ciascuno
- * degli 8 servizi. Rendering server-side, nessun JS aggiuntivo.
+ * dei servizi (SERVICES_META). Rendering server-side, nessun JS aggiuntivo.
  */
 export default async function JsonLd() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://core829.net";
   const tMeta = await getTranslations("metadata");
   const tServices = await getTranslations("solution.services");
 
-  const serviceSchemas = Array.from({ length: 8 }, (_, i) => ({
+  const serviceSchemas = SERVICES_META.map((_, i) => ({
     "@context": "https://schema.org",
     "@type": "Service",
     name: tServices(`${i}.title`),

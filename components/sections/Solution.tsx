@@ -14,7 +14,7 @@ interface Service {
 }
 
 /**
- * "La soluzione" — griglia degli 8 servizi CORE829 con icona in badge nero,
+ * "La soluzione" — griglia dei servizi CORE829 con icona in badge nero,
  * hover con bordo rosso e leggero lift. Ogni card è un link alla pagina
  * dedicata del servizio; conserva l'anchor id per il footer.
  */

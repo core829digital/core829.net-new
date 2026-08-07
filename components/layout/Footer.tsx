@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useGoToSection } from "@/lib/useGoToSection";
@@ -33,9 +34,11 @@ export default function Footer() {
         {/* Brand */}
         <div className="col-span-2">
           <p className="text-lg font-bold tracking-tight">
-            <img
+            <Image
               src="/core829-logo/829black%20trsp.webp"
               alt="CORE829"
+              width={120}
+              height={32}
               className="h-8 w-auto"
             />
           </p>
@@ -94,14 +97,6 @@ export default function Footer() {
                 {t("colPricing")}
               </Link>
             </li>
-            <li>
-              <Link
-                href="/blog"
-                className="link-ghost text-sm"
-              >
-                {t("colBlog")}
-              </Link>
-            </li>
           </ul>
         </div>
 
@@ -151,14 +146,6 @@ export default function Footer() {
                 className="link-ghost text-sm"
               >
                 {t("companyAboutFull")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/careers"
-                className="link-ghost text-sm"
-              >
-                {t("colCareers")}
               </Link>
             </li>
           </ul>

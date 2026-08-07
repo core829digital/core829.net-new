@@ -439,15 +439,14 @@ function QuoteDetail({
             type="button"
             disabled={busy || !reply.trim()}
             onClick={() =>
-              void run(
-                () =>
-                  replyToQuote({
-                    quoteId: quote._id,
-                    reply: reply.trim(),
-                    internalNote: note || undefined,
-                  }),
-                t("replySent")
-              )
+              void run(async () => {
+                await replyToQuote({
+                  quoteId: quote._id,
+                  reply: reply.trim(),
+                  internalNote: note || undefined,
+                });
+                setReply("");
+              }, t("replySent"))
             }
             className="mt-6 inline-flex min-h-11 items-center justify-center gap-2 bg-foreground px-6 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent disabled:opacity-60"
           >

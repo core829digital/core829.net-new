@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { Link, useRouter } from "@/i18n/navigation";
@@ -75,9 +76,12 @@ export default function Navbar() {
           className="flex items-center"
           aria-label="CORE829"
         >
-          <img
+          <Image
             src="/core829-logo/829black%20trsp.webp"
             alt="CORE829"
+            width={120}
+            height={32}
+            priority
             className="h-8 w-auto"
           />
         </Link>
@@ -94,15 +98,7 @@ export default function Navbar() {
             }))}
           />
 
-          <DesktopDropdown
-            label={t("informazioni")}
-            items={[
-              { key: "blog", label: t("blog"), href: "/blog" },
-              { key: "careers", label: t("careers"), href: "/careers" },
-              { key: "pricing", label: t("pricing"), href: "/prezzi" },
-            ]}
-          />
-
+          <NavLink href="/prezzi">{t("pricing")}</NavLink>
           <NavLink href="/contatti">{t("contact")}</NavLink>
         </nav>
 
@@ -148,15 +144,8 @@ export default function Navbar() {
                     label: tServices(`${i}.title`),
                     href: `/servizi/${s.key}`,
                   })),
-                },{
-                  key: "informazioni",
-                  label: t("informazioni"),
-                  children: [
-                    { key: "blog", label: t("blog"), href: "/blog" },
-                    { key: "careers", label: t("careers"), href: "/careers" },
-                    { key: "pricing", label: t("pricing"), href: "/prezzi" },
-                  ],
                 },
+                { key: "pricing", label: t("pricing"), href: "/prezzi" },
                 { key: "contact", label: t("contact"), href: "/contatti" },
               ]}
               onNavigate={goTo}

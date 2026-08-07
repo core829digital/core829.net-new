@@ -77,13 +77,15 @@ export const submitQuote = mutation({
 
     const now = Date.now();
 
-    // Rate limit: max 5 richieste/ora per email.
-    const recent = await ctx.db
+    // Rate limit: max 5 richieste/ora per email (indice email+createdAt,
+    // evita di scansionare le richieste di tutti gli altri utenti).
+    const recentForEmail = await ctx.db
       .query("quoteRequests")
-      .withIndex("by_createdAt", (q) => q.gte("createdAt", now - RATE_WINDOW_MS))
+      .withIndex("by_email_createdAt", (q) =>
+        q.eq("email", email).gte("createdAt", now - RATE_WINDOW_MS)
+      )
       .collect();
-    const sameEmailCount = recent.filter((r) => r.email === email).length;
-    if (sameEmailCount >= RATE_MAX) {
+    if (recentForEmail.length >= RATE_MAX) {
       throw new Error("Too many requests");
     }
 
@@ -286,6 +288,12 @@ export const assignQuote = mutation({
     const quote = await ctx.db.get(args.quoteId);
     if (!quote) {
       throw new Error("Quote not found");
+    }
+    if (args.assignedTo) {
+      const assignee = await ctx.db.get(args.assignedTo);
+      if (!assignee || !isInternalRole(assignee.role)) {
+        throw new Error("Invalid assignee");
+      }
     }
     await ctx.db.patch(args.quoteId, {
       assignedTo: args.assignedTo,

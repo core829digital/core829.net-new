@@ -47,4 +47,28 @@ export const { auth, signIn, signOut, store, isAuthenticated } = convexAuth({
   signIn: {
     maxFailedAttempsPerHour: 10,
   },
+  callbacks: {
+    /**
+     * Promozione automatica a superadmin dell'email amministratore
+     * (contact.core829@gmail.com) non appena l'indirizzo risulta verificato.
+     * Viene eseguita server-side a ogni creazione/aggiornamento utente,
+     * quindi non dipende dal client. La verifica email via OTP garantisce
+     * la proprietà dell'indirizzo. Il superadmin non può mai essere bannato.
+     */
+    async afterUserCreatedOrUpdated(ctx, { userId }) {
+      const user = await ctx.db.get(userId);
+      if (!user) return;
+      const email = (user.email ?? "").toLowerCase();
+      const adminEmail = (process.env.ADMIN_EMAIL ?? "contact.core829@gmail.com")
+        .toLowerCase();
+      if (email === adminEmail && user.emailVerificationTime) {
+        await ctx.db.patch(userId, {
+          role: "superadmin",
+          isBanned: undefined,
+          banReason: undefined,
+          bannedAt: undefined,
+        });
+      }
+    },
+  },
 });

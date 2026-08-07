@@ -21,7 +21,7 @@ const BUDGET_KEYS = ["0", "1", "2", "3"] as const;
  * Sanitizzazione e rate limit avvengono lato Convex (quotes:submitQuote).
  * Anti-spam leggero: honeypot + timing.
  */
-export default function QuoteForm() {
+export default function QuoteForm({ onSuccess }: { onSuccess?: () => void }) {
   const t = useTranslations("clientArea");
   const tContact = useTranslations("contact");
   const messages = useMessages();
@@ -95,6 +95,9 @@ export default function QuoteForm() {
       setStatus("success");
       form.reset();
       setSelected([]);
+      if (onSuccess) {
+        setTimeout(onSuccess, 1800);
+      }
     } catch {
       setStatus("error");
     }

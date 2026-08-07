@@ -59,7 +59,7 @@ export default defineSchema({
     updatedAt: v.number(),
   }).index("by_userId", ["userId"]),
 
-  // Preventivi richiesti tramite la pagina /preventivo o il client area.
+  // Preventivi richiesti dal form pubblico o dal client area.
   quoteRequests: defineTable({
     userId: v.optional(v.id("users")),
     name: v.string(),
@@ -78,7 +78,8 @@ export default defineSchema({
   })
     .index("by_createdAt", ["createdAt"])
     .index("by_userId", ["userId"])
-    .index("by_status", ["status"]),
+    .index("by_status", ["status"])
+    .index("by_email_createdAt", ["email", "createdAt"]),
 
   // Log delle azioni amministrative (ruoli, ban, stati preventivi).
   adminLogs: defineTable({

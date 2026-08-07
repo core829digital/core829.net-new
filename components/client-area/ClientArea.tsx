@@ -63,20 +63,27 @@ function AuthFlow() {
     setError(null);
     setNotice(null);
     try {
-      const ok = await signIn("password", params);
-      if (params.flow === "signUp" && !ok) {
+      const result = await signIn("password", params);
+      const signingIn = result?.signingIn === true;
+      if (params.flow === "signUp" && !signingIn) {
         setEmail(params.email);
         setNotice(t("otpSent"));
         setStep("verify");
-      } else if (params.flow === "reset") {
+      } else if (params.flow === "reset" && !signingIn) {
         setEmail(params.email);
         setNotice(t("resetSent"));
         setStep("reset");
+      } else if (params.flow === "signIn" && !signingIn) {
+        // Account esistente ma email mai verificata: il server ha inviato
+        // un nuovo codice OTP senza completare il login.
+        setEmail(params.email);
+        setNotice(t("otpSent"));
+        setStep("verify");
       }
-      // Negli altri casi: se ok, isAuthenticated diventa true e la dashboard
-      // sostituisce questo componente.
-    } catch {
-      setError(t("genericError"));
+      // Negli altri casi: se signingIn, isAuthenticated diventa true e la
+      // dashboard sostituisce questo componente.
+    } catch (e) {
+      setError(mapAuthError(e, t));
     } finally {
       setBusy(false);
     }
@@ -378,9 +385,11 @@ function Dashboard() {
   useEffect(() => {
     if (!me || claimed) return;
     // Il backend decide se l'utente è idoneo (email superadmin verificata).
+    // Se promosso, la query reattiva di Convex aggiorna subito il ruolo e
+    // PrivateArea passa automaticamente a InternalArea, senza navigazione.
     void claimAdmin()
       .then(() => setClaimed(true))
-      .catch(() => {});
+      .catch(() => setClaimed(true));
   }, [me, claimed, claimAdmin]);
 
   if (!me) {
@@ -469,7 +478,7 @@ function Dashboard() {
               {t("newQuoteHint")}
             </p>
             <div className="mt-6">
-              <QuoteForm />
+              <QuoteForm onSuccess={() => setShowForm(false)} />
             </div>
           </section>
         )}
@@ -625,6 +634,29 @@ function OnboardingForm({
 }
 
 // ---------------------------------------------------------------- Primitives
+
+/**
+ * Traduce gli errori del provider auth in messaggi leggibili.
+ * I messaggi sono in inglese (locale del provider), quindi confrontiamo
+ * su sottostringhe stabili e mostriamo la chiave i18n corrispondente.
+ */
+function mapAuthError(
+  e: unknown,
+  t: (key: string) => string
+): string {
+  let msg = "";
+  if (typeof e === "object" && e !== null) {
+    const err = e as { message?: unknown; data?: unknown };
+    if (typeof err.data === "string") msg = err.data;
+    else if (typeof err.message === "string") msg = err.message;
+  }
+  if (msg.includes("already exists")) return t("errorAccountExists");
+  if (msg.includes("Invalid credentials")) return t("errorInvalidCredentials");
+  if (msg.includes("Could not verify code")) return t("errorInvalidCode");
+  if (msg.includes("at least 10 characters") || msg.includes("contain both letters"))
+    return t("errorPasswordRequirements");
+  return t("genericError");
+}
 
 function AuthShell({
   title,

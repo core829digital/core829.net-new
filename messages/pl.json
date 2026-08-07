@@ -614,7 +614,10 @@
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
     "ctaDesc": "Share your use case: we'll propose the right configuration, with a clear quote and reliable timelines.",
-    "ctaButton": "Request a consultation"
+    "ctaButton": "Request a consultation",
+    "brandKicker": "Marka w marce",
+    "brandTitle": "Ta sama nazwa, odrębna tożsamość",
+    "brandDesc": "CORE829 Servers powstało z tego samego zespołu i z takim samym standardem jakości jak reszta agencji, ale z własną identyfikacją wizualną. To świadoma decyzja: sprzęt i infrastruktura zasługują na to, by były rozpoznawane od razu jako dedykowany dział, oddzielny od oprogramowania i usług cyfrowych — pozostając pod każdym względem CORE829."
   },
   "servicesDetail": {
     "back": "All services",

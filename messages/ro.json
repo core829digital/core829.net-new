@@ -614,7 +614,10 @@
     "carouselIntro": "Fiecare server urmează același drum: solicitare, proiectare, build gestionat și verificare finală înainte de livrare.",
     "ctaTitle": "Spune-ne despre proiectul tău",
     "ctaDesc": "Împărtășește-ne cazul tău de utilizare: propunem configurația potrivită, cu o ofertă clară și termene fiabile.",
-    "ctaButton": "Solicită o consultație"
+    "ctaButton": "Solicită o consultație",
+    "brandKicker": "Un brand în interiorul brandului",
+    "brandTitle": "Același nume, o identitate distinctă",
+    "brandDesc": "CORE829 Servers s-a născut din aceeași echipă și cu același standard de calitate ca restul agenției, dar cu o identitate vizuală proprie. Este o alegere deliberată: hardware-ul și infrastructura merită să fie recunoscute dintr-o privire ca un departament dedicat, separat de software și serviciile digitale — rămânând, în toate privințele, CORE829."
   },
   "servicesDetail": {
     "back": "Toate serviciile",

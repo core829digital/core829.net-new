@@ -15,13 +15,20 @@ import { SocialLinks } from "@/components/SocialIcons";
 
 /**
  * Navbar sticky con hide-on-scroll-down / show-on-scroll-up.
- * Desktop: dropdown "Servizi" (8 pagine) + dropdown "Informazioni"
- *          (Blog, Lavora con noi, Prezzi). Mobile: full-screen overlay
- *          con sottomenus espandibili.
+ * Desktop: link "Custom Servers" a sé stante (frame nero-platino, fuori dal
+ * dropdown Servizi: è un dipartimento con brand proprio) + dropdown "Servizi"
+ * per le altre pagine. Mobile: full-screen overlay con sottomenu espandibili.
  */
 export default function Navbar() {
   const t = useTranslations("nav");
   const tServices = useTranslations("solution.services");
+  const serverIndex = SERVICES_META.findIndex((s) => s.key === "server");
+  const serverMeta = SERVICES_META[serverIndex];
+  const dropdownServices = SERVICES_META.map((s, i) => ({
+    key: s.key,
+    label: tServices(`${i}.title`),
+    href: `/servizi/${s.key}`,
+  })).filter((s) => s.key !== "server");
   const [hidden, setHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const goToSection = useGoToSection();
@@ -88,14 +95,14 @@ export default function Navbar() {
 
         {/* Desktop navigation */}
         <nav className="hidden items-center gap-4 lg:flex" aria-label="Main">
+          <NavLink href={`/servizi/${serverMeta.key}`} frame="mono">
+            {tServices(`${serverIndex}.title`)}
+          </NavLink>
+
           <DesktopDropdown
             label={t("services")}
             href="/servizi"
-            items={SERVICES_META.map((s, i) => ({
-              key: s.key,
-              label: tServices(`${i}.title`),
-              href: `/servizi/${s.key}`,
-            }))}
+            items={dropdownServices}
           />
 
           <NavLink href="/prezzi">{t("pricing")}</NavLink>
@@ -137,13 +144,14 @@ export default function Navbar() {
             <MobileNav
               nav={[
                 {
+                  key: "server",
+                  label: tServices(`${serverIndex}.title`),
+                  href: `/servizi/${serverMeta.key}`,
+                },
+                {
                   key: "services",
                   label: t("services"),
-                  children: SERVICES_META.map((s, i) => ({
-                    key: s.key,
-                    label: tServices(`${i}.title`),
-                    href: `/servizi/${s.key}`,
-                  })),
+                  children: dropdownServices,
                 },
                 { key: "pricing", label: t("pricing"), href: "/prezzi" },
                 { key: "contact", label: t("contact"), href: "/contatti" },
@@ -181,9 +189,11 @@ export default function Navbar() {
 function NavLink({
   href,
   children,
+  frame = "accent",
 }: {
   href: string;
   children: React.ReactNode;
+  frame?: "accent" | "mono";
 }) {
   const goToSection = useGoToSection();
   const handleClick = (e: React.MouseEvent) => {
@@ -196,7 +206,10 @@ function NavLink({
     <a
       href={href}
       onClick={handleClick}
-      className="neon-frame link-ghost px-3 py-2 text-sm"
+      className={cn(
+        frame === "mono" ? "neon-frame-mono" : "neon-frame",
+        "link-ghost px-3 py-2 text-sm"
+      )}
     >
       {children}
     </a>

@@ -614,7 +614,10 @@
     "carouselIntro": "Elke server volgt hetzelfde pad: aanvraag, ontwerp, beheerde build en definitieve controle vóór levering.",
     "ctaTitle": "Vertel ons over je project",
     "ctaDesc": "Deel je use case: we stellen de juiste configuratie voor, met een duidelijke offerte en betrouwbare planning.",
-    "ctaButton": "Een consult aanvragen"
+    "ctaButton": "Een consult aanvragen",
+    "brandKicker": "Een merk binnen het merk",
+    "brandTitle": "Zelfde naam, een eigen identiteit",
+    "brandDesc": "CORE829 Servers is ontstaan uit hetzelfde team en dezelfde kwaliteitsnorm als de rest van het bureau, maar met een eigen visuele identiteit. Het is een bewuste keuze: hardware en infrastructuur verdienen het om in één oogopslag herkend te worden als een eigen afdeling, los van software en digitale diensten — terwijl het in alles CORE829 blijft."
   },
   "servicesDetail": {
     "back": "Alle diensten",

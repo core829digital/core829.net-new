@@ -614,7 +614,10 @@
     "carouselIntro": "Chaque serveur suit le même parcours : demande, conception, build géré et vérification finale avant la livraison.",
     "ctaTitle": "Parlez-nous de votre projet",
     "ctaDesc": "Partagez votre cas d'usage : nous proposons la configuration adaptée, avec un devis clair et des délais fiables.",
-    "ctaButton": "Demander une consultation"
+    "ctaButton": "Demander une consultation",
+    "brandKicker": "Une marque dans la marque",
+    "brandTitle": "Même nom, une identité distincte",
+    "brandDesc": "CORE829 Servers est né de la même équipe et avec le même niveau d'exigence que le reste de l'agence, mais avec sa propre identité visuelle. C'est un choix délibéré : le matériel et l'infrastructure méritent d'être reconnus au premier coup d'œil comme un département dédié, distinct du logiciel et des services numériques — tout en restant, à tous égards, CORE829."
   },
   "servicesDetail": {
     "back": "Tous les services",

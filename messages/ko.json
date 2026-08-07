@@ -614,7 +614,10 @@
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
     "ctaDesc": "Share your use case: we'll propose the right configuration, with a clear quote and reliable timelines.",
-    "ctaButton": "Request a consultation"
+    "ctaButton": "Request a consultation",
+    "brandKicker": "브랜드 안의 브랜드",
+    "brandTitle": "같은 이름, 독립된 아이덴티티",
+    "brandDesc": "CORE829 Servers는 나머지 에이전시와 동일한 팀, 동일한 품질 기준에서 탄생했지만 고유한 비주얼 아이덴티티를 갖추고 있습니다. 이는 의도적인 선택입니다. 하드웨어와 인프라는 소프트웨어 및 디지털 서비스와 구분되는 전담 부서로 한눈에 인식될 가치가 있습니다 — 그러면서도 모든 면에서 CORE829로 남습니다."
   },
   "servicesDetail": {
     "back": "All services",

@@ -19,6 +19,8 @@ const SERVER_IMAGES = [
 
 const INTEL_LOGO = "/server-service/intel_PNG1.webp";
 const NVIDIA_LOGO = "/server-service/Nvidia-Logo-PNG-Picture.webp";
+const DEPARTMENT_LOGO =
+  "/server-service/829%20logo%20servers%20department%20trsp.png";
 
 const SERVICE_IMG_SIZES = "(max-width: 1024px) 90vw, 48vw";
 
@@ -156,6 +158,31 @@ export default function ServerServicePage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* IDENTITÀ DI BRAND — un marchio dedicato per un dipartimento dedicato */}
+      <section className="border-t border-border bg-background">
+        <div className="container-core829 py-24 lg:py-32">
+          <RevealOnScroll className="grid items-center gap-16 lg:grid-cols-[auto_1fr]">
+            <div className="flex h-40 w-40 shrink-0 items-center justify-center border border-border bg-surface p-8 sm:h-48 sm:w-48">
+              <Image
+                src={DEPARTMENT_LOGO}
+                alt="CORE829 Servers"
+                width={200}
+                height={200}
+                loading="lazy"
+                className="max-h-full max-w-full object-contain"
+              />
+            </div>
+            <div className="max-w-2xl">
+              <p className="kicker">{t("brandKicker")}</p>
+              <h2 className="mt-4 text-section-title">{t("brandTitle")}</h2>
+              <p className="mt-6 text-lg leading-relaxed text-foreground-muted">
+                {t("brandDesc")}
+              </p>
             </div>
           </RevealOnScroll>
         </div>

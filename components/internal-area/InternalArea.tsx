@@ -14,6 +14,7 @@ import { api } from "@/convex/_generated/api";
 import { Link } from "@/i18n/navigation";
 import type { Doc, Id } from "@/convex/_generated/dataModel";
 import AdminPanel from "@/components/admin-panel/AdminPanel";
+import StaffChat from "@/components/chat/StaffChat";
 import { isInternalRole, rankOf } from "@/lib/roles";
 
 const STATUSES = [
@@ -138,6 +139,8 @@ function QuotesPanel({ userRole }: { userRole: string }) {
         <AdminPanel userRole={userRole} />
       )}
 
+      {rankOf(userRole) < rankOf("admin") && <StaffChat />}
+
       {!quotes ? (
         <p className="text-sm text-foreground-muted">
           <Loader2 className="mr-2 inline h-4 w-4 animate-spin text-accent" aria-hidden />
@@ -230,6 +233,10 @@ function QuoteDetail({
   const [newStatus, setNewStatus] = useState<QuoteStatus>(quote.status);
   const [note, setNote] = useState(quote.internalNote ?? "");
   const [reply, setReply] = useState("");
+  const [amount, setAmount] = useState(
+    quote.quotedAmount != null ? String(quote.quotedAmount) : ""
+  );
+  const [currency, setCurrency] = useState(quote.quotedCurrency ?? "EUR");
   const [feedback, setFeedback] = useState<{
     kind: "ok" | "err";
     msg: string;
@@ -398,6 +405,41 @@ function QuoteDetail({
             </div>
           )}
 
+          <div className="mt-4 grid grid-cols-2 gap-4">
+            <div>
+              <label htmlFor="quote-amount" className="tech-label block">
+                {t("amountLabel")}
+              </label>
+              <input
+                id="quote-amount"
+                type="number"
+                min="0"
+                step="0.01"
+                inputMode="decimal"
+                value={amount}
+                onChange={(e) => setAmount(e.target.value)}
+                placeholder="0.00"
+                className="input-core829 mt-2"
+              />
+            </div>
+            <div>
+              <label htmlFor="quote-currency" className="tech-label block">
+                {t("currencyLabel")}
+              </label>
+              <select
+                id="quote-currency"
+                value={currency}
+                onChange={(e) => setCurrency(e.target.value)}
+                className="input-core829 mt-2"
+              >
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="CHF">CHF</option>
+              </select>
+            </div>
+          </div>
+
           <button
             type="button"
             disabled={busy}
@@ -408,6 +450,9 @@ function QuoteDetail({
                     quoteId: quote._id,
                     status: newStatus,
                     internalNote: note || undefined,
+                    quotedAmount:
+                      amount.trim() === "" ? undefined : Number(amount),
+                    quotedCurrency: currency,
                   }),
                 t("statusSaved")
               )

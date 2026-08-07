@@ -244,6 +244,8 @@ export const updateQuoteStatus = mutation({
     quoteId: v.id("quoteRequests"),
     status: quoteStatusValidator,
     internalNote: v.optional(v.string()),
+    quotedAmount: v.optional(v.number()),
+    quotedCurrency: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const user = await requireUser(ctx);
@@ -256,9 +258,22 @@ export const updateQuoteStatus = mutation({
     const note = args.internalNote
       ? sanitizeText(args.internalNote, MAX_NOTE, true)
       : quote.internalNote;
+
+    // Valutazione comunicata: solo se positiva e con valuta riconosciuta.
+    const amount =
+      args.quotedAmount !== undefined
+        ? Math.round(Math.max(0, args.quotedAmount) * 100) / 100
+        : quote.quotedAmount;
+    const currency =
+      args.quotedCurrency !== undefined
+        ? sanitizeSingleLine(args.quotedCurrency, 8).toUpperCase()
+        : quote.quotedCurrency;
+
     await ctx.db.patch(args.quoteId, {
       status: args.status,
       internalNote: note,
+      quotedAmount: amount,
+      quotedCurrency: currency,
       firstResponseAt: quote.firstResponseAt ?? now,
       updatedAt: now,
     });

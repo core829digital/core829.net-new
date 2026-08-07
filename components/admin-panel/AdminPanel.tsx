@@ -8,25 +8,90 @@ import {
   CheckCircle2,
   ShieldCheck,
   Ban,
+  BarChart3,
+  TrendingUp,
+  FileText,
+  MessageSquare,
+  Handshake,
+  Megaphone,
 } from "lucide-react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import type { Id } from "@/convex/_generated/dataModel";
 import { isSuperadminRole } from "@/lib/roles";
+import AnalyticsPanel from "@/components/admin-panel/AnalyticsPanel";
+import FinancePanel from "@/components/admin-panel/FinancePanel";
+import BlogPanel from "@/components/admin-panel/BlogPanel";
+import StaffChat from "@/components/chat/StaffChat";
+import PartnerAdmin from "@/components/partner/PartnerAdmin";
+import BulkNotifyPanel from "@/components/admin-panel/BulkNotifyPanel";
 
 const ROLE_OPTIONS = ["client", "partner", "technical", "admin"] as const;
 
+type Tab = "users" | "analytics" | "finance" | "blog" | "chat" | "partners" | "bulk";
+
 /**
- * Pannello di amministrazione (admin/superadmin):
- * - Statistiche di piattaforma (utenti, preventivi, performance)
- * - Gestione utenti: assegnazione ruoli e ban/unban
- *   (solo il superadmin può nominare altri admin)
- * - Log delle azioni amministrative
+ * Pannello di amministrazione (admin/superadmin) con tab:
+ * - users: statistiche piattaforma, gestione ruoli, ban/unban, log
+ * - analytics: pagine viste, visitatori unici, geo (paese/città)
+ * - finance: pipeline finanziaria dei preventivi
+ * - blog: CRUD post (Markdown)
+ * - chat: tutte le conversazioni con i clienti
+ * - partners: approvazione/rifiuto candidature partner
+ * - bulk: notifica di massa agli utenti
  */
 export default function AdminPanel({ userRole }: { userRole: string }) {
   const t = useTranslations("adminPanel");
-  const tRole = useTranslations("userRole");
+  const [tab, setTab] = useState<Tab>("users");
   const isSuper = isSuperadminRole(userRole);
+
+  const tabs: Array<{ id: Tab; label: string; icon: typeof BarChart3 }> = [
+    { id: "users", label: t("tabs.users"), icon: ShieldCheck },
+    { id: "analytics", label: t("tabs.analytics"), icon: BarChart3 },
+    { id: "finance", label: t("tabs.finance"), icon: TrendingUp },
+    { id: "blog", label: t("tabs.blog"), icon: FileText },
+    { id: "chat", label: t("tabs.chat"), icon: MessageSquare },
+    { id: "partners", label: t("tabs.partners"), icon: Handshake },
+    { id: "bulk", label: t("tabs.bulk"), icon: Megaphone },
+  ];
+
+  return (
+    <section className="mt-10 space-y-8">
+      <div className="flex flex-wrap gap-2">
+        {tabs.map(({ id, label, icon: Icon }) => (
+          <button
+            key={id}
+            type="button"
+            onClick={() => setTab(id)}
+            aria-pressed={tab === id}
+            className={`inline-flex items-center gap-2 border px-4 py-2 text-sm transition-colors duration-200 ${
+              tab === id
+                ? "border-accent bg-accent text-white"
+                : "border-border text-foreground-muted hover:border-foreground hover:text-foreground"
+            }`}
+          >
+            <Icon className="h-4 w-4" aria-hidden />
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {tab === "users" && <UsersTab isSuper={isSuper} />}
+      {tab === "analytics" && <AnalyticsPanel />}
+      {tab === "finance" && <FinancePanel />}
+      {tab === "blog" && <BlogPanel />}
+      {tab === "chat" && <StaffChat />}
+      {tab === "partners" && <PartnerAdmin />}
+      {tab === "bulk" && <BulkNotifyPanel />}
+    </section>
+  );
+}
+
+// ---------------------------------------------------------------- Users tab
+
+function UsersTab({ isSuper }: { isSuper: boolean }) {
+  const t = useTranslations("adminPanel");
+  const tRole = useTranslations("userRole");
 
   const stats = useQuery(api.admin.getPlatformStats);
   const logs = useQuery(api.admin.listAdminLogs, { limit: 50 });
@@ -35,9 +100,7 @@ export default function AdminPanel({ userRole }: { userRole: string }) {
   const updateUserRole = useMutation(api.users.updateUserRole);
   const setUserBan = useMutation(api.admin.setUserBan);
 
-  const [msg, setMsg] = useState<{ kind: "ok" | "err"; text: string } | null>(
-    null
-  );
+  const [msg, setMsg] = useState<{ kind: "ok" | "err"; text: string } | null>(null);
   const [banTarget, setBanTarget] = useState<Id<"users"> | null>(null);
   const [banReason, setBanReason] = useState("");
   const [busy, setBusy] = useState(false);
@@ -89,10 +152,7 @@ export default function AdminPanel({ userRole }: { userRole: string }) {
 
         {!users ? (
           <p className="mt-4 text-sm text-foreground-muted">
-            <Loader2
-              className="mr-2 inline h-4 w-4 animate-spin text-accent"
-              aria-hidden
-            />
+            <Loader2 className="mr-2 inline h-4 w-4 animate-spin text-accent" aria-hidden />
             {t("users.loading")}
           </p>
         ) : (
@@ -126,13 +186,9 @@ export default function AdminPanel({ userRole }: { userRole: string }) {
                         </span>
                       )}
                     </p>
-                    <p className="truncate text-xs text-foreground-muted">
-                      {u.email}
-                    </p>
+                    <p className="truncate text-xs text-foreground-muted">{u.email}</p>
                     {banned && u.banReason && (
-                      <p className="truncate text-xs text-foreground-muted">
-                        {u.banReason}
-                      </p>
+                      <p className="truncate text-xs text-foreground-muted">{u.banReason}</p>
                     )}
                   </div>
 
@@ -171,9 +227,7 @@ export default function AdminPanel({ userRole }: { userRole: string }) {
                           onClick={() => void runBan(u._id, true)}
                           className="inline-flex min-h-10 items-center gap-2 bg-accent px-4 text-sm font-medium text-white transition-colors duration-300 hover:bg-foreground disabled:opacity-60"
                         >
-                          {busy && (
-                            <Loader2 className="h-4 w-4 animate-spin" aria-hidden />
-                          )}
+                          {busy && <Loader2 className="h-4 w-4 animate-spin" aria-hidden />}
                           {t("users.confirmBan")}
                         </button>
                         <button
@@ -280,9 +334,7 @@ function StatsSection({
         {items.map((item) => (
           <div key={item.label} className="bg-surface p-4">
             <dt className="tech-label">{item.label}</dt>
-            <dd className="mt-1 text-2xl font-semibold text-foreground">
-              {item.value}
-            </dd>
+            <dd className="mt-1 text-2xl font-semibold text-foreground">{item.value}</dd>
           </div>
         ))}
       </dl>
@@ -305,6 +357,14 @@ function LogsSection({
       "quote.status": "quoteStatus",
       "quote.assign": "quoteAssign",
       "quote.reply": "quoteReply",
+      "partner.approve": "partnerApprove",
+      "partner.reject": "partnerReject",
+      "blog.create": "blogCreate",
+      "blog.update": "blogUpdate",
+      "blog.publish": "blogPublish",
+      "blog.unpublish": "blogUnpublish",
+      "blog.delete": "blogDelete",
+      "notification.bulk": "notificationBulk",
     };
     const key = map[action];
     return key ? t(`logActions.${key}`) : action;
@@ -330,9 +390,7 @@ function LogsSection({
                 <p className="text-sm font-medium text-foreground">
                   {actionLabel(log.action)}
                   {log.details && (
-                    <span className="ml-2 font-normal text-foreground-muted">
-                      {log.details}
-                    </span>
+                    <span className="ml-2 font-normal text-foreground-muted">{log.details}</span>
                   )}
                 </p>
                 <p className="mt-1 truncate text-xs text-foreground-muted">

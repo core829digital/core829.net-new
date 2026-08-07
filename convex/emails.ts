@@ -4,6 +4,7 @@ import {
   generateRandomString,
   type RandomReader,
 } from "@oslojs/crypto/random";
+import { BUDGET_LABELS } from "./pricing";
 
 /** Indirizzo email predefinito ricevente per i nuovi lead dal form. */
 const LEAD_EMAIL = "hello@core829.net";
@@ -14,14 +15,6 @@ const ADMIN_EMAIL = "contact.core829@gmail.com";
 const SITE_URL = process.env.SITE_URL ?? "https://core829.net";
 
 const OTP_VERIFY_MAX_AGE = 10 * 60 * 1000;
-
-/** Traduzione dei budget (chiave -> etichetta italiana). */
-const BUDGET_LABELS: Record<string, string> = {
-  "0": "Sotto i 5.000 €",
-  "1": "5.000 – 15.000 €",
-  "2": "15.000 – 40.000 €",
-  "3": "Oltre 40.000 €",
-};
 
 /** Stato del preventivo: etichetta + messaggio caloroso per l'utente. */
 const STATUS_COPY: Record<string, { label: string; message: string }> = {
@@ -477,5 +470,207 @@ export const passwordResetEmailProvider = ResendProvider({
     });
   },
 });
+
+/** Notifica al cliente quando riceve un nuovo messaggio nella chat. */
+export async function sendChatMessageToUserEmail(args: {
+  to: string;
+  name: string;
+  preview: string;
+}) {
+  const name = escapeHtml(args.name);
+  const bodyHtml = [
+    htmlTitle("Hai un nuovo messaggio"),
+    htmlP(`Ciao ${name}, ti abbiamo scritto nella chat della tua area riservata.`),
+    htmlQuote(args.preview),
+    htmlP(`Rispondi direttamente dalla chat per continuare la conversazione.`),
+    htmlButton(`${SITE_URL}/area-riservata`, "Apri la chat"),
+    htmlSignOff,
+  ].join("\n");
+
+  await sendEmail({
+    to: args.to,
+    subject: "Hai un nuovo messaggio — CORE829",
+    text: [
+      `Ciao ${args.name},`,
+      "",
+      "Ti abbiamo scritto nella chat della tua area riservata:",
+      "",
+      args.preview,
+      "",
+      `Apri la chat: ${SITE_URL}/area-riservata`,
+      "",
+      "A presto,",
+      "Il team CORE829",
+    ].join("\n"),
+    html: renderLayout("Hai un nuovo messaggio", bodyHtml),
+  });
+}
+
+/** Notifica interna quando un cliente scrive nella chat. */
+export async function sendChatMessageToStaffEmail(args: {
+  to: string;
+  from: string;
+  preview: string;
+}) {
+  const from = escapeHtml(args.from);
+  const bodyHtml = [
+    htmlTitle("Nuovo messaggio in chat"),
+    htmlP(`${from} ha scritto un nuovo messaggio nella chat.`),
+    htmlQuote(args.preview),
+    htmlButton(`${SITE_URL}/area-riservata`, "Apri la chat"),
+  ].join("\n");
+
+  await sendEmail({
+    to: args.to,
+    subject: `Nuovo messaggio in chat da ${args.from}`,
+    text: [
+      `${args.from} ha scritto un nuovo messaggio nella chat.`,
+      "",
+      args.preview,
+      "",
+      `Apri la chat: ${SITE_URL}/area-riservata`,
+    ].join("\n"),
+    html: renderLayout("Nuovo messaggio in chat", bodyHtml),
+  });
+}
+
+/** Conferma al richiedente che la candidatura partner è arrivata. */
+export async function sendPartnerApplicationReceivedEmail(args: {
+  to: string;
+  name: string;
+}) {
+  const name = escapeHtml(args.name);
+  const bodyHtml = [
+    htmlTitle("Candidatura partner ricevuta"),
+    htmlP(
+      `Ciao ${name}, grazie per la tua richiesta. Il team CORE829 valuterà la tua candidatura e ti ricontatterà al più presto.`
+    ),
+    htmlP(
+      `Puoi seguire l'esito dalla tua area riservata, nella sezione dedicata.`
+    ),
+    htmlButton(`${SITE_URL}/area-riservata`, "Vai alla tua area riservata"),
+    htmlSignOff,
+  ].join("\n");
+
+  await sendEmail({
+    to: args.to,
+    subject: "Candidatura partner ricevuta — CORE829",
+    text: [
+      `Ciao ${args.name},`,
+      "",
+      "Grazie per la tua richiesta. Il team CORE829 valuterà la tua candidatura e ti ricontatterà al più presto.",
+      "",
+      `Puoi seguire l'esito dalla tua area riservata: ${SITE_URL}/area-riservata`,
+      "",
+      "A presto,",
+      "Il team CORE829",
+    ].join("\n"),
+    html: renderLayout("Candidatura partner ricevuta", bodyHtml),
+  });
+}
+
+/** Notifica interna quando arriva una nuova candidatura partner. */
+export async function sendPartnerApplicationAdminEmail(args: {
+  to: string;
+  fromName: string;
+  fromEmail: string;
+  message: string;
+}) {
+  const name = escapeHtml(args.fromName);
+  const bodyHtml = [
+    htmlTitle("Nuova candidatura partner"),
+    htmlP(
+      `${name} ha inviato una nuova candidatura per diventare partner.`
+    ),
+    `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 18px;">
+      <tr><td style="padding:6px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#4a4a4a;width:100px;vertical-align:top;">Nome</td><td style="padding:6px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#1a1a1a;">${name}</td></tr>
+      <tr><td style="padding:6px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#4a4a4a;width:100px;vertical-align:top;">Email</td><td style="padding:6px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#1a1a1a;">${escapeHtml(
+        args.fromEmail
+      )}</td></tr>
+    </table>`,
+    htmlP(`<strong>Messaggio</strong>`),
+    htmlQuote(args.message),
+    htmlButton(
+      `${SITE_URL}/area-riservata`,
+      "Gestisci la candidatura"
+    ),
+  ].join("\n");
+
+  await sendEmail({
+    to: args.to,
+    subject: `Nuova candidatura partner da ${args.fromName}`,
+    text: [
+      `Nuova candidatura partner da ${args.fromName} (${args.fromEmail}).`,
+      "",
+      args.message,
+      "",
+      `Gestisci: ${SITE_URL}/area-riservata`,
+    ].join("\n"),
+    html: renderLayout("Nuova candidatura partner", bodyHtml),
+  });
+}
+
+/** Esito della candidatura partner comunicato al richiedente. */
+export async function sendPartnerDecisionEmail(args: {
+  to: string;
+  name: string;
+  approved: boolean;
+}) {
+  const name = escapeHtml(args.name);
+  const approved = args.approved;
+
+  const bodyHtml = approved
+    ? [
+        htmlTitle("Candidatura partner approvata"),
+        htmlP(
+          `Ciao ${name}, la tua candidatura per diventare partner CORE829 è stata <strong>approvata</strong>.`
+        ),
+        htmlP(
+          `Da ora hai accesso all'area partner con le funzionalità dedicate. Benvenuto a bordo!`
+        ),
+        htmlButton(`${SITE_URL}/area-riservata`, "Vai all'area partner"),
+        htmlSignOff,
+      ].join("\n")
+    : [
+        htmlTitle("Aggiornamento sulla tua candidatura"),
+        htmlP(
+          `Ciao ${name}, ti ringraziamo per l'interesse mostrato verso CORE829.`
+        ),
+        htmlP(
+          `In questo momento la tua candidatura non può essere accolta, ma non escludere la possibilità di riprovarci in futuro: il nostro programma partner resta aperto.`
+        ),
+        htmlSignOff,
+      ].join("\n");
+
+  await sendEmail({
+    to: args.to,
+    subject: approved
+      ? "Candidatura partner approvata — CORE829"
+      : "Aggiornamento candidatura — CORE829",
+    text: approved
+      ? [
+          `Ciao ${args.name},`,
+          "",
+          "La tua candidatura per diventare partner CORE829 è stata approvata.",
+          "",
+          "Da ora hai accesso all'area partner:",
+          `${SITE_URL}/area-riservata`,
+          "",
+          "Benvenuto a bordo!",
+          "Il team CORE829",
+        ].join("\n")
+      : [
+          `Ciao ${args.name},`,
+          "",
+          "Ti ringraziamo per l'interesse verso CORE829.",
+          "",
+          "In questo momento la tua candidatura non può essere accolta, ma il programma partner resta aperto: potrai riprovarci in futuro.",
+          "",
+          "A presto,",
+          "Il team CORE829",
+        ].join("\n"),
+    html: renderLayout("Candidatura partner", bodyHtml),
+  });
+}
 
 export { LEAD_EMAIL, ADMIN_EMAIL };

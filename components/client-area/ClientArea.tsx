@@ -16,6 +16,10 @@ import { api } from "@/convex/_generated/api";
 import { Link } from "@/i18n/navigation";
 import { isInternalRole } from "@/lib/roles";
 import QuoteForm from "@/components/forms/QuoteForm";
+import ProfileSection from "@/components/client-area/ProfileSection";
+import SupportChat from "@/components/chat/SupportChat";
+import PartnerSection from "@/components/partner/PartnerSection";
+import NotificationBell from "@/components/notifications/NotificationBell";
 import { cn } from "@/lib/utils";
 
 type Step =
@@ -381,6 +385,9 @@ function Dashboard() {
 
   const [claimed, setClaimed] = useState(false);
   const [showForm, setShowForm] = useState(false);
+  const [tab, setTab] = useState<"dashboard" | "profile" | "chat" | "partner">(
+    "dashboard"
+  );
 
   useEffect(() => {
     if (!me || claimed) return;
@@ -405,6 +412,12 @@ function Dashboard() {
   const isInternal = isInternalRole(user.role);
   const needsOnboarding = !profile?.onboardingCompleted;
 
+  const euro = new Intl.NumberFormat("it-IT", {
+    style: "currency",
+    currency: "EUR",
+    maximumFractionDigits: 0,
+  });
+
   return (
     <div className="space-y-10">
       <div className="flex flex-wrap items-center justify-between gap-4">
@@ -417,6 +430,7 @@ function Dashboard() {
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
+          <NotificationBell />
           {isInternal && (
             <Link
               href="/area-riservata"
@@ -437,85 +451,127 @@ function Dashboard() {
         </div>
       </div>
 
-      {needsOnboarding && (
-        <section className="border border-border bg-surface p-6 md:p-8">
-          <div className="flex items-start gap-3">
-            <Building2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden />
-            <div>
-              <h3 className="text-lg font-semibold">{t("onboardingTitle")}</h3>
-              <p className="mt-1 text-sm text-foreground-muted">
-                {t("onboardingHint")}
-              </p>
-            </div>
-          </div>
-          <OnboardingForm initial={profile} />
-        </section>
-      )}
-
-      <section>
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <h3 className="text-lg font-semibold">{t("myQuotes")}</h3>
+      <div className="flex flex-wrap gap-2">
+        {(
+          [
+            ["dashboard", t("tabDashboard")],
+            ["profile", t("tabProfile")],
+            ["chat", t("tabChat")],
+            ["partner", t("tabPartner")],
+          ] as const
+        ).map(([id, label]) => (
           <button
+            key={id}
             type="button"
-            onClick={() => setShowForm((v) => !v)}
-            className="inline-flex min-h-11 items-center gap-2 bg-foreground px-6 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent"
+            onClick={() => setTab(id)}
+            aria-pressed={tab === id}
+            className={`border px-4 py-2 text-sm transition-colors duration-200 ${
+              tab === id
+                ? "border-accent bg-accent text-white"
+                : "border-border text-foreground-muted hover:border-foreground hover:text-foreground"
+            }`}
           >
-            {showForm ? t("cancel") : t("newQuote")}
-            <ArrowRight
-              className={cn(
-                "h-4 w-4 transition-transform duration-300",
-                showForm && "rotate-90"
-              )}
-              aria-hidden
-            />
+            {label}
           </button>
-        </div>
+        ))}
+      </div>
 
-        {showForm && (
-          <section className="mt-6 border border-border bg-surface p-6 md:p-8">
-            <h4 className="text-base font-semibold">{t("newQuoteTitle")}</h4>
-            <p className="mt-1 text-sm text-foreground-muted">
-              {t("newQuoteHint")}
-            </p>
-            <div className="mt-6">
-              <QuoteForm onSuccess={() => setShowForm(false)} />
-            </div>
-          </section>
-        )}
+      {tab === "profile" && <ProfileSection />}
 
-        {!quotes ? (
-          <p className="mt-6 text-sm text-foreground-muted">
-            <Loader2 className="mr-2 inline h-4 w-4 animate-spin text-accent" aria-hidden />
-            {t("loading")}
-          </p>
-        ) : quotes.length === 0 ? (
-          <div className="mt-6 border border-border p-6">
-            <p className="text-sm text-foreground-muted">{t("noQuotes")}</p>
-          </div>
-        ) : (
-          <ul className="mt-6 divide-y divide-border border border-border">
-            {quotes.map((q) => (
-              <li key={q._id} className="p-5">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <p className="font-medium text-foreground">{q.name}</p>
-                  <span className="border border-border px-3 py-1 text-xs uppercase tracking-widest text-foreground-muted">
-                    {tStatus(q.status)}
-                  </span>
+      {tab === "chat" && <SupportChat />}
+
+      {tab === "partner" && <PartnerSection />}
+
+      {tab === "dashboard" && (
+        <>
+          {needsOnboarding && (
+            <section className="border border-border bg-surface p-6 md:p-8">
+              <div className="flex items-start gap-3">
+                <Building2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden />
+                <div>
+                  <h3 className="text-lg font-semibold">{t("onboardingTitle")}</h3>
+                  <p className="mt-1 text-sm text-foreground-muted">
+                    {t("onboardingHint")}
+                  </p>
                 </div>
-                <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
-                  {q.message}
+              </div>
+              <OnboardingForm initial={profile} />
+            </section>
+          )}
+
+          <section>
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <h3 className="text-lg font-semibold">{t("myQuotes")}</h3>
+              <button
+                type="button"
+                onClick={() => setShowForm((v) => !v)}
+                className="inline-flex min-h-11 items-center gap-2 bg-foreground px-6 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent"
+              >
+                {showForm ? t("cancel") : t("newQuote")}
+                <ArrowRight
+                  className={cn(
+                    "h-4 w-4 transition-transform duration-300",
+                    showForm && "rotate-90"
+                  )}
+                  aria-hidden
+                />
+              </button>
+            </div>
+
+            {showForm && (
+              <section className="mt-6 border border-border bg-surface p-6 md:p-8">
+                <h4 className="text-base font-semibold">{t("newQuoteTitle")}</h4>
+                <p className="mt-1 text-sm text-foreground-muted">
+                  {t("newQuoteHint")}
                 </p>
-                <p className="mt-3 text-xs text-foreground-muted">
-                  {new Date(q.createdAt).toLocaleDateString()}
-                  {q.serviceInterest.length > 0
-                    ? ` · ${q.serviceInterest.join(", ")}`
-                    : ""}
-                </p>
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
+                <div className="mt-6">
+                  <QuoteForm onSuccess={() => setShowForm(false)} />
+                </div>
+              </section>
+            )}
+
+            {!quotes ? (
+              <p className="mt-6 text-sm text-foreground-muted">
+                <Loader2 className="mr-2 inline h-4 w-4 animate-spin text-accent" aria-hidden />
+                {t("loading")}
+              </p>
+            ) : quotes.length === 0 ? (
+              <div className="mt-6 border border-border p-6">
+                <p className="text-sm text-foreground-muted">{t("noQuotes")}</p>
+              </div>
+            ) : (
+              <ul className="mt-6 divide-y divide-border border border-border">
+                {quotes.map((q) => (
+                  <li key={q._id} className="p-5">
+                    <div className="flex flex-wrap items-center justify-between gap-3">
+                      <p className="font-medium text-foreground">{q.name}</p>
+                      <div className="flex flex-wrap items-center gap-3">
+                        {q.quotedAmount != null && (
+                          <span className="text-lg font-semibold text-accent">
+                            {euro.format(q.quotedAmount)}
+                          </span>
+                        )}
+                        <span className="border border-border px-3 py-1 text-xs uppercase tracking-widest text-foreground-muted">
+                          {tStatus(q.status)}
+                        </span>
+                      </div>
+                    </div>
+                    <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
+                      {q.message}
+                    </p>
+                    <p className="mt-3 text-xs text-foreground-muted">
+                      {new Date(q.createdAt).toLocaleDateString()}
+                      {q.serviceInterest.length > 0
+                        ? ` · ${q.serviceInterest.join(", ")}`
+                        : ""}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+        </>
+      )}
     </div>
   );
 }

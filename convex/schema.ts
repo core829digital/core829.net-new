@@ -47,13 +47,16 @@ export default defineSchema({
     .index("email", ["email"])
     .index("phone", ["phone"]),
 
-  // Dati di profilo del client area (onboarding, azienda, contatti).
+  // Dati di profilo del client area (anagrafica, azienda, contatti, foto).
   profiles: defineTable({
     userId: v.id("users"),
+    firstName: v.optional(v.string()),
+    lastName: v.optional(v.string()),
     company: v.optional(v.string()),
     vatNumber: v.optional(v.string()),
     country: v.optional(v.string()),
     contactPhone: v.optional(v.string()),
+    profileImageId: v.optional(v.id("_storage")),
     onboardingCompleted: v.boolean(),
     createdAt: v.number(),
     updatedAt: v.number(),
@@ -72,6 +75,9 @@ export default defineSchema({
     assignedTo: v.optional(v.id("users")),
     internalNote: v.optional(v.string()),
     firstResponseAt: v.optional(v.number()),
+    // Valutazione monetaria comunicata dall'admin/staff al cliente.
+    quotedAmount: v.optional(v.number()),
+    quotedCurrency: v.optional(v.string()),
     source: v.union(v.literal("public"), v.literal("client_area")),
     createdAt: v.number(),
     updatedAt: v.number(),
@@ -79,7 +85,8 @@ export default defineSchema({
     .index("by_createdAt", ["createdAt"])
     .index("by_userId", ["userId"])
     .index("by_status", ["status"])
-    .index("by_email_createdAt", ["email", "createdAt"]),
+    .index("by_email_createdAt", ["email", "createdAt"])
+    .index("by_assignedTo", ["assignedTo"]),
 
   // Log delle azioni amministrative (ruoli, ban, stati preventivi).
   adminLogs: defineTable({
@@ -101,4 +108,85 @@ export default defineSchema({
     createdAt: v.number(),
     status: v.union(v.literal("new"), v.literal("done")),
   }).index("by_createdAt", ["createdAt"]),
+
+  // Candidature per diventare partner (approvazione manuale admin/superadmin).
+  partnerApplications: defineTable({
+    userId: v.id("users"),
+    status: v.union(
+      v.literal("pending"),
+      v.literal("approved"),
+      v.literal("rejected")
+    ),
+    message: v.optional(v.string()),
+    createdAt: v.number(),
+    decidedAt: v.optional(v.number()),
+    decidedBy: v.optional(v.id("users")),
+  })
+    .index("by_userId", ["userId"])
+    .index("by_status", ["status"]),
+
+  // Una conversazione per utente con lo staff (client/partner/technical/...).
+  conversations: defineTable({
+    userId: v.id("users"),
+    lastMessageAt: v.number(),
+    lastMessagePreview: v.string(),
+    unreadForUser: v.boolean(),
+    unreadForStaff: v.boolean(),
+  })
+    .index("by_userId", ["userId"])
+    .index("by_lastMessageAt", ["lastMessageAt"]),
+
+  messages: defineTable({
+    conversationId: v.id("conversations"),
+    senderId: v.id("users"),
+    senderRole: v.string(),
+    body: v.string(),
+    createdAt: v.number(),
+  }).index("by_conversationId", ["conversationId"]),
+
+  // Notifiche in-app (chat, cambi stato preventivo, esiti candidatura, bulk).
+  notifications: defineTable({
+    userId: v.id("users"),
+    kind: v.string(),
+    title: v.string(),
+    body: v.string(),
+    link: v.optional(v.string()),
+    read: v.boolean(),
+    createdAt: v.number(),
+  })
+    .index("by_userId_createdAt", ["userId", "createdAt"])
+    .index("by_userId_read", ["userId", "read"]),
+
+  // Post del blog aziendale, scritti in Markdown dallo staff (admin+).
+  blogPosts: defineTable({
+    title: v.string(),
+    slug: v.string(),
+    excerpt: v.string(),
+    coverImageId: v.optional(v.id("_storage")),
+    bodyMarkdown: v.string(),
+    authorId: v.id("users"),
+    status: v.union(v.literal("draft"), v.literal("published")),
+    publishedAt: v.optional(v.number()),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+  })
+    .index("by_slug", ["slug"])
+    .index("by_status_publishedAt", ["status", "publishedAt"]),
+
+  // Pageview aggregate per l'analytics admin: geo-paese/città (header Vercel)
+  // e `visitorKey` = hash SHA-256 IP+salt (pseudonimizzazione). L'indirizzo IP
+  // grezzo NON viene mai salvato: solo un digest non reversibile, così il
+  // conteggio dei visitatori unici resta possibile senza conservare PII.
+  pageViews: defineTable({
+    path: v.string(),
+    locale: v.string(),
+    country: v.optional(v.string()),
+    city: v.optional(v.string()),
+    visitorKey: v.optional(v.string()),
+    userId: v.optional(v.id("users")),
+    isAuthenticated: v.boolean(),
+    createdAt: v.number(),
+  })
+    .index("by_createdAt", ["createdAt"])
+    .index("by_path_createdAt", ["path", "createdAt"]),
 });

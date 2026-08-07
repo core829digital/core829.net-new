@@ -29,15 +29,9 @@ export default async function ContattiPage({
   return (
     <main>
       <section className="container-core829 py-24 lg:py-32">
-        <p className="kicker">{t("kicker")}</p>
-        <h1 className="mt-4 text-section-title">{t("title")}</h1>
-        <p className="mt-6 max-w-2xl text-lg text-foreground-muted">
-          {t("subtitle")}
-        </p>
-
-        <div className="mt-16 max-w-xl">
-          <p className="tech-label">{t("kicker")}</p>
-          <h2 className="mt-3 text-section-title">{t("title")}</h2>
+        <div className="max-w-xl">
+          <p className="kicker">{t("kicker")}</p>
+          <h1 className="mt-3 text-section-title">{t("title")}</h1>
           <p className="mt-4 text-foreground-muted">{t("subtitle")}</p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button href="mailto:hello@core829.net?subject=Request%20a%20quote" variant="primary">

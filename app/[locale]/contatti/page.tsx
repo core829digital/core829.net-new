@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/Button";
-import { COMPANY } from "@/lib/constants";
+import { COMPANY, EMAILS } from "@/lib/constants";
 
 export async function generateMetadata({
   params,
@@ -25,6 +25,7 @@ export default async function ContattiPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "contactPage" });
+  const tEmails = await getTranslations({ locale, namespace: "contactEmails" });
 
   return (
     <main>
@@ -94,6 +95,33 @@ export default async function ContattiPage({
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="mt-16 md:max-w-3xl">
+          <p className="tech-label">{tEmails("heading")}</p>
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-foreground-muted">
+            {tEmails("intro")}
+          </p>
+          <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+            {EMAILS.map(({ key, address }) => (
+              <li key={key}>
+                <a
+                  href={`mailto:${address}`}
+                  className="group block h-full border border-border bg-surface p-5 transition-colors duration-300 hover:border-accent"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-widest text-accent">
+                    {tEmails(`${key}.label`)}
+                  </span>
+                  <span className="mt-2 block break-all text-sm font-medium text-foreground">
+                    {address}
+                  </span>
+                  <span className="mt-2 block text-xs leading-relaxed text-foreground-muted">
+                    {tEmails(`${key}.desc`)}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
     </main>

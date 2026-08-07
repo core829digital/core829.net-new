@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useGoToSection } from "@/lib/useGoToSection";
-import { SERVICES_META, clientAnchorIds, COMPANY } from "@/lib/constants";
+import { SERVICES_META, clientAnchorIds, COMPANY, EMAILS } from "@/lib/constants";
 import { SocialLinks } from "@/components/SocialIcons";
 import { TrustpilotWidget } from "@/components/Trustpilot";
 
@@ -155,13 +155,19 @@ export default function Footer() {
           <p className="tech-label">Social</p>
           <SocialLinks className="mt-5" />
           <TrustpilotWidget className="mt-6 w-full max-w-[220px]" />
-          <a
-            href="mailto:hello@core829.net"
-            className="mt-6 inline-flex items-center gap-1 text-sm text-foreground-muted transition-colors hover:text-accent"
-          >
-            hello@core829.net
-            <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
-          </a>
+          <ul className="mt-6 space-y-2">
+            {EMAILS.map(({ key, address }) => (
+              <li key={key}>
+                <a
+                  href={`mailto:${address}`}
+                  className="group inline-flex items-center gap-1 text-sm text-foreground-muted transition-colors hover:text-accent"
+                >
+                  {address}
+                  <ArrowUpRight className="h-3.5 w-3.5 shrink-0" aria-hidden />
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 

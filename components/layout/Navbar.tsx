@@ -104,7 +104,7 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-4 lg:flex">
           <LanguageSwitcher />
-          <Button href="mailto:hello@core829.net" variant="primary" className="neon-frame px-6">
+          <Button href="mailto:sales@core829.net" variant="primary" className="neon-frame px-6">
             {t("cta")}
           </Button>
         </div>
@@ -159,7 +159,7 @@ export default function Navbar() {
                 className="space-y-8 pt-8 border-t border-border"
               >
                 <Button
-                  href="mailto:hello@core829.net"
+                  href="mailto:sales@core829.net"
                   variant="primary"
                   className="neon-frame w-full"
                   onClick={() => setMenuOpen(false)}

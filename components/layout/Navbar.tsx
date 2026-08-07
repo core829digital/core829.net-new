@@ -135,11 +135,12 @@ export default function Navbar() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             className="fixed inset-0 top-16 z-40 flex flex-col overflow-y-auto overscroll-contain bg-background pb-[max(env(safe-area-inset-bottom),1.5rem)] lg:hidden"
+            style={{ backgroundColor: "var(--color-background)" }}
           >
             <MobileNav
               nav={[
@@ -339,7 +340,7 @@ function MobileNav({
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.25 }}
-                    className="overflow-hidden"
+                    className="overflow-hidden bg-background"
                   >
                     {item.children.map((child) => (
                       <a

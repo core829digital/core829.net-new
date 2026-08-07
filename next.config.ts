@@ -12,7 +12,7 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https://core829.net",
       "font-src 'self' data:",
-      "connect-src 'self' https://*.convex.cloud wss://*.convex.cloud https://widget.trustpilot.com",
+      "connect-src 'self' https://widget.trustpilot.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
@@ -43,21 +43,6 @@ const nextConfig: NextConfig = {
       {
         source: "/(.*)",
         headers: securityHeaders,
-      },
-    ];
-  },
-  async redirects() {
-    return [
-      {
-        // La richiesta di preventivo ora passa dall'area riservata.
-        source: "/preventivo",
-        destination: "/area-riservata",
-        permanent: false,
-      },
-      {
-        source: "/:locale/preventivo",
-        destination: "/:locale/area-riservata",
-        permanent: false,
       },
     ];
   },

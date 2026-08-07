@@ -55,7 +55,7 @@ export default function PricingModel() {
         </RevealOnScroll>
 
         <RevealOnScroll className="mt-14 text-center">
-          <Button href="/area-riservata" variant="primary">
+          <Button href="mailto:sales@core829.net?subject=Request%20a%20quote" variant="primary">
             {t("cta")}
           </Button>
         </RevealOnScroll>

@@ -6,8 +6,6 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import SmoothScrollProvider from "@/app/providers/SmoothScrollProvider";
 import ResolvePendingHash from "@/components/ResolvePendingHash";
-import ConvexAuthProviderWrapper from "@/components/providers/ConvexAuthProvider";
-import PageViewTracker from "@/components/PageViewTracker";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { TrustpilotScript } from "@/components/Trustpilot";
@@ -104,15 +102,12 @@ export default async function LocaleLayout({
       <TrustpilotScript />
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          <ConvexAuthProviderWrapper>
-            <SmoothScrollProvider>
-              <ResolvePendingHash />
-              <PageViewTracker />
-              <Navbar />
-              <main>{children}</main>
-              <Footer />
-            </SmoothScrollProvider>
-          </ConvexAuthProviderWrapper>
+          <SmoothScrollProvider>
+            <ResolvePendingHash />
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </SmoothScrollProvider>
         </NextIntlClientProvider>
         <JsonLd />
       </body>

@@ -16,7 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contatti",
     "/chi-siamo",
     "/metodo",
-    "/blog",
     "/careers",
     "/prezzi",
   ];

@@ -87,7 +87,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop navigation */}
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
+        <nav className="hidden items-center gap-4 lg:flex" aria-label="Main">
           <DesktopDropdown
             label={t("services")}
             href="/servizi"
@@ -102,22 +102,22 @@ export default function Navbar() {
           <NavLink href="/contatti">{t("contact")}</NavLink>
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden items-center gap-4 lg:flex">
           <LanguageSwitcher />
-          <Button href="/area-riservata" variant="primary" className="px-5">
+          <Button href="/area-riservata" variant="primary" className="neon-frame px-6">
             {t("internalArea")}
           </Button>
         </div>
 
         {/* Mobile menu toggle */}
-        <div className="flex items-center gap-1 lg:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <LanguageSwitcher />
           <button
             type="button"
             onClick={() => setMenuOpen((v) => !v)}
             aria-expanded={menuOpen}
             aria-label="Menu"
-            className="flex min-h-11 min-w-11 items-center justify-center text-foreground"
+            className="neon-frame flex min-h-11 min-w-11 items-center justify-center text-foreground"
           >
             {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -161,7 +161,7 @@ export default function Navbar() {
                 <Button
                   href="/area-riservata"
                   variant="primary"
-                  className="w-full"
+                  className="neon-frame w-full"
                   onClick={() => setMenuOpen(false)}
                 >
                   {t("internalArea")}
@@ -196,7 +196,7 @@ function NavLink({
     <a
       href={href}
       onClick={handleClick}
-      className="link-ghost text-sm"
+      className="neon-frame link-ghost px-3 py-2 text-sm"
     >
       {children}
     </a>
@@ -220,37 +220,39 @@ function DesktopDropdown({
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      {href ? (
-        <Link
-          href={href}
-          onClick={() => setOpen(false)}
-          className="link-ghost flex items-center gap-1 text-sm"
-          aria-haspopup="menu"
-        >
-          {label}
-        </Link>
-      ) : (
+      <div className="neon-frame flex items-center">
+        {href ? (
+          <Link
+            href={href}
+            onClick={() => setOpen(false)}
+            className="link-ghost gap-1 pl-3 text-sm"
+            aria-haspopup="menu"
+          >
+            {label}
+          </Link>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setOpen(!open)}
+            className="link-ghost gap-1 pl-3 text-sm"
+            aria-haspopup="menu"
+            aria-expanded={open}
+          >
+            {label}
+          </button>
+        )}
         <button
           type="button"
           onClick={() => setOpen(!open)}
-          className="link-ghost flex items-center gap-1 text-sm"
-          aria-haspopup="menu"
+          aria-label={`Apri menu ${label}`}
           aria-expanded={open}
+          className="flex items-center justify-center px-2 py-2 text-foreground-muted hover:text-foreground"
         >
-          {label}
+          <ChevronDown
+            className={cn("h-3 w-3 transition-transform duration-200", open && "rotate-180")}
+          />
         </button>
-      )}
-      <button
-        type="button"
-        onClick={() => setOpen(!open)}
-        aria-label={`Apri menu ${label}`}
-        aria-expanded={open}
-        className="flex items-center justify-center p-0.5 text-foreground-muted hover:text-foreground"
-      >
-        <ChevronDown
-          className={cn("h-3 w-3 transition-transform duration-200", open && "rotate-180")}
-        />
-      </button>
+      </div>
       <AnimatePresence>
         {open && (
           <motion.div

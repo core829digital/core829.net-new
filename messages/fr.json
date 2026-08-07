@@ -148,17 +148,6 @@
         ]
       },
       {
-        "id": "delivery",
-        "title": "Server Delivery",
-        "desc": "Nous gérons l'infrastructure, le déploiement et la mise en production : du dépôt au serveur, avec des pipelines fiables et des environnements scalables.",
-        "bullets": [
-          "CI/CD (GitHub → Vercel et au-delà)",
-          "Gestion des environnements staging/production",
-          "Scalabilité et monitoring uptime",
-          "Sauvegardes et reprise après sinistre"
-        ]
-      },
-      {
         "id": "marketing",
         "title": "Marketing 360° (Organique et Payant)",
         "desc": "Nous couvrons toute la croissance digitale : social media organique, contenu et publicité payante sur Meta Ads et Google Ads, avec une stratégie unifiée.",

@@ -18,6 +18,13 @@
   --font-mono: var(--font-jetbrains), ui-monospace, "SFMono-Regular", monospace;
 }
 
+/* Proprietà registrata per l'animazione del gradiente neon (angolo rotante). */
+@property --neon-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 @layer base {
   * {
     border-color: var(--color-border);
@@ -115,6 +122,52 @@
   /* Input di base per form */
   .input-core829 {
     @apply w-full rounded-none border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-foreground-muted placeholder:opacity-60 transition-colors focus:border-foreground focus:outline-none;
+  }
+
+  /* Frame neon: bordo sottile (1px) con gradiente rosso-platino animato,
+     usato per evidenziare i pulsanti dell'header. Il gradiente "gira"
+     come un neon tramite @property --neon-angle. */
+  .neon-frame {
+    position: relative;
+    border-radius: 6px;
+  }
+  .neon-frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: conic-gradient(
+      from var(--neon-angle),
+      #e11d2e 0%,
+      #d9d9d9 14%,
+      #f5f5f5 26%,
+      #e11d2e 40%,
+      #a8a8a8 56%,
+      #f2f2f2 70%,
+      #e11d2e 85%,
+      #d9d9d9 100%
+    );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    animation: neon-spin 3.5s linear infinite;
+    pointer-events: none;
+  }
+  @keyframes neon-spin {
+    to {
+      --neon-angle: 360deg;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .neon-frame::before {
+      animation-duration: 10s;
+    }
   }
 }
 

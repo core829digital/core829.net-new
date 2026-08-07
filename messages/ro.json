@@ -148,17 +148,6 @@
         ]
       },
       {
-        "id": "delivery",
-        "title": "Server Delivery",
-        "desc": "Gestionăm infrastructura, deployment-ul și punerea în producție: de la repository la server, cu pipeline fiabile și medii scalabile.",
-        "bullets": [
-          "CI/CD (GitHub → Vercel și nu numai)",
-          "Gestionarea mediilor staging/producție",
-          "Scalabilitate și monitorizare uptime",
-          "Backup și disaster recovery"
-        ]
-      },
-      {
         "id": "marketing",
         "title": "Marketing 360° (Organic și Paid)",
         "desc": "Acoperim întreaga creștere digitală: social media organic, content și publicitate plătită pe Meta Ads și Google Ads, cu strategie unificată.",

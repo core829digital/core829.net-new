@@ -148,17 +148,6 @@
         ]
       },
       {
-        "id": "delivery",
-        "title": "Server Delivery",
-        "desc": "We beheren infrastructuur, deployment en productiereleases: van repository tot server, met betrouwbare pipelines en schaalbare omgevingen.",
-        "bullets": [
-          "CI/CD (GitHub → Vercel en verder)",
-          "Staging- en productieomgevingen",
-          "Schaalbaarheid en uptime-monitoring",
-          "Backup en disaster recovery"
-        ]
-      },
-      {
         "id": "marketing",
         "title": "360° Marketing (Organisch & Paid)",
         "desc": "We dekken de volledige digitale groei af: organische social media, content en betaalde advertising op Meta Ads en Google Ads, met één strategie.",

@@ -6,6 +6,5 @@ export const SERVICE_KEYS = [
   "webapp",
   "desktop",
   "seo",
-  "delivery",
   "marketing",
 ] as const;

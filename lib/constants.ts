@@ -5,7 +5,6 @@ import {
   LayoutGrid,
   TrendingUp,
   Server,
-  Rocket,
   Megaphone,
   ShieldCheck,
   Gauge,
@@ -20,7 +19,7 @@ export interface ServiceMeta {
 }
 
 /**
- * Ordine degli 8 servizi (coerente con i messaggi i18n e con il footer).
+ * Ordine dei 7 servizi (coerente con i messaggi i18n e con il footer).
  * Gli anchor id permettono al footer di puntare alle singole card.
  */
 export const SERVICES_META: ServiceMeta[] = [
@@ -30,7 +29,6 @@ export const SERVICES_META: ServiceMeta[] = [
   { key: "webapp", anchorId: "servizio-webapp", icon: LayoutGrid },
   { key: "desktop", anchorId: "servizio-desktop", icon: Terminal },
   { key: "seo", anchorId: "servizio-seo", icon: TrendingUp },
-  { key: "delivery", anchorId: "servizio-delivery", icon: Rocket },
   { key: "marketing", anchorId: "servizio-marketing", icon: Megaphone },
 ];
 

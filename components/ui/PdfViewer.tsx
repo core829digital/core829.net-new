@@ -149,11 +149,16 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
 
   useEffect(() => {
     if (!open) return;
+    const prevOverflow = document.body.style.overflow;
+    const prevScrollY = window.scrollY;
     document.body.style.overflow = "hidden";
+    window.__lenis?.stop?.();
     window.addEventListener("keydown", handleKeyDown);
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflow = prevOverflow;
+      window.__lenis?.start?.();
       window.removeEventListener("keydown", handleKeyDown);
+      window.scrollTo({ top: prevScrollY, behavior: "instant" as ScrollBehavior });
     };
   }, [open, handleKeyDown]);
 
@@ -168,7 +173,13 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="fixed inset-0 z-[80] flex flex-col bg-background/95 p-4 backdrop-blur-sm sm:p-6 lg:p-10"
+          className="fixed z-[80] flex flex-col bg-background/95 p-4 backdrop-blur-sm sm:p-6 lg:p-10"
+          style={{
+            top: "var(--vvt, 0px)",
+            left: "var(--vvl, 0px)",
+            width: "var(--vvw, 100vw)",
+            height: "var(--vvh, 100vh)",
+          }}
           role="dialog"
           aria-modal="true"
           aria-label={title}
@@ -244,7 +255,11 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
               {status === "ready" && (
                 <div
                   ref={scrollRef}
-                  className="min-h-0 flex-1 overflow-auto overscroll-contain"
+                  className="min-h-0 flex-1 overflow-y-auto overscroll-contain"
+                  style={{
+                    WebkitOverflowScrolling: "touch",
+                    touchAction: "pan-y",
+                  }}
                 >
                   <div className="flex flex-col items-center gap-6 px-2 py-6">
                     {Array.from({ length: pageCount }, (_, i) => i + 1).map((n) => (

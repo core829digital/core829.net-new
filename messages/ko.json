@@ -167,7 +167,8 @@
     "companyAboutFull": "회사 소개",
     "colCareers": "채용",
     "gdpr": "GDPR",
-    "cookiePolicy": "Cookie Policy"
+    "cookiePolicy": "Cookie Policy",
+    "foundersTitle": "설립자"
   },
   "problem": {
     "kicker": "The problem",

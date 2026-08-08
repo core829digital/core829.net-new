@@ -1,11 +1,11 @@
 "use client";
 
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Building2, Phone, Mail, MapPin, Clock, UserRound, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useGoToSection } from "@/lib/useGoToSection";
-import { SERVICES_META, clientAnchorIds, COMPANY, EMAILS } from "@/lib/constants";
+import { SERVICES_META, clientAnchorIds, COMPANY, EMAILS, FOUNDERS } from "@/lib/constants";
 import { SocialLinks } from "@/components/SocialIcons";
 import { TrustpilotWidget } from "@/components/Trustpilot";
 
@@ -17,6 +17,7 @@ const CLIENT_ANCHORS = clientAnchorIds;
  */
 export default function Footer() {
   const t = useTranslations("footer");
+  const tFounders = useTranslations("founders");
   const tServices = useTranslations("solution.services");
   const tCaseStudies = useTranslations("caseStudies.projects");
   const year = new Date().getFullYear();
@@ -26,6 +27,10 @@ export default function Footer() {
     e.preventDefault();
     goToSection(hash);
   };
+
+  const telHref = (phone: string) => `tel:${phone.replace(/\s/g, "")}`;
+  const waHref = (phone: string) =>
+    `https://wa.me/${phone.replace(/[^\d]/g, "")}`;
 
   return (
     <footer className="border-t border-border bg-surface">
@@ -52,26 +57,92 @@ export default function Footer() {
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-foreground-muted">
             {t("tagline")}
           </p>
-          <div className="mt-6 font-mono text-[11px] uppercase leading-relaxed tracking-widest text-foreground-muted/70">
-            <p>CORE829 SRL — Reg. Com. {COMPANY.regCom}</p>
-            <p>CUI / CIF {COMPANY.cui}</p>
-            <p>{COMPANY.address}</p>
-            <p>
+          <div className="mt-6 space-y-2 font-mono text-[11px] uppercase leading-relaxed tracking-widest text-foreground-muted/70">
+            <p className="flex items-start gap-2">
+              <Building2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
+              <span>
+                CORE829 SRL — Reg. Com. {COMPANY.regCom}
+                <br />
+                CUI / CIF {COMPANY.cui}
+              </span>
+            </p>
+            <p className="flex items-start gap-2">
+              <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
+              <span>{COMPANY.address}</span>
+            </p>
+            <p className="flex items-center gap-2">
+              <Phone className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
+              <span className="flex flex-wrap items-center gap-x-1.5">
+                <a href={telHref(COMPANY.phoneRo)} className="transition-colors hover:text-accent">
+                  {COMPANY.phoneRo}
+                </a>
+                <span aria-hidden>·</span>
+                <a href={telHref(COMPANY.phoneIt)} className="transition-colors hover:text-accent">
+                  {COMPANY.phoneIt}
+                </a>
+              </span>
+            </p>
+            <p className="flex items-center gap-2">
+              <Mail className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
               <a
-                href={`tel:${COMPANY.phoneRo.replace(/\s/g, "")}`}
-                className="transition-colors hover:text-accent"
+                href={`mailto:${COMPANY.email}`}
+                className="break-all lowercase transition-colors hover:text-accent"
               >
-                {COMPANY.phoneRo}
-              </a>{" "}
-              ·{" "}
-              <a
-                href={`tel:${COMPANY.phoneIt.replace(/\s/g, "")}`}
-                className="transition-colors hover:text-accent"
-              >
-                {COMPANY.phoneIt}
+                {COMPANY.email}
               </a>
             </p>
-            <p>{COMPANY.hours}</p>
+            <p className="flex items-center gap-2">
+              <Clock className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
+              <span>{COMPANY.hours}</span>
+            </p>
+          </div>
+
+          {/* Founder / Co-founder */}
+          <div className="mt-6 border-t border-border pt-5">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-foreground">
+              {t("foundersTitle")}
+            </p>
+            <ul className="mt-4 space-y-5">
+              {FOUNDERS.map((person) => (
+                <li key={person.key}>
+                  <p className="flex items-center gap-2">
+                    <UserRound className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
+                    <span className="font-mono text-[11px] uppercase tracking-widest text-foreground">
+                      {tFounders(person.key)}
+                    </span>
+                  </p>
+                  <p className="mt-1 text-sm font-medium normal-case text-foreground">
+                    {person.name}
+                  </p>
+                  <ul className="mt-1.5 space-y-1">
+                    {person.phones.map((phone) => (
+                      <li key={phone}>
+                        <a
+                          href={telHref(phone)}
+                          className="inline-flex items-center gap-2 text-sm text-foreground-muted transition-colors hover:text-accent"
+                        >
+                          <Phone className="h-3.5 w-3.5 shrink-0" aria-hidden />
+                          {phone}
+                        </a>
+                      </li>
+                    ))}
+                    {person.whatsapp && (
+                      <li>
+                        <a
+                          href={waHref(person.whatsapp)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-sm text-foreground-muted transition-colors hover:text-accent"
+                        >
+                          <MessageCircle className="h-3.5 w-3.5 shrink-0" aria-hidden />
+                          WhatsApp: {person.whatsapp}
+                        </a>
+                      </li>
+                    )}
+                  </ul>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 

@@ -173,8 +173,7 @@
   /* Variante mono (nero-platino, senza rosso): usata per il servizio
      Server, un dipartimento con brand proprio, distinto dall'agenzia
      digitale — niente accento rosso CORE829 sul suo link in header. */
-  .neon-frame-mono {
-    position: relative;
+  .neon-frame-mono {    position: relative;
     border-radius: 6px;
   }
   .neon-frame-mono::before {
@@ -209,6 +208,32 @@
     .neon-frame-mono::before {
       animation-duration: 10s;
     }
+  }
+
+  /* Scrollbar visibile e coerente (desktop e mobile) per popup, menu e
+     reader PDF. `overflow-y: auto` fa comparire la barra solo quando il
+     contenuto supera l'altezza; su mobile permette lo scroll a scorrimento. */
+  .scroll-core829 {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-foreground-muted) transparent;
+  }
+  .scroll-core829::-webkit-scrollbar {
+    width: 10px;
+  }
+  .scroll-core829::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scroll-core829::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border: 2px solid var(--color-background);
+    border-radius: 9999px;
+  }
+  .scroll-core829::-webkit-scrollbar-thumb:hover {
+    background: var(--color-foreground-muted);
   }
 }
 

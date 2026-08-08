@@ -139,11 +139,10 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-x-0 top-16 z-40 flex flex-col overflow-y-auto overscroll-contain bg-background pb-[max(env(safe-area-inset-bottom),1.5rem)] lg:hidden"
+            className="scroll-core829 fixed inset-x-0 top-16 z-40 flex flex-col bg-background pb-[max(env(safe-area-inset-bottom),1.5rem)] lg:hidden"
             style={{
               backgroundColor: "var(--color-background)",
               height: "calc(var(--vvh, 100dvh) - 4rem)",
-              WebkitOverflowScrolling: "touch",
               touchAction: "pan-y",
             }}
           >
@@ -281,7 +280,7 @@ function DesktopDropdown({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 8 }}
             transition={{ duration: 0.2 }}
-            className="absolute left-0 top-full mt-2 max-h-[70dvh] w-56 overflow-y-auto overscroll-contain rounded-lg border border-border bg-background p-2 shadow-2xl shadow-black/10"
+            className="scroll-core829 absolute left-0 top-full mt-2 max-h-[70dvh] w-56 rounded-lg border border-border bg-background p-2 shadow-2xl shadow-black/10"
           >
             {items.map((item) => (
               <Link

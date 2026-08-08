@@ -173,12 +173,12 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="fixed z-[80] flex flex-col bg-background/95 p-4 backdrop-blur-sm sm:p-6 lg:p-10"
+          className="fixed z-[80] flex flex-col overflow-hidden bg-background/95 p-4 backdrop-blur-sm sm:p-6 lg:p-10"
           style={{
             top: "var(--vvt, 0px)",
             left: "var(--vvl, 0px)",
-            width: "var(--vvw, 100vw)",
-            height: "var(--vvh, 100vh)",
+            width: "var(--vvw, 100dvw)",
+            height: "var(--vvh, 100dvh)",
           }}
           role="dialog"
           aria-modal="true"
@@ -192,7 +192,7 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 16 }}
             transition={{ duration: 0.2 }}
-            className="mx-auto flex w-full max-w-6xl flex-1 flex-col"
+            className="mx-auto flex min-h-0 w-full max-w-6xl flex-1 flex-col"
           >
             <div className="flex items-center justify-between gap-4 border-b border-border pb-4">
               <div className="min-w-0">
@@ -255,11 +255,8 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
               {status === "ready" && (
                 <div
                   ref={scrollRef}
-                  className="min-h-0 flex-1 overflow-y-auto overscroll-contain"
-                  style={{
-                    WebkitOverflowScrolling: "touch",
-                    touchAction: "pan-y",
-                  }}
+                  className="scroll-core829 min-h-0 flex-1"
+                  style={{ touchAction: "pan-y" }}
                 >
                   <div className="flex flex-col items-center gap-6 px-2 py-6">
                     {Array.from({ length: pageCount }, (_, i) => i + 1).map((n) => (

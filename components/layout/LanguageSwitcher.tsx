@@ -55,12 +55,8 @@ export default function LanguageSwitcher() {
 
       {open && (
         <div
-          className="absolute right-0 top-full z-50 mt-2 max-h-[60dvh] w-56 overflow-y-auto overscroll-contain border border-border bg-background py-2 shadow-2xl"
-          style={{
-            backgroundColor: "var(--color-background)",
-            WebkitOverflowScrolling: "touch",
-            touchAction: "pan-y",
-          }}
+          className="scroll-core829 absolute right-0 top-full z-50 mt-2 max-h-[60dvh] w-56 border border-border bg-background py-2 shadow-2xl"
+          style={{ backgroundColor: "var(--color-background)", touchAction: "pan-y" }}
         >
           {locales.map((locale) => (
             <button

@@ -32,15 +32,23 @@ export default function Footer() {
       <div className="container-core829 grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-6">
         {/* Brand */}
         <div className="sm:col-span-2">
-          <p className="text-lg font-bold tracking-tight">
+          <div className="flex flex-wrap items-center gap-4">
             <Image
               src="/core829-logo/829black%20trsp.webp"
               alt="CORE829"
-              width={120}
-              height={32}
-              className="h-8 w-auto"
+              width={160}
+              height={42}
+              className="h-11 w-auto"
             />
-          </p>
+            <span className="h-8 w-px bg-border" aria-hidden />
+            <Image
+              src="/server-service/829%20logo%20servers%20department%20trsp.png"
+              alt="CORE829 Servers"
+              width={160}
+              height={42}
+              className="h-11 w-auto"
+            />
+          </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-foreground-muted">
             {t("tagline")}
           </p>
@@ -63,6 +71,7 @@ export default function Footer() {
                 {COMPANY.phoneIt}
               </a>
             </p>
+            <p>{COMPANY.hours}</p>
           </div>
         </div>
 

@@ -157,7 +157,7 @@
     "companyAbout": "Hem",
     "companyMethod": "Metod",
     "companyContact": "Kontakt",
-    "rights": "© {year} CORE829 — Alla rättigheter förbehållna.",
+    "rights": "© {year} CORE829 SRL — Alla rättigheter förbehållna.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "Integritetspolicy",
     "terms": "Användarvillkor",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "Begär en offert",
-    "clientAreaLink": "Gå till kundområdet"
+    "clientAreaLink": "Gå till kundområdet",
+    "companyHours": "Öppettider"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "Offertstatus",
     "logActions.quoteAssign": "Offert tilldelad",
     "logActions.quoteReply": "Svar på offert"
+  },
+  "founders": {
+    "founder": "Grundare",
+    "cofounder": "Medgrundare"
   }
 }

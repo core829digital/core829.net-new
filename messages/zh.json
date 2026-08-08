@@ -157,7 +157,7 @@
     "companyAbout": "首页",
     "companyMethod": "方法",
     "companyContact": "联系",
-    "rights": "© {year} CORE829 — 保留所有权利。",
+    "rights": "© {year} CORE829 SRL — 保留所有权利。",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "隐私政策",
     "terms": "服务条款",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "请求报价",
-    "clientAreaLink": "进入客户专区"
+    "clientAreaLink": "进入客户专区",
+    "companyHours": "营业时间"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "报价请求状态",
     "logActions.quoteAssign": "分配报价请求",
     "logActions.quoteReply": "回复报价请求"
+  },
+  "founders": {
+    "founder": "创始人",
+    "cofounder": "联合创始人"
   }
 }

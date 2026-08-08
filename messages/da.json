@@ -157,7 +157,7 @@
     "companyAbout": "Hjem",
     "companyMethod": "Metode",
     "companyContact": "Kontakt",
-    "rights": "© {year} CORE829 — Alle rettigheder forbeholdes.",
+    "rights": "© {year} CORE829 SRL — Alle rettigheder forbeholdes.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "Privatlivspolitik",
     "terms": "Vilkår og betingelser",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "Anmod om et tilbud",
-    "clientAreaLink": "Gå til kundeområdet"
+    "clientAreaLink": "Gå til kundeområdet",
+    "companyHours": "Åbningstider"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "Tilbudsstatus",
     "logActions.quoteAssign": "Tilbud tildelt",
     "logActions.quoteReply": "Svar på tilbud"
+  },
+  "founders": {
+    "founder": "Grundlægger",
+    "cofounder": "Medstifter"
   }
 }

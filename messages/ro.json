@@ -439,7 +439,7 @@
     "companyAbout": "Acasă",
     "companyMethod": "Metodă",
     "companyContact": "Contact",
-    "rights": "© {year} CORE829 — Toate drepturile rezervate.",
+    "rights": "© {year} CORE829 SRL — Toate drepturile rezervate.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "Politica de confidențialitate",
     "terms": "Termeni și condiții",
@@ -535,7 +535,8 @@
     "companyAddress": "Sediu social",
     "companyPhones": "Telefoane",
     "ctaButton": "Solicită o ofertă",
-    "clientAreaLink": "Accesează zona client"
+    "clientAreaLink": "Accesează zona client",
+    "companyHours": "Program"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "Stare ofertă",
     "logActions.quoteAssign": "Atribuire ofertă",
     "logActions.quoteReply": "Răspuns ofertă"
+  },
+  "founders": {
+    "founder": "Fondator",
+    "cofounder": "Co-fondator"
   }
 }

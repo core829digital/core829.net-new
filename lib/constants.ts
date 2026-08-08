@@ -106,7 +106,30 @@ export const COMPANY = {
   phoneRo: "+40 766 668 482",
   phoneIt: "+39 375 946 8881",
   email: "hello@core829.net",
+  /** Disponibilità: sempre attivi. */
+  hours: "24/7",
 };
+
+/**
+ * Fondatore e co-fondatore CORE829, con le rispettive linee dirette.
+ * `phones` è sempre un array (anche con un solo numero) per uniformità
+ * di rendering; `whatsapp`, se presente, è lo stesso numero raggiungibile
+ * anche su WhatsApp.
+ */
+export const FOUNDERS = [
+  {
+    key: "founder",
+    name: "Stefan Serban",
+    phones: [COMPANY.phoneRo, COMPANY.phoneIt],
+    whatsapp: undefined as string | undefined,
+  },
+  {
+    key: "cofounder",
+    name: "Vasile Serban",
+    phones: ["+40 766 231 632"],
+    whatsapp: "+40 766 231 632" as string | undefined,
+  },
+] as const;
 
 /**
  * Caselle di posta aziendali, ciascuna pensata per uno scenario di contatto.

@@ -157,7 +157,7 @@
     "companyAbout": "Αρχική",
     "companyMethod": "Μέθοδος",
     "companyContact": "Επικοινωνία",
-    "rights": "© {year} CORE829 — Με επιφύλαξη παντός δικαιώματος.",
+    "rights": "© {year} CORE829 SRL — Με επιφύλαξη παντός δικαιώματος.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "Πολιτική Απορρήτου",
     "terms": "Όροι Χρήσης",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "Ζητήστε προσφορά",
-    "clientAreaLink": "Πρόσβαση στην περιοχή πελατών"
+    "clientAreaLink": "Πρόσβαση στην περιοχή πελατών",
+    "companyHours": "Ωράριο"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "Κατάσταση προσφοράς",
     "logActions.quoteAssign": "Ανάθεση προσφοράς",
     "logActions.quoteReply": "Απάντηση προσφοράς"
+  },
+  "founders": {
+    "founder": "Ιδρυτής",
+    "cofounder": "Συνιδρυτής"
   }
 }

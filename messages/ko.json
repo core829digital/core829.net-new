@@ -157,7 +157,7 @@
     "companyAbout": "홈",
     "companyMethod": "방법",
     "companyContact": "문의",
-    "rights": "© {year} CORE829 — All rights reserved.",
+    "rights": "© {year} CORE829 SRL — All rights reserved.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "개인정보 처리방침",
     "terms": "서비스 약관",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "견적 요청",
-    "clientAreaLink": "클라이언트 영역으로"
+    "clientAreaLink": "클라이언트 영역으로",
+    "companyHours": "운영 시간"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "견적 요청 상태",
     "logActions.quoteAssign": "견적 요청 지정",
     "logActions.quoteReply": "견적 요청 응답"
+  },
+  "founders": {
+    "founder": "창립자",
+    "cofounder": "공동 창립자"
   }
 }

@@ -439,7 +439,7 @@
     "companyAbout": "Início",
     "companyMethod": "Método",
     "companyContact": "Contacto",
-    "rights": "© {year} CORE829 — Todos os direitos reservados.",
+    "rights": "© {year} CORE829 SRL — Todos os direitos reservados.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
@@ -535,7 +535,8 @@
     "companyAddress": "Sede social",
     "companyPhones": "Telefones",
     "ctaButton": "Pedir um orçamento",
-    "clientAreaLink": "Aceder à área de cliente"
+    "clientAreaLink": "Aceder à área de cliente",
+    "companyHours": "Horário"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "Estado do orçamento",
     "logActions.quoteAssign": "Atribuição de orçamento",
     "logActions.quoteReply": "Resposta ao orçamento"
+  },
+  "founders": {
+    "founder": "Fundador",
+    "cofounder": "Cofundador"
   }
 }

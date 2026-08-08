@@ -157,7 +157,7 @@
     "companyAbout": "Strona główna",
     "companyMethod": "Metoda",
     "companyContact": "Kontakt",
-    "rights": "© {year} CORE829 — Wszelkie prawa zastrzeżone.",
+    "rights": "© {year} CORE829 SRL — Wszelkie prawa zastrzeżone.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "Polityka prywatności",
     "terms": "Regulamin",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "Poproś o wycenę",
-    "clientAreaLink": "Wejdź do strefy klienta"
+    "clientAreaLink": "Wejdź do strefy klienta",
+    "companyHours": "Godziny pracy"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "Status wyceny",
     "logActions.quoteAssign": "Przypisanie wyceny",
     "logActions.quoteReply": "Odpowiedź na wycenę"
+  },
+  "founders": {
+    "founder": "Założyciel",
+    "cofounder": "Współzałożyciel"
   }
 }

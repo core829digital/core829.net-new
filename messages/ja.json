@@ -157,7 +157,7 @@
     "companyAbout": "ホーム",
     "companyMethod": "進め方",
     "companyContact": "お問い合わせ",
-    "rights": "© {year} CORE829 — All rights reserved.",
+    "rights": "© {year} CORE829 SRL — All rights reserved.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "プライバシーポリシー",
     "terms": "利用規約",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "見積りを依頼",
-    "clientAreaLink": "クライアントエリアへ"
+    "clientAreaLink": "クライアントエリアへ",
+    "companyHours": "営業時間"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "見積依頼ステータス",
     "logActions.quoteAssign": "見積依頼の割り当て",
     "logActions.quoteReply": "見積依頼への返信"
+  },
+  "founders": {
+    "founder": "創業者",
+    "cofounder": "共同創業者"
   }
 }

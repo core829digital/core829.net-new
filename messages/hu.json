@@ -157,7 +157,7 @@
     "companyAbout": "Kezdőlap",
     "companyMethod": "Módszer",
     "companyContact": "Kapcsolat",
-    "rights": "© {year} CORE829 — Minden jog fenntartva.",
+    "rights": "© {year} CORE829 SRL — Minden jog fenntartva.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "Adatvédelmi nyilatkozat",
     "terms": "Szolgáltatási feltételek",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "Árajánlat kérése",
-    "clientAreaLink": "Belépés az ügyfélfelületre"
+    "clientAreaLink": "Belépés az ügyfélfelületre",
+    "companyHours": "Nyitvatartás"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "Árajánlat állapota",
     "logActions.quoteAssign": "Árajánlat hozzárendelése",
     "logActions.quoteReply": "Válasz az árajánlatra"
+  },
+  "founders": {
+    "founder": "Alapító",
+    "cofounder": "Társalapító"
   }
 }

@@ -157,7 +157,7 @@
     "companyAbout": "Domov",
     "companyMethod": "Metóda",
     "companyContact": "Kontakt",
-    "rights": "© {year} CORE829 — Všetky práva vyhradené.",
+    "rights": "© {year} CORE829 SRL — Všetky práva vyhradené.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "Zásady ochrany osobných údajov",
     "terms": "Podmienky služby",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "Vyžiadať ponuku",
-    "clientAreaLink": "Vstúpiť do klientskej zóny"
+    "clientAreaLink": "Vstúpiť do klientskej zóny",
+    "companyHours": "Otváracie hodiny"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "Stav ponuky",
     "logActions.quoteAssign": "Priradenie ponuky",
     "logActions.quoteReply": "Odpoveď na ponuku"
+  },
+  "founders": {
+    "founder": "Zakladateľ",
+    "cofounder": "Spoluzakladateľ"
   }
 }

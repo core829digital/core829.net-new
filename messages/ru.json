@@ -157,7 +157,7 @@
     "companyAbout": "Главная",
     "companyMethod": "Метод",
     "companyContact": "Контакты",
-    "rights": "© {year} CORE829 — Все права защищены.",
+    "rights": "© {year} CORE829 SRL — Все права защищены.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "Политика конфиденциальности",
     "terms": "Условия обслуживания",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "Запросить расчёт",
-    "clientAreaLink": "Войти в клиентскую зону"
+    "clientAreaLink": "Войти в клиентскую зону",
+    "companyHours": "Часы работы"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "Статус заявки",
     "logActions.quoteAssign": "Назначение заявки",
     "logActions.quoteReply": "Ответ на заявку"
+  },
+  "founders": {
+    "founder": "Основатель",
+    "cofounder": "Сооснователь"
   }
 }

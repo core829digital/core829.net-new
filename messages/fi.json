@@ -157,7 +157,7 @@
     "companyAbout": "Etusivu",
     "companyMethod": "Menetelmä",
     "companyContact": "Yhteystiedot",
-    "rights": "© {year} CORE829 — Kaikki oikeudet pidätetään.",
+    "rights": "© {year} CORE829 SRL — Kaikki oikeudet pidätetään.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Palvelun ehdot",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "Pyydä tarjous",
-    "clientAreaLink": "Siirry asiakasalueelle"
+    "clientAreaLink": "Siirry asiakasalueelle",
+    "companyHours": "Aukioloajat"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "Tarjouspyynnön tila",
     "logActions.quoteAssign": "Tarjouspyynnön myöntö",
     "logActions.quoteReply": "Vastaus tarjouspyyntöön"
+  },
+  "founders": {
+    "founder": "Perustaja",
+    "cofounder": "Osaperustaja"
   }
 }

@@ -157,7 +157,7 @@
     "companyAbout": "Ana Sayfa",
     "companyMethod": "Yöntem",
     "companyContact": "İletişim",
-    "rights": "© {year} CORE829 — Tüm hakları saklıdır.",
+    "rights": "© {year} CORE829 SRL — Tüm hakları saklıdır.",
     "vat": "CORE829 SRL — Reg. Com. J2026029428009 · CUI/CIF 54616345",
     "privacy": "Gizlilik Politikası",
     "terms": "Hizmet Koşulları",
@@ -535,7 +535,8 @@
     "companyAddress": "Registered office",
     "companyPhones": "Phones",
     "ctaButton": "Teklif iste",
-    "clientAreaLink": "Müşteri alanına girin"
+    "clientAreaLink": "Müşteri alanına girin",
+    "companyHours": "Çalışma Saatleri"
   },
   "aboutPage": {
     "kicker": "About",
@@ -873,5 +874,9 @@
     "logActions.quoteStatus": "Teklif durumu",
     "logActions.quoteAssign": "Teklif ataması",
     "logActions.quoteReply": "Teklif yanıtı"
+  },
+  "founders": {
+    "founder": "Kurucu",
+    "cofounder": "Kurucu Ortak"
   }
 }

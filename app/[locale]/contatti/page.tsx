@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/Button";
-import { COMPANY, EMAILS } from "@/lib/constants";
+import { COMPANY, EMAILS, FOUNDERS } from "@/lib/constants";
 
 export async function generateMetadata({
   params,
@@ -26,6 +26,7 @@ export default async function ContattiPage({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "contactPage" });
   const tEmails = await getTranslations({ locale, namespace: "contactEmails" });
+  const tFounders = await getTranslations({ locale, namespace: "founders" });
 
   return (
     <main>
@@ -77,23 +78,46 @@ export default async function ContattiPage({
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted">
-                {t("companyPhones")}
+                {t("companyHours")}
               </p>
-              <p className="mt-2 space-y-1 text-sm leading-relaxed text-foreground">
-                <a
-                  href={`tel:${COMPANY.phoneRo.replace(/\s/g, "")}`}
-                  className="block transition-colors hover:text-accent"
-                >
-                  RO {COMPANY.phoneRo}
-                </a>
-                <a
-                  href={`tel:${COMPANY.phoneIt.replace(/\s/g, "")}`}
-                  className="block transition-colors hover:text-accent"
-                >
-                  IT {COMPANY.phoneIt}
-                </a>
+              <p className="mt-2 text-sm leading-relaxed text-foreground">
+                {COMPANY.hours}
               </p>
             </div>
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 gap-6 border-t border-border pt-6 sm:grid-cols-2">
+            {FOUNDERS.map((person) => (
+              <div key={person.key}>
+                <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted">
+                  {tFounders(person.key)}
+                </p>
+                <p className="mt-2 text-sm font-medium text-foreground">
+                  {person.name}
+                </p>
+                <p className="mt-1 space-y-1 text-sm leading-relaxed text-foreground-muted">
+                  {person.phones.map((phone) => (
+                    <a
+                      key={phone}
+                      href={`tel:${phone.replace(/\s/g, "")}`}
+                      className="block transition-colors hover:text-accent"
+                    >
+                      {phone}
+                    </a>
+                  ))}
+                  {person.whatsapp && (
+                    <a
+                      href={`https://wa.me/${person.whatsapp.replace(/[^\d]/g, "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block transition-colors hover:text-accent"
+                    >
+                      WhatsApp: {person.whatsapp}
+                    </a>
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 

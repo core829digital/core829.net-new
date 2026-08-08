@@ -666,7 +666,7 @@
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
     "scopeTitle": "Tek bir sınır, net bir şekilde belirtilmiş",
-    "scopeDesc": "Teslimatlarımız, NVIDIA'nın resmi ihracat düzenlemelerini ve ABD ihracat kontrol yasasını (EAR) takip eder. Bu nedenle yalnızca Avrupa ve Amerika içinde gönderim yapıyoruz — ve aşağıda listelenen ambargo uygulanan bölgelere gönderim yapamıyoruz.",
+    "scopeDesc": "Yalnızca Avrupa ve Amerika'ya teslimat yapıyoruz.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -681,17 +681,7 @@
     "docsLanguageNote": "Belge İngilizcedir.",
     "viewPdf": "PDF Görüntüle",
     "downloadPdf": "PDF İndir",
-    "scopeRestrictedTitle": "Gönderim yapamadığımız bölgeler",
-    "scopeRestricted": [
-      "Küba",
-      "İran",
-      "Kuzey Kore",
-      "Suriye",
-      "Rusya",
-      "Belarus",
-      "Ukrayna'nın işgal altındaki toprakları (Kırım, Donetsk, Luhansk, Zaporijya, Herson)"
-    ],
-    "scopeRegulationsLink": "NVIDIA'nın resmi ihracat düzenlemeleri"
+    "scopeDocsNote": "Diğer ülkeler için aşağıdaki Advanced IC Certifications belgelerine bakın."
   },
   "servicesDetail": {
     "back": "All services",

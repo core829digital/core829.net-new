@@ -666,7 +666,7 @@
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "Cele mai căutate GPU-uri pentru AI și randare: platforma standard pentru accelerarea celor mai grele sarcini de lucru.",
     "scopeTitle": "O singură limită, exprimată clar",
-    "scopeDesc": "Livrările noastre respectă reglementările oficiale de export NVIDIA și legislația SUA privind controlul exporturilor (EAR). Din acest motiv, livrăm doar în Europa și America — și nu putem livra către destinațiile aflate sub embargou, enumerate mai jos.",
+    "scopeDesc": "Livrăm doar în Europa și America.",
     "carouselTitle": "De la proiectare la livrare",
     "carouselIntro": "Fiecare server urmează același drum: solicitare, proiectare, build gestionat și verificare finală înainte de livrare.",
     "ctaTitle": "Spune-ne despre proiectul tău",
@@ -681,17 +681,7 @@
     "docsLanguageNote": "Document în limba engleză.",
     "viewPdf": "Vizualizează PDF",
     "downloadPdf": "Descarcă PDF",
-    "scopeRestrictedTitle": "Destinații către care nu livrăm",
-    "scopeRestricted": [
-      "Cuba",
-      "Iran",
-      "Coreea de Nord",
-      "Siria",
-      "Rusia",
-      "Belarus",
-      "Teritoriile ocupate ale Ucrainei (Crimeea, Donețk, Luhansk, Zaporijjea, Herson)"
-    ],
-    "scopeRegulationsLink": "Reglementările oficiale de export NVIDIA"
+    "scopeDocsNote": "Pentru alte țări, consultați documentația Advanced IC Certifications de mai jos."
   },
   "servicesDetail": {
     "back": "Toate serviciile",

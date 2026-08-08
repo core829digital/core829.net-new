@@ -666,7 +666,7 @@
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "Les GPU les plus demandées pour l'IA et le rendu : la plateforme standard pour accélérer les workloads les plus lourds.",
     "scopeTitle": "Une seule limite, dite clairement",
-    "scopeDesc": "Nos livraisons suivent les réglementations officielles d'exportation de NVIDIA et la législation américaine de contrôle des exportations (EAR). C'est pourquoi nous expédions uniquement en Europe et en Amérique — et nous ne pouvons pas livrer vers les destinations soumises à embargo énumérées ci-dessous.",
+    "scopeDesc": "Nous expédions uniquement en Europe et en Amérique.",
     "carouselTitle": "De la conception à la livraison",
     "carouselIntro": "Chaque serveur suit le même parcours : demande, conception, build géré et vérification finale avant la livraison.",
     "ctaTitle": "Parlez-nous de votre projet",
@@ -681,17 +681,7 @@
     "docsLanguageNote": "Document en anglais.",
     "viewPdf": "Voir le PDF",
     "downloadPdf": "Télécharger le PDF",
-    "scopeRestrictedTitle": "Destinations vers lesquelles nous ne pouvons pas expédier",
-    "scopeRestricted": [
-      "Cuba",
-      "Iran",
-      "Corée du Nord",
-      "Syrie",
-      "Russie",
-      "Biélorussie",
-      "Territoires occupés d'Ukraine (Crimée, Donetsk, Louhansk, Zaporijjia, Kherson)"
-    ],
-    "scopeRegulationsLink": "Réglementations officielles d'exportation de NVIDIA"
+    "scopeDocsNote": "Pour les autres pays, consultez la documentation Advanced IC Certifications ci-dessous."
   },
   "servicesDetail": {
     "back": "Tous les services",

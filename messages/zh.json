@@ -666,7 +666,7 @@
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
     "scopeTitle": "只有一个限制，明确说明",
-    "scopeDesc": "我们的发货遵循 NVIDIA 官方出口法规和美国出口管制法律（EAR）。因此，我们仅在欧洲和美洲范围内发货——并且无法向下列受禁运的目的地发货。",
+    "scopeDesc": "我们仅在欧洲和美洲发货。",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -681,17 +681,7 @@
     "docsLanguageNote": "文档为英文。",
     "viewPdf": "查看 PDF",
     "downloadPdf": "下载 PDF",
-    "scopeRestrictedTitle": "我们无法发货的目的地",
-    "scopeRestricted": [
-      "古巴",
-      "伊朗",
-      "朝鲜",
-      "叙利亚",
-      "俄罗斯",
-      "白俄罗斯",
-      "乌克兰被占领土（克里米亚、顿涅茨克、卢甘斯克、扎波罗热、赫尔松）"
-    ],
-    "scopeRegulationsLink": "NVIDIA 官方出口法规"
+    "scopeDocsNote": "其他国家/地区请参阅下方的 Advanced IC Certifications 文档。"
   },
   "servicesDetail": {
     "back": "All services",

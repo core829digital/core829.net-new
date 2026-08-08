@@ -666,7 +666,7 @@
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
     "scopeTitle": "Yksi ainoa rajoitus, selkeästi ilmaistuna",
-    "scopeDesc": "Toimituksemme noudattavat NVIDIA:n virallisia vientisääntöjä ja Yhdysvaltain vientivalvontalakia (EAR). Tästä syystä toimitamme vain Eurooppaan ja Amerikkaan — emmekä voi toimittaa alla lueteltuihin pakotettuihin kohteisiin.",
+    "scopeDesc": "Toimitamme vain Eurooppaan ja Amerikkaan.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -681,17 +681,7 @@
     "docsLanguageNote": "Asiakirja on englanniksi.",
     "viewPdf": "Näytä PDF",
     "downloadPdf": "Lataa PDF",
-    "scopeRestrictedTitle": "Kohteet, joihin emme voi toimittaa",
-    "scopeRestricted": [
-      "Kuuba",
-      "Iran",
-      "Pohjois-Korea",
-      "Syyria",
-      "Venäjä",
-      "Valko-Venäjä",
-      "Ukrainan miehitetyt alueet (Krim, Donetsk, Luhansk, Zaporižžja, Herson)"
-    ],
-    "scopeRegulationsLink": "NVIDIA:n viralliset vientisäännöt"
+    "scopeDocsNote": "Muiden maiden osalta tutustu alla olevaan Advanced IC Certifications -dokumentaatioon."
   },
   "servicesDetail": {
     "back": "All services",

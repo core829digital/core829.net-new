@@ -666,7 +666,7 @@
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
     "scopeTitle": "Ένα μόνο όριο, δηλωμένο με σαφήνεια",
-    "scopeDesc": "Οι παραδόσεις μας ακολουθούν τους επίσημους κανονισμούς εξαγωγών της NVIDIA και τη νομοθεσία ελέγχου εξαγωγών των ΗΠΑ (EAR). Για τον λόγο αυτόν αποστέλλουμε μόνο εντός Ευρώπης και Αμερικής — και δεν μπορούμε να αποστείλουμε στους υπό εμπάργκο προορισμούς που αναφέρονται παρακάτω.",
+    "scopeDesc": "Αποστέλλουμε μόνο στην Ευρώπη και την Αμερική.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -681,17 +681,7 @@
     "docsLanguageNote": "Το έγγραφο είναι στα αγγλικά.",
     "viewPdf": "Προβολή PDF",
     "downloadPdf": "Λήψη PDF",
-    "scopeRestrictedTitle": "Προορισμοί στους οποίους δεν μπορούμε να αποστείλουμε",
-    "scopeRestricted": [
-      "Κούβα",
-      "Ιράν",
-      "Βόρεια Κορέα",
-      "Συρία",
-      "Ρωσία",
-      "Λευκορωσία",
-      "Κατεχόμενα εδάφη της Ουκρανίας (Κριμαία, Ντόνετσκ, Λουχάνσκ, Ζαπορίζια, Χερσώνα)"
-    ],
-    "scopeRegulationsLink": "Επίσημοι κανονισμοί εξαγωγών της NVIDIA"
+    "scopeDocsNote": "Για άλλες χώρες, συμβουλευτείτε την τεκμηρίωση Advanced IC Certifications παρακάτω."
   },
   "servicesDetail": {
     "back": "All services",

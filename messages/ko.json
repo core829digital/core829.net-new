@@ -666,7 +666,7 @@
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
     "scopeTitle": "단 하나의 제한, 명확하게 명시됨",
-    "scopeDesc": "당사의 배송은 NVIDIA 공식 수출 규정과 미국 수출통제법(EAR)을 따릅니다. 이에 따라 당사는 유럽과 아메리카 내에서만 배송하며, 아래에 나열된 금수 대상 지역에는 배송할 수 없습니다.",
+    "scopeDesc": "유럽과 미국에만 배송합니다.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -681,17 +681,7 @@
     "docsLanguageNote": "이 문서는 영어로 작성되었습니다.",
     "viewPdf": "PDF 보기",
     "downloadPdf": "PDF 다운로드",
-    "scopeRestrictedTitle": "배송이 불가한 지역",
-    "scopeRestricted": [
-      "쿠바",
-      "이란",
-      "북한",
-      "시리아",
-      "러시아",
-      "벨라루스",
-      "우크라이나 점령 지역(크림, 도네츠크, 루한스크, 자포리자, 헤르손)"
-    ],
-    "scopeRegulationsLink": "NVIDIA 공식 수출 규정"
+    "scopeDocsNote": "기타 국가는 아래 Advanced IC Certifications 문서를 참조하십시오."
   },
   "servicesDetail": {
     "back": "All services",

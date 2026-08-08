@@ -318,27 +318,11 @@ export default function ServerServicePage() {
               <p className="text-base leading-relaxed text-foreground-muted">
                 {t("scopeDesc")}
               </p>
-              <p className="text-sm font-semibold uppercase tracking-widest text-foreground">
-                {t("scopeRestrictedTitle")}
-              </p>
-              <ul className="grid gap-2 sm:grid-cols-2">
-                {t.raw("scopeRestricted").map((country: string) => (
-                  <li
-                    key={country}
-                    className="flex items-start gap-2 text-sm leading-relaxed text-foreground-muted"
-                  >
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" aria-hidden />
-                    {country}
-                  </li>
-                ))}
-              </ul>
               <a
-                href="https://www.nvidia.com/en-us/about-nvidia/company-policies/export-regulations/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#certifications"
                 className="inline-flex items-center gap-1 text-sm font-medium text-foreground underline decoration-accent/50 underline-offset-4 transition-colors hover:text-accent"
               >
-                {t("scopeRegulationsLink")}
+                {t("scopeDocsNote")}
                 <ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden />
               </a>
             </div>
@@ -346,6 +330,7 @@ export default function ServerServicePage() {
         </RevealOnScroll>
 
         {/* Documenti e certificazioni */}
+        <div id="certifications" className="scroll-mt-24">
         <RevealOnScroll className="mt-16">
           <p className="kicker">{t("docsKicker")}</p>
           <h2 className="mt-4 text-section-title">{t("docsTitle")}</h2>
@@ -390,6 +375,7 @@ export default function ServerServicePage() {
             ))}
           </div>
         </RevealOnScroll>
+        </div>
       </section>
 
       {/* CTA */}

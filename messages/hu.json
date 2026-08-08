@@ -666,7 +666,7 @@
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
     "scopeTitle": "Egyetlen korlátozás, világosan megfogalmazva",
-    "scopeDesc": "Szállításaink a NVIDIA hivatalos export-előírásait és az amerikai exportellenőrzési törvényt (EAR) követik. Emiatt csak Európán és Amerikán belül szállítunk — és nem tudunk szállítani az alább felsorolt embargó alatt álló célállomásokra.",
+    "scopeDesc": "Csak Európába és Amerikába szállítunk.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -681,17 +681,7 @@
     "docsLanguageNote": "A dokumentum angol nyelvű.",
     "viewPdf": "PDF megtekintése",
     "downloadPdf": "PDF letöltése",
-    "scopeRestrictedTitle": "Célállomások, ahová nem tudunk szállítani",
-    "scopeRestricted": [
-      "Kuba",
-      "Irán",
-      "Észak-Korea",
-      "Szíria",
-      "Oroszország",
-      "Fehéroroszország",
-      "Ukrajna megszállt területei (Krím, Doneck, Luhanszk, Zaporizzsja, Herszon)"
-    ],
-    "scopeRegulationsLink": "A NVIDIA hivatalos export-előírásai"
+    "scopeDocsNote": "Más országok esetén tekintse meg az alábbi Advanced IC Certifications dokumentációt."
   },
   "servicesDetail": {
     "back": "All services",

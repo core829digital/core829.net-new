@@ -666,7 +666,7 @@
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
     "scopeTitle": "Én tydelig grænse",
-    "scopeDesc": "Vores leverancer følger de officielle NVIDIA-eksportregler og den amerikanske eksportkontrol (EAR). Derfor sender vi kun inden for Europa og Amerika – og vi kan ikke sende til de embargo-ramte destinationer, der er anført nedenfor.",
+    "scopeDesc": "Vi sender kun til Europa og Amerika.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -681,17 +681,7 @@
     "docsLanguageNote": "Dokumentet er på engelsk.",
     "viewPdf": "Se PDF",
     "downloadPdf": "Download PDF",
-    "scopeRestrictedTitle": "Destinationer, vi ikke kan sende til",
-    "scopeRestricted": [
-      "Cuba",
-      "Iran",
-      "Nordkorea",
-      "Syrien",
-      "Rusland",
-      "Hviderusland",
-      "Besatte områder i Ukraine (Krim, Donetsk, Luhansk, Zaporizjzja, Kherson)"
-    ],
-    "scopeRegulationsLink": "Officielle NVIDIA-eksportregler"
+    "scopeDocsNote": "For andre lande henvises til Advanced IC Certifications-dokumentationen nedenfor."
   },
   "servicesDetail": {
     "back": "All services",

@@ -666,7 +666,7 @@
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
     "scopeTitle": "Jeden jediný limit, stanovený jasně",
-    "scopeDesc": "Naše dodávky se řídí oficiálními vývozními předpisy společnosti NVIDIA a americkým právem pro kontrolu vývozu (EAR). Z tohoto důvodu doručujeme pouze v rámci Evropy a Ameriky — nemůžeme doručovat do níže uvedených destinací, na které se vztahuje embargo.",
+    "scopeDesc": "Zasíláme pouze do Evropy a Ameriky.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -681,17 +681,7 @@
     "docsLanguageNote": "Dokument v angličtině.",
     "viewPdf": "Zobrazit PDF",
     "downloadPdf": "Stáhnout PDF",
-    "scopeRestrictedTitle": "Destinace, do kterých nedoručujeme",
-    "scopeRestricted": [
-      "Kuba",
-      "Írán",
-      "Severní Korea",
-      "Sýrie",
-      "Rusko",
-      "Bělorusko",
-      "Okupovaná území Ukrajiny (Krym, Doněck, Luhansk, Záporoží, Cherson)"
-    ],
-    "scopeRegulationsLink": "Oficiální vývozní předpisy společnosti NVIDIA"
+    "scopeDocsNote": "Pro ostatní země si přečtěte dokumentaci Advanced IC Certifications níže."
   },
   "servicesDetail": {
     "back": "All services",

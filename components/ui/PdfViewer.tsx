@@ -1,8 +1,9 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { X } from "lucide-react";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import type { PDFDocumentProxy } from "pdfjs-dist";
 
 interface PdfViewerProps {
   src: string;
@@ -11,48 +12,139 @@ interface PdfViewerProps {
   onClose: () => void;
 }
 
+type RenderStatus = "loading" | "ready" | "error";
+
 /**
  * Lettore PDF integrato (modal a schermo intero).
  *
- * Il PDF viene scaricato via fetch e mostrato come blob URL: la risposta
- * blob non eredita gli header di sicurezza (X-Frame-Options / CSP
- * frame-ancestors) del server, quindi il lettore PDF nativo del browser
- * può renderizzarlo dentro l'iframe senza essere bloccato.
+ * A differenza di un <iframe> (che su molti browser mobile non renderizza
+ * i PDF e mostra una schermata bianca), questo lettore scarica il file e
+ * lo rasterizza su <canvas> con PDF.js. Funziona su desktop e mobile.
  */
 export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps) {
-  const [blobUrl, setBlobUrl] = useState<string | null>(null);
+  const [status, setStatus] = useState<RenderStatus>("loading");
+  const [pageCount, setPageCount] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const pageRefs = useRef<(HTMLCanvasElement | null)[]>([]);
+  const docRef = useRef<PDFDocumentProxy | null>(null);
 
   useEffect(() => {
     if (!open) return;
     let cancelled = false;
-    let objectUrl: string | null = null;
 
-    setBlobUrl(null);
-    fetch(src)
-      .then((res) => {
+    setStatus("loading");
+    setPageCount(0);
+    setCurrentPage(1);
+
+    (async () => {
+      try {
+        const res = await fetch(src);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.blob();
-      })
-      .then((blob) => {
+        const buffer = await res.arrayBuffer();
         if (cancelled) return;
-        objectUrl = URL.createObjectURL(blob);
-        setBlobUrl(objectUrl);
-      })
-      .catch(() => {
-        if (!cancelled) setBlobUrl(src);
-      });
+
+        const pdfjs = await import("pdfjs-dist");
+        pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
+
+        const loadingTask = pdfjs.getDocument({ data: new Uint8Array(buffer) });
+        const doc = await loadingTask.promise;
+        if (cancelled) {
+          void loadingTask.destroy();
+          return;
+        }
+        docRef.current = doc;
+        setPageCount(doc.numPages);
+        setStatus("ready");
+      } catch {
+        if (!cancelled) setStatus("error");
+      }
+    })();
 
     return () => {
       cancelled = true;
-      if (objectUrl) URL.revokeObjectURL(objectUrl);
+      if (docRef.current?.loadingTask) void docRef.current.loadingTask.destroy();
+      docRef.current = null;
     };
   }, [src, open]);
+
+  const renderPage = useCallback(async (pageNumber: number) => {
+    const doc = docRef.current;
+    const canvas = pageRefs.current[pageNumber - 1];
+    if (!doc || !canvas || !scrollRef.current) return;
+
+    const containerWidth = scrollRef.current.clientWidth;
+    const page = await doc.getPage(pageNumber);
+    const base = page.getViewport({ scale: 1 });
+    const scale = containerWidth / base.width;
+    const viewport = page.getViewport({ scale });
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    canvas.width = Math.floor(viewport.width * dpr);
+    canvas.height = Math.floor(viewport.height * dpr);
+    canvas.style.width = `${Math.floor(viewport.width)}px`;
+    canvas.style.height = `${Math.floor(viewport.height)}px`;
+
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+    await page.render({
+      canvas,
+      canvasContext: ctx,
+      viewport,
+      transform: dpr !== 1 ? [dpr, 0, 0, dpr, 0, 0] : undefined,
+    }).promise;
+  }, []);
+
+  useEffect(() => {
+    if (status !== "ready" || pageCount === 0) return;
+    let cancelled = false;
+
+    (async () => {
+      for (let n = 1; n <= pageCount; n++) {
+        if (cancelled) return;
+        await renderPage(n);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [status, pageCount, renderPage]);
+
+  useEffect(() => {
+    if (status !== "ready") return;
+    const el = scrollRef.current;
+    if (!el) return;
+    let resizeTimer: ReturnType<typeof setTimeout>;
+    const onResize = () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        for (let n = 1; n <= pageCount; n++) void renderPage(n);
+      }, 200);
+    };
+    window.addEventListener("resize", onResize);
+    return () => {
+      clearTimeout(resizeTimer);
+      window.removeEventListener("resize", onResize);
+    };
+  }, [status, pageCount, renderPage]);
+
+  const goToPage = useCallback(
+    (n: number) => {
+      const target = Math.min(Math.max(1, n), pageCount);
+      setCurrentPage(target);
+      pageRefs.current[target - 1]?.scrollIntoView({ block: "start", behavior: "smooth" });
+    },
+    [pageCount]
+  );
 
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
+      if (e.key === "ArrowRight" && status === "ready") goToPage(currentPage + 1);
+      if (e.key === "ArrowLeft" && status === "ready") goToPage(currentPage - 1);
     },
-    [onClose]
+    [onClose, status, currentPage, goToPage]
   );
 
   useEffect(() => {
@@ -64,6 +156,9 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [open, handleKeyDown]);
+
+  const hasPrev = currentPage > 1;
+  const hasNext = currentPage < pageCount;
 
   return (
     <AnimatePresence>
@@ -107,16 +202,61 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
               </button>
             </div>
 
-            <div className="mt-4 flex min-h-0 flex-1 border border-border bg-surface">
-              {blobUrl ? (
-                <iframe
-                  src={blobUrl}
-                  title={title}
-                  className="h-full w-full"
-                />
-              ) : (
+            <div className="mt-4 flex min-h-0 flex-1 flex-col border border-border bg-surface">
+              <div className="flex items-center justify-between gap-3 border-b border-border px-4 py-3">
+                <button
+                  type="button"
+                  onClick={() => goToPage(currentPage - 1)}
+                  disabled={!hasPrev}
+                  className="inline-flex items-center gap-1 border border-border px-3 py-2 text-xs font-medium text-foreground transition-colors duration-300 hover:border-accent hover:text-accent disabled:cursor-not-allowed disabled:opacity-40"
+                  aria-label="Pagina precedente"
+                >
+                  <ChevronLeft className="h-4 w-4" aria-hidden />
+                  <span className="hidden sm:inline">Prev</span>
+                </button>
+                <p className="font-mono text-xs tabular-nums text-foreground-muted">
+                  {status === "ready" ? `${currentPage} / ${pageCount}` : "…"}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => goToPage(currentPage + 1)}
+                  disabled={!hasNext}
+                  className="inline-flex items-center gap-1 border border-border px-3 py-2 text-xs font-medium text-foreground transition-colors duration-300 hover:border-accent hover:text-accent disabled:cursor-not-allowed disabled:opacity-40"
+                  aria-label="Pagina successiva"
+                >
+                  <span className="hidden sm:inline">Next</span>
+                  <ChevronRight className="h-4 w-4" aria-hidden />
+                </button>
+              </div>
+
+              {status === "loading" && (
                 <div className="flex flex-1 items-center justify-center text-sm text-foreground-muted">
                   Loading PDF…
+                </div>
+              )}
+
+              {status === "error" && (
+                <div className="flex flex-1 items-center justify-center text-sm text-foreground-muted">
+                  Unable to load this PDF.
+                </div>
+              )}
+
+              {status === "ready" && (
+                <div
+                  ref={scrollRef}
+                  className="min-h-0 flex-1 overflow-auto overscroll-contain"
+                >
+                  <div className="flex flex-col items-center gap-6 px-2 py-6">
+                    {Array.from({ length: pageCount }, (_, i) => i + 1).map((n) => (
+                      <canvas
+                        key={n}
+                        ref={(el) => {
+                          pageRefs.current[n - 1] = el;
+                        }}
+                        className="max-w-full border border-border bg-white shadow-sm"
+                      />
+                    ))}
+                  </div>
                 </div>
               )}
             </div>

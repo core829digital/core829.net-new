@@ -457,60 +457,116 @@
     "back": "Back to home"
   },
   "privacy": {
-    "title": "Privacy Policy",
+    "title": "Polityka Prywatności",
     "updated": "Last updated: {date}",
-    "intro": "This Privacy Policy explains how CORE829 SRL collects, uses and protects personal data, in compliance with the GDPR (EU Regulation 2016/679).",
+    "intro": "Niniejsza Polityka Prywatności wyjaśnia, w jaki sposób firma CORE829 SRL gromadzi, wykorzystuje i chroni dane osobowe, w pełnej zgodności z RODO (rozporządzenie UE 2016/679) oraz rumuńską ustawą nr 190/2018 o ochronie danych osobowych. Polityka ta ma zastosowanie do strony internetowej core829.net oraz do wszystkich usług świadczonych przez CORE829 SRL.",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, registered in Romania, is the data controller for the personal data collected through this website. You can contact us through the contact form on this site."
+        "title": "1. Administrator danych",
+        "body": "CORE829 SRL, z siedzibą pod adresem Str. Mihai Eminescu, 10, Roman, Rumunia, zarejestrowana w rejestrze handlowym pod numerem J2026029428009, CUI/CIF 54616345, jest administratorem danych osobowych przetwarzanych za pośrednictwem tej strony internetowej oraz jej usług, zgodnie z art. 4 pkt 7 RODO.\nZ administratorem można skontaktować się pocztą elektroniczną pod adresem hello@core829.net lub telefonicznie pod numerami +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Data we collect",
-        "body": "We collect only the data you voluntarily provide through the contact and quote request forms: name, email, company, service of interest, estimated budget and the content of your message."
+        "title": "2. Dane, które gromadzimy",
+        "body": "Gromadzimy wyłącznie dane ściśle niezbędne do celów opisanych poniżej:\n- dane przekazywane dobrowolnie za pośrednictwem formularzy kontaktowych, formularzy zapytania ofertowego i konsultacyjnych: imię i nazwisko, adres e-mail, firma, interesująca usługa, szacowany budżet oraz treść wiadomości;\n- dane przekazywane w ramach stosunku umownego: dane do fakturowania, adres rozliczeniowy, numer NIP, dane kontaktowe;\n- minimalne dane techniczne gromadzone automatycznie: adres IP, typ i wersja przeglądarki, typ urządzenia, odwiedzone strony i znaczniki czasu, wykorzystywane wyłącznie w celu zapewnienia bezpieczeństwa i prawidłowego działania strony internetowej."
       },
       {
-        "title": "3. Purposes of processing",
-        "body": "Data is processed to respond to contact and quote requests, to manage the commercial relationship and to fulfill legal obligations. We never sell your data."
+        "title": "3. Cele przetwarzania",
+        "body": "Pana(-i) dane osobowe są przetwarzane w następujących celach:\n- odpowiadanie na prośby kontaktowe i zapytania ofertowe oraz zarządzanie relacją przedumowną;\n- świadczenie i zarządzanie zamówionymi usługami (Serwery indywidualne, Automatyzacje B2B, Projektowanie stron WWW, Aplikacje internetowe, Oprogramowanie wykonywalne, Indeksacja SEO, Marketing 360° organiczny i płatny);\n- fakturowanie, księgowość i wypełnianie obowiązków prawnych;\n- bezpieczeństwo i doskonalenie strony internetowej oraz usług;\n- wysyłanie komunikatów handlowych wyłącznie w przypadku udzielenia wyraźnej zgody.\nNigdy nie sprzedajemy ani nie wynajmujemy Państwa danych osobowych podmiotom trzecim."
       },
       {
-        "title": "4. Legal basis",
-        "body": "The legal basis is the consent you give when submitting a form and the legitimate interest in responding to business requests (Art. 6 GDPR)."
+        "title": "4. Podstawa prawna",
+        "body": "Przetwarzanie danych osobowych opiera się na następujących podstawach prawnych:\n- zgoda wyrażona przy wysyłaniu formularza lub subskrybowaniu komunikatów (art. 6 ust. 1 lit. a RODO);\n- wykonanie umowy lub środki przedumowne podejmowane na żądanie osoby, której dane dotyczą (art. 6 ust. 1 lit. b RODO);\n- wypełnienie obowiązku prawnego ciążącego na administratorze (art. 6 ust. 1 lit. c RODO), na przykład obowiązków księgowych i podatkowych;\n- uzasadniony interes administratora polegający na odpowiadaniu na zapytania biznesowe i zapewnieniu bezpieczeństwa strony internetowej (art. 6 ust. 1 lit. f RODO)."
       },
       {
-        "title": "5. Retention",
-        "body": "Data is kept for the time necessary for the purposes described, and in any case no longer than required by law."
+        "title": "5. Odbiorcy i podmioty przetwarzające",
+        "body": "Pana(-i) dane osobowe mogą zostać przekazane, wyłącznie w razie potrzeby i w minimalnie wymaganym zakresie, następującym podmiotom:\n- dostawcom usług hostingowych, poczty elektronicznej i komunikacyjnych;\n- dostawcom usług płatniczych i fakturowania;\n- profesjonalnym doradcom (prawnym, księgowym) zobowiązanym do zachowania tajemnicy zawodowej;\n- właściwym organom publicznym, gdy wymaga tego prawo.\nWszyscy podmioty przetwarzające są związane umowami powierzenia przetwarzania danych (DPA) i mogą przetwarzać dane wyłącznie zgodnie z naszymi udokumentowanymi instrukcjami."
       },
       {
-        "title": "6. Your rights",
-        "body": "You have the right to access, rectify, delete and port your data, and to object to its processing. You can exercise these rights by contacting us."
+        "title": "6. Międzynarodowe przekazywanie danych",
+        "body": "Nie przekazujemy Państwa danych osobowych poza Europejski Obszar Gospodarczy (EOG). Jeżeli zewnętrzni dostawcy usług przetwarzają dane w naszym imieniu, są związani odpowiednimi umowami powierzenia przetwarzania danych, a w przypadku przekazania poza EOG — odpowiednimi zabezpieczeniami zgodnie z rozdziałem V RODO."
+      },
+      {
+        "title": "7. Okres przechowywania danych",
+        "body": "Dane osobowe gromadzone za pośrednictwem formularzy są przechowywane wyłącznie przez czas niezbędny do udzielenia odpowiedzi na zapytania i zarządzania ewentualną relacją umowną, w każdym razie nie dłużej niż wymaga tego prawo.\nDane księgowe i podatkowe są przechowywane przez okresy wymagane obowiązującymi przepisami prawa. Po upływie okresu przechowywania dane są bezpiecznie usuwane lub anonimizowane."
+      },
+      {
+        "title": "8. Państwa prawa",
+        "body": "Zgodnie z RODO przysługuje Państwu prawo do:\n- dostępu do swoich danych osobowych (art. 15);\n- sprostowania nieprawidłowych danych (art. 16);\n- usunięcia swoich danych (art. 17);\n- ograniczenia przetwarzania (art. 18);\n- przenoszenia danych (art. 20);\n- wniesienia sprzeciwu wobec przetwarzania (art. 21);\n- wycofania zgody w dowolnym momencie, bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej wycofaniem.\nPrawa te można wykonać, pisząc na adres hello@core829.net. Odpowiemy w ciągu 30 dni."
+      },
+      {
+        "title": "9. Bezpieczeństwo danych",
+        "body": "Wdrażamy odpowiednie środki techniczne i organizacyjne w celu ochrony Państwa danych osobowych przed nieuprawnionym dostępem, zmianą, ujawnieniem lub zniszczeniem, zgodnie z art. 32 RODO. Środki te obejmują bezpieczną komunikację (HTTPS), kontrolę dostępu oraz okresowe przeglądy naszych praktyk bezpieczeństwa."
+      },
+      {
+        "title": "10. Zmiany niniejszej polityki",
+        "body": "Niniejsza Polityka Prywatności może być od czasu do czasu aktualizowana. Wszelkie zmiany zostaną opublikowane na tej stronie wraz z datą aktualizacji. Zachęcamy do okresowego przeglądania tej strony."
+      },
+      {
+        "title": "11. Skargi",
+        "body": "Jeżeli uważają Państwo, że przetwarzanie danych osobowych narusza RODO, przysługuje Państwu prawo wniesienia skargi do rumuńskiego Krajowego Organu Nadzorczego ds. Przetwarzania Danych Osobowych (ANSPDCP), Str. G-ral Gheorghe Magheru 28-30, Bukareszt, Rumunia, lub do organu nadzorczego właściwego dla miejsca Państwa zamieszkania."
       }
     ]
   },
   "terms": {
-    "title": "Terms of Service",
+    "title": "Warunki świadczenia usług",
     "updated": "Last updated: {date}",
-    "intro": "These Terms of Service govern the use of the website core829.net and of CORE829 SRL services.",
+    "intro": "Niniejsze Warunki świadczenia usług regulują korzystanie ze strony internetowej core829.net oraz usług świadczonych przez CORE829 SRL. Korzystając ze strony internetowej lub zamawiając jakąkolwiek usługę, akceptują Państwo niniejsze warunki. Jeśli się Państwo nie zgadzają, prosimy o niekorzystanie ze strony internetowej ani z jej usług.",
     "sections": [
       {
-        "title": "1. Acceptance of terms",
-        "body": "By accessing this website you accept these terms. If you do not agree, please do not use the website."
+        "title": "1. Usługodawca",
+        "body": "Strona internetowa core829.net oraz opisane na niej usługi są świadczone przez CORE829 SRL, z siedzibą pod adresem Str. Mihai Eminescu, 10, Roman, Rumunia, zarejestrowaną w rejestrze handlowym pod numerem J2026029428009, CUI/CIF 54616345.\nKontakt: hello@core829.net — +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Services",
-        "body": "CORE829 offers software design and development, web apps, automations, AI systems and digital marketing services. Specific projects are governed by separate agreements."
+        "title": "2. Akceptacja warunków",
+        "body": "Korzystając ze strony internetowej, składając zapytanie ofertowe lub akceptując ofertę, potwierdzają Państwo, że przeczytali, zrozumieli i zaakceptowali niniejsze Warunki świadczenia usług. Konkretne projekty podlegają ponadto odrębnej pisemnej umowie podpisanej przez obie strony, która w razie konfliktu ma pierwszeństwo przed niniejszymi warunkami ogólnymi."
       },
       {
-        "title": "3. Intellectual property",
-        "body": "All content of this website is the property of CORE829 SRL. Deliverables produced for clients are subject to the terms of the individual contract."
+        "title": "3. Oferowane usługi",
+        "body": "CORE829 SRL oferuje następujące usługi:\n- Serwery indywidualne: projektowanie i kompleksowe zarządzanie indywidualnie budowanymi serwerami (AI, renderowanie, przechowywanie danych, gaming, hosting), z komponentami pozyskiwanymi za pośrednictwem partnerów Intel i NVIDIA. CORE829 zarządza projektem, procesem budowy i weryfikacją jakości na żądanie; nie produkuje sprzętu bezpośrednio;\n- Automatyzacje B2B: automatyzacja powtarzalnych procesów w narzędziach i działach biznesowych (CRM, ERP, poczta e-mail, fakturowanie);\n- Projektowanie stron WWW: indywidualne projektowanie interfejsów i stron internetowych oparte na tożsamości marki, wydajności i konwersji;\n- Aplikacje internetowe: indywidualne aplikacje internetowe full-stack, platformy B2B/B2C, narzędzia zarządzania i wertykalne systemy CRM;\n- Oprogramowanie wykonywalne: dedykowane oprogramowanie desktopowe dla potrzeb wertykalnych;\n- Indeksacja SEO: optymalizacja techniczna i treści pod kątem widoczności organicznej;\n- Marketing 360° (organiczny i płatny): organiczne media społecznościowe, strategia treści oraz reklama płatna w Meta Ads i Google Ads."
       },
       {
-        "title": "4. Limitation of liability",
-        "body": "The website is provided 'as is'. CORE829 is not liable for damages arising from the use of the website, to the extent permitted by law."
+        "title": "4. Oferty i umowy",
+        "body": "Oferty są ważne przez okres wskazany w samej ofercie. Projekt rozpoczyna się dopiero po pisemnej akceptacji oferty oraz, w stosownych przypadkach, po podpisaniu szczegółowej umowy projektowej. Ceny, zakres i terminy realizacji są określone w zaakceptowanej ofercie. Wszelkie zmiany zakresu zgłoszone po akceptacji podlegają nowej pisemnej wycenie."
       },
       {
-        "title": "5. Applicable law",
-        "body": "These terms are governed by Romanian law. Any dispute will be subject to the jurisdiction of the competent Romanian courts."
+        "title": "5. Płatności",
+        "body": "Warunki płatności, kwoty i etapy są określone w zaakceptowanej ofercie lub umowie projektowej. O ile nie uzgodniono inaczej, projekty wymagają zaliczki oraz płatności za kolejne etapy. Faktury są płatne w terminie wskazanym na fakturze. Opóźnienia w płatnościach mogą skutkować zawieszeniem usług do czasu uregulowania zaległej kwoty."
+      },
+      {
+        "title": "6. Obowiązki klienta",
+        "body": "Klient zobowiązuje się do terminowego przekazywania wszystkich informacji, treści, dostępów i opinii niezbędnych do świadczenia usług. Opóźnienia spowodowane przez klienta mogą wydłużyć uzgodnione terminy realizacji. Klient gwarantuje, że wszystkie treści i materiały, które przekazuje, nie naruszają praw osób trzecich."
+      },
+      {
+        "title": "7. Dostawa i odbiór",
+        "body": "Efekty prac uważa się za odebrane, gdy klient potwierdzi odbiór na piśmie lub wykorzysta efekt w produkcji bez zastrzeżeń w terminie wskazanym w umowie. Po odbiorze prośby o zmiany traktowane są jako nowa praca podlegająca odrębnej wycenie."
+      },
+      {
+        "title": "8. Własność intelektualna",
+        "body": "Wszystkie treści niniejszej strony internetowej (teksty, grafiki, loga, kod źródłowy strony) są własnością CORE829 SRL i są chronione przepisami prawa autorskiego i prawa własności intelektualnej.\nO ile nie uzgodniono inaczej na piśmie, po pełnej zapłacie klient nabywa prawa do efektów prac wyraźnie wyprodukowanych dla niego, zgodnie z definicją zawartą w umowie projektowej. Zastosowane technologie, frameworki, metodologie i wcześniej istniejący kod pozostają własnością CORE829 SRL i są licencjonowane klientowi w celu korzystania z efektu prac."
+      },
+      {
+        "title": "9. Poufność",
+        "body": "Obie strony zobowiązują się do zachowania poufności wszystkich informacji handlowych, technicznych i osobowych wymienianych podczas negocjacji i realizacji usług oraz do wykorzystywania ich wyłącznie w celu realizacji umowy. Obowiązek ten obowiązuje również po wygaśnięciu umowy."
+      },
+      {
+        "title": "10. Serwery indywidualne — warunki szczególne",
+        "body": "CORE829 nie produkuje ani nie wysyła sprzętu bezpośrednio: projektuje konfigurację, dobiera komponenty za pośrednictwem swojego ekosystemu partnerów (w tym Intel i NVIDIA), koordynuje produkcję i weryfikuje jakość przed dostawą. Dostawa dostępna jest wyłącznie w Europie i Ameryce; zamówienia z innych regionów nie mogą być realizowane.\nSprzęt objęty jest gwarancją producenta, przenoszoną na klienta. CORE829 nie jest stroną gwarancji producenta, lecz udziela rozsądnej pomocy w jej wykonywaniu."
+      },
+      {
+        "title": "11. Gwarancja i ograniczenie odpowiedzialności",
+        "body": "Strona internetowa i usługi są świadczone z należytą starannością zawodową. W najszerszym zakresie dozwolonym przez prawo CORE829 SRL nie ponosi odpowiedzialności za szkody pośrednie, przypadkowe, następcze lub karne, utratę zysków, utratę danych lub przerwę w działalności wynikającą z korzystania ze strony internetowej lub usług, nawet jeśli poinformowano ją o możliwości wystąpienia takich szkód.\nW każdym przypadku łączna odpowiedzialność CORE829 SRL za jakiekolwiek roszczenie związane z projektem nie przekroczy łącznej kwoty zapłaconej przez klienta za ten projekt."
+      },
+      {
+        "title": "12. Siła wyższa",
+        "body": "Żadna ze stron nie ponosi odpowiedzialności za opóźnienie lub niewykonanie swoich zobowiązań, jeżeli opóźnienie lub niewykonanie wynika z okoliczności pozostających poza jej rozsądną kontrolą, w tym między innymi klęsk żywiołowych, pandemii, wojen, strajków, awarii zasilania lub przerw w sieci. Strona dotknięta tymi okolicznościami powiadomi drugą stronę tak szybko, jak to rozsądnie możliwe."
+      },
+      {
+        "title": "13. Rozwiązanie umowy",
+        "body": "Każda ze stron może rozwiązać umowę bez podania przyczyny za pisemnym wypowiedzeniem, zgodnie z postanowieniami szczegółowej umowy. W przypadku istotnego naruszenia nieusuniętego w ciągu 15 dni od pisemnego zawiadomienia strona poszkodowana może rozwiązać umowę i dochodzić odszkodowania. Kwoty należne za już wykonaną pracę pozostają płatne."
+      },
+      {
+        "title": "14. Prawo właściwe i jurysdykcja",
+        "body": "Niniejsze Warunki świadczenia usług podlegają prawu rumuńskiemu. Wszelkie spory wynikające z niniejszych warunków lub usług lub związane z nimi podlegają wyłącznej jurysdykcji właściwych sądów rumuńskich."
       }
     ]
   },
@@ -609,8 +665,8 @@
     "intelDesc": "Processors with the most widespread multiplatform power in the world: reliability and consistent throughput in AI, compute and daily use.",
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
-    "scopeTitle": "One single limit, stated clearly",
-    "scopeDesc": "To guarantee you consistent quality and support, we only ship within Europe and America. If your server must go elsewhere, we unfortunately cannot proceed.",
+    "scopeTitle": "Jeden jedyny limit, wyrażony jasno",
+    "scopeDesc": "Nasze dostawy są zgodne z oficjalnymi przepisami eksportowymi NVIDIA oraz amerykańskim prawem kontroli eksportu (EAR). Z tego powodu wysyłamy wyłącznie na terenie Europy i Ameryki — nie możemy dostarczać do wymienionych poniżej miejsc objętych embargiem.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -624,7 +680,18 @@
     "docsIntro": "Certyfikaty zgodności eksportowej dla naszego niestandardowego sprzętu serwerowego, dostępne dla każdego odwiedzającego.",
     "docsLanguageNote": "Dokument w języku angielskim.",
     "viewPdf": "Wyświetl PDF",
-    "downloadPdf": "Pobierz PDF"
+    "downloadPdf": "Pobierz PDF",
+    "scopeRestrictedTitle": "Miejsca, do których nie możemy wysyłać",
+    "scopeRestricted": [
+      "Kuba",
+      "Iran",
+      "Korea Północna",
+      "Syria",
+      "Rosja",
+      "Białoruś",
+      "Okupowane terytoria Ukrainy (Krym, Donieck, Ługańsk, Zaporoże, Chersoń)"
+    ],
+    "scopeRegulationsLink": "Oficjalne przepisy eksportowe NVIDIA"
   },
   "servicesDetail": {
     "back": "All services",
@@ -638,66 +705,86 @@
     "learnMore": "Dowiedz się więcej"
   },
   "gdpr": {
-    "title": "GDPR",
-    "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
+    "title": "RODO",
+    "updated": "Ostatnia aktualizacja: {date}",
+    "intro": "Niniejsza strona zawiera szczegółowe informacje na temat tego, w jaki sposób CORE829 SRL przetwarza dane osobowe zgodnie z RODO (rozporządzenie UE 2016/679) oraz obowiązującym rumuńskim ustawodawstwem dotyczącym ochrony danych osobowych (ustawa nr 190/2018).",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, with registered office in Romania, is the data controller for the personal data processed through this website and its services. You can contact us through the contact form or by email at hello@core829.net."
+        "title": "1. Administrator danych",
+        "body": "CORE829 SRL, Str. Mihai Eminescu, 10, Roman, Rumunia, rejestr handlowy nr J2026029428009, CUI/CIF 54616345, jest administratorem danych. Można się z nami skontaktować pocztą elektroniczną pod adresem hello@core829.net lub telefonicznie pod numerami +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Data we process",
-        "body": "We process only the data you provide voluntarily through our contact and quote request forms: name, email, company, services of interest, indicative budget and the content of your message. We also process minimal technical data (IP address, browser type) for the security and operation of the website."
+        "title": "2. Dane, które przetwarzamy",
+        "body": "Przetwarzamy dane przekazywane dobrowolnie za pośrednictwem naszych formularzy kontaktowych, zapytań ofertowych i konsultacyjnych: imię i nazwisko, adres e-mail, firma, interesujące usługi, szacowany budżet i treść wiadomości. W trakcie relacji umownej przetwarzamy również dane dotyczące fakturowania i rozliczeń. Przetwarzamy minimalne dane techniczne (adres IP, typ przeglądarki, odwiedzone strony) w celu zapewnienia bezpieczeństwa i działania strony internetowej."
       },
       {
-        "title": "3. Legal basis for processing",
-        "body": "We process personal data on the following legal bases: your consent (art. 6(1)(a) GDPR) for communications; the execution of a contract or pre-contractual measures (art. 6(1)(b) GDPR) for quote requests; legitimate interest (art. 6(1)(f) GDPR) for the security and improvement of the website."
+        "title": "3. Podstawa prawna przetwarzania",
+        "body": "Przetwarzamy dane osobowe na następujących podstawach prawnych:\n- Państwa zgoda (art. 6 ust. 1 lit. a RODO) na komunikaty handlowe;\n- wykonanie umowy lub środki przedumowne (art. 6 ust. 1 lit. b RODO) w przypadku zapytań ofertowych i świadczenia usług;\n- wypełnienie obowiązków prawnych (art. 6 ust. 1 lit. c RODO) do celów księgowych i podatkowych;\n- uzasadniony interes (art. 6 ust. 1 lit. f RODO) w zakresie bezpieczeństwa i doskonalenia strony internetowej."
       },
       {
-        "title": "4. Data subject rights",
-        "body": "Under the GDPR you have the right to access, rectify, erase, restrict and port your personal data, as well as the right to object to the processing. You also have the right to withdraw consent at any time and to lodge a complaint with the competent supervisory authority (ANSPDCP in Romania)."
+        "title": "4. Prawa osób, których dane dotyczą",
+        "body": "Przysługuje Państwu prawo dostępu, sprostowania, usunięcia, ograniczenia i przenoszenia swoich danych osobowych oraz wniesienia sprzeciwu wobec ich przetwarzania. Mogą Państwo wycofać zgodę w dowolnym momencie. Prawa te można wykonać, pisząc na adres hello@core829.net; odpowiemy w ciągu 30 dni."
       },
       {
-        "title": "5. Data retention",
-        "body": "Personal data collected through forms is retained only for the time necessary to respond to requests and manage any contractual relationship, in accordance with the legal retention periods."
+        "title": "5. Okres przechowywania danych",
+        "body": "Dane osobowe są przechowywane wyłącznie przez czas niezbędny do udzielenia odpowiedzi na zapytania i zarządzania relacją umowną, zgodnie z prawnymi okresami przechowywania. Dane księgowe są przechowywane przez okresy wymagane prawem, po czym są bezpiecznie usuwane lub anonimizowane."
       },
       {
-        "title": "6. Data transfers",
-        "body": "We do not transfer personal data outside the European Economic Area. Where third-party service providers process data on our behalf, they are bound by appropriate data processing agreements."
+        "title": "6. Odbiorcy i podmioty przetwarzające",
+        "body": "Dane osobowe mogą być udostępniane, wyłącznie w razie potrzeby, dostawcom usług hostingowych, poczty elektronicznej, płatności i fakturowania, profesjonalnym doradcom oraz organom publicznym, gdy wymaga tego prawo. Wszyscy podmioty przetwarzające są związane umowami powierzenia przetwarzania danych zgodnie z art. 28 RODO."
       },
       {
-        "title": "7. Contact",
-        "body": "For any question regarding the processing of your personal data, or to exercise your rights, write to hello@core829.net. We will respond within 30 days."
+        "title": "7. Przekazywanie danych",
+        "body": "Nie przekazujemy danych osobowych poza Europejski Obszar Gospodarczy. Jeżeli przekazanie następuje za pośrednictwem zewnętrznego podmiotu przetwarzającego, stosuje się odpowiednie zabezpieczenia zgodnie z rozdziałem V RODO."
+      },
+      {
+        "title": "8. Zautomatyzowane podejmowanie decyzji",
+        "body": "Nie podejmujemy decyzji opartych wyłącznie na zautomatyzowanym przetwarzaniu, w tym profilowaniu, które wywołują skutki prawne wobec Państwa lub w podobny sposób znacząco na Państwa wpływają."
+      },
+      {
+        "title": "9. Bezpieczeństwo danych",
+        "body": "Wdrażamy środki techniczne i organizacyjne w celu zapewnienia poziomu bezpieczeństwa odpowiedniego do ryzyka, w tym szyfrowanie danych w tranzycie, kontrolę dostępu i regularne przeglądy, zgodnie z art. 32 RODO."
+      },
+      {
+        "title": "10. Kontakt i skargi",
+        "body": "W przypadku jakichkolwiek pytań dotyczących przetwarzania Państwa danych osobowych lub w celu wykonania swoich praw prosimy o pisanie na adres hello@core829.net.\nPrzysługuje Państwu również prawo wniesienia skargi do rumuńskiego organu nadzorczego ANSPDCP (www.dataprotection.ro) lub do organu nadzorczego właściwego dla miejsca Państwa zamieszkania."
       }
-    ],
-    "updated": "Ostatnia aktualizacja: {date}"
+    ]
   },
   "cookiePolicy": {
-    "title": "Cookie Policy",
-    "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
+    "title": "Polityka Cookie",
+    "updated": "Ostatnia aktualizacja: {date}",
+    "intro": "Niniejsza Polityka Cookie wyjaśnia, czym są pliki cookie i w jaki sposób CORE829 SRL wykorzystuje pliki cookie i podobne technologie na stronie internetowej core829.net, zgodnie z RODO oraz dyrektywą o prywatności i łączności elektronicznej (ePrivacy), transponowaną do prawa rumuńskiego.",
     "sections": [
       {
-        "title": "1. What are cookies",
-        "body": "Cookies are small text files stored on your device when you visit a website. They allow the website to remember your preferences and to understand how visitors use the site."
+        "title": "1. Czym są pliki cookie",
+        "body": "Pliki cookie to małe pliki tekstowe przechowywane na Państwa urządzeniu podczas odwiedzania strony internetowej. Umożliwiają one stronie zapamiętanie Państwa preferencji oraz zrozumienie, w jaki sposób odwiedzający korzystają z witryny, poprawiając funkcjonalność i wygodę użytkowania."
       },
       {
-        "title": "2. Cookies we use",
-        "body": "We use strictly necessary cookies for the functioning of the website and preferences cookies to remember your language choice. We may use analytics cookies to measure traffic and improve our content, where your consent has been obtained."
+        "title": "2. Pliki cookie, których używamy",
+        "body": "Używamy następujących kategorii plików cookie:\n- pliki cookie niezbędne: wymagane do działania strony internetowej i nie mogą być wyłączone;\n- pliki cookie preferencyjne: do zapamiętywania wyboru języka i ustawień;\n- pliki cookie analityczne: do mierzenia ruchu i doskonalenia naszych treści, wyłącznie po uzyskaniu Państwa zgody;\n- pliki cookie marketingowe: po udzieleniu zgody, w celu wyświetlania odpowiednich reklam."
       },
       {
-        "title": "3. Third-party cookies",
-        "body": "Some cookies are set by third-party services integrated into the website, such as analytics and advertising platforms. These third parties may process the data collected according to their own privacy policies."
+        "title": "3. Pliki cookie podmiotów trzecich",
+        "body": "Niektóre pliki cookie są ustawiane przez usługi podmiotów trzecich zintegrowane ze stroną internetową, takie jak widżet opinii Trustpilot i platformy analityczne. Podmioty te mogą przetwarzać zebrane dane zgodnie z własnymi politykami prywatności."
       },
       {
-        "title": "4. Managing cookies",
-        "body": "You can manage or delete cookies through your browser settings. Blocking certain cookies may affect the functionality of the website, such as remembering your language preference."
+        "title": "4. Zarządzanie plikami cookie",
+        "body": "Plikami cookie można zarządzać lub je usuwać za pośrednictwem ustawień przeglądarki. Zablokowanie niektórych plików cookie może wpłynąć na funkcjonalność strony internetowej, na przykład na zapamiętywanie preferencji językowych."
       },
       {
-        "title": "5. Consent",
-        "body": "Where cookies are not strictly necessary, we request your consent before installing them. You can change your preferences at any time by clearing your browser cookies and revisiting the website."
+        "title": "5. Zgoda",
+        "body": "W przypadku plików cookie, które nie są niezbędne, prosimy o zgodę przed ich instalacją. Preferencje można zmienić w dowolnym momencie, czyszcząc pliki cookie w przeglądarce i ponownie odwiedzając stronę internetową."
+      },
+      {
+        "title": "6. Zmiany niniejszej polityki",
+        "body": "Niniejsza Polityka Cookie może być od czasu do czasu aktualizowana. Wszelkie zmiany zostaną opublikowane na tej stronie wraz z datą aktualizacji."
+      },
+      {
+        "title": "7. Kontakt",
+        "body": "W przypadku jakichkolwiek pytań dotyczących korzystania z plików cookie prosimy o pisanie na adres hello@core829.net."
       }
-    ],
-    "updated": "Ostatnia aktualizacja: {date}"
+    ]
   },
   "contactEmails": {
     "heading": "Contact",

@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, ArrowRight, FileText, Download, Eye } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight, ArrowUpRight, FileText, Download, Eye } from "lucide-react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
 import { Button } from "@/components/ui/Button";
 import PdfViewer from "@/components/ui/PdfViewer";
@@ -314,9 +314,34 @@ export default function ServerServicePage() {
                 {t("scopeTitle")}
               </span>
             </span>
-            <p className="text-base leading-relaxed text-foreground-muted">
-              {t("scopeDesc")}
-            </p>
+            <div className="space-y-4">
+              <p className="text-base leading-relaxed text-foreground-muted">
+                {t("scopeDesc")}
+              </p>
+              <p className="text-sm font-semibold uppercase tracking-widest text-foreground">
+                {t("scopeRestrictedTitle")}
+              </p>
+              <ul className="grid gap-2 sm:grid-cols-2">
+                {t.raw("scopeRestricted").map((country: string) => (
+                  <li
+                    key={country}
+                    className="flex items-start gap-2 text-sm leading-relaxed text-foreground-muted"
+                  >
+                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" aria-hidden />
+                    {country}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://www.nvidia.com/en-us/about-nvidia/company-policies/export-regulations/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-sm font-medium text-foreground underline decoration-accent/50 underline-offset-4 transition-colors hover:text-accent"
+              >
+                {t("scopeRegulationsLink")}
+                <ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden />
+              </a>
+            </div>
           </div>
         </RevealOnScroll>
 

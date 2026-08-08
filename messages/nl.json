@@ -454,58 +454,114 @@
   "privacy": {
     "title": "Privacybeleid",
     "updated": "Laatst bijgewerkt: {date}",
-    "intro": "Dit privacybeleid legt uit hoe CORE829 SRL persoonsgegevens verzamelt, gebruikt en beschermt, in overeenstemming met de AVG (EU-verordening 2016/679).",
+    "intro": "Dit privacybeleid legt uit hoe CORE829 SRL persoonsgegevens verzamelt, gebruikt en beschermt, in volledige overeenstemming met de AVG (EU-verordening 2016/679) en de Roemeense wet nr. 190/2018 betreffende de bescherming van persoonsgegevens. Dit beleid is van toepassing op de website core829.net en op alle diensten die door CORE829 SRL worden aangeboden.",
     "sections": [
       {
         "title": "1. Verwerkingsverantwoordelijke",
-        "body": "CORE829 SRL, geregistreerd in Roemenië, is de verwerkingsverantwoordelijke voor de persoonsgegevens die via deze website worden verzameld. U kunt ons bereiken via het contactformulier."
+        "body": "CORE829 SRL, met statutaire zetel te Str. Mihai Eminescu, 10, Roman, Roemenië, ingeschreven in het handelsregister onder nr. J2026029428009, CUI/CIF 54616345, is de verwerkingsverantwoordelijke voor de persoonsgegevens die via deze website en via haar diensten worden verwerkt, in overeenstemming met art. 4, lid 7, AVG.\nU kunt de verwerkingsverantwoordelijke per e-mail bereiken op hello@core829.net of telefonisch op +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Gegevens die we verzamelen",
-        "body": "We verzamelen alleen de gegevens die u vrijwillig verstrekt via de contact- en offerteformulieren: naam, e-mail, bedrijf, diensten van interesse, geschat budget en de inhoud van uw bericht."
+        "title": "2. Gegevens die wij verzamelen",
+        "body": "Wij verzamelen uitsluitend de gegevens die strikt noodzakelijk zijn voor de hieronder beschreven doeleinden:\n- gegevens die u vrijwillig verstrekt via de contact-, offerteaanvraag- en adviesformulieren: naam, e-mailadres, bedrijf, gewenste dienst, geschat budget en de inhoud van uw bericht;\n- gegevens die u verstrekt in het kader van een contractuele relatie: factuurgegevens, factuuradres, btw-nummer, contactgegevens;\n- minimale technische gegevens die automatisch worden verzameld: IP-adres, browsertype en -versie, apparaattype, bezochte pagina's en tijdstempels, uitsluitend gebruikt voor de beveiliging en de correcte werking van de website."
       },
       {
-        "title": "3. Verwerkingsdoeleinden",
-        "body": "Gegevens worden verwerkt om contact- en offerteverzoeken te beantwoorden, de commerciële relatie te beheren en wettelijke verplichtingen na te komen. We verkopen uw gegevens nooit."
+        "title": "3. Doeleinden van de verwerking",
+        "body": "Uw persoonsgegevens worden verwerkt voor de volgende doeleinden:\n- het beantwoorden van contact- en offerteaanvragen en het beheren van de precontractuele relatie;\n- het leveren en beheren van de gevraagde diensten (Custom Servers, B2B-automatiseringen, Webdesign, Webapps, Uitvoerbare Software, SEO-indexering, 360°-marketing Organic & Paid);\n- facturatie, boekhouding en naleving van wettelijke verplichtingen;\n- beveiliging en verbetering van de website en de diensten;\n- het verzenden van commerciële mededelingen uitsluitend wanneer u daarvoor uw uitdrukkelijke toestemming hebt gegeven.\nWij verkopen of verhuren uw persoonsgegevens nooit aan derden."
       },
       {
-        "title": "4. Rechtsgrondslag",
-        "body": "De rechtsgrondslag is de toestemming die u geeft bij het verzenden van een formulier en het gerechtvaardigde belang om zakelijke verzoeken te beantwoorden (Art. 6 AVG)."
+        "title": "4. Rechtsgrond",
+        "body": "De verwerking van persoonsgegevens is gebaseerd op de volgende rechtsgronden:\n- de toestemming die u verleent bij het indienen van een formulier of het abonneren op mededelingen (art. 6, lid 1, onder a, AVG);\n- de uitvoering van een overeenkomst of precontractuele maatregelen op uw verzoek (art. 6, lid 1, onder b, AVG);\n- de naleving van een wettelijke verplichting waaraan de verwerkingsverantwoordelijke is onderworpen (art. 6, lid 1, onder c, AVG), bijvoorbeeld boekhoudkundige en fiscale verplichtingen;\n- het gerechtvaardigd belang van de verwerkingsverantwoordelijke bij het beantwoorden van zakelijke verzoeken en het waarborgen van de beveiliging van de website (art. 6, lid 1, onder f, AVG)."
       },
       {
-        "title": "5. Bewaartermijn",
-        "body": "Gegevens worden bewaard zolang nodig voor de beschreven doeleinden en in ieder geval niet langer dan wettelijk vereist."
+        "title": "5. Ontvangers en verwerkers",
+        "body": "Uw persoonsgegevens kunnen, uitsluitend indien noodzakelijk en in de minimaal vereiste omvang, worden meegedeeld aan:\n- aanbieders van hosting-, e-mail- en communicatiediensten;\n- betalings- en facturatieaanbieders;\n- professionele adviseurs (juridisch, boekhoudkundig) die gebonden zijn aan het beroepsgeheim;\n- bevoegde overheidsinstanties, indien wettelijk vereist.\nAlle verwerkers zijn gebonden door verwerkersovereenkomsten (DPA) en mogen de gegevens uitsluitend verwerken volgens onze gedocumenteerde instructies."
       },
       {
-        "title": "6. Uw rechten",
-        "body": "U heeft recht op inzage, rectificatie, verwijdering en overdraagbaarheid van uw gegevens, en op bezwaar tegen de verwerking. U kunt deze rechten uitoefenen door contact met ons op te nemen."
+        "title": "6. Internationale doorgiften",
+        "body": "Wij dragen uw persoonsgegevens niet over buiten de Europese Economische Ruimte (EER). Wanneer externe dienstverleners gegevens namens ons verwerken, zijn zij gebonden door passende verwerkersovereenkomsten en, indien een doorgifte buiten de EER plaatsvindt, door passende waarborgen in de zin van Hoofdstuk V van de AVG."
+      },
+      {
+        "title": "7. Bewaartermijn van gegevens",
+        "body": "Persoonsgegevens die via de formulieren worden verzameld, worden uitsluitend bewaard gedurende de tijd die nodig is om verzoeken te beantwoorden en eventuele contractuele relaties te beheren, en in ieder geval niet langer dan wettelijk is toegestaan.\nBoekhoudkundige en fiscale gegevens worden bewaard gedurende de perioden die door de toepasselijke wetgeving worden voorgeschreven. Aan het einde van de bewaartermijn worden de gegevens veilig verwijderd of geanonimiseerd."
+      },
+      {
+        "title": "8. Uw rechten",
+        "body": "Op grond van de AVG hebt u het recht op:\n- inzage in uw persoonsgegevens (art. 15);\n- rectificatie van onjuiste gegevens (art. 16);\n- wissing van uw gegevens (art. 17);\n- beperking van de verwerking (art. 18);\n- gegevensoverdraagbaarheid (art. 20);\n- bezwaar tegen de verwerking (art. 21);\n- het op elk moment intrekken van uw toestemming, zonder dat dit afbreuk doet aan de rechtmatigheid van de verwerking die vóór de intrekking op basis van die toestemming heeft plaatsgevonden.\nU kunt deze rechten uitoefenen door een e-mail te sturen naar hello@core829.net. Wij reageren binnen 30 dagen."
+      },
+      {
+        "title": "9. Beveiliging van gegevens",
+        "body": "Wij treffen passende technische en organisatorische maatregelen om uw persoonsgegevens te beschermen tegen ongeoorloofde toegang, wijziging, openbaarmaking of vernietiging, overeenkomstig art. 32 AVG. Deze maatregelen omvatten beveiligde communicatie (HTTPS), toegangscontroles en periodieke evaluaties van onze beveiligingspraktijken."
+      },
+      {
+        "title": "10. Wijzigingen van dit beleid",
+        "body": "Dit privacybeleid kan van tijd tot tijd worden bijgewerkt. Elke wijziging wordt op deze pagina gepubliceerd met de datum van bijwerking. Wij nodigen u uit om deze pagina regelmatig te raadplegen."
+      },
+      {
+        "title": "11. Klachten",
+        "body": "Als u van mening bent dat de verwerking van uw persoonsgegevens in strijd is met de AVG, hebt u het recht een klacht in te dienen bij de Roemeense Nationale Toezichtsautoriteit voor de Verwerking van Persoonsgegevens (ANSPDCP), Str. G-ral Gheorghe Magheru 28-30, Boekarest, Roemenië, of bij de toezichtsautoriteit van uw woonplaats."
       }
     ]
   },
   "terms": {
-    "title": "Gebruiksvoorwaarden",
+    "title": "Algemene voorwaarden",
     "updated": "Laatst bijgewerkt: {date}",
-    "intro": "Deze gebruiksvoorwaarden regelen het gebruik van de website core829.net en van de diensten van CORE829 SRL.",
+    "intro": "Deze algemene voorwaarden regelen het gebruik van de website core829.net en van de door CORE829 SRL aangeboden diensten. Door toegang te krijgen tot de website of een dienst aan te vragen, aanvaardt u deze voorwaarden. Indien u niet akkoord gaat, maakt u dan geen gebruik van de website of van haar diensten.",
     "sections": [
       {
-        "title": "1. Aanvaarding van de voorwaarden",
-        "body": "Door toegang tot deze website aanvaardt u deze voorwaarden. Bent u het er niet mee eens, gebruik de website dan niet."
+        "title": "1. Dienstverlener",
+        "body": "De website core829.net en de daarin beschreven diensten worden verstrekt door CORE829 SRL, met statutaire zetel te Str. Mihai Eminescu, 10, Roman, Roemenië, ingeschreven in het handelsregister onder nr. J2026029428009, CUI/CIF 54616345.\nContact: hello@core829.net — +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Diensten",
-        "body": "CORE829 biedt softwareontwerp en -ontwikkeling, webapps, automatiseringen, AI-systemen en digitale marketing aan. Specifieke projecten worden geregeld via afzonderlijke overeenkomsten."
+        "title": "2. Aanvaarding van de voorwaarden",
+        "body": "Door toegang te krijgen tot de website, een offerte aan te vragen of een voorstel te aanvaarden, bevestigt u dat u deze algemene voorwaarden hebt gelezen, begrepen en aanvaard. Specifieke projecten worden bovendien beheerst door een afzonderlijke schriftelijke overeenkomst die door beide partijen is ondertekend en die bij een eventueel conflict voorrang heeft op deze algemene voorwaarden."
       },
       {
-        "title": "3. Intellectueel eigendom",
-        "body": "Alle inhoud van deze website is eigendom van CORE829 SRL. Deliverables voor klanten vallen onder de voorwaarden van het individuele contract."
+        "title": "3. Aangeboden diensten",
+        "body": "CORE829 SRL biedt de volgende diensten aan:\n- Custom Servers: ontwerp en end-to-end beheer van op maat gemaakte serverconfiguraties (AI, rendering, opslag, gaming, hosting), met componenten die via Intel- en NVIDIA-partners worden verkregen. CORE829 verzorgt op verzoek het ontwerp, het bouwproces en de kwaliteitscontrole; het vervaardigt geen hardware rechtstreeks;\n- B2B-automatiseringen: automatisering van repetitieve processen in bedrijfstools en -afdelingen (CRM, ERP, e-mail, facturatie);\n- Webdesign: aangepast interface- en website-ontwerp, gestuurd door merkidentiteit, prestaties en conversie;\n- Webapps: full-stack maatwerk webapplicaties, B2B/B2C-platforms, beheertools en verticale CRM-systemen;\n- Uitvoerbare Software: speciale desktopsoftware voor verticale behoeften;\n- SEO-indexering: technische en inhoudelijke optimalisatie voor organische zichtbaarheid;\n- 360°-marketing (Organic & Paid): organische sociale media, contentstrategie en betaalde advertenties op Meta Ads en Google Ads."
       },
       {
-        "title": "4. Beperking van aansprakelijkheid",
-        "body": "De website wordt 'as is' aangeboden. CORE829 is niet aansprakelijk voor schade die voortvloeit uit het gebruik van de website, voor zover de wet dit toestaat."
+        "title": "4. Offerte en contracten",
+        "body": "Offertes zijn geldig gedurende de in de offerte zelf aangegeven periode. Een project start pas na schriftelijke aanvaarding van de offerte en, indien van toepassing, na ondertekening van de specifieke projectovereenkomst. Prijzen, omvang en leveringstermijnen zijn die welke in de aanvaarde offerte zijn vermeld. Elke na aanvaarding verzochte wijziging van de omvang is onderworpen aan een nieuwe schriftelijke raming."
       },
       {
-        "title": "5. Toepasselijk recht",
-        "body": "Deze voorwaarden worden beheerst door Roemeens recht. Geschillen vallen onder de bevoegdheid van de bevoegde Roemeense rechtbanken."
+        "title": "5. Betalingen",
+        "body": "Betalingsvoorwaarden, bedragen en mijlpalen zijn die welke in de aanvaarde offerte of projectovereenkomst zijn vermeld. Tenzij anders overeengekomen, vereisen projecten een vooruitbetaling en daaropvolgende mijlpaalbetalingen. Facturen zijn betaalbaar binnen de op de factuur vermelde termijn. Laattijdige betalingen kunnen leiden tot opschorting van de diensten totdat het openstaande bedrag is vereffend."
+      },
+      {
+        "title": "6. Verplichtingen van de klant",
+        "body": "De klant verbindt zich ertoe tijdig alle informatie, inhoud, toegangen en feedback te verstrekken die noodzakelijk zijn voor de levering van de diensten. Vertragingen die door de klant worden veroorzaakt, kunnen de overeengekomen levertijden verlengen. De klant garandeert dat alle door hem verstrekte inhoud en materialen geen inbreuk maken op de rechten van derden."
+      },
+      {
+        "title": "7. Levering en aanvaarding",
+        "body": "Opleveringen worden als aanvaard beschouwd wanneer de klant de aanvaarding schriftelijk bevestigt of de oplevering binnen de in de overeenkomst vermelde periode zonder bezwaar productief gebruikt. Na aanvaarding worden wijzigingsverzoeken behandeld als nieuw werk dat aan een afzonderlijke raming is onderworpen."
+      },
+      {
+        "title": "8. Intellectueel eigendom",
+        "body": "Alle inhoud van deze website (teksten, grafische elementen, logo's, broncode van de website) is eigendom van CORE829 SRL en is beschermd door het auteursrecht en het recht inzake intellectueel eigendom.\nTenzij schriftelijk anders overeengekomen, verkrijgt de klant na volledige betaling de rechten op de uitdrukkelijk voor hem geproduceerde opleveringen, zoals gedefinieerd in de projectovereenkomst. De gebruikte technologieën, frameworks, methodologieën en reeds bestaande code blijven eigendom van CORE829 SRL en worden aan de klant in licentie gegeven voor het gebruik van de oplevering."
+      },
+      {
+        "title": "9. Vertrouwelijkheid",
+        "body": "Beide partijen verbinden zich ertoe alle zakelijke, technische en persoonlijke informatie die tijdens de onderhandelingen en de uitvoering van de diensten wordt uitgewisseld vertrouwelijk te behandelen en deze uitsluitend te gebruiken voor het doel van de overeenkomst. Deze verplichting overleeft de beëindiging van de overeenkomst."
+      },
+      {
+        "title": "10. Custom Servers — specifieke voorwaarden",
+        "body": "CORE829 vervaardigt of verzendt geen hardware rechtstreeks: het ontwerpt de configuratie, selecteert de componenten via zijn partner-ecosysteem (waaronder Intel en NVIDIA), coördineert de productie en verifieert de kwaliteit vóór de levering. Levering is uitsluitend beschikbaar binnen Europa en Amerika; bestellingen voor andere regio's kunnen niet worden verwerkt.\nDe hardware valt onder de garantie van de fabrikant, zoals doorgegeven aan de klant. CORE829 is geen partij bij de garantie van de fabrikant, maar biedt redelijke bijstand bij het uitoefenen ervan."
+      },
+      {
+        "title": "11. Garantie en beperking van aansprakelijkheid",
+        "body": "De website en de diensten worden verstrekt met de vereiste professionele zorgvuldigheid. In de ruimste mate die de wet toestaat, is CORE829 SRL niet aansprakelijk voor indirecte, bijkomende, gevolg- of punitieve schade, winstderving, gegevensverlies of bedrijfsonderbreking die voortvloeit uit het gebruik van de website of de diensten, zelfs indien gewezen op de mogelijkheid van dergelijke schade.\nIn ieder geval overschrijdt de totale aansprakelijkheid van CORE829 SRL voor elke vordering die verband houdt met een project niet het totale bedrag dat de klant voor dat project heeft betaald."
+      },
+      {
+        "title": "12. Overmacht",
+        "body": "Geen enkele partij is aansprakelijk voor vertraging of het niet nakomen van haar verplichtingen wanneer die vertraging of niet-nakoming het gevolg is van gebeurtenissen buiten haar redelijke controle, waaronder maar niet beperkt tot natuurrampen, pandemieën, oorlogen, stakingen, stroomstoringen of netwerkonderbrekingen. De getroffen partij stelt de andere partij zo spoedig als redelijkerwijs mogelijk in kennis."
+      },
+      {
+        "title": "13. Beëindiging",
+        "body": "Elke partij kan de overeenkomst op basis van wederzijds goedvinden beëindigen door schriftelijke kennisgeving in overeenstemming met de voorwaarden van de specifieke overeenkomst. Bij een wezenlijke tekortkoming die niet binnen 15 dagen na schriftelijke kennisgeving is verholpen, kan de benadeelde partij de overeenkomst beëindigen en schadevergoeding vorderen. Bedragen die verschuldigd zijn voor reeds verrichte werkzaamheden blijven betaalbaar."
+      },
+      {
+        "title": "14. Toepasselijk recht en bevoegde rechter",
+        "body": "Deze algemene voorwaarden worden beheerst door Roemeens recht. Elk geschil dat voortvloeit uit of in verband staat met deze voorwaarden of de diensten, wordt voorgelegd aan de exclusieve bevoegdheid van de bevoegde rechtbanken van Roemenië."
       }
     ]
   },
@@ -609,8 +665,8 @@
     "intelDesc": "Processors met de meest wijdverspreide multiplatform-kracht ter wereld: betrouwbaarheid en constante doorvoer in AI, rekenwerk en dagelijks gebruik.",
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "De meest gevraagde GPU's voor AI en rendering: het standaardplatform om de zwaarste workloads te versnellen.",
-    "scopeTitle": "Eén enkele grens, duidelijk gesteld",
-    "scopeDesc": "Om je constante kwaliteit en ondersteuning te garanderen, verzenden we alleen binnen Europa en Amerika. Moet je server elders naartoe, dan kunnen we helaas niet doorgaan.",
+    "scopeTitle": "Eén duidelijke limiet",
+    "scopeDesc": "Onze leveringen volgen de officiële NVIDIA-exportregelgeving en de Amerikaanse exportcontroleregelgeving (EAR). Daarom verzenden we uitsluitend binnen Europa en Amerika – en kunnen we niet leveren aan de hieronder vermelde embargo-bestemmingen.",
     "carouselTitle": "Van ontwerp tot levering",
     "carouselIntro": "Elke server volgt hetzelfde pad: aanvraag, ontwerp, beheerde build en definitieve controle vóór levering.",
     "ctaTitle": "Vertel ons over je project",
@@ -624,7 +680,18 @@
     "docsIntro": "De exportcompliance-certificeringen voor onze op maat gemaakte serverhardware, beschikbaar voor elke bezoeker.",
     "docsLanguageNote": "Document in het Engels.",
     "viewPdf": "PDF bekijken",
-    "downloadPdf": "PDF downloaden"
+    "downloadPdf": "PDF downloaden",
+    "scopeRestrictedTitle": "Bestemmingen waarnaar we niet kunnen verzenden",
+    "scopeRestricted": [
+      "Cuba",
+      "Iran",
+      "Noord-Korea",
+      "Syrië",
+      "Rusland",
+      "Wit-Rusland",
+      "Bezette gebieden van Oekraïne (Krim, Donetsk, Loehansk, Zaporizja, Cherson)"
+    ],
+    "scopeRegulationsLink": "Officiële NVIDIA-exportregelgeving"
   },
   "servicesDetail": {
     "back": "Alle diensten",
@@ -639,65 +706,85 @@
   },
   "gdpr": {
     "title": "AVG",
-    "intro": "Deze pagina legt uit hoe CORE829 SRL persoonsgegevens verwerkt in overeenstemming met de AVG (EU-verordening 2016/679) en de toepasselijke Roemeense wetgeving inzake de bescherming van persoonsgegevens.",
+    "updated": "Laatst bijgewerkt: {date}",
+    "intro": "Deze pagina biedt gedetailleerde informatie over hoe CORE829 SRL persoonsgegevens verwerkt in overeenstemming met de AVG (EU-verordening 2016/679) en de toepasselijke Roemeense wetgeving betreffende de bescherming van persoonsgegevens (wet nr. 190/2018).",
     "sections": [
       {
         "title": "1. Verwerkingsverantwoordelijke",
-        "body": "CORE829 SRL, met statutaire zetel in Roemenië, is de verwerkingsverantwoordelijke voor de persoonsgegevens die via deze website en haar diensten worden verwerkt. U kunt ons bereiken via het contactformulier of per e-mail op hello@core829.net."
+        "body": "CORE829 SRL, Str. Mihai Eminescu, 10, Roman, Roemenië, handelsregisternummer J2026029428009, CUI/CIF 54616345, is de verwerkingsverantwoordelijke. U kunt ons per e-mail bereiken op hello@core829.net of telefonisch op +40 766 668 482 / +39 375 946 8881."
       },
       {
         "title": "2. Gegevens die wij verwerken",
-        "body": "Wij verwerken uitsluitend de gegevens die u vrijwillig verstrekt via onze contact- en offerteformulieren: naam, e-mail, bedrijf, diensten van interesse, indicatief budget en de inhoud van uw bericht. Daarnaast verwerken wij minimale technische gegevens (IP-adres, browsertype) voor de beveiliging en werking van de website."
+        "body": "Wij verwerken de gegevens die u vrijwillig verstrekt via onze contact-, offerte- en adviesformulieren: naam, e-mail, bedrijf, gewenste diensten, geschat budget en de inhoud van het bericht. Tijdens een contractuele relatie verwerken wij ook factuur- en betalingsgegevens. Wij verwerken minimale technische gegevens (IP-adres, browsertype, bezochte pagina's) voor de beveiliging en de werking van de website."
       },
       {
-        "title": "3. Rechtsgronden voor verwerking",
-        "body": "Wij verwerken persoonsgegevens op de volgende rechtsgronden: uw toestemming (art. 6(1)(a) AVG) voor communicatie; de uitvoering van een overeenkomst of precontractuele maatregelen (art. 6(1)(b) AVG) voor offerteaanvragen; het gerechtvaardigd belang (art. 6(1)(f) AVG) voor de beveiliging en verbetering van de website."
+        "title": "3. Rechtsgrond voor de verwerking",
+        "body": "Wij verwerken persoonsgegevens op basis van de volgende rechtsgronden:\n- uw toestemming (art. 6, lid 1, onder a, AVG) voor commerciële mededelingen;\n- de uitvoering van een overeenkomst of precontractuele maatregelen (art. 6, lid 1, onder b, AVG) voor offerteaanvragen en het leveren van diensten;\n- de naleving van wettelijke verplichtingen (art. 6, lid 1, onder c, AVG) voor boekhoudkundige en fiscale doeleinden;\n- gerechtvaardigd belang (art. 6, lid 1, onder f, AVG) voor de beveiliging en de verbetering van de website."
       },
       {
         "title": "4. Rechten van de betrokkene",
-        "body": "Op grond van de AVG heeft u recht op inzage, rectificatie, verwijdering, beperking en overdraagbaarheid van uw persoonsgegevens, evenals het recht om bezwaar te maken tegen de verwerking. U heeft ook het recht om uw toestemming op elk moment in te trekken en een klacht in te dienen bij de bevoegde toezichthoudende autoriteit (ANSPDCP in Roemenië)."
+        "body": "U hebt het recht om uw persoonsgegevens in te zien, te rectificeren, te wissen, de verwerking ervan te beperken en over te dragen, en u kunt bezwaar maken tegen de verwerking. U kunt uw toestemming op elk moment intrekken. U kunt deze rechten uitoefenen door een e-mail te sturen naar hello@core829.net; wij reageren binnen 30 dagen."
       },
       {
-        "title": "5. Bewaartermijn",
-        "body": "Persoonsgegevens die via formulieren worden verzameld, worden uitsluitend bewaard gedurende de tijd die nodig is om verzoeken te beantwoorden en eventuele contractuele relaties te beheren, overeenkomstig de wettelijke bewaartermijnen."
+        "title": "5. Bewaartermijn van gegevens",
+        "body": "Persoonsgegevens worden uitsluitend bewaard gedurende de tijd die nodig is om verzoeken te beantwoorden en de contractuele relatie te beheren, in overeenstemming met de wettelijke bewaartermijnen. Boekhoudkundige gegevens worden bewaard gedurende de wettelijk voorgeschreven perioden, waarna zij veilig worden verwijderd of geanonimiseerd."
       },
       {
-        "title": "6. Doorgifte van gegevens",
-        "body": "Wij geven geen persoonsgegevens door buiten de Europese Economische Ruimte. Waar externe leveranciers gegevens namens ons verwerken, zijn zij gebonden aan passende verwerkersovereenkomsten."
+        "title": "6. Ontvangers en verwerkers",
+        "body": "Persoonsgegevens kunnen, uitsluitend indien noodzakelijk, worden gedeeld met hosting-, e-mail-, betalings- en facturatieaanbieders, professionele adviseurs en overheidsinstanties indien wettelijk vereist. Alle verwerkers zijn gebonden door verwerkersovereenkomsten overeenkomstig art. 28 AVG."
       },
       {
-        "title": "7. Contact",
-        "body": "Voor vragen over de verwerking van uw persoonsgegevens of om uw rechten uit te oefenen, schrijft u naar hello@core829.net. Wij antwoorden binnen 30 dagen."
+        "title": "7. Doorgiften van gegevens",
+        "body": "Wij dragen persoonsgegevens niet over buiten de Europese Economische Ruimte. Wanneer een doorgifte plaatsvindt via een externe verwerker, worden passende waarborgen in de zin van Hoofdstuk V AVG toegepast."
+      },
+      {
+        "title": "8. Geautomatiseerde besluitvorming",
+        "body": "Wij nemen geen besluiten die uitsluitend zijn gebaseerd op geautomatiseerde verwerking, waaronder profilering, die rechtsgevolgen voor u hebben of u op vergelijkbare wijze wezenlijk treffen."
+      },
+      {
+        "title": "9. Beveiliging van gegevens",
+        "body": "Wij implementeren technische en organisatorische maatregelen om een beveiligingsniveau te waarborgen dat passend is voor het risico, waaronder versleuteling van gegevens in transit, toegangscontroles en regelmatige evaluaties, overeenkomstig art. 32 AVG."
+      },
+      {
+        "title": "10. Contact en klachten",
+        "body": "Voor elke vraag over de verwerking van uw persoonsgegevens of om uw rechten uit te oefenen, schrijft u naar hello@core829.net.\nU hebt ook het recht een klacht in te dienen bij de Roemeense toezichtsautoriteit ANSPDCP (www.dataprotection.ro) of bij de toezichtsautoriteit van uw woonplaats."
       }
-    ],
-    "updated": "Laatst bijgewerkt: {date}"
+    ]
   },
   "cookiePolicy": {
     "title": "Cookiebeleid",
-    "intro": "Dit cookiebeleid legt uit wat cookies zijn en hoe CORE829 SRL cookies en vergelijkbare technologieën gebruikt op de website core829.net.",
+    "updated": "Laatst bijgewerkt: {date}",
+    "intro": "Dit cookiebeleid legt uit wat cookies zijn en hoe CORE829 SRL cookies en soortgelijke technologieën op de website core829.net gebruikt, in overeenstemming met de AVG en de ePrivacy-richtlijn, zoals omgezet in Roemeens recht.",
     "sections": [
       {
         "title": "1. Wat zijn cookies",
-        "body": "Cookies zijn kleine tekstbestanden die op uw apparaat worden opgeslagen wanneer u een website bezoekt. Ze stellen de website in staat uw voorkeuren te onthouden en te begrijpen hoe bezoekers de site gebruiken."
+        "body": "Cookies zijn kleine tekstbestanden die op uw apparaat worden opgeslagen wanneer u een website bezoekt. Zij stellen de website in staat uw voorkeuren te onthouden en te begrijpen hoe bezoekers de website gebruiken, waardoor functionaliteit en gebruikerservaring worden verbeterd."
       },
       {
         "title": "2. Cookies die wij gebruiken",
-        "body": "Wij gebruiken strikt noodzakelijke cookies voor de werking van de website en voorkeurscookies om uw taalkeuze te onthouden. Met uw toestemming kunnen wij analysetools gebruiken om verkeer te meten en onze inhoud te verbeteren."
+        "body": "Wij gebruiken de volgende categorieën cookies:\n- strikt noodzakelijke cookies: vereist voor de werking van de website en kunnen niet worden uitgeschakeld;\n- voorkeurcookies: om uw taalkeuze en instellingen te onthouden;\n- analysecookies: om verkeer te meten en onze inhoud te verbeteren, uitsluitend wanneer uw toestemming is verkregen;\n- marketingcookies: wanneer u uw toestemming hebt gegeven, om relevante advertenties te tonen."
       },
       {
         "title": "3. Cookies van derden",
-        "body": "Sommige cookies worden geplaatst door diensten van derden die in de website zijn geïntegreerd, zoals analyse- en advertentieplatforms. Deze derden kunnen de verzamelde gegevens verwerken volgens hun eigen privacybeleid."
+        "body": "Sommige cookies worden geplaatst door diensten van derden die in de website zijn geïntegreerd, zoals de Trustpilot-reviewwidget en analyseplatforms. Deze derden kunnen de verzamelde gegevens verwerken volgens hun eigen privacybeleid."
       },
       {
         "title": "4. Cookies beheren",
-        "body": "U kunt cookies beheren of verwijderen via de instellingen van uw browser. Het blokkeren van bepaalde cookies kan de functionaliteit van de website beïnvloeden, zoals het onthouden van uw taalkeuze."
+        "body": "U kunt cookies beheren of verwijderen via de instellingen van uw browser. Het blokkeren van bepaalde cookies kan de functionaliteit van de website aantasten, zoals het onthouden van uw taalvoorkeur."
       },
       {
         "title": "5. Toestemming",
-        "body": "Waar cookies niet strikt noodzakelijk zijn, vragen wij uw toestemming voordat wij ze installeren. U kunt uw voorkeuren op elk moment wijzigen door de browsercookies te wissen en de website opnieuw te bezoeken."
+        "body": "Wanneer cookies niet strikt noodzakelijk zijn, vragen wij uw toestemming voordat wij ze installeren. U kunt uw voorkeuren op elk moment wijzigen door uw browsercookies te wissen en de website opnieuw te bezoeken."
+      },
+      {
+        "title": "6. Wijzigingen van dit beleid",
+        "body": "Dit cookiebeleid kan van tijd tot tijd worden bijgewerkt. Elke wijziging wordt op deze pagina gepubliceerd met de datum van bijwerking."
+      },
+      {
+        "title": "7. Contact",
+        "body": "Voor elke vraag over het gebruik van cookies, schrijft u naar hello@core829.net."
       }
-    ],
-    "updated": "Laatst bijgewerkt: {date}"
+    ]
   },
   "contactEmails": {
     "heading": "Contact",

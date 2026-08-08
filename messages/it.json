@@ -452,60 +452,116 @@
     "cookiePolicy": "Cookie Policy"
   },
   "privacy": {
-    "title": "Privacy Policy",
+    "title": "Informativa sulla Privacy",
     "updated": "Ultimo aggiornamento: {date}",
-    "intro": "La presente Privacy Policy spiega come CORE829 SRL raccoglie, utilizza e protegge i dati personali, in conformità al GDPR (Regolamento UE 2016/679).",
+    "intro": "La presente Informativa sulla Privacy spiega come CORE829 SRL raccoglie, utilizza e protegge i dati personali, in piena conformità al GDPR (Regolamento UE 2016/679) e alla Legge rumena n. 190/2018 sulla protezione dei dati personali. La presente informativa si applica al sito core829.net e a tutti i servizi offerti da CORE829 SRL.",
     "sections": [
       {
         "title": "1. Titolare del trattamento",
-        "body": "CORE829 SRL, con sede in Romania, è il titolare del trattamento dei dati personali raccolti attraverso questo sito. Puoi contattarci tramite il form di contatto."
+        "body": "CORE829 SRL, con sede legale in Str. Mihai Eminescu, 10, Roman, Romania, iscritta al Registro delle Imprese al n. J2026029428009, CUI/CIF 54616345, è il titolare del trattamento dei dati personali trattati attraverso questo sito e attraverso i suoi servizi, ai sensi dell'Art. 4(7) GDPR.\nPuoi contattare il titolare via email a hello@core829.net o telefonicamente al +40 766 668 482 / +39 375 946 8881."
       },
       {
         "title": "2. Dati che raccogliamo",
-        "body": "Raccogliamo solo i dati forniti volontariamente tramite i form di contatto e richiesta preventivo: nome, email, azienda, servizi di interesse, budget indicativo e contenuto del messaggio."
+        "body": "Raccogliamo solo i dati strettamente necessari per le finalità descritte di seguito:\n- dati forniti volontariamente attraverso i moduli di contatto, richiesta preventivo e consulenza: nome, email, azienda, servizio di interesse, budget indicativo e contenuto del messaggio;\n- dati forniti nell'ambito di un rapporto contrattuale: dati di fatturazione, indirizzo di fatturazione, partita IVA, dati di contatto;\n- dati tecnici minimi raccolti automaticamente: indirizzo IP, tipo e versione del browser, tipo di dispositivo, pagine visitate e timestamp, utilizzati esclusivamente per la sicurezza e il corretto funzionamento del sito."
       },
       {
         "title": "3. Finalità del trattamento",
-        "body": "I dati sono trattati per rispondere alle richieste di contatto e preventivo, gestire il rapporto commerciale e adempiere agli obblighi di legge. Non vendiamo mai i tuoi dati."
+        "body": "I tuoi dati personali sono trattati per le seguenti finalità:\n- rispondere alle richieste di contatto e preventivo e gestire il rapporto pre-contrattuale;\n- fornire e gestire i servizi richiesti (Custom Servers, Automazioni B2B, Web Design, Web App, Software Eseguibile, SEO Indexing, Marketing 360° Organico & A Pagamento);\n- fatturazione, contabilità e adempimento degli obblighi legali;\n- sicurezza e miglioramento del sito e dei servizi;\n- invio di comunicazioni commerciali solo dove hai dato il tuo consenso esplicito.\nNon vendiamo né cediamo mai i tuoi dati personali a terzi."
       },
       {
         "title": "4. Base giuridica",
-        "body": "La base giuridica è il consenso espresso all'invio del form e l'interesse legittimo a rispondere alle richieste commerciali (Art. 6 GDPR)."
+        "body": "Il trattamento dei dati personali si basa sulle seguenti basi giuridiche:\n- il consenso che fornisci quando compili un modulo o ti iscrivi alle comunicazioni (Art. 6(1)(a) GDPR);\n- l'esecuzione di un contratto o misure precontrattuali adottate su tua richiesta (Art. 6(1)(b) GDPR);\n- l'adempimento di un obbligo legale (Art. 6(1)(c) GDPR), ad esempio obblighi contabili e fiscali;\n- il legittimo interesse del titolare a rispondere alle richieste di business e a garantire la sicurezza del sito (Art. 6(1)(f) GDPR)."
       },
       {
-        "title": "5. Conservazione",
-        "body": "I dati sono conservati per il tempo necessario alle finalità descritte e comunque non oltre quanto previsto dalla legge."
+        "title": "5. Destinatari e responsabili del trattamento",
+        "body": "I tuoi dati personali possono essere comunicati, solo ove necessario e nella misura minima richiesta, a:\n- fornitori di servizi di hosting, email e comunicazione;\n- fornitori di servizi di pagamento e fatturazione;\n- consulenti professionali (legali, contabili) vincolati dal segreto professionale;\n- autorità pubbliche competenti, ove previsto dalla legge.\nTutti i responsabili del trattamento sono vincolati da accordi di trattamento dati (DPA) e possono trattare i dati solo su nostre istruzioni documentate."
       },
       {
-        "title": "6. I tuoi diritti",
-        "body": "Hai il diritto di accesso, rettifica, cancellazione e portabilità dei tuoi dati, nonché di opposizione al trattamento. Puoi esercitare questi diritti contattandoci."
+        "title": "6. Trasferimenti internazionali",
+        "body": "Non trasferiamo i tuoi dati personali al di fuori dello Spazio Economico Europeo (SEE). Laddove fornitori terzi trattino dati per nostro conto, essi sono vincolati da adeguati accordi di trattamento dati e, in caso di trasferimento al di fuori del SEE, da garanzie adeguate ai sensi del Capitolo V GDPR."
+      },
+      {
+        "title": "7. Conservazione dei dati",
+        "body": "I dati personali raccolti tramite i moduli sono conservati solo per il tempo necessario a rispondere alle richieste e a gestire eventuali rapporti contrattuali, e comunque non oltre quanto previsto dalla legge.\nI dati contabili e fiscali sono conservati per i periodi previsti dalla legge applicabile. Al termine del periodo di conservazione, i dati vengono cancellati o anonimizzati in modo sicuro."
+      },
+      {
+        "title": "8. I tuoi diritti",
+        "body": "Ai sensi del GDPR hai il diritto di:\n- accedere ai tuoi dati personali (Art. 15);\n- rettificare dati inesatti (Art. 16);\n- ottenere la cancellazione dei tuoi dati (Art. 17);\n- limitare il trattamento (Art. 18);\n- ottenere la portabilità dei dati (Art. 20);\n- opporti al trattamento (Art. 21);\n- revocare il consenso in qualsiasi momento, senza pregiudicare la liceità del trattamento basato sul consenso prima della revoca.\nPuoi esercitare questi diritti scrivendo a hello@core829.net. Risponderemo entro 30 giorni."
+      },
+      {
+        "title": "9. Sicurezza dei dati",
+        "body": "Adottiamo misure tecniche e organizzative adeguate per proteggere i tuoi dati personali da accessi non autorizzati, alterazione, divulgazione o distruzione, ai sensi dell'Art. 32 GDPR. Queste misure includono comunicazioni sicure (HTTPS), controlli di accesso e revisioni periodiche delle nostre pratiche di sicurezza."
+      },
+      {
+        "title": "10. Modifiche alla presente informativa",
+        "body": "La presente Informativa sulla Privacy può essere aggiornata periodicamente. Ogni modifica sarà pubblicata su questa pagina con la data di aggiornamento. Ti invitiamo a consultare periodicamente questa pagina."
+      },
+      {
+        "title": "11. Reclami",
+        "body": "Se ritieni che il trattamento dei tuoi dati personali violi il GDPR, hai il diritto di presentare un reclamo all'Autorità Nazionale rumena per la Supervisione del Trattamento dei Dati Personali (ANSPDCP), Str. G-ral Gheorghe Magheru 28-30, Bucarest, Romania, o all'autorità di controllo del tuo luogo di residenza."
       }
     ]
   },
   "terms": {
     "title": "Termini di Servizio",
     "updated": "Ultimo aggiornamento: {date}",
-    "intro": "I presenti Termini di Servizio regolano l'uso del sito core829.net e dei servizi di CORE829 SRL.",
+    "intro": "I presenti Termini di Servizio regolano l'uso del sito core829.net e dei servizi offerti da CORE829 SRL. Accedendo al sito o richiedendo qualsiasi servizio, accetti i presenti termini. Se non sei d'accordo, ti preghiamo di non utilizzare il sito o i suoi servizi.",
     "sections": [
       {
-        "title": "1. Accettazione dei termini",
-        "body": "Accedendo a questo sito accetti i presenti termini. Se non sei d'accordo, ti preghiamo di non utilizzare il sito."
+        "title": "1. Fornitore del servizio",
+        "body": "Il sito core829.net e i servizi in esso descritti sono forniti da CORE829 SRL, con sede legale in Str. Mihai Eminescu, 10, Roman, Romania, iscritta al Registro delle Imprese al n. J2026029428009, CUI/CIF 54616345.\nContatti: hello@core829.net — +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Servizi",
-        "body": "CORE829 offre servizi di progettazione e sviluppo software, webapp, automazioni, sistemi AI e marketing digitale. I progetti specifici sono regolati da contratti separati."
+        "title": "2. Accettazione dei termini",
+        "body": "Accedendo al sito, richiedendo un preventivo o accettando una proposta, confermi di aver letto, compreso e accettato i presenti Termini di Servizio. I progetti specifici sono inoltre disciplinati da un accordo scritto separato firmato da entrambe le parti, che prevale sui presenti termini generali in caso di conflitto."
       },
       {
-        "title": "3. Proprietà intellettuale",
-        "body": "Tutti i contenuti di questo sito sono di proprietà di CORE829 SRL. I deliverable prodotti per i clienti sono soggetti ai termini del singolo contratto."
+        "title": "3. Servizi offerti",
+        "body": "CORE829 SRL offre i seguenti servizi:\n- Custom Servers: progettazione e gestione end-to-end di server personalizzati (AI, rendering, storage, gaming, hosting), con componenti selezionati tramite i partner Intel e NVIDIA. CORE829 gestisce su richiesta la progettazione, il processo di costruzione e la verifica di qualità; non produce hardware direttamente;\n- Automazioni B2B: automazione di processi ripetitivi tra strumenti e reparti aziendali (CRM, ERP, email, fatturazione);\n- Web Design: progettazione di interfacce e siti personalizzati guidata dall'identità di brand, dalle prestazioni e dalla conversione;\n- Web App: applicazioni web full-stack personalizzate, piattaforme B2B/B2C, strumenti gestionali e CRM verticali;\n- Software Eseguibile: software desktop dedicato per esigenze verticali;\n- SEO Indexing: ottimizzazione tecnica e dei contenuti per la visibilità organica;\n- Marketing 360° (Organico & A Pagamento): social media organici, strategia dei contenuti e pubblicità a pagamento su Meta Ads e Google Ads."
       },
       {
-        "title": "4. Limitazione di responsabilità",
-        "body": "Il sito è fornito 'così com'è'. CORE829 non è responsabile dei danni derivanti dall'uso del sito, nei limiti consentiti dalla legge."
+        "title": "4. Preventivi e contratti",
+        "body": "I preventivi sono validi per il periodo indicato nel preventivo stesso. Un progetto inizia solo previa accettazione scritta del preventivo e, ove applicabile, previa firma dell'accordo di progetto specifico. Prezzi, ambito e tempi di consegna sono quelli indicati nel preventivo accettato. Qualsiasi modifica dell'ambito richiesta dopo l'accettazione è soggetta a un nuovo preventivo scritto."
       },
       {
-        "title": "5. Legge applicabile",
-        "body": "I presenti termini sono regolati dalla legge rumena. Ogni controversia sarà sottoposta alla giurisdizione dei tribunali rumeni competenti."
+        "title": "5. Pagamenti",
+        "body": "Termini di pagamento, importi e scadenze sono quelli indicati nel preventivo accettato o nell'accordo di progetto. Salvo diverso accordo, i progetti richiedono un acconto e successivi stati di avanzamento. Le fatture sono pagabili entro il termine indicato in fattura. I ritardi di pagamento possono comportare la sospensione dei servizi fino al saldo dell'importo dovuto."
+      },
+      {
+        "title": "6. Obblighi del cliente",
+        "body": "Il cliente si impegna a fornire tempestivamente tutte le informazioni, i contenuti, gli accessi e i feedback necessari per la consegna dei servizi. I ritardi causati dal cliente possono prolungare i tempi di consegna concordati. Il cliente garantisce che tutti i contenuti e i materiali forniti non violano i diritti di terzi."
+      },
+      {
+        "title": "7. Consegna e accettazione",
+        "body": "I deliverable si considerano accettati quando il cliente conferma l'accettazione per iscritto o utilizza il deliverable in produzione senza obiezioni entro il periodo indicato nell'accordo. Dopo l'accettazione, le richieste di modifica sono trattate come nuovo lavoro soggetto a preventivo separato."
+      },
+      {
+        "title": "8. Proprietà intellettuale",
+        "body": "Tutti i contenuti di questo sito (testi, grafiche, loghi, codice sorgente del sito) sono di proprietà di CORE829 SRL e sono protetti dal diritto d'autore e dalla proprietà intellettuale.\nSalvo diverso accordo scritto, a fronte del pagamento integrale il cliente acquisisce i diritti sui deliverable espressamente prodotti per lui, come definiti nell'accordo di progetto. Le tecnologie, i framework, le metodologie e il codice preesistente utilizzati restano di proprietà di CORE829 SRL e sono concessi in licenza al cliente per l'uso del deliverable."
+      },
+      {
+        "title": "9. Riservatezza",
+        "body": "Entrambe le parti si impegnano a mantenere riservate tutte le informazioni commerciali, tecniche e personali scambiate durante le negoziazioni e l'esecuzione dei servizi, e a utilizzarle solo per lo scopo dell'accordo. Questo obbligo sopravvive alla risoluzione dell'accordo."
+      },
+      {
+        "title": "10. Custom Servers — termini specifici",
+        "body": "CORE829 non produce né spedisce hardware direttamente: progetta la build, seleziona i componenti tramite il proprio ecosistema di partner (inclusi Intel e NVIDIA), coordina la produzione e verifica la qualità prima della consegna. La consegna è disponibile solo in Europa e America; gli ordini per altre regioni non possono essere evasi.\nL'hardware è coperto dalla garanzia del produttore, come trasferita al cliente. CORE829 non è parte della garanzia del produttore ma fornisce assistenza ragionevole per esercitarla."
+      },
+      {
+        "title": "11. Garanzia e limitazione di responsabilità",
+        "body": "Il sito e i servizi sono forniti con la dovuta diligenza professionale. Nella misura massima consentita dalla legge, CORE829 SRL non sarà responsabile per danni indiretti, incidentali, consequenziali o punitivi, perdita di profitti, perdita di dati o interruzione dell'attività derivanti dall'uso del sito o dei servizi, anche se avvisata della possibilità di tali danni.\nIn ogni caso, la responsabilità complessiva di CORE829 SRL per qualsiasi richiesta relativa a un progetto non supererà l'importo totale pagato dal cliente per quel progetto."
+      },
+      {
+        "title": "12. Forza maggiore",
+        "body": "Nessuna delle parti sarà responsabile per ritardi o mancato adempimento delle proprie obbligazioni qualora tale ritardo o inadempimento derivi da eventi al di fuori del loro ragionevole controllo, inclusi ma non limitati a calamità naturali, pandemie, guerre, scioperi, interruzioni di corrente o di rete. La parte colpita notificherà l'altra parte appena ragionevolmente possibile."
+      },
+      {
+        "title": "13. Risoluzione",
+        "body": "Ciascuna parte può recedere dall'accordo per convenienza con preavviso scritto secondo i termini dell'accordo specifico. In caso di violazione sostanziale non sanata entro 15 giorni dalla notifica scritta, la parte lesa può risolvere l'accordo e richiedere i danni. Gli importi dovuti per il lavoro già svolto restano pagabili."
+      },
+      {
+        "title": "14. Legge applicabile e giurisdizione",
+        "body": "I presenti Termini di Servizio sono regolati dalla legge rumena. Qualsiasi controversia derivante o relativa ai presenti termini o ai servizi sarà sottoposta alla giurisdizione esclusiva dei tribunali competenti della Romania."
       }
     ]
   },
@@ -610,7 +666,7 @@
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "Le GPU più richieste per l'AI e il rendering: la piattaforma standard per accelerare i carichi di lavoro più pesanti.",
     "scopeTitle": "Un solo limite, detto chiaramente",
-    "scopeDesc": "Per garantirti qualità e supporto costanti, spediamo solo in Europa e in America. Se il tuo server deve arrivare altrove, purtroppo non possiamo procedere.",
+    "scopeDesc": "Le nostre consegne seguono i regolamenti ufficiali di esportazione NVIDIA e le leggi statunitensi sul controllo delle esportazioni (EAR). Per questo spediamo solo in Europa e in America — e non possiamo consegnare verso le destinazioni soggette a embargo elencate qui sotto.",
     "carouselTitle": "Dalla progettazione alla consegna",
     "carouselIntro": "Ogni server segue lo stesso percorso: richiesta, progettazione, costruzione gestita e verifica finale prima della consegna.",
     "ctaTitle": "Raccontaci il tuo progetto",
@@ -624,7 +680,18 @@
     "docsIntro": "Le certificazioni di conformità all'export per il nostro hardware server personalizzato, a disposizione di tutti i visitatori.",
     "docsLanguageNote": "Documento in inglese.",
     "viewPdf": "Visualizza PDF",
-    "downloadPdf": "Scarica PDF"
+    "downloadPdf": "Scarica PDF",
+    "scopeRestrictedTitle": "Destinazioni verso cui non possiamo spedire",
+    "scopeRestricted": [
+      "Cuba",
+      "Iran",
+      "Corea del Nord",
+      "Siria",
+      "Russia",
+      "Bielorussia",
+      "Territori occupati dell'Ucraina (Crimea, Donetsk, Luhansk, Zaporizhzhia, Kherson)"
+    ],
+    "scopeRegulationsLink": "Regolamenti ufficiali di esportazione NVIDIA"
   },
   "servicesDetail": {
     "back": "Tutti i servizi",
@@ -639,65 +706,85 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "intro": "Questa pagina spiega come CORE829 SRL tratta i dati personali in conformità al GDPR (Regolamento UE 2016/679) e alla normativa romena applicabile in materia di protezione dei dati personali.",
+    "updated": "Ultimo aggiornamento: {date}",
+    "intro": "Questa pagina fornisce informazioni dettagliate su come CORE829 SRL tratta i dati personali in conformità al GDPR (Regolamento UE 2016/679) e alla legislazione rumena applicabile sulla protezione dei dati personali (Legge n. 190/2018).",
     "sections": [
       {
         "title": "1. Titolare del trattamento",
-        "body": "CORE829 SRL, con sede legale in Romania, è il titolare del trattamento dei dati personali trattati attraverso questo sito e i suoi servizi. Puoi contattarci tramite il form di contatto o via email all'indirizzo hello@core829.net."
+        "body": "CORE829 SRL, Str. Mihai Eminescu, 10, Roman, Romania, Registro delle Imprese n. J2026029428009, CUI/CIF 54616345, è il titolare del trattamento. Puoi contattarci via email a hello@core829.net o telefonicamente al +40 766 668 482 / +39 375 946 8881."
       },
       {
         "title": "2. Dati che trattiamo",
-        "body": "Trattiamo solo i dati forniti volontariamente tramite i form di contatto e richiesta preventivo: nome, email, azienda, servizi di interesse, budget indicativo e contenuto del messaggio. Trattiamo inoltre dati tecnici minimi (indirizzo IP, tipo di browser) per la sicurezza e il funzionamento del sito."
+        "body": "Trattiamo i dati che fornisci volontariamente tramite i nostri moduli di contatto, preventivo e consulenza: nome, email, azienda, servizi di interesse, budget indicativo e contenuto del messaggio. Durante un rapporto contrattuale trattiamo anche dati di fatturazione. Trattiamo dati tecnici minimi (indirizzo IP, tipo di browser, pagine visitate) per la sicurezza e il funzionamento del sito."
       },
       {
         "title": "3. Base giuridica del trattamento",
-        "body": "Trattiamo i dati personali sulla base delle seguenti basi giuridiche: il tuo consenso (art. 6(1)(a) GDPR) per le comunicazioni; l'esecuzione di un contratto o misure precontrattuali (art. 6(1)(b) GDPR) per le richieste di preventivo; il legittimo interesse (art. 6(1)(f) GDPR) per la sicurezza e il miglioramento del sito."
+        "body": "Trattiamo i dati personali sulle seguenti basi giuridiche:\n- il tuo consenso (Art. 6(1)(a) GDPR) per le comunicazioni commerciali;\n- l'esecuzione di un contratto o misure precontrattuali (Art. 6(1)(b) GDPR) per le richieste di preventivo e la fornitura dei servizi;\n- l'adempimento di obblighi legali (Art. 6(1)(c) GDPR) per fini contabili e fiscali;\n- il legittimo interesse (Art. 6(1)(f) GDPR) per la sicurezza e il miglioramento del sito."
       },
       {
         "title": "4. Diritti dell'interessato",
-        "body": "Ai sensi del GDPR hai il diritto di accesso, rettifica, cancellazione, limitazione e portabilità dei tuoi dati personali, nonché il diritto di opporti al trattamento. Hai inoltre il diritto di revocare il consenso in qualsiasi momento e di presentare un reclamo all'autorità di controllo competente (ANSPDCP in Romania)."
+        "body": "Hai il diritto di accedere, rettificare, cancellare, limitare e portare i tuoi dati personali, e di opporti al trattamento. Puoi revocare il consenso in qualsiasi momento. Puoi esercitare questi diritti scrivendo a hello@core829.net; risponderemo entro 30 giorni."
       },
       {
         "title": "5. Conservazione dei dati",
-        "body": "I dati personali raccolti tramite i form sono conservati solo per il tempo necessario a rispondere alle richieste e a gestire eventuali rapporti contrattuali, nel rispetto dei termini legali di conservazione."
+        "body": "I dati personali sono conservati solo per il tempo necessario a rispondere alle richieste e a gestire il rapporto contrattuale, secondo i periodi di conservazione previsti dalla legge. I dati contabili sono conservati per i periodi previsti dalla legge, dopodiché vengono cancellati o anonimizzati in modo sicuro."
       },
       {
-        "title": "6. Trasferimento dei dati",
-        "body": "Non trasferiamo dati personali al di fuori dello Spazio Economico Europeo. Laddove fornitori terzi trattino dati per nostro conto, sono vincolati da appositi accordi sul trattamento dei dati."
+        "title": "6. Destinatari e responsabili del trattamento",
+        "body": "I dati personali possono essere condivisi, solo ove necessario, con fornitori di hosting, email, pagamento e fatturazione, consulenti professionali e autorità pubbliche ove previsto dalla legge. Tutti i responsabili sono vincolati da accordi di trattamento dati ai sensi dell'Art. 28 GDPR."
       },
       {
-        "title": "7. Contatti",
-        "body": "Per qualsiasi domanda relativa al trattamento dei tuoi dati personali, o per esercitare i tuoi diritti, scrivi a hello@core829.net. Risponderemo entro 30 giorni."
+        "title": "7. Trasferimenti di dati",
+        "body": "Non trasferiamo dati personali al di fuori dello Spazio Economico Europeo. Laddove un trasferimento avvenga tramite un responsabile terzo, si applicano garanzie adeguate ai sensi del Capitolo V GDPR."
+      },
+      {
+        "title": "8. Processo decisionale automatizzato",
+        "body": "Non prendiamo decisioni basate esclusivamente sul trattamento automatizzato, inclusa la profilazione, che producano effetti giuridici che ti riguardano o ti incidano in modo analogo e significativo."
+      },
+      {
+        "title": "9. Sicurezza dei dati",
+        "body": "Adottiamo misure tecniche e organizzative per garantire un livello di sicurezza adeguato al rischio, inclusa la crittografia dei dati in transito, i controlli di accesso e revisioni periodiche, ai sensi dell'Art. 32 GDPR."
+      },
+      {
+        "title": "10. Contatti e reclami",
+        "body": "Per qualsiasi domanda relativa al trattamento dei tuoi dati personali, o per esercitare i tuoi diritti, scrivi a hello@core829.net.\nHai inoltre il diritto di presentare un reclamo all'autorità rumena ANSPDCP (www.dataprotection.ro) o all'autorità di controllo del tuo luogo di residenza."
       }
-    ],
-    "updated": "Ultimo aggiornamento: {date}"
+    ]
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
-    "intro": "Questa Cookie Policy spiega cosa sono i cookie e come CORE829 SRL utilizza cookie e tecnologie simili sul sito core829.net.",
+    "updated": "Ultimo aggiornamento: {date}",
+    "intro": "La presente Cookie Policy spiega cosa sono i cookie e come CORE829 SRL utilizza cookie e tecnologie simili sul sito core829.net, in conformità al GDPR e alla Direttiva ePrivacy, come recepita nel diritto rumeno.",
     "sections": [
       {
         "title": "1. Cosa sono i cookie",
-        "body": "I cookie sono piccoli file di testo salvati sul tuo dispositivo quando visiti un sito web. Permettono al sito di ricordare le tue preferenze e di capire come i visitatori utilizzano il sito."
+        "body": "I cookie sono piccoli file di testo memorizzati sul tuo dispositivo quando visiti un sito web. Consentono al sito di ricordare le tue preferenze e di capire come i visitatori utilizzano il sito, migliorandone funzionalità ed esperienza utente."
       },
       {
         "title": "2. Cookie che utilizziamo",
-        "body": "Utilizziamo cookie strettamente necessari per il funzionamento del sito e cookie di preferenza per ricordare la scelta della lingua. Possiamo utilizzare cookie di analisi per misurare il traffico e migliorare i contenuti, previo tuo consenso."
+        "body": "Utilizziamo le seguenti categorie di cookie:\n- cookie strettamente necessari: richiesti per il funzionamento del sito e non possono essere disabilitati;\n- cookie di preferenza: per ricordare la tua scelta di lingua e le impostazioni;\n- cookie analitici: per misurare il traffico e migliorare i nostri contenuti, solo dove hai fornito il tuo consenso;\n- cookie di marketing: dove hai fornito il tuo consenso, per fornire pubblicità pertinente."
       },
       {
         "title": "3. Cookie di terze parti",
-        "body": "Alcuni cookie sono impostati da servizi di terze parti integrati nel sito, come piattaforme di analisi e pubblicità. Queste terze parti possono trattare i dati raccolti secondo le proprie privacy policy."
+        "body": "Alcuni cookie sono impostati da servizi di terze parti integrati nel sito, come il widget di recensioni Trustpilot e le piattaforme analitiche. Queste terze parti possono trattare i dati raccolti secondo le proprie politiche sulla privacy."
       },
       {
         "title": "4. Gestione dei cookie",
-        "body": "Puoi gestire o eliminare i cookie tramite le impostazioni del tuo browser. Il blocco di alcuni cookie può compromettere il funzionamento del sito, come il ricordo della lingua."
+        "body": "Puoi gestire o eliminare i cookie attraverso le impostazioni del tuo browser. Il blocco di alcuni cookie può influire sulla funzionalità del sito, come il ricordo della tua preferenza di lingua."
       },
       {
         "title": "5. Consenso",
         "body": "Laddove i cookie non siano strettamente necessari, richiediamo il tuo consenso prima di installarli. Puoi modificare le tue preferenze in qualsiasi momento cancellando i cookie del browser e rivisitando il sito."
+      },
+      {
+        "title": "6. Modifiche alla presente policy",
+        "body": "La presente Cookie Policy può essere aggiornata periodicamente. Ogni modifica sarà pubblicata su questa pagina con la data di aggiornamento."
+      },
+      {
+        "title": "7. Contatti",
+        "body": "Per qualsiasi domanda relativa all'uso dei cookie, scrivi a hello@core829.net."
       }
-    ],
-    "updated": "Ultimo aggiornamento: {date}"
+    ]
   },
   "contactEmails": {
     "heading": "Contatti",

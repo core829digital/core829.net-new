@@ -38,15 +38,15 @@ export default function Footer() {
               alt="CORE829"
               width={160}
               height={42}
-              className="h-11 w-auto"
+              className="h-16 w-auto"
             />
-            <span className="h-8 w-px bg-border" aria-hidden />
+            <span className="h-10 w-px bg-border" aria-hidden />
             <Image
               src="/server-service/829%20logo%20servers%20department%20trsp.png"
               alt="CORE829 Servers"
               width={160}
               height={42}
-              className="h-11 w-auto"
+              className="h-16 w-auto"
             />
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-foreground-muted">

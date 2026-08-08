@@ -454,58 +454,114 @@
   "privacy": {
     "title": "Politica de confidențialitate",
     "updated": "Ultima actualizare: {date}",
-    "intro": "Această politică de confidențialitate explică modul în care CORE829 SRL colectează, utilizează și protejează datele personale, în conformitate cu GDPR (Regulamentul UE 2016/679).",
+    "intro": "Prezenta politică de confidențialitate explică modul în care CORE829 SRL colectează, utilizează și protejează datele cu caracter personal, în deplină conformitate cu GDPR (Regulamentul UE 2016/679) și cu Legea română nr. 190/2018 privind protecția datelor cu caracter personal. Prezenta politică se aplică site-ului core829.net și tuturor serviciilor oferite de CORE829 SRL.",
     "sections": [
       {
         "title": "1. Operatorul de date",
-        "body": "CORE829 SRL, înregistrată în România, este operatorul de date pentru datele personale colectate prin acest site. Ne poți contacta prin formularul de contact."
+        "body": "CORE829 SRL, cu sediul social în Str. Mihai Eminescu, 10, Roman, România, înregistrată la Registrul Comerțului sub nr. J2026029428009, CUI/CIF 54616345, este operatorul de date pentru datele cu caracter personal prelucrate prin intermediul acestui site web și al serviciilor sale, în conformitate cu art. 4 alin. (7) GDPR.\nNe puteți contacta prin e-mail la hello@core829.net sau telefonic la +40 766 668 482 / +39 375 946 8881."
       },
       {
         "title": "2. Datele pe care le colectăm",
-        "body": "Colectăm doar datele furnizate voluntar prin formularele de contact și solicitare de ofertă: nume, email, companie, servicii de interes, buget estimativ și conținutul mesajului."
+        "body": "Colectăm doar datele strict necesare pentru scopurile descrise mai jos:\n- datele pe care le furnizați în mod voluntar prin formularele de contact, de cerere de ofertă și de consultanță: nume, adresă de e-mail, companie, serviciu de interes, buget estimat și conținutul mesajului dumneavoastră;\n- datele pe care le furnizați în contextul unei relații contractuale: date de facturare, adresă de facturare, număr de TVA, date de contact;\n- date tehnice minime colectate automat: adresă IP, tip și versiune de browser, tip de dispozitiv, pagini vizitate și marcaje temporale, utilizate exclusiv pentru securitatea și funcționarea corectă a site-ului."
       },
       {
         "title": "3. Scopurile prelucrării",
-        "body": "Datele sunt prelucrate pentru a răspunde cererilor de contact și ofertă, pentru gestionarea relației comerciale și pentru îndeplinirea obligațiilor legale. Nu vindem niciodată datele tale."
+        "body": "Datele dumneavoastră cu caracter personal sunt prelucrate în următoarele scopuri:\n- răspunsul la cererile de contact și de ofertă și gestionarea relației precontractuale;\n- furnizarea și gestionarea serviciilor solicitate (Custom Servers, B2B Automations, Web Design, Web Apps, Executable Software, SEO Indexing, 360° Marketing Organic & Paid);\n- facturarea, contabilitatea și respectarea obligațiilor legale;\n- securitatea și îmbunătățirea site-ului și a serviciilor;\n- transmiterea de comunicări comerciale doar în cazul în care ne-ați acordat consimțământul explicit.\nNu vindem și nu închiriem niciodată datele dumneavoastră cu caracter personal către terți."
       },
       {
-        "title": "4. Temeiul legal",
-        "body": "Temeiul legal este consimțământul exprimat la trimiterea formularului și interesul legitim de a răspunde cererilor comerciale (Art. 6 GDPR)."
+        "title": "4. Temeiul juridic",
+        "body": "Prelucrarea datelor cu caracter personal se bazează pe următoarele temeiuri juridice:\n- consimțământul acordat la completarea unui formular sau la abonarea la comunicări (art. 6 alin. (1) lit. a) GDPR);\n- executarea unui contract sau măsuri precontractuale luate la cererea dumneavoastră (art. 6 alin. (1) lit. b) GDPR);\n- respectarea unei obligații legale la care este supus operatorul (art. 6 alin. (1) lit. c) GDPR), de exemplu obligațiile contabile și fiscale;\n- interesul legitim al operatorului de a răspunde cererilor de afaceri și de a asigura securitatea site-ului (art. 6 alin. (1) lit. f) GDPR)."
       },
       {
-        "title": "5. Perioada de păstrare",
-        "body": "Datele sunt păstrate pe durata necesară scopurilor descrise și, în orice caz, nu mai mult decât prevede legea."
+        "title": "5. Destinatarii și operatorii împuterniciți",
+        "body": "Datele dumneavoastră cu caracter personal pot fi comunicate, doar atunci când este necesar și în măsura minimă impusă, către:\n- furnizori de servicii de găzduire, e-mail și comunicații;\n- furnizori de servicii de plată și facturare;\n- consilieri profesionali (juridici, contabili) obligați la secretul profesional;\n- autorități publice competente, atunci când acest lucru este impus de lege.\nToți operatorii împuterniciți sunt obligați prin contracte de prelucrare a datelor (DPA) și pot prelucra datele doar în baza instrucțiunilor noastre documentate."
       },
       {
-        "title": "6. Drepturile tale",
-        "body": "Ai dreptul de acces, rectificare, ștergere și portabilitate a datelor, precum și dreptul de a te opune prelucrării. Poți exercita aceste drepturi contactându-ne."
+        "title": "6. Transferuri internaționale",
+        "body": "Nu transferăm datele dumneavoastră cu caracter personal în afara Spațiului Economic European (SEE). Atunci când furnizorii de servicii terți prelucrează date în numele nostru, aceștia sunt obligați prin contracte de prelucrare a datelor adecvate și, în cazul unui transfer în afara SEE, prin garanții adecvate în conformitate cu Capitolul V din GDPR."
+      },
+      {
+        "title": "7. Durata de păstrare a datelor",
+        "body": "Datele cu caracter personal colectate prin formulare sunt păstrate doar pe durata necesară pentru a răspunde cererilor și pentru a gestiona orice relație contractuală și, în orice caz, nu mai mult decât impune legea.\nDatele contabile și fiscale sunt păstrate pe perioadele impuse de legislația aplicabilă. La expirarea perioadei de păstrare, datele sunt șterse sau anonimizate în siguranță."
+      },
+      {
+        "title": "8. Drepturile dumneavoastră",
+        "body": "În temeiul GDPR aveți dreptul:\n- de acces la datele dumneavoastră cu caracter personal (art. 15);\n- de rectificare a datelor inexacte (art. 16);\n- de ștergere a datelor (art. 17);\n- de restricționare a prelucrării (art. 18);\n- la portabilitatea datelor (art. 20);\n- de opoziție la prelucrare (art. 21);\n- de a vă retrage consimțământul în orice moment, fără a afecta legalitatea prelucrării bazate pe consimțământ anterior retragerii.\nVă puteți exercita aceste drepturi scriind la hello@core829.net. Vom răspunde în termen de 30 de zile."
+      },
+      {
+        "title": "9. Securitatea datelor",
+        "body": "Implementăm măsuri tehnice și organizatorice adecvate pentru a proteja datele dumneavoastră cu caracter personal împotriva accesului neautorizat, modificării, divulgării sau distrugerii, în conformitate cu art. 32 GDPR. Aceste măsuri includ comunicații securizate (HTTPS), controale de acces și verificări periodice ale practicilor noastre de securitate."
+      },
+      {
+        "title": "10. Modificări ale prezentei politici",
+        "body": "Prezenta politică de confidențialitate poate fi actualizată din când în când. Orice modificare va fi publicată pe această pagină, cu data actualizării. Vă invităm să consultați periodic această pagină."
+      },
+      {
+        "title": "11. Reclamații",
+        "body": "Dacă considerați că prelucrarea datelor dumneavoastră cu caracter personal încalcă GDPR, aveți dreptul de a depune o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal din România (ANSPDCP), Str. G-ral Gheorghe Magheru 28-30, București, România, sau la autoritatea de supraveghere din locul dumneavoastră de reședință."
       }
     ]
   },
   "terms": {
     "title": "Termeni și condiții",
     "updated": "Ultima actualizare: {date}",
-    "intro": "Acești termeni și condiții reglementează utilizarea site-ului core829.net și a serviciilor CORE829 SRL.",
+    "intro": "Prezentele condiții reglementează utilizarea site-ului core829.net și a serviciilor oferite de CORE829 SRL. Prin accesarea site-ului sau solicitarea oricărui serviciu, acceptați prezentele condiții. Dacă nu sunteți de acord, vă rugăm să nu utilizați site-ul sau serviciile acestuia.",
     "sections": [
       {
-        "title": "1. Acceptarea termenilor",
-        "body": "Prin accesarea acestui site accepți acești termeni. Dacă nu ești de acord, te rugăm să nu utilizezi site-ul."
+        "title": "1. Furnizorul de servicii",
+        "body": "Site-ul core829.net și serviciile descrise pe acesta sunt furnizate de CORE829 SRL, cu sediul social în Str. Mihai Eminescu, 10, Roman, România, înregistrată la Registrul Comerțului sub nr. J2026029428009, CUI/CIF 54616345.\nContact: hello@core829.net — +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Servicii",
-        "body": "CORE829 oferă servicii de proiectare și dezvoltare software, webapp, automatizări, sisteme AI și marketing digital. Proiectele specifice sunt reglementate prin contracte separate."
+        "title": "2. Acceptarea condițiilor",
+        "body": "Prin accesarea site-ului, solicitarea unei oferte sau acceptarea unei propuneri, confirmați că ați citit, înțeles și acceptat prezentele condiții. Proiectele specifice sunt reglementate suplimentar printr-un acord scris separat, semnat de ambele părți, care prevalează asupra acestor condiții generale în caz de conflict."
       },
       {
-        "title": "3. Proprietate intelectuală",
-        "body": "Toate conținuturile acestui site sunt proprietatea CORE829 SRL. Livrabilele produse pentru clienți sunt supuse termenilor contractului individual."
+        "title": "3. Serviciile oferite",
+        "body": "CORE829 SRL oferă următoarele servicii:\n- Custom Servers: proiectarea și gestionarea integrală a unor configurări de servere personalizate (AI, randare, stocare, gaming, găzduire), cu componente procurate prin intermediul partenerilor Intel și NVIDIA. CORE829 gestionează proiectarea, procesul de asamblare și verificarea calității la cerere; nu fabrică direct componente hardware;\n- B2B Automations: automatizarea proceselor repetitive în cadrul instrumentelor și departamentelor de afaceri (CRM, ERP, e-mail, facturare);\n- Web Design: proiectarea de interfețe și site-uri personalizate, orientată pe identitatea de brand, performanță și conversie;\n- Web Apps: aplicații web personalizate full-stack, platforme B2B/B2C, instrumente de management și CRM-uri verticale;\n- Executable Software: software desktop dedicat pentru nevoi verticale;\n- SEO Indexing: optimizare tehnică și de conținut pentru vizibilitate organică;\n- 360° Marketing (Organic & Paid): social media organic, strategie de conținut și publicitate plătită pe Meta Ads și Google Ads."
       },
       {
-        "title": "4. Limitarea răspunderii",
-        "body": "Site-ul este furnizat 'ca atare'. CORE829 nu este responsabilă pentru daunele rezultate din utilizarea site-ului, în limitele permise de lege."
+        "title": "4. Oferte și contracte",
+        "body": "Ofertele sunt valabile pe perioada indicată în cadrul ofertei înseși. Un proiect începe doar la acceptarea scrisă a ofertei și, atunci când este cazul, la semnarea acordului specific de proiect. Prețurile, domeniul de aplicare și termenele de livrare sunt cele indicate în oferta acceptată. Orice modificare a domeniului de aplicare solicitată ulterior acceptării face obiectul unei noi estimări scrise."
       },
       {
-        "title": "5. Legea aplicabilă",
-        "body": "Acești termeni sunt guvernați de legea română. Orice litigiu va fi supus jurisdicției instanțelor române competente."
+        "title": "5. Plăți",
+        "body": "Termenele de plată, sumele și etapele sunt cele indicate în oferta acceptată sau în acordul de proiect. Cu excepția unei convenții contrare, proiectele necesită o plată în avans și etape ulterioare. Facturile sunt plătibile în termenul indicat pe factură. Întârzierile la plată pot determina suspendarea serviciilor până la achitarea sumei restante."
+      },
+      {
+        "title": "6. Obligațiile clientului",
+        "body": "Clientul se obligă să furnizeze, în timp util, toate informațiile, conținuturile, accesele și feedback-ul necesare pentru livrarea serviciilor. Întârzierile cauzate de client pot prelungi termenele de livrare convenite. Clientul garantează că toate conținuturile și materialele furnizate de acesta nu încalcă drepturile terților."
+      },
+      {
+        "title": "7. Livrare și acceptare",
+        "body": "Livrabilele sunt considerate acceptate atunci când clientul confirmă acceptarea în scris sau utilizează livrabilul în producție fără obiecții în termenul indicat în acord. După acceptare, cererile de modificare sunt tratate ca lucrări noi, supuse unei estimări separate."
+      },
+      {
+        "title": "8. Proprietate intelectuală",
+        "body": "Toate conținuturile acestui site web (texte, grafice, logo-uri, codul sursă al site-ului) sunt proprietatea CORE829 SRL și sunt protejate de dreptul de autor și de legislația privind proprietatea intelectuală.\nCu excepția unei convenții scrise contrare, la plata integrală clientul dobândește drepturile asupra livrabilelor produse expres pentru el, astfel cum sunt definite în acordul de proiect. Tehnologiile, cadrele de lucru (framework-urile), metodologiile și codul preexistent utilizate rămân proprietatea CORE829 SRL și sunt licențiate clientului pentru utilizarea livrabilului."
+      },
+      {
+        "title": "9. Confidențialitate",
+        "body": "Ambele părți se obligă să păstreze confidențiale toate informațiile de afaceri, tehnice și personale schimbate pe parcursul negocierilor și al executării serviciilor și să le utilizeze doar în scopul acordului. Această obligație supraviețuiește încetării acordului."
+      },
+      {
+        "title": "10. Custom Servers — condiții specifice",
+        "body": "CORE829 nu fabrică și nu expediază direct componente hardware: proiectează configurările, selectează componentele prin intermediul ecosistemului său de parteneri (inclusiv Intel și NVIDIA), coordonează producția și verifică calitatea înainte de livrare. Livrarea este disponibilă doar în Europa și America; comenzile pentru alte regiuni nu pot fi procesate.\nHardware-ul este acoperit de garanția producătorului, astfel cum este transmisă clientului. CORE829 nu este parte la garanția producătorului, dar oferă asistență rezonabilă pentru exercitarea acesteia."
+      },
+      {
+        "title": "11. Garanție și limitarea răspunderii",
+        "body": "Site-ul și serviciile sunt furnizate cu diligența profesională cuvenită. În limita maximă permisă de lege, CORE829 SRL nu răspunde pentru daune indirecte, accidentale, consecutive sau punitive, pierderea de profit, pierderea de date sau întreruperea activității cauzate de utilizarea site-ului sau a serviciilor, chiar și în cazul în care a fost informată despre posibilitatea apariției unor astfel de daune.\nÎn orice caz, răspunderea totală a CORE829 SRL pentru orice cerere legată de un proiect nu va depăși suma totală plătită de client pentru respectivul proiect."
+      },
+      {
+        "title": "12. Forța majoră",
+        "body": "Nicio parte nu răspunde pentru întârzieri sau neîndeplinirea obligațiilor sale atunci când astfel de întârzieri sau neîndepliniri rezultă din evenimente aflate în afara controlului rezonabil al acesteia, inclusiv, fără limitare, dezastre naturale, pandemii, războaie, greve, întreruperi de curent sau de rețea. Partea afectată va notifica cealaltă parte cât mai curând posibil în mod rezonabil."
+      },
+      {
+        "title": "13. Încetare",
+        "body": "Oricare dintre părți poate înceta acordul în mod convențional, printr-o notificare scrisă, în conformitate cu prevederile acordului specific. În cazul unei încălcări substanțiale care nu este remediată în termen de 15 zile de la notificarea scrisă, partea prejudiciată poate înceta acordul și poate solicita daune-interese. Sumele datorate pentru lucrările deja efectuate rămân plătibile."
+      },
+      {
+        "title": "14. Legea aplicabilă și jurisdicția",
+        "body": "Prezentele condiții sunt reglementate de legislația română. Orice litigiu decurgând din sau în legătură cu aceste condiții sau cu serviciile va fi supus jurisdicției exclusive a instanțelor competente din România."
       }
     ]
   },
@@ -609,8 +665,8 @@
     "intelDesc": "Procesoare cu cea mai răspândită putere multiplatformă din lume: fiabilitate și randament constant în AI, calcul și utilizare zilnică.",
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "Cele mai căutate GPU-uri pentru AI și randare: platforma standard pentru accelerarea celor mai grele sarcini de lucru.",
-    "scopeTitle": "O singură limită, spusă clar",
-    "scopeDesc": "Pentru a-ți garanta o calitate și un suport constante, livrăm doar în Europa și America. Dacă serverul tău trebuie să ajungă în altă parte, din păcate nu putem continua.",
+    "scopeTitle": "O singură limită, exprimată clar",
+    "scopeDesc": "Livrările noastre respectă reglementările oficiale de export NVIDIA și legislația SUA privind controlul exporturilor (EAR). Din acest motiv, livrăm doar în Europa și America — și nu putem livra către destinațiile aflate sub embargou, enumerate mai jos.",
     "carouselTitle": "De la proiectare la livrare",
     "carouselIntro": "Fiecare server urmează același drum: solicitare, proiectare, build gestionat și verificare finală înainte de livrare.",
     "ctaTitle": "Spune-ne despre proiectul tău",
@@ -624,7 +680,18 @@
     "docsIntro": "Certificările de conformitate la export pentru hardware-ul nostru server personalizat, disponibile pentru toți vizitatorii.",
     "docsLanguageNote": "Document în limba engleză.",
     "viewPdf": "Vizualizează PDF",
-    "downloadPdf": "Descarcă PDF"
+    "downloadPdf": "Descarcă PDF",
+    "scopeRestrictedTitle": "Destinații către care nu livrăm",
+    "scopeRestricted": [
+      "Cuba",
+      "Iran",
+      "Coreea de Nord",
+      "Siria",
+      "Rusia",
+      "Belarus",
+      "Teritoriile ocupate ale Ucrainei (Crimeea, Donețk, Luhansk, Zaporijjea, Herson)"
+    ],
+    "scopeRegulationsLink": "Reglementările oficiale de export NVIDIA"
   },
   "servicesDetail": {
     "back": "Toate serviciile",
@@ -639,65 +706,85 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "intro": "Această pagină explică modul în care CORE829 SRL prelucrează datele personale în conformitate cu GDPR (Regulamentul UE 2016/679) și cu legislația română aplicabilă privind protecția datelor personale.",
+    "updated": "Ultima actualizare: {date}",
+    "intro": "Această pagină oferă informații detaliate despre modul în care CORE829 SRL prelucrează datele cu caracter personal, în conformitate cu GDPR (Regulamentul UE 2016/679) și cu legislația română aplicabilă privind protecția datelor cu caracter personal (Legea nr. 190/2018).",
     "sections": [
       {
-        "title": "1. Operator de date",
-        "body": "CORE829 SRL, cu sediul social în România, este operatorul de date pentru datele personale prelucrate prin acest site web și serviciile sale. Ne puteți contacta prin formularul de contact sau prin e-mail la hello@core829.net."
+        "title": "1. Operatorul de date",
+        "body": "CORE829 SRL, Str. Mihai Eminescu, 10, Roman, România, Registrul Comerțului nr. J2026029428009, CUI/CIF 54616345, este operatorul de date. Ne puteți contacta prin e-mail la hello@core829.net sau telefonic la +40 766 668 482 / +39 375 946 8881."
       },
       {
         "title": "2. Datele pe care le prelucrăm",
-        "body": "Prelucrăm doar datele furnizate voluntar prin formularele noastre de contact și de cerere de ofertă: nume, e-mail, companie, servicii de interes, buget orientativ și conținutul mesajului dumneavoastră. Prelucrăm, de asemenea, date tehnice minime (adresa IP, tipul browserului) pentru securitatea și funcționarea site-ului."
+        "body": "Prelucrăm datele pe care le furnizați în mod voluntar prin formularele noastre de contact, de ofertă și de consultanță: nume, e-mail, companie, servicii de interes, buget estimat și conținutul mesajului. Pe durata unei relații contractuale prelucrăm, de asemenea, date de facturare și de facturi. Prelucrăm date tehnice minime (adresă IP, tip de browser, pagini vizitate) pentru securitatea și funcționarea site-ului."
       },
       {
         "title": "3. Temeiul juridic al prelucrării",
-        "body": "Prelucrăm datele personale pe următoarele temeiuri juridice: consimțământul dumneavoastră (art. 6(1)(a) GDPR) pentru comunicări; executarea unui contract sau măsuri precontractuale (art. 6(1)(b) GDPR) pentru cererile de ofertă; interesul legitim (art. 6(1)(f) GDPR) pentru securitatea și îmbunătățirea site-ului."
+        "body": "Prelucrăm datele cu caracter personal în următoarele temeiuri juridice:\n- consimțământul dumneavoastră (art. 6 alin. (1) lit. a) GDPR) pentru comunicările comerciale;\n- executarea unui contract sau măsurile precontractuale (art. 6 alin. (1) lit. b) GDPR) pentru cererile de ofertă și livrarea serviciilor;\n- respectarea obligațiilor legale (art. 6 alin. (1) lit. c) GDPR) în scopuri contabile și fiscale;\n- interesul legitim (art. 6 alin. (1) lit. f) GDPR) pentru securitatea și îmbunătățirea site-ului."
       },
       {
-        "title": "4. Drepturile persoanei vizate",
-        "body": "În conformitate cu GDPR, aveți dreptul de acces, rectificare, ștergere, restricționare și portabilitate a datelor personale, precum și dreptul de a vă opune prelucrării. Aveți, de asemenea, dreptul de a vă retrage consimțământul în orice moment și de a depune o plângere la autoritatea de supraveghere competentă (ANSPDCP în România)."
+        "title": "4. Drepturile persoanelor vizate",
+        "body": "Aveți dreptul de acces, rectificare, ștergere, restricționare și portabilitate a datelor dumneavoastră cu caracter personal, precum și dreptul de opoziție la prelucrare. Vă puteți retrage consimțământul în orice moment. Vă puteți exercita aceste drepturi scriind la hello@core829.net; vom răspunde în termen de 30 de zile."
       },
       {
-        "title": "5. Păstrarea datelor",
-        "body": "Datele personale colectate prin formulare sunt păstrate doar pentru perioada necesară pentru a răspunde solicitărilor și a gestiona orice relație contractuală, în conformitate cu termenele legale de păstrare."
+        "title": "5. Durata de păstrare a datelor",
+        "body": "Datele cu caracter personal sunt păstrate doar pe durata necesară pentru a răspunde cererilor și pentru a gestiona relația contractuală, în conformitate cu termenele legale de păstrare. Datele contabile sunt păstrate pe perioadele impuse de lege, după care sunt șterse sau anonimizate în siguranță."
       },
       {
-        "title": "6. Transferul datelor",
-        "body": "Nu transferăm date personale în afara Spațiului Economic European. Acolo unde furnizorii terți prelucrează date în numele nostru, aceștia sunt obligați prin acorduri adecvate de prelucrare a datelor."
+        "title": "6. Destinatarii și operatorii împuterniciți",
+        "body": "Datele cu caracter personal pot fi partajate, doar atunci când este necesar, cu furnizori de găzduire, e-mail, plăți și facturare, consilieri profesionali și autorități publice, atunci când acest lucru este impus de lege. Toți operatorii împuterniciți sunt obligați prin contracte de prelucrare a datelor, în conformitate cu art. 28 GDPR."
       },
       {
-        "title": "7. Contact",
-        "body": "Pentru orice întrebare privind prelucrarea datelor dumneavoastră personale sau pentru exercitarea drepturilor, scrieți la hello@core829.net. Vom răspunde în termen de 30 de zile."
+        "title": "7. Transferuri de date",
+        "body": "Nu transferăm datele cu caracter personal în afara Spațiului Economic European. Atunci când un transfer are loc prin intermediul unui operator împuternicit terț, se aplică garanții adecvate în conformitate cu Capitolul V din GDPR."
+      },
+      {
+        "title": "8. Luarea deciziilor automatizate",
+        "body": "Nu luăm decizii bazate exclusiv pe prelucrare automată, inclusiv creare de profiluri, care să producă efecte juridice care vă privesc sau să vă afecteze în mod semnificativ într-o manieră similară."
+      },
+      {
+        "title": "9. Securitatea datelor",
+        "body": "Implementăm măsuri tehnice și organizatorice pentru a asigura un nivel de securitate adecvat riscului, inclusiv criptarea datelor în tranzit, controale de acces și verificări periodice, în conformitate cu art. 32 GDPR."
+      },
+      {
+        "title": "10. Contact și reclamații",
+        "body": "Pentru orice întrebare privind prelucrarea datelor dumneavoastră cu caracter personal sau pentru a vă exercita drepturile, scrieți la hello@core829.net.\nAveți, de asemenea, dreptul de a depune o plângere la autoritatea de supraveghere din România, ANSPDCP (www.dataprotection.ro), sau la autoritatea de supraveghere din locul dumneavoastră de reședință."
       }
-    ],
-    "updated": "Ultima actualizare: {date}"
+    ]
   },
   "cookiePolicy": {
-    "title": "Politica de cookie-uri",
-    "intro": "Această politică de cookie-uri explică ce sunt cookie-urile și modul în care CORE829 SRL utilizează cookie-uri și tehnologii similare pe site-ul core829.net.",
+    "title": "Politica privind cookie-urile",
+    "updated": "Ultima actualizare: {date}",
+    "intro": "Prezenta politică privind cookie-urile explică ce sunt cookie-urile și modul în care CORE829 SRL utilizează cookie-uri și tehnologii similare pe site-ul core829.net, în conformitate cu GDPR și cu Directiva ePrivacy, astfel cum a fost transpusă în legislația română.",
     "sections": [
       {
         "title": "1. Ce sunt cookie-urile",
-        "body": "Cookie-urile sunt fișiere text mici stocate pe dispozitivul dumneavoastră atunci când vizitați un site web. Acestea permit site-ului să vă rețină preferințele și să înțeleagă modul în care vizitatorii folosesc site-ul."
+        "body": "Cookie-urile sunt fișiere text mici stocate pe dispozitivul dumneavoastră atunci când vizitați un site web. Acestea permit site-ului să își amintească preferințele dumneavoastră și să înțeleagă modul în care vizitatorii utilizează site-ul, îmbunătățind funcționalitatea și experiența utilizatorului."
       },
       {
         "title": "2. Cookie-urile pe care le utilizăm",
-        "body": "Utilizăm cookie-uri strict necesare pentru funcționarea site-ului și cookie-uri de preferință pentru a reține alegerea limbii. Putem utiliza cookie-uri de analiză pentru a măsura traficul și a îmbunătăți conținutul, cu consimțământul dumneavoastră."
+        "body": "Utilizăm următoarele categorii de cookie-uri:\n- cookie-uri strict necesare: necesare pentru funcționarea site-ului și nu pot fi dezactivate;\n- cookie-uri de preferințe: pentru a reține alegerea limbii și setările dumneavoastră;\n- cookie-uri de analiză: pentru a măsura traficul și a îmbunătăți conținutul nostru, doar atunci când a fost obținut consimțământul dumneavoastră;\n- cookie-uri de marketing: atunci când v-ați dat consimțământul, pentru a livra publicitate relevantă."
       },
       {
-        "title": "3. Cookie-uri terțe",
-        "body": "Unele cookie-uri sunt setate de servicii terțe integrate în site, cum ar fi platformele de analiză și publicitate. Aceste terțe părți pot prelucra datele colectate conform propriilor politici de confidențialitate."
+        "title": "3. Cookie-uri ale terților",
+        "body": "Unele cookie-uri sunt setate de servicii terțe integrate în site, precum widgetul de recenzii Trustpilot și platformele de analiză. Acești terți pot prelucra datele colectate în conformitate cu propriile politici de confidențialitate."
       },
       {
         "title": "4. Gestionarea cookie-urilor",
-        "body": "Puteți gestiona sau șterge cookie-urile prin setările browserului dumneavoastră. Blocarea anumitor cookie-uri poate afecta funcționalitatea site-ului, cum ar fi reținerea preferinței de limbă."
+        "body": "Puteți gestiona sau șterge cookie-urile prin setările browserului. Blocarea anumitor cookie-uri poate afecta funcționalitatea site-ului, precum reținerea preferinței dumneavoastră de limbă."
       },
       {
         "title": "5. Consimțământ",
-        "body": "Acolo unde cookie-urile nu sunt strict necesare, solicităm consimțământul dumneavoastră înainte de a le instala. Vă puteți modifica preferințele oricând prin ștergerea cookie-urilor browserului și revenirea pe site."
+        "body": "Atunci când cookie-urile nu sunt strict necesare, vă solicităm consimțământul înainte de instalarea acestora. Vă puteți modifica preferințele în orice moment ștergând cookie-urile din browser și revenind pe site."
+      },
+      {
+        "title": "6. Modificări ale prezentei politici",
+        "body": "Prezenta politică privind cookie-urile poate fi actualizată din când în când. Orice modificare va fi publicată pe această pagină, cu data actualizării."
+      },
+      {
+        "title": "7. Contact",
+        "body": "Pentru orice întrebare privind utilizarea cookie-urilor, scrieți la hello@core829.net."
       }
-    ],
-    "updated": "Ultima actualizare: {date}"
+    ]
   },
   "contactEmails": {
     "heading": "Contact",

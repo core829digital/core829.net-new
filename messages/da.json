@@ -457,60 +457,116 @@
     "back": "Back to home"
   },
   "privacy": {
-    "title": "Privacy Policy",
+    "title": "Privatlivspolitik",
     "updated": "Last updated: {date}",
-    "intro": "This Privacy Policy explains how CORE829 SRL collects, uses and protects personal data, in compliance with the GDPR (EU Regulation 2016/679).",
+    "intro": "Denne privatlivspolitik forklarer, hvordan CORE829 SRL indsamler, bruger og beskytter personoplysninger, i fuld overensstemmelse med GDPR (EU-forordning 2016/679) og rumænsk lov nr. 190/2018 om beskyttelse af personoplysninger. Politikken gælder for hjemmesiden core829.net og for alle tjenester, der udbydes af CORE829 SRL.",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, registered in Romania, is the data controller for the personal data collected through this website. You can contact us through the contact form on this site."
+        "title": "1. Dataansvarlig",
+        "body": "CORE829 SRL, med registreret hjemsted på Str. Mihai Eminescu, 10, Roman, Rumænien, registreret i handelsregistret under nr. J2026029428009, CUI/CIF 54616345, er dataansvarlig for de personoplysninger, der behandles via denne hjemmeside og via dens tjenester, i overensstemmelse med art. 4, stk. 7, GDPR.\nDu kan kontakte den dataansvarlige pr. e-mail på hello@core829.net eller telefonisk på +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Data we collect",
-        "body": "We collect only the data you voluntarily provide through the contact and quote request forms: name, email, company, service of interest, estimated budget and the content of your message."
+        "title": "2. De data, vi indsamler",
+        "body": "Vi indsamler kun de data, der er strengt nødvendige for de formål, der er beskrevet nedenfor:\n- data, som du frivilligt giver os via kontakt-, tilbudsanmodnings- og rådgivningsformularerne: navn, e-mailadresse, virksomhed, ønsket tjeneste, anslået budget og indholdet af din besked;\n- data, som du giver i forbindelse med et kontraktforhold: faktureringsoplysninger, faktureringsadresse, momsnummer, kontaktoplysninger;\n- minimale tekniske data, der indsamles automatisk: IP-adresse, browsertype og -version, enhedstype, besøgte sider og tidsstempler, der udelukkende bruges til sikkerheden og den korrekte funktion af hjemmesiden."
       },
       {
-        "title": "3. Purposes of processing",
-        "body": "Data is processed to respond to contact and quote requests, to manage the commercial relationship and to fulfill legal obligations. We never sell your data."
+        "title": "3. Behandlingsformål",
+        "body": "Dine personoplysninger behandles til følgende formål:\n- besvarelse af kontakt- og tilbudsanmodninger og håndtering af det forudgående kontraktforhold;\n- levering og håndtering af de anmodede tjenester (Custom Servers, B2B-automatiseringer, Web Design, Web Apps, Eksekverbar software, SEO-indeksering, 360°-marketing Organic & Paid);\n- fakturering, regnskab og overholdelse af lovgivningsmæssige forpligtelser;\n- sikkerhed og forbedring af hjemmesiden og tjenesterne;\n- afsendelse af kommercielle meddelelser kun, hvor du har givet dit udtrykkelige samtykke.\nVi sælger eller udlejer aldrig dine personoplysninger til tredjeparter."
       },
       {
-        "title": "4. Legal basis",
-        "body": "The legal basis is the consent you give when submitting a form and the legitimate interest in responding to business requests (Art. 6 GDPR)."
+        "title": "4. Behandlingsgrundlag",
+        "body": "Behandlingen af personoplysninger er baseret på følgende retsgrundlag:\n- det samtykke, du giver, når du indsender en formular eller abonnerer på meddelelser (art. 6, stk. 1, litra a, GDPR);\n- opfyldelse af en kontrakt eller foranstaltninger forud for indgåelse af en kontrakt på din anmodning (art. 6, stk. 1, litra b, GDPR);\n- overholdelse af en retlig forpligtelse, som den dataansvarlige er underlagt (art. 6, stk. 1, litra c, GDPR), f.eks. regnskabs- og skattemæssige forpligtelser;\n- den dataansvarliges legitime interesse i at besvare forretningshenvendelser og sikre hjemmesidens sikkerhed (art. 6, stk. 1, litra f, GDPR)."
       },
       {
-        "title": "5. Retention",
-        "body": "Data is kept for the time necessary for the purposes described, and in any case no longer than required by law."
+        "title": "5. Modtagere og databehandlere",
+        "body": "Dine personoplysninger kan, kun når det er nødvendigt og i det minimum, der kræves, videregives til:\n- udbydere af hosting-, e-mail- og kommunikationstjenester;\n- betalings- og faktureringsudbydere;\n- professionelle rådgivere (juridiske, regnskabsmæssige), der er bundet af tavshedspligt;\n- kompetente offentlige myndigheder, hvor loven kræver det.\nAlle databehandlere er bundet af databehandlingsaftaler (DPA) og må kun behandle dataene i overensstemmelse med vores dokumenterede instrukser."
       },
       {
-        "title": "6. Your rights",
-        "body": "You have the right to access, rectify, delete and port your data, and to object to its processing. You can exercise these rights by contacting us."
+        "title": "6. Internationale overførsler",
+        "body": "Vi overfører ikke dine personoplysninger uden for Det Europæiske Økonomiske Samarbejdsområde (EØS). Hvor tredjeparts tjenesteudbydere behandler data på vores vegne, er de bundet af passende databehandlingsaftaler og, hvor der sker en overførsel uden for EØS, af passende garantier i henhold til kapitel V i GDPR."
+      },
+      {
+        "title": "7. Opbevaring af data",
+        "body": "Personoplysninger, der indsamles via formularerne, opbevares kun i den tid, der er nødvendig for at besvare anmodninger og håndtere et eventuelt kontraktforhold, og under alle omstændigheder ikke længere end loven kræver.\nRegnskabs- og skattedata opbevares i de perioder, der kræves af gældende lovgivning. Ved udløbet af opbevaringsperioden slettes eller anonymiseres dataene på sikker vis."
+      },
+      {
+        "title": "8. Dine rettigheder",
+        "body": "I henhold til GDPR har du ret til at:\n- få adgang til dine personoplysninger (art. 15);\n- få berigtiget urigtige oplysninger (art. 16);\n- få slettet dine data (art. 17);\n- få begrænset behandlingen (art. 18);\n- få dataoverførbarhed (art. 20);\n- gøre indsigelse mod behandlingen (art. 21);\n- til enhver tid trække dit samtykke tilbage, uden at det påvirker lovligheden af behandling, der er baseret på samtykke, og som fandt sted før tilbagetrækningen.\nDu kan udøve disse rettigheder ved at skrive til hello@core829.net. Vi svarer inden for 30 dage."
+      },
+      {
+        "title": "9. Datasikkerhed",
+        "body": "Vi implementerer passende tekniske og organisatoriske foranstaltninger for at beskytte dine personoplysninger mod uautoriseret adgang, ændring, videregivelse eller ødelæggelse, i overensstemmelse med art. 32 GDPR. Disse foranstaltninger omfatter sikker kommunikation (HTTPS), adgangskontrol og periodiske gennemgange af vores sikkerhedspraksis."
+      },
+      {
+        "title": "10. Ændringer i denne politik",
+        "body": "Denne privatlivspolitik kan opdateres fra tid til anden. Enhver ændring offentliggøres på denne side med opdateret dato. Vi opfordrer dig til regelmæssigt at gennemgå denne side."
+      },
+      {
+        "title": "11. Klager",
+        "body": "Hvis du mener, at behandlingen af dine personoplysninger er i strid med GDPR, har du ret til at indgive en klage til den rumænske nationale tilsynsmyndighed for behandling af personoplysninger (ANSPDCP), Str. G-ral Gheorghe Magheru 28-30, Bukarest, Rumænien, eller til tilsynsmyndigheden i dit bopælsland."
       }
     ]
   },
   "terms": {
-    "title": "Terms of Service",
+    "title": "Servicevilkår",
     "updated": "Last updated: {date}",
-    "intro": "These Terms of Service govern the use of the website core829.net and of CORE829 SRL services.",
+    "intro": "Disse servicevilkår regulerer brugen af hjemmesiden core829.net og af de tjenester, der udbydes af CORE829 SRL. Ved at få adgang til hjemmesiden eller anmode om en tjeneste accepterer du disse vilkår. Hvis du ikke accepterer dem, bedes du ikke bruge hjemmesiden eller dens tjenester.",
     "sections": [
       {
-        "title": "1. Acceptance of terms",
-        "body": "By accessing this website you accept these terms. If you do not agree, please do not use the website."
+        "title": "1. Tjenesteudbyder",
+        "body": "Hjemmesiden core829.net og de tjenester, der beskrives deri, leveres af CORE829 SRL, med registreret hjemsted på Str. Mihai Eminescu, 10, Roman, Rumænien, registreret i handelsregistret under nr. J2026029428009, CUI/CIF 54616345.\nKontakt: hello@core829.net — +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Services",
-        "body": "CORE829 offers software design and development, web apps, automations, AI systems and digital marketing services. Specific projects are governed by separate agreements."
+        "title": "2. Accept af vilkårene",
+        "body": "Ved at få adgang til hjemmesiden, anmode om et tilbud eller acceptere et forslag bekræfter du, at du har læst, forstået og accepteret disse servicevilkår. Specifikke projekter er yderligere reguleret af en separat skriftlig aftale underskrevet af begge parter, som i tilfælde af konflikt har forrang over disse generelle vilkår."
       },
       {
-        "title": "3. Intellectual property",
-        "body": "All content of this website is the property of CORE829 SRL. Deliverables produced for clients are subject to the terms of the individual contract."
+        "title": "3. Tilbudte tjenester",
+        "body": "CORE829 SRL tilbyder følgende tjenester:\n- Custom Servers: design og end-to-end-håndtering af skræddersyede serverkonfigurationer (AI, rendering, lagring, gaming, hosting), med komponenter anskaffet gennem Intel- og NVIDIA-partnere. CORE829 varetager designet, byggeprocessen og kvalitetsverificeringen på anmodning; virksomheden fremstiller ikke hardware direkte;\n- B2B-automatiseringer: automatisering af repetitive processer på tværs af virksomhedsværktøjer og -afdelinger (CRM, ERP, e-mail, fakturering);\n- Web Design: skræddersyet interface- og webdesign drevet af brandidentitet, ydeevne og konvertering;\n- Web Apps: full-stack skræddersyede webapplikationer, B2B/B2C-platforme, administrationsværktøjer og vertikale CRM-systemer;\n- Eksekverbar software: dedikeret desktop-software til vertikale behov;\n- SEO-indeksering: teknisk og indholdsmæssig optimering for organisk synlighed;\n- 360°-marketing (Organic & Paid): organiske sociale medier, indholdsstrategi og betalt annoncering på Meta Ads og Google Ads."
       },
       {
-        "title": "4. Limitation of liability",
-        "body": "The website is provided 'as is'. CORE829 is not liable for damages arising from the use of the website, to the extent permitted by law."
+        "title": "4. Tilbud og kontrakter",
+        "body": "Tilbud er gyldige i den periode, der er angivet i selve tilbuddet. Et projekt påbegyndes først efter skriftlig accept af tilbuddet og, hvor det er relevant, efter underskrivelse af den specifikke projektkontrakt. Priser, omfang og leveringstider er dem, der er angivet i det accepterede tilbud. Enhver ændring af omfanget, der anmodes om efter accept, er underlagt et nyt skriftligt estimat."
       },
       {
-        "title": "5. Applicable law",
-        "body": "These terms are governed by Romanian law. Any dispute will be subject to the jurisdiction of the competent Romanian courts."
+        "title": "5. Betalinger",
+        "body": "Betalingsbetingelser, beløb og milepæle er dem, der er angivet i det accepterede tilbud eller i projektkontrakten. Medmindre andet er aftalt, kræver projekter en forudbetaling og efterfølgende milepælsbetalinger. Fakturaer forfalder til betaling inden for den frist, der er angivet på fakturaen. Forsinkede betalinger kan medføre suspension af tjenesterne, indtil det udestående beløb er betalt."
+      },
+      {
+        "title": "6. Klients forpligtelser",
+        "body": "Klienten forpligter sig til rettidigt at levere alle oplysninger, indhold, adgange og feedback, der er nødvendige for leveringen af tjenesterne. Forsinkelser forårsaget af klienten kan forlænge de aftalte leveringstider. Klienten garanterer, at alt indhold og alle materialer, som klienten leverer, ikke krænker tredjeparters rettigheder."
+      },
+      {
+        "title": "7. Levering og accept",
+        "body": "Leverancer anses for accepteret, når klienten bekræfter accepten skriftligt eller bruger leverancen i produktionen uden indsigelse inden for den periode, der er angivet i kontrakten. Efter accept behandles ændringsanmodninger som nyt arbejde, der er underlagt et separat estimat."
+      },
+      {
+        "title": "8. Intellektuel ejendomsret",
+        "body": "Alt indhold på denne hjemmeside (tekster, grafik, logoer, hjemmesidens kildekode) tilhører CORE829 SRL og er beskyttet af ophavsret og lovgivning om intellektuel ejendomsret.\nMedmindre andet er skriftligt aftalt, erhverver klienten efter fuld betaling rettighederne til de leverancer, der udtrykkeligt er produceret for klienten, som defineret i projektkontrakten. De anvendte teknologier, rammeværker, metoder og eksisterende kode forbliver CORE829 SRL's ejendom og licenseres til klienten til brug af leverancen."
+      },
+      {
+        "title": "9. Fortrolighed",
+        "body": "Begge parter forpligter sig til at holde alle forretningsmæssige, tekniske og personlige oplysninger, der udveksles under forhandlingerne og udførelsen af tjenesterne, fortrolige og kun at bruge dem til formålet med kontrakten. Denne forpligtelse består efter kontraktens ophør."
+      },
+      {
+        "title": "10. Custom Servers — specifikke vilkår",
+        "body": "CORE829 fremstiller eller sender ikke hardware direkte: virksomheden designer konfigurationen, udvælger komponenterne gennem sit partnerøkosystem (herunder Intel og NVIDIA), koordinerer produktionen og verificerer kvaliteten før levering. Levering er kun tilgængelig i Europa og Amerika; ordrer til andre regioner kan ikke behandles.\nHardwaren er omfattet af producentens garanti, som videregives til klienten. CORE829 er ikke part i producentens garanti, men yder rimelig assistance i forbindelse med udøvelsen af den."
+      },
+      {
+        "title": "11. Garanti og begrænsning af ansvar",
+        "body": "Hjemmesiden og tjenesterne leveres med den fornødne professionelle omhu. I det omfang loven tillader, er CORE829 SRL ikke ansvarlig for indirekte, tilfældige, følgeskader eller straffende skader, tab af fortjeneste, tab af data eller afbrydelse af forretningsdriften, der opstår i forbindelse med brugen af hjemmesiden eller tjenesterne, selv hvis muligheden for sådanne skader er blevet påpeget.\nUnder alle omstændigheder overstiger CORE829 SRL's samlede ansvar for ethvert krav i forbindelse med et projekt ikke det samlede beløb, som klienten har betalt for dette projekt."
+      },
+      {
+        "title": "12. Force majeure",
+        "body": "Ingen af parterne er ansvarlige for forsinkelse eller manglende opfyldelse af sine forpligtelser, hvor en sådan forsinkelse eller manglende opfyldelse skyldes begivenheder uden for den pågældende parts rimelige kontrol, herunder, men ikke begrænset til, naturkatastrofer, pandemier, krige, strejker, strømafbrydelser eller netværksforstyrrelser. Den berørte part skal underrette den anden part hurtigst muligt."
+      },
+      {
+        "title": "13. Ophør",
+        "body": "Enhver part kan ophæve kontrakten uden særlig begrundelse ved skriftlig meddelelse i overensstemmelse med vilkårene i den specifikke kontrakt. I tilfælde af væsentlig misligholdelse, der ikke afhjælpes inden for 15 dage efter skriftlig meddelelse, kan den forurettede part ophæve kontrakten og kræve erstatning. Beløb, der forfalder for allerede udført arbejde, forbliver betalbare."
+      },
+      {
+        "title": "14. Gældende lov og værneting",
+        "body": "Disse servicevilkår er underlagt rumænsk lov. Enhver tvist, der opstår i forbindelse med eller relaterer sig til disse vilkår eller tjenesterne, skal forelægges de kompetente domstole i Rumænien med enekompetence."
       }
     ]
   },
@@ -609,8 +665,8 @@
     "intelDesc": "Processors with the most widespread multiplatform power in the world: reliability and consistent throughput in AI, compute and daily use.",
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
-    "scopeTitle": "One single limit, stated clearly",
-    "scopeDesc": "To guarantee you consistent quality and support, we only ship within Europe and America. If your server must go elsewhere, we unfortunately cannot proceed.",
+    "scopeTitle": "Én tydelig grænse",
+    "scopeDesc": "Vores leverancer følger de officielle NVIDIA-eksportregler og den amerikanske eksportkontrol (EAR). Derfor sender vi kun inden for Europa og Amerika – og vi kan ikke sende til de embargo-ramte destinationer, der er anført nedenfor.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -624,7 +680,18 @@
     "docsIntro": "Eksportcompliance-certificeringerne for vores skræddersyede serverhardware, tilgængelige for alle besøgende.",
     "docsLanguageNote": "Dokumentet er på engelsk.",
     "viewPdf": "Se PDF",
-    "downloadPdf": "Download PDF"
+    "downloadPdf": "Download PDF",
+    "scopeRestrictedTitle": "Destinationer, vi ikke kan sende til",
+    "scopeRestricted": [
+      "Cuba",
+      "Iran",
+      "Nordkorea",
+      "Syrien",
+      "Rusland",
+      "Hviderusland",
+      "Besatte områder i Ukraine (Krim, Donetsk, Luhansk, Zaporizjzja, Kherson)"
+    ],
+    "scopeRegulationsLink": "Officielle NVIDIA-eksportregler"
   },
   "servicesDetail": {
     "back": "All services",
@@ -639,65 +706,85 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
+    "updated": "Sidst opdateret: {date}",
+    "intro": "Denne side giver detaljerede oplysninger om, hvordan CORE829 SRL behandler personoplysninger i overensstemmelse med GDPR (EU-forordning 2016/679) og den gældende rumænske lovgivning om beskyttelse af personoplysninger (lov nr. 190/2018).",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, with registered office in Romania, is the data controller for the personal data processed through this website and its services. You can contact us through the contact form or by email at hello@core829.net."
+        "title": "1. Dataansvarlig",
+        "body": "CORE829 SRL, Str. Mihai Eminescu, 10, Roman, Rumænien, handelsregisternummer J2026029428009, CUI/CIF 54616345, er dataansvarlig. Du kan kontakte os pr. e-mail på hello@core829.net eller telefonisk på +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Data we process",
-        "body": "We process only the data you provide voluntarily through our contact and quote request forms: name, email, company, services of interest, indicative budget and the content of your message. We also process minimal technical data (IP address, browser type) for the security and operation of the website."
+        "title": "2. De data, vi behandler",
+        "body": "Vi behandler de data, som du frivilligt giver os via vores kontakt-, tilbuds- og rådgivningsformularer: navn, e-mail, virksomhed, ønskede tjenester, anslået budget og beskedens indhold. Under et kontraktforhold behandler vi også fakturerings- og afregningsdata. Vi behandler minimale tekniske data (IP-adresse, browsertype, besøgte sider) for sikkerheden og driften af hjemmesiden."
       },
       {
-        "title": "3. Legal basis for processing",
-        "body": "We process personal data on the following legal bases: your consent (art. 6(1)(a) GDPR) for communications; the execution of a contract or pre-contractual measures (art. 6(1)(b) GDPR) for quote requests; legitimate interest (art. 6(1)(f) GDPR) for the security and improvement of the website."
+        "title": "3. Retsgrundlag for behandlingen",
+        "body": "Vi behandler personoplysninger på følgende retsgrundlag:\n- dit samtykke (art. 6, stk. 1, litra a, GDPR) til kommercielle meddelelser;\n- opfyldelse af en kontrakt eller foranstaltninger forud for indgåelse af en kontrakt (art. 6, stk. 1, litra b, GDPR) til tilbudsanmodninger og levering af tjenester;\n- overholdelse af retlige forpligtelser (art. 6, stk. 1, litra c, GDPR) til regnskabs- og skattemæssige formål;\n- legitim interesse (art. 6, stk. 1, litra f, GDPR) til sikkerhed og forbedring af hjemmesiden."
       },
       {
-        "title": "4. Data subject rights",
-        "body": "Under the GDPR you have the right to access, rectify, erase, restrict and port your personal data, as well as the right to object to the processing. You also have the right to withdraw consent at any time and to lodge a complaint with the competent supervisory authority (ANSPDCP in Romania)."
+        "title": "4. Registreret persons rettigheder",
+        "body": "Du har ret til at få adgang til, berigtiget, slettet og begrænset behandlingen af dine personoplysninger, til dataoverførbarhed og til at gøre indsigelse mod behandlingen. Du kan til enhver tid trække dit samtykke tilbage. Du kan udøve disse rettigheder ved at skrive til hello@core829.net; vi svarer inden for 30 dage."
       },
       {
-        "title": "5. Data retention",
-        "body": "Personal data collected through forms is retained only for the time necessary to respond to requests and manage any contractual relationship, in accordance with the legal retention periods."
+        "title": "5. Opbevaring af data",
+        "body": "Personoplysninger opbevares kun i den tid, der er nødvendig for at besvare anmodninger og håndtere kontraktforholdet, i overensstemmelse med lovbestemte opbevaringsperioder. Regnskabsdata opbevares i de perioder, loven kræver, hvorefter de slettes eller anonymiseres på sikker vis."
       },
       {
-        "title": "6. Data transfers",
-        "body": "We do not transfer personal data outside the European Economic Area. Where third-party service providers process data on our behalf, they are bound by appropriate data processing agreements."
+        "title": "6. Modtagere og databehandlere",
+        "body": "Personoplysninger kan, kun når det er nødvendigt, deles med hosting-, e-mail-, betalings- og faktureringsudbydere, professionelle rådgivere og offentlige myndigheder, hvor loven kræver det. Alle databehandlere er bundet af databehandlingsaftaler i overensstemmelse med art. 28 GDPR."
       },
       {
-        "title": "7. Contact",
-        "body": "For any question regarding the processing of your personal data, or to exercise your rights, write to hello@core829.net. We will respond within 30 days."
+        "title": "7. Dataoverførsler",
+        "body": "Vi overfører ikke personoplysninger uden for Det Europæiske Økonomiske Samarbejdsområde. Hvor der sker en overførsel gennem en tredjeparts databehandler, anvendes passende garantier i henhold til kapitel V i GDPR."
+      },
+      {
+        "title": "8. Automatiseret beslutningstagning",
+        "body": "Vi træffer ikke beslutninger, der udelukkende er baseret på automatiseret behandling, herunder profilering, som har retsvirkning for dig eller på tilsvarende måde i væsentlig grad påvirker dig."
+      },
+      {
+        "title": "9. Datasikkerhed",
+        "body": "Vi implementerer tekniske og organisatoriske foranstaltninger for at sikre et sikkerhedsniveau, der passer til risikoen, herunder kryptering af data under transmission, adgangskontrol og regelmæssige gennemgange, i overensstemmelse med art. 32 GDPR."
+      },
+      {
+        "title": "10. Kontakt og klager",
+        "body": "Ved spørgsmål om behandlingen af dine personoplysninger, eller for at udøve dine rettigheder, skriv til hello@core829.net.\nDu har også ret til at indgive en klage til den rumænske tilsynsmyndighed ANSPDCP (www.dataprotection.ro) eller til tilsynsmyndigheden i dit bopælsland."
       }
-    ],
-    "updated": "Sidst opdateret: {date}"
+    ]
   },
   "cookiePolicy": {
-    "title": "Cookie Policy",
-    "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
+    "title": "Cookiepolitik",
+    "updated": "Sidst opdateret: {date}",
+    "intro": "Denne cookiepolitik forklarer, hvad cookies er, og hvordan CORE829 SRL bruger cookies og lignende teknologier på hjemmesiden core829.net, i overensstemmelse med GDPR og ePrivacy-direktivet, som gennemført i rumænsk lovgivning.",
     "sections": [
       {
-        "title": "1. What are cookies",
-        "body": "Cookies are small text files stored on your device when you visit a website. They allow the website to remember your preferences and to understand how visitors use the site."
+        "title": "1. Hvad er cookies",
+        "body": "Cookies er små tekstfiler, der gemmes på din enhed, når du besøger en hjemmeside. De gør det muligt for hjemmesiden at huske dine præferencer og at forstå, hvordan besøgende bruger siden, hvilket forbedrer funktionalitet og brugeroplevelse."
       },
       {
-        "title": "2. Cookies we use",
-        "body": "We use strictly necessary cookies for the functioning of the website and preferences cookies to remember your language choice. We may use analytics cookies to measure traffic and improve our content, where your consent has been obtained."
+        "title": "2. De cookies, vi bruger",
+        "body": "Vi bruger følgende kategorier af cookies:\n- strengt nødvendige cookies: kræves for hjemmesidens funktion og kan ikke deaktiveres;\n- præferencecookies: til at huske dit sprogvalg og dine indstillinger;\n- analysecookies: til at måle trafik og forbedre vores indhold, kun hvor der er indhentet dit samtykke;\n- marketingcookies: hvor du har givet dit samtykke, til at levere relevant annoncering."
       },
       {
-        "title": "3. Third-party cookies",
-        "body": "Some cookies are set by third-party services integrated into the website, such as analytics and advertising platforms. These third parties may process the data collected according to their own privacy policies."
+        "title": "3. Tredjepartscookies",
+        "body": "Nogle cookies sættes af tredjepartstjenester, der er integreret i hjemmesiden, såsom Trustpilot-anmeldelseswidgeten og analyseplatforme. Disse tredjeparter kan behandle de indsamlede data i henhold til deres egne privatlivspolitikker."
       },
       {
-        "title": "4. Managing cookies",
-        "body": "You can manage or delete cookies through your browser settings. Blocking certain cookies may affect the functionality of the website, such as remembering your language preference."
+        "title": "4. Håndtering af cookies",
+        "body": "Du kan administrere eller slette cookies via dine browserindstillinger. Blokering af visse cookies kan påvirke hjemmesidens funktionalitet, såsom hukommelse af dit sprogvalg."
       },
       {
-        "title": "5. Consent",
-        "body": "Where cookies are not strictly necessary, we request your consent before installing them. You can change your preferences at any time by clearing your browser cookies and revisiting the website."
+        "title": "5. Samtykke",
+        "body": "Hvor cookies ikke er strengt nødvendige, anmoder vi om dit samtykke, før vi installerer dem. Du kan til enhver tid ændre dine præferencer ved at slette dine browscookies og besøge hjemmesiden igen."
+      },
+      {
+        "title": "6. Ændringer i denne politik",
+        "body": "Denne cookiepolitik kan opdateres fra tid til anden. Enhver ændring offentliggøres på denne side med opdateret dato."
+      },
+      {
+        "title": "7. Kontakt",
+        "body": "Ved spørgsmål om brugen af cookies, skriv til hello@core829.net."
       }
-    ],
-    "updated": "Sidst opdateret: {date}"
+    ]
   },
   "contactEmails": {
     "heading": "Contact",

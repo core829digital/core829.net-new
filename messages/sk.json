@@ -457,60 +457,116 @@
     "back": "Back to home"
   },
   "privacy": {
-    "title": "Privacy Policy",
+    "title": "Zásady ochrany osobných údajov",
     "updated": "Last updated: {date}",
-    "intro": "This Privacy Policy explains how CORE829 SRL collects, uses and protects personal data, in compliance with the GDPR (EU Regulation 2016/679).",
+    "intro": "Tieto Zásady ochrany osobných údajov vysvetľujú, ako spoločnosť CORE829 SRL zhromažďuje, používa a chráni osobné údaje, v úplnom súlade s GDPR (nariadenie EÚ 2016/679) a rumunským zákonom č. 190/2018 o ochrane osobných údajov. Tieto zásady sa vzťahujú na webové sídlo core829.net a na všetky služby ponúkané spoločnosťou CORE829 SRL.",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, registered in Romania, is the data controller for the personal data collected through this website. You can contact us through the contact form on this site."
+        "title": "1. Prevádzkovateľ údajov",
+        "body": "Spoločnosť CORE829 SRL, so sídlom na adrese Str. Mihai Eminescu, 10, Roman, Rumunsko, zapísaná v obchodnom registri pod číslom J2026029428009, CUI/CIF 54616345, je prevádzkovateľom osobných údajov spracúvaných prostredníctvom tohto webového sídla a jeho služieb, v súlade s čl. 4 ods. 7 GDPR.\nS prevádzkovateľom sa môžete spojiť e-mailom na adrese hello@core829.net alebo telefonicky na číslach +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Data we collect",
-        "body": "We collect only the data you voluntarily provide through the contact and quote request forms: name, email, company, service of interest, estimated budget and the content of your message."
+        "title": "2. Údaje, ktoré zhromažďujeme",
+        "body": "Zhromažďujeme iba údaje nevyhnutne potrebné na účely opísané nižšie:\n- údaje, ktoré nám dobrovoľne poskytnete prostredníctvom kontaktných, cenových a konzultačných formulárov: meno, e-mailová adresa, spoločnosť, služba, o ktorú máte záujem, odhadovaný rozpočet a obsah vašej správy;\n- údaje poskytované v rámci zmluvného vzťahu: fakturačné údaje, fakturačná adresa, daňové identifikačné číslo, kontaktné údaje;\n- minimálne technické údaje zhromažďované automaticky: IP adresa, typ a verzia prehliadača, typ zariadenia, navštívené stránky a časové pečiatky, používané výlučne na zabezpečenie a správnu prevádzku webového sídla."
       },
       {
-        "title": "3. Purposes of processing",
-        "body": "Data is processed to respond to contact and quote requests, to manage the commercial relationship and to fulfill legal obligations. We never sell your data."
+        "title": "3. Účely spracúvania",
+        "body": "Vaše osobné údaje sa spracúvajú na tieto účely:\n- odpovedanie na kontaktné a cenové požiadavky a riadenie predzmluvného vzťahu;\n- poskytovanie a správa požadovaných služieb (Vlastné servery, Automatizácie B2B, Webdizajn, Webové aplikácie, Spustiteľný softvér, SEO indexácia, Marketing 360° organický a platený);\n- fakturácia, účtovníctvo a plnenie zákonných povinností;\n- zabezpečenie a zlepšovanie webového sídla a služieb;\n- zasielanie obchodných oznámení iba v prípade, že ste udelili výslovný súhlas.\nVaše osobné údaje nikdy nepredávame ani neprenajímame tretím stranám."
       },
       {
-        "title": "4. Legal basis",
-        "body": "The legal basis is the consent you give when submitting a form and the legitimate interest in responding to business requests (Art. 6 GDPR)."
+        "title": "4. Právny základ",
+        "body": "Spracúvanie osobných údajov je založené na týchto právnych základoch:\n- súhlas, ktorý udelíte pri odoslaní formulára alebo pri prihlásení sa na odber oznámení (čl. 6 ods. 1 písm. a) GDPR);\n- plnenie zmluvy alebo predzmluvné opatrenia prijaté na vašu žiadosť (čl. 6 ods. 1 písm. b) GDPR);\n- splnenie zákonnej povinnosti, ktorej prevádzkovateľ podlieha (čl. 6 ods. 1 písm. c) GDPR), napríklad účtovných a daňových povinností;\n- oprávnený záujem prevádzkovateľa na odpovedaní na obchodné požiadavky a zabezpečení webového sídla (čl. 6 ods. 1 písm. f) GDPR)."
       },
       {
-        "title": "5. Retention",
-        "body": "Data is kept for the time necessary for the purposes described, and in any case no longer than required by law."
+        "title": "5. Príjemcovia a sprostredkovatelia",
+        "body": "Vaše osobné údaje môžu byť poskytnuté, iba ak je to potrebné a v minimálnom nevyhnutnom rozsahu, nasledujúcim subjektom:\n- poskytovateľom hostingových, e-mailových a komunikačných služieb;\n- poskytovateľom platobných a fakturačných služieb;\n- odborným poradcom (právnym, účtovným) viazaným profesijným tajomstvom;\n- príslušným orgánom verejnej moci, ak to vyžaduje zákon.\nVšetci sprostredkovatelia sú viazaní zmluvami o spracúvaní údajov (DPA) a údaje môžu spracúvať iba na základe našich písomných pokynov."
       },
       {
-        "title": "6. Your rights",
-        "body": "You have the right to access, rectify, delete and port your data, and to object to its processing. You can exercise these rights by contacting us."
+        "title": "6. Medzinárodné prenosy údajov",
+        "body": "Neprenášame vaše osobné údaje mimo Európsky hospodársky priestor (EHP). Ak tretie strany spracúvajú údaje v našom mene, sú viazané vhodnými zmluvami o spracúvaní údajov, a ak dôjde k prenosu mimo EHP, primeranými zárukami podľa kapitoly V GDPR."
+      },
+      {
+        "title": "7. Lehota uchovávania údajov",
+        "body": "Osobné údaje zhromaždené prostredníctvom formulárov sa uchovávajú iba počas obdobia nevyhnutného na vybavenie požiadaviek a riadenie prípadného zmluvného vzťahu, v každom prípade nie dlhšie, ako vyžaduje zákon.\nÚčtovné a daňové údaje sa uchovávajú počas období stanovených platnými právnymi predpismi. Po uplynutí lehoty uchovávania sa údaje bezpečne vymažú alebo anonymizujú."
+      },
+      {
+        "title": "8. Vaše práva",
+        "body": "Podľa GDPR máte právo:\n- na prístup k svojim osobným údajom (čl. 15);\n- na opravu nepresných údajov (čl. 16);\n- na výmaz svojich údajov (čl. 17);\n- na obmedzenie spracúvania (čl. 18);\n- na prenosnosť údajov (čl. 20);\n- namietať proti spracúvaniu (čl. 21);\n- kedykoľvek odvolať svoj súhlas bez toho, aby tým bola dotknutá zákonnosť spracúvania založeného na súhlase udelenom pred jeho odvolaním.\nTieto práva môžete uplatniť písomne na adrese hello@core829.net. Odpovieme do 30 dní."
+      },
+      {
+        "title": "9. Bezpečnosť údajov",
+        "body": "Zavádzame vhodné technické a organizačné opatrenia na ochranu vašich osobných údajov pred neoprávneným prístupom, zmenou, zverejnením alebo zničením, v súlade s čl. 32 GDPR. Tieto opatrenia zahŕňajú zabezpečenú komunikáciu (HTTPS), riadenie prístupu a pravidelné preskúmania našich bezpečnostných postupov."
+      },
+      {
+        "title": "10. Zmeny týchto zásad",
+        "body": "Tieto Zásady ochrany osobných údajov môžu byť z času na čas aktualizované. Akékoľvek zmeny budú zverejnené na tejto stránke s dátumom aktualizácie. Odporúčame vám túto stránku pravidelne kontrolovať."
+      },
+      {
+        "title": "11. Sťažnosti",
+        "body": "Ak sa domnievate, že spracúvanie vašich osobných údajov porušuje GDPR, máte právo podať sťažnosť rumunskému Národnému orgánu na ochranu osobných údajov (ANSPDCP), Str. G-ral Gheorghe Magheru 28-30, Bukurešť, Rumunsko, alebo dozornému orgánu vášho miesta bydliska."
       }
     ]
   },
   "terms": {
-    "title": "Terms of Service",
+    "title": "Obchodné podmienky",
     "updated": "Last updated: {date}",
-    "intro": "These Terms of Service govern the use of the website core829.net and of CORE829 SRL services.",
+    "intro": "Tieto Obchodné podmienky upravujú používanie webového sídla core829.net a služieb ponúkaných spoločnosťou CORE829 SRL. Prístupom na webové sídlo alebo objednaním akejkoľvek služby súhlasíte s týmito podmienkami. Ak nesúhlasíte, webové sídlo ani jeho služby nepoužívajte.",
     "sections": [
       {
-        "title": "1. Acceptance of terms",
-        "body": "By accessing this website you accept these terms. If you do not agree, please do not use the website."
+        "title": "1. Poskytovateľ služby",
+        "body": "Webové sídlo core829.net a služby v ňom opísané poskytuje spoločnosť CORE829 SRL, so sídlom na adrese Str. Mihai Eminescu, 10, Roman, Rumunsko, zapísaná v obchodnom registri pod číslom J2026029428009, CUI/CIF 54616345.\nKontakt: hello@core829.net — +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Services",
-        "body": "CORE829 offers software design and development, web apps, automations, AI systems and digital marketing services. Specific projects are governed by separate agreements."
+        "title": "2. Prijatie podmienok",
+        "body": "Prístupom na webové sídlo, vyžiadaním si cenovej ponuky alebo prijatím návrhu potvrdzujete, že ste si prečítali, porozumeli a prijali tieto Obchodné podmienky. Konkrétne projekty sa ďalej riadia samostatnou písomnou zmluvou podpísanou oboma stranami, ktorá má v prípade rozporu prednosť pred týmito všeobecnými podmienkami."
       },
       {
-        "title": "3. Intellectual property",
-        "body": "All content of this website is the property of CORE829 SRL. Deliverables produced for clients are subject to the terms of the individual contract."
+        "title": "3. Ponúkané služby",
+        "body": "Spoločnosť CORE829 SRL ponúka nasledujúce služby:\n- Vlastné servery: návrh a komplexná správa vlastných serverových zostáv (AI, renderovanie, úložiská, herné servery, hosting), s komponentmi zabezpečovanými prostredníctvom partnerov Intel a NVIDIA. CORE829 na požiadanie riadi návrh, proces zostavenia a kontrolu kvality; hardvér priamo nevyrába;\n- Automatizácie B2B: automatizácia opakujúcich sa procesov naprieč obchodnými nástrojmi a oddeleniami (CRM, ERP, e-mail, fakturácia);\n- Webdizajn: návrh individuálnych rozhraní a webov riadený identitou značky, výkonom a konverziou;\n- Webové aplikácie: vlastné full-stack webové aplikácie, platformy B2B/B2C, nástroje na správu a vertikálne CRM systémy;\n- Spustiteľný softvér: špecializovaný desktopový softvér pre vertikálne potreby;\n- SEO indexácia: technická a obsahová optimalizácia pre organickú viditeľnosť;\n- Marketing 360° (organický a platený): organické sociálne siete, obsahová stratégia a platená reklama na Meta Ads a Google Ads."
       },
       {
-        "title": "4. Limitation of liability",
-        "body": "The website is provided 'as is'. CORE829 is not liable for damages arising from the use of the website, to the extent permitted by law."
+        "title": "4. Cenové ponuky a zmluvy",
+        "body": "Cenové ponuky sú platné počas obdobia uvedeného v samotnej ponuke. Projekt sa začína až po písomnom prijatí ponuky a prípadne po podpise konkrétnej projektovej zmluvy. Ceny, rozsah a termíny dodania sú uvedené v prijatej ponuke. Akákoľvek zmena rozsahu požadovaná po prijatí podlieha novému písomnému odhadu."
       },
       {
-        "title": "5. Applicable law",
-        "body": "These terms are governed by Romanian law. Any dispute will be subject to the jurisdiction of the competent Romanian courts."
+        "title": "5. Platby",
+        "body": "Platebné podmienky, sumy a míľniky sú uvedené v prijatej ponuke alebo projektovej zmluve. Pokiaľ nie je dohodnuté inak, projekty vyžadujú zálohu a následné platby za míľniky. Faktúry sú splatné v lehote uvedenej na faktúre. Omeškané platby môžu viesť k pozastaveniu služieb až do uhradenia dlžnej sumy."
+      },
+      {
+        "title": "6. Povinnosti klienta",
+        "body": "Klient sa zaväzuje včas poskytnúť všetky informácie, obsah, prístupy a spätnú väzbu nevyhnutné na poskytovanie služieb. Oneskorenia spôsobené klientom môžu predĺžiť dohodnuté termíny dodania. Klient zaručuje, že všetok obsah a materiály, ktoré poskytuje, neporušujú práva tretích strán."
+      },
+      {
+        "title": "7. Dodanie a prevzatie",
+        "body": "Výstupy sa považujú za prevzaté, keď klient písomne potvrdí prevzatie alebo použije výstup v produkcii bez námietok v lehote uvedenej v zmluve. Po prevzatí sa požiadavky na zmeny považujú za novú prácu podliehajúcu samostatnému odhadu."
+      },
+      {
+        "title": "8. Duševné vlastníctvo",
+        "body": "Všetok obsah tohto webového sídla (texty, grafika, logá, zdrojový kód webu) je majetkom spoločnosti CORE829 SRL a je chránený autorským právom a právom duševného vlastníctva.\nPokiaľ nie je písomne dohodnuté inak, po úplnom zaplatení klient nadobúda práva k výstupom vyrobeným výslovne pre neho, ako sú definované v projektovej zmluve. Použité technológie, rámce, metodiky a predtým existujúci kód zostávajú majetkom spoločnosti CORE829 SRL a sú klientovi licencované na používanie výstupu."
+      },
+      {
+        "title": "9. Dôvernosť",
+        "body": "Obe strany sa zaväzujú zachovávať dôvernosť všetkých obchodných, technických a osobných informácií vymenených počas rokovaní a plnenia služieb a používať ich iba na účel zmluvy. Táto povinnosť trvá aj po ukončení zmluvy."
+      },
+      {
+        "title": "10. Vlastné servery — osobitné podmienky",
+        "body": "Spoločnosť CORE829 hardvér priamo nevyrába ani nezasiela: navrhuje zostavu, vyberá komponenty prostredníctvom svojho ekosystému partnerov (vrátane Intel a NVIDIA), koordinuje výrobu a pred dodaním overuje kvalitu. Dodanie je dostupné iba v Európe a Amerike; objednávky z iných regiónov nemožno spracovať.\nHardvér je krytý zárukou výrobcu, ktorá prechádza na klienta. Spoločnosť CORE829 nie je stranou záruky výrobcu, ale poskytuje primeranú pomoc pri jej uplatňovaní."
+      },
+      {
+        "title": "11. Záruka a obmedzenie zodpovednosti",
+        "body": "Webové sídlo a služby sú poskytované s náležitou odbornou starostlivosťou. V najširšom rozsahu povolenom zákonom spoločnosť CORE829 SRL nezodpovedá za nepriame, náhodné, následné alebo sankčné škody, stratu zisku, stratu údajov alebo prerušenie prevádzky vyplývajúce z používania webového sídla alebo služieb, a to ani v prípade, že bola na možnosť takýchto škôd upozornená.\nV každom prípade celková zodpovednosť spoločnosti CORE829 SRL za akýkoľvek nárok súvisiaci s projektom nepresiahne celkovú sumu zaplatenú klientom za daný projekt."
+      },
+      {
+        "title": "12. Vyššia moc",
+        "body": "Žiadna zo strán nezodpovedá za omeškanie alebo nesplnenie svojich povinností, ak toto omeškanie alebo nesplnenie vyplýva z udalostí mimo jej primeranej kontroly, vrátane, bez obmedzenia, prírodných katastrof, pandémií, vojen, štrajkov, výpadkov elektriny alebo výpadkov siete. Dotknutá strana upovedomí druhú stranu čo najskôr, ako je to primerane možné."
+      },
+      {
+        "title": "13. Ukončenie zmluvy",
+        "body": "Ktorákoľvek zo strán môže zmluvu ukončiť z vlastného rozhodnutia písomným oznámením v súlade s podmienkami konkrétnej zmluvy. V prípade podstatného porušenia, ktoré nebude napravené do 15 dní od písomného oznámenia, môže poškodená strana zmluvu ukončiť a požadovať náhradu škody. Sumy splatné za už vykonanú prácu zostávajú splatné."
+      },
+      {
+        "title": "14. Rozhodné právo a súdna príslušnosť",
+        "body": "Tieto Obchodné podmienky sa riadia rumunským právom. Akékoľvek spory vzniknuté z týchto podmienok alebo služieb alebo v súvislosti s nimi spadajú do výlučnej príslušnosti príslušných rumunských súdov."
       }
     ]
   },
@@ -609,8 +665,8 @@
     "intelDesc": "Processors with the most widespread multiplatform power in the world: reliability and consistent throughput in AI, compute and daily use.",
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
-    "scopeTitle": "One single limit, stated clearly",
-    "scopeDesc": "To guarantee you consistent quality and support, we only ship within Europe and America. If your server must go elsewhere, we unfortunately cannot proceed.",
+    "scopeTitle": "Jediný limit, stanovený jasne",
+    "scopeDesc": "Naše dodávky sa riadia oficiálnymi vývoznými predpismi spoločnosti NVIDIA a americkým právom na kontrolu vývozu (EAR). Z tohto dôvodu doručujeme iba v rámci Európy a Ameriky — nemôžeme doručovať do nižšie uvedených destinácií, na ktoré sa vzťahuje embargo.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -624,7 +680,18 @@
     "docsIntro": "Exportné certifikáty zhody pre náš zákazkový serverový hardvér, dostupné všetkým návštevníkom.",
     "docsLanguageNote": "Dokument v angličtine.",
     "viewPdf": "Zobraziť PDF",
-    "downloadPdf": "Stiahnuť PDF"
+    "downloadPdf": "Stiahnuť PDF",
+    "scopeRestrictedTitle": "Destinácie, do ktorých nedoručujeme",
+    "scopeRestricted": [
+      "Kuba",
+      "Irán",
+      "Severná Kórea",
+      "Sýria",
+      "Rusko",
+      "Bielorusko",
+      "Okupované územia Ukrajiny (Krym, Doneck, Luhansk, Záporožie, Cherson)"
+    ],
+    "scopeRegulationsLink": "Oficiálne vývozné predpisy spoločnosti NVIDIA"
   },
   "servicesDetail": {
     "back": "All services",
@@ -639,65 +706,85 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
+    "updated": "Posledná aktualizácia: {date}",
+    "intro": "Táto stránka poskytuje podrobné informácie o tom, ako spoločnosť CORE829 SRL spracúva osobné údaje v súlade s GDPR (nariadenie EÚ 2016/679) a platnými rumunskými právnymi predpismi o ochrane osobných údajov (zákon č. 190/2018).",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, with registered office in Romania, is the data controller for the personal data processed through this website and its services. You can contact us through the contact form or by email at hello@core829.net."
+        "title": "1. Prevádzkovateľ údajov",
+        "body": "Spoločnosť CORE829 SRL, Str. Mihai Eminescu, 10, Roman, Rumunsko, obchodný register č. J2026029428009, CUI/CIF 54616345, je prevádzkovateľom údajov. Kontaktovať nás môžete e-mailom na adrese hello@core829.net alebo telefonicky na číslach +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Data we process",
-        "body": "We process only the data you provide voluntarily through our contact and quote request forms: name, email, company, services of interest, indicative budget and the content of your message. We also process minimal technical data (IP address, browser type) for the security and operation of the website."
+        "title": "2. Údaje, ktoré spracúvame",
+        "body": "Spracúvame údaje, ktoré nám dobrovoľne poskytnete prostredníctvom našich kontaktných, cenových a konzultačných formulárov: meno, e-mail, spoločnosť, služby, o ktoré máte záujem, odhadovaný rozpočet a obsah správy. V rámci zmluvného vzťahu spracúvame aj fakturačné a platobné údaje. Spracúvame minimálne technické údaje (IP adresa, typ prehliadača, navštívené stránky) na zabezpečenie a prevádzku webového sídla."
       },
       {
-        "title": "3. Legal basis for processing",
-        "body": "We process personal data on the following legal bases: your consent (art. 6(1)(a) GDPR) for communications; the execution of a contract or pre-contractual measures (art. 6(1)(b) GDPR) for quote requests; legitimate interest (art. 6(1)(f) GDPR) for the security and improvement of the website."
+        "title": "3. Právny základ spracúvania",
+        "body": "Osobné údaje spracúvame na týchto právnych základoch:\n- váš súhlas (čl. 6 ods. 1 písm. a) GDPR) na obchodné oznámenia;\n- plnenie zmluvy alebo predzmluvné opatrenia (čl. 6 ods. 1 písm. b) GDPR) na cenové požiadavky a poskytovanie služieb;\n- plnenie zákonných povinností (čl. 6 ods. 1 písm. c) GDPR) na účtovné a daňové účely;\n- oprávnený záujem (čl. 6 ods. 1 písm. f) GDPR) na zabezpečení a zlepšovaní webového sídla."
       },
       {
-        "title": "4. Data subject rights",
-        "body": "Under the GDPR you have the right to access, rectify, erase, restrict and port your personal data, as well as the right to object to the processing. You also have the right to withdraw consent at any time and to lodge a complaint with the competent supervisory authority (ANSPDCP in Romania)."
+        "title": "4. Práva dotknutých osôb",
+        "body": "Máte právo na prístup, opravu, výmaz, obmedzenie a prenosnosť svojich osobných údajov a právo namietať proti ich spracúvaniu. Svoj súhlas môžete kedykoľvek odvolať. Tieto práva môžete uplatniť písomne na adrese hello@core829.net; odpovieme do 30 dní."
       },
       {
-        "title": "5. Data retention",
-        "body": "Personal data collected through forms is retained only for the time necessary to respond to requests and manage any contractual relationship, in accordance with the legal retention periods."
+        "title": "5. Lehota uchovávania údajov",
+        "body": "Osobné údaje sa uchovávajú iba počas obdobia nevyhnutného na vybavenie požiadaviek a riadenie zmluvného vzťahu, v súlade so zákonnými lehotami uchovávania. Účtovné údaje sa uchovávajú počas období stanovených zákonom, po ktorých uplynutí sa bezpečne vymažú alebo anonymizujú."
       },
       {
-        "title": "6. Data transfers",
-        "body": "We do not transfer personal data outside the European Economic Area. Where third-party service providers process data on our behalf, they are bound by appropriate data processing agreements."
+        "title": "6. Príjemcovia a sprostredkovatelia",
+        "body": "Osobné údaje môžu byť zdieľané, iba ak je to potrebné, s poskytovateľmi hostingu, e-mailu, platieb a fakturácie, odbornými poradcami a orgánmi verejnej moci, ak to vyžaduje zákon. Všetci sprostredkovatelia sú viazaní zmluvami o spracúvaní údajov v súlade s čl. 28 GDPR."
       },
       {
-        "title": "7. Contact",
-        "body": "For any question regarding the processing of your personal data, or to exercise your rights, write to hello@core829.net. We will respond within 30 days."
+        "title": "7. Prenos údajov",
+        "body": "Neprenášame osobné údaje mimo Európsky hospodársky priestor. Ak k prenosu dôjde prostredníctvom externého sprostredkovateľa, uplatnia sa primerané záruky podľa kapitoly V GDPR."
+      },
+      {
+        "title": "8. Automatizované rozhodovanie",
+        "body": "Neprijímame rozhodnutia založené výlučne na automatizovanom spracúvaní, vrátane profilovania, ktoré by vo vzťahu k vám mali právne účinky alebo sa vás podobným spôsobom významne dotýkali."
+      },
+      {
+        "title": "9. Bezpečnosť údajov",
+        "body": "Zavádzame technické a organizačné opatrenia na zabezpečenie úrovne bezpečnosti primeranej riziku, vrátane šifrovania údajov pri prenose, riadenia prístupu a pravidelných preskúmaní, v súlade s čl. 32 GDPR."
+      },
+      {
+        "title": "10. Kontakt a sťažnosti",
+        "body": "V prípade akýchkoľvek otázok týkajúcich sa spracúvania vašich osobných údajov alebo na uplatnenie svojich práv napíšte na adresu hello@core829.net.\nMáte tiež právo podať sťažnosť rumunskému dozornému orgánu ANSPDCP (www.dataprotection.ro) alebo dozornému orgánu vášho miesta bydliska."
       }
-    ],
-    "updated": "Posledná aktualizácia: {date}"
+    ]
   },
   "cookiePolicy": {
-    "title": "Cookie Policy",
-    "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
+    "title": "Zásady používania súborov cookie",
+    "updated": "Posledná aktualizácia: {date}",
+    "intro": "Tieto Zásady používania súborov cookie vysvetľujú, čo sú súbory cookie a ako spoločnosť CORE829 SRL používa súbory cookie a podobné technológie na webovom sídle core829.net, v súlade s GDPR a smernicou o súkromí a elektronických komunikáciách (ePrivacy), transponovanou do rumunského práva.",
     "sections": [
       {
-        "title": "1. What are cookies",
-        "body": "Cookies are small text files stored on your device when you visit a website. They allow the website to remember your preferences and to understand how visitors use the site."
+        "title": "1. Čo sú súbory cookie",
+        "body": "Súbory cookie sú malé textové súbory uložené vo vašom zariadení pri návšteve webového sídla. Umožňujú webovému sídlu zapamätať si vaše preferencie a porozumieť tomu, ako návštevníci stránku používajú, čím zlepšujú funkčnosť a používateľský zážitok."
       },
       {
-        "title": "2. Cookies we use",
-        "body": "We use strictly necessary cookies for the functioning of the website and preferences cookies to remember your language choice. We may use analytics cookies to measure traffic and improve our content, where your consent has been obtained."
+        "title": "2. Súbory cookie, ktoré používame",
+        "body": "Používame nasledujúce kategórie súborov cookie:\n- nevyhnutne potrebné súbory cookie: vyžadované na fungovanie webového sídla a nemožno ich zakázať;\n- preferenčné súbory cookie: na zapamätanie si vašej voľby jazyka a nastavení;\n- analytické súbory cookie: na meranie návštevnosti a zlepšovanie nášho obsahu, iba ak ste udelili súhlas;\n- marketingové súbory cookie: ak ste udelili súhlas, na doručovanie relevantnej reklamy."
       },
       {
-        "title": "3. Third-party cookies",
-        "body": "Some cookies are set by third-party services integrated into the website, such as analytics and advertising platforms. These third parties may process the data collected according to their own privacy policies."
+        "title": "3. Súbory cookie tretích strán",
+        "body": "Niektoré súbory cookie nastavujú služby tretích strán integrované do webového sídla, ako je widget recenzií Trustpilot a analytické platformy. Tieto tretie strany môžu zhromaždené údaje spracúvať podľa svojich vlastných zásad ochrany osobných údajov."
       },
       {
-        "title": "4. Managing cookies",
-        "body": "You can manage or delete cookies through your browser settings. Blocking certain cookies may affect the functionality of the website, such as remembering your language preference."
+        "title": "4. Správa súborov cookie",
+        "body": "Súbory cookie môžete spravovať alebo mazať prostredníctvom nastavení prehliadača. Zablokovanie niektorých súborov cookie môže ovplyvniť funkčnosť webového sídla, napríklad zapamätanie si vašej jazykovej preferencie."
       },
       {
-        "title": "5. Consent",
-        "body": "Where cookies are not strictly necessary, we request your consent before installing them. You can change your preferences at any time by clearing your browser cookies and revisiting the website."
+        "title": "5. Súhlas",
+        "body": "Ak súbory cookie nie sú nevyhnutne potrebné, vyžiadame si váš súhlas pred ich inštaláciou. Svoje preferencie môžete kedykoľvek zmeniť vymazaním súborov cookie v prehliadači a opätovnou návštevou webového sídla."
+      },
+      {
+        "title": "6. Zmeny týchto zásad",
+        "body": "Tieto Zásady používania súborov cookie môžu byť z času na čas aktualizované. Akékoľvek zmeny budú zverejnené na tejto stránke s dátumom aktualizácie."
+      },
+      {
+        "title": "7. Kontakt",
+        "body": "V prípade akýchkoľvek otázok týkajúcich sa používania súborov cookie napíšte na adresu hello@core829.net."
       }
-    ],
-    "updated": "Posledná aktualizácia: {date}"
+    ]
   },
   "contactEmails": {
     "heading": "Contact",

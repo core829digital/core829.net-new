@@ -457,60 +457,116 @@
     "back": "Back to home"
   },
   "privacy": {
-    "title": "Privacy Policy",
+    "title": "Tietosuojakäytäntö",
     "updated": "Last updated: {date}",
-    "intro": "This Privacy Policy explains how CORE829 SRL collects, uses and protects personal data, in compliance with the GDPR (EU Regulation 2016/679).",
+    "intro": "Tämä tietosuojakäytäntö selittää, miten CORE829 SRL kerää, käyttää ja suojaa henkilötietoja täysin GDPR:n (EU:n asetus 2016/679) ja henkilötietojen suojaa koskevan Romanian lain nro 190/2018 mukaisesti. Käytäntö koskee core829.net-verkkosivustoa ja kaikkia CORE829 SRL:n tarjoamia palveluita.",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, registered in Romania, is the data controller for the personal data collected through this website. You can contact us through the contact form on this site."
+        "title": "1. Rekisterinpitäjä",
+        "body": "CORE829 SRL (rekisteröity osoite: Str. Mihai Eminescu, 10, Roman, Romania; kaupparekisterinumero: J2026029428009; CUI/CIF: 54616345) on tämän verkkosivuston ja sen palveluiden kautta käsiteltyjen henkilötietojen rekisterinpitäjä GDPR:n 4 artiklan 7 kohdan mukaisesti.\nVoit ottaa yhteyttä rekisterinpitäjään sähköpostitse osoitteeseen hello@core829.net tai puhelimitse numeroon +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Data we collect",
-        "body": "We collect only the data you voluntarily provide through the contact and quote request forms: name, email, company, service of interest, estimated budget and the content of your message."
+        "title": "2. Keräämämme tiedot",
+        "body": "Keräämme vain alla kuvattujen tarkoitusten kannalta välttämättömät tiedot:\n- tiedot, jotka annat vapaaehtoisesti yhteydenotto-, tarjouspyyntö- ja konsultaatiolomakkeilla: nimi, sähköpostiosoite, yritys, kiinnostava palvelu, arvioitu budjetti ja viestisi sisältö;\n- sopimussuhteen yhteydessä annetut tiedot: laskutustiedot, laskutusosoite, arvonlisäverotunnus, yhteystiedot;\n- automaattisesti kerätyt vähimmäistekniset tiedot: IP-osoite, selaimen tyyppi ja versio, laitteen tyyppi, vieraillut sivut ja aikaleimat, joita käytetään yksinomaan sivuston turvallisuuteen ja moitteettomaan toimintaan."
       },
       {
-        "title": "3. Purposes of processing",
-        "body": "Data is processed to respond to contact and quote requests, to manage the commercial relationship and to fulfill legal obligations. We never sell your data."
+        "title": "3. Käsittelyn tarkoitukset",
+        "body": "Henkilötietojasi käsitellään seuraaviin tarkoituksiin:\n- yhteydenotto- ja tarjouspyyntöihin vastaaminen ja sopimusta edeltävän suhteen hoitaminen;\n- pyydettyjen palveluiden (Custom Servers, B2B Automations, Web Design, Web Apps, Executable Software, SEO Indexing, 360° Marketing Organic & Paid) tarjoaminen ja hallinnointi;\n- laskutus, kirjanpito ja lakisääteisten velvoitteiden täyttäminen;\n- verkkosivuston ja palveluiden turvallisuus ja parantaminen;\n- kaupallisten viestien lähettäminen vain, jos olet antanut nimenomaisen suostumuksesi.\nEmme koskaan myy tai vuokraa henkilötietojasi kolmansille osapuolille."
       },
       {
-        "title": "4. Legal basis",
-        "body": "The legal basis is the consent you give when submitting a form and the legitimate interest in responding to business requests (Art. 6 GDPR)."
+        "title": "4. Oikeusperusta",
+        "body": "Henkilötietojen käsittely perustuu seuraaviin oikeusperusteisiin:\n- suostumus, jonka annat lomakkeen lähettämisen tai viestien tilaamisen yhteydessä (GDPR:n 6 artiklan 1 kohdan a alakohta);\n- sopimuksen täytäntöönpano tai pyynnöstäsi toteutetut sopimusta edeltävät toimenpiteet (GDPR:n 6 artiklan 1 kohdan b alakohta);\n- rekisterinpitäjään kohdistuvan lakisääteisen velvoitteen noudattaminen (GDPR:n 6 artiklan 1 kohdan c alakohta), esimerkiksi kirjanpito- ja vero-velvoitteet;\n- rekisterinpitäjän oikeutettu etu vastata liiketoimintapyyntöihin ja varmistaa verkkosivuston turvallisuus (GDPR:n 6 artiklan 1 kohdan f alakohta)."
       },
       {
-        "title": "5. Retention",
-        "body": "Data is kept for the time necessary for the purposes described, and in any case no longer than required by law."
+        "title": "5. Vastaanottajat ja käsittelijät",
+        "body": "Henkilötietojasi voidaan luovuttaa vain tarvittaessa ja vain vähimmäislaajuudessa:\n- hosting-, sähköposti- ja viestintäpalveluiden tarjoajille;\n- maksu- ja laskutuspalveluiden tarjoajille;\n- ammattilaisille (lakiasioiden, kirjanpidon asiantuntijoille), joita sitoo salassapitovelvollisuus;\n- toimivaltaisille viranomaisille, jos laki sitä edellyttää.\nKaikki henkilötietojen käsittelijät ovat sitoutuneet tietojenkäsittelysopimuksiin (DPA) ja voivat käsitellä tietoja vain dokumentoitujen ohjeidemme mukaisesti."
       },
       {
-        "title": "6. Your rights",
-        "body": "You have the right to access, rectify, delete and port your data, and to object to its processing. You can exercise these rights by contacting us."
+        "title": "6. Kansainväliset siirrot",
+        "body": "Emme siirrä henkilötietojasi Euroopan talousalueen (ETA) ulkopuolelle. Jos kolmannen osapuolen palveluntarjoajat käsittelevät tietoja puolestamme, heitä sitovat asianmukaiset tietojenkäsittelysopimukset, ja ETA:n ulkopuolisten siirtojen osalta sovelletaan GDPR:n V luvun mukaisia asianmukaisia suojatoimia."
+      },
+      {
+        "title": "7. Tietojen säilytys",
+        "body": "Lomakkeiden kautta kerättyjä henkilötietoja säilytetään vain niin kauan kuin on tarpeen pyyntöihin vastaamiseksi ja mahdollisen sopimussuhteen hoitamiseksi, eikä missään tapauksessa lain edellyttämää pidempään.\nKirjanpito- ja verotustietoja säilytetään sovellettavan lain edellyttämän ajan. Säilytysajan päätyttyä tiedot poistetaan tai anonymisoidaan turvallisesti."
+      },
+      {
+        "title": "8. Oikeutesi",
+        "body": "Sinulla on GDPR:n mukaan oikeus:\n- saada pääsy henkilötietoihisi (15 artikla);\n- oikaista virheelliset tiedot (16 artikla);\n- poistaa tietosi (17 artikla);\n- rajoittaa käsittelyä (18 artikla);\n- tietojen siirtämiseen järjestelmästä toiseen (20 artikla);\n- vastustaa käsittelyä (21 artikla);\n- peruuttaa suostumuksesi milloin tahansa vaikuttamatta ennen peruutusta suostumukseen perustuneen käsittelyn lainmukaisuuteen.\nVoit käyttää oikeuksiasi kirjoittamalla osoitteeseen hello@core829.net. Vastaamme 30 päivän kuluessa."
+      },
+      {
+        "title": "9. Tietoturva",
+        "body": "Toteutamme asianmukaiset tekniset ja organisatoriset toimenpiteet henkilötietojesi suojaamiseksi luvattomalta käytöltä, muuttamiselta, luovuttamiselta tai tuhoamiselta GDPR:n 32 artiklan mukaisesti. Näihin toimenpiteisiin kuuluvat suojattu viestintä (HTTPS), käyttöoikeuksien valvonta ja tietoturvakäytäntöjemme säännöllinen tarkistaminen."
+      },
+      {
+        "title": "10. Käytännön muutokset",
+        "body": "Tätä tietosuojakäytäntöä voidaan päivittää ajoittain. Muutokset julkaistaan tällä sivulla päivitettynä päivämääränä. Suosittelemme käymään tämän sivun ajoittain läpi."
+      },
+      {
+        "title": "11. Valitukset",
+        "body": "Jos katsot, että henkilötietojesi käsittely loukkaa GDPR:ää, sinulla on oikeus tehdä valitus Romanian kansalliselle henkilötietojen käsittelyn valvontaviranomaiselle (ANSPDCP), Str. G-ral Gheorghe Magheru 28-30, Bukarest, Romania, tai asuinpaikkasi valvontaviranomaiselle."
       }
     ]
   },
   "terms": {
-    "title": "Terms of Service",
+    "title": "Palveluehdot",
     "updated": "Last updated: {date}",
-    "intro": "These Terms of Service govern the use of the website core829.net and of CORE829 SRL services.",
+    "intro": "Nämä palveluehdot säätelevät core829.net-verkkosivuston ja CORE829 SRL:n tarjoamien palveluiden käyttöä. Käyttämällä sivustoa tai pyytämällä mitä tahansa palvelua hyväksyt nämä ehdot. Jos et hyväksy ehtoja, älä käytä sivustoa tai sen palveluita.",
     "sections": [
       {
-        "title": "1. Acceptance of terms",
-        "body": "By accessing this website you accept these terms. If you do not agree, please do not use the website."
+        "title": "1. Palveluntarjoaja",
+        "body": "core829.net-verkkosivuston ja siinä kuvattujen palveluiden tarjoaa CORE829 SRL (rekisteröity osoite: Str. Mihai Eminescu, 10, Roman, Romania; kaupparekisterinumero: J2026029428009; CUI/CIF: 54616345).\nYhteys: hello@core829.net — +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Services",
-        "body": "CORE829 offers software design and development, web apps, automations, AI systems and digital marketing services. Specific projects are governed by separate agreements."
+        "title": "2. Ehtojen hyväksyminen",
+        "body": "Käyttämällä sivustoa, pyytämällä tarjousta tai hyväksymällä ehdotuksen vahvistat lukeneesi, ymmärtäneesi ja hyväksyneesi nämä palveluehdot. Tiettyihin projekteihin sovelletaan lisäksi erillistä kirjallista sopimusta, jonka molemmat osapuolet allekirjoittavat ja joka on ristiriitatilanteessa ensisijainen näihin yleisiin ehtoihin nähden."
       },
       {
-        "title": "3. Intellectual property",
-        "body": "All content of this website is the property of CORE829 SRL. Deliverables produced for clients are subject to the terms of the individual contract."
+        "title": "3. Tarjotut palvelut",
+        "body": "CORE829 SRL tarjoaa seuraavia palveluita:\n- Custom Servers: räätälöityjen palvelimien (AI, renderöinti, tallennus, pelaaminen, hosting) suunnittelu ja päästä päähän -hallinta, komponentit hankittuina Intel- ja NVIDIA-partnereiden kautta. CORE829 hoitaa pyynnöstä suunnittelun, valmistusprosessin ja laadunvarmistuksen; se ei valmista laitteistoa suoraan;\n- B2B Automations: toistuvien prosessien automatisointi yritystyökalujen ja osastojen välillä (CRM, ERP, sähköposti, laskutus);\n- Web Design: räätälöityjen käyttöliittymien ja sivustojen suunnittelu, jota ohjaavat brändi-identiteetti, suorituskyky ja konversio;\n- Web Apps: räätälöidyt full-stack-verkkosovellukset, B2B/B2C-alustat, hallintatyökalut ja vertikaaliset CRM-järjestelmät;\n- Executable Software: erikoistuneet työpöytäohjelmistot vertikaalisiin tarpeisiin;\n- SEO Indexing: tekninen ja sisällöllinen optimointi orgaanisen näkyvyyden parantamiseksi;\n- 360° Marketing (Organic & Paid): orgaaninen sosiaalinen media, sisältöstrategia ja maksettu mainonta Meta Ads- ja Google Ads -alustoilla."
       },
       {
-        "title": "4. Limitation of liability",
-        "body": "The website is provided 'as is'. CORE829 is not liable for damages arising from the use of the website, to the extent permitted by law."
+        "title": "4. Tarjoukset ja sopimukset",
+        "body": "Tarjoukset ovat voimassa tarjouksessa mainitun ajan. Projekti alkaa vasta, kun tarjous on hyväksytty kirjallisesti ja mahdollisesti projektisopimus on allekirjoitettu. Hinnat, laajuus ja toimitusajat ovat hyväksytyssä tarjouksessa mainitut. Hyväksymisen jälkeen pyydetyt laajuuden muutokset edellyttävät uutta kirjallista tarjousta."
       },
       {
-        "title": "5. Applicable law",
-        "body": "These terms are governed by Romanian law. Any dispute will be subject to the jurisdiction of the competent Romanian courts."
+        "title": "5. Maksut",
+        "body": "Maksuehdot, summat ja eräpäivät ovat hyväksytyssä tarjouksessa tai projektisopimuksessa mainitut. Ellei toisin sovita, projekteihin sisältyy ennakkomaksu ja myöhemmät virstanpylväsmaksut. Laskut on maksettava laskussa mainittuun eräpäivään mennessä. Maksuviivästykset voivat johtaa palveluiden keskeyttämiseen, kunnes erääntynyt summa on maksettu."
+      },
+      {
+        "title": "6. Asiakkaan velvollisuudet",
+        "body": "Asiakas sitoutuu toimittamaan ajoissa kaikki palveluiden toimittamiseen tarvittavat tiedot, sisällöt, käyttöoikeudet ja palautteen. Asiakkaasta johtuvat viivästykset voivat pidentää sovittuja toimitusaikoja. Asiakas takaa, että sen toimittamat sisällöt ja materiaalit eivät loukkaa kolmansien osapuolten oikeuksia."
+      },
+      {
+        "title": "7. Toimitus ja vastaanotto",
+        "body": "Toimitukset katsotaan vastaanotetuiksi, kun asiakas vahvistaa vastaanoton kirjallisesti tai käyttää toimitusta tuotannossa ilman vastalauseita sopimuksessa mainitun ajan kuluessa. Vastaanoton jälkeen muutospyynnöt käsitellään uutena työnä, josta laaditaan erillinen tarjous."
+      },
+      {
+        "title": "8. Immateriaalioikeudet",
+        "body": "Kaikki tämän verkkosivuston sisällöt (tekstit, grafiikat, logot, sivuston lähdekoodi) ovat CORE829 SRL:n omaisuutta, ja niitä suojaavat tekijänoikeus ja immateriaalioikeuslainsäädäntö.\nElleivät toisin kirjallisesti sovita, asiakas saa täyden maksun jälkeen oikeudet nimenomaisesti hänelle tuotettuihin toimitettaviin tuotteisiin projektisopimuksen mukaisesti. Käytetyt teknologiat, viitekehykset, menetelmät ja olemassa oleva koodi jäävät CORE829 SRL:n omaisuudeksi, ja ne lisensoidaan asiakkaalle toimitettavan tuotteen käyttämistä varten."
+      },
+      {
+        "title": "9. Luottamuksellisuus",
+        "body": "Molemmat osapuolet sitoutuvat pitämään luottamuksellisina kaikki neuvottelujen ja palveluiden suorittamisen aikana vaihdetut liiketoiminta-, tekniset ja henkilötiedot sekä käyttämään niitä vain sopimuksen tarkoitukseen. Tämä velvollisuus jatkuu sopimuksen päättymisen jälkeen."
+      },
+      {
+        "title": "10. Custom Servers — erityisehdot",
+        "body": "CORE829 ei valmista eikä toimita laitteistoa suoraan: se suunnittelee kokoonpanon, valitsee komponentit kumppaniekosysteeminsä (mukaan lukien Intel ja NVIDIA) kautta, koordinoi valmistuksen ja tarkistaa laadun ennen toimitusta. Toimitus on saatavilla vain Euroopassa ja Amerikassa; muihin alueisiin liittyviä tilauksia ei voida käsitellä.\nLaitteistoon sovelletaan valmistajan takuuta, joka siirtyy asiakkaalle. CORE829 ei ole valmistajan takuun osapuoli, mutta tarjoaa kohtuullista apua sen käyttämisessä."
+      },
+      {
+        "title": "11. Takuu ja vastuunrajoitus",
+        "body": "Verkkosivusto ja palvelut tarjotaan asianmukaisella ammatillisella huolellisuudella. Lain sallimassa enimmäislaajuudessa CORE829 SRL ei ole vastuussa välillisistä, satunnaisista, välillisistä tai rankaisevista vahingoista, voitonmenetyksistä, tietojen menetyksistä tai liiketoiminnan keskeytymisestä, jotka aiheutuvat sivuston tai palveluiden käytöstä, vaikka niiden mahdollisuudesta olisi ilmoitettu.\nCORE829 SRL:n kokonaisvastuu mihin tahansa projektiin liittyvästä vaatimuksesta ei ylitä asiakkaan kyseisestä projektista maksamaa kokonaissummaa."
+      },
+      {
+        "title": "12. Ylivoimainen este",
+        "body": "Kumpikaan osapuoli ei ole vastuussa velvoitteidensa täyttämisen viivästymisestä tai laiminlyönnistä, jos viivästys tai laiminlyönti johtuu sen kohtuullisen hallinnan ulkopuolella olevista tapahtumista, kuten luonnonkatastrofeista, pandemioista, sodista, lakoista, sähkökatkoksista tai verkkohäiriöistä. Asianomainen osapuoli ilmoittaa asiasta toiselle osapuolelle mahdollisimman pian."
+      },
+      {
+        "title": "13. Päättäminen",
+        "body": "Kumpikin osapuoli voi päättää sopimuksen ilman erityistä syytä kirjallisella ilmoituksella projektisopimuksen ehtojen mukaisesti. Jos olennainen sopimusrikkomus jää korjaamatta 15 päivän kuluessa kirjallisesta huomautuksesta, vahinkoa kärsinyt osapuoli voi päättää sopimuksen ja vaatia vahingonkorvausta. Jo tehdystä työstä erääntyneet summat pysyvät maksettavina."
+      },
+      {
+        "title": "14. Sovellettava laki ja toimivalta",
+        "body": "Näihin palveluehtoihin sovelletaan Romanian lakia. Tästä sopimuksesta tai palveluista johtuvat riidat kuuluvat Romanian toimivaltaisten tuomioistuinten yksinomaiseen toimivaltaan."
       }
     ]
   },
@@ -609,8 +665,8 @@
     "intelDesc": "Processors with the most widespread multiplatform power in the world: reliability and consistent throughput in AI, compute and daily use.",
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
-    "scopeTitle": "One single limit, stated clearly",
-    "scopeDesc": "To guarantee you consistent quality and support, we only ship within Europe and America. If your server must go elsewhere, we unfortunately cannot proceed.",
+    "scopeTitle": "Yksi ainoa rajoitus, selkeästi ilmaistuna",
+    "scopeDesc": "Toimituksemme noudattavat NVIDIA:n virallisia vientisääntöjä ja Yhdysvaltain vientivalvontalakia (EAR). Tästä syystä toimitamme vain Eurooppaan ja Amerikkaan — emmekä voi toimittaa alla lueteltuihin pakotettuihin kohteisiin.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -624,7 +680,18 @@
     "docsIntro": "Räätälöidyn palvelinlaitteistomme vientivaatimustenmukaisuustodistukset, kaikkien kävijöiden saatavilla.",
     "docsLanguageNote": "Asiakirja on englanniksi.",
     "viewPdf": "Näytä PDF",
-    "downloadPdf": "Lataa PDF"
+    "downloadPdf": "Lataa PDF",
+    "scopeRestrictedTitle": "Kohteet, joihin emme voi toimittaa",
+    "scopeRestricted": [
+      "Kuuba",
+      "Iran",
+      "Pohjois-Korea",
+      "Syyria",
+      "Venäjä",
+      "Valko-Venäjä",
+      "Ukrainan miehitetyt alueet (Krim, Donetsk, Luhansk, Zaporižžja, Herson)"
+    ],
+    "scopeRegulationsLink": "NVIDIA:n viralliset vientisäännöt"
   },
   "servicesDetail": {
     "back": "All services",
@@ -639,65 +706,85 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
+    "updated": "Päivitetty viimeksi: {date}",
+    "intro": "Tämä sivu sisältää yksityiskohtaiset tiedot siitä, miten CORE829 SRL käsittelee henkilötietoja GDPR:n (EU:n asetus 2016/679) ja sovellettavan Romanian henkilötietojen suojaa koskevan lainsäädännön (laki nro 190/2018) mukaisesti.",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, with registered office in Romania, is the data controller for the personal data processed through this website and its services. You can contact us through the contact form or by email at hello@core829.net."
+        "title": "1. Rekisterinpitäjä",
+        "body": "CORE829 SRL (Str. Mihai Eminescu, 10, Roman, Romania; kaupparekisterinumero: J2026029428009; CUI/CIF: 54616345) on rekisterinpitäjä. Voit ottaa meihin yhteyttä sähköpostitse hello@core829.net tai puhelimitse +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Data we process",
-        "body": "We process only the data you provide voluntarily through our contact and quote request forms: name, email, company, services of interest, indicative budget and the content of your message. We also process minimal technical data (IP address, browser type) for the security and operation of the website."
+        "title": "2. Käsittelemämme tiedot",
+        "body": "Käsittelemme tietoja, jotka annat vapaaehtoisesti yhteydenotto-, tarjouspyyntö- ja konsultaatiolomakkeillamme: nimi, sähköposti, yritys, kiinnostavat palvelut, arvioitu budjetti ja viestin sisältö. Sopimussuhteen aikana käsittelemme myös laskutustietoja. Käsittelemme vähimmäisteknisiä tietoja (IP-osoite, selaimen tyyppi, vieraillut sivut) sivuston turvallisuuden ja toiminnan varmistamiseksi."
       },
       {
-        "title": "3. Legal basis for processing",
-        "body": "We process personal data on the following legal bases: your consent (art. 6(1)(a) GDPR) for communications; the execution of a contract or pre-contractual measures (art. 6(1)(b) GDPR) for quote requests; legitimate interest (art. 6(1)(f) GDPR) for the security and improvement of the website."
+        "title": "3. Käsittelyn oikeusperuste",
+        "body": "Käsittelemme henkilötietoja seuraavilla oikeusperusteilla:\n- suostumuksesi (GDPR:n 6 artiklan 1 kohdan a alakohta) kaupallisiin viesteihin;\n- sopimuksen täytäntöönpano tai sopimusta edeltävät toimenpiteet (GDPR:n 6 artiklan 1 kohdan b alakohta) tarjouspyyntöihin ja palveluiden toimittamiseen;\n- lakisääteisten velvoitteiden noudattaminen (GDPR:n 6 artiklan 1 kohdan c alakohta) kirjanpito- ja verotarkoituksiin;\n- oikeutettu etu (GDPR:n 6 artiklan 1 kohdan f alakohta) sivuston turvallisuuden ja parantamisen varmistamiseksi."
       },
       {
-        "title": "4. Data subject rights",
-        "body": "Under the GDPR you have the right to access, rectify, erase, restrict and port your personal data, as well as the right to object to the processing. You also have the right to withdraw consent at any time and to lodge a complaint with the competent supervisory authority (ANSPDCP in Romania)."
+        "title": "4. Rekisteröidyn oikeudet",
+        "body": "Sinulla on oikeus päästä henkilötietoihisi, oikaista, poistaa, rajoittaa ja siirtää niitä sekä vastustaa niiden käsittelyä. Voit peruuttaa suostumuksesi milloin tahansa. Voit käyttää oikeuksiasi kirjoittamalla hello@core829.net; vastaamme 30 päivän kuluessa."
       },
       {
-        "title": "5. Data retention",
-        "body": "Personal data collected through forms is retained only for the time necessary to respond to requests and manage any contractual relationship, in accordance with the legal retention periods."
+        "title": "5. Tietojen säilytys",
+        "body": "Henkilötietoja säilytetään vain niin kauan kuin on tarpeen pyyntöihin vastaamiseksi ja sopimussuhteen hoitamiseksi lain mukaisten säilytysaikojen mukaisesti. Kirjanpitotietoja säilytetään lain edellyttämän ajan, minkä jälkeen ne poistetaan tai anonymisoidaan turvallisesti."
       },
       {
-        "title": "6. Data transfers",
-        "body": "We do not transfer personal data outside the European Economic Area. Where third-party service providers process data on our behalf, they are bound by appropriate data processing agreements."
+        "title": "6. Vastaanottajat ja käsittelijät",
+        "body": "Henkilötietoja voidaan jakaa vain tarvittaessa hosting-, sähköposti-, maksu- ja laskutuspalveluiden tarjoajille, ammattilaisille ja viranomaisille, jos laki sitä edellyttää. Kaikki käsittelijät ovat sitoutuneet tietojenkäsittelysopimuksiin GDPR:n 28 artiklan mukaisesti."
       },
       {
-        "title": "7. Contact",
-        "body": "For any question regarding the processing of your personal data, or to exercise your rights, write to hello@core829.net. We will respond within 30 days."
+        "title": "7. Tietojen siirrot",
+        "body": "Emme siirrä henkilötietoja Euroopan talousalueen ulkopuolelle. Jos siirto tapahtuu kolmannen osapuolen käsittelijän kautta, sovelletaan GDPR:n V luvun mukaisia asianmukaisia suojatoimia."
+      },
+      {
+        "title": "8. Automaattinen päätöksenteko",
+        "body": "Emme tee päätöksiä, jotka perustuvat yksinomaan automatisoituun käsittelyyn (mukaan lukien profilointi) ja joilla on oikeusvaikutuksia sinuun tai jotka vaikuttavat sinuun vastaavalla merkittävällä tavalla."
+      },
+      {
+        "title": "9. Tietoturva",
+        "body": "Toteutamme teknisiä ja organisatorisia toimenpiteitä varmistaaksemme riskiin nähden asianmukaisen turvallisuustason, mukaan lukien siirrettävien tietojen salauksen, käyttöoikeuksien valvonnan ja säännölliset tarkistukset, GDPR:n 32 artiklan mukaisesti."
+      },
+      {
+        "title": "10. Yhteys ja valitukset",
+        "body": "Jos sinulla on kysyttävää henkilötietojesi käsittelystä tai haluat käyttää oikeuksiasi, kirjoita osoitteeseen hello@core829.net.\nSinulla on myös oikeus tehdä valitus Romanian ANSPDCP-viranomaiselle (www.dataprotection.ro) tai asuinpaikkasi valvontaviranomaiselle."
       }
-    ],
-    "updated": "Päivitetty viimeksi: {date}"
+    ]
   },
   "cookiePolicy": {
-    "title": "Cookie Policy",
-    "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
+    "title": "Evästekäytäntö",
+    "updated": "Päivitetty viimeksi: {date}",
+    "intro": "Tämä evästekäytäntö selittää, mitä evästeet ovat ja miten CORE829 SRL käyttää evästeitä ja vastaavia teknologioita core829.net-verkkosivustolla GDPR:n ja ePrivacy-direktiivin sekä Romanian lainsäädännön mukaisesti.",
     "sections": [
       {
-        "title": "1. What are cookies",
-        "body": "Cookies are small text files stored on your device when you visit a website. They allow the website to remember your preferences and to understand how visitors use the site."
+        "title": "1. Mitä evästeet ovat",
+        "body": "Evästeet ovat pieniä tekstitiedostoja, jotka tallennetaan laitteellesi, kun vierailet verkkosivustolla. Ne mahdollistavat sivuston mieltymystesi muistamisen ja sen ymmärtämisen, miten kävijät käyttävät sivustoa, mikä parantaa toimivuutta ja käyttökokemusta."
       },
       {
-        "title": "2. Cookies we use",
-        "body": "We use strictly necessary cookies for the functioning of the website and preferences cookies to remember your language choice. We may use analytics cookies to measure traffic and improve our content, where your consent has been obtained."
+        "title": "2. Käyttämämme evästeet",
+        "body": "Käytämme seuraavia evästeluokkia:\n- välttämättömät evästeet: vaaditaan sivuston toiminnan kannalta eikä niitä voi poistaa käytöstä;\n- mieltymys-evästeet: kielivalinnan ja asetusten muistamiseen;\n- analytiikkaevästeet: liikenteen mittaamiseen ja sisältöjen parantamiseen, vain suostumuksesi perusteella;\n- markkinointievästeet: suostumuksesi perusteella relevanttien mainosten näyttämiseen."
       },
       {
-        "title": "3. Third-party cookies",
-        "body": "Some cookies are set by third-party services integrated into the website, such as analytics and advertising platforms. These third parties may process the data collected according to their own privacy policies."
+        "title": "3. Kolmannen osapuolen evästeet",
+        "body": "Jotkin evästeet asettaa sivustoon integroitu kolmannen osapuolen palvelu, kuten Trustpilot-arvostelulaajennus ja analytiikka-alustat. Nämä kolmannet osapuolet voivat käsitellä kerättyjä tietoja omien tietosuojakäytäntöjensä mukaisesti."
       },
       {
-        "title": "4. Managing cookies",
-        "body": "You can manage or delete cookies through your browser settings. Blocking certain cookies may affect the functionality of the website, such as remembering your language preference."
+        "title": "4. Evästeiden hallinta",
+        "body": "Voit hallita tai poistaa evästeitä selaimen asetusten kautta. Tiettyjen evästeiden estäminen voi vaikuttaa sivuston toimivuuteen, kuten kielivalinnan muistamiseen."
       },
       {
-        "title": "5. Consent",
-        "body": "Where cookies are not strictly necessary, we request your consent before installing them. You can change your preferences at any time by clearing your browser cookies and revisiting the website."
+        "title": "5. Suostumus",
+        "body": "Jos evästeet eivät ole välttämättömiä, pyydämme suostumuksesi ennen niiden asentamista. Voit muuttaa mieltymyksiäsi milloin tahansa tyhjentämällä selaimen evästeet ja vierailemalla sivustolla uudelleen."
+      },
+      {
+        "title": "6. Käytännön muutokset",
+        "body": "Tätä evästekäytäntöä voidaan päivittää ajoittain. Muutokset julkaistaan tällä sivulla päivitettynä päivämääränä."
+      },
+      {
+        "title": "7. Yhteys",
+        "body": "Jos sinulla on kysyttävää evästeiden käytöstä, kirjoita osoitteeseen hello@core829.net."
       }
-    ],
-    "updated": "Päivitetty viimeksi: {date}"
+    ]
   },
   "contactEmails": {
     "heading": "Contact",

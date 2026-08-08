@@ -457,60 +457,116 @@
     "back": "Back to home"
   },
   "privacy": {
-    "title": "Privacy Policy",
+    "title": "隐私政策",
     "updated": "Last updated: {date}",
-    "intro": "This Privacy Policy explains how CORE829 SRL collects, uses and protects personal data, in compliance with the GDPR (EU Regulation 2016/679).",
+    "intro": "本隐私政策说明 CORE829 SRL 如何根据 GDPR（欧盟条例 2016/679）及罗马尼亚《关于个人数据保护的第 190/2018 号法律》全面收集、使用和保护个人数据。本政策适用于 core829.net 网站及 CORE829 SRL 提供的所有服务。",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, registered in Romania, is the data controller for the personal data collected through this website. You can contact us through the contact form on this site."
+        "title": "1. 数据控制者",
+        "body": "CORE829 SRL（注册办公地址：Str. Mihai Eminescu, 10, Roman, Romania；商业登记号 J2026029428009；CUI/CIF 54616345）是根据 GDPR 第 4 条第(7)项，通过本网站及其服务处理个人数据的数据控制者。\n您可通过电子邮件 hello@core829.net 或电话 +40 766 668 482 / +39 375 946 8881 联系数据控制者。"
       },
       {
-        "title": "2. Data we collect",
-        "body": "We collect only the data you voluntarily provide through the contact and quote request forms: name, email, company, service of interest, estimated budget and the content of your message."
+        "title": "2. 我们收集的数据",
+        "body": "我们仅收集以下目的所严格必需的数据：\n- 您通过联系、报价请求和咨询表单自愿提供的数据：姓名、电子邮件地址、公司、感兴趣的服务、预估预算及您的留言内容；\n- 您在合同关系背景下提供的数据：开票信息、账单地址、增值税号、联系数据；\n- 自动收集的最少技术数据：IP 地址、浏览器类型和版本、设备类型、访问的页面及时间戳，仅用于网站的安全和正常运行。"
       },
       {
-        "title": "3. Purposes of processing",
-        "body": "Data is processed to respond to contact and quote requests, to manage the commercial relationship and to fulfill legal obligations. We never sell your data."
+        "title": "3. 处理目的",
+        "body": "您的个人数据将出于以下目的进行处理：\n- 回应联系和报价请求并管理订立合同前的关系；\n- 提供和管理所请求的服务（Custom Servers、B2B Automations、Web Design、Web Apps、Executable Software、SEO Indexing、360° Marketing Organic & Paid）；\n- 开票、会计及遵守法律义务；\n- 网站和服务的安保与改进；\n- 仅在您明确同意的情况下发送商业通信。\n我们绝不会将您的个人数据出售或出租给第三方。"
       },
       {
-        "title": "4. Legal basis",
-        "body": "The legal basis is the consent you give when submitting a form and the legitimate interest in responding to business requests (Art. 6 GDPR)."
+        "title": "4. 法律依据",
+        "body": "个人数据的处理基于以下法律依据：\n- 您在提交表单或订阅通信时给予的同意（GDPR 第 6 条第(1)款(a)项）；\n- 履行合同或应您要求采取订立合同前的措施（GDPR 第 6 条第(1)款(b)项）；\n- 遵守数据控制者所负的法律义务（GDPR 第 6 条第(1)款(c)项），例如会计和税务义务；\n- 数据控制者回应业务请求及确保网站安全的合法利益（GDPR 第 6 条第(1)款(f)项）。"
       },
       {
-        "title": "5. Retention",
-        "body": "Data is kept for the time necessary for the purposes described, and in any case no longer than required by law."
+        "title": "5. 接收方和数据处理者",
+        "body": "仅在必要且以最低必要范围的情况下，您的个人数据才可能被传递给：\n- 托管、电子邮件和通信服务提供商；\n- 支付和开票服务提供商；\n- 受职业保密义务约束的专业顾问（法律、会计）；\n- 法律要求时的有权公共机构。\n所有数据处理者均受数据处理协议（DPA）约束，且仅可按照我们书面记录在案的指示处理数据。"
       },
       {
-        "title": "6. Your rights",
-        "body": "You have the right to access, rectify, delete and port your data, and to object to its processing. You can exercise these rights by contacting us."
+        "title": "6. 国际传输",
+        "body": "我们不会将您的个人数据传输至欧洲经济区（EEA）之外。如果第三方服务提供商代表我们处理数据，则其受适当的数据处理协议约束；如发生向 EEA 之外的传输，则受 GDPR 第五章规定的适当保障措施约束。"
+      },
+      {
+        "title": "7. 数据保留期限",
+        "body": "通过表单收集的个人数据仅在回应请求及管理任何合同关系所需的时间内保留，无论如何不得超过法律要求的期限。\n会计和税务数据按适用法律要求的期限保留。保留期结束后，数据将被安全删除或匿名化。"
+      },
+      {
+        "title": "8. 您的权利",
+        "body": "根据 GDPR，您享有以下权利：\n- 访问您的个人数据（第 15 条）；\n- 更正不准确的数据（第 16 条）；\n- 删除您的数据（第 17 条）；\n- 限制处理（第 18 条）；\n- 数据可携权（第 20 条）；\n- 反对处理（第 21 条）；\n- 随时撤回您的同意，且不影响撤回前基于同意进行处理的合法性。\n您可通过致信 hello@core829.net 行使这些权利。我们将在 30 天内作出回应。"
+      },
+      {
+        "title": "9. 数据安全",
+        "body": "根据 GDPR 第 32 条，我们实施适当的技术和组织措施，以保护您的个人数据免遭未经授权的访问、篡改、披露或破坏。这些措施包括安全通信（HTTPS）、访问控制以及对我们安全实践的定期审查。"
+      },
+      {
+        "title": "10. 本政策的变更",
+        "body": "本隐私政策可能不时更新。任何变更将连同更新日期在本页面公布。我们建议您定期查看本页面。"
+      },
+      {
+        "title": "11. 投诉",
+        "body": "如果您认为对您个人数据的处理违反了 GDPR，您有权向罗马尼亚国家个人数据处理监督机构（ANSPDCP，地址：Str. G-ral Gheorghe Magheru 28-30, Bucharest, Romania）或您居住地的监督机构提出投诉。"
       }
     ]
   },
   "terms": {
-    "title": "Terms of Service",
+    "title": "服务条款",
     "updated": "Last updated: {date}",
-    "intro": "These Terms of Service govern the use of the website core829.net and of CORE829 SRL services.",
+    "intro": "本服务条款管辖对 core829.net 网站及 CORE829 SRL 所提供服务的访问与使用。访问本网站或请求任何服务，即表示您同意本条款。如果您不同意，请勿使用本网站或其服务。",
     "sections": [
       {
-        "title": "1. Acceptance of terms",
-        "body": "By accessing this website you accept these terms. If you do not agree, please do not use the website."
+        "title": "1. 服务提供商",
+        "body": "core829.net 网站及其中所述服务由 CORE829 SRL 提供，其注册办公地址为 Str. Mihai Eminescu, 10, Roman, Romania，商业登记号 J2026029428009，CUI/CIF 54616345。\n联系方式：hello@core829.net — +40 766 668 482 / +39 375 946 8881。"
       },
       {
-        "title": "2. Services",
-        "body": "CORE829 offers software design and development, web apps, automations, AI systems and digital marketing services. Specific projects are governed by separate agreements."
+        "title": "2. 条款的接受",
+        "body": "访问网站、请求报价或接受提案，即表示您确认已阅读、理解并接受本服务条款。特定项目还受双方签署的单独书面协议管辖，若与本一般条款冲突，则以该协议为准。"
       },
       {
-        "title": "3. Intellectual property",
-        "body": "All content of this website is the property of CORE829 SRL. Deliverables produced for clients are subject to the terms of the individual contract."
+        "title": "3. 提供的服务",
+        "body": "CORE829 SRL 提供以下服务：\n- Custom Servers：定制服务器搭建（AI、渲染、存储、游戏、托管）的设计和端到端管理，组件通过 Intel 和 NVIDIA 合作伙伴采购。CORE829 应要求管理设计、搭建流程和质量验证，不直接制造硬件；\n- B2B Automations：在业务工具和部门（CRM、ERP、电子邮件、开票）之间实现重复性流程的自动化；\n- Web Design：基于品牌形象、性能和转化率进行定制界面和网站设计；\n- Web Apps：全栈定制 Web 应用程序、B2B/B2C 平台、管理工具和垂直 CRM；\n- Executable Software：满足垂直需求的专用桌面软件；\n- SEO Indexing：面向自然可见性的技术和内容优化；\n- 360° Marketing（Organic & Paid）：自然社交媒体、内容策略以及 Meta Ads 和 Google Ads 上的付费广告。"
       },
       {
-        "title": "4. Limitation of liability",
-        "body": "The website is provided 'as is'. CORE829 is not liable for damages arising from the use of the website, to the extent permitted by law."
+        "title": "4. 报价与合同",
+        "body": "报价在报价单中注明的期限内有效。项目仅在书面接受报价且（如适用）签署特定项目协议后启动。价格、范围和交付时间以已接受的报价单所注明的内容为准。接受后提出的任何范围变更均须经新的书面报价。"
       },
       {
-        "title": "5. Applicable law",
-        "body": "These terms are governed by Romanian law. Any dispute will be subject to the jurisdiction of the competent Romanian courts."
+        "title": "5. 付款",
+        "body": "付款条件、金额和里程碑以已接受的报价单或项目协议所注明的内容为准。除非另有约定，项目需支付预付款及后续里程碑款项。发票应在发票上注明的期限内支付。逾期付款可能导致服务暂停，直至未结金额结清。"
+      },
+      {
+        "title": "6. 客户义务",
+        "body": "客户同意及时提供提供服务所需的所有信息、内容、访问权限和反馈。客户造成的延误可能延长约定的交付时间。客户保证其提供的所有内容和材料不侵犯第三方权利。"
+      },
+      {
+        "title": "7. 交付与验收",
+        "body": "交付物在客户书面确认验收，或在协议规定的期限内未提出异议而将交付物投入生产使用时，视为已被验收。验收后提出的变更请求将作为新工作处理，并需另行报价。"
+      },
+      {
+        "title": "8. 知识产权",
+        "body": "本网站的所有内容（文本、图形、标志、网站源代码）均为 CORE829 SRL 的财产，并受版权法和知识产权法保护。\n除非另有书面约定，在全额付款后，客户将获得项目协议所定义的、为其明确制作的交付物的相关权利。所使用的技术、框架、方法及既有代码仍为 CORE829 SRL 的财产，并许可给客户用于交付物的使用。"
+      },
+      {
+        "title": "9. 保密义务",
+        "body": "双方承诺对在谈判及服务执行期间交换的所有业务、技术和个人信息保密，并仅将其用于协议之目的。该义务在协议终止后仍然有效。"
+      },
+      {
+        "title": "10. Custom Servers — 特定条款",
+        "body": "CORE829 不直接制造或发运硬件：其负责设计搭建方案，通过其合作伙伴生态（包括 Intel 和 NVIDIA）选择组件，协调生产并在交付前验证质量。交付仅限欧洲和美洲地区；其他地区的订单无法处理。\n硬件适用制造商保修，并转移给客户。CORE829 不是制造商保修的当事方，但会在行使保修时提供合理协助。"
+      },
+      {
+        "title": "11. 保证与责任限制",
+        "body": "本网站和服务以应有的专业审慎提供。在法律允许的最大范围内，CORE829 SRL 不对因使用本网站或服务而产生的间接、附带、后果性或惩罚性损害赔偿、利润损失、数据丢失或业务中断承担责任，即使已被告知发生此类损害的可能性。\n在任何情况下，CORE829 SRL 就某一项目相关索赔承担的累计责任总额不得超过客户为该项目的付款总额。"
+      },
+      {
+        "title": "12. 不可抗力",
+        "body": "任何一方均不对因其合理控制范围之外的事件（包括但不限于自然灾害、流行病、战争、罢工、断电或网络中断）导致的履行延迟或未能履行承担责任。受影响的当事方应尽合理可能尽快通知另一方。"
+      },
+      {
+        "title": "13. 终止",
+        "body": "任何一方均可按照特定协议之条款，经书面通知后基于便利原因终止协议。如发生重大违约且在书面通知后 15 天内未予补救，受害方可终止协议并索赔损害。已完成工作的应付金额仍应支付。"
+      },
+      {
+        "title": "14. 适用法律与管辖权",
+        "body": "本服务条款受罗马尼亚法律管辖。因本条款或相关服务引起或与之相关的任何争议，均应提交罗马尼亚有管辖权的法院专属管辖。"
       }
     ]
   },
@@ -609,8 +665,8 @@
     "intelDesc": "Processors with the most widespread multiplatform power in the world: reliability and consistent throughput in AI, compute and daily use.",
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
-    "scopeTitle": "One single limit, stated clearly",
-    "scopeDesc": "To guarantee you consistent quality and support, we only ship within Europe and America. If your server must go elsewhere, we unfortunately cannot proceed.",
+    "scopeTitle": "只有一个限制，明确说明",
+    "scopeDesc": "我们的发货遵循 NVIDIA 官方出口法规和美国出口管制法律（EAR）。因此，我们仅在欧洲和美洲范围内发货——并且无法向下列受禁运的目的地发货。",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -624,7 +680,18 @@
     "docsIntro": "我们定制服务器硬件的出口合规认证,面向所有访客开放。",
     "docsLanguageNote": "文档为英文。",
     "viewPdf": "查看 PDF",
-    "downloadPdf": "下载 PDF"
+    "downloadPdf": "下载 PDF",
+    "scopeRestrictedTitle": "我们无法发货的目的地",
+    "scopeRestricted": [
+      "古巴",
+      "伊朗",
+      "朝鲜",
+      "叙利亚",
+      "俄罗斯",
+      "白俄罗斯",
+      "乌克兰被占领土（克里米亚、顿涅茨克、卢甘斯克、扎波罗热、赫尔松）"
+    ],
+    "scopeRegulationsLink": "NVIDIA 官方出口法规"
   },
   "servicesDetail": {
     "back": "All services",
@@ -639,65 +706,85 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
+    "updated": "最后更新：{date}",
+    "intro": "本页提供关于 CORE829 SRL 如何遵守 GDPR（欧盟条例 2016/679）及适用的罗马尼亚个人数据保护法律（第 190/2018 号法律）处理个人数据的详细信息。",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, with registered office in Romania, is the data controller for the personal data processed through this website and its services. You can contact us through the contact form or by email at hello@core829.net."
+        "title": "1. 数据控制者",
+        "body": "CORE829 SRL（Str. Mihai Eminescu, 10, Roman, Romania，商业登记号 J2026029428009，CUI/CIF 54616345）是数据控制者。您可通过电子邮件 hello@core829.net 或电话 +40 766 668 482 / +39 375 946 8881 联系我们。"
       },
       {
-        "title": "2. Data we process",
-        "body": "We process only the data you provide voluntarily through our contact and quote request forms: name, email, company, services of interest, indicative budget and the content of your message. We also process minimal technical data (IP address, browser type) for the security and operation of the website."
+        "title": "2. 我们处理的数据",
+        "body": "我们处理您通过联系、报价和咨询表单自愿提供的数据：姓名、电子邮件、公司、感兴趣的服务、预估预算和留言内容。在合同关系存续期间，我们还处理开票和账单数据。我们为网站的安全和运行处理最少的技术数据（IP 地址、浏览器类型、访问的页面）。"
       },
       {
-        "title": "3. Legal basis for processing",
-        "body": "We process personal data on the following legal bases: your consent (art. 6(1)(a) GDPR) for communications; the execution of a contract or pre-contractual measures (art. 6(1)(b) GDPR) for quote requests; legitimate interest (art. 6(1)(f) GDPR) for the security and improvement of the website."
+        "title": "3. 处理的法律依据",
+        "body": "我们基于以下法律依据处理个人数据：\n- 您的同意（GDPR 第 6 条第(1)款(a)项）用于商业通信；\n- 履行合同或采取订立合同前的措施（GDPR 第 6 条第(1)款(b)项）用于报价请求和服务交付；\n- 遵守法律义务（GDPR 第 6 条第(1)款(c)项）用于会计和税务目的；\n- 合法利益（GDPR 第 6 条第(1)款(f)项）用于网站的安全和改进。"
       },
       {
-        "title": "4. Data subject rights",
-        "body": "Under the GDPR you have the right to access, rectify, erase, restrict and port your personal data, as well as the right to object to the processing. You also have the right to withdraw consent at any time and to lodge a complaint with the competent supervisory authority (ANSPDCP in Romania)."
+        "title": "4. 数据主体权利",
+        "body": "您有权访问、更正、删除、限制和转移您的个人数据，并有权反对其处理。您可随时撤回您的同意。您可通过致信 hello@core829.net 行使这些权利；我们将在 30 天内作出回应。"
       },
       {
-        "title": "5. Data retention",
-        "body": "Personal data collected through forms is retained only for the time necessary to respond to requests and manage any contractual relationship, in accordance with the legal retention periods."
+        "title": "5. 数据保留期限",
+        "body": "个人数据仅在回应请求和管理合同关系所需的时间内保留，并遵守法定保留期限。会计数据按法律要求的期限保存，之后将被安全删除或匿名化。"
       },
       {
-        "title": "6. Data transfers",
-        "body": "We do not transfer personal data outside the European Economic Area. Where third-party service providers process data on our behalf, they are bound by appropriate data processing agreements."
+        "title": "6. 接收方和数据处理者",
+        "body": "仅在必要时，个人数据可能被共享给托管、电子邮件、支付和开票服务提供商、专业顾问以及法律要求的公共机构。所有处理者均受符合 GDPR 第 28 条的数据处理协议约束。"
       },
       {
-        "title": "7. Contact",
-        "body": "For any question regarding the processing of your personal data, or to exercise your rights, write to hello@core829.net. We will respond within 30 days."
+        "title": "7. 数据传输",
+        "body": "我们不会将个人数据传输至欧洲经济区之外。如通过第三方处理者发生传输，则适用 GDPR 第五章规定的适当保障措施。"
+      },
+      {
+        "title": "8. 自动化决策",
+        "body": "我们不会仅基于自动化处理（包括画像）作出对您产生法律效力或类似重大影响的决定。"
+      },
+      {
+        "title": "9. 数据安全",
+        "body": "根据 GDPR 第 32 条，我们实施技术和组织措施以确保与风险相适应的安全水平，包括传输中数据的加密、访问控制和定期审查。"
+      },
+      {
+        "title": "10. 联系与投诉",
+        "body": "如对您个人数据的处理有任何疑问，或为行使您的权利，请致信 hello@core829.net。\n您还有权向罗马尼亚监督机构 ANSPDCP（www.dataprotection.ro）或您居住地的监督机构提出投诉。"
       }
-    ],
-    "updated": "最后更新：{date}"
+    ]
   },
   "cookiePolicy": {
-    "title": "Cookie Policy",
-    "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
+    "title": "Cookie 政策",
+    "updated": "最后更新：{date}",
+    "intro": "本 Cookie 政策说明何为 Cookie，以及 CORE829 SRL 如何根据 GDPR 及已转化为罗马尼亚法律的 ePrivacy 指令，在 core829.net 网站上使用 Cookie 和类似技术。",
     "sections": [
       {
-        "title": "1. What are cookies",
-        "body": "Cookies are small text files stored on your device when you visit a website. They allow the website to remember your preferences and to understand how visitors use the site."
+        "title": "1. 何为 Cookie",
+        "body": "Cookie 是您访问网站时存储在您设备上的小型文本文件。它们使网站能够记住您的偏好并了解访问者如何使用网站，从而改进功能和用户体验。"
       },
       {
-        "title": "2. Cookies we use",
-        "body": "We use strictly necessary cookies for the functioning of the website and preferences cookies to remember your language choice. We may use analytics cookies to measure traffic and improve our content, where your consent has been obtained."
+        "title": "2. 我们使用的 Cookie",
+        "body": "我们使用以下类别的 Cookie：\n- 严格必要 Cookie：网站运行所必需，无法禁用；\n- 偏好 Cookie：用于记住您的语言选择和设置；\n- 分析 Cookie：仅在获得您同意的情况下，用于衡量流量和改进内容；\n- 营销 Cookie：在您同意的情况下，用于投放相关广告。"
       },
       {
-        "title": "3. Third-party cookies",
-        "body": "Some cookies are set by third-party services integrated into the website, such as analytics and advertising platforms. These third parties may process the data collected according to their own privacy policies."
+        "title": "3. 第三方 Cookie",
+        "body": "部分 Cookie 由集成到网站中的第三方服务（如 Trustpilot 评论小组件和分析平台）设置。这些第三方可根据其各自的隐私政策处理所收集的数据。"
       },
       {
-        "title": "4. Managing cookies",
-        "body": "You can manage or delete cookies through your browser settings. Blocking certain cookies may affect the functionality of the website, such as remembering your language preference."
+        "title": "4. 管理 Cookie",
+        "body": "您可以通过浏览器设置管理或删除 Cookie。阻止某些 Cookie 可能影响网站的功能，例如记住您的语言偏好。"
       },
       {
-        "title": "5. Consent",
-        "body": "Where cookies are not strictly necessary, we request your consent before installing them. You can change your preferences at any time by clearing your browser cookies and revisiting the website."
+        "title": "5. 同意",
+        "body": "对于非严格必要的 Cookie，我们在安装前会征得您的同意。您可以随时通过清除浏览器 Cookie 并重新访问网站来更改您的偏好。"
+      },
+      {
+        "title": "6. 本政策的变更",
+        "body": "本 Cookie 政策可能不时更新。任何变更将连同更新日期在本页面公布。"
+      },
+      {
+        "title": "7. 联系方式",
+        "body": "如对 Cookie 的使用有任何疑问，请致信 hello@core829.net。"
       }
-    ],
-    "updated": "最后更新：{date}"
+    ]
   },
   "contactEmails": {
     "heading": "Contact",

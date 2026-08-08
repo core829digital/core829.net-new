@@ -457,60 +457,116 @@
     "back": "Back to home"
   },
   "privacy": {
-    "title": "Privacy Policy",
+    "title": "Adatvédelmi szabályzat",
     "updated": "Last updated: {date}",
-    "intro": "This Privacy Policy explains how CORE829 SRL collects, uses and protects personal data, in compliance with the GDPR (EU Regulation 2016/679).",
+    "intro": "Ez az Adatvédelmi szabályzat elmagyarázza, hogyan gyűjti, használja és védi a CORE829 SRL a személyes adatokat, teljes összhangban a GDPR-ral (EU 2016/679 rendelet) és a személyes adatok védelméről szóló 190/2018. számú romániai törvénnyel. A szabályzat a core829.net weboldalra és a CORE829 SRL által kínált összes szolgáltatásra vonatkozik.",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, registered in Romania, is the data controller for the personal data collected through this website. You can contact us through the contact form on this site."
+        "title": "1. Adatkezelő",
+        "body": "A CORE829 SRL (székhely: Str. Mihai Eminescu, 10, Roman, Románia; cégjegyzékszám: J2026029428009; CUI/CIF: 54616345) az ezen weboldalon és szolgáltatásain keresztül kezelt személyes adatok adatkezelője, a GDPR 4. cikk (7) bekezdése szerint.\nAz adatkezelővel a hello@core829.net e-mail címen vagy a +40 766 668 482 / +39 375 946 8881 telefonszámon veheti fel a kapcsolatot."
       },
       {
-        "title": "2. Data we collect",
-        "body": "We collect only the data you voluntarily provide through the contact and quote request forms: name, email, company, service of interest, estimated budget and the content of your message."
+        "title": "2. Az összegyűjtött adatok",
+        "body": "Csak az alább leírt célokhoz szigorúan szükséges adatokat gyűjtünk:\n- az Ön által önkéntesen megadott adatok a kapcsolatfelvételi, árajánlatkérési és konzultációs űrlapokon: név, e-mail cím, cég, érdeklődési kör, becsült költségkeret és üzenetének tartalma;\n- szerződéses kapcsolat keretében megadott adatok: számlázási adatok, számlázási cím, adószám, elérhetőségek;\n- automatikusan gyűjtött minimális technikai adatok: IP-cím, böngésző típusa és verziója, eszköz típusa, megtekintett oldalak és időbélyegek, kizárólag a weboldal biztonságához és megfelelő működéséhez."
       },
       {
-        "title": "3. Purposes of processing",
-        "body": "Data is processed to respond to contact and quote requests, to manage the commercial relationship and to fulfill legal obligations. We never sell your data."
+        "title": "3. Az adatkezelés céljai",
+        "body": "Személyes adatait a következő célokra kezeljük:\n- kapcsolatfelvételi és árajánlatkérési megkeresések megválaszolása, a szerződéskötést megelőző kapcsolat kezelése;\n- a kért szolgáltatások nyújtása és kezelése (Custom Servers, B2B Automations, Web Design, Web Apps, Executable Software, SEO Indexing, 360° Marketing Organic & Paid);\n- számlázás, könyvelés és jogi kötelezettségek teljesítése;\n- a weboldal és a szolgáltatások biztonsága és fejlesztése;\n- kereskedelmi kommunikáció küldése kizárólag az Ön kifejezett hozzájárulása esetén.\nSzemélyes adatait soha nem adjuk el és nem bocsátjuk bérbe harmadik feleknek."
       },
       {
-        "title": "4. Legal basis",
-        "body": "The legal basis is the consent you give when submitting a form and the legitimate interest in responding to business requests (Art. 6 GDPR)."
+        "title": "4. Jogalap",
+        "body": "A személyes adatok kezelése a következő jogalapokon nyugszik:\n- az Ön hozzájárulása, amelyet egy űrlap kitöltésekor vagy kommunikációra való feliratkozáskor ad meg (GDPR 6. cikk (1) bekezdés a) pont);\n- szerződés teljesítése vagy az Ön kérésére tett szerződéskötést megelőző intézkedések (GDPR 6. cikk (1) bekezdés b) pont);\n- az adatkezelőre vonatkozó jogi kötelezettség teljesítése (GDPR 6. cikk (1) bekezdés c) pont), például számviteli és adózási kötelezettségek;\n- az adatkezelő jogos érdeke az üzleti megkeresésekre való válaszadásban és a weboldal biztonságának garantálásában (GDPR 6. cikk (1) bekezdés f) pont)."
       },
       {
-        "title": "5. Retention",
-        "body": "Data is kept for the time necessary for the purposes described, and in any case no longer than required by law."
+        "title": "5. Címzettek és adatfeldolgozók",
+        "body": "Személyes adatai kizárólag szükség esetén és a minimálisan szükséges mértékben kerülhetnek átadásra a következőknek:\n- tárhely-, e-mail- és kommunikációs szolgáltatók;\n- fizetési és számlázási szolgáltatók;\n- szakmai titoktartásra kötelezett szakértők (jogi, könyvelési);\n- illetékes hatóságok, ha a törvény úgy rendelkezik.\nMinden adatfeldolgozó adatfeldolgozási megállapodás (DPA) hatálya alatt áll, és kizárólag a dokumentált utasításaink szerint kezelheti az adatokat."
       },
       {
-        "title": "6. Your rights",
-        "body": "You have the right to access, rectify, delete and port your data, and to object to its processing. You can exercise these rights by contacting us."
+        "title": "6. Nemzetközi adattovábbítás",
+        "body": "Személyes adatait nem továbbítjuk az Európai Gazdasági Térségen (EGT) kívülre. Amennyiben harmadik fél szolgáltatók dolgoznak fel adatokat a nevünkben, azokat megfelelő adatfeldolgozási megállapodások kötik, és az EGT-n kívüli továbbítás esetén a GDPR V. fejezete szerinti megfelelő garanciákat alkalmazunk."
+      },
+      {
+        "title": "7. Adatmegőrzés",
+        "body": "Az űrlapokon keresztül gyűjtött személyes adatokat csak a megkeresések megválaszolásához és az esetleges szerződéses kapcsolat kezeléséhez szükséges ideig őrizzük meg, és semmiképpen sem a törvény által előírt időtartamon túl.\nA számviteli és adózási adatokat a vonatkozó jogszabályok által előírt ideig őrizzük meg. A megőrzési idő végén az adatokat biztonságosan töröljük vagy anonimizáljuk."
+      },
+      {
+        "title": "8. Az Ön jogai",
+        "body": "A GDPR alapján Önnek joga van:\n- hozzáférni a személyes adataihoz (15. cikk);\n- a pontatlan adatok helyesbítéséhez (16. cikk);\n- adatai törléséhez (17. cikk);\n- az adatkezelés korlátozásához (18. cikk);\n- az adathordozhatósághoz (20. cikk);\n- az adatkezelés elleni tiltakozáshoz (21. cikk);\n- hozzájárulásának bármikori visszavonásához, anélkül hogy ez érintené a visszavonás előtti hozzájáruláson alapuló adatkezelés jogszerűségét.\nJogait a hello@core829.net címre írt e-mailben gyakorolhatja. 30 napon belül válaszolunk."
+      },
+      {
+        "title": "9. Adatbiztonság",
+        "body": "Megfelelő technikai és szervezési intézkedéseket alkalmazunk személyes adatainak a jogosulatlan hozzáféréssel, megváltoztatással, nyilvánosságra hozatallal vagy megsemmisítéssel szembeni védelme érdekében, a GDPR 32. cikke szerint. Ezek az intézkedések közé tartozik a biztonságos kommunikáció (HTTPS), a hozzáférés-ellenőrzés és a biztonsági gyakorlataink rendszeres felülvizsgálata."
+      },
+      {
+        "title": "10. A szabályzat módosításai",
+        "body": "Ez az Adatvédelmi szabályzat időről időre frissülhet. Minden módosítás ezen az oldalon, a frissítés dátumával kerül közzétételre. Kérjük, időnként tekintse át ezt az oldalt."
+      },
+      {
+        "title": "11. Panaszok",
+        "body": "Ha úgy véli, hogy személyes adatainak kezelése sérti a GDPR-t, panaszt nyújthat be a Román Nemzeti Személyesadat-védelmi Hatóságnál (ANSPDCP), Str. G-ral Gheorghe Magheru 28-30, Bukarest, Románia, vagy lakóhelye szerinti felügyeleti hatóságnál."
       }
     ]
   },
   "terms": {
-    "title": "Terms of Service",
+    "title": "Szolgáltatási feltételek",
     "updated": "Last updated: {date}",
-    "intro": "These Terms of Service govern the use of the website core829.net and of CORE829 SRL services.",
+    "intro": "Ezek a Szolgáltatási feltételek szabályozzák a core829.net weboldal és a CORE829 SRL által kínált szolgáltatások használatát. A weboldal elérésével vagy bármely szolgáltatás igénylésével elfogadja ezeket a feltételeket. Ha nem ért egyet, kérjük, ne használja a weboldalt vagy szolgáltatásait.",
     "sections": [
       {
-        "title": "1. Acceptance of terms",
-        "body": "By accessing this website you accept these terms. If you do not agree, please do not use the website."
+        "title": "1. Szolgáltató",
+        "body": "A core829.net weboldalt és az abban leírt szolgáltatásokat a CORE829 SRL nyújtja (székhely: Str. Mihai Eminescu, 10, Roman, Románia; cégjegyzékszám: J2026029428009; CUI/CIF: 54616345).\nKapcsolat: hello@core829.net — +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Services",
-        "body": "CORE829 offers software design and development, web apps, automations, AI systems and digital marketing services. Specific projects are governed by separate agreements."
+        "title": "2. A feltételek elfogadása",
+        "body": "A weboldal elérésével, árajánlatkéréssel vagy ajánlat elfogadásával megerősíti, hogy elolvasta, megértette és elfogadta ezeket a Szolgáltatási feltételeket. Az egyes projektekre továbbá a két fél által aláírt külön írásbeli megállapodás vonatkozik, amely ütközés esetén elsőbbséget élvez ezen általános feltételekkel szemben."
       },
       {
-        "title": "3. Intellectual property",
-        "body": "All content of this website is the property of CORE829 SRL. Deliverables produced for clients are subject to the terms of the individual contract."
+        "title": "3. Kínált szolgáltatások",
+        "body": "A CORE829 SRL a következő szolgáltatásokat kínálja:\n- Custom Servers: egyedi szerverek (AI, renderelés, tárolás, gaming, tárhely) tervezése és teljes körű menedzsmentje, Intel és NVIDIA partnereken keresztül beszerzett komponensekkel. A CORE829 kérésre irányítja a tervezést, a gyártási folyamatot és a minőség-ellenőrzést; közvetlenül nem gyárt hardvert;\n- B2B Automations: ismétlődő folyamatok automatizálása üzleti eszközök és részlegek között (CRM, ERP, e-mail, számlázás);\n- Web Design: egyedi felületek és weboldalak tervezése, amelyet a márkaidentitás, a teljesítmény és a konverzió vezérel;\n- Web Apps: egyedi full-stack webes alkalmazások, B2B/B2C platformok, menedzsment eszközök és vertikális CRM-ek;\n- Executable Software: dedikált asztali szoftverek vertikális igényekhez;\n- SEO Indexing: technikai és tartalmi optimalizálás az organikus láthatóságért;\n- 360° Marketing (Organic & Paid): organikus közösségi média, tartalmi stratégia és fizetett hirdetések a Meta Ads és a Google Ads felületein."
       },
       {
-        "title": "4. Limitation of liability",
-        "body": "The website is provided 'as is'. CORE829 is not liable for damages arising from the use of the website, to the extent permitted by law."
+        "title": "4. Árajánlatok és szerződések",
+        "body": "Az árajánlatok az ajánlatban megjelölt időtartamig érvényesek. Egy projekt csak az ajánlat írásbeli elfogadásával és adott esetben a projekt-megállapodás aláírásával indul. Az árak, a terjedelem és a határidők az elfogadott ajánlatban szerepelnek. Az elfogadást követően kért terjedelmi változtatásokra új írásbeli árajánlat készül."
       },
       {
-        "title": "5. Applicable law",
-        "body": "These terms are governed by Romanian law. Any dispute will be subject to the jurisdiction of the competent Romanian courts."
+        "title": "5. Fizetés",
+        "body": "A fizetési feltételek, összegek és esedékességek az elfogadott ajánlatban vagy a projekt-megállapodásban szerepelnek. Eltérő megállapodás hiányában a projektek előleget és ezt követő részleteket igényelnek. A számlák a számlán feltüntetett határidőn belül fizetendők. A késedelmes fizetés a szolgáltatások felfüggesztését vonhatja maga után a fennálló összeg rendezéséig."
+      },
+      {
+        "title": "6. Az ügyfél kötelezettségei",
+        "body": "Az ügyfél vállalja, hogy időben biztosítja a szolgáltatások teljesítéséhez szükséges összes információt, tartalmat, hozzáférést és visszajelzést. Az ügyfél által okozott késedelmek meghosszabbíthatják a megállapodott határidőket. Az ügyfél garantálja, hogy az általa biztosított tartalmak és anyagok nem sértenek harmadik felek jogait."
+      },
+      {
+        "title": "7. Szállítás és átvétel",
+        "body": "Az átadott eredmények (deliverables) akkor tekintendők elfogadottnak, ha az ügyfél írásban megerősíti az átvételt, vagy a megállapodásban megjelölt időszakon belül kifogás nélkül termelésben használja azokat. Az átvételt követő módosítási kérelmek új, külön árajánlat alapján kerülnek elvégzésre."
+      },
+      {
+        "title": "8. Szellemi tulajdon",
+        "body": "A weboldal összes tartalma (szövegek, grafikák, logók, a weboldal forráskódja) a CORE829 SRL tulajdonát képezi, és szerzői jogi és szellemi tulajdonjogi védelem alatt áll.\nEltérő írásbeli megállapodás hiányában, a teljes fizetést követően az ügyfél megszerzi a részére kifejezetten előállított deliverables jogait, a projekt-megállapodásban foglaltak szerint. A felhasznált technológiák, keretrendszerek, módszertanok és meglévő kód a CORE829 SRL tulajdonában maradnak, és licenc alapján kerülnek az ügyfél rendelkezésére a deliverable használatához."
+      },
+      {
+        "title": "9. Titoktartás",
+        "body": "Mindkét fél vállalja, hogy bizalmasan kezeli a tárgyalások és a szolgáltatások teljesítése során kicserélt üzleti, műszaki és személyes információkat, és azokat kizárólag a megállapodás céljára használja fel. Ez a kötelezettség a megállapodás megszűnését követően is fennmarad."
+      },
+      {
+        "title": "10. Custom Servers — speciális feltételek",
+        "body": "A CORE829 nem gyárt és nem szállít közvetlenül hardvert: megtervezi a konfigurációt, partnerei ökoszisztémáján keresztül (beleértve az Intel és NVIDIA partnereket) kiválasztja a komponenseket, koordinálja a gyártást, és szállítás előtt ellenőrzi a minőséget. A szállítás kizárólag Európán és Amerikán belül érhető el; más régiókba érkező megrendelések nem teljesíthetők.\nA hardverre a gyártói garancia vonatkozik, amely az ügyfélre száll át. A CORE829 nem részese a gyártói garanciának, de ésszerű segítséget nyújt annak érvényesítéséhez."
+      },
+      {
+        "title": "11. Garancia és felelősségkorlátozás",
+        "body": "A weboldal és a szolgáltatások a megkívánt szakmai gondossággal kerülnek nyújtásra. A törvény által megengedett legnagyobb mértékben a CORE829 SRL nem felel a közvetett, járulékos, következményes vagy büntető jellegű károkért, a haszonkiesésért, az adatvesztésért vagy az üzletmenet megszakadásáért, amely a weboldal vagy a szolgáltatások használatából ered, még akkor sem, ha az ilyen károk lehetőségéről tudomást szerzett.\nA CORE829 SRL összesített felelőssége bármely projekttel kapcsolatos igény esetén sem haladja meg az ügyfél által az adott projektért kifizetett teljes összeget."
+      },
+      {
+        "title": "12. Vis maior",
+        "body": "Egyik fél sem felel a kötelezettségei teljesítésének késedelméért vagy elmaradásáért, ha az ésszerű ellenőrzésén kívül eső eseményekből ered, beleértve többek között a természeti katasztrófákat, járványokat, háborúkat, sztrájkokat, áramkimaradásokat vagy hálózati zavarokat. Az érintett fél a lehető leghamarabb értesíti a másik felet."
+      },
+      {
+        "title": "13. Megszüntetés",
+        "body": "Mindkét fél indoklás nélkül felmondhatja a megállapodást írásbeli értesítéssel, a projekt-megállapodás feltételei szerint. Jelentős szerződésszegés esetén, amelyet a 15 napos írásbeli felszólítást követően sem orvosolnak, a sérelmet szenvedett fél felmondhatja a megállapodást és kártérítést követelhet. Az elvégzett munkáért járó összegek továbbra is fizetendők."
+      },
+      {
+        "title": "14. Irányadó jog és joghatóság",
+        "body": "Ezekre a Szolgáltatási feltételekre a román jog az irányadó. Az e feltételekkel vagy a szolgáltatásokkal kapcsolatban felmerülő jogviták a Románia illetékes bíróságainak kizárólagos joghatósága alá tartoznak."
       }
     ]
   },
@@ -609,8 +665,8 @@
     "intelDesc": "Processors with the most widespread multiplatform power in the world: reliability and consistent throughput in AI, compute and daily use.",
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
-    "scopeTitle": "One single limit, stated clearly",
-    "scopeDesc": "To guarantee you consistent quality and support, we only ship within Europe and America. If your server must go elsewhere, we unfortunately cannot proceed.",
+    "scopeTitle": "Egyetlen korlátozás, világosan megfogalmazva",
+    "scopeDesc": "Szállításaink a NVIDIA hivatalos export-előírásait és az amerikai exportellenőrzési törvényt (EAR) követik. Emiatt csak Európán és Amerikán belül szállítunk — és nem tudunk szállítani az alább felsorolt embargó alatt álló célállomásokra.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -624,7 +680,18 @@
     "docsIntro": "Egyedi szerverhardverünk exportmegfelelőségi tanúsítványai, minden látogató számára elérhetők.",
     "docsLanguageNote": "A dokumentum angol nyelvű.",
     "viewPdf": "PDF megtekintése",
-    "downloadPdf": "PDF letöltése"
+    "downloadPdf": "PDF letöltése",
+    "scopeRestrictedTitle": "Célállomások, ahová nem tudunk szállítani",
+    "scopeRestricted": [
+      "Kuba",
+      "Irán",
+      "Észak-Korea",
+      "Szíria",
+      "Oroszország",
+      "Fehéroroszország",
+      "Ukrajna megszállt területei (Krím, Doneck, Luhanszk, Zaporizzsja, Herszon)"
+    ],
+    "scopeRegulationsLink": "A NVIDIA hivatalos export-előírásai"
   },
   "servicesDetail": {
     "back": "All services",
@@ -639,65 +706,85 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
+    "updated": "Utolsó frissítés: {date}",
+    "intro": "Ez az oldal részletes információt nyújt arról, hogyan kezeli a CORE829 SRL a személyes adatokat a GDPR (EU 2016/679 rendelet) és a vonatkozó romániai személyesadat-védelmi jogszabályok (190/2018. számú törvény) alapján.",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, with registered office in Romania, is the data controller for the personal data processed through this website and its services. You can contact us through the contact form or by email at hello@core829.net."
+        "title": "1. Adatkezelő",
+        "body": "A CORE829 SRL (Str. Mihai Eminescu, 10, Roman, Románia; cégjegyzékszám: J2026029428009; CUI/CIF: 54616345) az adatkezelő. Kapcsolatba léphet velünk a hello@core829.net e-mail címen vagy a +40 766 668 482 / +39 375 946 8881 telefonszámon."
       },
       {
-        "title": "2. Data we process",
-        "body": "We process only the data you provide voluntarily through our contact and quote request forms: name, email, company, services of interest, indicative budget and the content of your message. We also process minimal technical data (IP address, browser type) for the security and operation of the website."
+        "title": "2. Az általunk kezelt adatok",
+        "body": "Az Ön által a kapcsolatfelvételi, árajánlatkérési és konzultációs űrlapokon önkéntesen megadott adatokat kezeljük: név, e-mail, cég, érdeklődési kör, becsült költségkeret és üzenet tartalma. Szerződéses kapcsolat során számlázási adatokat is kezelünk. Minimális technikai adatokat (IP-cím, böngésző típusa, megtekintett oldalak) kezelünk a weboldal biztonsága és működése érdekében."
       },
       {
-        "title": "3. Legal basis for processing",
-        "body": "We process personal data on the following legal bases: your consent (art. 6(1)(a) GDPR) for communications; the execution of a contract or pre-contractual measures (art. 6(1)(b) GDPR) for quote requests; legitimate interest (art. 6(1)(f) GDPR) for the security and improvement of the website."
+        "title": "3. Az adatkezelés jogalapja",
+        "body": "A személyes adatokat a következő jogalapokon kezeljük:\n- az Ön hozzájárulása (GDPR 6. cikk (1) bekezdés a) pont) kereskedelmi kommunikáció céljából;\n- szerződés teljesítése vagy szerződéskötést megelőző intézkedések (GDPR 6. cikk (1) bekezdés b) pont) árajánlatkérések és szolgáltatásnyújtás céljából;\n- jogi kötelezettségek teljesítése (GDPR 6. cikk (1) bekezdés c) pont) számviteli és adózási célokból;\n- jogos érdek (GDPR 6. cikk (1) bekezdés f) pont) a weboldal biztonsága és fejlesztése céljából."
       },
       {
-        "title": "4. Data subject rights",
-        "body": "Under the GDPR you have the right to access, rectify, erase, restrict and port your personal data, as well as the right to object to the processing. You also have the right to withdraw consent at any time and to lodge a complaint with the competent supervisory authority (ANSPDCP in Romania)."
+        "title": "4. Az érintett jogai",
+        "body": "Joga van személyes adataihoz való hozzáféréshez, azok helyesbítéséhez, törléséhez, kezelésük korlátozásához és hordozhatóságához, valamint az adatkezelés elleni tiltakozáshoz. Hozzájárulását bármikor visszavonhatja. Jogait a hello@core829.net címre írt e-mailben gyakorolhatja; 30 napon belül válaszolunk."
       },
       {
-        "title": "5. Data retention",
-        "body": "Personal data collected through forms is retained only for the time necessary to respond to requests and manage any contractual relationship, in accordance with the legal retention periods."
+        "title": "5. Adatmegőrzés",
+        "body": "A személyes adatokat csak a megkeresések megválaszolásához és a szerződéses kapcsolat kezeléséhez szükséges ideig őrizzük meg, a törvényi megőrzési időszakok szerint. A számviteli adatokat a törvényben előírt ideig őrizzük meg, majd biztonságosan töröljük vagy anonimizáljuk."
       },
       {
-        "title": "6. Data transfers",
-        "body": "We do not transfer personal data outside the European Economic Area. Where third-party service providers process data on our behalf, they are bound by appropriate data processing agreements."
+        "title": "6. Címzettek és adatfeldolgozók",
+        "body": "A személyes adatok kizárólag szükség esetén kerülnek megosztásra tárhely-, e-mail-, fizetési és számlázási szolgáltatókkal, szakértőkkel és hatóságokkal, ha a törvény úgy rendelkezik. Minden adatfeldolgozó a GDPR 28. cikke szerinti adatfeldolgozási megállapodás hatálya alatt áll."
       },
       {
-        "title": "7. Contact",
-        "body": "For any question regarding the processing of your personal data, or to exercise your rights, write to hello@core829.net. We will respond within 30 days."
+        "title": "7. Adattovábbítás",
+        "body": "Nem továbbítunk személyes adatokat az Európai Gazdasági Térségen kívülre. Amennyiben harmadik fél feldolgozón keresztül történik továbbítás, a GDPR V. fejezete szerinti megfelelő garanciákat alkalmazunk."
+      },
+      {
+        "title": "8. Automatizált döntéshozatal",
+        "body": "Nem hozunk kizárólag automatizált adatkezelésen (beleértve a profilalkotást) alapuló döntéseket, amelyek joghatással járnak Önre nézve vagy hasonlóan jelentős mértékben érintik Önt."
+      },
+      {
+        "title": "9. Adatbiztonság",
+        "body": "A kockázatnak megfelelő biztonsági szintet garantáló technikai és szervezési intézkedéseket alkalmazunk, beleértve az átviteli adatok titkosítását, a hozzáférés-ellenőrzést és a rendszeres felülvizsgálatot, a GDPR 32. cikke szerint."
+      },
+      {
+        "title": "10. Kapcsolat és panaszok",
+        "body": "Személyes adatai kezelésével kapcsolatos bármely kérdés esetén, vagy jogai gyakorlásához írjon a hello@core829.net címre.\nJoga van továbbá panaszt benyújtani a romániai ANSPDCP hatóságnál (www.dataprotection.ro) vagy a lakóhelye szerinti felügyeleti hatóságnál."
       }
-    ],
-    "updated": "Utolsó frissítés: {date}"
+    ]
   },
   "cookiePolicy": {
-    "title": "Cookie Policy",
-    "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
+    "title": "Cookie-szabályzat",
+    "updated": "Utolsó frissítés: {date}",
+    "intro": "Ez a Cookie-szabályzat elmagyarázza, mik a cookie-k, és hogyan használ a CORE829 SRL cookie-kat és hasonló technológiákat a core829.net weboldalon, a GDPR és az ePrivacy-irányelv, valamint a magyar jog szerint.",
     "sections": [
       {
-        "title": "1. What are cookies",
-        "body": "Cookies are small text files stored on your device when you visit a website. They allow the website to remember your preferences and to understand how visitors use the site."
+        "title": "1. Mik azok a cookie-k",
+        "body": "A cookie-k kis szöveges fájlok, amelyeket a böngészője tárol az eszközén, amikor meglátogat egy weboldalt. Lehetővé teszik a weboldal számára, hogy megjegyezze preferenciáit, és megértsék, hogyan használják a látogatók az oldalt, javítva ezzel a funkciókat és a felhasználói élményt."
       },
       {
-        "title": "2. Cookies we use",
-        "body": "We use strictly necessary cookies for the functioning of the website and preferences cookies to remember your language choice. We may use analytics cookies to measure traffic and improve our content, where your consent has been obtained."
+        "title": "2. Az általunk használt cookie-k",
+        "body": "A következő cookie-kategóriákat használjuk:\n- szigorúan szükséges cookie-k: a weboldal működéséhez szükségesek, nem tilthatók le;\n- preferencia cookie-k: a nyelvi beállítás és egyéb beállítások megjegyzéséhez;\n- analitikai cookie-k: a forgalom méréséhez és tartalmaink fejlesztéséhez, kizárólag az Ön hozzájárulása esetén;\n- marketing cookie-k: az Ön hozzájárulása esetén releváns hirdetések megjelenítéséhez."
       },
       {
-        "title": "3. Third-party cookies",
-        "body": "Some cookies are set by third-party services integrated into the website, such as analytics and advertising platforms. These third parties may process the data collected according to their own privacy policies."
+        "title": "3. Harmadik féltől származó cookie-k",
+        "body": "Néhány cookie-t a weboldalba integrált harmadik féltől származó szolgáltatások állítanak be, például a Trustpilot értékelő widget és analitikai platformok. Ezek a harmadik felek a saját adatvédelmi szabályzataik szerint kezelhetik az összegyűjtött adatokat."
       },
       {
-        "title": "4. Managing cookies",
-        "body": "You can manage or delete cookies through your browser settings. Blocking certain cookies may affect the functionality of the website, such as remembering your language preference."
+        "title": "4. Cookie-k kezelése",
+        "body": "A cookie-kat a böngészője beállításain keresztül kezelheti vagy törölheti. Bizonyos cookie-k blokkolása befolyásolhatja a weboldal működését, például a nyelvi preferencia megjegyzését."
       },
       {
-        "title": "5. Consent",
-        "body": "Where cookies are not strictly necessary, we request your consent before installing them. You can change your preferences at any time by clearing your browser cookies and revisiting the website."
+        "title": "5. Hozzájárulás",
+        "body": "Ahol a cookie-k nem szigorúan szükségesek, a telepítés előtt kérjük az Ön hozzájárulását. Preferenciáit bármikor módosíthatja a böngésző cookie-k törlésével és a weboldal újbóli meglátogatásával."
+      },
+      {
+        "title": "6. A szabályzat módosításai",
+        "body": "Ez a Cookie-szabályzat időről időre frissülhet. Minden módosítás ezen az oldalon, a frissítés dátumával kerül közzétételre."
+      },
+      {
+        "title": "7. Kapcsolat",
+        "body": "A cookie-k használatával kapcsolatos bármely kérdés esetén írjon a hello@core829.net címre."
       }
-    ],
-    "updated": "Utolsó frissítés: {date}"
+    ]
   },
   "contactEmails": {
     "heading": "Contact",

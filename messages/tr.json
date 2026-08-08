@@ -457,60 +457,116 @@
     "back": "Back to home"
   },
   "privacy": {
-    "title": "Privacy Policy",
+    "title": "Gizlilik Politikası",
     "updated": "Last updated: {date}",
-    "intro": "This Privacy Policy explains how CORE829 SRL collects, uses and protects personal data, in compliance with the GDPR (EU Regulation 2016/679).",
+    "intro": "Bu Gizlilik Politikası, CORE829 SRL'nin GDPR'ye (AB 2016/679 sayılı Yönetmelik) ve kişisel verilerin korunmasına ilişkin 190/2018 sayılı Rumen Yasası'na tam uyumlu olarak kişisel verileri nasıl topladığını, kullandığını ve koruduğunu açıklar. Bu politika, core829.net web sitesi ve CORE829 SRL tarafından sunulan tüm hizmetler için geçerlidir.",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, registered in Romania, is the data controller for the personal data collected through this website. You can contact us through the contact form on this site."
+        "title": "1. Veri Sorumlusu",
+        "body": "CORE829 SRL (kayıtlı ofis: Str. Mihai Eminescu, 10, Roman, Romanya, ticaret sicil numarası: J2026029428009, CUI/CIF: 54616345), bu web sitesi ve hizmetleri aracılığıyla işlenen kişisel verilerin veri sorumlusudur (GDPR Madde 4 fıkra 7).\nVeri sorumlusuyla hello@core829.net e-posta adresi veya +40 766 668 482 / +39 375 946 8881 telefon numaraları üzerinden iletişime geçebilirsiniz."
       },
       {
-        "title": "2. Data we collect",
-        "body": "We collect only the data you voluntarily provide through the contact and quote request forms: name, email, company, service of interest, estimated budget and the content of your message."
+        "title": "2. Topladığımız Veriler",
+        "body": "Yalnızca aşağıda açıklanan amaçlar için kesinlikle gerekli olan verileri toplarız:\n- iletişim, teklif ve danışma formları aracılığıyla gönüllü olarak sağladığınız veriler: ad, e-posta adresi, şirket, ilgilenilen hizmet, yaklaşık bütçe ve mesajınızın içeriği;\n- sözleşme ilişkisi kapsamında sağlanan veriler: faturalama bilgileri, fatura adresi, KDV numarası, iletişim bilgileri;\n- otomatik olarak toplanan asgari teknik veriler: IP adresi, tarayıcı türü ve sürümü, cihaz türü, ziyaret edilen sayfalar ve zaman damgaları, yalnızca sitenin güvenliği ve düzgün çalışması için kullanılır."
       },
       {
-        "title": "3. Purposes of processing",
-        "body": "Data is processed to respond to contact and quote requests, to manage the commercial relationship and to fulfill legal obligations. We never sell your data."
+        "title": "3. İşleme Amaçları",
+        "body": "Kişisel verileriniz aşağıdaki amaçlar için işlenir:\n- iletişim ve teklif taleplerine yanıt vermek ve sözleşme öncesi ilişkiyi yönetmek;\n- talep edilen hizmetleri sağlamak ve yönetmek (Custom Servers, B2B Automations, Web Design, Web Apps, Executable Software, SEO Indexing, 360° Marketing Organic & Paid);\n- faturalama, muhasebe ve yasal yükümlülüklere uyum;\n- web sitesinin ve hizmetlerin güvenliği ve iyileştirilmesi;\n- yalnızca açık onayınızı verdiyseniz ticari iletişim göndermek.\nKişisel verilerinizi üçüncü taraflara asla satmayız veya kiralamayız."
       },
       {
-        "title": "4. Legal basis",
-        "body": "The legal basis is the consent you give when submitting a form and the legitimate interest in responding to business requests (Art. 6 GDPR)."
+        "title": "4. Yasal Dayanak",
+        "body": "Kişisel verilerin işlenmesi aşağıdaki yasal dayanaklara dayanır:\n- bir form gönderirken veya iletişimlere abone olurken verdiğiniz onay (GDPR Madde 6 fıkra 1 bent a);\n- talep üzerine bir sözleşmenin veya sözleşme öncesi tedbirlerin yerine getirilmesi (GDPR Madde 6 fıkra 1 bent b);\n- veri sorumlusunun yasal bir yükümlülüğüne uyum (GDPR Madde 6 fıkra 1 bent c), örn. muhasebe ve vergi yükümlülükleri;\n- veri sorumlusunun iş taleplerine yanıt verme ve sitenin güvenliğini sağlama konusundaki meşru menfaati (GDPR Madde 6 fıkra 1 bent f)."
       },
       {
-        "title": "5. Retention",
-        "body": "Data is kept for the time necessary for the purposes described, and in any case no longer than required by law."
+        "title": "5. Alıcılar ve İşleyenler",
+        "body": "Kişisel verileriniz, yalnızca gerekli olduğunda ve gerekli asgari ölçüde şu kişilere aktarılabilir:\n- barındırma, e-posta ve iletişim hizmeti sağlayıcıları;\n- ödeme ve faturalama sağlayıcıları;\n- mesleki gizlilikle bağlı profesyonel danışmanlar (hukuk, muhasebe);\n- kanunun gerektirdiği durumlarda yetkili kamu makamları.\nTüm işleyenler, veri işleme sözleşmeleriyle (DPA) bağlıdır ve verileri yalnızca belgelenmiş talimatlarımıza göre işleyebilir."
       },
       {
-        "title": "6. Your rights",
-        "body": "You have the right to access, rectify, delete and port your data, and to object to its processing. You can exercise these rights by contacting us."
+        "title": "6. Uluslararası Aktarımlar",
+        "body": "Kişisel verilerinizi Avrupa Ekonomik Alanı (AEA) dışına aktarmayız. Üçüncü taraf sağlayıcılar bizim adımıza veri işlediğinde, uygun veri işleme sözleşmeleriyle bağlıdırlar ve AEA dışına bir aktarım olması durumunda GDPR Bölüm V uyarınca uygun güvenceler sağlanır."
+      },
+      {
+        "title": "7. Saklama Süresi",
+        "body": "Formlar aracılığıyla toplanan kişisel veriler, yalnızca taleplere yanıt vermek ve herhangi bir sözleşme ilişkisini yönetmek için gerekli olan süre boyunca ve her durumda yasaların öngördüğünden daha uzun olmamak üzere saklanır.\nMuhasebe ve vergi verileri, geçerli mevzuatın gerektirdiği süreler boyunca saklanır. Saklama süresi sona erdikten sonra veriler güvenli bir şekilde silinir veya anonimleştirilir."
+      },
+      {
+        "title": "8. Haklarınız",
+        "body": "GDPR uyarınca şu haklara sahipsiniz:\n- kişisel verilerinize erişim (Madde 15);\n- hatalı verilerin düzeltilmesi (Madde 16);\n- verilerinizin silinmesi (Madde 17);\n- işlemenin kısıtlanması (Madde 18);\n- veri taşınabilirliği (Madde 20);\n- işlemeye itiraz (Madde 21);\n- onayınızı herhangi bir zamanda geri çekme; bu, geri çekmeden önce onaya dayalı işlemenin hukukiliğini etkilemez.\nHaklarınızı hello@core829.net adresine yazarak kullanabilirsiniz. 30 gün içinde yanıt vereceğiz."
+      },
+      {
+        "title": "9. Veri Güvenliği",
+        "body": "GDPR Madde 32 uyarınca kişisel verilerinizi yetkisiz erişime, değişikliğe, ifşaya veya imhaya karşı korumak için uygun teknik ve organizasyonel önlemler uygularız. Bu önlemler güvenli iletişimleri (HTTPS), erişim kontrollerini ve güvenlik uygulamalarımızın düzenli incelemelerini içerir."
+      },
+      {
+        "title": "10. Bu Politikadaki Değişiklikler",
+        "body": "Bu Gizlilik Politikası zaman zaman güncellenebilir. Her değişiklik, güncelleme tarihiyle birlikte bu sayfada yayınlanacaktır. Bu sayfayı periyodik olarak gözden geçirmenizi öneririz."
+      },
+      {
+        "title": "11. Şikayetler",
+        "body": "Kişisel verilerinizin işlenmesinin GDPR'yi ihlal ettiğini düşünüyorsanız, Rumen Ulusal Kişisel Verilerin İşlenmesi Denetim Kurumu'na (ANSPDCP), Str. G-ral Gheorghe Magheru 28-30, Bükreş, Romanya veya ikamet ettiğiniz yerdeki denetim makamına şikayette bulunma hakkınız vardır."
       }
     ]
   },
   "terms": {
-    "title": "Terms of Service",
+    "title": "Hizmet Şartları",
     "updated": "Last updated: {date}",
-    "intro": "These Terms of Service govern the use of the website core829.net and of CORE829 SRL services.",
+    "intro": "Bu Hizmet Şartları, core829.net web sitesinin ve CORE829 SRL tarafından sunulan hizmetlerin kullanımını düzenler. Web sitesine erişerek veya herhangi bir hizmet talep ederek bu şartları kabul etmiş olursunuz. Kabul etmiyorsanız, lütfen web sitesini veya hizmetlerini kullanmayın.",
     "sections": [
       {
-        "title": "1. Acceptance of terms",
-        "body": "By accessing this website you accept these terms. If you do not agree, please do not use the website."
+        "title": "1. Hizmet Sağlayıcı",
+        "body": "core829.net web sitesi ve burada açıklanan hizmetler CORE829 SRL tarafından sağlanmaktadır (kayıtlı ofis: Str. Mihai Eminescu, 10, Roman, Romanya, ticaret sicil numarası: J2026029428009, CUI/CIF: 54616345).\nİletişim: hello@core829.net — +40 766 668 482 / +39 375 946 8881."
       },
       {
-        "title": "2. Services",
-        "body": "CORE829 offers software design and development, web apps, automations, AI systems and digital marketing services. Specific projects are governed by separate agreements."
+        "title": "2. Şartların Kabulü",
+        "body": "Web sitesine erişerek, bir teklif talep ederek veya bir öneriyi kabul ederek bu Hizmet Şartlarını okuduğunuzu, anladığınızı ve kabul ettiğinizi onaylarsınız. Özel projeler, ayrıca her iki tarafça imzalanan ve çakışma durumunda bu genel şartlara üstün gelen ayrı bir yazılı sözleşmeye tabidir."
       },
       {
-        "title": "3. Intellectual property",
-        "body": "All content of this website is the property of CORE829 SRL. Deliverables produced for clients are subject to the terms of the individual contract."
+        "title": "3. Sunulan Hizmetler",
+        "body": "CORE829 SRL aşağıdaki hizmetleri sunar:\n- Custom Servers: Intel ve NVIDIA ortakları aracılığıyla tedarik edilen bileşenlerle özelleştirilmiş sunucuların (AI, grafik performansı, depolama, oyun, barındırma) uçtan uca tasarımı ve yönetimi. CORE829 istek üzerine tasarımı, üretim sürecini ve kalite kontrolünü yönetir; donanımı doğrudan üretmez;\n- B2B Automations: iş araçları ve departmanlar (CRM, ERP, e-posta, faturalama) arasındaki tekrarlayan süreçlerin otomasyonu;\n- Web Design: marka kimliğine, performansa ve dönüşüme odaklı özel arayüzler ve web sitelerinin tasarımı;\n- Web Apps: özel full-stack web uygulamaları, B2B/B2C platformları, yönetim araçları ve dikey CRM'ler;\n- Executable Software: dikey ihtiyaçlar için özel masaüstü yazılımı;\n- SEO Indexing: organik görünürlük için teknik ve içerik optimizasyonu;\n- 360° Marketing (Organic & Paid): organik sosyal medya, içerik stratejisi ve Meta Ads ile Google Ads üzerinden ücretli reklam."
       },
       {
-        "title": "4. Limitation of liability",
-        "body": "The website is provided 'as is'. CORE829 is not liable for damages arising from the use of the website, to the extent permitted by law."
+        "title": "4. Teklifler ve Sözleşmeler",
+        "body": "Teklifler, teklifin kendisinde belirtilen süre için geçerlidir. Bir proje, yalnızca teklifin yazılı olarak kabul edilmesinden ve geçerliyse proje sözleşmesinin imzalanmasından sonra başlar. Fiyatlar, kapsam ve teslim süreleri kabul edilen teklifte belirtilenlerdir. Kabulden sonra talep edilen kapsam değişiklikleri ayrı bir yazılı teklife tabidir."
       },
       {
-        "title": "5. Applicable law",
-        "body": "These terms are governed by Romanian law. Any dispute will be subject to the jurisdiction of the competent Romanian courts."
+        "title": "5. Ödemeler",
+        "body": "Ödeme koşulları, tutarlar ve son tarihler kabul edilen teklifte veya proje sözleşmesinde belirtilenlerdir. Aksi kararlaştırılmadıkça projeler bir ön ödeme ve ardından taksitler gerektirir. Faturalar, faturada belirtilen süre içinde ödenmelidir. Gecikmiş ödemeler, borç ödenene kadar hizmetlerin askıya alınmasına neden olabilir."
+      },
+      {
+        "title": "6. Müşterinin Yükümlülükleri",
+        "body": "Müşteri, hizmetlerin sağlanması için gereken tüm bilgileri, içerikleri, erişimleri ve geri bildirimleri zamanında sağlamayı kabul eder. Müşteriden kaynaklanan gecikmeler, kararlaştırılan teslim sürelerini uzatabilir. Müşteri, sağlanan tüm içeriklerin ve materyallerin üçüncü taraf haklarını ihlal etmediğini garanti eder."
+      },
+      {
+        "title": "7. Teslimat ve Kabul",
+        "body": "Teslim edilenler, müşteri kabulü yazılı olarak onayladığında veya sözleşmede belirtilen süre içinde itiraz etmeden üretimde kullandığında kabul edilmiş sayılır. Kabulden sonra değişiklik talepleri ayrı bir teklife tabi yeni iş olarak ele alınır."
+      },
+      {
+        "title": "8. Fikri Mülkiyet",
+        "body": "Bu web sitesinin tüm içeriği (metinler, grafikler, logolar, web sitesinin kaynak kodu) CORE829 SRL'nin mülkiyetindedir ve fikri mülkiyet mevzuatı tarafından korunur.\nAksi yazılı olarak kararlaştırılmadıkça, tam ödeme sonrasında müşteri, proje sözleşmesinde tanımlandığı şekilde kendisi için açıkça üretilen teslim edilenlerin haklarını edinir. Kullanılan teknolojiler, çerçeveler, metodolojiler ve önceden mevcut kod CORE829 SRL'nin mülkiyetinde kalır ve müşteriye teslim edilenin kullanımı için lisanslanır."
+      },
+      {
+        "title": "9. Gizlilik",
+        "body": "Her iki taraf, müzakereler ve hizmetlerin yürütülmesi sırasında paylaşılan tüm ticari, teknik ve kişisel bilgileri gizli tutmayı ve bunları yalnızca sözleşmenin amacı için kullanmayı kabul eder. Bu yükümlülük sözleşmenin sona ermesinden sonra da devam eder."
+      },
+      {
+        "title": "10. Custom Servers — Özel Koşullar",
+        "body": "CORE829 donanımı doğrudan üretmez veya göndermez: yapılandırmayı tasarlar, ortak ekosistemi (Intel ve NVIDIA dahil) aracılığıyla bileşenleri seçer, üretimi koordine eder ve teslimattan önce kaliteyi kontrol eder. Teslimat yalnızca Avrupa ve Amerika'da mevcuttur; diğer bölgelerden gelen siparişler yerine getirilemez.\nDonanım, müşteriye devredilen üretici garantisi kapsamındadır. CORE829 üretici garantisinin tarafı değildir, ancak kullanımı konusunda makul yardım sağlar."
+      },
+      {
+        "title": "11. Garanti ve Sorumluluk Sınırlaması",
+        "body": "Web sitesi ve hizmetler, gereken profesyonel özenle sağlanır. Kanunun izin verdiği azami ölçüde CORE829 SRL, web sitesinin veya hizmetlerin kullanımından kaynaklanan dolaylı, arızi, sonuçsal veya cezalandırıcı zararlardan, kar kaybından, veri kaybından veya iş kesintisinden sorumlu tutulamaz, bu tür zararların olasılığı hakkında bilgilendirilmiş olsa bile.\nHer durumda, CORE829 SRL'nin bir projeyle ilgili herhangi bir talepten kaynaklanan toplam sorumluluğu, müşterinin o proje için ödediği toplam tutarı aşmaz."
+      },
+      {
+        "title": "12. Mücbir Sebep",
+        "body": "Doğal afetler, salgınlar, savaşlar, grevler, elektrik kesintileri veya ağ kesintileri dahil ancak bunlarla sınırlı olmamak üzere, makul kontrolü dışındaki olaylardan kaynaklanan gecikme veya yükümlülüklerin yerine getirilememesinden hiçbir taraf sorumlu tutulamaz. Etkilenen taraf, makul olarak mümkün olan en kısa sürede diğer tarafı bilgilendirir."
+      },
+      {
+        "title": "13. Fesih",
+        "body": "Her iki taraf da özel sözleşmenin koşullarına göre yazılı bildirimde bulunarak sözleşmeyi feshedebilir. Yazılı bildirimden sonraki 15 gün içinde giderilmeyen esaslı bir ihlal durumunda, zarar gören taraf sözleşmeyi feshedebilir ve tazminat talep edebilir. Halihazırda yürütülmüş işler için borçlu olunan tutarlar ödenebilir kalır."
+      },
+      {
+        "title": "14. Uygulanacak Hukuk ve Yetki",
+        "body": "Bu Hizmet Şartları Rumen hukukuna tabidir. Bu şartlardan veya hizmetlerden kaynaklanan veya bunlarla ilgili herhangi bir anlaşmazlık, Romanya'nın yetkili mahkemelerinin münhasır yetkisine tabi olacaktır."
       }
     ]
   },
@@ -609,8 +665,8 @@
     "intelDesc": "Processors with the most widespread multiplatform power in the world: reliability and consistent throughput in AI, compute and daily use.",
     "nvidiaTitle": "NVIDIA",
     "nvidiaDesc": "The most in-demand GPUs for AI and rendering: the standard platform for accelerating the heaviest workloads.",
-    "scopeTitle": "One single limit, stated clearly",
-    "scopeDesc": "To guarantee you consistent quality and support, we only ship within Europe and America. If your server must go elsewhere, we unfortunately cannot proceed.",
+    "scopeTitle": "Tek bir sınır, net bir şekilde belirtilmiş",
+    "scopeDesc": "Teslimatlarımız, NVIDIA'nın resmi ihracat düzenlemelerini ve ABD ihracat kontrol yasasını (EAR) takip eder. Bu nedenle yalnızca Avrupa ve Amerika içinde gönderim yapıyoruz — ve aşağıda listelenen ambargo uygulanan bölgelere gönderim yapamıyoruz.",
     "carouselTitle": "From design to delivery",
     "carouselIntro": "Every server follows the same path: request, design, managed build and final verification before delivery.",
     "ctaTitle": "Tell us about your project",
@@ -624,7 +680,18 @@
     "docsIntro": "Özel sunucu donanımımız için ihracat uyumluluk sertifikaları, tüm ziyaretçiler için mevcuttur.",
     "docsLanguageNote": "Belge İngilizcedir.",
     "viewPdf": "PDF Görüntüle",
-    "downloadPdf": "PDF İndir"
+    "downloadPdf": "PDF İndir",
+    "scopeRestrictedTitle": "Gönderim yapamadığımız bölgeler",
+    "scopeRestricted": [
+      "Küba",
+      "İran",
+      "Kuzey Kore",
+      "Suriye",
+      "Rusya",
+      "Belarus",
+      "Ukrayna'nın işgal altındaki toprakları (Kırım, Donetsk, Luhansk, Zaporijya, Herson)"
+    ],
+    "scopeRegulationsLink": "NVIDIA'nın resmi ihracat düzenlemeleri"
   },
   "servicesDetail": {
     "back": "All services",
@@ -639,65 +706,85 @@
   },
   "gdpr": {
     "title": "GDPR",
-    "intro": "This page explains how CORE829 SRL processes personal data in compliance with the GDPR (EU Regulation 2016/679) and the applicable Romanian legislation on personal data protection.",
+    "updated": "Son güncelleme: {date}",
+    "intro": "Bu sayfa, CORE829 SRL'nin GDPR'ye (AB 2016/679 sayılı Yönetmelik) ve geçerli Rumen kişisel verilerin korunması mevzuatına (190/2018 sayılı Yasa) uygun olarak kişisel verileri nasıl işlediği hakkında ayrıntılı bilgi sağlar.",
     "sections": [
       {
-        "title": "1. Data Controller",
-        "body": "CORE829 SRL, with registered office in Romania, is the data controller for the personal data processed through this website and its services. You can contact us through the contact form or by email at hello@core829.net."
+        "title": "1. Veri Sorumlusu",
+        "body": "CORE829 SRL (Str. Mihai Eminescu, 10, Roman, Romanya, ticaret sicil numarası: J2026029428009, CUI/CIF: 54616345) veri sorumlusudur. hello@core829.net e-posta adresi veya +40 766 668 482 / +39 375 946 8881 telefon numaraları üzerinden bizimle iletişime geçebilirsiniz."
       },
       {
-        "title": "2. Data we process",
-        "body": "We process only the data you provide voluntarily through our contact and quote request forms: name, email, company, services of interest, indicative budget and the content of your message. We also process minimal technical data (IP address, browser type) for the security and operation of the website."
+        "title": "2. İşlediğimiz Veriler",
+        "body": "İletişim, teklif ve danışma formları aracılığıyla gönüllü olarak sağladığınız verileri işleriz: ad, e-posta, şirket, ilgilenilen hizmetler, yaklaşık bütçe ve mesaj içeriği. Sözleşme ilişkisi sırasında faturalama verilerini de işleriz. Site güvenliği ve operasyonu için asgari teknik verileri (IP adresi, tarayıcı türü, ziyaret edilen sayfalar) işleriz."
       },
       {
-        "title": "3. Legal basis for processing",
-        "body": "We process personal data on the following legal bases: your consent (art. 6(1)(a) GDPR) for communications; the execution of a contract or pre-contractual measures (art. 6(1)(b) GDPR) for quote requests; legitimate interest (art. 6(1)(f) GDPR) for the security and improvement of the website."
+        "title": "3. İşlemenin Yasal Dayanağı",
+        "body": "Kişisel verileri aşağıdaki yasal dayanaklara göre işleriz:\n- ticari iletişimler için onayınız (GDPR Madde 6 fıkra 1 bent a);\n- teklif talepleri ve hizmet sunumu için bir sözleşmenin veya sözleşme öncesi tedbirlerin yerine getirilmesi (GDPR Madde 6 fıkra 1 bent b);\n- muhasebe ve vergi amaçları için yasal yükümlülüklere uyum (GDPR Madde 6 fıkra 1 bent c);\n- sitenin güvenliği ve iyileştirilmesi için meşru menfaat (GDPR Madde 6 fıkra 1 bent f)."
       },
       {
-        "title": "4. Data subject rights",
-        "body": "Under the GDPR you have the right to access, rectify, erase, restrict and port your personal data, as well as the right to object to the processing. You also have the right to withdraw consent at any time and to lodge a complaint with the competent supervisory authority (ANSPDCP in Romania)."
+        "title": "4. Veri Sahibinin Hakları",
+        "body": "Kişisel verilerinize erişim, düzeltme, silme, kısıtlama ve taşınabilirlik hakkına ve ayrıca işlemeye itiraz etme hakkına sahipsiniz. Onayınızı herhangi bir zamanda geri çekebilirsiniz. Haklarınızı hello@core829.net adresine yazarak kullanabilirsiniz; 30 gün içinde yanıt vereceğiz."
       },
       {
-        "title": "5. Data retention",
-        "body": "Personal data collected through forms is retained only for the time necessary to respond to requests and manage any contractual relationship, in accordance with the legal retention periods."
+        "title": "5. Veri Saklama",
+        "body": "Kişisel veriler, yalnızca taleplere yanıt vermek ve sözleşme ilişkisini yönetmek için gereken süre boyunca, yasal saklama sürelerine uygun olarak saklanır. Muhasebe verileri, kanunun öngördüğü süreler boyunca saklanır, ardından güvenli bir şekilde silinir veya anonimleştirilir."
       },
       {
-        "title": "6. Data transfers",
-        "body": "We do not transfer personal data outside the European Economic Area. Where third-party service providers process data on our behalf, they are bound by appropriate data processing agreements."
+        "title": "6. Alıcılar ve İşleyenler",
+        "body": "Kişisel veriler, yalnızca gerekli olduğunda barındırma, e-posta, ödeme ve faturalama sağlayıcılarına, profesyonel danışmanlara ve kanunun gerektirdiği durumlarda kamu makamlarına aktarılabilir. Tüm işleyenler, GDPR Madde 28 uyarınca veri işleme sözleşmeleriyle bağlıdır."
       },
       {
-        "title": "7. Contact",
-        "body": "For any question regarding the processing of your personal data, or to exercise your rights, write to hello@core829.net. We will respond within 30 days."
+        "title": "7. Veri Aktarımları",
+        "body": "Kişisel verileri Avrupa Ekonomik Alanı dışına aktarmayız. Bir aktarım üçüncü bir taraf işleyen aracılığıyla gerçekleştiğinde, GDPR Bölüm V uyarınca uygun güvenceler uygulanır."
+      },
+      {
+        "title": "8. Otomatik Karar Alma",
+        "body": "Sizi ilgilendiren veya benzer şekilde önemli ölçüde etkileyen hukuki sonuçlar doğuran yalnızca otomatik işlemeye, profil oluşturma dahil, dayalı kararlar almayız."
+      },
+      {
+        "title": "9. Veri Güvenliği",
+        "body": "GDPR Madde 32 uyarınca, taşıma sırasında veri şifreleme, erişim kontrolleri ve düzenli incelemeler dahil olmak üzere riske uygun bir güvenlik düzeyi sağlamak için teknik ve organizasyonel önlemler uygularız."
+      },
+      {
+        "title": "10. İletişim ve Şikayetler",
+        "body": "Kişisel verilerinizin işlenmesiyle ilgili herhangi bir soru veya haklarınızı kullanmak için hello@core829.net adresine yazın.\nAyrıca Rumen ANSPDCP makamına (www.dataprotection.ro) veya ikamet ettiğiniz yerdeki denetim makamına şikayette bulunma hakkınız vardır."
       }
-    ],
-    "updated": "Son güncelleme: {date}"
+    ]
   },
   "cookiePolicy": {
-    "title": "Cookie Policy",
-    "intro": "This Cookie Policy explains what cookies are and how CORE829 SRL uses cookies and similar technologies on the website core829.net.",
+    "title": "Çerez Politikası",
+    "updated": "Son güncelleme: {date}",
+    "intro": "Bu Çerez Politikası, çerezlerin ne olduğunu ve CORE829 SRL'nin core829.net web sitesinde GDPR ve Rumen hukukuna aktarılan ePrivacy Yönergesi uyarınca çerezleri ve benzer teknolojileri nasıl kullandığını açıklar.",
     "sections": [
       {
-        "title": "1. What are cookies",
-        "body": "Cookies are small text files stored on your device when you visit a website. They allow the website to remember your preferences and to understand how visitors use the site."
+        "title": "1. Çerez Nedir",
+        "body": "Çerezler, bir web sitesini ziyaret ettiğinizde cihazınızda saklanan küçük metin dosyalarıdır. Web sitesinin tercihlerinizi hatırlamasına ve ziyaretçilerin siteyi nasıl kullandığını anlamasına olanak tanır, işlevselliği ve kullanıcı deneyimini iyileştirir."
       },
       {
-        "title": "2. Cookies we use",
-        "body": "We use strictly necessary cookies for the functioning of the website and preferences cookies to remember your language choice. We may use analytics cookies to measure traffic and improve our content, where your consent has been obtained."
+        "title": "2. Kullandığımız Çerezler",
+        "body": "Aşağıdaki çerez kategorilerini kullanırız:\n- kesinlikle gerekli çerezler: web sitesinin çalışması için gereklidir ve devre dışı bırakılamaz;\n- tercih çerezleri: dil seçiminizi ve ayarlarınızı hatırlamak için;\n- analitik çerezler: trafiği ölçmek ve içeriğimizi iyileştirmek için, yalnızca onayınız alınmışsa;\n- pazarlama çerezleri: onayınızı verdiyseniz ilgili reklamlar göstermek için."
       },
       {
-        "title": "3. Third-party cookies",
-        "body": "Some cookies are set by third-party services integrated into the website, such as analytics and advertising platforms. These third parties may process the data collected according to their own privacy policies."
+        "title": "3. Üçüncü Taraf Çerezleri",
+        "body": "Bazı çerezler, siteye gömülü üçüncü taraf hizmetler tarafından ayarlanır (Trustpilot inceleme widget'ı ve analitik platformları gibi). Bu üçüncü taraflar, toplanan verileri kendi gizlilik politikalarına göre işleyebilir."
       },
       {
-        "title": "4. Managing cookies",
-        "body": "You can manage or delete cookies through your browser settings. Blocking certain cookies may affect the functionality of the website, such as remembering your language preference."
+        "title": "4. Çerez Yönetimi",
+        "body": "Çerezleri tarayıcı ayarlarınızdan yönetebilir veya silebilirsiniz. Bazı çerezlerin engellenmesi, dil tercihinizi hatırlama gibi sitenin işlevselliğini etkileyebilir."
       },
       {
-        "title": "5. Consent",
-        "body": "Where cookies are not strictly necessary, we request your consent before installing them. You can change your preferences at any time by clearing your browser cookies and revisiting the website."
+        "title": "5. Onay",
+        "body": "Çerezler kesinlikle gerekli olmadığında, kurulumlarından önce onayınızı isteriz. Tarayıcı çerezlerini silip siteyi yeniden ziyaret ederek tercihlerinizi istediğiniz zaman değiştirebilirsiniz."
+      },
+      {
+        "title": "6. Bu Politikadaki Değişiklikler",
+        "body": "Bu Çerez Politikası zaman zaman güncellenebilir. Her değişiklik, güncelleme tarihiyle birlikte bu sayfada yayınlanacaktır."
+      },
+      {
+        "title": "7. İletişim",
+        "body": "Çerezlerin kullanımıyla ilgili herhangi bir soru için hello@core829.net adresine yazın."
       }
-    ],
-    "updated": "Son güncelleme: {date}"
+    ]
   },
   "contactEmails": {
     "heading": "Contact",

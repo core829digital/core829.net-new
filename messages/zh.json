@@ -618,7 +618,13 @@
     "ctaButton": "Request a consultation",
     "brandKicker": "品牌中的品牌",
     "brandTitle": "同一个名字,独立的标识",
-    "brandDesc": "CORE829 Servers 诞生于与公司其他部门相同的团队和相同的质量标准,但拥有自己独立的视觉标识。这是一个深思熟虑的选择:硬件与基础设施理应被一眼识别为独立的部门,有别于软件与数字服务——但在各方面依然是 CORE829。"
+    "brandDesc": "CORE829 Servers 诞生于与公司其他部门相同的团队和相同的质量标准,但拥有自己独立的视觉标识。这是一个深思熟虑的选择:硬件与基础设施理应被一眼识别为独立的部门,有别于软件与数字服务——但在各方面依然是 CORE829。",
+    "docsKicker": "合规",
+    "docsTitle": "技术文件与认证",
+    "docsIntro": "我们定制服务器硬件的出口合规认证,面向所有访客开放。",
+    "docsLanguageNote": "文档为英文。",
+    "viewPdf": "查看 PDF",
+    "downloadPdf": "下载 PDF"
   },
   "servicesDetail": {
     "back": "All services",

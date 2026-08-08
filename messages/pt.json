@@ -618,7 +618,13 @@
     "ctaButton": "Solicitar uma consulta",
     "brandKicker": "Uma marca dentro da marca",
     "brandTitle": "Mesmo nome, uma identidade distinta",
-    "brandDesc": "A CORE829 Servers nasceu da mesma equipa e com o mesmo padrão de qualidade do resto da agência, mas com identidade visual própria. É uma escolha deliberada: o hardware e a infraestrutura merecem ser reconhecidos à primeira vista como um departamento dedicado, distinto do software e dos serviços digitais — continuando, em tudo, a ser CORE829."
+    "brandDesc": "A CORE829 Servers nasceu da mesma equipa e com o mesmo padrão de qualidade do resto da agência, mas com identidade visual própria. É uma escolha deliberada: o hardware e a infraestrutura merecem ser reconhecidos à primeira vista como um departamento dedicado, distinto do software e dos serviços digitais — continuando, em tudo, a ser CORE829.",
+    "docsKicker": "Conformidade",
+    "docsTitle": "Documentos técnicos e certificações",
+    "docsIntro": "Os certificados de conformidade de exportação do nosso hardware de servidores personalizados, disponíveis para todos os visitantes.",
+    "docsLanguageNote": "Documento em inglês.",
+    "viewPdf": "Ver PDF",
+    "downloadPdf": "Descarregar PDF"
   },
   "servicesDetail": {
     "back": "Todos os serviços",

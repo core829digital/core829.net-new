@@ -618,7 +618,13 @@
     "ctaButton": "Een consult aanvragen",
     "brandKicker": "Een merk binnen het merk",
     "brandTitle": "Zelfde naam, een eigen identiteit",
-    "brandDesc": "CORE829 Servers is ontstaan uit hetzelfde team en dezelfde kwaliteitsnorm als de rest van het bureau, maar met een eigen visuele identiteit. Het is een bewuste keuze: hardware en infrastructuur verdienen het om in één oogopslag herkend te worden als een eigen afdeling, los van software en digitale diensten — terwijl het in alles CORE829 blijft."
+    "brandDesc": "CORE829 Servers is ontstaan uit hetzelfde team en dezelfde kwaliteitsnorm als de rest van het bureau, maar met een eigen visuele identiteit. Het is een bewuste keuze: hardware en infrastructuur verdienen het om in één oogopslag herkend te worden als een eigen afdeling, los van software en digitale diensten — terwijl het in alles CORE829 blijft.",
+    "docsKicker": "Compliance",
+    "docsTitle": "Technische documenten en certificeringen",
+    "docsIntro": "De exportcompliance-certificeringen voor onze op maat gemaakte serverhardware, beschikbaar voor elke bezoeker.",
+    "docsLanguageNote": "Document in het Engels.",
+    "viewPdf": "PDF bekijken",
+    "downloadPdf": "PDF downloaden"
   },
   "servicesDetail": {
     "back": "Alle diensten",

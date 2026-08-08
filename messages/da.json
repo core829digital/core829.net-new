@@ -618,7 +618,13 @@
     "ctaButton": "Request a consultation",
     "brandKicker": "Et brand i brandet",
     "brandTitle": "Samme navn, en selvstændig identitet",
-    "brandDesc": "CORE829 Servers opstod fra det samme team og med samme kvalitetsstandard som resten af bureauet, men med sin egen visuelle identitet. Det er et bevidst valg: hardware og infrastruktur fortjener at blive genkendt med det samme som en dedikeret afdeling, adskilt fra software og digitale services — mens det i alt forbliver CORE829."
+    "brandDesc": "CORE829 Servers opstod fra det samme team og med samme kvalitetsstandard som resten af bureauet, men med sin egen visuelle identitet. Det er et bevidst valg: hardware og infrastruktur fortjener at blive genkendt med det samme som en dedikeret afdeling, adskilt fra software og digitale services — mens det i alt forbliver CORE829.",
+    "docsKicker": "Compliance",
+    "docsTitle": "Tekniske dokumenter og certificeringer",
+    "docsIntro": "Eksportcompliance-certificeringerne for vores skræddersyede serverhardware, tilgængelige for alle besøgende.",
+    "docsLanguageNote": "Dokumentet er på engelsk.",
+    "viewPdf": "Se PDF",
+    "downloadPdf": "Download PDF"
   },
   "servicesDetail": {
     "back": "All services",

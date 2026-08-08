@@ -618,7 +618,13 @@
     "ctaButton": "Request a consultation",
     "brandKicker": "Márka a márkán belül",
     "brandTitle": "Ugyanaz a név, önálló arculat",
-    "brandDesc": "A CORE829 Servers ugyanabból a csapatból és ugyanolyan minőségi elvárásokkal jött létre, mint az ügynökség többi része, de saját vizuális arculattal. Ez tudatos döntés: a hardver és az infrastruktúra megérdemli, hogy elsőre önálló részlegként ismerjük fel, elkülönítve a szoftvertől és a digitális szolgáltatásoktól — miközben minden tekintetben CORE829 marad."
+    "brandDesc": "A CORE829 Servers ugyanabból a csapatból és ugyanolyan minőségi elvárásokkal jött létre, mint az ügynökség többi része, de saját vizuális arculattal. Ez tudatos döntés: a hardver és az infrastruktúra megérdemli, hogy elsőre önálló részlegként ismerjük fel, elkülönítve a szoftvertől és a digitális szolgáltatásoktól — miközben minden tekintetben CORE829 marad.",
+    "docsKicker": "Megfelelőség",
+    "docsTitle": "Műszaki dokumentumok és tanúsítványok",
+    "docsIntro": "Egyedi szerverhardverünk exportmegfelelőségi tanúsítványai, minden látogató számára elérhetők.",
+    "docsLanguageNote": "A dokumentum angol nyelvű.",
+    "viewPdf": "PDF megtekintése",
+    "downloadPdf": "PDF letöltése"
   },
   "servicesDetail": {
     "back": "All services",

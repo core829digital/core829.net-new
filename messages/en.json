@@ -618,7 +618,13 @@
     "ctaButton": "Request a consultation",
     "brandKicker": "A brand within a brand",
     "brandTitle": "Same name, a distinct identity",
-    "brandDesc": "CORE829 Servers was born from the same team and the same quality standard as the rest of the agency, but with its own visual identity. It's a deliberate choice: hardware and infrastructure deserve to be recognized at a glance as a dedicated department, separate from software and digital services — while remaining, in every respect, CORE829."
+    "brandDesc": "CORE829 Servers was born from the same team and the same quality standard as the rest of the agency, but with its own visual identity. It's a deliberate choice: hardware and infrastructure deserve to be recognized at a glance as a dedicated department, separate from software and digital services — while remaining, in every respect, CORE829.",
+    "docsKicker": "Compliance",
+    "docsTitle": "Technical documents and certifications",
+    "docsIntro": "The export-compliance certifications for our custom server hardware, available to every visitor.",
+    "docsLanguageNote": "Document in English.",
+    "viewPdf": "View PDF",
+    "downloadPdf": "Download PDF"
   },
   "servicesDetail": {
     "back": "All services",

@@ -618,7 +618,13 @@
     "ctaButton": "Request a consultation",
     "brandKicker": "Značka v rámci značky",
     "brandTitle": "Rovnaké meno, odlišná identita",
-    "brandDesc": "CORE829 Servers vzniklo z rovnakého tímu a s rovnakým štandardom kvality ako zvyšok agentúry, no s vlastnou vizuálnou identitou. Je to zámerné rozhodnutie: hardvér a infraštruktúra si zaslúžia byť na prvý pohľad rozpoznané ako samostatné oddelenie, oddelené od softvéru a digitálnych služieb — a pritom vo všetkých ohľadoch zostávajú CORE829."
+    "brandDesc": "CORE829 Servers vzniklo z rovnakého tímu a s rovnakým štandardom kvality ako zvyšok agentúry, no s vlastnou vizuálnou identitou. Je to zámerné rozhodnutie: hardvér a infraštruktúra si zaslúžia byť na prvý pohľad rozpoznané ako samostatné oddelenie, oddelené od softvéru a digitálnych služieb — a pritom vo všetkých ohľadoch zostávajú CORE829.",
+    "docsKicker": "Compliance",
+    "docsTitle": "Technické dokumenty a certifikácie",
+    "docsIntro": "Exportné certifikáty zhody pre náš zákazkový serverový hardvér, dostupné všetkým návštevníkom.",
+    "docsLanguageNote": "Dokument v angličtine.",
+    "viewPdf": "Zobraziť PDF",
+    "downloadPdf": "Stiahnuť PDF"
   },
   "servicesDetail": {
     "back": "All services",

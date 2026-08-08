@@ -618,7 +618,13 @@
     "ctaButton": "Request a consultation",
     "brandKicker": "Brändi brändin sisällä",
     "brandTitle": "Sama nimi, oma identiteetti",
-    "brandDesc": "CORE829 Servers syntyi samasta tiimistä ja samalla laatustandardilla kuin muu toimisto, mutta omalla visuaalisella identiteetillään. Se on tietoinen valinta: laitteisto ja infrastruktuuri ansaitsevat tulla tunnistetuiksi heti omana osastonaan, erillään ohjelmistoista ja digitaalisista palveluista — pysyen silti kaikin puolin CORE829:nä."
+    "brandDesc": "CORE829 Servers syntyi samasta tiimistä ja samalla laatustandardilla kuin muu toimisto, mutta omalla visuaalisella identiteetillään. Se on tietoinen valinta: laitteisto ja infrastruktuuri ansaitsevat tulla tunnistetuiksi heti omana osastonaan, erillään ohjelmistoista ja digitaalisista palveluista — pysyen silti kaikin puolin CORE829:nä.",
+    "docsKicker": "Vaatimustenmukaisuus",
+    "docsTitle": "Tekniset asiakirjat ja sertifikaatit",
+    "docsIntro": "Räätälöidyn palvelinlaitteistomme vientivaatimustenmukaisuustodistukset, kaikkien kävijöiden saatavilla.",
+    "docsLanguageNote": "Asiakirja on englanniksi.",
+    "viewPdf": "Näytä PDF",
+    "downloadPdf": "Lataa PDF"
   },
   "servicesDetail": {
     "back": "All services",

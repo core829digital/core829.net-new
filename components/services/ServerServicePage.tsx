@@ -4,10 +4,24 @@ import { useState, useEffect, useCallback } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight, FileText, Download, Eye } from "lucide-react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
 import { Button } from "@/components/ui/Button";
+import PdfViewer from "@/components/ui/PdfViewer";
 import { cn } from "@/lib/utils";
+
+const DOCUMENTS = [
+  {
+    key: "advancedIc",
+    title: "Advanced IC Certification",
+    href: "/server-service/CORE829%20advanced%20ic%20certification.pdf",
+  },
+  {
+    key: "endUse",
+    title: "End-Use/User Certification",
+    href: "/server-service/CORE829%20end%20use%20certification.pdf",
+  },
+];
 
 const SERVER_IMAGES = [
   { src: "/server-service/2.webp", alt: "CORE829 custom server build" },
@@ -36,6 +50,7 @@ export default function ServerServicePage() {
   const t = useTranslations("serverPage");
   const tDetail = useTranslations("servicesDetail");
   const [index, setIndex] = useState(0);
+  const [activeDoc, setActiveDoc] = useState<string | null>(null);
 
   const next = useCallback(
     () => setIndex((i) => (i + 1) % SERVER_IMAGES.length),
@@ -304,6 +319,52 @@ export default function ServerServicePage() {
             </p>
           </div>
         </RevealOnScroll>
+
+        {/* Documenti e certificazioni */}
+        <RevealOnScroll className="mt-16">
+          <p className="kicker">{t("docsKicker")}</p>
+          <h2 className="mt-4 text-section-title">{t("docsTitle")}</h2>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground-muted">
+            {t("docsIntro")}
+          </p>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {DOCUMENTS.map((doc) => (
+              <div
+                key={doc.key}
+                className="flex flex-col border border-border bg-background p-6 sm:p-8"
+              >
+                <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white">
+                  <FileText className="h-5 w-5" aria-hidden />
+                </span>
+                <h3 className="mt-6 text-lg font-semibold tracking-tight">
+                  {doc.title}
+                </h3>
+                <p className="mt-2 text-sm text-foreground-muted">
+                  {t("docsLanguageNote")}
+                </p>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <button
+                    type="button"
+                    onClick={() => setActiveDoc(doc.href)}
+                    className="inline-flex min-h-11 items-center gap-2 border border-foreground px-5 text-sm font-medium text-foreground transition-colors duration-300 hover:bg-foreground hover:text-white"
+                  >
+                    <Eye className="h-4 w-4" aria-hidden />
+                    {t("viewPdf")}
+                  </button>
+                  <a
+                    href={doc.href}
+                    download
+                    className="inline-flex min-h-11 items-center gap-2 bg-foreground px-5 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent"
+                  >
+                    <Download className="h-4 w-4" aria-hidden />
+                    {t("downloadPdf")}
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </RevealOnScroll>
       </section>
 
       {/* CTA */}
@@ -343,6 +404,16 @@ export default function ServerServicePage() {
           {" "}— {tDetail("projectsMail")}
         </p>
       </div>
+
+      {/* Lettore PDF integrato */}
+      {activeDoc && (
+        <PdfViewer
+          src={activeDoc}
+          title={DOCUMENTS.find((d) => d.href === activeDoc)?.title ?? "PDF"}
+          open
+          onClose={() => setActiveDoc(null)}
+        />
+      )}
     </>
   );
 }

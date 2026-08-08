@@ -34,7 +34,7 @@ export default function Solution() {
           </div>
         </RevealOnScroll>
 
-        <RevealOnScroll className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealOnScroll className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, i) => {
             const meta = SERVICES_META[i];
             const Icon = meta?.icon;

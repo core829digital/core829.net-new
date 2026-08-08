@@ -63,7 +63,7 @@ export default async function ContattiPage({
 
         <div className="mt-16 border border-border bg-surface p-8 md:max-w-3xl">
           <p className="tech-label">{COMPANY.legalName}</p>
-          <div className="mt-6 grid gap-6 sm:grid-cols-2">
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted">
                 {t("companyAddress")}
@@ -102,7 +102,7 @@ export default async function ContattiPage({
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-foreground-muted">
             {tEmails("intro")}
           </p>
-          <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+          <ul className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {EMAILS.map(({ key, address }) => (
               <li key={key}>
                 <a

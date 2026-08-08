@@ -40,7 +40,7 @@ export default function Features() {
           </div>
         </RevealOnScroll>
 
-        <RevealOnScroll className="mt-16 grid gap-4 lg:grid-cols-4 lg:auto-rows-[minmax(9rem,auto)]">
+        <RevealOnScroll className="mt-16 grid grid-cols-1 gap-4 lg:grid-cols-4 lg:auto-rows-[minmax(9rem,auto)]">
           {items.map((item, i) => {
             const Icon = FEATURE_ICON_MAP[item.icon];
             const large = i === 0 || i === 4;

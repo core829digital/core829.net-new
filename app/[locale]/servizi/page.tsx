@@ -35,7 +35,7 @@ export default async function ServiziPage({
           {t("subtitle")}
         </p>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES_META.map((_, i) => (
             <ServiceCard key={i} index={i} />
           ))}

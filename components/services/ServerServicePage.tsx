@@ -71,7 +71,7 @@ export default function ServerServicePage() {
           className="pointer-events-none absolute -right-16 top-40 h-48 w-48 rounded-full border border-accent/20"
         />
 
-        <div className="container-core829 grid items-center gap-16 py-20 lg:grid-cols-2">
+        <div className="container-core829 grid grid-cols-1 items-center gap-16 py-20 lg:grid-cols-2">
           <div>
             <RevealOnScroll>
               <p className="kicker">
@@ -201,7 +201,7 @@ export default function ServerServicePage() {
 
           <RevealOnScroll
             stagger={0.1}
-            className="mt-16 grid gap-6 md:grid-cols-2"
+            className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2"
           >
             {steps.map((step, i) => (
               <div
@@ -238,7 +238,7 @@ export default function ServerServicePage() {
           </div>
         </RevealOnScroll>
 
-        <RevealOnScroll stagger={0.1} className="mt-16 grid gap-6 lg:grid-cols-2">
+        <RevealOnScroll stagger={0.1} className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-2">
           {/* Intel */}
           <div className="group flex flex-col border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl sm:p-8 md:p-10">
             <div className="flex h-16 w-16 items-center justify-center border border-border p-2">

@@ -34,7 +34,7 @@ export default async function ChiSiamoPage({
           {t("subtitle")}
         </p>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2">
+        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
           <div>
             <h2 className="text-xl font-semibold tracking-tight">
               {t("missionTitle")}
@@ -58,7 +58,7 @@ export default async function ChiSiamoPage({
           </div>
         </div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2">
+        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
           <a
             href="mailto:hello@core829.net"
             className="group border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent"

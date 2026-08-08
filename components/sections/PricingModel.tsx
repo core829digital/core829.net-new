@@ -27,7 +27,7 @@ export default function PricingModel() {
           </div>
         </RevealOnScroll>
 
-        <RevealOnScroll className="mt-16 grid gap-6 md:grid-cols-3">
+        <RevealOnScroll className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
           {models.map((model, i) => (
             <div
               key={i}

@@ -43,7 +43,7 @@ export default function Hero() {
         className="pointer-events-none absolute -right-16 top-40 h-48 w-48 rounded-full border border-accent/20"
       />
 
-      <div className="container-core829 grid min-h-[calc(100vh-4rem)] min-h-[calc(100svh-4rem)] items-center gap-16 py-20 lg:grid-cols-2">
+      <div className="container-core829 grid min-h-[calc(100vh-4rem)] min-h-[calc(100svh-4rem)] grid-cols-1 items-center gap-16 py-20 lg:grid-cols-2">
         <div>
           <Badge>
             <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden />

@@ -25,7 +25,7 @@ export default function Problem() {
             <h2 className="mt-4 text-section-title">{t("title")}</h2>
           </div>
 
-          <div className="mt-16 grid gap-px overflow-hidden border border-border bg-border md:grid-cols-3">
+          <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden border border-border bg-border md:grid-cols-3">
             {items.map((item, i) => (
               <div
                 key={i}

@@ -31,7 +31,7 @@ export default function Footer() {
     <footer className="border-t border-border bg-surface">
       <div className="container-core829 grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-6">
         {/* Brand */}
-        <div className="col-span-2">
+        <div className="sm:col-span-2">
           <p className="text-lg font-bold tracking-tight">
             <Image
               src="/core829-logo/829black%20trsp.webp"

@@ -139,7 +139,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 top-16 z-40 flex flex-col overflow-y-auto overscroll-contain bg-background pb-[max(env(safe-area-inset-bottom),1.5rem)] lg:hidden"
+            className="fixed inset-x-0 top-16 z-40 flex h-[calc(100dvh-4rem)] flex-col overflow-y-auto overscroll-contain bg-background pb-[max(env(safe-area-inset-bottom),1.5rem)] lg:hidden"
             style={{ backgroundColor: "var(--color-background)" }}
           >
             <MobileNav

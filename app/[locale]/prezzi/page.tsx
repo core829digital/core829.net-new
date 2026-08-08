@@ -33,7 +33,7 @@ export default async function PrezziPage({
           {t("subtitle")}
         </p>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="flex flex-col rounded-xl border border-border bg-surface p-8">
             <h3 className="text-lg font-semibold tracking-tight">
               {t("projectTitle")}

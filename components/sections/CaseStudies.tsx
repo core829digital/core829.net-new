@@ -51,7 +51,7 @@ export default function CaseStudies() {
               <article
                 key={project.id ?? i}
                 id={meta?.anchorId}
-                className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16"
+                className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16"
               >
                 <RevealOnScroll
                   className={cn(

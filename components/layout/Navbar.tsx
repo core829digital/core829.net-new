@@ -106,6 +106,7 @@ export default function Navbar() {
           />
 
           <NavLink href="/prezzi">{t("pricing")}</NavLink>
+          <NavLink href="/careers">{t("careers")}</NavLink>
           <NavLink href="/contatti">{t("contact")}</NavLink>
         </nav>
 
@@ -159,6 +160,7 @@ export default function Navbar() {
                   children: dropdownServices,
                 },
                 { key: "pricing", label: t("pricing"), href: "/prezzi" },
+                { key: "careers", label: t("careers"), href: "/careers" },
                 { key: "contact", label: t("contact"), href: "/contatti" },
               ]}
               onNavigate={goTo}

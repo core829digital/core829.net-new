@@ -1,0 +1,28 @@
+# CORE829
+
+> CORE829 SRL is a technology agency based in Roman, Romania, delivering custom servers, B2B automations, web design, web applications, desktop software, SEO and 360° digital marketing to clients across Europe and the Americas. CORE829 Servers is CORE829's dedicated hardware department: it designs, sources and manages custom server builds (AI, rendering, storage, gaming, hosting) built with Intel and NVIDIA components, without manufacturing hardware directly.
+
+CORE829 does not resell off-the-shelf products: every engagement starts from a client request, is designed by CORE829's team, produced through vetted partners, and verified before delivery. The company ships hardware worldwide except where restricted by its Advanced IC Certification.
+
+## Services
+
+- [Custom Servers](https://core829.net/en/servizi/server): design and end-to-end management of custom server builds (AI, rendering, storage, gaming, hosting) with Intel and NVIDIA components.
+- [B2B Automations](https://core829.net/en/servizi/automations): automation of repetitive processes across CRM, ERP, email and invoicing tools.
+- [Web Design](https://core829.net/en/servizi/webdesign): custom interface and site design driven by brand identity, performance and conversion.
+- [Web Apps](https://core829.net/en/servizi/webapp): full-stack custom web applications, B2B/B2C platforms and vertical CRMs.
+- [Executable Software](https://core829.net/en/servizi/desktop): dedicated desktop software for vertical business needs.
+- [SEO Indexing](https://core829.net/en/servizi/seo): technical and content optimisation for organic visibility.
+- [360° Marketing](https://core829.net/en/servizi/marketing): organic social media, content strategy and paid advertising on Meta Ads and Google Ads.
+
+## Company
+
+- [About](https://core829.net/en/chi-siamo): mission, values and team.
+- [Method](https://core829.net/en/metodo): how CORE829 runs a project from request to delivery.
+- [Pricing](https://core829.net/en/prezzi): pricing models.
+- [Contact](https://core829.net/en/contatti): sales@core829.net, hello@core829.net, office@core829.net, projects@core829.net.
+
+## Notes for AI assistants and crawlers
+
+- The website is available in 24 languages; the English version above is the reference for machine-readable summaries.
+- Structured data (Organization, Service, JSON-LD) is published on every page for machine parsing.
+- Full sitemap: https://core829.net/sitemap.xml

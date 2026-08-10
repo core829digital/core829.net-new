@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
 import { SERVICES_META } from "@/lib/constants";
 import ServerServicePage from "@/components/services/ServerServicePage";
+import { buildAlternates } from "@/lib/seo";
 
 interface PageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -23,12 +24,18 @@ export async function generateMetadata({
   const tServices = await getTranslations({ locale, namespace: "solution.services" });
 
   if (index === -1) {
-    return { title: `404 — CORE829` };
+    return { title: `404 — CORE829`, robots: { index: false, follow: false } };
   }
 
+  const title = `${tServices(`${index}.title`)} — CORE829`;
+  const description = tServices(`${index}.desc`);
+
   return {
-    title: `${tServices(`${index}.title`)} — CORE829`,
-    description: tServices(`${index}.desc`),
+    title,
+    description,
+    alternates: buildAlternates(locale, `/servizi/${slug}`),
+    openGraph: { title, description },
+    twitter: { title, description },
   };
 }
 

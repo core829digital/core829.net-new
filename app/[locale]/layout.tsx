@@ -11,6 +11,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { TrustpilotScript } from "@/components/Trustpilot";
 import JsonLd from "@/components/seo/JsonLd";
+import { buildAlternates, SITE_URL } from "@/lib/seo";
 import "../globals.css";
 
 const inter = Inter({
@@ -42,12 +43,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://core829.net";
-
-  const alternates: Record<string, string> = {};
-  for (const l of routing.locales) {
-    alternates[l] = `${siteUrl}/${l}`;
-  }
+  const siteUrl = SITE_URL;
 
   return {
     title: {
@@ -56,10 +52,7 @@ export async function generateMetadata({
     },
     description: t("description"),
     metadataBase: new URL(siteUrl),
-    alternates: {
-      canonical: `${siteUrl}/${locale}`,
-      languages: alternates,
-    },
+    alternates: buildAlternates(locale),
     openGraph: {
       title: t("title"),
       description: t("description"),
@@ -78,6 +71,13 @@ export async function generateMetadata({
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
     },
   };
 }

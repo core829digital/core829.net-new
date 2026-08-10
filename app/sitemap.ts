@@ -41,12 +41,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const l of locales) {
       alternates[l] = buildUrl(l, path);
     }
+    alternates["x-default"] = buildUrl(defaultLocale, path);
     return {
       url,
       lastModified,
       changeFrequency: path === "/" ? ("monthly" as const) : ("yearly" as const),
       priority: path === "/" ? 1 : 0.3,
-      alternates,
+      alternates: { languages: alternates },
     };
   };
 

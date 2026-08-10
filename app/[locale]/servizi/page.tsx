@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import ServiceCard from "@/components/ui/ServiceCard";
 import { SERVICES_META } from "@/lib/constants";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -11,9 +12,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
+  const title = `${t("services")} — CORE829`;
   return {
-    title: `${t("services")} — CORE829`,
+    title,
     description: t("description"),
+    alternates: buildAlternates(locale, "/servizi"),
+    openGraph: { title, description: t("description") },
+    twitter: { title, description: t("description") },
   };
 }
 

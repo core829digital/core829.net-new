@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -9,9 +10,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
+  const title = `${t("pricing")} — CORE829`;
   return {
-    title: `${t("pricing")} — CORE829`,
+    title,
     description: t("description"),
+    alternates: buildAlternates(locale, "/prezzi"),
+    openGraph: { title, description: t("description") },
+    twitter: { title, description: t("description") },
   };
 }
 

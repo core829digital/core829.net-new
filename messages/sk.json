@@ -963,5 +963,26 @@
   "founders": {
     "founder": "Zakladateľ",
     "cofounder": "Spoluzakladateľ"
+  },
+  "cookieConsent": {
+    "bannerTitle": "Vaše súkromie je pre nás dôležité",
+    "bannerDesc": "Používame cookies, aby stránka fungovala, aby sme si zapamätali vaše preferencie a iba s vaším súhlasom merali návštevnosť a zobrazovali relevantný obsah. Môžete prijať všetky, odmietnuť nepodstatné cookies alebo kedykoľvek prispôsobiť svoj výber.",
+    "acceptAll": "Prijať všetko",
+    "rejectAll": "Odmietnuť nepodstatné",
+    "managePreferences": "Spravovať predvoľby",
+    "modalTitle": "Predvoľby cookies",
+    "modalDesc": "Vyberte, ktoré kategórie cookies povoľujete. Nevyhnutné cookies sú vždy aktívne, pretože bez nich stránka nemôže správne fungovať.",
+    "save": "Uložiť predvoľby",
+    "alwaysActive": "Vždy aktívne",
+    "necessaryTitle": "Nevyhnutné",
+    "necessaryDesc": "Potrebné pre základné fungovanie stránky, ako je bezpečnosť, výber jazyka a zapamätanie vašich volieb týkajúcich sa cookies. Nedajú sa vypnúť.",
+    "preferencesTitle": "Preferencie",
+    "preferencesDesc": "Umožňujú stránke zapamätať si vaše voľby, ako je preferovaný jazyk a región.",
+    "analyticsTitle": "Analytické",
+    "analyticsDesc": "Pomáhajú nám pochopiť, ako návštevníci stránku používajú, aby sme mohli zlepšovať obsah a výkon. Žiadne údaje sa nepoužívajú na vašu osobnú identifikáciu.",
+    "marketingTitle": "Marketing a tretie strany",
+    "marketingDesc": "Používané službami tretích strán, ako je widget recenzií Trustpilot, a na zobrazovanie relevantnej reklamy.",
+    "policyLinkLabel": "Prečítajte si naše Zásady používania cookies",
+    "footerManage": "Predvoľby cookies"
   }
 }

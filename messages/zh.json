@@ -963,5 +963,26 @@
   "founders": {
     "founder": "创始人",
     "cofounder": "联合创始人"
+  },
+  "cookieConsent": {
+    "bannerTitle": "我们重视您的隐私",
+    "bannerDesc": "我们使用 Cookie 以确保网站正常运行、记住您的偏好设置，并仅在您同意的情况下衡量流量并展示相关内容。您可以接受全部、拒绝非必要的 Cookie，或随时自定义您的选择。",
+    "acceptAll": "接受全部",
+    "rejectAll": "拒绝非必要项",
+    "managePreferences": "管理偏好设置",
+    "modalTitle": "Cookie 偏好设置",
+    "modalDesc": "请选择您允许的 Cookie 类别。严格必要的 Cookie 始终处于启用状态，因为没有它们网站将无法正常运行。",
+    "save": "保存偏好设置",
+    "alwaysActive": "始终启用",
+    "necessaryTitle": "严格必要",
+    "necessaryDesc": "网站基本功能所需，例如安全性、语言选择以及记住您的 Cookie 选择。无法关闭。",
+    "preferencesTitle": "偏好设置",
+    "preferencesDesc": "使网站能够记住您的选择，例如首选语言和地区。",
+    "analyticsTitle": "分析",
+    "analyticsDesc": "帮助我们了解访客如何使用网站，以便改进内容和性能。任何数据均不会用于识别您的个人身份。",
+    "marketingTitle": "营销与第三方",
+    "marketingDesc": "由第三方服务（如 Trustpilot 评论小工具）使用，并用于展示相关广告。",
+    "policyLinkLabel": "阅读我们的 Cookie 政策",
+    "footerManage": "Cookie 偏好设置"
   }
 }

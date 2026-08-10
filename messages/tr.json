@@ -963,5 +963,26 @@
   "founders": {
     "founder": "Kurucu",
     "cofounder": "Kurucu Ortak"
+  },
+  "cookieConsent": {
+    "bannerTitle": "Gizliliğiniz bizim için önemli",
+    "bannerDesc": "Sitenin çalışması, tercihlerinizi hatırlamamız ve yalnızca izninizle trafiği ölçüp ilgili içerikler göstermemiz için çerezler kullanıyoruz. Tümünü kabul edebilir, zorunlu olmayanları reddedebilir veya seçimlerinizi istediğiniz zaman özelleştirebilirsiniz.",
+    "acceptAll": "Tümünü kabul et",
+    "rejectAll": "Zorunlu olmayanları reddet",
+    "managePreferences": "Tercihleri yönet",
+    "modalTitle": "Çerez tercihleri",
+    "modalDesc": "Hangi çerez kategorilerine izin vereceğinizi seçin. Kesinlikle gerekli çerezler her zaman aktiftir çünkü site bunlar olmadan düzgün çalışamaz.",
+    "save": "Tercihleri kaydet",
+    "alwaysActive": "Her zaman aktif",
+    "necessaryTitle": "Kesinlikle gerekli",
+    "necessaryDesc": "Güvenlik, dil seçimi ve çerez tercihlerinizin hatırlanması gibi sitenin temel işlevleri için gereklidir. Devre dışı bırakılamaz.",
+    "preferencesTitle": "Tercihler",
+    "preferencesDesc": "Sitenin tercih ettiğiniz dil ve bölge gibi seçimlerinizi hatırlamasını sağlar.",
+    "analyticsTitle": "Analitik",
+    "analyticsDesc": "Ziyaretçilerin siteyi nasıl kullandığını anlamamıza yardımcı olarak içerik ve performansı geliştirmemizi sağlar. Hiçbir veri sizi kişisel olarak tanımlamak için kullanılmaz.",
+    "marketingTitle": "Pazarlama ve üçüncü taraflar",
+    "marketingDesc": "Trustpilot değerlendirme widget'ı gibi üçüncü taraf hizmetler tarafından ve ilgili reklamları göstermek için kullanılır.",
+    "policyLinkLabel": "Çerez Politikamızı okuyun",
+    "footerManage": "Çerez tercihleri"
   }
 }

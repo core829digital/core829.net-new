@@ -963,5 +963,26 @@
   "founders": {
     "founder": "Oprichter",
     "cofounder": "Mede-oprichter"
+  },
+  "cookieConsent": {
+    "bannerTitle": "Uw privacy is belangrijk voor ons",
+    "bannerDesc": "We gebruiken cookies om de site te laten werken, uw voorkeuren te onthouden en, alleen met uw toestemming, verkeer te meten en relevante inhoud te tonen. U kunt alles accepteren, niet-essentiële cookies weigeren of uw keuzes op elk moment aanpassen.",
+    "acceptAll": "Alles accepteren",
+    "rejectAll": "Niet-essentiële weigeren",
+    "managePreferences": "Voorkeuren beheren",
+    "modalTitle": "Cookievoorkeuren",
+    "modalDesc": "Kies welke cookiecategorieën u toestaat. Strikt noodzakelijke cookies zijn altijd actief, omdat de site zonder deze niet goed kan functioneren.",
+    "save": "Voorkeuren opslaan",
+    "alwaysActive": "Altijd actief",
+    "necessaryTitle": "Strikt noodzakelijk",
+    "necessaryDesc": "Vereist voor de basisfunctionaliteit van de site, zoals beveiliging, taalkeuze en het onthouden van uw cookiekeuzes. Kan niet worden uitgeschakeld.",
+    "preferencesTitle": "Voorkeuren",
+    "preferencesDesc": "Zorgen ervoor dat de site uw keuzes onthoudt, zoals uw voorkeurstaal en regio.",
+    "analyticsTitle": "Analytisch",
+    "analyticsDesc": "Helpen ons begrijpen hoe bezoekers de site gebruiken om inhoud en prestaties te verbeteren. Er worden geen gegevens gebruikt om u persoonlijk te identificeren.",
+    "marketingTitle": "Marketing en derden",
+    "marketingDesc": "Gebruikt door diensten van derden, zoals de Trustpilot-reviewswidget, en om relevante advertenties te tonen.",
+    "policyLinkLabel": "Lees ons Cookiebeleid",
+    "footerManage": "Cookievoorkeuren"
   }
 }

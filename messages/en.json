@@ -971,5 +971,26 @@
   "founders": {
     "founder": "Founder",
     "cofounder": "Co-founder"
+  },
+  "cookieConsent": {
+    "bannerTitle": "We value your privacy",
+    "bannerDesc": "We use cookies to run this site, remember your preferences and, only with your consent, measure traffic and show relevant content. You can accept all, reject non-essential cookies, or customize your choices at any time.",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject non-essential",
+    "managePreferences": "Manage preferences",
+    "modalTitle": "Cookie preferences",
+    "modalDesc": "Choose which categories of cookies you allow. Strictly necessary cookies are always active because the site cannot function properly without them.",
+    "save": "Save preferences",
+    "alwaysActive": "Always active",
+    "necessaryTitle": "Strictly necessary",
+    "necessaryDesc": "Required for core site functionality, such as security, language selection and remembering your cookie choices. Cannot be disabled.",
+    "preferencesTitle": "Preferences",
+    "preferencesDesc": "Allow the site to remember choices you make, such as your preferred language and region.",
+    "analyticsTitle": "Analytics",
+    "analyticsDesc": "Help us understand how visitors use the site so we can improve content and performance. No data is used to identify you personally.",
+    "marketingTitle": "Marketing & third-party",
+    "marketingDesc": "Used by third-party services, such as the Trustpilot reviews widget, and to show relevant advertising.",
+    "policyLinkLabel": "Read our Cookie Policy",
+    "footerManage": "Cookie preferences"
   }
 }

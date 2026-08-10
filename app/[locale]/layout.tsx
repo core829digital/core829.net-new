@@ -9,8 +9,10 @@ import VisualViewportProvider from "@/app/providers/VisualViewportProvider";
 import ResolvePendingHash from "@/components/ResolvePendingHash";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { TrustpilotScript } from "@/components/Trustpilot";
 import JsonLd from "@/components/seo/JsonLd";
+import { CookieConsentProvider } from "@/components/cookies/CookieConsentContext";
+import CookieBanner from "@/components/cookies/CookieBanner";
+import TrustpilotConsentGate from "@/components/cookies/TrustpilotConsentGate";
 import { buildAlternates, SITE_URL } from "@/lib/seo";
 import "../globals.css";
 
@@ -100,16 +102,19 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <TrustpilotScript />
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          <VisualViewportProvider />
-          <SmoothScrollProvider>
-            <ResolvePendingHash />
-            <Navbar />
-            <main>{children}</main>
-            <Footer />
-          </SmoothScrollProvider>
+          <CookieConsentProvider>
+            <TrustpilotConsentGate />
+            <VisualViewportProvider />
+            <SmoothScrollProvider>
+              <ResolvePendingHash />
+              <Navbar />
+              <main>{children}</main>
+              <Footer />
+            </SmoothScrollProvider>
+            <CookieBanner />
+          </CookieConsentProvider>
         </NextIntlClientProvider>
         <JsonLd />
       </body>

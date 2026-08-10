@@ -963,5 +963,26 @@
   "founders": {
     "founder": "Założyciel",
     "cofounder": "Współzałożyciel"
+  },
+  "cookieConsent": {
+    "bannerTitle": "Twoja prywatność jest dla nas ważna",
+    "bannerDesc": "Używamy plików cookie, aby strona działała, zapamiętać Twoje preferencje oraz — wyłącznie za Twoją zgodą — mierzyć ruch i pokazywać istotne treści. Możesz zaakceptować wszystkie, odrzucić niekonieczne pliki cookie lub dostosować wybór w dowolnym momencie.",
+    "acceptAll": "Akceptuj wszystkie",
+    "rejectAll": "Odrzuć niekonieczne",
+    "managePreferences": "Zarządzaj preferencjami",
+    "modalTitle": "Preferencje plików cookie",
+    "modalDesc": "Wybierz, które kategorie plików cookie zezwalasz. Niezbędne pliki cookie są zawsze aktywne, ponieważ strona nie może działać poprawnie bez nich.",
+    "save": "Zapisz preferencje",
+    "alwaysActive": "Zawsze aktywne",
+    "necessaryTitle": "Niezbędne",
+    "necessaryDesc": "Wymagane do podstawowego działania strony, takie jak bezpieczeństwo, wybór języka i zapamiętywanie Twoich wyborów dotyczących cookies. Nie można ich wyłączyć.",
+    "preferencesTitle": "Preferencje",
+    "preferencesDesc": "Pozwalają stronie zapamiętać Twoje wybory, takie jak preferowany język i region.",
+    "analyticsTitle": "Analityczne",
+    "analyticsDesc": "Pomagają nam zrozumieć, jak odwiedzający korzystają ze strony, aby ulepszać treści i wydajność. Żadne dane nie są wykorzystywane do identyfikacji Cię osobiście.",
+    "marketingTitle": "Marketing i strony trzecie",
+    "marketingDesc": "Wykorzystywane przez usługi zewnętrzne, takie jak widget opinii Trustpilot, oraz do wyświetlania odpowiednich reklam.",
+    "policyLinkLabel": "Przeczytaj naszą Politykę Cookies",
+    "footerManage": "Preferencje cookie"
   }
 }

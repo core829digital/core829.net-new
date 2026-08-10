@@ -4,6 +4,7 @@ import { ArrowUpRight, Building2, Phone, Mail, MapPin, Clock, UserRound, Message
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { useCookieConsent } from "@/components/cookies/CookieConsentContext";
 import { useGoToSection } from "@/lib/useGoToSection";
 import { SERVICES_META, clientAnchorIds, COMPANY, EMAILS, FOUNDERS } from "@/lib/constants";
 import { SocialLinks } from "@/components/SocialIcons";
@@ -20,6 +21,8 @@ export default function Footer() {
   const tFounders = useTranslations("founders");
   const tServices = useTranslations("solution.services");
   const tCaseStudies = useTranslations("caseStudies.projects");
+  const tCookies = useTranslations("cookieConsent");
+  const { openPreferences } = useCookieConsent();
   const year = new Date().getFullYear();
   const goToSection = useGoToSection();
 
@@ -281,6 +284,13 @@ export default function Footer() {
             >
               {t("cookiePolicy")}
             </Link>
+            <button
+              type="button"
+              onClick={openPreferences}
+              className="text-xs text-foreground-muted transition-colors hover:text-accent"
+            >
+              {tCookies("footerManage")}
+            </button>
           </div>
         </div>
       </div>

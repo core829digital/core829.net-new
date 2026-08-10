@@ -963,5 +963,26 @@
   "founders": {
     "founder": "Grundare",
     "cofounder": "Medgrundare"
+  },
+  "cookieConsent": {
+    "bannerTitle": "Din integritet är viktig för oss",
+    "bannerDesc": "Vi använder cookies för att webbplatsen ska fungera, komma ihåg dina inställningar och, endast med ditt samtycke, mäta trafik och visa relevant innehåll. Du kan acceptera alla, avvisa icke-nödvändiga cookies eller anpassa dina val när som helst.",
+    "acceptAll": "Acceptera alla",
+    "rejectAll": "Avvisa icke-nödvändiga",
+    "managePreferences": "Hantera inställningar",
+    "modalTitle": "Cookieinställningar",
+    "modalDesc": "Välj vilka kategorier av cookies du tillåter. Absolut nödvändiga cookies är alltid aktiva eftersom webbplatsen inte kan fungera korrekt utan dem.",
+    "save": "Spara inställningar",
+    "alwaysActive": "Alltid aktiv",
+    "necessaryTitle": "Absolut nödvändiga",
+    "necessaryDesc": "Krävs för webbplatsens grundfunktioner, som säkerhet, språkval och att komma ihåg dina cookieval. Kan inte inaktiveras.",
+    "preferencesTitle": "Inställningar",
+    "preferencesDesc": "Gör att webbplatsen kan komma ihåg dina val, som föredraget språk och region.",
+    "analyticsTitle": "Analys",
+    "analyticsDesc": "Hjälper oss förstå hur besökare använder webbplatsen för att förbättra innehåll och prestanda. Inga uppgifter används för att identifiera dig personligen.",
+    "marketingTitle": "Marknadsföring och tredje part",
+    "marketingDesc": "Används av tredjepartstjänster, som recensionswidgeten Trustpilot, och för att visa relevant reklam.",
+    "policyLinkLabel": "Läs vår Cookiepolicy",
+    "footerManage": "Cookieinställningar"
   }
 }

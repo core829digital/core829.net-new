@@ -963,5 +963,26 @@
   "founders": {
     "founder": "Fondateur",
     "cofounder": "Co-fondateur"
+  },
+  "cookieConsent": {
+    "bannerTitle": "Votre vie privée compte",
+    "bannerDesc": "Nous utilisons des cookies pour faire fonctionner le site, mémoriser vos préférences et, uniquement avec votre consentement, mesurer l'audience et vous proposer du contenu pertinent. Vous pouvez tout accepter, refuser les cookies non essentiels ou personnaliser vos choix à tout moment.",
+    "acceptAll": "Tout accepter",
+    "rejectAll": "Refuser les non essentiels",
+    "managePreferences": "Gérer les préférences",
+    "modalTitle": "Préférences cookies",
+    "modalDesc": "Choisissez les catégories de cookies que vous autorisez. Les cookies strictement nécessaires sont toujours actifs, car le site ne peut pas fonctionner correctement sans eux.",
+    "save": "Enregistrer les préférences",
+    "alwaysActive": "Toujours actif",
+    "necessaryTitle": "Strictement nécessaires",
+    "necessaryDesc": "Indispensables au fonctionnement du site : sécurité, choix de la langue et mémorisation de vos choix en matière de cookies. Ils ne peuvent pas être désactivés.",
+    "preferencesTitle": "Préférences",
+    "preferencesDesc": "Permettent au site de mémoriser vos choix, comme la langue et la région préférées.",
+    "analyticsTitle": "Analytiques",
+    "analyticsDesc": "Nous aident à comprendre comment les visiteurs utilisent le site afin d'améliorer le contenu et les performances. Aucune donnée n'est utilisée pour vous identifier personnellement.",
+    "marketingTitle": "Marketing et tiers",
+    "marketingDesc": "Utilisés par des services tiers, comme le widget d'avis Trustpilot, et pour vous montrer des publicités pertinentes.",
+    "policyLinkLabel": "Lire notre politique relative aux cookies",
+    "footerManage": "Préférences cookies"
   }
 }

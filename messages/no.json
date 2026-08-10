@@ -963,5 +963,26 @@
   "founders": {
     "founder": "Grunnlegger",
     "cofounder": "Medgrunnlegger"
+  },
+  "cookieConsent": {
+    "bannerTitle": "Ditt personvern betyr noe for oss",
+    "bannerDesc": "Vi bruker informasjonskapsler for at nettstedet skal fungere, huske dine preferanser og, kun med ditt samtykke, måle trafikk og vise relevant innhold. Du kan godta alle, avvise ikke-nødvendige informasjonskapsler eller tilpasse valgene dine når som helst.",
+    "acceptAll": "Godta alle",
+    "rejectAll": "Avvis ikke-nødvendige",
+    "managePreferences": "Administrer preferanser",
+    "modalTitle": "Preferanser for informasjonskapsler",
+    "modalDesc": "Velg hvilke kategorier av informasjonskapsler du tillater. Strengt nødvendige informasjonskapsler er alltid aktive, siden nettstedet ikke kan fungere skikkelig uten dem.",
+    "save": "Lagre preferanser",
+    "alwaysActive": "Alltid aktiv",
+    "necessaryTitle": "Strengt nødvendige",
+    "necessaryDesc": "Nødvendige for grunnleggende funksjonalitet på nettstedet, som sikkerhet, språkvalg og å huske dine valg om informasjonskapsler. Kan ikke deaktiveres.",
+    "preferencesTitle": "Preferanser",
+    "preferencesDesc": "Lar nettstedet huske valgene dine, som foretrukket språk og region.",
+    "analyticsTitle": "Analyse",
+    "analyticsDesc": "Hjelper oss å forstå hvordan besøkende bruker nettstedet, slik at vi kan forbedre innhold og ytelse. Ingen data brukes til å identifisere deg personlig.",
+    "marketingTitle": "Markedsføring og tredjepart",
+    "marketingDesc": "Brukes av tredjepartstjenester, som Trustpilot-anmeldelseswidgeten, og for å vise relevante annonser.",
+    "policyLinkLabel": "Les vår Cookieerklæring",
+    "footerManage": "Preferanser for informasjonskapsler"
   }
 }

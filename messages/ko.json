@@ -963,5 +963,26 @@
   "founders": {
     "founder": "창립자",
     "cofounder": "공동 창립자"
+  },
+  "cookieConsent": {
+    "bannerTitle": "고객님의 개인정보를 소중히 여깁니다",
+    "bannerDesc": "당사는 사이트 운영, 사용자 선호도 기억, 그리고 오직 동의하신 경우에 한해 트래픽 측정 및 관련 콘텐츠 제공을 위해 쿠키를 사용합니다. 모두 수락하거나, 필수가 아닌 쿠키를 거부하거나, 언제든지 선택 사항을 맞춤 설정할 수 있습니다.",
+    "acceptAll": "모두 수락",
+    "rejectAll": "필수가 아닌 항목 거부",
+    "managePreferences": "환경설정 관리",
+    "modalTitle": "쿠키 환경설정",
+    "modalDesc": "허용할 쿠키 카테고리를 선택하세요. 반드시 필요한 쿠키는 이것이 없으면 사이트가 제대로 작동할 수 없으므로 항상 활성화되어 있습니다.",
+    "save": "환경설정 저장",
+    "alwaysActive": "항상 활성화",
+    "necessaryTitle": "반드시 필요한 쿠키",
+    "necessaryDesc": "보안, 언어 선택, 쿠키 선택 기억 등 사이트의 기본 기능에 필요합니다. 비활성화할 수 없습니다.",
+    "preferencesTitle": "환경설정",
+    "preferencesDesc": "선호하는 언어 및 지역과 같은 사용자의 선택을 사이트가 기억할 수 있도록 합니다.",
+    "analyticsTitle": "분석",
+    "analyticsDesc": "방문자가 사이트를 어떻게 이용하는지 파악하여 콘텐츠와 성능을 개선하는 데 도움이 됩니다. 개인 식별을 위해 데이터가 사용되지 않습니다.",
+    "marketingTitle": "마케팅 및 제3자",
+    "marketingDesc": "Trustpilot 리뷰 위젯과 같은 제3자 서비스에서 사용되며, 관련 광고를 표시하는 데에도 사용됩니다.",
+    "policyLinkLabel": "쿠키 정책 읽기",
+    "footerManage": "쿠키 환경설정"
   }
 }

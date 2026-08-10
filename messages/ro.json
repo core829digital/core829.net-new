@@ -963,5 +963,26 @@
   "founders": {
     "founder": "Fondator",
     "cofounder": "Co-fondator"
+  },
+  "cookieConsent": {
+    "bannerTitle": "Confidențialitatea ta contează",
+    "bannerDesc": "Folosim cookie-uri pentru a face site-ul să funcționeze, pentru a-ți reține preferințele și, doar cu acordul tău, pentru a măsura traficul și a-ți afișa conținut relevant. Poți accepta toate cookie-urile, le poți refuza pe cele neesențiale sau îți poți personaliza alegerile oricând.",
+    "acceptAll": "Acceptă tot",
+    "rejectAll": "Refuză neesențiale",
+    "managePreferences": "Gestionează preferințele",
+    "modalTitle": "Preferințe cookie-uri",
+    "modalDesc": "Alege ce categorii de cookie-uri permiți. Cookie-urile strict necesare sunt mereu active, deoarece site-ul nu poate funcționa corect fără ele.",
+    "save": "Salvează preferințele",
+    "alwaysActive": "Mereu activ",
+    "necessaryTitle": "Strict necesare",
+    "necessaryDesc": "Necesare pentru funcționarea de bază a site-ului, precum securitatea, selectarea limbii și reținerea alegerilor tale privind cookie-urile. Nu pot fi dezactivate.",
+    "preferencesTitle": "Preferințe",
+    "preferencesDesc": "Permit site-ului să rețină alegerile tale, precum limba și regiunea preferate.",
+    "analyticsTitle": "Analitice",
+    "analyticsDesc": "Ne ajută să înțelegem cum folosesc vizitatorii site-ul, pentru a îmbunătăți conținutul și performanța. Nicio dată nu este folosită pentru a te identifica personal.",
+    "marketingTitle": "Marketing și terți",
+    "marketingDesc": "Folosite de servicii terțe, precum widget-ul de recenzii Trustpilot, și pentru a-ți afișa reclame relevante.",
+    "policyLinkLabel": "Citește Politica noastră privind cookie-urile",
+    "footerManage": "Preferințe cookie-uri"
   }
 }

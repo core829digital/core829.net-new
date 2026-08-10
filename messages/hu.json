@@ -963,5 +963,26 @@
   "founders": {
     "founder": "Alapító",
     "cofounder": "Társalapító"
+  },
+  "cookieConsent": {
+    "bannerTitle": "Az Ön adatvédelme fontos számunkra",
+    "bannerDesc": "Sütiket használunk, hogy az oldal működjön, megjegyezzük az Ön preferenciáit, és kizárólag az Ön hozzájárulásával mérjük a forgalmat és releváns tartalmat jelenítsünk meg. Elfogadhat mindent, elutasíthatja a nem alapvető sütiket, vagy bármikor személyre szabhatja választását.",
+    "acceptAll": "Összes elfogadása",
+    "rejectAll": "Nem alapvetők elutasítása",
+    "managePreferences": "Beállítások kezelése",
+    "modalTitle": "Süti beállítások",
+    "modalDesc": "Válassza ki, mely sütikategóriákat engedélyezi. A feltétlenül szükséges sütik mindig aktívak, mivel az oldal nem működik megfelelően nélkülük.",
+    "save": "Beállítások mentése",
+    "alwaysActive": "Mindig aktív",
+    "necessaryTitle": "Feltétlenül szükséges",
+    "necessaryDesc": "Az oldal alapvető működéséhez szükséges, például biztonság, nyelvválasztás és a süti-választásainak megjegyzése. Nem kapcsolható ki.",
+    "preferencesTitle": "Preferenciák",
+    "preferencesDesc": "Lehetővé teszik, hogy az oldal megjegyezze választásait, például a preferált nyelvet és régiót.",
+    "analyticsTitle": "Analitikai",
+    "analyticsDesc": "Segítenek megérteni, hogyan használják a látogatók az oldalt, hogy javíthassuk a tartalmat és a teljesítményt. Az adatokat nem használjuk személyes azonosításra.",
+    "marketingTitle": "Marketing és harmadik felek",
+    "marketingDesc": "Harmadik fél szolgáltatások, például a Trustpilot értékelő widget használják, valamint releváns hirdetések megjelenítésére.",
+    "policyLinkLabel": "Olvassa el Süti szabályzatunkat",
+    "footerManage": "Süti beállítások"
   }
 }

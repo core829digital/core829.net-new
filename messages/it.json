@@ -971,5 +971,26 @@
   "founders": {
     "founder": "Fondatore",
     "cofounder": "Co-fondatore"
+  },
+  "cookieConsent": {
+    "bannerTitle": "La tua privacy conta per noi",
+    "bannerDesc": "Utilizziamo cookie per far funzionare il sito, ricordare le tue preferenze e, solo con il tuo consenso, misurare il traffico e mostrarti contenuti pertinenti. Puoi accettare tutti i cookie, rifiutare quelli non essenziali o personalizzare le tue scelte in qualsiasi momento.",
+    "acceptAll": "Accetta tutti",
+    "rejectAll": "Rifiuta non essenziali",
+    "managePreferences": "Gestisci preferenze",
+    "modalTitle": "Preferenze cookie",
+    "modalDesc": "Scegli quali categorie di cookie autorizzare. I cookie strettamente necessari sono sempre attivi perché il sito non può funzionare correttamente senza di essi.",
+    "save": "Salva preferenze",
+    "alwaysActive": "Sempre attivo",
+    "necessaryTitle": "Strettamente necessari",
+    "necessaryDesc": "Indispensabili per il funzionamento del sito, come sicurezza, selezione della lingua e memorizzazione delle tue scelte sui cookie. Non possono essere disattivati.",
+    "preferencesTitle": "Preferenze",
+    "preferencesDesc": "Consentono al sito di ricordare le scelte effettuate, come la lingua e la regione preferite.",
+    "analyticsTitle": "Analitici",
+    "analyticsDesc": "Ci aiutano a capire come i visitatori utilizzano il sito per migliorare contenuti e prestazioni. Nessun dato viene usato per identificarti personalmente.",
+    "marketingTitle": "Marketing e terze parti",
+    "marketingDesc": "Utilizzati da servizi di terze parti, come il widget recensioni Trustpilot, e per mostrarti pubblicità pertinente.",
+    "policyLinkLabel": "Leggi la nostra Cookie Policy",
+    "footerManage": "Preferenze cookie"
   }
 }

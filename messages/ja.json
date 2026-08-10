@@ -963,5 +963,26 @@
   "founders": {
     "founder": "創業者",
     "cofounder": "共同創業者"
+  },
+  "cookieConsent": {
+    "bannerTitle": "お客様のプライバシーを大切にしています",
+    "bannerDesc": "当サイトでは、サイトを機能させ、お客様の設定を記憶し、お客様の同意がある場合に限りアクセス状況の測定や関連コンテンツの表示のためにCookieを使用しています。すべて同意する、必須でないCookieを拒否する、またはいつでも設定をカスタマイズすることができます。",
+    "acceptAll": "すべて同意する",
+    "rejectAll": "必須以外を拒否",
+    "managePreferences": "設定を管理",
+    "modalTitle": "Cookie設定",
+    "modalDesc": "許可するCookieのカテゴリーを選択してください。厳密に必要なCookieは、それがないとサイトが正しく機能しないため、常に有効です。",
+    "save": "設定を保存",
+    "alwaysActive": "常に有効",
+    "necessaryTitle": "厳密に必要",
+    "necessaryDesc": "セキュリティ、言語選択、Cookie設定の記憶など、サイトの基本機能に必要です。無効にすることはできません。",
+    "preferencesTitle": "設定",
+    "preferencesDesc": "希望する言語や地域など、お客様の選択をサイトが記憶できるようにします。",
+    "analyticsTitle": "分析",
+    "analyticsDesc": "訪問者がサイトをどのように利用しているかを把握し、コンテンツとパフォーマンスを改善するために役立ちます。個人を特定するためにデータが使用されることはありません。",
+    "marketingTitle": "マーケティングと第三者",
+    "marketingDesc": "Trustpilotのレビューウィジェットなどの第三者サービスによって使用され、関連広告の表示にも使用されます。",
+    "policyLinkLabel": "Cookieポリシーを読む",
+    "footerManage": "Cookie設定"
   }
 }

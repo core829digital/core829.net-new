@@ -963,5 +963,26 @@
   "founders": {
     "founder": "Perustaja",
     "cofounder": "Osaperustaja"
+  },
+  "cookieConsent": {
+    "bannerTitle": "Yksityisyytesi on meille tärkeää",
+    "bannerDesc": "Käytämme evästeitä, jotta sivusto toimii, muistamme mieltymyksesi ja — vain suostumuksellasi — mittaamme liikennettä ja näytämme sinulle olennaista sisältöä. Voit hyväksyä kaikki, hylätä ei-välttämättömät evästeet tai muokata valintojasi milloin tahansa.",
+    "acceptAll": "Hyväksy kaikki",
+    "rejectAll": "Hylkää ei-välttämättömät",
+    "managePreferences": "Hallitse asetuksia",
+    "modalTitle": "Evästeasetukset",
+    "modalDesc": "Valitse, mitkä evästekategoriat sallit. Ehdottoman välttämättömät evästeet ovat aina käytössä, koska sivusto ei toimi kunnolla ilman niitä.",
+    "save": "Tallenna asetukset",
+    "alwaysActive": "Aina käytössä",
+    "necessaryTitle": "Ehdottoman välttämättömät",
+    "necessaryDesc": "Tarpeen sivuston perustoiminnoille, kuten turvallisuudelle, kielivalinnalle ja evästevalintojesi muistamiselle. Näitä ei voi poistaa käytöstä.",
+    "preferencesTitle": "Mieltymykset",
+    "preferencesDesc": "Antavat sivuston muistaa valintasi, kuten haluamasi kielen ja alueen.",
+    "analyticsTitle": "Analytiikka",
+    "analyticsDesc": "Auttavat meitä ymmärtämään, miten kävijät käyttävät sivustoa, jotta voimme parantaa sisältöä ja suorituskykyä. Tietoja ei käytetä sinun henkilökohtaiseen tunnistamiseesi.",
+    "marketingTitle": "Markkinointi ja kolmannet osapuolet",
+    "marketingDesc": "Kolmansien osapuolten palveluiden, kuten Trustpilot-arvostelutyökalun, käyttämiä sekä olennaisten mainosten näyttämiseen.",
+    "policyLinkLabel": "Lue evästekäytäntömme",
+    "footerManage": "Evästeasetukset"
   }
 }

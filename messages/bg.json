@@ -682,7 +682,8 @@
     "docsLanguageNote": "Документът е на английски език.",
     "viewPdf": "Преглед на PDF",
     "downloadPdf": "Изтегляне на PDF",
-    "scopeDocsNote": "За други държави вижте документацията Advanced IC Certifications по-долу."
+    "scopeDocsNote": "За други държави вижте документацията Advanced IC Certifications по-долу.",
+    "partnersLogosLabel": "Официални партньори"
   },
   "servicesDetail": {
     "back": "All services",

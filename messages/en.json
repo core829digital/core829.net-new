@@ -682,7 +682,8 @@
     "docsLanguageNote": "Document in English.",
     "viewPdf": "View PDF",
     "downloadPdf": "Download PDF",
-    "scopeDocsNote": "For other countries, consult the Advanced IC Certifications documentation below."
+    "scopeDocsNote": "For other countries, consult the Advanced IC Certifications documentation below.",
+    "partnersLogosLabel": "Official partners"
   },
   "servicesDetail": {
     "back": "All services",

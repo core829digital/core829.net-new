@@ -682,7 +682,8 @@
     "docsLanguageNote": "Belge İngilizcedir.",
     "viewPdf": "PDF Görüntüle",
     "downloadPdf": "PDF İndir",
-    "scopeDocsNote": "Diğer ülkeler için aşağıdaki Advanced IC Certifications belgelerine bakın."
+    "scopeDocsNote": "Diğer ülkeler için aşağıdaki Advanced IC Certifications belgelerine bakın.",
+    "partnersLogosLabel": "Resmi partnerler"
   },
   "servicesDetail": {
     "back": "All services",

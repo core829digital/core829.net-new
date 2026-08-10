@@ -682,7 +682,8 @@
     "docsLanguageNote": "Το έγγραφο είναι στα αγγλικά.",
     "viewPdf": "Προβολή PDF",
     "downloadPdf": "Λήψη PDF",
-    "scopeDocsNote": "Για άλλες χώρες, συμβουλευτείτε την τεκμηρίωση Advanced IC Certifications παρακάτω."
+    "scopeDocsNote": "Για άλλες χώρες, συμβουλευτείτε την τεκμηρίωση Advanced IC Certifications παρακάτω.",
+    "partnersLogosLabel": "Επίσημοι συνεργάτες"
   },
   "servicesDetail": {
     "back": "All services",

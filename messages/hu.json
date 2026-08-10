@@ -682,7 +682,8 @@
     "docsLanguageNote": "A dokumentum angol nyelvű.",
     "viewPdf": "PDF megtekintése",
     "downloadPdf": "PDF letöltése",
-    "scopeDocsNote": "Más országok esetén tekintse meg az alábbi Advanced IC Certifications dokumentációt."
+    "scopeDocsNote": "Más országok esetén tekintse meg az alábbi Advanced IC Certifications dokumentációt.",
+    "partnersLogosLabel": "Hivatalos partnerek"
   },
   "servicesDetail": {
     "back": "All services",

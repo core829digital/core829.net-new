@@ -36,6 +36,33 @@ const NVIDIA_LOGO = "/server-service/Nvidia-Logo-PNG-Picture.webp";
 const DEPARTMENT_LOGO =
   "/server-service/829%20logo%20servers%20department%20trsp.png";
 
+const PARTNER_LOGOS = [
+  {
+    src: "/server-service/partners/Intel-Partner-Logo-2026-300x150.webp",
+    alt: "Intel Partner",
+  },
+  {
+    src: "/server-service/partners/nvidia-elite-partner-badge-rgb-transparent-for-screen-300x121.webp",
+    alt: "NVIDIA Elite Partner",
+  },
+  {
+    src: "/server-service/partners/253612801_AMD_Partner_Network_Badge_Platinum.jpg-300x77.webp",
+    alt: "AMD Partner Network",
+  },
+  {
+    src: "/server-service/partners/supermicr.webp",
+    alt: "Supermicro",
+  },
+  {
+    src: "/server-service/partners/Partner-Logos_IBM-300x300.webp",
+    alt: "IBM",
+  },
+  {
+    src: "/server-service/partners/Boston-a-division-of-SourceCode-black-300x114.webp",
+    alt: "Boston, a division of SourceCode",
+  },
+];
+
 const SERVICE_IMG_SIZES = "(max-width: 1024px) 90vw, 48vw";
 
 const MotionImage = motion.create(Image);
@@ -303,6 +330,28 @@ export default function ServerServicePage() {
                 {t("partner360Desc")}
               </p>
             </div>
+          </div>
+        </RevealOnScroll>
+
+        {/* Loghi partner ufficiali */}
+        <RevealOnScroll className="mt-16">
+          <p className="kicker text-center">{t("partnersLogosLabel")}</p>
+          <div className="mt-8 grid grid-cols-2 items-center gap-6 sm:grid-cols-3 md:grid-cols-6">
+            {PARTNER_LOGOS.map((partner) => (
+              <div
+                key={partner.src}
+                className="flex h-20 items-center justify-center border border-border bg-background p-4 grayscale transition-all duration-300 hover:grayscale-0"
+              >
+                <Image
+                  src={partner.src}
+                  alt={partner.alt}
+                  width={160}
+                  height={80}
+                  loading="lazy"
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+            ))}
           </div>
         </RevealOnScroll>
 

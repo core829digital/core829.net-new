@@ -682,7 +682,8 @@
     "docsLanguageNote": "文档为英文。",
     "viewPdf": "查看 PDF",
     "downloadPdf": "下载 PDF",
-    "scopeDocsNote": "其他国家/地区请参阅下方的 Advanced IC Certifications 文档。"
+    "scopeDocsNote": "其他国家/地区请参阅下方的 Advanced IC Certifications 文档。",
+    "partnersLogosLabel": "官方合作伙伴"
   },
   "servicesDetail": {
     "back": "All services",

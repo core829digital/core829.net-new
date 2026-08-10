@@ -682,7 +682,8 @@
     "docsLanguageNote": "Asiakirja on englanniksi.",
     "viewPdf": "Näytä PDF",
     "downloadPdf": "Lataa PDF",
-    "scopeDocsNote": "Muiden maiden osalta tutustu alla olevaan Advanced IC Certifications -dokumentaatioon."
+    "scopeDocsNote": "Muiden maiden osalta tutustu alla olevaan Advanced IC Certifications -dokumentaatioon.",
+    "partnersLogosLabel": "Viralliset kumppanit"
   },
   "servicesDetail": {
     "back": "All services",

@@ -682,7 +682,8 @@
     "docsLanguageNote": "이 문서는 영어로 작성되었습니다.",
     "viewPdf": "PDF 보기",
     "downloadPdf": "PDF 다운로드",
-    "scopeDocsNote": "기타 국가는 아래 Advanced IC Certifications 문서를 참조하십시오."
+    "scopeDocsNote": "기타 국가는 아래 Advanced IC Certifications 문서를 참조하십시오.",
+    "partnersLogosLabel": "공식 파트너"
   },
   "servicesDetail": {
     "back": "All services",

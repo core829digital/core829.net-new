@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Ei avoimia paikkoja juuri nyt",
+    "applyDesc": "Emme rekrytoi aktiivisesti tällä hetkellä, mutta kuulemme aina mielellämme ihmisistä, jotka sopisivat hyvin tiimiimme. Lähetä meille CV:si ja muutama rivi itsestäsi.",
+    "applyButton": "Lähetä avoin hakemus"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Kolmansien osapuolten palveluiden, kuten Trustpilot-arvostelutyökalun, käyttämiä sekä olennaisten mainosten näyttämiseen.",
     "policyLinkLabel": "Lue evästekäytäntömme",
     "footerManage": "Evästeasetukset"
+  },
+  "contactForm": {
+    "title": "Lähetä meille viesti",
+    "desc": "Kerro projektistasi — vastaamme yleensä yhden arkipäivän kuluessa.",
+    "nameLabel": "Nimi",
+    "namePlaceholder": "Nimesi",
+    "emailLabel": "Sähköposti",
+    "emailPlaceholder": "sina@yritys.fi",
+    "companyLabel": "Yritys (valinnainen)",
+    "companyPlaceholder": "Yrityksesi",
+    "serviceLabel": "Kiinnostava palvelu",
+    "serviceDefault": "En vielä tiedä",
+    "budgetLabel": "Arvioitu budjetti (valinnainen)",
+    "budgetPlaceholder": "esim. 5 000–15 000 €",
+    "messageLabel": "Viesti",
+    "messagePlaceholder": "Kerro projektistasi…",
+    "consentLabel": "Hyväksyn tietojeni käsittelyn kuvatulla tavalla",
+    "privacyLinkLabel": "tietosuojaselosteessa",
+    "submit": "Lähetä viesti",
+    "submitting": "Lähetetään…",
+    "successTitle": "Viesti lähetetty",
+    "successDesc": "Kiitos — olemme sinuun pian yhteydessä.",
+    "errorTitle": "Jokin meni pieleen",
+    "errorDesc": "Yritä uudelleen tai kirjoita suoraan osoitteeseen hello@core829.net.",
+    "validationRequired": "Tämä kenttä on pakollinen",
+    "validationEmail": "Anna kelvollinen sähköpostiosoite"
   }
 }

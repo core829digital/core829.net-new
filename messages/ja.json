@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "現在募集中のポジションはありません",
+    "applyDesc": "現在積極的な採用活動は行っておりませんが、チームに合いそうな方からのご連絡はいつでも歓迎しています。履歴書と簡単な自己紹介をお送りください。",
+    "applyButton": "自主応募を送る"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Trustpilotのレビューウィジェットなどの第三者サービスによって使用され、関連広告の表示にも使用されます。",
     "policyLinkLabel": "Cookieポリシーを読む",
     "footerManage": "Cookie設定"
+  },
+  "contactForm": {
+    "title": "メッセージを送る",
+    "desc": "プロジェクトについてお聞かせください。通常1営業日以内に返信いたします。",
+    "nameLabel": "お名前",
+    "namePlaceholder": "お名前",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "you@company.com",
+    "companyLabel": "会社名（任意）",
+    "companyPlaceholder": "会社名",
+    "serviceLabel": "ご興味のあるサービス",
+    "serviceDefault": "まだ決まっていません",
+    "budgetLabel": "予算の目安（任意）",
+    "budgetPlaceholder": "例：5,000〜15,000ユーロ",
+    "messageLabel": "メッセージ",
+    "messagePlaceholder": "プロジェクトについてお聞かせください…",
+    "consentLabel": "以下に記載された方法での個人データの取り扱いに同意します：",
+    "privacyLinkLabel": "プライバシーポリシー",
+    "submit": "メッセージを送信",
+    "submitting": "送信中…",
+    "successTitle": "メッセージを送信しました",
+    "successDesc": "ありがとうございます。まもなくご連絡いたします。",
+    "errorTitle": "エラーが発生しました",
+    "errorDesc": "もう一度お試しいただくか、hello@core829.net まで直接ご連絡ください。",
+    "validationRequired": "この項目は必須です",
+    "validationEmail": "有効なメールアドレスを入力してください"
   }
 }

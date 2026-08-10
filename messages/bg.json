@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "В момента няма отворени позиции",
+    "applyDesc": "В момента не наемаме активно, но винаги се радваме да опознаем хора, които биха се вписали добре в екипа ни. Изпратете ни автобиографията си и няколко думи за себе си.",
+    "applyButton": "Изпрати спонтанна кандидатура"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Използвани от услуги на трети страни, като приложението за отзиви Trustpilot, и за показване на релевантна реклама.",
     "policyLinkLabel": "Прочетете нашата Политика за бисквитките",
     "footerManage": "Предпочитания за бисквитки"
+  },
+  "contactForm": {
+    "title": "Пишете ни",
+    "desc": "Разкажете ни за вашия проект — обикновено отговаряме в рамките на един работен ден.",
+    "nameLabel": "Име",
+    "namePlaceholder": "Вашето име",
+    "emailLabel": "Имейл",
+    "emailPlaceholder": "you@company.com",
+    "companyLabel": "Компания (по избор)",
+    "companyPlaceholder": "Вашата компания",
+    "serviceLabel": "Интересуваща ви услуга",
+    "serviceDefault": "Все още не знам",
+    "budgetLabel": "Прогнозен бюджет (по избор)",
+    "budgetPlaceholder": "напр. 5000–15000 €",
+    "messageLabel": "Съобщение",
+    "messagePlaceholder": "Разкажете ни за вашия проект…",
+    "consentLabel": "Съгласен/а съм с обработката на моите данни съгласно",
+    "privacyLinkLabel": "Политиката за поверителност",
+    "submit": "Изпрати съобщение",
+    "submitting": "Изпращане…",
+    "successTitle": "Съобщението е изпратено",
+    "successDesc": "Благодарим — ще се свържем с вас скоро.",
+    "errorTitle": "Нещо се обърка",
+    "errorDesc": "Моля, опитайте отново или ни пишете директно на hello@core829.net.",
+    "validationRequired": "Това поле е задължително",
+    "validationEmail": "Въведете валиден имейл адрес"
   }
 }

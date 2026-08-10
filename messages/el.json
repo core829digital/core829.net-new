@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Καμία ανοιχτή θέση αυτή τη στιγμή",
+    "applyDesc": "Αυτή τη στιγμή δεν προσλαμβάνουμε ενεργά, αλλά χαιρόμαστε πάντα να γνωρίζουμε ανθρώπους που θα ταίριαζαν στην ομάδα μας. Στείλτε μας το βιογραφικό σας και λίγα λόγια για εσάς.",
+    "applyButton": "Αποστολή αυθόρμητης αίτησης"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Χρησιμοποιούνται από υπηρεσίες τρίτων, όπως το widget αξιολογήσεων Trustpilot, και για την προβολή σχετικών διαφημίσεων.",
     "policyLinkLabel": "Διαβάστε την Πολιτική Cookies μας",
     "footerManage": "Προτιμήσεις cookies"
+  },
+  "contactForm": {
+    "title": "Στείλτε μας μήνυμα",
+    "desc": "Πείτε μας για το έργο σας — συνήθως απαντάμε εντός μίας εργάσιμης ημέρας.",
+    "nameLabel": "Όνομα",
+    "namePlaceholder": "Το όνομά σας",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@company.com",
+    "companyLabel": "Εταιρεία (προαιρετικό)",
+    "companyPlaceholder": "Η εταιρεία σας",
+    "serviceLabel": "Υπηρεσία ενδιαφέροντος",
+    "serviceDefault": "Δεν είμαι σίγουρος/η ακόμα",
+    "budgetLabel": "Εκτιμώμενος προϋπολογισμός (προαιρετικό)",
+    "budgetPlaceholder": "π.χ. 5.000–15.000 €",
+    "messageLabel": "Μήνυμα",
+    "messagePlaceholder": "Πείτε μας για το έργο σας…",
+    "consentLabel": "Συμφωνώ με την επεξεργασία των δεδομένων μου όπως περιγράφεται στην",
+    "privacyLinkLabel": "Πολιτική Απορρήτου",
+    "submit": "Αποστολή μηνύματος",
+    "submitting": "Αποστολή…",
+    "successTitle": "Το μήνυμα στάλθηκε",
+    "successDesc": "Ευχαριστούμε — θα επικοινωνήσουμε σύντομα μαζί σας.",
+    "errorTitle": "Κάτι πήγε στραβά",
+    "errorDesc": "Δοκιμάστε ξανά ή γράψτε μας απευθείας στο hello@core829.net.",
+    "validationRequired": "Αυτό το πεδίο είναι υποχρεωτικό",
+    "validationEmail": "Εισαγάγετε έγκυρη διεύθυνση email"
   }
 }

@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Ingen ledige stillinger lige nu",
+    "applyDesc": "Vi rekrutterer ikke aktivt for øjeblikket, men bliver altid glade for at høre fra folk, der ville passe godt ind i vores team. Send os dit CV og et par linjer om dig selv.",
+    "applyButton": "Send en uopfordret ansøgning"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Bruges af tredjepartstjenester, såsom Trustpilot-anmeldelseswidgetten, og til at vise relevante annoncer.",
     "policyLinkLabel": "Læs vores Cookiepolitik",
     "footerManage": "Cookiepræferencer"
+  },
+  "contactForm": {
+    "title": "Send os en besked",
+    "desc": "Fortæl os om dit projekt — vi svarer normalt inden for en hverdag.",
+    "nameLabel": "Navn",
+    "namePlaceholder": "Dit navn",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "dig@firma.dk",
+    "companyLabel": "Virksomhed (valgfrit)",
+    "companyPlaceholder": "Din virksomhed",
+    "serviceLabel": "Ønsket ydelse",
+    "serviceDefault": "Ved ikke endnu",
+    "budgetLabel": "Estimeret budget (valgfrit)",
+    "budgetPlaceholder": "f.eks. 5.000–15.000 €",
+    "messageLabel": "Besked",
+    "messagePlaceholder": "Fortæl os om dit projekt…",
+    "consentLabel": "Jeg accepterer behandlingen af mine data som beskrevet i",
+    "privacyLinkLabel": "Privatlivspolitikken",
+    "submit": "Send besked",
+    "submitting": "Sender…",
+    "successTitle": "Besked sendt",
+    "successDesc": "Tak — vi vender tilbage snarest.",
+    "errorTitle": "Noget gik galt",
+    "errorDesc": "Prøv igen, eller skriv direkte til hello@core829.net.",
+    "validationRequired": "Dette felt er påkrævet",
+    "validationEmail": "Indtast en gyldig e-mailadresse"
   }
 }

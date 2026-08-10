@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Derzeit keine offenen Stellen",
+    "applyDesc": "Wir stellen aktuell nicht aktiv ein, freuen uns aber immer, von Menschen zu hören, die gut zu unserem Team passen könnten. Senden Sie uns Ihren Lebenslauf und ein paar Zeilen über sich.",
+    "applyButton": "Initiativbewerbung senden"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Werden von Drittanbieter-Diensten wie dem Trustpilot-Bewertungswidget verwendet und um relevante Werbung anzuzeigen.",
     "policyLinkLabel": "Unsere Cookie-Richtlinie lesen",
     "footerManage": "Cookie-Einstellungen"
+  },
+  "contactForm": {
+    "title": "Schreiben Sie uns",
+    "desc": "Erzählen Sie uns von Ihrem Projekt — wir antworten in der Regel innerhalb eines Werktags.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Ihr Name",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "sie@firma.de",
+    "companyLabel": "Unternehmen (optional)",
+    "companyPlaceholder": "Ihr Unternehmen",
+    "serviceLabel": "Gewünschte Leistung",
+    "serviceDefault": "Noch nicht entschieden",
+    "budgetLabel": "Geschätztes Budget (optional)",
+    "budgetPlaceholder": "z. B. 5.000–15.000 €",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt…",
+    "consentLabel": "Ich stimme der Verarbeitung meiner Daten gemäß der",
+    "privacyLinkLabel": "Datenschutzerklärung zu",
+    "submit": "Nachricht senden",
+    "submitting": "Wird gesendet…",
+    "successTitle": "Nachricht gesendet",
+    "successDesc": "Danke — wir melden uns in Kürze bei Ihnen.",
+    "errorTitle": "Etwas ist schiefgelaufen",
+    "errorDesc": "Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an hello@core829.net.",
+    "validationRequired": "Dieses Feld ist erforderlich",
+    "validationEmail": "Geben Sie eine gültige E-Mail-Adresse ein"
   }
 }

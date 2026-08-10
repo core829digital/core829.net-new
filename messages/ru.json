@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Сейчас нет открытых вакансий",
+    "applyDesc": "В данный момент мы не ведём активный набор, но всегда рады узнать о людях, которые могли бы хорошо влиться в нашу команду. Отправьте нам своё резюме и несколько строк о себе.",
+    "applyButton": "Отправить инициативное резюме"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Используются сторонними сервисами, такими как виджет отзывов Trustpilot, а также для показа релевантной рекламы.",
     "policyLinkLabel": "Ознакомьтесь с нашей Политикой использования cookie",
     "footerManage": "Настройки cookie"
+  },
+  "contactForm": {
+    "title": "Напишите нам",
+    "desc": "Расскажите о своём проекте — обычно мы отвечаем в течение одного рабочего дня.",
+    "nameLabel": "Имя",
+    "namePlaceholder": "Ваше имя",
+    "emailLabel": "Эл. почта",
+    "emailPlaceholder": "you@company.com",
+    "companyLabel": "Компания (необязательно)",
+    "companyPlaceholder": "Ваша компания",
+    "serviceLabel": "Интересующая услуга",
+    "serviceDefault": "Пока не знаю",
+    "budgetLabel": "Примерный бюджет (необязательно)",
+    "budgetPlaceholder": "напр. 5 000–15 000 €",
+    "messageLabel": "Сообщение",
+    "messagePlaceholder": "Расскажите о своём проекте…",
+    "consentLabel": "Я согласен(на) на обработку моих данных в соответствии с",
+    "privacyLinkLabel": "Политикой конфиденциальности",
+    "submit": "Отправить сообщение",
+    "submitting": "Отправка…",
+    "successTitle": "Сообщение отправлено",
+    "successDesc": "Спасибо — мы скоро свяжемся с вами.",
+    "errorTitle": "Что-то пошло не так",
+    "errorDesc": "Попробуйте ещё раз или напишите нам напрямую на hello@core829.net.",
+    "validationRequired": "Это поле обязательно",
+    "validationEmail": "Введите корректный адрес электронной почты"
   }
 }

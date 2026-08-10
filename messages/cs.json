@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Momentálně žádné volné pozice",
+    "applyDesc": "Aktuálně aktivně nenabíráme, ale vždy rádi poznáme lidi, kteří by se do našeho týmu hodili. Pošlete nám svůj životopis a pár řádků o sobě.",
+    "applyButton": "Poslat spontánní žádost"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Používané službami třetích stran, jako je widget recenzí Trustpilot, a k zobrazování relevantní reklamy.",
     "policyLinkLabel": "Přečtěte si naše Zásady používání cookies",
     "footerManage": "Předvolby cookies"
+  },
+  "contactForm": {
+    "title": "Napište nám",
+    "desc": "Řekněte nám o svém projektu — obvykle odpovídáme do jednoho pracovního dne.",
+    "nameLabel": "Jméno",
+    "namePlaceholder": "Vaše jméno",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "vy@firma.cz",
+    "companyLabel": "Společnost (nepovinné)",
+    "companyPlaceholder": "Vaše společnost",
+    "serviceLabel": "Služba, o kterou máte zájem",
+    "serviceDefault": "Ještě nevím",
+    "budgetLabel": "Odhadovaný rozpočet (nepovinné)",
+    "budgetPlaceholder": "např. 5 000–15 000 €",
+    "messageLabel": "Zpráva",
+    "messagePlaceholder": "Řekněte nám o svém projektu…",
+    "consentLabel": "Souhlasím se zpracováním mých údajů dle",
+    "privacyLinkLabel": "Zásad ochrany osobních údajů",
+    "submit": "Odeslat zprávu",
+    "submitting": "Odesílání…",
+    "successTitle": "Zpráva odeslána",
+    "successDesc": "Děkujeme — brzy se vám ozveme.",
+    "errorTitle": "Něco se pokazilo",
+    "errorDesc": "Zkuste to prosím znovu, nebo nám napište přímo na hello@core829.net.",
+    "validationRequired": "Toto pole je povinné",
+    "validationEmail": "Zadejte platnou e-mailovou adresu"
   }
 }

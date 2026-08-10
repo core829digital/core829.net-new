@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "目前没有空缺职位",
+    "applyDesc": "我们目前没有在积极招聘，但始终乐于了解可能适合我们团队的人才。请发送您的简历以及几句自我介绍。",
+    "applyButton": "发送自荐申请"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "由第三方服务（如 Trustpilot 评论小工具）使用，并用于展示相关广告。",
     "policyLinkLabel": "阅读我们的 Cookie 政策",
     "footerManage": "Cookie 偏好设置"
+  },
+  "contactForm": {
+    "title": "给我们留言",
+    "desc": "告诉我们您的项目情况——我们通常会在一个工作日内回复。",
+    "nameLabel": "姓名",
+    "namePlaceholder": "您的姓名",
+    "emailLabel": "电子邮箱",
+    "emailPlaceholder": "you@company.com",
+    "companyLabel": "公司（选填）",
+    "companyPlaceholder": "您的公司",
+    "serviceLabel": "感兴趣的服务",
+    "serviceDefault": "尚未确定",
+    "budgetLabel": "预估预算（选填）",
+    "budgetPlaceholder": "例如 5,000–15,000 欧元",
+    "messageLabel": "留言",
+    "messagePlaceholder": "告诉我们您的项目情况…",
+    "consentLabel": "我同意按照以下文件处理我的数据：",
+    "privacyLinkLabel": "隐私政策",
+    "submit": "发送留言",
+    "submitting": "发送中…",
+    "successTitle": "留言已发送",
+    "successDesc": "谢谢——我们会尽快与您联系。",
+    "errorTitle": "出现错误",
+    "errorDesc": "请重试，或直接发邮件至 hello@core829.net。",
+    "validationRequired": "此字段为必填项",
+    "validationEmail": "请输入有效的电子邮箱地址"
   }
 }

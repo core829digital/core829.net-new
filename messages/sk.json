@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Momentálne žiadne voľné pozície",
+    "applyDesc": "Aktuálne aktívne nenaberáme, no vždy radi spoznáme ľudí, ktorí by sa hodili do nášho tímu. Pošlite nám svoj životopis a pár riadkov o sebe.",
+    "applyButton": "Poslať spontánnu žiadosť"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Používané službami tretích strán, ako je widget recenzií Trustpilot, a na zobrazovanie relevantnej reklamy.",
     "policyLinkLabel": "Prečítajte si naše Zásady používania cookies",
     "footerManage": "Predvoľby cookies"
+  },
+  "contactForm": {
+    "title": "Napíšte nám",
+    "desc": "Povedzte nám o svojom projekte — zvyčajne odpovedáme do jedného pracovného dňa.",
+    "nameLabel": "Meno",
+    "namePlaceholder": "Vaše meno",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "vy@firma.sk",
+    "companyLabel": "Spoločnosť (nepovinné)",
+    "companyPlaceholder": "Vaša spoločnosť",
+    "serviceLabel": "Služba, o ktorú máte záujem",
+    "serviceDefault": "Ešte neviem",
+    "budgetLabel": "Odhadovaný rozpočet (nepovinné)",
+    "budgetPlaceholder": "napr. 5 000–15 000 €",
+    "messageLabel": "Správa",
+    "messagePlaceholder": "Povedzte nám o svojom projekte…",
+    "consentLabel": "Súhlasím so spracovaním mojich údajov podľa",
+    "privacyLinkLabel": "Zásad ochrany osobných údajov",
+    "submit": "Odoslať správu",
+    "submitting": "Odosielanie…",
+    "successTitle": "Správa odoslaná",
+    "successDesc": "Ďakujeme — čoskoro sa vám ozveme.",
+    "errorTitle": "Niečo sa pokazilo",
+    "errorDesc": "Skúste to prosím znova, alebo nám napíšte priamo na hello@core829.net.",
+    "validationRequired": "Toto pole je povinné",
+    "validationEmail": "Zadajte platnú e-mailovú adresu"
   }
 }

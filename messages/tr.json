@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Şu anda açık pozisyon yok",
+    "applyDesc": "Şu anda aktif olarak işe alım yapmıyoruz, ancak ekibimize uygun olabilecek kişilerden haber almaktan her zaman memnuniyet duyarız. Bize özgeçmişinizi ve kendiniz hakkında birkaç satır gönderin.",
+    "applyButton": "Kendiliğinden başvuru gönder"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Trustpilot değerlendirme widget'ı gibi üçüncü taraf hizmetler tarafından ve ilgili reklamları göstermek için kullanılır.",
     "policyLinkLabel": "Çerez Politikamızı okuyun",
     "footerManage": "Çerez tercihleri"
+  },
+  "contactForm": {
+    "title": "Bize mesaj gönderin",
+    "desc": "Projenizden bahsedin — genellikle bir iş günü içinde yanıt veriyoruz.",
+    "nameLabel": "Ad",
+    "namePlaceholder": "Adınız",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "siz@sirket.com",
+    "companyLabel": "Şirket (isteğe bağlı)",
+    "companyPlaceholder": "Şirketiniz",
+    "serviceLabel": "İlgilendiğiniz hizmet",
+    "serviceDefault": "Henüz emin değilim",
+    "budgetLabel": "Tahmini bütçe (isteğe bağlı)",
+    "budgetPlaceholder": "örn. 5.000–15.000 €",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Projenizden bahsedin…",
+    "consentLabel": "Verilerimin aşağıdaki belgede açıklandığı şekilde işlenmesini kabul ediyorum:",
+    "privacyLinkLabel": "Gizlilik Politikası",
+    "submit": "Mesajı gönder",
+    "submitting": "Gönderiliyor…",
+    "successTitle": "Mesaj gönderildi",
+    "successDesc": "Teşekkürler — kısa süre içinde size döneceğiz.",
+    "errorTitle": "Bir şeyler ters gitti",
+    "errorDesc": "Lütfen tekrar deneyin veya doğrudan hello@core829.net adresine yazın.",
+    "validationRequired": "Bu alan zorunludur",
+    "validationEmail": "Geçerli bir e-posta adresi girin"
   }
 }

@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Aucun poste ouvert pour le moment",
+    "applyDesc": "Nous ne recrutons pas activement en ce moment, mais nous sommes toujours heureux de découvrir des profils qui pourraient convenir à notre équipe. Envoyez-nous votre CV et quelques lignes sur vous.",
+    "applyButton": "Envoyer une candidature spontanée"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Utilisés par des services tiers, comme le widget d'avis Trustpilot, et pour vous montrer des publicités pertinentes.",
     "policyLinkLabel": "Lire notre politique relative aux cookies",
     "footerManage": "Préférences cookies"
+  },
+  "contactForm": {
+    "title": "Envoyez-nous un message",
+    "desc": "Parlez-nous de votre projet — nous répondons généralement sous un jour ouvré.",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Votre nom",
+    "emailLabel": "Email",
+    "emailPlaceholder": "vous@entreprise.com",
+    "companyLabel": "Entreprise (facultatif)",
+    "companyPlaceholder": "Votre entreprise",
+    "serviceLabel": "Service souhaité",
+    "serviceDefault": "Pas encore décidé",
+    "budgetLabel": "Budget estimé (facultatif)",
+    "budgetPlaceholder": "ex. 5 000–15 000 €",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Parlez-nous de votre projet…",
+    "consentLabel": "J'accepte le traitement de mes données tel que décrit dans la",
+    "privacyLinkLabel": "Politique de confidentialité",
+    "submit": "Envoyer le message",
+    "submitting": "Envoi en cours…",
+    "successTitle": "Message envoyé",
+    "successDesc": "Merci — nous vous répondrons rapidement.",
+    "errorTitle": "Une erreur est survenue",
+    "errorDesc": "Veuillez réessayer, ou écrivez-nous directement à hello@core829.net.",
+    "validationRequired": "Ce champ est obligatoire",
+    "validationEmail": "Saisissez une adresse email valide"
   }
 }

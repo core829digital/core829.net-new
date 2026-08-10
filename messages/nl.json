@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Op dit moment geen vacatures",
+    "applyDesc": "We werven op dit moment niet actief, maar horen graag van mensen die goed bij ons team zouden passen. Stuur ons uw cv en een paar regels over uzelf.",
+    "applyButton": "Stuur een open sollicitatie"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Gebruikt door diensten van derden, zoals de Trustpilot-reviewswidget, en om relevante advertenties te tonen.",
     "policyLinkLabel": "Lees ons Cookiebeleid",
     "footerManage": "Cookievoorkeuren"
+  },
+  "contactForm": {
+    "title": "Stuur ons een bericht",
+    "desc": "Vertel ons over uw project — we reageren meestal binnen één werkdag.",
+    "nameLabel": "Naam",
+    "namePlaceholder": "Uw naam",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "u@bedrijf.nl",
+    "companyLabel": "Bedrijf (optioneel)",
+    "companyPlaceholder": "Uw bedrijf",
+    "serviceLabel": "Gewenste dienst",
+    "serviceDefault": "Nog niet zeker",
+    "budgetLabel": "Geschat budget (optioneel)",
+    "budgetPlaceholder": "bijv. €5.000–15.000",
+    "messageLabel": "Bericht",
+    "messagePlaceholder": "Vertel ons over uw project…",
+    "consentLabel": "Ik ga akkoord met de verwerking van mijn gegevens zoals beschreven in het",
+    "privacyLinkLabel": "Privacybeleid",
+    "submit": "Bericht verzenden",
+    "submitting": "Verzenden…",
+    "successTitle": "Bericht verzonden",
+    "successDesc": "Bedankt — we nemen binnenkort contact met u op.",
+    "errorTitle": "Er is iets misgegaan",
+    "errorDesc": "Probeer het opnieuw of schrijf ons rechtstreeks op hello@core829.net.",
+    "validationRequired": "Dit veld is verplicht",
+    "validationEmail": "Voer een geldig e-mailadres in"
   }
 }

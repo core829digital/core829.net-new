@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Наразі немає відкритих вакансій",
+    "applyDesc": "Зараз ми не проводимо активний набір, але завжди раді дізнатися про людей, які могли б добре підійти нашій команді. Надішліть нам своє резюме та кілька рядків про себе.",
+    "applyButton": "Надіслати ініціативне резюме"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Використовуються сторонніми сервісами, такими як віджет відгуків Trustpilot, а також для показу релевантної реклами.",
     "policyLinkLabel": "Ознайомтеся з нашою Політикою щодо cookie",
     "footerManage": "Налаштування cookie"
+  },
+  "contactForm": {
+    "title": "Напишіть нам",
+    "desc": "Розкажіть про свій проєкт — зазвичай ми відповідаємо протягом одного робочого дня.",
+    "nameLabel": "Ім'я",
+    "namePlaceholder": "Ваше ім'я",
+    "emailLabel": "Ел. пошта",
+    "emailPlaceholder": "you@company.com",
+    "companyLabel": "Компанія (необов'язково)",
+    "companyPlaceholder": "Ваша компанія",
+    "serviceLabel": "Послуга, що цікавить",
+    "serviceDefault": "Ще не знаю",
+    "budgetLabel": "Орієнтовний бюджет (необов'язково)",
+    "budgetPlaceholder": "напр. 5 000–15 000 €",
+    "messageLabel": "Повідомлення",
+    "messagePlaceholder": "Розкажіть про свій проєкт…",
+    "consentLabel": "Я погоджуюсь на обробку моїх даних відповідно до",
+    "privacyLinkLabel": "Політики конфіденційності",
+    "submit": "Надіслати повідомлення",
+    "submitting": "Надсилання…",
+    "successTitle": "Повідомлення надіслано",
+    "successDesc": "Дякуємо — ми скоро з вами зв'яжемося.",
+    "errorTitle": "Щось пішло не так",
+    "errorDesc": "Спробуйте ще раз або напишіть нам напряму на hello@core829.net.",
+    "validationRequired": "Це поле обов'язкове",
+    "validationEmail": "Введіть дійсну електронну адресу"
   }
 }

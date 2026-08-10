@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Jelenleg nincs nyitott pozíció",
+    "applyDesc": "Jelenleg nem toborzunk aktívan, de mindig szívesen megismerkedünk olyan emberekkel, akik jól illenének a csapatunkba. Küldje el önéletrajzát és pár sort magáról.",
+    "applyButton": "Spontán jelentkezés küldése"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Harmadik fél szolgáltatások, például a Trustpilot értékelő widget használják, valamint releváns hirdetések megjelenítésére.",
     "policyLinkLabel": "Olvassa el Süti szabályzatunkat",
     "footerManage": "Süti beállítások"
+  },
+  "contactForm": {
+    "title": "Írjon nekünk",
+    "desc": "Meséljen a projektjéről — általában egy munkanapon belül válaszolunk.",
+    "nameLabel": "Név",
+    "namePlaceholder": "Az Ön neve",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "on@ceg.hu",
+    "companyLabel": "Cég (opcionális)",
+    "companyPlaceholder": "Az Ön cége",
+    "serviceLabel": "Érdeklődés tárgya",
+    "serviceDefault": "Még nem tudom",
+    "budgetLabel": "Becsült költségkeret (opcionális)",
+    "budgetPlaceholder": "pl. 5000–15000 €",
+    "messageLabel": "Üzenet",
+    "messagePlaceholder": "Meséljen a projektjéről…",
+    "consentLabel": "Hozzájárulok adataim kezeléséhez az alábbi dokumentum szerint:",
+    "privacyLinkLabel": "Adatvédelmi szabályzat",
+    "submit": "Üzenet küldése",
+    "submitting": "Küldés…",
+    "successTitle": "Üzenet elküldve",
+    "successDesc": "Köszönjük — hamarosan válaszolunk.",
+    "errorTitle": "Hiba történt",
+    "errorDesc": "Kérjük, próbálja újra, vagy írjon közvetlenül a hello@core829.net címre.",
+    "validationRequired": "Ez a mező kötelező",
+    "validationEmail": "Adjon meg egy érvényes e-mail-címet"
   }
 }

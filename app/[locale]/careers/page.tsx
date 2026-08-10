@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
+import { Button } from "@/components/ui/Button";
 import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -38,8 +39,24 @@ export default async function CareersPage({
           {t("subtitle")}
         </p>
 
-        <div className="mt-16">
-          <p className="text-foreground-muted">{t("comingSoon")}</p>
+        <div className="mt-16 max-w-2xl border border-border bg-surface p-8 sm:p-10">
+          <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted">
+            {t("comingSoon")}
+          </p>
+          <h2 className="mt-4 text-xl font-semibold tracking-tight text-foreground">
+            {t("applyTitle")}
+          </h2>
+          <p className="mt-4 text-sm leading-relaxed text-foreground-muted">
+            {t("applyDesc")}
+          </p>
+          <div className="mt-8">
+            <Button
+              href="mailto:hello@core829.net?subject=Spontaneous%20application"
+              variant="primary"
+            >
+              {t("applyButton")}
+            </Button>
+          </div>
         </div>
       </section>
     </main>

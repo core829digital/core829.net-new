@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Inga lediga tjänster just nu",
+    "applyDesc": "Vi rekryterar inte aktivt just nu, men blir alltid glada att höra från personer som skulle passa bra i vårt team. Skicka ditt CV och några rader om dig själv.",
+    "applyButton": "Skicka en spontanansökan"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Används av tredjepartstjänster, som recensionswidgeten Trustpilot, och för att visa relevant reklam.",
     "policyLinkLabel": "Läs vår Cookiepolicy",
     "footerManage": "Cookieinställningar"
+  },
+  "contactForm": {
+    "title": "Skicka oss ett meddelande",
+    "desc": "Berätta om ditt projekt — vi svarar vanligtvis inom en arbetsdag.",
+    "nameLabel": "Namn",
+    "namePlaceholder": "Ditt namn",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "du@foretag.se",
+    "companyLabel": "Företag (valfritt)",
+    "companyPlaceholder": "Ditt företag",
+    "serviceLabel": "Önskad tjänst",
+    "serviceDefault": "Vet inte ännu",
+    "budgetLabel": "Uppskattad budget (valfritt)",
+    "budgetPlaceholder": "t.ex. 5 000–15 000 €",
+    "messageLabel": "Meddelande",
+    "messagePlaceholder": "Berätta om ditt projekt…",
+    "consentLabel": "Jag godkänner behandlingen av mina uppgifter enligt",
+    "privacyLinkLabel": "Integritetspolicyn",
+    "submit": "Skicka meddelande",
+    "submitting": "Skickar…",
+    "successTitle": "Meddelande skickat",
+    "successDesc": "Tack — vi återkommer inom kort.",
+    "errorTitle": "Något gick fel",
+    "errorDesc": "Försök igen eller skriv direkt till hello@core829.net.",
+    "validationRequired": "Detta fält är obligatoriskt",
+    "validationEmail": "Ange en giltig e-postadress"
   }
 }

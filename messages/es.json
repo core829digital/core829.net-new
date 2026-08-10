@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Actualmente no hay vacantes",
+    "applyDesc": "En este momento no estamos contratando activamente, pero siempre nos alegra conocer a personas que encajarían bien en nuestro equipo. Envíanos tu CV y unas líneas sobre ti.",
+    "applyButton": "Enviar una candidatura espontánea"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Utilizadas por servicios de terceros, como el widget de reseñas de Trustpilot, y para mostrarte publicidad relevante.",
     "policyLinkLabel": "Lee nuestra Política de Cookies",
     "footerManage": "Preferencias de cookies"
+  },
+  "contactForm": {
+    "title": "Envíanos un mensaje",
+    "desc": "Cuéntanos sobre tu proyecto — normalmente respondemos en un día laborable.",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "tu@empresa.com",
+    "companyLabel": "Empresa (opcional)",
+    "companyPlaceholder": "Tu empresa",
+    "serviceLabel": "Servicio de interés",
+    "serviceDefault": "Aún no lo sé",
+    "budgetLabel": "Presupuesto estimado (opcional)",
+    "budgetPlaceholder": "ej. 5.000–15.000 €",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuéntanos sobre tu proyecto…",
+    "consentLabel": "Acepto el tratamiento de mis datos según se describe en la",
+    "privacyLinkLabel": "Política de Privacidad",
+    "submit": "Enviar mensaje",
+    "submitting": "Enviando…",
+    "successTitle": "Mensaje enviado",
+    "successDesc": "Gracias — te responderemos en breve.",
+    "errorTitle": "Algo salió mal",
+    "errorDesc": "Inténtalo de nuevo o escríbenos directamente a hello@core829.net.",
+    "validationRequired": "Este campo es obligatorio",
+    "validationEmail": "Introduce una dirección de correo válida"
   }
 }

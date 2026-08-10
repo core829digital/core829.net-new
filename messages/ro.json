@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Momentan nu avem posturi deschise",
+    "applyDesc": "În prezent nu recrutăm activ, dar suntem mereu bucuroși să cunoaștem persoane potrivite pentru echipa noastră. Trimite-ne CV-ul tău și câteva rânduri despre tine.",
+    "applyButton": "Trimite o candidatură spontană"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Folosite de servicii terțe, precum widget-ul de recenzii Trustpilot, și pentru a-ți afișa reclame relevante.",
     "policyLinkLabel": "Citește Politica noastră privind cookie-urile",
     "footerManage": "Preferințe cookie-uri"
+  },
+  "contactForm": {
+    "title": "Trimite-ne un mesaj",
+    "desc": "Spune-ne despre proiectul tău — de obicei răspundem într-o zi lucrătoare.",
+    "nameLabel": "Nume",
+    "namePlaceholder": "Numele tău",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tu@companie.com",
+    "companyLabel": "Companie (opțional)",
+    "companyPlaceholder": "Compania ta",
+    "serviceLabel": "Serviciu de interes",
+    "serviceDefault": "Încă nu știu",
+    "budgetLabel": "Buget estimat (opțional)",
+    "budgetPlaceholder": "ex. 5.000–15.000 €",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Spune-ne despre proiectul tău…",
+    "consentLabel": "Sunt de acord cu prelucrarea datelor mele conform",
+    "privacyLinkLabel": "Politicii de confidențialitate",
+    "submit": "Trimite mesajul",
+    "submitting": "Se trimite…",
+    "successTitle": "Mesaj trimis",
+    "successDesc": "Mulțumim — îți vom răspunde în curând.",
+    "errorTitle": "A apărut o eroare",
+    "errorDesc": "Te rugăm să încerci din nou sau să ne scrii direct la hello@core829.net.",
+    "validationRequired": "Acest câmp este obligatoriu",
+    "validationEmail": "Introdu o adresă de email validă"
   }
 }

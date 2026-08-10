@@ -625,7 +625,10 @@
     "kicker": "Careers",
     "title": "Join our team",
     "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "applyTitle": "Ingen ledige stillinger akkurat nå",
+    "applyDesc": "Vi rekrutterer ikke aktivt for øyeblikket, men setter alltid pris på å høre fra folk som kan passe godt inn i teamet vårt. Send oss CV-en din og noen linjer om deg selv.",
+    "applyButton": "Send en uoppfordret søknad"
   },
   "pricingPage": {
     "kicker": "Pricing",
@@ -984,5 +987,31 @@
     "marketingDesc": "Brukes av tredjepartstjenester, som Trustpilot-anmeldelseswidgeten, og for å vise relevante annonser.",
     "policyLinkLabel": "Les vår Cookieerklæring",
     "footerManage": "Preferanser for informasjonskapsler"
+  },
+  "contactForm": {
+    "title": "Send oss en melding",
+    "desc": "Fortell oss om prosjektet ditt — vi svarer vanligvis innen én virkedag.",
+    "nameLabel": "Navn",
+    "namePlaceholder": "Ditt navn",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "deg@firma.no",
+    "companyLabel": "Bedrift (valgfritt)",
+    "companyPlaceholder": "Din bedrift",
+    "serviceLabel": "Ønsket tjeneste",
+    "serviceDefault": "Vet ikke ennå",
+    "budgetLabel": "Anslått budsjett (valgfritt)",
+    "budgetPlaceholder": "f.eks. 5 000–15 000 €",
+    "messageLabel": "Melding",
+    "messagePlaceholder": "Fortell oss om prosjektet ditt…",
+    "consentLabel": "Jeg godtar behandlingen av mine data som beskrevet i",
+    "privacyLinkLabel": "Personvernerklæringen",
+    "submit": "Send melding",
+    "submitting": "Sender…",
+    "successTitle": "Melding sendt",
+    "successDesc": "Takk — vi tar kontakt snart.",
+    "errorTitle": "Noe gikk galt",
+    "errorDesc": "Prøv igjen, eller skriv direkte til hello@core829.net.",
+    "validationRequired": "Dette feltet er obligatorisk",
+    "validationEmail": "Skriv inn en gyldig e-postadresse"
   }
 }

@@ -1,6 +1,7 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { COMPANY, SERVICES_META } from "@/lib/constants";
 import { SOCIAL_LINKS } from "@/components/SocialIcons";
+import { getBrandKeywords, getServiceKeywords } from "@/lib/seoKeywords";
 
 /**
  * Dati strutturati JSON-LD: Organization per CORE829 + Service per ciascuno
@@ -8,22 +9,27 @@ import { SOCIAL_LINKS } from "@/components/SocialIcons";
  */
 export default async function JsonLd() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://core829.net";
+  const locale = await getLocale();
   const tMeta = await getTranslations("metadata");
   const tServices = await getTranslations("solution.services");
 
-  const serviceSchemas = SERVICES_META.map((_, i) => ({
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: tServices(`${i}.title`),
-    description: tServices(`${i}.desc`),
-    provider: {
-      "@type": "Organization",
-      name: "CORE829",
-      url: siteUrl,
-      logo: `${siteUrl}/core829-logo/829black%20trsp.webp`,
-    },
-    areaServed: "Europe",
-  }));
+  const serviceSchemas = SERVICES_META.map((service, i) => {
+    const name = tServices(`${i}.title`);
+    return {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name,
+      description: tServices(`${i}.desc`),
+      keywords: getServiceKeywords(locale, service.key, name).join(", "),
+      provider: {
+        "@type": "Organization",
+        name: "CORE829",
+        url: siteUrl,
+        logo: `${siteUrl}/core829-logo/829black%20trsp.webp`,
+      },
+      areaServed: "Europe",
+    };
+  });
 
   const orgSchema = {
     "@context": "https://schema.org",
@@ -50,13 +56,10 @@ export default async function JsonLd() {
       ...SOCIAL_LINKS.map((s) => s.href),
     ],
     knowsAbout: [
-      "Custom Servers",
-      "Web Applications",
-      "Software Development",
-      "Artificial Intelligence",
-      "B2B Automations",
-      "SEO",
-      "Digital Marketing",
+      ...getBrandKeywords(locale),
+      ...SERVICES_META.flatMap((service, i) =>
+        getServiceKeywords(locale, service.key, tServices(`${i}.title`)).slice(0, 4)
+      ),
     ],
   };
 

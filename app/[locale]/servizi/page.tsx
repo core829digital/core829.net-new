@@ -4,6 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import ServiceCard from "@/components/ui/ServiceCard";
 import { SERVICES_META } from "@/lib/constants";
 import { buildAlternates } from "@/lib/seo";
+import { getSiteKeywords } from "@/lib/seoKeywords";
 
 export async function generateMetadata({
   params,
@@ -12,10 +13,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
+  const tServices = await getTranslations({ locale, namespace: "solution.services" });
   const title = `${t("services")} — CORE829`;
+  const serviceTitles = SERVICES_META.map((s, i) => ({
+    key: s.key,
+    title: tServices(`${i}.title`),
+  }));
   return {
     title,
     description: t("description"),
+    keywords: getSiteKeywords(locale, serviceTitles),
     alternates: buildAlternates(locale, "/servizi"),
     openGraph: { title, description: t("description") },
     twitter: { title, description: t("description") },

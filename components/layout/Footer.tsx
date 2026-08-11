@@ -153,16 +153,18 @@ export default function Footer() {
         <div>
           <p className="tech-label">{t("colServices")}</p>
           <ul className="mt-5 space-y-3">
-            {SERVICES_META.map((s, i) => (
-              <li key={s.key}>
-                <Link
-                  href={`/servizi/${s.key}`}
-                  className="link-ghost text-sm"
-                >
-                  {tServices(`${i}.title`)}
-                </Link>
-              </li>
-            ))}
+            {SERVICES_META.map((s, i) =>
+              s.hidden ? null : (
+                <li key={s.key}>
+                  <Link
+                    href={`/servizi/${s.key}`}
+                    className="link-ghost text-sm"
+                  >
+                    {tServices(`${i}.title`)}
+                  </Link>
+                </li>
+              )
+            )}
             <li>
               <Link
                 href="/servizi"

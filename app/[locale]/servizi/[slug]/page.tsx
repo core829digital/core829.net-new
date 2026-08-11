@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import { Check, ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
-import { SERVICES_META } from "@/lib/constants";
+import { SERVICES_META, VISIBLE_SERVICES_META } from "@/lib/constants";
 import ServerServicePage from "@/components/services/ServerServicePage";
 import { buildAlternates } from "@/lib/seo";
 import { getServiceKeywords } from "@/lib/seoKeywords";
@@ -14,14 +15,14 @@ interface PageProps {
 }
 
 export function generateStaticParams() {
-  return SERVICES_META.map((service) => ({ slug: service.key }));
+  return VISIBLE_SERVICES_META.map((service) => ({ slug: service.key }));
 }
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { locale, slug } = await params;
-  const index = SERVICES_META.findIndex((s) => s.key === slug);
+  const index = SERVICES_META.findIndex((s) => s.key === slug && !s.hidden);
   const tServices = await getTranslations({ locale, namespace: "solution.services" });
 
   if (index === -1) {
@@ -46,23 +47,23 @@ export default async function ServiceDetailPage({ params }: PageProps) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  const index = SERVICES_META.findIndex((s) => s.key === slug);
+  const index = SERVICES_META.findIndex((s) => s.key === slug && !s.hidden);
 
   if (index === -1) {
-    return (
-      <main>
-        <section className="container-core829 py-24 lg:py-32">
-          <h1 className="text-section-title">404</h1>
-        </section>
-      </main>
-    );
+    notFound();
   }
 
   const t = await getTranslations({ locale, namespace: "servicesDetail" });
   const tServices = await getTranslations({ locale, namespace: "solution.services" });
   const Icon = SERVICES_META[index].icon;
-  const prev = SERVICES_META[(index - 1 + SERVICES_META.length) % SERVICES_META.length];
-  const next = SERVICES_META[(index + 1) % SERVICES_META.length];
+
+  // Precedente/successivo ciclano solo tra i servizi pubblicamente visibili.
+  const visiblePos = VISIBLE_SERVICES_META.findIndex((s) => s.key === slug);
+  const prev =
+    VISIBLE_SERVICES_META[
+      (visiblePos - 1 + VISIBLE_SERVICES_META.length) % VISIBLE_SERVICES_META.length
+    ];
+  const next = VISIBLE_SERVICES_META[(visiblePos + 1) % VISIBLE_SERVICES_META.length];
 
   if (slug === "server") {
     return (
@@ -80,7 +81,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   {t("previous")}
                 </span>
                 <span className="mt-1 block font-semibold">
-                  {tServices(`${(index - 1 + SERVICES_META.length) % SERVICES_META.length}.title`)}
+                  {tServices(`${prev.index}.title`)}
                 </span>
               </span>
             </Link>
@@ -93,7 +94,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   {t("next")}
                 </span>
                 <span className="mt-1 block font-semibold">
-                  {tServices(`${(index + 1) % SERVICES_META.length}.title`)}
+                  {tServices(`${next.index}.title`)}
                 </span>
               </span>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden />
@@ -120,7 +121,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             <Icon className="h-7 w-7" aria-hidden />
           </span>
           <span className="font-mono text-sm tracking-widest text-foreground-muted">
-            0{index + 1}
+            0{visiblePos + 1}
           </span>
         </div>
 
@@ -185,7 +186,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 {t("previous")}
               </span>
               <span className="mt-1 block font-semibold">
-                {tServices(`${(index - 1 + SERVICES_META.length) % SERVICES_META.length}.title`)}
+                {tServices(`${prev.index}.title`)}
               </span>
             </span>
           </Link>
@@ -198,7 +199,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 {t("next")}
               </span>
               <span className="mt-1 block font-semibold">
-                {tServices(`${(index + 1) % SERVICES_META.length}.title`)}
+                {tServices(`${next.index}.title`)}
               </span>
             </span>
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden />

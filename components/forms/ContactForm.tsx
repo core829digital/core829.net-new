@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
-import { SERVICES_META } from "@/lib/constants";
+import { VISIBLE_SERVICES_META } from "@/lib/constants";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -130,9 +130,9 @@ export default function ContactForm() {
           </label>
           <select id="service" name="service" defaultValue="" className={`mt-2 ${inputClasses}`}>
             <option value="">{t("serviceDefault")}</option>
-            {SERVICES_META.map((s, i) => (
-              <option key={s.key} value={tServices(`${i}.title`)}>
-                {tServices(`${i}.title`)}
+            {VISIBLE_SERVICES_META.map((s) => (
+              <option key={s.key} value={tServices(`${s.index}.title`)}>
+                {tServices(`${s.index}.title`)}
               </option>
             ))}
           </select>

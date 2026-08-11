@@ -10,6 +10,7 @@ import { Link } from "@/i18n/navigation";
 import ClientCarousel from "@/components/sections/ClientCarousel";
 import { TrustpilotWidget } from "@/components/Trustpilot";
 import { SocialLinks } from "@/components/SocialIcons";
+import { SERVICES_META } from "@/lib/constants";
 
 interface Stat {
   value: number;
@@ -27,6 +28,7 @@ export default function Hero() {
   const m = messages as unknown as { stats: Stat[]; hero: { headline: string[] } };
   const stats = m.stats;
   const headline = m.hero.headline;
+  const serverService = SERVICES_META.find((s) => s.key === "server");
 
   return (
     <section
@@ -69,25 +71,27 @@ export default function Hero() {
             </Button>
           </div>
 
-          <div className="mt-8">
-            <Link
-              href="/servizi/server"
-              className="group inline-flex max-w-full items-center gap-4 border border-border bg-surface p-4 pr-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:shadow-lg"
-            >
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent">
-                <Server className="h-5 w-5" aria-hidden />
-              </span>
-              <span className="flex min-w-0 flex-col gap-0.5">
-                <span className="flex items-center gap-2 text-sm font-semibold text-foreground">
-                  {t("serverCtaLabel")}
-                  <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
+          {!serverService?.hidden && (
+            <div className="mt-8">
+              <Link
+                href="/servizi/server"
+                className="group inline-flex max-w-full items-center gap-4 border border-border bg-surface p-4 pr-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:shadow-lg"
+              >
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent">
+                  <Server className="h-5 w-5" aria-hidden />
                 </span>
-                <span className="text-xs text-foreground-muted">
-                  {t("serverCtaHint")}
+                <span className="flex min-w-0 flex-col gap-0.5">
+                  <span className="flex items-center gap-2 text-sm font-semibold text-foreground">
+                    {t("serverCtaLabel")}
+                    <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
+                  </span>
+                  <span className="text-xs text-foreground-muted">
+                    {t("serverCtaHint")}
+                  </span>
                 </span>
-              </span>
-            </Link>
-          </div>
+              </Link>
+            </div>
+          )}
 
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-5 border-t border-border pt-8">
             <TrustpilotWidget className="min-w-0 max-w-full" />

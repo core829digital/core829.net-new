@@ -6,7 +6,10 @@ import { Link } from "@/i18n/navigation";
 import { SERVICES_META } from "@/lib/constants";
 
 interface Props {
+  /** Indice in SERVICES_META, usato per i lookup i18n (solution.services[index]). */
   index: number;
+  /** Numero mostrato nel badge (01, 02, ...); default = index + 1. Passalo esplicitamente quando alcuni servizi sono nascosti, per una numerazione visibile senza salti. */
+  displayNumber?: number;
 }
 
 /**
@@ -15,11 +18,12 @@ interface Props {
  * numerazione 01-08 e bullet list. L'intera card è un link alla pagina
  * dedicata del servizio.
  */
-export default function ServiceCard({ index }: Props) {
+export default function ServiceCard({ index, displayNumber }: Props) {
   const t = useTranslations("solution.services");
   const tDetail = useTranslations("servicesDetail");
   const Icon = SERVICES_META[index].icon;
   const slug = SERVICES_META[index].key;
+  const number = displayNumber ?? index + 1;
 
   return (
     <Link
@@ -31,7 +35,7 @@ export default function ServiceCard({ index }: Props) {
           <Icon className="h-5 w-5" aria-hidden />
         </span>
         <span className="font-mono text-sm tracking-widest text-foreground-muted">
-          0{index + 1}
+          0{number}
         </span>
       </div>
 

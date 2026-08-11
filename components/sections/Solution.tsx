@@ -35,12 +35,14 @@ export default function Solution() {
         </RevealOnScroll>
 
         <RevealOnScroll className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((service, i) => {
-            const meta = SERVICES_META[i];
+          {services
+            .map((service, i) => ({ service, meta: SERVICES_META[i] }))
+            .filter(({ meta }) => !meta?.hidden)
+            .map(({ service, meta }, visibleIndex) => {
             const Icon = meta?.icon;
             return (
               <Link
-                key={service.id ?? i}
+                key={service.id ?? meta?.key}
                 href={`/servizi/${meta?.key ?? service.id}`}
                 id={meta?.anchorId}
                 className="group flex flex-col border border-border bg-background p-8 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl"
@@ -50,7 +52,7 @@ export default function Solution() {
                     {Icon && <Icon className="h-5 w-5" aria-hidden />}
                   </span>
                   <span className="font-mono text-sm tracking-widest text-foreground-muted">
-                    0{i + 1}
+                    0{visibleIndex + 1}
                   </span>
                 </div>
 

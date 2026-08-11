@@ -104,9 +104,11 @@ export default function Navbar() {
 
         {/* Desktop navigation */}
         <nav className="hidden items-center gap-4 lg:flex" aria-label="Main">
-          <NavLink href={`/servizi/${serverMeta.key}`} frame="mono">
-            {tServices(`${serverIndex}.title`)}
-          </NavLink>
+          {!serverMeta.hidden && (
+            <NavLink href={`/servizi/${serverMeta.key}`} frame="mono">
+              {tServices(`${serverIndex}.title`)}
+            </NavLink>
+          )}
 
           <DesktopDropdown
             label={t("services")}
@@ -158,11 +160,15 @@ export default function Navbar() {
           >
             <MobileNav
               nav={[
-                {
-                  key: "server",
-                  label: tServices(`${serverIndex}.title`),
-                  href: `/servizi/${serverMeta.key}`,
-                },
+                ...(serverMeta.hidden
+                  ? []
+                  : [
+                      {
+                        key: "server",
+                        label: tServices(`${serverIndex}.title`),
+                        href: `/servizi/${serverMeta.key}`,
+                      },
+                    ]),
                 {
                   key: "services",
                   label: t("services"),

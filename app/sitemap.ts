@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/seo";
+import { VISIBLE_SERVICES_META } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = SITE_URL;
@@ -21,17 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/prezzi",
   ];
 
-  const serviceSlugs = [
-    "server",
-    "automations",
-    "webdesign",
-    "webapp",
-    "desktop",
-    "seo",
-    "marketing",
-  ];
-
-  const servicePaths = serviceSlugs.map((slug) => `/servizi/${slug}`);
+  const servicePaths = VISIBLE_SERVICES_META.map((s) => `/servizi/${s.key}`);
 
   const buildUrl = (locale: string, path: string) =>
     `${baseUrl}/${locale}${path === "/" ? "" : path}`;

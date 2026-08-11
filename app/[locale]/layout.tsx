@@ -15,7 +15,7 @@ import CookieBanner from "@/components/cookies/CookieBanner";
 import TrustpilotConsentGate from "@/components/cookies/TrustpilotConsentGate";
 import { buildAlternates, SITE_URL } from "@/lib/seo";
 import { getSiteKeywords } from "@/lib/seoKeywords";
-import { SERVICES_META } from "@/lib/constants";
+import { VISIBLE_SERVICES_META } from "@/lib/constants";
 import "../globals.css";
 
 const inter = Inter({
@@ -50,9 +50,9 @@ export async function generateMetadata({
   const tServices = await getTranslations({ locale, namespace: "solution.services" });
   const siteUrl = SITE_URL;
 
-  const serviceTitles = SERVICES_META.map((s, i) => ({
+  const serviceTitles = VISIBLE_SERVICES_META.map((s) => ({
     key: s.key,
-    title: tServices(`${i}.title`),
+    title: tServices(`${s.index}.title`),
   }));
 
   return {

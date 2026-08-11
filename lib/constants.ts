@@ -16,6 +16,13 @@ export interface ServiceMeta {
   key: string;
   anchorId: string;
   icon: LucideIcon;
+  /**
+   * Nasconde il servizio da nav, footer, griglie, sitemap e JSON-LD, e fa
+   * rispondere 404 alla sua pagina dedicata — senza toccare l'ordine o gli
+   * indici dell'array (che devono restare allineati a solution.services
+   * nei messaggi i18n). Rimuovere il flag per ripubblicarlo.
+   */
+  hidden?: boolean;
 }
 
 /**
@@ -23,7 +30,9 @@ export interface ServiceMeta {
  * Gli anchor id permettono al footer di puntare alle singole card.
  */
 export const SERVICES_META: ServiceMeta[] = [
-  { key: "server", anchorId: "servizio-server", icon: Server },
+  // Nascosto temporaneamente (2026): in trattativa con il produttore per
+  // condizioni di collaborazione migliori prima di ripubblicare la pagina.
+  { key: "server", anchorId: "servizio-server", icon: Server, hidden: true },
   { key: "automations", anchorId: "servizio-automazioni", icon: Workflow },
   { key: "webdesign", anchorId: "servizio-webdesign", icon: PenTool },
   { key: "webapp", anchorId: "servizio-webapp", icon: LayoutGrid },
@@ -31,6 +40,12 @@ export const SERVICES_META: ServiceMeta[] = [
   { key: "seo", anchorId: "servizio-seo", icon: TrendingUp },
   { key: "marketing", anchorId: "servizio-marketing", icon: Megaphone },
 ];
+
+/** Servizi pubblicamente visibili, con l'indice originale preservato per i lookup i18n. */
+export const VISIBLE_SERVICES_META = SERVICES_META.map((s, index) => ({
+  ...s,
+  index,
+})).filter((s) => !s.hidden);
 
 export interface ClientMeta {
   key: string;

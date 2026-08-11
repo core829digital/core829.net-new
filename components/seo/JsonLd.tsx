@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from "next-intl/server";
-import { COMPANY, SERVICES_META } from "@/lib/constants";
+import { COMPANY, VISIBLE_SERVICES_META } from "@/lib/constants";
 import { SOCIAL_LINKS } from "@/components/SocialIcons";
 import { getBrandKeywords, getServiceKeywords } from "@/lib/seoKeywords";
 
@@ -13,13 +13,13 @@ export default async function JsonLd() {
   const tMeta = await getTranslations("metadata");
   const tServices = await getTranslations("solution.services");
 
-  const serviceSchemas = SERVICES_META.map((service, i) => {
-    const name = tServices(`${i}.title`);
+  const serviceSchemas = VISIBLE_SERVICES_META.map((service) => {
+    const name = tServices(`${service.index}.title`);
     return {
       "@context": "https://schema.org",
       "@type": "Service",
       name,
-      description: tServices(`${i}.desc`),
+      description: tServices(`${service.index}.desc`),
       keywords: getServiceKeywords(locale, service.key, name).join(", "),
       provider: {
         "@type": "Organization",
@@ -57,8 +57,8 @@ export default async function JsonLd() {
     ],
     knowsAbout: [
       ...getBrandKeywords(locale),
-      ...SERVICES_META.flatMap((service, i) =>
-        getServiceKeywords(locale, service.key, tServices(`${i}.title`)).slice(0, 4)
+      ...VISIBLE_SERVICES_META.flatMap((service) =>
+        getServiceKeywords(locale, service.key, tServices(`${service.index}.title`)).slice(0, 4)
       ),
     ],
   };

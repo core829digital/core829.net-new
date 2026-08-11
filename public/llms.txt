@@ -6,7 +6,6 @@ CORE829 does not resell off-the-shelf products: every engagement starts from a c
 
 ## Services
 
-- [Custom Servers](https://core829.net/en/servizi/server): design and end-to-end management of custom server builds (AI, rendering, storage, gaming, hosting) with Intel and NVIDIA components.
 - [B2B Automations](https://core829.net/en/servizi/automations): automation of repetitive processes across CRM, ERP, email and invoicing tools.
 - [Web Design](https://core829.net/en/servizi/webdesign): custom interface and site design driven by brand identity, performance and conversion.
 - [Web Apps](https://core829.net/en/servizi/webapp): full-stack custom web applications, B2B/B2C platforms and vertical CRMs.

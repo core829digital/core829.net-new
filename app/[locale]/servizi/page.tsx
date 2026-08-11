@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import ServiceCard from "@/components/ui/ServiceCard";
-import { SERVICES_META } from "@/lib/constants";
+import { VISIBLE_SERVICES_META } from "@/lib/constants";
 import { buildAlternates } from "@/lib/seo";
 import { getSiteKeywords } from "@/lib/seoKeywords";
 
@@ -15,9 +15,9 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "metadata" });
   const tServices = await getTranslations({ locale, namespace: "solution.services" });
   const title = `${t("services")} — CORE829`;
-  const serviceTitles = SERVICES_META.map((s, i) => ({
+  const serviceTitles = VISIBLE_SERVICES_META.map((s) => ({
     key: s.key,
-    title: tServices(`${i}.title`),
+    title: tServices(`${s.index}.title`),
   }));
   return {
     title,
@@ -48,8 +48,8 @@ export default async function ServiziPage({
         </p>
 
         <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES_META.map((_, i) => (
-            <ServiceCard key={i} index={i} />
+          {VISIBLE_SERVICES_META.map((s, visibleIndex) => (
+            <ServiceCard key={s.key} index={s.index} displayNumber={visibleIndex + 1} />
           ))}
         </div>
       </section>

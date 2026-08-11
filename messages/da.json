@@ -1013,5 +1013,12 @@
     "errorDesc": "Prøv igen, eller skriv direkte til hello@core829.net.",
     "validationRequired": "Dette felt er påkrævet",
     "validationEmail": "Indtast en gyldig e-mailadresse"
+  },
+  "errorPage": {
+    "kicker": "Fejl",
+    "title": "Noget gik galt",
+    "desc": "Der opstod en uventet fejl under indlæsning af denne side. Du kan prøve igen eller gå tilbage til forsiden.",
+    "retry": "Prøv igen",
+    "back": "Tilbage til forsiden"
   }
 }

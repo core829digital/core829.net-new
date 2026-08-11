@@ -1013,5 +1013,12 @@
     "errorDesc": "Te rugăm să încerci din nou sau să ne scrii direct la hello@core829.net.",
     "validationRequired": "Acest câmp este obligatoriu",
     "validationEmail": "Introdu o adresă de email validă"
+  },
+  "errorPage": {
+    "kicker": "Eroare",
+    "title": "Ceva nu a mers bine",
+    "desc": "A apărut o eroare neașteptată la încărcarea acestei pagini. Poți încerca din nou sau te poți întoarce la pagina principală.",
+    "retry": "Încearcă din nou",
+    "back": "Înapoi la pagina principală"
   }
 }

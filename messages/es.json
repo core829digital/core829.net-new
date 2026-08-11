@@ -1013,5 +1013,12 @@
     "errorDesc": "Inténtalo de nuevo o escríbenos directamente a hello@core829.net.",
     "validationRequired": "Este campo es obligatorio",
     "validationEmail": "Introduce una dirección de correo válida"
+  },
+  "errorPage": {
+    "kicker": "Error",
+    "title": "Algo salió mal",
+    "desc": "Se produjo un error inesperado al cargar esta página. Puedes intentarlo de nuevo o volver al inicio.",
+    "retry": "Intentar de nuevo",
+    "back": "Volver al inicio"
   }
 }

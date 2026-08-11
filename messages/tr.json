@@ -1013,5 +1013,12 @@
     "errorDesc": "Lütfen tekrar deneyin veya doğrudan hello@core829.net adresine yazın.",
     "validationRequired": "Bu alan zorunludur",
     "validationEmail": "Geçerli bir e-posta adresi girin"
+  },
+  "errorPage": {
+    "kicker": "Hata",
+    "title": "Bir şeyler ters gitti",
+    "desc": "Bu sayfa yüklenirken beklenmeyen bir hata oluştu. Tekrar deneyebilir veya ana sayfaya dönebilirsiniz.",
+    "retry": "Tekrar dene",
+    "back": "Ana sayfaya dön"
   }
 }

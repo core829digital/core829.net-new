@@ -1013,5 +1013,12 @@
     "errorDesc": "Försök igen eller skriv direkt till hello@core829.net.",
     "validationRequired": "Detta fält är obligatoriskt",
     "validationEmail": "Ange en giltig e-postadress"
+  },
+  "errorPage": {
+    "kicker": "Fel",
+    "title": "Något gick fel",
+    "desc": "Ett oväntat fel uppstod när sidan skulle laddas. Du kan försöka igen eller gå tillbaka till startsidan.",
+    "retry": "Försök igen",
+    "back": "Tillbaka till start"
   }
 }

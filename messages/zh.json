@@ -1013,5 +1013,12 @@
     "errorDesc": "请重试，或直接发邮件至 hello@core829.net。",
     "validationRequired": "此字段为必填项",
     "validationEmail": "请输入有效的电子邮箱地址"
+  },
+  "errorPage": {
+    "kicker": "错误",
+    "title": "出现错误",
+    "desc": "加载此页面时发生了意外错误。您可以重试或返回首页。",
+    "retry": "重试",
+    "back": "返回首页"
   }
 }

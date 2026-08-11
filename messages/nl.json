@@ -1013,5 +1013,12 @@
     "errorDesc": "Probeer het opnieuw of schrijf ons rechtstreeks op hello@core829.net.",
     "validationRequired": "Dit veld is verplicht",
     "validationEmail": "Voer een geldig e-mailadres in"
+  },
+  "errorPage": {
+    "kicker": "Fout",
+    "title": "Er is iets misgegaan",
+    "desc": "Er is een onverwachte fout opgetreden bij het laden van deze pagina. U kunt het opnieuw proberen of terugkeren naar de startpagina.",
+    "retry": "Opnieuw proberen",
+    "back": "Terug naar home"
   }
 }

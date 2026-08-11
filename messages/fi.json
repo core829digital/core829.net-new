@@ -1013,5 +1013,12 @@
     "errorDesc": "Yritä uudelleen tai kirjoita suoraan osoitteeseen hello@core829.net.",
     "validationRequired": "Tämä kenttä on pakollinen",
     "validationEmail": "Anna kelvollinen sähköpostiosoite"
+  },
+  "errorPage": {
+    "kicker": "Virhe",
+    "title": "Jokin meni pieleen",
+    "desc": "Sivua ladattaessa tapahtui odottamaton virhe. Voit yrittää uudelleen tai palata etusivulle.",
+    "retry": "Yritä uudelleen",
+    "back": "Takaisin etusivulle"
   }
 }

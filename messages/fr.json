@@ -1013,5 +1013,12 @@
     "errorDesc": "Veuillez réessayer, ou écrivez-nous directement à hello@core829.net.",
     "validationRequired": "Ce champ est obligatoire",
     "validationEmail": "Saisissez une adresse email valide"
+  },
+  "errorPage": {
+    "kicker": "Erreur",
+    "title": "Une erreur est survenue",
+    "desc": "Une erreur inattendue s'est produite lors du chargement de cette page. Vous pouvez réessayer ou revenir à l'accueil.",
+    "retry": "Réessayer",
+    "back": "Retour à l'accueil"
   }
 }

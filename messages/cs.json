@@ -1013,5 +1013,12 @@
     "errorDesc": "Zkuste to prosím znovu, nebo nám napište přímo na hello@core829.net.",
     "validationRequired": "Toto pole je povinné",
     "validationEmail": "Zadejte platnou e-mailovou adresu"
+  },
+  "errorPage": {
+    "kicker": "Chyba",
+    "title": "Něco se pokazilo",
+    "desc": "Při načítání této stránky došlo k neočekávané chybě. Zkuste to znovu nebo se vraťte na hlavní stránku.",
+    "retry": "Zkusit znovu",
+    "back": "Zpět na hlavní stránku"
   }
 }

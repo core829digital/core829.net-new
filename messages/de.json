@@ -1013,5 +1013,12 @@
     "errorDesc": "Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an hello@core829.net.",
     "validationRequired": "Dieses Feld ist erforderlich",
     "validationEmail": "Geben Sie eine gültige E-Mail-Adresse ein"
+  },
+  "errorPage": {
+    "kicker": "Fehler",
+    "title": "Etwas ist schiefgelaufen",
+    "desc": "Beim Laden dieser Seite ist ein unerwarteter Fehler aufgetreten. Sie können es erneut versuchen oder zur Startseite zurückkehren.",
+    "retry": "Erneut versuchen",
+    "back": "Zurück zur Startseite"
   }
 }

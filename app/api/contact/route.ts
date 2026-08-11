@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { LEAD_EMAIL } from "@/lib/constants";
+import { getClientIp, isRateLimited } from "@/lib/rateLimit";
 
 export const runtime = "nodejs";
+
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW_MS = 60_000;
 
 interface ContactPayload {
   name: string;
@@ -37,6 +41,11 @@ function escapeHtml(value: string): string {
 }
 
 export async function POST(request: NextRequest) {
+  const ip = getClientIp(request);
+  if (isRateLimited(ip, RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS)) {
+    return NextResponse.json({ ok: false, error: "rate_limited" }, { status: 429 });
+  }
+
   let body: ContactPayload;
   try {
     body = await request.json();

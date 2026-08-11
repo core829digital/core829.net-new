@@ -1013,5 +1013,12 @@
     "errorDesc": "다시 시도하시거나 hello@core829.net으로 직접 문의해 주세요.",
     "validationRequired": "필수 입력 항목입니다",
     "validationEmail": "유효한 이메일 주소를 입력하세요"
+  },
+  "errorPage": {
+    "kicker": "오류",
+    "title": "문제가 발생했습니다",
+    "desc": "이 페이지를 로드하는 중 예기치 않은 오류가 발생했습니다. 다시 시도하거나 홈으로 돌아가세요.",
+    "retry": "다시 시도",
+    "back": "홈으로 돌아가기"
   }
 }

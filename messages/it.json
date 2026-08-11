@@ -1021,5 +1021,12 @@
     "errorDesc": "Riprova, oppure scrivici direttamente a hello@core829.net.",
     "validationRequired": "Campo obbligatorio",
     "validationEmail": "Inserisci un indirizzo email valido"
+  },
+  "errorPage": {
+    "kicker": "Errore",
+    "title": "Qualcosa è andato storto",
+    "desc": "Si è verificato un errore imprevisto durante il caricamento della pagina. Puoi riprovare o tornare alla home.",
+    "retry": "Riprova",
+    "back": "Torna alla home"
   }
 }

@@ -1013,5 +1013,12 @@
     "errorDesc": "Spróbuj ponownie lub napisz bezpośrednio na hello@core829.net.",
     "validationRequired": "To pole jest wymagane",
     "validationEmail": "Podaj prawidłowy adres e-mail"
+  },
+  "errorPage": {
+    "kicker": "Błąd",
+    "title": "Coś poszło nie tak",
+    "desc": "Podczas ładowania tej strony wystąpił nieoczekiwany błąd. Możesz spróbować ponownie lub wrócić na stronę główną.",
+    "retry": "Spróbuj ponownie",
+    "back": "Powrót do strony głównej"
   }
 }

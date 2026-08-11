@@ -51,7 +51,11 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="flex items-start gap-4 border border-border bg-surface p-8">
+      <div
+        role="status"
+        aria-live="polite"
+        className="flex items-start gap-4 border border-border bg-surface p-8"
+      >
         <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-accent" aria-hidden />
         <div>
           <p className="text-lg font-semibold tracking-tight text-foreground">
@@ -184,7 +188,11 @@ export default function ContactForm() {
       </label>
 
       {status === "error" && (
-        <div className="mt-6 flex items-start gap-3 border border-red-500/40 bg-red-500/5 p-4">
+        <div
+          role="alert"
+          aria-live="assertive"
+          className="mt-6 flex items-start gap-3 border border-red-500/40 bg-red-500/5 p-4"
+        >
           <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-red-500" aria-hidden />
           <div>
             <p className="text-sm font-semibold text-foreground">{t("errorTitle")}</p>

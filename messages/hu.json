@@ -1013,5 +1013,12 @@
     "errorDesc": "Kérjük, próbálja újra, vagy írjon közvetlenül a hello@core829.net címre.",
     "validationRequired": "Ez a mező kötelező",
     "validationEmail": "Adjon meg egy érvényes e-mail-címet"
+  },
+  "errorPage": {
+    "kicker": "Hiba",
+    "title": "Hiba történt",
+    "desc": "Váratlan hiba történt az oldal betöltése közben. Próbálja újra, vagy térjen vissza a kezdőlapra.",
+    "retry": "Újra próbálom",
+    "back": "Vissza a kezdőlapra"
   }
 }

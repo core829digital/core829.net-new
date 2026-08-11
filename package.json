@@ -2,7 +2,7 @@
   "name": "core829-website",
   "version": "1.0.0",
   "private": true,
-  "description": "CORE829.net — Agenzia digitale minimal-premium. Next.js 15 + Convex + Tailwind + GSAP/Lenis, multilingue.",
+  "description": "CORE829.net — Agenzia digitale minimal-premium. Next.js 15 + Tailwind + GSAP/Lenis, multilingue.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

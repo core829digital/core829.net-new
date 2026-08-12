@@ -30,9 +30,7 @@ export interface ServiceMeta {
  * Gli anchor id permettono al footer di puntare alle singole card.
  */
 export const SERVICES_META: ServiceMeta[] = [
-  // Nascosto temporaneamente (2026): in trattativa con il produttore per
-  // condizioni di collaborazione migliori prima di ripubblicare la pagina.
-  { key: "server", anchorId: "servizio-server", icon: Server, hidden: true },
+  { key: "server", anchorId: "servizio-server", icon: Server },
   { key: "automations", anchorId: "servizio-automazioni", icon: Workflow },
   { key: "webdesign", anchorId: "servizio-webdesign", icon: PenTool },
   { key: "webapp", anchorId: "servizio-webapp", icon: LayoutGrid },

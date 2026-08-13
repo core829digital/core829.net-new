@@ -62,7 +62,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <Button href="mailto:hello@core829.net" variant="primary">
+            <Button href="https://bookings.core829.net/book/intro-call" variant="primary">
               {t("ctaPrimary")}
               <ArrowRight className="h-4 w-4" aria-hidden />
             </Button>

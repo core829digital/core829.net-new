@@ -4,6 +4,7 @@ import { useTranslations, useMessages } from "next-intl";
 import { ArrowRight, Server } from "lucide-react";
 import SplitWords from "@/components/animations/SplitWords";
 import CountUp from "@/components/animations/CountUp";
+import RevealOnScroll from "@/components/animations/RevealOnScroll";
 import Badge from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
@@ -122,6 +123,24 @@ export default function Hero() {
           />
           <ClientCarousel />
         </div>
+      </div>
+
+      <div className="container-core829 pb-20 lg:pb-32">
+        <RevealOnScroll>
+          <p className="kicker">Prenota una chiamata</p>
+          <h2 className="mt-3 text-section-subtitle font-semibold text-foreground">
+            Scegli un orario, in tempo reale
+          </h2>
+          <div className="mt-8 overflow-hidden border border-border bg-surface">
+            <iframe
+              src="https://bookings.core829.net/embed/intro-call"
+              width="100%"
+              height={700}
+              style={{ border: 0, display: "block" }}
+              title="Prenota una chiamata con CORE829"
+            />
+          </div>
+        </RevealOnScroll>
       </div>
     </section>
   );

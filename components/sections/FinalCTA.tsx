@@ -25,7 +25,7 @@ export default function FinalCTA() {
 
         <RevealOnScroll className="mt-14 max-w-2xl">
           <div className="flex flex-wrap items-center gap-4">
-            <Button href="mailto:hello@core829.net" variant="primary">
+            <Button href="https://bookings.core829.net/book/intro-call" variant="primary">
               {t("cta")}
             </Button>
             <Link href="/contatti" className="link-ghost text-sm">

@@ -45,7 +45,7 @@ export default async function PrezziPage({
             </h3>
             <p className="mt-4 flex-1 text-foreground-muted">{t("projectDesc")}</p>
             <a
-              href="mailto:hello@core829.net?subject=Project%20quote"
+              href="https://bookings.core829.net/book/intro-call"
               className="mt-6 inline-flex items-center justify-center bg-foreground px-7 py-3 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent"
             >
               {t("helloCta")}

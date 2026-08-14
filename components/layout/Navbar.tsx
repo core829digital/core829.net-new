@@ -123,6 +123,9 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-4 lg:flex">
           <LanguageSwitcher />
+          <Button href="https://bookings.core829.net/book/intro-call" variant="secondary" className="px-6">
+            {t("bookCta")}
+          </Button>
           <Button href="mailto:sales@core829.net" variant="primary" className="neon-frame px-6">
             {t("cta")}
           </Button>
@@ -188,6 +191,14 @@ export default function Navbar() {
                 transition={{ delay: 0.35 }}
                 className="space-y-8 pt-8 border-t border-border"
               >
+                <Button
+                  href="https://bookings.core829.net/book/intro-call"
+                  variant="secondary"
+                  className="w-full"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {t("bookCta")}
+                </Button>
                 <Button
                   href="mailto:sales@core829.net"
                   variant="primary"

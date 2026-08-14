@@ -43,7 +43,7 @@ export default async function ContattiPage({
             <h1 className="mt-3 text-section-title">{t("title")}</h1>
             <p className="mt-4 text-foreground-muted">{t("subtitle")}</p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Button href="mailto:hello@core829.net?subject=Request%20a%20quote" variant="primary">
+              <Button href="https://bookings.core829.net/book/intro-call" variant="primary">
                 {t("ctaButton")}
               </Button>
               <a

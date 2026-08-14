@@ -152,7 +152,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
 
         <div className="mt-14 flex flex-wrap gap-4">
-          <Button href="mailto:hello@core829.net?subject=Request%20a%20consultation" variant="primary">
+          <Button href="https://bookings.core829.net/book/intro-call" variant="primary">
             {t("cta")}
           </Button>
           <Button href="/servizi" variant="secondary">

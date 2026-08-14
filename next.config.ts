@@ -17,7 +17,7 @@ const securityHeaders = [
       "base-uri 'self'",
       "form-action 'self'",
       "frame-ancestors 'none'",
-      "frame-src 'self' blob: https://widget.trustpilot.com",
+      "frame-src 'self' blob: https://widget.trustpilot.com https://bookings.core829.net",
       "upgrade-insecure-requests",
     ].join("; "),
   },

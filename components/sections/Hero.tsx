@@ -133,7 +133,7 @@ export default function Hero() {
           </h2>
           <div className="mt-8 overflow-hidden border border-border bg-surface">
             <iframe
-              src="https://bookings.core829.net/embed/intro-call"
+              src="https://bookings.core829.net/embed/intro-call?accent=%23e11d2e&font=Inter"
               width="100%"
               height={700}
               style={{ border: 0, display: "block" }}

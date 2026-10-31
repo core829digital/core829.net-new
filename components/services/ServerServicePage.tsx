@@ -248,7 +248,7 @@ export default function ServerServicePage() {
             {steps.map((step, i) => (
               <div
                 key={i}
-                className="border border-border bg-background p-8 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl"
+                className="card-lift border border-border bg-background p-8"
               >
                 <div className="flex items-center justify-between">
                   <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white">
@@ -282,7 +282,7 @@ export default function ServerServicePage() {
 
         <RevealOnScroll stagger={0.1} className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-2">
           {/* Intel */}
-          <div className="group flex flex-col border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl sm:p-8 md:p-10">
+          <div className="card-lift group flex flex-col border border-border bg-background p-6 sm:p-8 md:p-10">
             <div className="flex h-16 w-16 items-center justify-center border border-border p-2">
               <Image
                 src={INTEL_LOGO}
@@ -300,7 +300,7 @@ export default function ServerServicePage() {
           </div>
 
           {/* NVIDIA */}
-          <div className="group flex flex-col border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl sm:p-8 md:p-10">
+          <div className="card-lift group flex flex-col border border-border bg-background p-6 sm:p-8 md:p-10">
             <div className="flex h-16 w-16 items-center justify-center border border-border p-2">
               <Image
                 src={NVIDIA_LOGO}

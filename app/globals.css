@@ -26,7 +26,10 @@
   --shadow-lift: 0 2px 4px rgba(10, 10, 10, 0.05), 0 18px 40px -16px rgba(10, 10, 10, 0.2);
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
-  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  /* Testo: Space Grotesk → Inter (greco/cirillico) → sistema (CJK ecc.) */
+  --font-sans: var(--font-space), var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Titoli: Unbounded → Inter → sistema */
+  --font-display: var(--font-unbounded), var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: var(--font-jetbrains), ui-monospace, "SFMono-Regular", monospace;
 }
 
@@ -40,6 +43,24 @@
 @layer base {
   * {
     border-color: var(--color-border);
+  }
+
+  /* Monitor grandi: l'interfaccia (in rem) cresce in proporzione, così il
+     full width non produce testi minuscoli su 1920/2560/4K. */
+  @media (min-width: 1800px) {
+    html {
+      font-size: 17px;
+    }
+  }
+  @media (min-width: 2300px) {
+    html {
+      font-size: 20px;
+    }
+  }
+  @media (min-width: 3200px) {
+    html {
+      font-size: 26px;
+    }
   }
 
   html {
@@ -74,7 +95,11 @@
   h2,
   h3,
   h4 {
-    overflow-wrap: anywhere;
+    /* Unbounded è largo: a capo naturale con sillabazione (lang impostato su <html>),
+       break-word solo come rete di sicurezza contro l'overflow. */
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-wrap: balance;
   }
 
   ::selection {
@@ -91,19 +116,36 @@
   h2,
   h3,
   h4 {
-    font-weight: 600;
-    letter-spacing: -0.02em;
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+  }
+
+  body {
+    line-height: 1.6;
   }
 }
 
 @layer components {
+  /* Unbounded è molto pesante: i titoli restano a 500 anche dove una classe
+     di peso (font-semibold) era pensata per Inter. */
+  h1.font-semibold,
+  h2.font-semibold,
+  h3.font-semibold,
+  h4.font-semibold {
+    font-weight: 500;
+  }
+
+  /* Full width: nessun tetto di larghezza, margini fluidi (20px → 112px).
+     Le misure di lettura sono limitate dai singoli blocchi di testo (max-w-*). */
   .container-core829 {
-    @apply mx-auto w-full max-w-container px-6 sm:px-8 lg:px-12;
+    width: 100%;
+    padding-inline: clamp(1.25rem, 0.5rem + 3.6vw, 7rem);
   }
 
   /* Kicker: etichetta tecnica mono uppercase */
   .kicker {
-    @apply font-mono text-xs uppercase tracking-[0.25em] text-accent;
+    @apply font-mono text-[0.6875rem] uppercase tracking-[0.3em] text-accent;
   }
 
   /* Testo tecnico mono */

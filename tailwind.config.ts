@@ -16,6 +16,17 @@ const config: Config = {
         "accent-hover": "var(--color-accent-hover)",
         border: "var(--color-border)",
         surface: "var(--color-surface)",
+        ink: "var(--color-ink)",
+        "ink-soft": "var(--color-ink-soft)",
+        "on-ink": "var(--color-on-ink)",
+        "on-ink-muted": "var(--color-on-ink-muted)",
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        lift: "var(--shadow-lift)",
+      },
+      transitionTimingFunction: {
+        "out-expo": "var(--ease-out-expo)",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],

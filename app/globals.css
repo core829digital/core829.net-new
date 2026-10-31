@@ -14,6 +14,18 @@
   --color-border: #e5e5e5; /* Grigio chiaro — separatori/bordi */
   --color-surface: #f7f7f7; /* Off-white — sezioni alternate / card */
 
+  /* Estensione v2 (solo aggiunte): superfici scure per sezioni di rilievo.
+     Il rosso resta esclusivamente accento; bianco resta il fondo primario. */
+  --color-ink: #0b0b0c; /* Nero profondo — sezioni scure */
+  --color-ink-soft: #141416; /* Card su sezione scura */
+  --color-ink-border: rgba(255, 255, 255, 0.12); /* Bordi su scuro */
+  --color-on-ink: #f5f5f5; /* Testo su scuro */
+  --color-on-ink-muted: #a1a1a6; /* Testo secondario su scuro */
+
+  --shadow-soft: 0 1px 2px rgba(10, 10, 10, 0.04), 0 8px 24px -12px rgba(10, 10, 10, 0.12);
+  --shadow-lift: 0 2px 4px rgba(10, 10, 10, 0.05), 0 18px 40px -16px rgba(10, 10, 10, 0.2);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
   --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-jetbrains), ui-monospace, "SFMono-Regular", monospace;
 }
@@ -117,6 +129,37 @@
   }
   .link-ghost:hover::after {
     transform: scaleX(1);
+  }
+
+  /* Griglia "blueprint" sottile: sfondo tecnico per hero e sezioni scure.
+     Decorativa, sempre aria-hidden. Sfuma ai bordi con .grid-fade. */
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(10, 10, 10, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(10, 10, 10, 0.045) 1px, transparent 1px);
+    background-size: 72px 72px;
+  }
+  .grid-fade {
+    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 35%, #000 30%, transparent 75%);
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 35%, #000 30%, transparent 75%);
+  }
+
+  /* Sezione scura: contrasto e ritmo. Il testo eredita i colori "on-ink";
+     i token foreground/border sono rimappati così i componenti esistenti
+     funzionano senza modifiche. */
+  .section-dark {
+    --color-background: var(--color-ink);
+    --color-foreground: var(--color-on-ink);
+    --color-foreground-muted: var(--color-on-ink-muted);
+    --color-border: var(--color-ink-border);
+    --color-surface: var(--color-ink-soft);
+    background-color: var(--color-ink);
+    color: var(--color-on-ink);
+  }
+  .section-dark .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   }
 
   /* Input di base per form */

@@ -36,17 +36,13 @@ export default function Hero() {
       id="hero"
       className="relative overflow-hidden pt-16"
     >
-      {/* Elementi decorativi */}
+      {/* Sfondo tecnico: griglia blueprint sfumata */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-40 top-24 h-96 w-96 rounded-full border border-border/60"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-16 top-40 h-48 w-48 rounded-full border border-accent/20"
+        className="grid-bg grid-fade pointer-events-none absolute inset-0"
       />
 
-      <div className="container-core829 grid min-h-[calc(100vh-4rem)] min-h-[calc(100svh-4rem)] grid-cols-1 items-center gap-16 py-20 lg:grid-cols-2">
+      <div className="container-core829 relative grid grid-cols-1 items-center gap-14 pb-12 pt-16 sm:pt-20 lg:grid-cols-2 lg:gap-16 lg:pb-16 lg:pt-24">
         <div>
           <Badge>
             <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden />
@@ -55,7 +51,7 @@ export default function Hero() {
 
           <SplitWords
             lines={headline}
-            className="mt-8 text-display-sm font-semibold text-foreground lg:text-display"
+            className="mt-8 text-display-sm font-semibold text-foreground lg:text-[clamp(2.75rem,3.9vw,3.75rem)] lg:leading-[1.04] lg:tracking-[-0.035em]"
           />
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
@@ -72,11 +68,45 @@ export default function Hero() {
             </Button>
           </div>
 
+          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-5">
+            <TrustpilotWidget className="min-w-0 max-w-full" />
+            <SocialLinks
+              className="gap-2"
+              iconClassName="h-10 w-10"
+            />
+          </div>
+        </div>
+
+        <div className="relative">
+          <div
+            aria-hidden
+            className="absolute -left-6 -top-6 z-20 h-3 w-3 bg-accent"
+          />
+          <ClientCarousel />
+        </div>
+      </div>
+
+      {/* Fascia di prova: numeri + annuncio Server */}
+      <div className="container-core829 relative pb-16 lg:pb-24">
+        <div className="grid grid-cols-1 gap-10 border-t border-border pt-10 lg:grid-cols-12 lg:items-center">
+          <div className="grid grid-cols-3 gap-4 sm:gap-6 lg:col-span-7">
+            {stats.map((stat, i) => (
+              <div key={i} className="min-w-0 border-l border-border pl-4 sm:pl-6">
+                <p className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+                  <CountUp value={stat.value} suffix={stat.suffix} />
+                </p>
+                <p className="mt-2 max-w-[10rem] text-sm leading-snug text-foreground-muted">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
+          </div>
+
           {!serverService?.hidden && (
-            <div className="mt-8">
+            <div className="lg:col-span-5 lg:justify-self-end">
               <Link
                 href="/servizi/server"
-                className="group inline-flex max-w-full items-center gap-4 border border-border bg-surface p-4 pr-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:shadow-lg"
+                className="group inline-flex max-w-full items-center gap-4 border border-border bg-background p-4 pr-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:shadow-lift"
               >
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent">
                   <Server className="h-5 w-5" aria-hidden />
@@ -93,35 +123,6 @@ export default function Hero() {
               </Link>
             </div>
           )}
-
-          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-5 border-t border-border pt-8">
-            <TrustpilotWidget className="min-w-0 max-w-full" />
-            <SocialLinks
-              className="gap-2"
-              iconClassName="h-10 w-10"
-            />
-          </div>
-
-          <div className="mt-14 grid grid-cols-3 gap-4 sm:gap-6">
-            {stats.map((stat, i) => (
-              <div key={i} className="min-w-0">
-                <p className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                  <CountUp value={stat.value} suffix={stat.suffix} />
-                </p>
-                <p className="mt-2 max-w-[9rem] text-sm leading-snug text-foreground-muted">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="relative">
-          <div
-            aria-hidden
-            className="absolute -left-6 -top-6 z-20 h-3 w-3 bg-accent"
-          />
-          <ClientCarousel />
         </div>
       </div>
 

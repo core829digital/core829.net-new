@@ -80,10 +80,16 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-40 border-b border-border bg-background transition-transform duration-500",
+        "fixed inset-x-0 top-0 z-40 border-b border-border transition-transform duration-500",
         hidden && !menuOpen && "-translate-y-full"
       )}
     >
+      {/* Sfondo traslucido: layer separato (backdrop-filter sull'header
+          renderebbe il menu mobile "fixed" relativo all'header stesso). */}
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-10 bg-background/85 backdrop-blur-md"
+      />
       <div className="container-core829 flex h-16 items-center justify-between">
         {/* Logo → home */}
         <Link
@@ -126,7 +132,7 @@ export default function Navbar() {
           <Button href="https://bookings.core829.net/book/intro-call" variant="secondary" className="px-6">
             {t("bookCta")}
           </Button>
-          <Button href="mailto:sales@core829.net" variant="primary" className="neon-frame px-6">
+          <Button href="mailto:sales@core829.net" variant="primary" className="px-6">
             {t("cta")}
           </Button>
         </div>
@@ -139,7 +145,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen((v) => !v)}
             aria-expanded={menuOpen}
             aria-label="Menu"
-            className="neon-frame flex min-h-11 min-w-11 items-center justify-center text-foreground"
+            className="flex min-h-11 min-w-11 items-center justify-center border border-border text-foreground transition-colors hover:border-foreground"
           >
             {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -202,7 +208,7 @@ export default function Navbar() {
                 <Button
                   href="mailto:sales@core829.net"
                   variant="primary"
-                  className="neon-frame w-full"
+                  className="w-full"
                   onClick={() => setMenuOpen(false)}
                 >
                   {t("cta")}
@@ -239,11 +245,11 @@ function NavLink({
     <a
       href={href}
       onClick={handleClick}
-      className={cn(
-        frame === "mono" ? "neon-frame-mono" : "neon-frame",
-        "link-ghost px-3 py-2 text-sm"
-      )}
+      className="link-ghost px-3 py-2 text-sm text-foreground-muted transition-colors hover:text-foreground"
     >
+      {frame === "mono" && (
+        <span aria-hidden className="h-1.5 w-1.5 shrink-0 bg-foreground" />
+      )}
       {children}
     </a>
   );
@@ -278,12 +284,12 @@ function DesktopDropdown({
         if (!e.currentTarget.contains(e.relatedTarget as Node)) setOpen(false);
       }}
     >
-      <div className="neon-frame flex items-center">
+      <div className="flex items-center">
         {href ? (
           <Link
             href={href}
             onClick={() => setOpen(false)}
-            className="link-ghost gap-1 pl-3 text-sm"
+            className="link-ghost gap-1 pl-3 text-sm text-foreground-muted transition-colors hover:text-foreground"
             aria-haspopup="menu"
           >
             {label}

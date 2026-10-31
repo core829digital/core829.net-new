@@ -213,25 +213,6 @@
         "mockup": "3d"
       },
       {
-        "id": "winex",
-        "name": "Winex",
-        "domain": "winex.ro",
-        "sector": "Produção de caixilharia em PVC e alumínio",
-        "what": "Serviços digitais dedicados ao mundo da caixilharia, distintos da venda física de janelas — incluindo produtos verticais como um configurador/calculadora de orçamentos e um CRM vertical.",
-        "stack": "Webapp, CRM vertical",
-        "details": [
-          "Configurador e calculadora de orçamentos de caixilharia",
-          "CRM vertical para caixilhistas",
-          "Produtos digitais distintos da venda física"
-        ],
-        "tags": [
-          "Automatizações B2B",
-          "Webapp",
-          "CRM"
-        ],
-        "mockup": "crm"
-      },
-      {
         "id": "revive",
         "name": "Revive App",
         "domain": "getrevive.app",

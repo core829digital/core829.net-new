@@ -192,6 +192,68 @@
     "stackLabel": "Stack",
     "projects": [
       {
+        "id": "onespec",
+        "name": "OneSpec",
+        "domain": "onespec.eu",
+        "sector": "Produs digital CORE829 — platformă de oferte pentru montatori de tâmplărie",
+        "what": "Montatorii de tâmplărie pierd ore întregi cu oferte care nu devin comenzi: măsurători, calcule și apeluri pentru clienți care vor doar un preț de comparat. Am transformat această rutină într-un produs: un configurator care trăiește pe site-ul montatorului, calculează prețul din propria listă de prețuri și îi trimite doar cereri complete și calificate.",
+        "stack": "Next.js 16, Convex, next-intl, Stripe",
+        "details": [
+          "Widget încorporabil cu o singură linie de cod iframe, cu culorile și logo-ul clientului",
+          "Motor de prețuri pe lista de prețuri a montatorului, cu reguli de TVA pentru 6 piețe (IT, FR, BE, NL, DE, LU)",
+          "Tablou de bord al cererilor cu client, contacte, valoare și stare, în timp real",
+          "Platformă pentru oferte B2B cu desen tehnic și PDF, clienți și șantiere",
+          "6 limbi: IT, EN, FR, DE, NL, RO"
+        ],
+        "tags": [
+          "WebApp",
+          "Automatizări B2B",
+          "WebDesign"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "winex",
+        "name": "Winex",
+        "domain": "winex.ro",
+        "sector": "Ferestre și uși din PVC, aluminiu și lemn — Roman, România",
+        "what": "O companie de tâmplărie care vrea să ajungă pe mai multe piețe europene are nevoie de un site care explică materialele și performanțele la fel de clar ca un showroom. Am construit un site în șapte limbi care se deschide ca o fereastră la derulare, compară PVC-ul, aluminiul și lemnul și încorporează configuratorul OneSpec, astfel încât vizitatorul să-și configureze ferestrele fără să părăsească pagina.",
+        "stack": "Next.js 16, Convex, Tailwind 4, next-intl, Resend",
+        "details": [
+          "Deschidere controlată de derulare: fereastra se deschide și dezvăluie site-ul",
+          "7 limbi (EN, RO, IT, FR, PL, NL, DE) cu slug-uri traduse și hreflang regional",
+          "Configurator OneSpec încorporat, cu redimensionare automată și verificarea originii",
+          "Zonă de administrare: statistici în timp real, mesaje, newsletter și campanii de e-mail",
+          "Securitate din proiectare: CSP, HSTS, validare Zod, honeypot și rate limiting"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp",
+          "Automatizări B2B"
+        ],
+        "mockup": "crm"
+      },
+      {
+        "id": "andromedia",
+        "name": "Andromedia Web",
+        "domain": "andromediaweb-it.vercel.app",
+        "sector": "Agenție de marketing creativ — Foiano della Chiana (AR), Italia",
+        "what": "O agenție creativă are nevoie de un site la fel de ascuțit ca brandurile pe care le construiește. Am reinventat Andromedia Web într-o experiență monocromă, la nivel SaaS — grilă blueprint, micro-etichete monospace, hero animat — și am oferit echipei un backoffice pentru a publica articole și lucrări din portofoliu și a citi mesajele primite, fără să atingă codul.",
+        "stack": "Next.js 16, Tailwind 4, Convex, Motion, Lenis",
+        "details": [
+          "Design system alb-negru: Unbounded, Space Grotesk și JetBrains Mono",
+          "Hero animat cu reveal-uri mascate și marquee cu logo-urile partenerilor",
+          "Set de pictograme personalizat, fără bibliotecă de pictograme",
+          "Temă luminoasă și întunecată",
+          "Backoffice pentru blog, portofoliu și mesaje de contact (Convex)"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp"
+        ],
+        "mockup": "dashboard"
+      },
+      {
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",
@@ -211,25 +273,6 @@
           "3D/Motion"
         ],
         "mockup": "3d"
-      },
-      {
-        "id": "winex",
-        "name": "Winex",
-        "domain": "winex.ro",
-        "sector": "Producție tâmplărie din PVC și aluminiu",
-        "what": "Servicii digitale dedicate lumii producătorilor de tâmplărie, distincte de vânzarea fizică a ferestrelor — inclusiv un configurator/calculator de oferte și un CRM vertical.",
-        "stack": "WebApp, CRM vertical",
-        "details": [
-          "Configurator și calculator de oferte pentru tâmplărie",
-          "CRM vertical pentru producători de tâmplărie",
-          "Produse digitale distincte de vânzarea fizică"
-        ],
-        "tags": [
-          "Automatizări B2B",
-          "WebApp",
-          "CRM"
-        ],
-        "mockup": "crm"
       },
       {
         "id": "revive",

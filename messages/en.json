@@ -192,6 +192,68 @@
     "stackLabel": "Stack",
     "projects": [
       {
+        "id": "onespec",
+        "name": "OneSpec",
+        "domain": "onespec.eu",
+        "sector": "CORE829 digital product — quoting platform for window and door fitters",
+        "what": "Window fitters lose hours on quotes that never become orders: measurements, calculations and calls for customers who only want a price to compare. We turned that routine into a product: a configurator that lives on the fitter's own website, prices from their own price list and sends only complete, qualified requests.",
+        "stack": "Next.js 16, Convex, next-intl, Stripe",
+        "details": [
+          "Embeddable widget with one line of iframe code, in the customer's own colours and logo",
+          "Pricing engine on the fitter's price list, with VAT rules for 6 markets (IT, FR, BE, NL, DE, LU)",
+          "Requests dashboard with customer, contacts, value and status, updated in real time",
+          "Platform for B2B quotes with technical drawing and PDF, customers and job sites",
+          "6 languages: IT, EN, FR, DE, NL, RO"
+        ],
+        "tags": [
+          "Web App",
+          "B2B Automations",
+          "Web Design"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "winex",
+        "name": "Winex",
+        "domain": "winex.ro",
+        "sector": "PVC, aluminium and wood windows and doors — Roman, Romania",
+        "what": "A window company that wants to reach several European markets needs a website that explains materials and performance as clearly as a showroom. We built a seven-language site that opens like a window as you scroll, compares PVC, aluminium and wood, and embeds the OneSpec configurator so visitors can configure their own windows without leaving the page.",
+        "stack": "Next.js 16, Convex, Tailwind 4, next-intl, Resend",
+        "details": [
+          "Scroll-driven opening: the window opens to reveal the site",
+          "7 languages (EN, RO, IT, FR, PL, NL, DE) with translated URL slugs and regional hreflang",
+          "OneSpec configurator embedded, with auto-resize and origin check",
+          "Admin area: real-time analytics, messages, newsletter and email campaigns",
+          "Security by design: CSP, HSTS, Zod validation, honeypot and rate limiting"
+        ],
+        "tags": [
+          "Web Design",
+          "Web App",
+          "B2B Automations"
+        ],
+        "mockup": "crm"
+      },
+      {
+        "id": "andromedia",
+        "name": "Andromedia Web",
+        "domain": "andromediaweb-it.vercel.app",
+        "sector": "Creative marketing agency — Foiano della Chiana (AR), Italy",
+        "what": "A creative agency needs a website as sharp as the brands it builds. We reimagined Andromedia Web as a monochrome, SaaS-grade experience — blueprint grid, monospace micro-labels, animated hero — and gave the team a backoffice to publish articles and portfolio work and read incoming messages without touching code.",
+        "stack": "Next.js 16, Tailwind 4, Convex, Motion, Lenis",
+        "details": [
+          "Black-and-white design system: Unbounded, Space Grotesk and JetBrains Mono",
+          "Animated hero with masked reveals and a partner logo marquee",
+          "Custom icon set, no icon library",
+          "Light and dark theme",
+          "Backoffice for blog, portfolio and contact messages (Convex)"
+        ],
+        "tags": [
+          "Web Design",
+          "Web App"
+        ],
+        "mockup": "dashboard"
+      },
+      {
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",
@@ -211,25 +273,6 @@
           "3D/Motion"
         ],
         "mockup": "3d"
-      },
-      {
-        "id": "winex",
-        "name": "Winex",
-        "domain": "winex.ro",
-        "sector": "PVC and aluminum window frame production",
-        "what": "Digital services dedicated to the window installer world, distinct from the physical sale of frames — including vertical products like a frame quote configurator and a vertical CRM.",
-        "stack": "Web App, Vertical CRM",
-        "details": [
-          "Frame quote configurator and calculator",
-          "Vertical CRM for window installers",
-          "Digital products distinct from physical sales"
-        ],
-        "tags": [
-          "B2B Automations",
-          "Web App",
-          "CRM"
-        ],
-        "mockup": "crm"
       },
       {
         "id": "revive",

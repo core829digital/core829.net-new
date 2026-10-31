@@ -192,6 +192,68 @@
     "stackLabel": "Stack",
     "projects": [
       {
+        "id": "onespec",
+        "name": "OneSpec",
+        "domain": "onespec.eu",
+        "sector": "Prodotto digitale CORE829 — piattaforma di preventivi per serramentisti",
+        "what": "Chi installa serramenti perde ore su preventivi che non diventano ordini: misure, calcoli e telefonate per clienti che vogliono solo un prezzo da confrontare. Abbiamo trasformato quella routine in un prodotto: un configuratore che vive sul sito del serramentista, calcola il prezzo dal suo listino e gli invia solo richieste complete e qualificate.",
+        "stack": "Next.js 16, Convex, next-intl, Stripe",
+        "details": [
+          "Widget incorporabile con una riga di codice iFrame, con i colori e il logo del cliente",
+          "Motore prezzi sul listino del serramentista, con regole IVA per 6 mercati (IT, FR, BE, NL, DE, LU)",
+          "Dashboard richieste con cliente, contatti, valore e stato, in tempo reale",
+          "Piattaforma per preventivi B2B con disegno tecnico e PDF, clienti e cantieri",
+          "6 lingue: IT, EN, FR, DE, NL, RO"
+        ],
+        "tags": [
+          "WebApp",
+          "Automazioni B2B",
+          "WebDesign"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "winex",
+        "name": "Winex",
+        "domain": "winex.ro",
+        "sector": "Serramenti in PVC, alluminio e legno — Roman, Romania",
+        "what": "Un'azienda di serramenti che vuole raggiungere più mercati europei ha bisogno di un sito che spieghi materiali e prestazioni con la chiarezza di uno showroom. Abbiamo costruito un sito in sette lingue che si apre come una finestra con lo scroll, confronta PVC, alluminio e legno e incorpora il configuratore OneSpec, così il visitatore configura i suoi infissi senza lasciare la pagina.",
+        "stack": "Next.js 16, Convex, Tailwind 4, next-intl, Resend",
+        "details": [
+          "Apertura guidata dallo scroll: la finestra si apre e svela il sito",
+          "7 lingue (EN, RO, IT, FR, PL, NL, DE) con slug tradotti e hreflang regionali",
+          "Configuratore OneSpec incorporato, con ridimensionamento automatico e controllo dell'origine",
+          "Area admin: statistiche in tempo reale, messaggi, newsletter e campagne email",
+          "Sicurezza by design: CSP, HSTS, validazione Zod, honeypot e rate limiting"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp",
+          "Automazioni B2B"
+        ],
+        "mockup": "crm"
+      },
+      {
+        "id": "andromedia",
+        "name": "Andromedia Web",
+        "domain": "andromediaweb-it.vercel.app",
+        "sector": "Agenzia di marketing creativo — Foiano della Chiana (AR), Italia",
+        "what": "Un'agenzia creativa ha bisogno di un sito affilato quanto i brand che costruisce. Abbiamo reinventato Andromedia Web in chiave monocromatica, a livello SaaS — griglia blueprint, micro-etichette monospace, hero animato — e dato al team un backoffice per pubblicare articoli e lavori di portfolio e leggere i messaggi senza toccare codice.",
+        "stack": "Next.js 16, Tailwind 4, Convex, Motion, Lenis",
+        "details": [
+          "Design system bianco e nero: Unbounded, Space Grotesk e JetBrains Mono",
+          "Hero animato con reveal a maschera e marquee dei loghi partner",
+          "Set di icone personalizzato, nessuna libreria di icone",
+          "Tema chiaro e scuro",
+          "Backoffice per blog, portfolio e messaggi di contatto (Convex)"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp"
+        ],
+        "mockup": "dashboard"
+      },
+      {
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",
@@ -211,25 +273,6 @@
           "3D/Motion"
         ],
         "mockup": "3d"
-      },
-      {
-        "id": "winex",
-        "name": "Winex",
-        "domain": "winex.ro",
-        "sector": "Produzione infissi (serramenti) in PVC e alluminio",
-        "what": "Servizi digitali dedicati al mondo dei serramentisti, distinti dalla vendita fisica degli infissi — inclusi un configuratore/calcolatore preventivi e un CRM verticale.",
-        "stack": "WebApp, CRM verticale",
-        "details": [
-          "Configuratore e calcolatore preventivi infissi",
-          "CRM verticale per serramentisti",
-          "Prodotti digitali distinti dalla vendita fisica"
-        ],
-        "tags": [
-          "Automazioni B2B",
-          "WebApp",
-          "CRM"
-        ],
-        "mockup": "crm"
       },
       {
         "id": "revive",

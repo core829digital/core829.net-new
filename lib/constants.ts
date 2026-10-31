@@ -49,31 +49,62 @@ export interface ClientMeta {
   key: string;
   anchorId: string;
   url: string;
+  /** Prodotto proprio di CORE829 (non un cliente): resta nei case study ma non conta come cliente. */
+  ownProduct?: boolean;
 }
 
 export const CLIENTS_META: ClientMeta[] = [
+  {
+    key: "onespec",
+    anchorId: "cliente-onespec",
+    url: "https://www.onespec.eu/",
+    ownProduct: true,
+  },
+  { key: "winex", anchorId: "cliente-winex", url: "https://www.winex.ro/it" },
+  {
+    key: "andromedia",
+    anchorId: "cliente-andromedia",
+    url: "https://andromediaweb-it.vercel.app/",
+  },
   {
     key: "doctor-haus",
     anchorId: "cliente-doctor-haus",
     url: "https://doctor-haus.com",
   },
-  { key: "winex", anchorId: "cliente-winex", url: "https://winex.ro" },
   { key: "revive", anchorId: "cliente-revive", url: "https://getrevive.app" },
   { key: "bidwyz", anchorId: "cliente-bidwyz", url: "https://bidwyz.com" },
 ];
 
+/** Solo i clienti reali (esclude i prodotti propri): stats e "Con chi abbiamo lavorato". */
+export const REAL_CLIENTS_META = CLIENTS_META.filter((c) => !c.ownProduct);
+
 export const clientAnchorIds = CLIENTS_META.map((c) => ({ id: c.anchorId }));
 
 /**
- * Screenshot reali dei client (chiave = dominio, come nel file in /public/core829-client-ss).
- * I clienti senza screenshot cadono sul mockup astratto.
- * Convertiti in WebP per prestazioni (q80).
+ * Screenshot reali dei client (chiave = dominio mostrato nel case study, come
+ * nel file in /public/core829-client-ss). Ogni voce è una lista: una sola
+ * immagine = cornice statica; più immagini = carousel in loop.
+ * Formato 1920×960 (2:1), WebP q82. I clienti senza screenshot cadono sul
+ * mockup astratto.
  */
-export const CLIENT_SCREENSHOTS: Record<string, string> = {
-  "doctor-haus.com": "/core829-client-ss/doctor-haus.com.webp",
-  "winex.ro": "/core829-client-ss/winex.ro.webp",
-  "getrevive.app": "/core829-client-ss/getrevive.app.webp",
-  "bidwyz.com": "/core829-client-ss/bidwyz.com.webp",
+export const CLIENT_SCREENSHOTS: Record<string, string[]> = {
+  "onespec.eu": [
+    "/core829-client-ss/onespec.eu.webp",
+    "/core829-client-ss/onespec.eu-2.webp",
+    "/core829-client-ss/onespec.eu-3.webp",
+    "/core829-client-ss/onespec.eu-4.webp",
+  ],
+  "winex.ro": [
+    "/core829-client-ss/winex.ro.webp",
+    "/core829-client-ss/winex.ro-2.webp",
+    "/core829-client-ss/winex.ro-3.webp",
+  ],
+  "andromediaweb-it.vercel.app": [
+    "/core829-client-ss/andromediaweb-it.vercel.app.webp",
+  ],
+  "doctor-haus.com": ["/core829-client-ss/doctor-haus.com.webp"],
+  "getrevive.app": ["/core829-client-ss/getrevive.app.webp"],
+  "bidwyz.com": ["/core829-client-ss/bidwyz.com.webp"],
 };
 
 /**
@@ -82,6 +113,8 @@ export const CLIENT_SCREENSHOTS: Record<string, string> = {
  * Convertiti in WebP per prestazioni.
  */
 export const CLIENT_LOGOS: Record<string, string> = {
+  onespec: "/logos/onespec.webp",
+  andromedia: "/logos/andromedia.webp",
   "doctor-haus": "/logos/doctor-haus.webp",
   winex: "/logos/winex.webp",
   revive: "/logos/revive.webp",
@@ -95,6 +128,8 @@ export const CLIENT_LOGOS: Record<string, string> = {
  * (doctor-haus, bidwyz) restano in scala di grigi.
  */
 export const CLIENT_LOGO_FILTER: Record<string, string> = {
+  onespec: "grayscale(1)",
+  andromedia: "grayscale(1)",
   "doctor-haus": "grayscale(1)",
   winex: "invert(1) grayscale(1)",
   revive: "invert(1) grayscale(1)",

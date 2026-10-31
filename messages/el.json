@@ -303,25 +303,6 @@
         "mockup": "3d"
       },
       {
-        "id": "winex",
-        "name": "Winex",
-        "domain": "winex.ro",
-        "sector": "PVC and aluminum window frame production",
-        "what": "Digital services dedicated to the window installer world, distinct from the physical sale of frames — including vertical products like a frame quote configurator and a vertical CRM.",
-        "stack": "Web App, Vertical CRM",
-        "details": [
-          "Frame quote configurator and calculator",
-          "Vertical CRM for window installers",
-          "Digital products distinct from physical sales"
-        ],
-        "tags": [
-          "B2B Automations",
-          "Web App",
-          "CRM"
-        ],
-        "mockup": "crm"
-      },
-      {
         "id": "revive",
         "name": "Revive App",
         "domain": "getrevive.app",

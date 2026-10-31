@@ -44,7 +44,7 @@ export default function CaseStudies() {
 
         <div className="mt-16 space-y-16 lg:space-y-24">
           {projects.map((project, i) => {
-            const meta = CLIENTS_META[i];
+            const meta = CLIENTS_META.find((c) => c.key === project.id);
             const reversed = i % 2 === 1;
             const screenshot = CLIENT_SCREENSHOTS[project.domain];
             return (
@@ -75,7 +75,7 @@ export default function CaseStudies() {
                   >
                     {screenshot ? (
                       <ClientScreenshot
-                        src={screenshot}
+                        srcs={screenshot}
                         alt={`${project.name} — ${project.domain}`}
                         domain={project.domain}
                       />

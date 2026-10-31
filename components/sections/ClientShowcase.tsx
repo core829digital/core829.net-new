@@ -8,6 +8,7 @@ import { useGoToSection } from "@/lib/useGoToSection";
 import { cn } from "@/lib/utils";
 
 interface Project {
+  id: string;
   name: string;
   domain: string;
   sector: string;
@@ -37,12 +38,12 @@ export default function ClientShowcase() {
     .projects;
 
   const items = projects
-    .map((p, i) => ({
+    .map((p) => ({
       name: p.name,
       domain: p.domain,
       sector: p.sector,
-      src: CLIENT_SCREENSHOTS[p.domain],
-      anchorId: CLIENTS_META[i]?.anchorId,
+      src: CLIENT_SCREENSHOTS[p.domain]?.[0],
+      anchorId: CLIENTS_META.find((c) => c.key === p.id)?.anchorId,
     }))
     .filter((x) => Boolean(x.src)) as ShowcaseItem[];
 

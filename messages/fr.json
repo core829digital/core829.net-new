@@ -192,6 +192,68 @@
     "stackLabel": "Stack",
     "projects": [
       {
+        "id": "onespec",
+        "name": "OneSpec",
+        "domain": "onespec.eu",
+        "sector": "Produit numérique CORE829 — plateforme de devis pour poseurs de menuiseries",
+        "what": "Les poseurs de menuiseries perdent des heures sur des devis qui ne deviennent jamais des commandes : mesures, calculs et appels pour des clients qui veulent seulement un prix à comparer. Nous avons transformé cette routine en produit : un configurateur qui vit sur le site du poseur, calcule le prix à partir de son propre tarif et ne lui envoie que des demandes complètes et qualifiées.",
+        "stack": "Next.js 16, Convex, next-intl, Stripe",
+        "details": [
+          "Widget intégrable avec une seule ligne de code iframe, aux couleurs et au logo du client",
+          "Moteur de prix basé sur le tarif du poseur, avec les règles de TVA de 6 marchés (IT, FR, BE, NL, DE, LU)",
+          "Tableau de bord des demandes avec client, contacts, valeur et statut, en temps réel",
+          "Plateforme de devis B2B avec plan technique et PDF, clients et chantiers",
+          "6 langues : IT, EN, FR, DE, NL, RO"
+        ],
+        "tags": [
+          "WebApp",
+          "Automatisations B2B",
+          "WebDesign"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "winex",
+        "name": "Winex",
+        "domain": "winex.ro",
+        "sector": "Fenêtres et portes en PVC, aluminium et bois — Roman, Roumanie",
+        "what": "Une entreprise de menuiseries qui veut toucher plusieurs marchés européens a besoin d'un site qui explique matériaux et performances aussi clairement qu'un showroom. Nous avons construit un site en sept langues qui s'ouvre comme une fenêtre au défilement, compare PVC, aluminium et bois et intègre le configurateur OneSpec, pour que le visiteur configure ses fenêtres sans quitter la page.",
+        "stack": "Next.js 16, Convex, Tailwind 4, next-intl, Resend",
+        "details": [
+          "Ouverture pilotée par le défilement : la fenêtre s'ouvre et dévoile le site",
+          "7 langues (EN, RO, IT, FR, PL, NL, DE) avec slugs d'URL traduits et hreflang régionaux",
+          "Configurateur OneSpec intégré, avec redimensionnement automatique et contrôle de l'origine",
+          "Espace admin : statistiques en temps réel, messages, newsletter et campagnes e-mail",
+          "Sécurité dès la conception : CSP, HSTS, validation Zod, honeypot et limitation de débit"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp",
+          "Automatisations B2B"
+        ],
+        "mockup": "crm"
+      },
+      {
+        "id": "andromedia",
+        "name": "Andromedia Web",
+        "domain": "andromediaweb-it.vercel.app",
+        "sector": "Agence de marketing créatif — Foiano della Chiana (AR), Italie",
+        "what": "Une agence créative a besoin d'un site aussi tranchant que les marques qu'elle construit. Nous avons réinventé Andromedia Web en une expérience monochrome, de niveau SaaS — grille blueprint, micro-étiquettes monospace, hero animé — et donné à l'équipe un back-office pour publier articles et réalisations et lire les messages reçus sans toucher au code.",
+        "stack": "Next.js 16, Tailwind 4, Convex, Motion, Lenis",
+        "details": [
+          "Design system noir et blanc : Unbounded, Space Grotesk et JetBrains Mono",
+          "Hero animé avec révélations masquées et défilé de logos partenaires",
+          "Jeu d'icônes sur mesure, sans bibliothèque d'icônes",
+          "Thème clair et sombre",
+          "Back-office pour blog, portfolio et messages de contact (Convex)"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp"
+        ],
+        "mockup": "dashboard"
+      },
+      {
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",
@@ -211,25 +273,6 @@
           "3D/Motion"
         ],
         "mockup": "3d"
-      },
-      {
-        "id": "winex",
-        "name": "Winex",
-        "domain": "winex.ro",
-        "sector": "Production de menuiseries en PVC et aluminium",
-        "what": "Services numériques dédiés au monde des menuisiers, distincts de la vente physique des fenêtres — y compris un configurateur/calculateur de devis et un CRM vertical.",
-        "stack": "WebApp, CRM vertical",
-        "details": [
-          "Configurateur et calculateur de devis menuiseries",
-          "CRM vertical pour menuisiers",
-          "Produits numériques distincts de la vente physique"
-        ],
-        "tags": [
-          "Automatisations B2B",
-          "WebApp",
-          "CRM"
-        ],
-        "mockup": "crm"
       },
       {
         "id": "revive",

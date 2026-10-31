@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
 import ClientShowcase from "@/components/sections/ClientShowcase";
 import { TrustpilotWidget } from "@/components/Trustpilot";
-import { SERVICES_META } from "@/lib/constants";
+import { SERVICES_META, REAL_CLIENTS_META } from "@/lib/constants";
 
 interface Stat {
   value: number;
@@ -26,10 +26,13 @@ export default function Hero() {
   const t = useTranslations("hero");
   const messages = useMessages();
   const m = messages as unknown as { stats: Stat[]; hero: { headline: string[] } };
+  // Prima statistica = clienti seguiti: allineata ai case study dei clienti
+  // reali (i prodotti propri, es. OneSpec, non contano come clienti).
   const projectCount = (
-    messages as unknown as { caseStudies: { projects: unknown[] } }
-  ).caseStudies.projects.length;
-  // Prima statistica = clienti seguiti: sempre allineata ai case study pubblicati.
+    messages as unknown as { caseStudies: { projects: { id: string }[] } }
+  ).caseStudies.projects.filter((p) =>
+    REAL_CLIENTS_META.some((c) => c.key === p.id)
+  ).length;
   const stats = m.stats.map((stat, i) =>
     i === 0 ? { ...stat, value: projectCount } : stat
   );

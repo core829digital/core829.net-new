@@ -192,27 +192,6 @@
     "stackLabel": "Stack",
     "projects": [
       {
-        "id": "iwhome",
-        "name": "IWHome",
-        "domain": "iwhome.app",
-        "sector": "Installatie van kozijnen en ramen (Italië)",
-        "what": "Een compleet B2B/B2C-beheerplatform voor een bedrijf in kozijninstallatie.",
-        "stack": "React, Convex, Clerk",
-        "details": [
-          "5 RBAC-rollen: admin, leverancier, medewerker, klant, basisgebruiker",
-          "Gecentraliseerd transactiemodel op IWHome",
-          "Split-payment-logica met verplicht betaalbewijs",
-          "Automatische PDF-generatie",
-          "9-stappen orderworkflow"
-        ],
-        "tags": [
-          "Webapp",
-          "B2B-automatiseringen",
-          "AI Setup"
-        ],
-        "mockup": "dashboard"
-      },
-      {
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",

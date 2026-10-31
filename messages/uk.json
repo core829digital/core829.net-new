@@ -282,27 +282,6 @@
     "stackLabel": "Stack",
     "projects": [
       {
-        "id": "iwhome",
-        "name": "IWHome",
-        "domain": "iwhome.app",
-        "sector": "Window and door installation (Italy)",
-        "what": "A complete B2B/B2C management platform for a window installation company.",
-        "stack": "React, Convex, Clerk",
-        "details": [
-          "5 RBAC roles: admin, supplier, collaborator, customer, base user",
-          "Centralized transaction model on IWHome",
-          "Split payment logic with mandatory payment proof",
-          "Automatic PDF generation",
-          "9-step order workflow"
-        ],
-        "tags": [
-          "Web App",
-          "B2B Automations",
-          "AI Setup"
-        ],
-        "mockup": "dashboard"
-      },
-      {
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",

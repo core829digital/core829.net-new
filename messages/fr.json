@@ -192,27 +192,6 @@
     "stackLabel": "Stack",
     "projects": [
       {
-        "id": "iwhome",
-        "name": "IWHome",
-        "domain": "iwhome.app",
-        "sector": "Installation de menuiseries et fenêtres (Italie)",
-        "what": "Plateforme complète de gestion B2B/B2C pour une entreprise d'installation de menuiseries.",
-        "stack": "React, Convex, Clerk",
-        "details": [
-          "5 rôles RBAC : admin, fournisseur, collaborateur, client, utilisateur de base",
-          "Modèle de transaction centralisé sur IWHome",
-          "Logique de paiement split avec preuve de paiement obligatoire",
-          "Génération automatique de PDF",
-          "Workflow de commande en 9 étapes"
-        ],
-        "tags": [
-          "WebApp",
-          "Automatisations B2B",
-          "Setup IA"
-        ],
-        "mockup": "dashboard"
-      },
-      {
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",

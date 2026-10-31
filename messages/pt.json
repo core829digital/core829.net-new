@@ -192,27 +192,6 @@
     "stackLabel": "Stack",
     "projects": [
       {
-        "id": "iwhome",
-        "name": "IWHome",
-        "domain": "iwhome.app",
-        "sector": "Instalação de caixilharia e janelas (Itália)",
-        "what": "Uma plataforma completa de gestão B2B/B2C para uma empresa de instalação de caixilharia.",
-        "stack": "React, Convex, Clerk",
-        "details": [
-          "5 funções RBAC: admin, fornecedor, colaborador, cliente, utilizador base",
-          "Modelo de transação centralizado na IWHome",
-          "Lógica de pagamento split com comprovativo de pagamento obrigatório",
-          "Geração automática de PDF",
-          "Workflow de pedido em 9 passos"
-        ],
-        "tags": [
-          "Webapp",
-          "Automatizações B2B",
-          "Setup IA"
-        ],
-        "mockup": "dashboard"
-      },
-      {
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",

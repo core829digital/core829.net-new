@@ -52,7 +52,6 @@ export interface ClientMeta {
 }
 
 export const CLIENTS_META: ClientMeta[] = [
-  { key: "iwhome", anchorId: "cliente-iwhome", url: "https://iwhome.app" },
   {
     key: "doctor-haus",
     anchorId: "cliente-doctor-haus",
@@ -67,11 +66,10 @@ export const clientAnchorIds = CLIENTS_META.map((c) => ({ id: c.anchorId }));
 
 /**
  * Screenshot reali dei client (chiave = dominio, come nel file in /public/core829-client-ss).
- * I clienti senza screenshot (es. iwhome) cadono sul mockup astratto.
+ * I clienti senza screenshot cadono sul mockup astratto.
  * Convertiti in WebP per prestazioni (q80).
  */
 export const CLIENT_SCREENSHOTS: Record<string, string> = {
-  "iwhome.app": "/core829-client-ss/iwhome.app.webp",
   "doctor-haus.com": "/core829-client-ss/doctor-haus.com.webp",
   "winex.ro": "/core829-client-ss/winex.ro.webp",
   "getrevive.app": "/core829-client-ss/getrevive.app.webp",
@@ -84,7 +82,6 @@ export const CLIENT_SCREENSHOTS: Record<string, string> = {
  * Convertiti in WebP per prestazioni.
  */
 export const CLIENT_LOGOS: Record<string, string> = {
-  iwhome: "/logos/iwhome.webp",
   "doctor-haus": "/logos/doctor-haus.webp",
   winex: "/logos/winex.webp",
   revive: "/logos/revive.webp",
@@ -94,11 +91,10 @@ export const CLIENT_LOGOS: Record<string, string> = {
 /**
  * Filtro CSS per rendere ogni logo visibile come marcatura monocroma scura,
  * indipendentemente dal colore dell'originale. I loghi chiari/bianchi
- * (winex, iwhome, revive) vengono invertiti su scuro; quelli già scuri
+ * (winex, revive) vengono invertiti su scuro; quelli già scuri
  * (doctor-haus, bidwyz) restano in scala di grigi.
  */
 export const CLIENT_LOGO_FILTER: Record<string, string> = {
-  iwhome: "invert(1) grayscale(1)",
   "doctor-haus": "grayscale(1)",
   winex: "invert(1) grayscale(1)",
   revive: "invert(1) grayscale(1)",

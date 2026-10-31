@@ -1,5 +1,5 @@
 /**
- * Mockup astratto di una dashboard webapp (stile IWHome).
+ * Mockup astratto di una dashboard webapp (generico).
  * Decorativo: nessun dato inventato, solo forme geometriche.
  */
 export default function DashboardMockup() {
@@ -11,7 +11,7 @@ export default function DashboardMockup() {
         <span className="h-2.5 w-2.5 rounded-full bg-border" />
         <span className="h-2.5 w-2.5 rounded-full bg-accent" />
         <span className="ml-4 flex-1 rounded-full bg-surface px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-foreground-muted">
-          app.iwhome.app
+          app.example.com
         </span>
       </div>
 

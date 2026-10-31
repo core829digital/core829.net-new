@@ -192,27 +192,6 @@
     "stackLabel": "Stack",
     "projects": [
       {
-        "id": "iwhome",
-        "name": "IWHome",
-        "domain": "iwhome.app",
-        "sector": "Instalare tâmplărie și ferestre (Italia)",
-        "what": "Platformă completă de gestionare B2B/B2C pentru o companie de instalare tâmplărie.",
-        "stack": "React, Convex, Clerk",
-        "details": [
-          "5 roluri RBAC: admin, furnizor, colaborator, client, utilizator de bază",
-          "Model de tranzacție centralizat pe IWHome",
-          "Logică de plată split cu dovadă de plată obligatorie",
-          "Generare automată de PDF",
-          "Workflow comandă în 9 pași"
-        ],
-        "tags": [
-          "WebApp",
-          "Automatizări B2B",
-          "Setup AI"
-        ],
-        "mockup": "dashboard"
-      },
-      {
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",

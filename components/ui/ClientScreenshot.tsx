@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useImageLoop } from "@/lib/useImageLoop";
 import { cn } from "@/lib/utils";
 
 interface ClientScreenshotProps {
@@ -29,22 +30,8 @@ export default function ClientScreenshot({
   intervalMs = 4500,
 }: ClientScreenshotProps) {
   const multi = srcs.length > 1;
-  const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
-  const [reduced, setReduced] = useState(false);
-
-  useEffect(() => {
-    setReduced(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
-  }, []);
-
-  useEffect(() => {
-    if (!multi || paused || reduced) return;
-    const id = window.setInterval(
-      () => setActive((i) => (i + 1) % srcs.length),
-      intervalMs
-    );
-    return () => window.clearInterval(id);
-  }, [multi, paused, reduced, srcs.length, intervalMs]);
+  const [active, setActive] = useImageLoop(srcs, intervalMs, paused);
 
   return (
     <div
@@ -82,7 +69,7 @@ export default function ClientScreenshot({
               src={src}
               alt={i === active ? alt : ""}
               aria-hidden={i !== active}
-              loading="lazy"
+              loading={i === 0 ? "eager" : "lazy"}
               decoding="async"
               className={cn(
                 "absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-700 motion-reduce:transition-none",

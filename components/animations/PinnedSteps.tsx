@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -20,6 +20,12 @@ const STEP_COUNT = 4;
 export default function PinnedSteps() {
   const t = useTranslations("process");
   const wrapRef = useRef<HTMLDivElement>(null);
+  // Con prefers-reduced-motion niente pin/scrub: si mostra la lista statica
+  // (altrimenti gli step restano a opacity 0 e il contenuto è invisibile).
+  const [reduced, setReduced] = useState(false);
+  useEffect(() => {
+    setReduced(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  }, []);
   const stepsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   const steps = Array.from({ length: STEP_COUNT }, (_, i) => ({
@@ -31,9 +37,9 @@ export default function PinnedSteps() {
     const wrap = wrapRef.current;
     if (!wrap) return;
 
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const mobile = window.matchMedia("(max-width: 1023px)").matches;
-    if (reduced || mobile) return;
+    if (reduceMotion || mobile) return;
 
     const stepEls = stepsRef.current.filter(Boolean) as HTMLDivElement[];
     gsap.set(stepEls, { opacity: 0, y: 24 });
@@ -67,7 +73,11 @@ export default function PinnedSteps() {
   return (
     <>
       {/* Desktop — sticky/scrub */}
-      <div ref={wrapRef} className="relative hidden lg:block" style={{ height: "400vh" }}>
+      <div
+        ref={wrapRef}
+        className={reduced ? "hidden" : "relative hidden lg:block"}
+        style={{ height: "400vh" }}
+      >
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
           <div className="container-core829 grid w-full grid-cols-2 items-center gap-20">
             <div>
@@ -124,7 +134,7 @@ export default function PinnedSteps() {
       </div>
 
       {/* Mobile — lista verticale */}
-      <div className="lg:hidden">
+      <div className={reduced ? "" : "lg:hidden"}>
         <div className="container-core829 py-24">
           <RevealOnScroll className="space-y-14">
             <div>

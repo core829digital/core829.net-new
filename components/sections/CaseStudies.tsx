@@ -3,11 +3,13 @@
 import { useTranslations, useMessages } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import SectionHeading from "@/components/ui/SectionHeading";
 import ProjectMockup from "@/components/ui/ProjectMockup";
 import ClientScreenshot from "@/components/ui/ClientScreenshot";
 import Badge from "@/components/ui/Badge";
 import { CLIENTS_META, CLIENT_SCREENSHOTS, CLIENT_LOGOS, CLIENT_LOGO_FILTER } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import Parallax from "@/components/animations/Parallax";
 
 interface Project {
   id: string;
@@ -34,13 +36,11 @@ export default function CaseStudies() {
   return (
     <section id="clienti" className="bg-background">
       <div className="container-core829 py-24 lg:py-32">
-        <RevealOnScroll>
-          <div className="max-w-2xl">
-            <p className="kicker">{t("kicker")}</p>
-            <h2 className="mt-4 text-section-title">{t("title")}</h2>
-            <p className="mt-6 text-lg text-foreground-muted">{t("subtitle")}</p>
-          </div>
-        </RevealOnScroll>
+        <SectionHeading
+          kicker={t("kicker")}
+          title={t("title")}
+          subtitle={t("subtitle")}
+        />
 
         <div className="mt-16 space-y-16 lg:space-y-24">
           {projects.map((project, i) => {
@@ -51,14 +51,16 @@ export default function CaseStudies() {
               <article
                 key={project.id ?? i}
                 id={meta?.anchorId}
-                className="grid grid-cols-1 items-center gap-10 border-t border-border pt-16 lg:grid-cols-2 lg:gap-16 lg:pt-24"
+                className="grid grid-cols-1 items-center gap-10 border-t border-border pt-16 lg:grid-cols-2 lg:gap-16 lg:pt-24 xl:gap-24"
               >
                 <RevealOnScroll
+                  variant={reversed ? "right" : "left"}
                   className={cn(
                     "relative",
                     reversed && "lg:order-2"
                   )}
                 >
+                  <Parallax speed={0.05} className="relative">
                   <div
                     aria-hidden
                     className={cn(
@@ -83,9 +85,11 @@ export default function CaseStudies() {
                       <ProjectMockup variant={project.mockup} />
                     )}
                   </a>
+                  </Parallax>
                 </RevealOnScroll>
 
                 <RevealOnScroll
+                  stagger={0.06}
                   className={cn(reversed && "lg:order-1")}
                 >
                   <p className="mb-6 font-mono text-xs tracking-[0.25em] text-accent">

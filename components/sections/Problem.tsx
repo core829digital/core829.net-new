@@ -2,6 +2,7 @@
 
 import { useTranslations, useMessages } from "next-intl";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import SectionHeading from "@/components/ui/SectionHeading";
 
 interface ProblemItem {
   title: string;
@@ -19,30 +20,28 @@ export default function Problem() {
   return (
     <section className="bg-background">
       <div className="container-core829 py-24 lg:py-32">
-        <RevealOnScroll>
-          <div className="max-w-2xl">
-            <p className="kicker">{t("kicker")}</p>
-            <h2 className="mt-4 text-section-title">{t("title")}</h2>
-          </div>
+        <SectionHeading kicker={t("kicker")} title={t("title")} />
 
-          <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden border border-border bg-border md:grid-cols-3">
-            {items.map((item, i) => (
-              <div
-                key={i}
-                className="group bg-background p-8 transition-colors duration-300 hover:bg-surface lg:p-10"
-              >
-                <span className="font-mono text-sm tracking-widest text-accent">
-                  0{i + 1}
-                </span>
-                <h3 className="mt-6 text-xl font-semibold tracking-tight">
-                  {item.title}
-                </h3>
-                <p className="mt-4 leading-relaxed text-foreground-muted">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
-          </div>
+        <RevealOnScroll
+          stagger={0.12}
+          className="mt-14 grid grid-cols-1 gap-px overflow-hidden border border-border bg-border md:grid-cols-3 lg:mt-16"
+        >
+          {items.map((item, i) => (
+            <div
+              key={i}
+              className="group bg-background p-8 transition-colors duration-500 hover:bg-surface lg:p-10 xl:p-12"
+            >
+              <span className="font-mono text-sm tracking-widest text-accent">
+                0{i + 1}
+              </span>
+              <h3 className="mt-6 text-xl tracking-tight transition-transform duration-500 ease-out-expo group-hover:translate-x-1">
+                {item.title}
+              </h3>
+              <p className="mt-4 leading-relaxed text-foreground-muted">
+                {item.desc}
+              </p>
+            </div>
+          ))}
         </RevealOnScroll>
       </div>
     </section>

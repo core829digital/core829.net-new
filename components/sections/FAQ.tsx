@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations, useMessages } from "next-intl";
 import AccordionItem from "@/components/ui/AccordionItem";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import RevealWords from "@/components/animations/RevealWords";
 
 interface FaqItem {
   q: string;
@@ -22,12 +23,15 @@ export default function FAQ() {
   return (
     <section id="faq" className="bg-surface">
       <div className="container-core829 grid grid-cols-1 gap-12 py-24 lg:grid-cols-12 lg:gap-16 lg:py-32">
-        <RevealOnScroll className="lg:col-span-4">
+        <div className="lg:col-span-4">
           <div className="lg:sticky lg:top-28">
-            <p className="kicker">{t("kicker")}</p>
-            <h2 className="mt-4 text-section-title">{t("title")}</h2>
+            <p className="kicker flex items-center gap-3">
+              <span aria-hidden className="h-px w-8 bg-accent" />
+              {t("kicker")}
+            </p>
+            <RevealWords text={t("title")} className="mt-5 text-section-title" />
           </div>
-        </RevealOnScroll>
+        </div>
 
         <RevealOnScroll className="lg:col-span-8">
           {items.map((item, i) => (

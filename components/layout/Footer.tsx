@@ -35,7 +35,8 @@ export default function Footer() {
   const waHref = (phone: string) =>
     `https://wa.me/${phone.replace(/[^\d]/g, "")}`;
 
-  const linkCls = "link-ghost text-sm text-foreground-muted transition-colors hover:text-foreground";
+  const linkCls =
+    "link-ghost text-sm text-foreground-muted transition-[color,transform] duration-300 hover:translate-x-1 hover:text-foreground";
   const metaIcon = "mt-0.5 h-3.5 w-3.5 shrink-0 text-accent";
 
   return (

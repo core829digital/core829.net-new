@@ -29,24 +29,9 @@ export default function Navbar() {
     label: tServices(`${i}.title`),
     href: `/servizi/${s.key}`,
   })).filter((s) => s.key !== "server");
-  const [hidden, setHidden] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const goToSection = useGoToSection();
   const router = useRouter();
-
-  useEffect(() => {
-    let lastY = window.scrollY;
-    const onScroll = () => {
-      const y = window.scrollY;
-      setScrolled(y > 24);
-      if (y > 160 && y > lastY) setHidden(true);
-      else setHidden(false);
-      lastY = y;
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     if (menuOpen) {
@@ -79,29 +64,20 @@ export default function Navbar() {
     router.push(href);
   };
 
-  const scrolledShadow = scrolled && !menuOpen;
   const pillCta =
     "h-9 min-h-0 rounded-full px-5 font-mono text-[11px] uppercase tracking-[0.16em]";
 
   return (
     <>
       <header
-        className={cn(
-          "fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-[max(0.75rem,env(safe-area-inset-top))] transition-transform duration-500 ease-out-expo sm:px-6",
-          hidden && !menuOpen && "-translate-y-[140%]"
-        )}
+        className="fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-[max(0.75rem,env(safe-area-inset-top))] sm:px-6"
       >
-        {/* Capsula flottante (da Andromedia Web): contorno pieno, sfondo
-            traslucido su layer proprio, estremi tondi. */}
-        <div
-          className={cn(
-            "relative flex h-12 w-full items-center justify-between gap-1 rounded-full border border-foreground pl-4 pr-1.5 transition-shadow duration-500 xl:w-auto xl:justify-start xl:pl-2",
-            scrolledShadow && "shadow-lift"
-          )}
-        >
+        {/* Capsula flottante sempre visibile: nessun contorno, solo ombra
+            morbida e sfondo traslucido su layer proprio. */}
+        <div className="relative flex h-12 w-full items-center justify-between gap-1 rounded-full pl-4 pr-1.5 shadow-lift xl:w-auto xl:justify-start xl:pl-2">
           <span
             aria-hidden
-            className="absolute inset-0 -z-10 rounded-full bg-background/90 backdrop-blur-md"
+            className="absolute inset-0 -z-10 rounded-full bg-background/95 backdrop-blur-md"
           />
 
           {/* Logo → home */}
@@ -124,7 +100,7 @@ export default function Navbar() {
           {/* Navigazione desktop (≥1280) */}
           <nav className="hidden items-center xl:flex" aria-label="Main">
             {!serverMeta.hidden && (
-              <NavLink href={`/servizi/${serverMeta.key}`} index="00" marker>
+              <NavLink href={`/servizi/${serverMeta.key}`} marker>
                 {tServices(`${serverIndex}.title`)}
               </NavLink>
             )}
@@ -132,13 +108,12 @@ export default function Navbar() {
             <DesktopDropdown
               label={t("services")}
               href="/servizi"
-              index="01"
               items={dropdownServices}
             />
 
-            <NavLink href="/prezzi" index="02">{t("pricing")}</NavLink>
-            <NavLink href="/careers" index="03">{t("careers")}</NavLink>
-            <NavLink href="/contatti" index="04">{t("contact")}</NavLink>
+            <NavLink href="/prezzi">{t("pricing")}</NavLink>
+            <NavLink href="/careers">{t("careers")}</NavLink>
+            <NavLink href="/contatti">{t("contact")}</NavLink>
           </nav>
 
           <div className="flex items-center gap-1">
@@ -248,26 +223,15 @@ export default function Navbar() {
 }
 
 const navItemCls =
-  "group/nav relative flex items-center gap-1.5 whitespace-nowrap px-3 py-2 font-mono text-[10px] uppercase tracking-[0.16em] text-foreground-muted transition-colors duration-300 hover:text-foreground";
-
-function NavUnderline() {
-  return (
-    <span
-      aria-hidden
-      className="absolute inset-x-3 bottom-1 h-px origin-left scale-x-0 bg-accent transition-transform duration-500 ease-out-expo group-hover/nav:scale-x-100"
-    />
-  );
-}
+  "flex items-center gap-1.5 whitespace-nowrap px-3 py-2 font-mono text-[10px] uppercase tracking-[0.16em] text-foreground-muted transition-colors duration-300 hover:text-accent";
 
 function NavLink({
   href,
   children,
-  index,
   marker = false,
 }: {
   href: string;
   children: React.ReactNode;
-  index?: string;
   marker?: boolean;
 }) {
   const goToSection = useGoToSection();
@@ -279,17 +243,10 @@ function NavLink({
   };
   return (
     <a href={href} onClick={handleClick} className={navItemCls}>
-      {marker ? (
+      {marker && (
         <span aria-hidden className="h-1.5 w-1.5 shrink-0 bg-foreground" />
-      ) : (
-        index && (
-          <span aria-hidden className="text-[7px] text-foreground-muted/50">
-            {index}
-          </span>
-        )
       )}
       {children}
-      <NavUnderline />
     </a>
   );
 }
@@ -298,12 +255,10 @@ function DesktopDropdown({
   label,
   items,
   href,
-  index,
 }: {
   label: string;
   items: { key: string; label: string; href: string }[];
   href?: string;
-  index?: string;
 }) {
   const [open, setOpen] = useState(false);
 
@@ -333,13 +288,7 @@ function DesktopDropdown({
             className={cn(navItemCls, "pr-1")}
             aria-haspopup="menu"
           >
-            {index && (
-              <span aria-hidden className="text-[7px] text-foreground-muted/50">
-                {index}
-              </span>
-            )}
             {label}
-            <NavUnderline />
           </Link>
         ) : (
           <button
@@ -350,7 +299,6 @@ function DesktopDropdown({
             aria-expanded={open}
           >
             {label}
-            <NavUnderline />
           </button>
         )}
         <button
@@ -411,7 +359,7 @@ function MobileNav({
 
   return (
     <nav className="flex flex-1 flex-col px-5 sm:px-8">
-      {nav.map((item, idx) => (
+      {nav.map((item) => (
         <div key={item.key} className="border-b border-border">
           {item.children ? (
             <>
@@ -420,14 +368,9 @@ function MobileNav({
                 onClick={() =>
                   setOpenSub(openSub === item.key ? null : item.key)
                 }
-                className="flex w-full items-baseline justify-between gap-4 py-4 text-left font-display text-2xl tracking-tight text-foreground sm:text-3xl"
+                className="flex w-full items-baseline justify-between gap-4 py-4 text-left font-display text-2xl tracking-tight text-foreground transition-colors hover:text-accent sm:text-3xl"
               >
-                <span className="flex items-baseline gap-4">
-                  <span className="font-mono text-[10px] tracking-[0.25em] text-foreground-muted">
-                    {String(idx).padStart(2, "0")}
-                  </span>
-                  {item.label}
-                </span>
+                <span>{item.label}</span>
                 <ChevronDown
                   className={cn(
                     "h-5 w-5 transition-transform duration-200",
@@ -453,7 +396,7 @@ function MobileNav({
                           e.preventDefault();
                           onNavigate(child.href!);
                         }}
-                        className="block border-t border-border py-3.5 pl-9 text-lg text-foreground-muted hover:text-foreground sm:pl-12"
+                        className="block border-t border-border py-3.5 pl-4 text-lg text-foreground-muted transition-colors hover:text-accent"
                       >
                         {child.label}
                       </a>
@@ -469,11 +412,8 @@ function MobileNav({
                 e.preventDefault();
                 onNavigate(item.href!);
               }}
-              className="flex items-baseline gap-4 py-4 font-display text-2xl tracking-tight text-foreground hover:text-accent sm:text-3xl"
+              className="block py-4 font-display text-2xl tracking-tight text-foreground transition-colors hover:text-accent sm:text-3xl"
             >
-              <span className="font-mono text-[10px] tracking-[0.25em] text-foreground-muted">
-                {String(idx).padStart(2, "0")}
-              </span>
               {item.label}
             </a>
           )}

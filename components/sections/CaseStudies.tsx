@@ -42,7 +42,7 @@ export default function CaseStudies() {
           </div>
         </RevealOnScroll>
 
-        <div className="mt-16 space-y-20 lg:space-y-28">
+        <div className="mt-16 space-y-16 lg:space-y-24">
           {projects.map((project, i) => {
             const meta = CLIENTS_META[i];
             const reversed = i % 2 === 1;
@@ -51,7 +51,7 @@ export default function CaseStudies() {
               <article
                 key={project.id ?? i}
                 id={meta?.anchorId}
-                className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16"
+                className="grid grid-cols-1 items-center gap-10 border-t border-border pt-16 lg:grid-cols-2 lg:gap-16 lg:pt-24"
               >
                 <RevealOnScroll
                   className={cn(
@@ -77,6 +77,7 @@ export default function CaseStudies() {
                       <ClientScreenshot
                         src={screenshot}
                         alt={`${project.name} — ${project.domain}`}
+                        domain={project.domain}
                       />
                     ) : (
                       <ProjectMockup variant={project.mockup} />
@@ -87,6 +88,9 @@ export default function CaseStudies() {
                 <RevealOnScroll
                   className={cn(reversed && "lg:order-1")}
                 >
+                  <p className="mb-6 font-mono text-xs tracking-[0.25em] text-accent">
+                    0{i + 1} / 0{projects.length}
+                  </p>
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
                     {meta?.key && CLIENT_LOGOS[meta.key] ? (
                       // eslint-disable-next-line @next/next/no-img-element

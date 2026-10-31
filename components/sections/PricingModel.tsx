@@ -20,7 +20,7 @@ export default function PricingModel() {
     <section id="preventivo" className="bg-background">
       <div className="container-core829 py-24 lg:py-32">
         <RevealOnScroll>
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="max-w-2xl">
             <p className="kicker">{t("kicker")}</p>
             <h2 className="mt-4 text-section-title">{t("title")}</h2>
             <p className="mt-6 text-lg text-foreground-muted">{t("subtitle")}</p>
@@ -54,7 +54,7 @@ export default function PricingModel() {
           ))}
         </RevealOnScroll>
 
-        <RevealOnScroll className="mt-14 text-center">
+        <RevealOnScroll className="mt-14">
           <Button href="mailto:sales@core829.net?subject=Request%20a%20quote" variant="primary">
             {t("cta")}
           </Button>

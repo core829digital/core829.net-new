@@ -8,9 +8,8 @@ import RevealOnScroll from "@/components/animations/RevealOnScroll";
 import Badge from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
-import ClientCarousel from "@/components/sections/ClientCarousel";
+import ClientShowcase from "@/components/sections/ClientShowcase";
 import { TrustpilotWidget } from "@/components/Trustpilot";
-import { SocialLinks } from "@/components/SocialIcons";
 import { SERVICES_META } from "@/lib/constants";
 
 interface Stat {
@@ -27,7 +26,13 @@ export default function Hero() {
   const t = useTranslations("hero");
   const messages = useMessages();
   const m = messages as unknown as { stats: Stat[]; hero: { headline: string[] } };
-  const stats = m.stats;
+  const projectCount = (
+    messages as unknown as { caseStudies: { projects: unknown[] } }
+  ).caseStudies.projects.length;
+  // Prima statistica = clienti seguiti: sempre allineata ai case study pubblicati.
+  const stats = m.stats.map((stat, i) =>
+    i === 0 ? { ...stat, value: projectCount } : stat
+  );
   const headline = m.hero.headline;
   const serverService = SERVICES_META.find((s) => s.key === "server");
 
@@ -68,21 +73,13 @@ export default function Hero() {
             </Button>
           </div>
 
-          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-5">
+          <div className="mt-10">
             <TrustpilotWidget className="min-w-0 max-w-full" />
-            <SocialLinks
-              className="gap-2"
-              iconClassName="h-10 w-10"
-            />
           </div>
         </div>
 
         <div className="relative">
-          <div
-            aria-hidden
-            className="absolute -left-6 -top-6 z-20 h-3 w-3 bg-accent"
-          />
-          <ClientCarousel />
+          <ClientShowcase />
         </div>
       </div>
 

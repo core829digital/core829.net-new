@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { cn } from "@/lib/utils";
 
 /**
  * Headline animata parola-per-parola all'ingresso (non on-scroll).
@@ -12,10 +13,13 @@ export default function SplitWords({
   lines,
   className,
   lineClassName,
+  accentLast = false,
 }: {
   lines: string[];
   className?: string;
   lineClassName?: string;
+  /** Ultima riga nel colore d'accento (rosso). */
+  accentLast?: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -52,7 +56,13 @@ export default function SplitWords({
   return (
     <h1 ref={ref} className={className} style={{ perspective: "800px" }}>
       {lines.map((line, i) => (
-        <span key={i} className={lineClassName ?? "block overflow-hidden pb-1"}>
+        <span
+          key={i}
+          className={cn(
+            lineClassName ?? "block overflow-hidden pb-[0.12em]",
+            accentLast && i === lines.length - 1 && "text-accent"
+          )}
+        >
           {line.split(" ").map((word, j) => (
             <span
               key={j}

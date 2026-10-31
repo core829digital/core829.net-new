@@ -97,11 +97,11 @@ export function SocialLinks({
           aria-label={label}
           title={label}
           className={cn(
-            "flex h-11 w-11 items-center justify-center border border-border text-foreground-muted transition-colors hover:border-accent hover:text-accent",
+            "group/soc relative flex h-11 w-11 items-center justify-center overflow-hidden border border-border text-foreground-muted transition-[color,border-color,transform] duration-500 ease-out-expo before:absolute before:inset-0 before:origin-bottom before:scale-y-0 before:bg-accent before:transition-transform before:duration-500 before:ease-out-expo hover:-translate-y-0.5 hover:border-accent hover:text-white hover:before:scale-y-100 active:scale-95 motion-reduce:transition-none motion-reduce:before:transition-none",
             iconClassName
           )}
         >
-          <Icon className="h-4 w-4" />
+          <Icon className="relative h-4 w-4" />
         </a>
       ))}
     </div>

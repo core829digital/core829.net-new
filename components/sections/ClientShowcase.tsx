@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useImageLoop } from "@/lib/useImageLoop";
 import { useMessages } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
 import { CLIENTS_META, CLIENT_SCREENSHOTS } from "@/lib/constants";
 import { useGoToSection } from "@/lib/useGoToSection";
 import { cn } from "@/lib/utils";
+import Parallax from "@/components/animations/Parallax";
 
 interface Project {
   id: string;
@@ -47,22 +49,12 @@ export default function ClientShowcase() {
     }))
     .filter((x) => Boolean(x.src)) as ShowcaseItem[];
 
-  const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
-  const [reduced, setReduced] = useState(false);
-
-  useEffect(() => {
-    setReduced(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
-  }, []);
-
-  useEffect(() => {
-    if (paused || reduced || items.length < 2) return;
-    const id = window.setInterval(
-      () => setActive((i) => (i + 1) % items.length),
-      INTERVAL_MS
-    );
-    return () => window.clearInterval(id);
-  }, [paused, reduced, items.length]);
+  const [active, setActive] = useImageLoop(
+    items.map((i) => i.src),
+    INTERVAL_MS,
+    paused
+  );
 
   if (items.length === 0) return null;
   const current = items[active];
@@ -78,10 +70,14 @@ export default function ClientShowcase() {
     >
       <div className="relative">
       {/* Piano posteriore: dà profondità alla cornice */}
-      <div
+      <Parallax
+        origin="top"
+        speed={-0.14}
         aria-hidden
-        className="absolute inset-0 translate-x-3 translate-y-3 border border-border bg-surface sm:translate-x-4 sm:translate-y-4"
-      />
+        className="absolute inset-0"
+      >
+        <div className="h-full w-full translate-x-3 translate-y-3 border border-border bg-surface sm:translate-x-4 sm:translate-y-4" />
+      </Parallax>
 
       {/* Cornice principale */}
       <a

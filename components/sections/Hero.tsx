@@ -5,6 +5,7 @@ import { ArrowRight, Server } from "lucide-react";
 import SplitWords from "@/components/animations/SplitWords";
 import CountUp from "@/components/animations/CountUp";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import Parallax from "@/components/animations/Parallax";
 import Badge from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
@@ -42,16 +43,37 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden pt-16"
+      className="relative overflow-hidden pt-[calc(4rem+env(safe-area-inset-top))]"
     >
-      {/* Sfondo tecnico: griglia blueprint sfumata */}
+      {/* Sfondo tecnico: griglia blueprint sfumata, con parallax lento */}
+      <Parallax
+        origin="top"
+        speed={0.3}
+        aria-hidden
+        className="pointer-events-none absolute -inset-y-[12%] inset-x-0"
+      >
+        <div className="grid-bg grid-fade h-full w-full" />
+      </Parallax>
+
+      {/* Segni di registro agli angoli + etichette laterali (da Andromedia Web) */}
       <div
         aria-hidden
-        className="grid-bg grid-fade pointer-events-none absolute inset-0"
-      />
+        className="pointer-events-none absolute inset-3 hidden md:block lg:inset-5"
+      >
+        <span className="absolute left-0 top-16 h-5 w-5 border-l border-t border-foreground/30" />
+        <span className="absolute right-0 top-16 h-5 w-5 border-r border-t border-foreground/30" />
+        <span className="absolute bottom-0 left-0 h-5 w-5 border-b border-l border-foreground/30" />
+        <span className="absolute bottom-0 right-0 h-5 w-5 border-b border-r border-foreground/30" />
+        <span className="absolute left-1 top-1/2 hidden -translate-y-1/2 -rotate-90 whitespace-nowrap font-mono text-[9px] uppercase tracking-[0.4em] text-foreground-muted/70 2xl:block">
+          CORE829 SRL
+        </span>
+        <span className="absolute right-1 top-1/2 hidden -translate-y-1/2 rotate-90 whitespace-nowrap font-mono text-[9px] uppercase tracking-[0.4em] text-foreground-muted/70 2xl:block">
+          Roman · România
+        </span>
+      </div>
 
-      <div className="container-core829 relative grid grid-cols-1 items-center gap-14 pb-12 pt-16 sm:pt-20 lg:grid-cols-2 lg:gap-16 lg:pb-16 lg:pt-24">
-        <div>
+      <div className="container-core829 relative grid grid-cols-1 items-center gap-14 pb-14 pt-12 sm:pt-16 lg:grid-cols-[1.08fr_1fr] lg:gap-16 lg:pb-20 lg:pt-20 xl:gap-24">
+        <div className="min-w-0">
           <Badge>
             <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden />
             {t("badge")}
@@ -59,14 +81,15 @@ export default function Hero() {
 
           <SplitWords
             lines={headline}
-            className="mt-8 text-display-sm font-semibold text-foreground lg:text-[clamp(2.75rem,3.9vw,3.75rem)] lg:leading-[1.04] lg:tracking-[-0.035em]"
+            accentLast
+            className="mt-8 text-display font-medium text-foreground"
           />
 
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
+          <p className="mt-7 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
             {t("subtitle")}
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <div className="mt-10 flex flex-wrap items-center gap-3 sm:gap-4">
             <Button href="https://bookings.core829.net/book/intro-call" variant="primary">
               {t("ctaPrimary")}
               <ArrowRight className="h-4 w-4" aria-hidden />
@@ -81,47 +104,50 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative">
+        <Parallax origin="top" speed={0.08} className="relative min-w-0">
           <ClientShowcase />
-        </div>
+        </Parallax>
       </div>
 
       {/* Fascia di prova: numeri + annuncio Server */}
       <div className="container-core829 relative pb-16 lg:pb-24">
         <div className="grid grid-cols-1 gap-10 border-t border-border pt-10 lg:grid-cols-12 lg:items-center">
-          <div className="grid grid-cols-3 gap-4 sm:gap-6 lg:col-span-7">
+          <RevealOnScroll
+            stagger={0.12}
+            className="grid grid-cols-3 gap-4 sm:gap-6 lg:col-span-7"
+          >
             {stats.map((stat, i) => (
               <div key={i} className="min-w-0 border-l border-border pl-4 sm:pl-6">
-                <p className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+                <p className="font-display text-3xl font-medium tracking-tight text-foreground sm:text-4xl xl:text-5xl">
                   <CountUp value={stat.value} suffix={stat.suffix} />
                 </p>
-                <p className="mt-2 max-w-[10rem] text-sm leading-snug text-foreground-muted">
+                <p className="mt-2 max-w-[11rem] text-sm leading-snug text-foreground-muted">
                   {stat.label}
                 </p>
               </div>
             ))}
-          </div>
+          </RevealOnScroll>
 
           {!serverService?.hidden && (
-            <div className="lg:col-span-5 lg:justify-self-end">
+            <RevealOnScroll variant="right" className="lg:col-span-5 lg:justify-self-end">
               <Link
                 href="/servizi/server"
-                className="group inline-flex max-w-full items-center gap-4 border border-border bg-background p-4 pr-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:shadow-lift"
+                className="card-lift group inline-flex max-w-full items-center gap-4 border border-border bg-background p-4 pr-6"
               >
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-foreground text-white transition-colors duration-500 group-hover:bg-accent">
                   <Server className="h-5 w-5" aria-hidden />
                 </span>
                 <span className="flex min-w-0 flex-col gap-0.5">
                   <span className="flex items-center gap-2 text-sm font-semibold text-foreground">
                     {t("serverCtaLabel")}
-                    <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
+                    <ArrowRight className="h-3.5 w-3.5 transition-transform duration-500 ease-out-expo group-hover:translate-x-1" aria-hidden />
                   </span>
                   <span className="text-xs text-foreground-muted">
                     {t("serverCtaHint")}
                   </span>
                 </span>
               </Link>
-            </div>
+            </RevealOnScroll>
           )}
         </div>
       </div>
@@ -129,7 +155,7 @@ export default function Hero() {
       <div className="container-core829 pb-20 lg:pb-32">
         <RevealOnScroll>
           <p className="kicker">Prenota una chiamata</p>
-          <h2 className="mt-3 text-section-subtitle font-semibold text-foreground">
+          <h2 className="mt-3 text-section-subtitle text-foreground">
             Scegli un orario, in tempo reale
           </h2>
           <div className="mt-8 overflow-hidden border border-border bg-surface">

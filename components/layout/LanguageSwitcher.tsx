@@ -45,7 +45,7 @@ export default function LanguageSwitcher() {
         onClick={() => setOpen((v) => !v)}
         aria-haspopup="listbox"
         aria-expanded={open}
-        className="flex min-h-11 items-center gap-2 border border-border px-3 text-sm text-foreground-muted transition-colors hover:border-foreground hover:text-foreground"
+        className="flex h-9 items-center gap-2 rounded-full px-3 font-mono text-[10px] uppercase tracking-[0.16em] text-foreground-muted transition-colors hover:bg-surface hover:text-foreground"
       >
         <Globe className="h-4 w-4" aria-hidden />
         <span className="hidden sm:inline">

@@ -3,6 +3,8 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import RevealWords from "@/components/animations/RevealWords";
+import Parallax from "@/components/animations/Parallax";
 import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
 
@@ -16,23 +18,32 @@ export default function FinalCTA() {
 
   return (
     <section className="relative overflow-hidden border-t border-border bg-surface">
-      <div
+      <Parallax
+        speed={0.25}
         aria-hidden
-        className="grid-bg grid-fade pointer-events-none absolute inset-0"
-      />
+        className="pointer-events-none absolute -inset-y-[15%] inset-x-0"
+      >
+        <div className="grid-bg grid-fade h-full w-full" />
+      </Parallax>
 
       <div className="container-core829 relative grid grid-cols-1 items-center gap-12 py-24 lg:grid-cols-12 lg:gap-16 lg:py-32">
-        <RevealOnScroll className="lg:col-span-7">
-          <p className="kicker">{t("kicker")}</p>
-          <h2 className="mt-4 text-display-sm font-semibold lg:text-[clamp(2.5rem,4.2vw,3.75rem)] lg:leading-[1.04] lg:tracking-[-0.035em]">
-            {t("title")}
-          </h2>
-          <p className="mt-6 max-w-xl text-lg text-foreground-muted">
-            {t("subtitle")}
+        <div className="lg:col-span-7">
+          <p className="kicker flex items-center gap-3">
+            <span aria-hidden className="h-px w-8 bg-accent" />
+            {t("kicker")}
           </p>
-        </RevealOnScroll>
+          <RevealWords
+            text={t("title")}
+            className="mt-5 text-display-sm lg:text-[clamp(2.25rem,1rem+3vw,4rem)]"
+          />
+          <RevealOnScroll>
+            <p className="mt-6 max-w-xl text-lg text-foreground-muted">
+              {t("subtitle")}
+            </p>
+          </RevealOnScroll>
+        </div>
 
-        <RevealOnScroll className="lg:col-span-5">
+        <RevealOnScroll variant="scale" className="lg:col-span-5">
           <div className="relative border border-border bg-background p-8 shadow-soft sm:p-10">
             <span
               aria-hidden

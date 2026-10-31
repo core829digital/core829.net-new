@@ -3,6 +3,7 @@
 import { useTranslations, useMessages } from "next-intl";
 import { Check } from "lucide-react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import SectionHeading from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 
 interface Model {
@@ -19,15 +20,16 @@ export default function PricingModel() {
   return (
     <section id="preventivo" className="bg-background">
       <div className="container-core829 py-24 lg:py-32">
-        <RevealOnScroll>
-          <div className="max-w-2xl">
-            <p className="kicker">{t("kicker")}</p>
-            <h2 className="mt-4 text-section-title">{t("title")}</h2>
-            <p className="mt-6 text-lg text-foreground-muted">{t("subtitle")}</p>
-          </div>
-        </RevealOnScroll>
+        <SectionHeading
+          kicker={t("kicker")}
+          title={t("title")}
+          subtitle={t("subtitle")}
+        />
 
-        <RevealOnScroll className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <RevealOnScroll
+          stagger={0.1}
+          className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3 lg:mt-16"
+        >
           {models.map((model, i) => (
             <div
               key={i}

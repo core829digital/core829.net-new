@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Space_Grotesk, Unbounded } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import SmoothScrollProvider from "@/app/providers/SmoothScrollProvider";
 import VisualViewportProvider from "@/app/providers/VisualViewportProvider";
 import ResolvePendingHash from "@/components/ResolvePendingHash";
+import ScrollProgress from "@/components/animations/ScrollProgress";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import JsonLd from "@/components/seo/JsonLd";
@@ -21,6 +22,22 @@ import "../globals.css";
 const inter = Inter({
   subsets: ["latin", "cyrillic", "greek"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+// Font display (titoli) e testo: stessa famiglia di Andromedia Web.
+// Unbounded copre latino/cirillico; Space Grotesk il latino. Per greco, CJK e
+// caratteri mancanti il browser ricade per-carattere su Inter (greco/cirillico
+// caricati sopra) e poi sui font di sistema: nessun "tofu" in nessuna lingua.
+const unbounded = Unbounded({
+  subsets: ["latin", "latin-ext", "cyrillic"],
+  variable: "--font-unbounded",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-space",
   display: "swap",
 });
 
@@ -111,13 +128,16 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
+      <body
+        className={`${inter.variable} ${unbounded.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased`}
+      >
         <NextIntlClientProvider messages={messages}>
           <CookieConsentProvider>
             <TrustpilotConsentGate />
             <VisualViewportProvider />
             <SmoothScrollProvider>
               <ResolvePendingHash />
+              <ScrollProgress />
               <Navbar />
               <main>{children}</main>
               <Footer />

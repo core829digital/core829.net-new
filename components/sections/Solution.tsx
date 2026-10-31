@@ -1,8 +1,9 @@
 "use client";
 
 import { useTranslations, useMessages } from "next-intl";
-import { Check } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import SectionHeading from "@/components/ui/SectionHeading";
 import { Link } from "@/i18n/navigation";
 import { SERVICES_META } from "@/lib/constants";
 
@@ -20,21 +21,25 @@ interface Service {
  */
 export default function Solution() {
   const t = useTranslations("solution");
+  const tCta = useTranslations("finalCta");
   const messages = useMessages();
   const services = (messages.solution as unknown as { services: Service[] }).services;
+
+  const visibleCount = services.filter((_, i) => !SERVICES_META[i]?.hidden).length;
 
   return (
     <section id="servizi" className="bg-surface">
       <div className="container-core829 py-24 lg:py-32">
-        <RevealOnScroll>
-          <div className="max-w-2xl">
-            <p className="kicker">{t("kicker")}</p>
-            <h2 className="mt-4 text-section-title">{t("title")}</h2>
-            <p className="mt-6 text-lg text-foreground-muted">{t("subtitle")}</p>
-          </div>
-        </RevealOnScroll>
+        <SectionHeading
+          kicker={t("kicker")}
+          title={t("title")}
+          subtitle={t("subtitle")}
+        />
 
-        <RevealOnScroll className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealOnScroll
+          stagger={0.07}
+          className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-16 lg:gap-6 xl:grid-cols-4"
+        >
           {services
             .map((service, i) => ({ service, meta: SERVICES_META[i] }))
             .filter(({ meta }) => !meta?.hidden)
@@ -74,6 +79,29 @@ export default function Solution() {
               </Link>
             );
           })}
+
+          {/* Con un numero dispari di servizi la griglia 2/4 colonne resterebbe
+              con un vuoto: lo riempie un invito a parlarne (testi già tradotti). */}
+          {visibleCount % 2 === 1 && (
+            <Link
+              href="/contatti"
+              className="card-lift group flex flex-col justify-between border border-foreground bg-foreground p-8 text-white"
+            >
+              <p className="font-mono text-[0.6875rem] uppercase tracking-[0.3em] text-white/60">
+                {tCta("kicker")}
+              </p>
+              <p className="mt-10 font-display text-2xl leading-tight tracking-tight lg:text-[1.65rem]">
+                {tCta("title")}
+              </p>
+              <span className="mt-10 inline-flex items-center gap-2 text-sm font-medium text-white">
+                {tCta("cta")}
+                <ArrowUpRight
+                  className="h-4 w-4 transition-transform duration-500 ease-out-expo group-hover:-translate-y-1 group-hover:translate-x-1"
+                  aria-hidden
+                />
+              </span>
+            </Link>
+          )}
         </RevealOnScroll>
       </div>
     </section>

@@ -23,10 +23,10 @@ export default function CookieBanner() {
             role="dialog"
             aria-modal="false"
             aria-label={t("bannerTitle")}
-            className="fixed inset-x-0 bottom-0 z-[85] border-t border-border bg-background/95 p-4 backdrop-blur-md sm:p-6"
+            className="container-core829 fixed inset-x-0 bottom-0 z-[85] border-t border-border bg-background/95 py-4 backdrop-blur-md sm:py-6"
             style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}
           >
-            <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex w-full flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-2xl">
                 <p className="text-sm font-semibold tracking-tight text-foreground">
                   {t("bannerTitle")}

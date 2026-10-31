@@ -21,15 +21,15 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="bg-surface">
-      <div className="container-core829 py-24 lg:py-32">
-        <RevealOnScroll>
-          <div className="max-w-2xl">
+      <div className="container-core829 grid grid-cols-1 gap-12 py-24 lg:grid-cols-12 lg:gap-16 lg:py-32">
+        <RevealOnScroll className="lg:col-span-4">
+          <div className="lg:sticky lg:top-28">
             <p className="kicker">{t("kicker")}</p>
             <h2 className="mt-4 text-section-title">{t("title")}</h2>
           </div>
         </RevealOnScroll>
 
-        <RevealOnScroll className="mt-14 max-w-3xl">
+        <RevealOnScroll className="lg:col-span-8">
           {items.map((item, i) => (
             <AccordionItem
               key={i}

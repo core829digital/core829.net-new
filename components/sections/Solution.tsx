@@ -45,7 +45,7 @@ export default function Solution() {
                 key={service.id ?? meta?.key}
                 href={`/servizi/${meta?.key ?? service.id}`}
                 id={meta?.anchorId}
-                className="group flex flex-col border border-border bg-background p-8 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl"
+                className="card-lift group flex flex-col border border-border bg-background p-8"
               >
                 <div className="flex items-start justify-between">
                   <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent">

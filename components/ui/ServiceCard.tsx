@@ -28,7 +28,7 @@ export default function ServiceCard({ index, displayNumber }: Props) {
   return (
     <Link
       href={`/servizi/${slug}`}
-      className="group flex flex-col border border-border bg-background p-8 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl"
+      className="card-lift group flex h-full flex-col border border-border bg-background p-8"
     >
       <div className="flex items-start justify-between">
         <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent">
@@ -58,7 +58,7 @@ export default function ServiceCard({ index, displayNumber }: Props) {
         ))}
       </ul>
 
-      <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-accent">
+      <span className="mt-auto inline-flex pt-8 items-center gap-2 text-sm font-medium text-accent">
         {tDetail("learnMore")}
         <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden />
       </span>

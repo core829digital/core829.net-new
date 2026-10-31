@@ -20,7 +20,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     import("../messages/en.json"),
   ]);
 
-  const messages = deepmerge(
+  const merged = deepmerge(
     fallbackMessages.default,
     mainMessages.default,
     {
@@ -30,6 +30,25 @@ export default getRequestConfig(async ({ requestLocale }) => {
       arrayMerge: (_target, source) => source,
     }
   ) as unknown as AbstractIntlMessages;
+
+  // Case study: l'elenco (e l'ordine) è quello inglese; per ogni progetto si usa
+  // la versione della lingua richiesta se esiste (match per id), altrimenti
+  // quella inglese. Così una nuova storia compare subito in tutte le lingue.
+  type Project = { id: string };
+  const enProjects = (
+    fallbackMessages.default as { caseStudies: { projects: Project[] } }
+  ).caseStudies.projects;
+  const localeProjects = (
+    mainMessages.default as { caseStudies?: { projects?: Project[] } }
+  ).caseStudies?.projects;
+  const mergedCase = (merged as unknown as {
+    caseStudies: { projects: Project[] };
+  }).caseStudies;
+  mergedCase.projects = enProjects.map(
+    (en) => localeProjects?.find((p) => p.id === en.id) ?? en
+  );
+
+  const messages = merged;
 
   return {
     locale: requested,

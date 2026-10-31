@@ -192,27 +192,6 @@
     "stackLabel": "Stack",
     "projects": [
       {
-        "id": "iwhome",
-        "name": "IWHome",
-        "domain": "iwhome.app",
-        "sector": "Instalação de caixilharia e janelas (Itália)",
-        "what": "Uma plataforma completa de gestão B2B/B2C para uma empresa de instalação de caixilharia.",
-        "stack": "React, Convex, Clerk",
-        "details": [
-          "5 funções RBAC: admin, fornecedor, colaborador, cliente, utilizador base",
-          "Modelo de transação centralizado na IWHome",
-          "Lógica de pagamento split com comprovativo de pagamento obrigatório",
-          "Geração automática de PDF",
-          "Workflow de pedido em 9 passos"
-        ],
-        "tags": [
-          "Webapp",
-          "Automatizações B2B",
-          "Setup IA"
-        ],
-        "mockup": "dashboard"
-      },
-      {
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",
@@ -232,25 +211,6 @@
           "3D/Motion"
         ],
         "mockup": "3d"
-      },
-      {
-        "id": "winex",
-        "name": "Winex",
-        "domain": "winex.ro",
-        "sector": "Produção de caixilharia em PVC e alumínio",
-        "what": "Serviços digitais dedicados ao mundo da caixilharia, distintos da venda física de janelas — incluindo produtos verticais como um configurador/calculadora de orçamentos e um CRM vertical.",
-        "stack": "Webapp, CRM vertical",
-        "details": [
-          "Configurador e calculadora de orçamentos de caixilharia",
-          "CRM vertical para caixilhistas",
-          "Produtos digitais distintos da venda física"
-        ],
-        "tags": [
-          "Automatizações B2B",
-          "Webapp",
-          "CRM"
-        ],
-        "mockup": "crm"
       },
       {
         "id": "revive",

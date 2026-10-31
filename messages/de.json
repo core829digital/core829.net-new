@@ -192,23 +192,64 @@
     "stackLabel": "Stack",
     "projects": [
       {
-        "id": "iwhome",
-        "name": "IWHome",
-        "domain": "iwhome.app",
-        "sector": "Fenster- und Türeninstallation (Italien)",
-        "what": "Eine vollständige B2B/B2C-Managementplattform für ein Fensterinstallationsunternehmen.",
-        "stack": "React, Convex, Clerk",
+        "id": "onespec",
+        "name": "OneSpec",
+        "domain": "onespec.eu",
+        "sector": "Digitalprodukt von CORE829 — Angebotsplattform für Fenster- und Türenmonteure",
+        "what": "Monteure von Fenstern und Türen verlieren Stunden mit Angeboten, die nie zu Aufträgen werden: Aufmaß, Berechnungen und Anrufe für Kunden, die nur einen Preis zum Vergleichen wollen. Wir haben diese Routine zu einem Produkt gemacht: ein Konfigurator, der auf der eigenen Website des Monteurs läuft, mit dessen eigener Preisliste rechnet und nur vollständige, qualifizierte Anfragen weiterleitet.",
+        "stack": "Next.js 16, Convex, next-intl, Stripe",
         "details": [
-          "5 RBAC-Rollen: Admin, Lieferant, Mitarbeiter, Kunde, Basisnutzer",
-          "Zentralisiertes Transaktionsmodell auf IWHome",
-          "Split-Payment-Logik mit obligatorischem Zahlungsnachweis",
-          "Automatische PDF-Generierung",
-          "9-stufiger Bestellworkflow"
+          "Einbettbares Widget mit einer Zeile iFrame-Code, in Farben und Logo des Kunden",
+          "Preisengine auf Basis der Preisliste des Monteurs, mit MwSt.-Regeln für 6 Märkte (IT, FR, BE, NL, DE, LU)",
+          "Anfrage-Dashboard mit Kunde, Kontakten, Wert und Status in Echtzeit",
+          "Plattform für B2B-Angebote mit technischer Zeichnung und PDF, Kunden und Baustellen",
+          "6 Sprachen: IT, EN, FR, DE, NL, RO"
         ],
         "tags": [
           "Web-App",
           "B2B-Automatisierungen",
-          "KI-Setup"
+          "Webdesign"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "winex",
+        "name": "Winex",
+        "domain": "winex.ro",
+        "sector": "Fenster und Türen aus PVC, Aluminium und Holz — Roman, Rumänien",
+        "what": "Ein Fensterunternehmen, das mehrere europäische Märkte erreichen will, braucht eine Website, die Materialien und Leistung so klar erklärt wie ein Showroom. Wir haben eine siebensprachige Website gebaut, die sich beim Scrollen wie ein Fenster öffnet, PVC, Aluminium und Holz vergleicht und den OneSpec-Konfigurator einbettet, sodass Besucher ihre Fenster konfigurieren, ohne die Seite zu verlassen.",
+        "stack": "Next.js 16, Convex, Tailwind 4, next-intl, Resend",
+        "details": [
+          "Scrollgesteuerte Eröffnung: das Fenster öffnet sich und gibt die Website frei",
+          "7 Sprachen (EN, RO, IT, FR, PL, NL, DE) mit übersetzten URL-Slugs und regionalem hreflang",
+          "OneSpec-Konfigurator eingebettet, mit automatischer Größenanpassung und Origin-Prüfung",
+          "Admin-Bereich: Echtzeit-Statistiken, Nachrichten, Newsletter und E-Mail-Kampagnen",
+          "Security by Design: CSP, HSTS, Zod-Validierung, Honeypot und Rate Limiting"
+        ],
+        "tags": [
+          "Webdesign",
+          "Web-App",
+          "B2B-Automatisierungen"
+        ],
+        "mockup": "crm"
+      },
+      {
+        "id": "andromedia",
+        "name": "Andromedia Web",
+        "domain": "andromediaweb-it.vercel.app",
+        "sector": "Kreativagentur für Marketing — Foiano della Chiana (AR), Italien",
+        "what": "Eine Kreativagentur braucht eine Website, die so scharf ist wie die Marken, die sie aufbaut. Wir haben Andromedia Web als monochrome Erfahrung auf SaaS-Niveau neu gedacht — Blueprint-Raster, Monospace-Mikrolabels, animierter Hero — und dem Team ein Backoffice gegeben, um Artikel und Portfolio-Arbeiten zu veröffentlichen und eingehende Nachrichten zu lesen, ohne Code anzufassen.",
+        "stack": "Next.js 16, Tailwind 4, Convex, Motion, Lenis",
+        "details": [
+          "Schwarz-weißes Designsystem: Unbounded, Space Grotesk und JetBrains Mono",
+          "Animierter Hero mit maskierten Reveals und Partnerlogo-Marquee",
+          "Eigenes Icon-Set, keine Icon-Bibliothek",
+          "Heller und dunkler Modus",
+          "Backoffice für Blog, Portfolio und Kontaktnachrichten (Convex)"
+        ],
+        "tags": [
+          "Webdesign",
+          "Web-App"
         ],
         "mockup": "dashboard"
       },
@@ -232,25 +273,6 @@
           "3D/Motion"
         ],
         "mockup": "3d"
-      },
-      {
-        "id": "winex",
-        "name": "Winex",
-        "domain": "winex.ro",
-        "sector": "Produktion von Fenstern aus PVC und Aluminium",
-        "what": "Digitale Services speziell für die Fensterbranche, getrennt vom physischen Fensterverkauf – inklusive vertikaler Produkte wie einem Angebotskonfigurator und einem vertikalen CRM.",
-        "stack": "Web-App, Vertikales CRM",
-        "details": [
-          "Konfigurator und Kalkulator für Fensterangebote",
-          "Vertikales CRM für Fensterbauer",
-          "Digitale Produkte getrennt vom physischen Verkauf"
-        ],
-        "tags": [
-          "B2B-Automatisierungen",
-          "Web-App",
-          "CRM"
-        ],
-        "mockup": "crm"
       },
       {
         "id": "revive",

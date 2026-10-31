@@ -192,23 +192,64 @@
     "stackLabel": "Stack",
     "projects": [
       {
-        "id": "iwhome",
-        "name": "IWHome",
-        "domain": "iwhome.app",
-        "sector": "Installatie van kozijnen en ramen (Italië)",
-        "what": "Een compleet B2B/B2C-beheerplatform voor een bedrijf in kozijninstallatie.",
-        "stack": "React, Convex, Clerk",
+        "id": "onespec",
+        "name": "OneSpec",
+        "domain": "onespec.eu",
+        "sector": "Digitaal product van CORE829 — offerteplatform voor monteurs van ramen en deuren",
+        "what": "Monteurs van ramen en deuren verliezen uren aan offertes die nooit een bestelling worden: opmetingen, berekeningen en telefoontjes voor klanten die alleen een prijs willen vergelijken. Wij maakten van die routine een product: een configurator die op de eigen website van de monteur staat, rekent met diens eigen prijslijst en alleen volledige, gekwalificeerde aanvragen doorstuurt.",
+        "stack": "Next.js 16, Convex, next-intl, Stripe",
         "details": [
-          "5 RBAC-rollen: admin, leverancier, medewerker, klant, basisgebruiker",
-          "Gecentraliseerd transactiemodel op IWHome",
-          "Split-payment-logica met verplicht betaalbewijs",
-          "Automatische PDF-generatie",
-          "9-stappen orderworkflow"
+          "Inbedbare widget met één regel iframe-code, in de kleuren en het logo van de klant",
+          "Prijsmotor op basis van de prijslijst van de monteur, met btw-regels voor 6 markten (IT, FR, BE, NL, DE, LU)",
+          "Aanvragendashboard met klant, contactgegevens, waarde en status, in realtime",
+          "Platform voor B2B-offertes met technische tekening en pdf, klanten en bouwplaatsen",
+          "6 talen: IT, EN, FR, DE, NL, RO"
         ],
         "tags": [
           "Webapp",
           "B2B-automatiseringen",
-          "AI Setup"
+          "Webdesign"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "winex",
+        "name": "Winex",
+        "domain": "winex.ro",
+        "sector": "Ramen en deuren van PVC, aluminium en hout — Roman, Roemenië",
+        "what": "Een bedrijf voor ramen en deuren dat meerdere Europese markten wil bereiken, heeft een website nodig die materialen en prestaties zo helder uitlegt als een showroom. Wij bouwden een website in zeven talen die tijdens het scrollen opengaat als een raam, PVC, aluminium en hout vergelijkt en de OneSpec-configurator insluit, zodat bezoekers hun eigen ramen configureren zonder de pagina te verlaten.",
+        "stack": "Next.js 16, Convex, Tailwind 4, next-intl, Resend",
+        "details": [
+          "Scrollgestuurde opening: het raam gaat open en onthult de site",
+          "7 talen (EN, RO, IT, FR, PL, NL, DE) met vertaalde URL-slugs en regionale hreflang",
+          "OneSpec-configurator ingebed, met automatische formaataanpassing en origin-controle",
+          "Beheeromgeving: realtime statistieken, berichten, nieuwsbrief en e-mailcampagnes",
+          "Security by design: CSP, HSTS, Zod-validatie, honeypot en rate limiting"
+        ],
+        "tags": [
+          "Webdesign",
+          "Webapp",
+          "B2B-automatiseringen"
+        ],
+        "mockup": "crm"
+      },
+      {
+        "id": "andromedia",
+        "name": "Andromedia Web",
+        "domain": "andromediaweb-it.vercel.app",
+        "sector": "Creatief marketingbureau — Foiano della Chiana (AR), Italië",
+        "what": "Een creatief bureau heeft een website nodig die net zo scherp is als de merken die het bouwt. Wij herontwierpen Andromedia Web als een monochrome ervaring op SaaS-niveau — blueprint-raster, monospace micro-labels, geanimeerde hero — en gaven het team een backoffice om artikelen en portfolio-werk te publiceren en binnenkomende berichten te lezen zonder code aan te raken.",
+        "stack": "Next.js 16, Tailwind 4, Convex, Motion, Lenis",
+        "details": [
+          "Zwart-wit designsysteem: Unbounded, Space Grotesk en JetBrains Mono",
+          "Geanimeerde hero met gemaskeerde reveals en marquee met partnerlogo's",
+          "Eigen iconenset, geen iconenbibliotheek",
+          "Licht en donker thema",
+          "Backoffice voor blog, portfolio en contactberichten (Convex)"
+        ],
+        "tags": [
+          "Webdesign",
+          "Webapp"
         ],
         "mockup": "dashboard"
       },
@@ -232,25 +273,6 @@
           "3D/Motion"
         ],
         "mockup": "3d"
-      },
-      {
-        "id": "winex",
-        "name": "Winex",
-        "domain": "winex.ro",
-        "sector": "Productie van kozijnen in PVC en aluminium",
-        "what": "Digitale diensten specifiek voor de kozijnenwereld, los van de fysieke verkoop van ramen — inclusief verticale producten zoals een offerteconfigurator en een verticaal CRM.",
-        "stack": "Webapp, Verticaal CRM",
-        "details": [
-          "Configurator en calculator voor kozijnoffertes",
-          "Verticaal CRM voor kozijnenfabrikanten",
-          "Digitale producten los van fysieke verkoop"
-        ],
-        "tags": [
-          "B2B-automatiseringen",
-          "Webapp",
-          "CRM"
-        ],
-        "mockup": "crm"
       },
       {
         "id": "revive",

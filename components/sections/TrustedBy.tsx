@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Marquee from "@/components/ui/Marquee";
-import { CLIENTS_META, CLIENT_LOGOS, CLIENT_LOGO_FILTER } from "@/lib/constants";
+import { REAL_CLIENTS_META, CLIENT_LOGOS, CLIENT_LOGO_FILTER } from "@/lib/constants";
 
 /**
  * "Con chi abbiamo lavorato" — marquee infinito dei 5 clienti reali.
@@ -17,7 +17,7 @@ export default function TrustedBy() {
         <p className="tech-label text-center">{t("label")}</p>
 
         <Marquee duration={36} className="mt-10">
-          {CLIENTS_META.map((client) => {
+          {REAL_CLIENTS_META.map((client) => {
             const logo = CLIENT_LOGOS[client.key];
             return (
               <a

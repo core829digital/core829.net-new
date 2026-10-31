@@ -20,7 +20,7 @@ export default function PricingModel() {
     <section id="preventivo" className="bg-background">
       <div className="container-core829 py-24 lg:py-32">
         <RevealOnScroll>
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="max-w-2xl">
             <p className="kicker">{t("kicker")}</p>
             <h2 className="mt-4 text-section-title">{t("title")}</h2>
             <p className="mt-6 text-lg text-foreground-muted">{t("subtitle")}</p>
@@ -31,7 +31,7 @@ export default function PricingModel() {
           {models.map((model, i) => (
             <div
               key={i}
-              className="group flex flex-col border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-8 md:p-10"
+              className="card-lift group flex flex-col border border-border bg-background p-6 sm:p-8 md:p-10"
             >
               <span className="font-mono text-sm tracking-widest text-accent">
                 0{i + 1}
@@ -54,7 +54,7 @@ export default function PricingModel() {
           ))}
         </RevealOnScroll>
 
-        <RevealOnScroll className="mt-14 text-center">
+        <RevealOnScroll className="mt-14">
           <Button href="mailto:sales@core829.net?subject=Request%20a%20quote" variant="primary">
             {t("cta")}
           </Button>

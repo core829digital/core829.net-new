@@ -48,7 +48,7 @@ export default function Features() {
               <div
                 key={item.id ?? i}
                 className={cn(
-                  "group relative overflow-hidden border border-border bg-background p-8 transition-all duration-300 hover:-translate-y-1 hover:border-accent",
+                  "card-lift group border border-border bg-background p-8",
                   SPANS[i]
                 )}
               >

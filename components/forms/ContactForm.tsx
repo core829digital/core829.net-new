@@ -10,7 +10,7 @@ import { VISIBLE_SERVICES_META } from "@/lib/constants";
 type Status = "idle" | "submitting" | "success" | "error";
 
 const inputClasses =
-  "w-full border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-foreground-muted/60 transition-colors duration-300 focus:border-accent focus:outline-none";
+  "w-full rounded-2xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-foreground-muted/60 transition-colors duration-300 focus:border-accent focus:outline-none";
 
 export default function ContactForm() {
   const t = useTranslations("contactForm");
@@ -202,7 +202,7 @@ export default function ContactForm() {
       )}
 
       <div className="mt-8">
-        <Button type="submit" variant="primary" disabled={status === "submitting"}>
+        <Button type="submit" variant="primary" loading={status === "submitting"}>
           {status === "submitting" ? t("submitting") : t("submit")}
         </Button>
       </div>

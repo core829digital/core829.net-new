@@ -65,7 +65,7 @@ export default function Navbar() {
   };
 
   const pillCta =
-    "h-9 min-h-0 rounded-full px-5 font-mono text-[11px] uppercase tracking-[0.16em]";
+    "h-11 px-5 font-mono text-[11px] uppercase tracking-[0.14em]";
 
   return (
     <>
@@ -74,17 +74,13 @@ export default function Navbar() {
       >
         {/* Capsula flottante sempre visibile: nessun contorno, solo ombra
             morbida e sfondo traslucido su layer proprio. */}
-        <div className="relative flex h-12 w-full items-center justify-between gap-1 rounded-full pl-4 pr-1.5 shadow-lift xl:w-auto xl:justify-start xl:pl-2">
-          <span
-            aria-hidden
-            className="absolute inset-0 -z-10 rounded-full bg-background/95 backdrop-blur-md"
-          />
+        <div className="glass-bar relative flex h-14 w-full items-center justify-between gap-1 rounded-full pl-4 pr-1.5 xl:w-auto xl:justify-start xl:pl-2">
 
           {/* Logo → home */}
           <Link
             href="/"
             onClick={() => setMenuOpen(false)}
-            className="flex shrink-0 items-center xl:px-3"
+            className="flex min-h-11 min-w-11 shrink-0 items-center justify-center xl:px-3"
             aria-label="CORE829"
           >
             <Image
@@ -141,7 +137,7 @@ export default function Navbar() {
               onClick={() => setMenuOpen((v) => !v)}
               aria-expanded={menuOpen}
               aria-label="Menu"
-              className="flex h-9 w-9 items-center justify-center rounded-full text-foreground transition-colors hover:bg-surface xl:hidden"
+              className="flex h-11 w-11 items-center justify-center rounded-full text-foreground transition-colors hover:bg-foreground/5 hover:text-accent active:bg-foreground/10 xl:hidden"
             >
               {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -223,7 +219,7 @@ export default function Navbar() {
 }
 
 const navItemCls =
-  "flex items-center gap-1.5 whitespace-nowrap px-3 py-2 font-mono text-[10px] uppercase tracking-[0.16em] text-foreground-muted transition-colors duration-300 hover:text-accent";
+  "flex min-h-11 items-center gap-1.5 whitespace-nowrap rounded-full px-3 font-mono text-[11px] uppercase tracking-[0.12em] text-foreground-muted transition-colors duration-300 hover:text-accent";
 
 function NavLink({
   href,
@@ -306,7 +302,7 @@ function DesktopDropdown({
           onClick={() => setOpen(!open)}
           aria-label={`Apri menu ${label}`}
           aria-expanded={open}
-          className="flex items-center justify-center px-2 py-2 text-foreground-muted hover:text-foreground"
+          className="flex h-11 w-8 items-center justify-center rounded-full text-foreground-muted transition-colors hover:text-accent"
         >
           <ChevronDown
             className={cn("h-3 w-3 transition-transform duration-200", open && "rotate-180")}
@@ -322,13 +318,13 @@ function DesktopDropdown({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 8 }}
             transition={{ duration: 0.2 }}
-            className="scroll-core829 absolute left-0 top-full mt-3 max-h-[70dvh] w-64 border border-border bg-background p-2 shadow-lift"
+            className="scroll-core829 glass-panel absolute left-0 top-full mt-3 max-h-[70dvh] w-64 rounded-3xl p-2"
           >
             {items.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}
-                className="block px-3 py-2.5 text-sm text-foreground-muted transition-[background-color,color,padding] duration-300 hover:bg-surface hover:pl-4 hover:text-foreground"
+                className="flex min-h-11 items-center rounded-2xl px-4 text-sm text-foreground-muted transition-colors duration-300 hover:bg-foreground/5 hover:text-accent active:bg-foreground/10"
                 onClick={() => setOpen(false)}
               >
                 {item.label}

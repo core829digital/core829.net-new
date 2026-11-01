@@ -45,7 +45,7 @@ export default function LanguageSwitcher() {
         onClick={() => setOpen((v) => !v)}
         aria-haspopup="listbox"
         aria-expanded={open}
-        className="flex h-9 items-center gap-2 rounded-full px-3 font-mono text-[10px] uppercase tracking-[0.16em] text-foreground-muted transition-colors hover:bg-surface hover:text-foreground"
+        className="flex h-11 items-center gap-2 rounded-full px-4 font-mono text-[11px] uppercase tracking-[0.14em] text-foreground-muted transition-colors hover:bg-foreground/5 hover:text-accent active:bg-foreground/10"
       >
         <Globe className="h-4 w-4" aria-hidden />
         <span className="hidden sm:inline">
@@ -55,8 +55,8 @@ export default function LanguageSwitcher() {
 
       {open && (
         <div
-          className="scroll-core829 absolute right-0 top-full z-50 mt-2 max-h-[60dvh] w-56 border border-border bg-background py-2 shadow-2xl"
-          style={{ backgroundColor: "var(--color-background)", touchAction: "pan-y" }}
+          className="scroll-core829 glass-panel absolute right-0 top-full z-50 mt-3 max-h-[60dvh] w-60 rounded-3xl p-2"
+          style={{ touchAction: "pan-y" }}
         >
           {locales.map((locale) => (
             <button
@@ -69,14 +69,14 @@ export default function LanguageSwitcher() {
                 setOpen(false);
               }}
               className={cn(
-                "flex w-full items-center justify-between px-4 py-2.5 text-left text-sm transition-colors hover:bg-surface",
+                "flex min-h-11 w-full items-center justify-between rounded-2xl px-4 text-left text-sm transition-colors hover:bg-foreground/5 active:bg-foreground/10",
                 locale === currentLocale
                   ? "text-accent"
                   : "text-foreground"
               )}
             >
               {localeNames[locale]}
-              <span className="font-mono text-[10px] uppercase tracking-widest text-foreground-muted">
+              <span className="font-mono text-[11px] uppercase tracking-widest text-foreground-muted">
                 {locale}
               </span>
             </button>

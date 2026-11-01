@@ -28,9 +28,9 @@ export default function CookieToggle({
       disabled={disabled}
       onClick={() => onChange?.(!checked)}
       className={cn(
-        "relative h-6 w-11 shrink-0 border transition-colors duration-300",
+        "relative h-7 w-12 shrink-0 rounded-full border transition-colors duration-300",
         checked
-          ? "border-foreground bg-foreground"
+          ? "border-accent bg-accent"
           : "border-border bg-background",
         disabled ? "cursor-not-allowed opacity-60" : "cursor-pointer"
       )}
@@ -38,8 +38,8 @@ export default function CookieToggle({
       <span
         aria-hidden
         className={cn(
-          "absolute top-1/2 h-4 w-4 -translate-y-1/2 bg-white transition-all duration-300",
-          checked ? "left-[1.375rem]" : "left-1"
+          "absolute top-1/2 h-5 w-5 -translate-y-1/2 rounded-full bg-white shadow transition-all duration-300",
+          checked ? "left-[1.625rem]" : "left-1"
         )}
       />
     </button>

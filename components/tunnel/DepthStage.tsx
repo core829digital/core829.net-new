@@ -458,7 +458,7 @@ function StageNav({
   return (
     <nav
       aria-label="Sezioni"
-      className="absolute right-2 top-1/2 z-30 hidden -translate-y-1/2 flex-col items-end gap-1 sm:flex lg:right-4"
+      className="absolute right-1 top-1/2 z-30 hidden -translate-y-1/2 flex-col items-end lg:flex xl:right-3"
     >
       {Array.from({ length: count }, (_, i) => (
         <button
@@ -468,7 +468,7 @@ function StageNav({
           aria-current={i === active}
           title={labels[i]}
           onClick={() => sectionRef.current && scrollToSlide(sectionRef.current, i)}
-          className="group flex h-6 w-6 items-center justify-end"
+          className="group flex h-11 w-11 items-center justify-end pr-1.5"
         >
           <span
             className={cn(

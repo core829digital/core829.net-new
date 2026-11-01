@@ -54,7 +54,7 @@ export default function ClientScreenshot({
             <span className="h-2 w-2 bg-border" />
             <span className="h-2 w-2 bg-border" />
           </span>
-          <span className="truncate font-mono text-[10px] uppercase tracking-[0.2em] text-foreground-muted">
+          <span className="truncate font-mono text-[11px] uppercase tracking-[0.2em] text-foreground-muted">
             {domain}
           </span>
         </div>
@@ -85,7 +85,7 @@ export default function ClientScreenshot({
                 onClick={() => setActive(i)}
                 aria-label={`${i + 1} / ${srcs.length}`}
                 aria-current={i === active}
-                className="flex min-h-9 min-w-6 items-center justify-center"
+                className="flex min-h-11 min-w-8 items-center justify-center"
               >
                 <span
                   className={cn(

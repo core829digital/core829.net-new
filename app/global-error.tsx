@@ -68,8 +68,10 @@ export default function GlobalError({
                 fontSize: "0.875rem",
                 fontWeight: 500,
                 color: "#ffffff",
-                backgroundColor: "#0a0a0a",
+                backgroundColor: "#e11d2e",
                 border: "none",
+                borderRadius: "9999px",
+                minHeight: "44px",
                 cursor: "pointer",
               }}
             >
@@ -84,6 +86,10 @@ export default function GlobalError({
                 fontWeight: 500,
                 color: "#0a0a0a",
                 border: "1px solid #d4d4d4",
+                borderRadius: "9999px",
+                minHeight: "44px",
+                display: "inline-flex",
+                alignItems: "center",
                 textDecoration: "none",
               }}
             >

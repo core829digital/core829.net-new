@@ -207,7 +207,7 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
                 type="button"
                 onClick={onClose}
                 aria-label="Chiudi"
-                className="flex h-11 w-11 shrink-0 items-center justify-center border border-border text-foreground transition-colors duration-300 hover:border-accent hover:text-accent"
+                className="btn btn-secondary flex h-11 w-11 shrink-0 items-center justify-center rounded-full"
               >
                 <X className="h-5 w-5" aria-hidden />
               </button>
@@ -219,7 +219,7 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
                   type="button"
                   onClick={() => goToPage(currentPage - 1)}
                   disabled={!hasPrev}
-                  className="inline-flex items-center gap-1 border border-border px-3 py-2 text-xs font-medium text-foreground transition-colors duration-300 hover:border-accent hover:text-accent disabled:cursor-not-allowed disabled:opacity-40"
+                  className="btn btn-secondary inline-flex min-h-11 items-center gap-1 rounded-full px-4 text-xs font-medium"
                   aria-label="Pagina precedente"
                 >
                   <ChevronLeft className="h-4 w-4" aria-hidden />
@@ -232,7 +232,7 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
                   type="button"
                   onClick={() => goToPage(currentPage + 1)}
                   disabled={!hasNext}
-                  className="inline-flex items-center gap-1 border border-border px-3 py-2 text-xs font-medium text-foreground transition-colors duration-300 hover:border-accent hover:text-accent disabled:cursor-not-allowed disabled:opacity-40"
+                  className="btn btn-secondary inline-flex min-h-11 items-center gap-1 rounded-full px-4 text-xs font-medium"
                   aria-label="Pagina successiva"
                 >
                   <span className="hidden sm:inline">Next</span>

@@ -109,7 +109,7 @@ export default function CookiePreferencesModal() {
                 type="button"
                 onClick={closePreferences}
                 aria-label="Close"
-                className="flex h-10 w-10 shrink-0 items-center justify-center border border-border text-foreground transition-colors duration-300 hover:border-accent hover:text-accent"
+                className="btn btn-secondary flex h-11 w-11 shrink-0 items-center justify-center rounded-full"
               >
                 <X className="h-4 w-4" aria-hidden />
               </button>
@@ -129,7 +129,7 @@ export default function CookiePreferencesModal() {
                       {cat.desc}
                     </p>
                     {cat.disabled && (
-                      <span className="mt-3 inline-block font-mono text-[10px] uppercase tracking-widest text-accent">
+                      <span className="mt-3 inline-block font-mono text-[11px] uppercase tracking-widest text-accent">
                         {t("alwaysActive")}
                       </span>
                     )}
@@ -156,17 +156,18 @@ export default function CookiePreferencesModal() {
             </p>
 
             <div className="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
+              {/* Rifiuta e Accetta hanno lo stesso peso visivo (GDPR); in evidenza solo "Salva". */}
               <Button variant="secondary" onClick={rejectAll}>
                 {t("rejectAll")}
               </Button>
+              <Button variant="secondary" onClick={acceptAll}>
+                {t("acceptAll")}
+              </Button>
               <Button
-                variant="secondary"
+                variant="primary"
                 onClick={() => savePreferences(draft)}
               >
                 {t("save")}
-              </Button>
-              <Button variant="primary" onClick={acceptAll}>
-                {t("acceptAll")}
               </Button>
             </div>
           </motion.div>

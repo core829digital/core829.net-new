@@ -136,7 +136,7 @@ export const CLIENT_LOGO_SIZE: Record<string, { w: number; h: number }> = {
 };
 
 /** Loghi solo-simbolo (senza testo): nei marquee si affianca il nome. */
-export const CLIENT_LOGO_ICON_ONLY = new Set(["revive", "bidwyz"]);
+export const CLIENT_LOGO_ICON_ONLY = new Set(["revive", "bidwyz", "doctor-haus"]);
 
 /** Loghi a colori che si mostrano in grigio e tornano a colori all'hover. */
 export const CLIENT_LOGO_COLOR = new Set(["doctor-haus"]);

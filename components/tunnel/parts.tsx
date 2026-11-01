@@ -98,4 +98,4 @@ export function DepthCount({
 
 /** Classi comuni delle card delle slide (bordo sottile + hover rosso). */
 export const slideCard =
-  "card-lift border border-border bg-background/80 backdrop-blur-sm";
+  "card-lift border border-border bg-background";

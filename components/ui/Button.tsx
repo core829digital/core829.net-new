@@ -1,36 +1,25 @@
 "use client";
 
 import { forwardRef } from "react";
+import { Loader2 } from "lucide-react";
 import type {
   AnchorHTMLAttributes,
   ButtonHTMLAttributes,
   MouseEventHandler,
   Ref,
 } from "react";
-import { cn } from "@/lib/utils";
 import { useGoToSection } from "@/lib/useGoToSection";
 
-type Variant = "primary" | "secondary" | "ghost";
+import { buttonClasses, type ButtonVariant as Variant, type ButtonTone as Tone } from "@/components/ui/buttonStyles";
 
-const base =
-  "inline-flex min-h-11 max-w-full items-center justify-center gap-2 text-sm font-medium transition-colors duration-300 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-60";
-
-// Hover: solo cambio di colore (nessuna animazione del testo o dell'icona).
-const variants: Record<Variant, string> = {
-  primary: "bg-foreground px-7 text-white hover:bg-accent",
-  secondary:
-    "border border-foreground px-7 text-foreground hover:bg-foreground hover:text-white",
-  ghost: "text-foreground hover:text-accent",
-};
-
-/** Classi del bottone, riusabili su elementi diversi (es. <Link> localizzato). */
-export function buttonClasses(variant: Variant = "primary", className?: string) {
-  return cn(base, variants[variant], className);
-}
+export { buttonClasses };
 
 interface CommonProps {
   className?: string;
   variant?: Variant;
+  tone?: Tone;
+  /** Mostra un indicatore di attività al posto dell'icona (azioni non istantanee). */
+  loading?: boolean;
 }
 
 type AnchorProps = AnchorHTMLAttributes<HTMLAnchorElement> &
@@ -43,8 +32,11 @@ const isAnchor = (props: AnchorProps | ButtonProps): props is AnchorProps =>
 export const Button = forwardRef<
   HTMLAnchorElement | HTMLButtonElement,
   AnchorProps | ButtonProps
->(function Button({ className, variant = "primary", ...props }, ref) {
-  const classes = cn(base, variants[variant], className);
+>(function Button(
+  { className, variant = "primary", tone = "light", loading = false, ...props },
+  ref
+) {
+  const classes = buttonClasses(variant, className, tone);
   const goToSection = useGoToSection();
 
   if (isAnchor(props)) {
@@ -84,8 +76,13 @@ export const Button = forwardRef<
       type={type}
       onClick={onClick as MouseEventHandler<HTMLButtonElement> | undefined}
       className={classes}
+      aria-busy={loading || undefined}
       {...rest}
+      disabled={loading || rest.disabled}
     >
+      {loading && (
+        <Loader2 className="h-4 w-4 animate-spin motion-reduce:animate-none" aria-hidden />
+      )}
       {children}
     </button>
   );

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { buttonClasses } from "@/components/ui/buttonStyles";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import { buildAlternates } from "@/lib/seo";
@@ -46,7 +47,7 @@ export default async function PrezziPage({
             <p className="mt-4 flex-1 text-foreground-muted">{t("projectDesc")}</p>
             <a
               href="https://bookings.core829.net/book/intro-call"
-              className="mt-6 inline-flex items-center justify-center bg-foreground px-7 py-3 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent"
+              className={buttonClasses("primary", "mt-6")}
             >
               {t("helloCta")}
             </a>
@@ -58,7 +59,7 @@ export default async function PrezziPage({
             <p className="mt-4 flex-1 text-foreground-muted">{t("retainerDesc")}</p>
             <a
               href="mailto:sales@core829.net?subject=Retainer%20%26%20large%20projects"
-              className="mt-6 inline-flex items-center justify-center bg-foreground px-7 py-3 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent"
+              className={buttonClasses("primary", "mt-6")}
             >
               {t("contactSales")}
             </a>
@@ -70,7 +71,7 @@ export default async function PrezziPage({
             <p className="mt-4 flex-1 text-foreground-muted">{t("partnershipDesc")}</p>
             <a
               href="mailto:partnerships@core829.net?subject=Partnership%20proposal"
-              className="mt-6 inline-flex items-center justify-center border border-foreground px-7 py-3 text-sm font-medium text-foreground transition-colors duration-300 hover:bg-foreground hover:text-white"
+              className={buttonClasses("secondary", "mt-6")}
             >
               {t("partnershipCta")}
             </a>
@@ -85,7 +86,7 @@ export default async function PrezziPage({
             <p className="mt-4 text-foreground-muted">{t("contactSalesHint")}</p>
             <a
               href="mailto:sales@core829.net"
-              className="mt-6 inline-flex items-center justify-center bg-foreground px-8 py-3 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent"
+              className={buttonClasses("primary", "mt-6")}
             >
               {t("contactSales")} — sales@core829.net
             </a>

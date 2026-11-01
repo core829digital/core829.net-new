@@ -36,7 +36,7 @@ export default function Footer() {
     `https://wa.me/${phone.replace(/[^\d]/g, "")}`;
 
   const linkCls =
-    "link-ghost text-sm text-foreground-muted transition-[color,transform] duration-300 hover:translate-x-1 hover:text-foreground";
+    "inline-flex min-h-11 min-w-11 items-center text-sm text-foreground-muted transition-[color,transform] duration-300 hover:translate-x-1 hover:text-accent";
   const metaIcon = "mt-0.5 h-3.5 w-3.5 shrink-0 text-accent";
 
   return (
@@ -74,7 +74,7 @@ export default function Footer() {
           {/* Servizi */}
           <div>
             <p className="tech-label">{t("colServices")}</p>
-            <ul className="mt-5 space-y-3">
+            <ul className="mt-3 space-y-0">
               {SERVICES_META.map((s, i) =>
                 s.hidden ? null : (
                   <li key={s.key}>
@@ -100,7 +100,7 @@ export default function Footer() {
           {/* Clienti */}
           <div>
             <p className="tech-label">{t("colClients")}</p>
-            <ul className="mt-5 space-y-3">
+            <ul className="mt-3 space-y-0">
               {CLIENT_ANCHORS.map((c, i) => (
                 <li key={c.id}>
                   <a href={`#${c.id}`} onClick={goTo(`#${c.id}`)} className={linkCls}>
@@ -114,7 +114,7 @@ export default function Footer() {
           {/* Azienda */}
           <div>
             <p className="tech-label">{t("colCompany")}</p>
-            <ul className="mt-5 space-y-3">
+            <ul className="mt-3 space-y-0">
               <li>
                 <a href="#hero" onClick={goTo("#hero")} className={linkCls}>
                   {t("companyAbout")}
@@ -164,34 +164,34 @@ export default function Footer() {
           </div>
 
           {/* Contatti */}
-          <div className="space-y-3 font-mono text-[11px] uppercase leading-relaxed tracking-widest text-foreground-muted lg:col-span-3">
-            <p className="flex items-start gap-2">
-              <Phone className={metaIcon} aria-hidden />
+          <div className="space-y-0 font-mono text-[11px] uppercase leading-relaxed tracking-widest text-foreground-muted lg:col-span-3">
+            <p className="flex items-center gap-2">
+              <Phone className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
               <span className="flex flex-wrap items-center gap-x-1.5">
-                <a href={telHref(COMPANY.phoneRo)} className="transition-colors hover:text-accent">
+                <a href={telHref(COMPANY.phoneRo)} className="inline-flex min-h-11 items-center transition-colors hover:text-accent">
                   {COMPANY.phoneRo}
                 </a>
                 <span aria-hidden>·</span>
-                <a href={telHref(COMPANY.phoneIt)} className="transition-colors hover:text-accent">
+                <a href={telHref(COMPANY.phoneIt)} className="inline-flex min-h-11 items-center transition-colors hover:text-accent">
                   {COMPANY.phoneIt}
                 </a>
               </span>
             </p>
-            <p className="flex items-start gap-2">
-              <Mail className={metaIcon} aria-hidden />
+            <p className="flex items-center gap-2">
+              <Mail className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
               <a
                 href={`mailto:${COMPANY.email}`}
-                className="break-all lowercase transition-colors hover:text-accent"
+                className="inline-flex min-h-11 items-center break-all lowercase transition-colors hover:text-accent"
               >
                 {COMPANY.email}
               </a>
             </p>
             {EMAILS.filter(({ address }) => address.toLowerCase() !== COMPANY.email.toLowerCase()).map(({ key, address }) => (
-              <p key={key} className="flex items-start gap-2">
-                <ArrowUpRight className={metaIcon} aria-hidden />
+              <p key={key} className="flex items-center gap-2">
+                <ArrowUpRight className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
                 <a
                   href={`mailto:${address}`}
-                  className="break-all lowercase transition-colors hover:text-accent"
+                  className="inline-flex min-h-11 items-center break-all lowercase transition-colors hover:text-accent"
                 >
                   {address}
                 </a>
@@ -221,7 +221,7 @@ export default function Footer() {
                       <li key={phone}>
                         <a
                           href={telHref(phone)}
-                          className="inline-flex items-center gap-2 text-sm text-foreground-muted transition-colors hover:text-accent"
+                          className="inline-flex min-h-11 items-center gap-2 text-sm text-foreground-muted transition-colors hover:text-accent"
                         >
                           <Phone className="h-3.5 w-3.5 shrink-0" aria-hidden />
                           {phone}
@@ -234,7 +234,7 @@ export default function Footer() {
                           href={waHref(person.whatsapp)}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-sm text-foreground-muted transition-colors hover:text-accent"
+                          className="inline-flex min-h-11 items-center gap-2 text-sm text-foreground-muted transition-colors hover:text-accent"
                         >
                           <MessageCircle className="h-3.5 w-3.5 shrink-0" aria-hidden />
                           WhatsApp: {person.whatsapp}
@@ -254,35 +254,35 @@ export default function Footer() {
           <p className="text-xs text-foreground-muted">
             {t("rights", { year })}
           </p>
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-0">
             <Link
               href="/privacy-policy"
-              className="text-xs text-foreground-muted transition-colors hover:text-accent"
+              className="inline-flex min-h-11 min-w-11 items-center justify-center text-xs text-foreground-muted transition-colors hover:text-accent"
             >
               {t("privacy")}
             </Link>
             <Link
               href="/termini-di-servizio"
-              className="text-xs text-foreground-muted transition-colors hover:text-accent"
+              className="inline-flex min-h-11 min-w-11 items-center justify-center text-xs text-foreground-muted transition-colors hover:text-accent"
             >
               {t("terms")}
             </Link>
             <Link
               href="/gdpr"
-              className="text-xs text-foreground-muted transition-colors hover:text-accent"
+              className="inline-flex min-h-11 min-w-11 items-center justify-center text-xs text-foreground-muted transition-colors hover:text-accent"
             >
               {t("gdpr")}
             </Link>
             <Link
               href="/cookie-policy"
-              className="text-xs text-foreground-muted transition-colors hover:text-accent"
+              className="inline-flex min-h-11 min-w-11 items-center justify-center text-xs text-foreground-muted transition-colors hover:text-accent"
             >
               {t("cookiePolicy")}
             </Link>
             <button
               type="button"
               onClick={openPreferences}
-              className="text-xs text-foreground-muted transition-colors hover:text-accent"
+              className="inline-flex min-h-11 min-w-11 items-center justify-center text-xs text-foreground-muted transition-colors hover:text-accent"
             >
               {tCookies("footerManage")}
             </button>

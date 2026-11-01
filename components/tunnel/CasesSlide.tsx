@@ -10,7 +10,7 @@ import { SlideHeading, slideCard } from "@/components/tunnel/parts";
 import Badge from "@/components/ui/Badge";
 import ClientScreenshot from "@/components/ui/ClientScreenshot";
 import ProjectMockup from "@/components/ui/ProjectMockup";
-import { buttonClasses } from "@/components/ui/Button";
+import { buttonClasses } from "@/components/ui/buttonStyles";
 import {
   CLIENTS_META,
   CLIENT_LOGOS,
@@ -88,7 +88,7 @@ export default function CasesSlide({ index }: { index?: number }) {
                     <span className="block truncate font-display text-[0.8rem] leading-tight tracking-tight sm:text-base">
                       {p.name}
                     </span>
-                    <span className="mt-0.5 hidden truncate font-mono text-[10px] uppercase tracking-[0.16em] text-foreground-muted sm:block">
+                    <span className="mt-0.5 hidden truncate font-mono text-[11px] uppercase tracking-[0.16em] text-foreground-muted sm:block">
                       {p.domain}
                     </span>
                   </span>
@@ -191,7 +191,7 @@ function CaseDialog({ project, onClose }: { project: Project; onClose: () => voi
           type="button"
           onClick={onClose}
           aria-label={t("close")}
-          className="absolute right-3 top-3 z-10 flex h-10 w-10 items-center justify-center bg-background/90 text-foreground backdrop-blur transition-colors hover:bg-accent hover:text-white"
+          className="btn btn-secondary absolute right-3 top-3 z-10 flex h-11 w-11 items-center justify-center rounded-full"
         >
           <X className="h-5 w-5" aria-hidden />
         </button>

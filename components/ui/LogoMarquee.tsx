@@ -53,7 +53,7 @@ export default function LogoMarquee({
             target="_blank"
             rel="noopener noreferrer"
             aria-label={names[client.key] ?? client.key}
-            className="group flex shrink-0 items-center gap-3 px-8 sm:px-12"
+            className="group flex min-h-11 shrink-0 items-center gap-3 px-8 sm:px-12"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img

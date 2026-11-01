@@ -42,13 +42,13 @@ export default function CookieBanner() {
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-3">
-                <Button variant="ghost" onClick={openPreferences} className="px-0">
+                <Button variant="ghost" onClick={openPreferences}>
                   {t("managePreferences")}
                 </Button>
                 <Button variant="secondary" onClick={rejectAll}>
                   {t("rejectAll")}
                 </Button>
-                <Button variant="primary" onClick={acceptAll}>
+                <Button variant="secondary" onClick={acceptAll}>
                   {t("acceptAll")}
                 </Button>
               </div>

@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, ArrowRight, ArrowUpRight, FileText, Download, Eye } from "lucide-react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
 import { Button } from "@/components/ui/Button";
+import { buttonClasses } from "@/components/ui/buttonStyles";
 import PdfViewer from "@/components/ui/PdfViewer";
 import { cn } from "@/lib/utils";
 
@@ -170,14 +171,19 @@ export default function ServerServicePage() {
                         key={i}
                         type="button"
                         aria-label={`Mostra immagine ${i + 1}`}
+                        aria-current={i === index}
                         onClick={() => setIndex(i)}
-                        className={cn(
-                          "h-1.5 rounded-full transition-all duration-300",
-                          i === index
-                            ? "w-6 bg-accent"
-                            : "w-3 bg-foreground/20 hover:bg-foreground/40"
-                        )}
-                      />
+                        className="group/dot flex h-11 min-w-8 items-center justify-center"
+                      >
+                        <span
+                          className={cn(
+                            "block h-1.5 rounded-full transition-all duration-300",
+                            i === index
+                              ? "w-6 bg-accent"
+                              : "w-3 bg-foreground/25 group-hover/dot:bg-foreground/45"
+                          )}
+                        />
+                      </button>
                     ))}
                   </div>
                   <div className="flex items-center gap-2">
@@ -185,7 +191,7 @@ export default function ServerServicePage() {
                       type="button"
                       onClick={prev}
                       aria-label="Immagine precedente"
-                      className="flex h-9 w-9 items-center justify-center border border-border bg-background text-foreground transition-colors hover:border-accent hover:text-accent"
+                      className="btn btn-secondary flex h-11 w-11 items-center justify-center rounded-full"
                     >
                       <ChevronLeft className="h-4 w-4" aria-hidden />
                     </button>
@@ -193,7 +199,7 @@ export default function ServerServicePage() {
                       type="button"
                       onClick={next}
                       aria-label="Immagine successiva"
-                      className="flex h-9 w-9 items-center justify-center border border-border bg-background text-foreground transition-colors hover:border-accent hover:text-accent"
+                      className="btn btn-secondary flex h-11 w-11 items-center justify-center rounded-full"
                     >
                       <ChevronRight className="h-4 w-4" aria-hidden />
                     </button>
@@ -406,7 +412,7 @@ export default function ServerServicePage() {
                   <button
                     type="button"
                     onClick={() => setActiveDoc(doc.href)}
-                    className="inline-flex min-h-11 items-center gap-2 border border-foreground px-5 text-sm font-medium text-foreground transition-colors duration-300 hover:bg-foreground hover:text-white"
+                    className={buttonClasses("secondary", "gap-2")}
                   >
                     <Eye className="h-4 w-4" aria-hidden />
                     {t("viewPdf")}
@@ -414,7 +420,7 @@ export default function ServerServicePage() {
                   <a
                     href={doc.href}
                     download
-                    className="inline-flex min-h-11 items-center gap-2 bg-foreground px-5 text-sm font-medium text-white transition-colors duration-300 hover:bg-accent"
+                    className={buttonClasses("primary", "gap-2")}
                   >
                     <Download className="h-4 w-4" aria-hidden />
                     {t("downloadPdf")}
@@ -438,11 +444,11 @@ export default function ServerServicePage() {
                 {t("ctaDesc")}
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
-                <Button href="mailto:sales@core829.net?subject=Custom%20server%20request" variant="primary">
+                <Button href="mailto:sales@core829.net?subject=Custom%20server%20request" variant="primary" tone="dark">
                   {t("ctaButton")}
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Button>
-                <Button href="#partner" variant="secondary" className="border-white/40 text-white hover:bg-white hover:text-foreground">
+                <Button href="#partner" variant="secondary" tone="dark">
                   {t("partnersTitle")}
                 </Button>
               </div>

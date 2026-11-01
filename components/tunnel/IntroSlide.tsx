@@ -30,7 +30,7 @@ export default function IntroSlide({ index }: { index?: number }) {
     >
       <div className="flex w-full flex-col items-center text-center">
         <DepthItem dir={[0, -1]} depth={0.8} delay={1}>
-          <p className="mb-6 inline-flex max-w-full items-center gap-2 border border-white/20 bg-white/5 px-4 py-1.5 font-mono text-[10px] uppercase leading-relaxed tracking-[0.18em] text-white/80 backdrop-blur-sm sm:mb-8 sm:text-xs">
+          <p className="mb-6 inline-flex max-w-full items-center gap-2 border border-white/20 bg-white/5 px-4 py-1.5 font-mono text-[11px] uppercase leading-relaxed tracking-[0.18em] text-white/80 backdrop-blur-sm sm:mb-8 sm:text-xs">
             <span aria-hidden className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
             {t("badge")}
           </p>
@@ -71,7 +71,7 @@ export default function IntroSlide({ index }: { index?: number }) {
             <Button
               href="https://bookings.core829.net/book/intro-call"
               variant="primary"
-              className="bg-white text-foreground hover:bg-accent hover:text-white"
+              tone="dark"
             >
               {t("ctaPrimary")}
               <ArrowRight className="h-4 w-4" aria-hidden />

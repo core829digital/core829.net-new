@@ -97,7 +97,7 @@ export function SocialLinks({
           aria-label={label}
           title={label}
           className={cn(
-            "flex h-11 w-11 items-center justify-center border border-border text-foreground-muted transition-colors hover:border-accent hover:text-accent",
+            "btn btn-secondary flex h-11 w-11 items-center justify-center rounded-full",
             iconClassName
           )}
         >

@@ -17,7 +17,7 @@ export default function ProjectMockup({
     <div
       aria-hidden
       className={cn(
-        "relative aspect-[4/3] w-full overflow-hidden border border-border bg-surface",
+        "relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border bg-surface",
         className
       )}
     >

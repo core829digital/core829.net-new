@@ -169,7 +169,9 @@
     "colCareers": "Karrier",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "Alapítók"
+    "foundersTitle": "Alapítók",
+    "simpleVersion": "Egyszerű verzió",
+    "simpleHint": "3D animációk nélkül: egy hagyományos, görgethető oldal."
   },
   "problem": {
     "kicker": "The problem",

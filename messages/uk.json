@@ -169,7 +169,9 @@
     "colCareers": "Кар'єра",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "Засновники"
+    "foundersTitle": "Засновники",
+    "simpleVersion": "Спрощена версія",
+    "simpleHint": "Без 3D-анімацій: звичайна сторінка для прокручування."
   },
   "problem": {
     "kicker": "The problem",

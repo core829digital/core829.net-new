@@ -31,7 +31,7 @@ export default function ServiceCard({ index, displayNumber }: Props) {
       className="card-lift group flex h-full flex-col border border-border bg-background p-8"
     >
       <div className="flex items-start justify-between">
-        <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent">
+        <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent rounded-2xl">
           <Icon className="h-5 w-5" aria-hidden />
         </span>
         <span className="font-mono text-sm tracking-widest text-foreground-muted">

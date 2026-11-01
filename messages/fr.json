@@ -473,7 +473,9 @@
     "colCareers": "Carrières",
     "gdpr": "RGPD",
     "cookiePolicy": "Politique de cookies",
-    "foundersTitle": "Fondateurs"
+    "foundersTitle": "Fondateurs",
+    "simpleVersion": "Version simple",
+    "simpleHint": "Sans animations 3D : une page classique à faire défiler."
   },
   "privacy": {
     "title": "Politique de confidentialité",

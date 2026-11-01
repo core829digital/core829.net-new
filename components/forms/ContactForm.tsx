@@ -54,7 +54,7 @@ export default function ContactForm() {
       <div
         role="status"
         aria-live="polite"
-        className="flex items-start gap-4 border border-border bg-surface p-8"
+        className="flex items-start gap-4 rounded-3xl border border-border bg-surface p-8"
       >
         <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-accent" aria-hidden />
         <div>
@@ -173,7 +173,7 @@ export default function ContactForm() {
           required
           checked={consent}
           onChange={(e) => setConsent(e.target.checked)}
-          className="mt-0.5 h-4 w-4 shrink-0 border border-border accent-accent"
+          className="mt-0.5 h-4 w-4 shrink-0 rounded-[0.3rem] border border-border accent-accent"
         />
         <span>
           {t("consentLabel")}{" "}

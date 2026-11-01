@@ -24,6 +24,7 @@ import {
 } from "framer-motion";
 import NeuralNoise from "@/components/ui/neural-noise";
 import { scrollToSlide } from "@/lib/scrollTo";
+import { useSimpleMode } from "@/lib/simpleMode";
 import { cn } from "@/lib/utils";
 
 /**
@@ -104,7 +105,8 @@ export function radial(i: number, n: number, cols: number): [number, number] {
 }
 
 function useStageMode() {
-  const [mode, setMode] = useState<StageMode>("tunnel");
+  const simple = useSimpleMode();
+  const [auto, setAuto] = useState<StageMode>("tunnel");
   const dimsRef = useRef<Dims>({ w: 1440, h: 900 });
 
   useEffect(() => {
@@ -112,7 +114,7 @@ function useStageMode() {
     const update = () => {
       dimsRef.current = { w: window.innerWidth, h: window.innerHeight };
       const flat = mq.matches || window.innerHeight < MIN_HEIGHT;
-      setMode(flat ? "flat" : "tunnel");
+      setAuto(flat ? "flat" : "tunnel");
     };
     update();
     window.addEventListener("resize", update);
@@ -125,6 +127,8 @@ function useStageMode() {
     };
   }, []);
 
+  // La scelta esplicita dell'utente (versione semplice) vince sul rilevamento automatico.
+  const mode: StageMode = simple ? "flat" : auto;
   return { mode, dimsRef };
 }
 

@@ -22,11 +22,7 @@ export default function IntroSlide({ index }: { index?: number }) {
       index={index}
       id="hero"
       dark
-      flatBackground={
-        <>
-          <NeuralNoise />
-        </>
-      }
+      flatBackground={<NeuralNoise paused />}
     >
       <div className="flex w-full flex-col items-center text-center">
         <DepthItem dir={[0, -1]} depth={0.8} delay={1}>

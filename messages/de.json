@@ -473,7 +473,9 @@
     "colCareers": "Karriere",
     "gdpr": "DSGVO",
     "cookiePolicy": "Cookie-Richtlinie",
-    "foundersTitle": "Gründer"
+    "foundersTitle": "Gründer",
+    "simpleVersion": "Einfache Version",
+    "simpleHint": "Ohne 3D-Animationen: eine gewöhnliche, scrollbare Seite."
   },
   "privacy": {
     "title": "Datenschutzerklärung",

@@ -117,7 +117,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </Link>
 
         <div className="mt-10 flex items-start gap-6">
-          <span className="flex h-16 w-16 shrink-0 items-center justify-center bg-foreground text-white">
+          <span className="flex h-16 w-16 shrink-0 items-center justify-center bg-foreground text-white rounded-2xl">
             <Icon className="h-7 w-7" aria-hidden />
           </span>
           <span className="font-mono text-sm tracking-widest text-foreground-muted">

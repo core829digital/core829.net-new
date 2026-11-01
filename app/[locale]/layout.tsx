@@ -8,6 +8,7 @@ import SmoothScrollProvider from "@/app/providers/SmoothScrollProvider";
 import VisualViewportProvider from "@/app/providers/VisualViewportProvider";
 import ResolvePendingHash from "@/components/ResolvePendingHash";
 import ScrollProgress from "@/components/animations/ScrollProgress";
+import { SimpleVersionSkipLink } from "@/components/layout/SimpleVersionToggle";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import JsonLd from "@/components/seo/JsonLd";
@@ -136,6 +137,7 @@ export default async function LocaleLayout({
             <TrustpilotConsentGate />
             <VisualViewportProvider />
             <SmoothScrollProvider>
+              <SimpleVersionSkipLink />
               <ResolvePendingHash />
               <ScrollProgress />
               <Navbar />

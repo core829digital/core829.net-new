@@ -20,7 +20,7 @@ export default function BookingSection() {
             {t("nav.bookCta")}
           </p>
           <h2 className="mt-4 text-section-subtitle">{t("hero.ctaPrimary")}</h2>
-          <div className="mt-8 overflow-hidden border border-border bg-background">
+          <div className="mt-8 overflow-hidden rounded-3xl border border-border bg-background">
             <iframe
               src="https://bookings.core829.net/embed/intro-call?accent=%23e11d2e&font=Inter"
               width="100%"

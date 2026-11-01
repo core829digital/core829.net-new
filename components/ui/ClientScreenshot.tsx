@@ -36,7 +36,7 @@ export default function ClientScreenshot({
   return (
     <div
       className={cn(
-        "relative overflow-hidden border border-border bg-surface shadow-soft",
+        "relative overflow-hidden rounded-2xl border border-border bg-surface shadow-soft",
         className
       )}
       onMouseEnter={() => setPaused(true)}

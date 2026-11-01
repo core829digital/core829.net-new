@@ -169,7 +169,9 @@
     "colCareers": "採用情報",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "創業者"
+    "foundersTitle": "創業者",
+    "simpleVersion": "シンプル版",
+    "simpleHint": "3Dアニメーションなし：通常のスクロールページ。"
   },
   "problem": {
     "kicker": "The problem",

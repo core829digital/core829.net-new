@@ -473,7 +473,9 @@
     "colCareers": "Empleo",
     "gdpr": "GDPR",
     "cookiePolicy": "Política de Cookies",
-    "foundersTitle": "Fundadores"
+    "foundersTitle": "Fundadores",
+    "simpleVersion": "Versión simple",
+    "simpleHint": "Sin animaciones 3D: una página normal para desplazarse."
   },
   "privacy": {
     "title": "Política de Privacidad",

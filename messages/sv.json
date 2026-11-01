@@ -169,7 +169,9 @@
     "colCareers": "Karriär",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "Grundare"
+    "foundersTitle": "Grundare",
+    "simpleVersion": "Enkel version",
+    "simpleHint": "Utan 3D-animationer: en vanlig sida att scrolla igenom."
   },
   "problem": {
     "kicker": "The problem",

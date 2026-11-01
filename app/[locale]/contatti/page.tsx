@@ -69,12 +69,12 @@ export default async function ContattiPage({
             </div>
           </div>
 
-          <div className="border border-border bg-surface p-8">
+          <div className="rounded-3xl border border-border bg-surface p-8">
             <ContactForm />
           </div>
         </div>
 
-        <div className="mt-16 border border-border bg-surface p-8 md:max-w-3xl">
+        <div className="mt-16 rounded-3xl border border-border bg-surface p-8 md:max-w-3xl">
           <p className="tech-label">{COMPANY.legalName}</p>
           <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div>
@@ -143,7 +143,7 @@ export default async function ContattiPage({
               <li key={key}>
                 <a
                   href={`mailto:${address}`}
-                  className="group block h-full border border-border bg-surface p-5 transition-colors duration-300 hover:border-accent"
+                  className="group block h-full rounded-2xl border border-border bg-surface p-5 transition-colors duration-300 hover:border-accent"
                 >
                   <span className="block text-xs font-semibold uppercase tracking-widest text-accent">
                     {tEmails(`${key}.label`)}

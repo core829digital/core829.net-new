@@ -169,7 +169,9 @@
     "colCareers": "Uratoiminta",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "Perustajat"
+    "foundersTitle": "Perustajat",
+    "simpleVersion": "Yksinkertainen versio",
+    "simpleHint": "Ei 3D-animaatioita: tavallinen vieritettävä sivu."
   },
   "problem": {
     "kicker": "The problem",

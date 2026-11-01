@@ -9,6 +9,7 @@ import { useGoToSection } from "@/lib/useGoToSection";
 import { SERVICES_META, clientAnchorIds, COMPANY, EMAILS, FOUNDERS } from "@/lib/constants";
 import { SocialLinks } from "@/components/SocialIcons";
 import { TrustpilotWidget } from "@/components/Trustpilot";
+import { SimpleVersionToggle } from "@/components/layout/SimpleVersionToggle";
 
 const CLIENT_ANCHORS = clientAnchorIds;
 
@@ -255,6 +256,7 @@ export default function Footer() {
             {t("rights", { year })}
           </p>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-0">
+            <SimpleVersionToggle />
             <Link
               href="/privacy-policy"
               className="inline-flex min-h-11 min-w-11 items-center justify-center text-xs text-foreground-muted transition-colors hover:text-accent"

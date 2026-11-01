@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useSimpleMode } from "@/lib/simpleMode";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,9 +17,17 @@ export default function SmoothScrollProvider({
 }: {
   children: React.ReactNode;
 }) {
+  const simple = useSimpleMode();
+
+  // Espone la scelta al CSS (es. ferma il marquee).
+  useEffect(() => {
+    document.documentElement.dataset.simple = simple ? "1" : "0";
+  }, [simple]);
+
   useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduceMotion) return;
+    // Versione semplice: scroll nativo, senza inerzia.
+    if (reduceMotion || simple) return;
 
     const lenis = new Lenis({
       duration: 1.2,
@@ -43,7 +52,7 @@ export default function SmoothScrollProvider({
       lenis.destroy();
       window.__lenis = undefined;
     };
-  }, []);
+  }, [simple]);
 
   return <>{children}</>;
 }

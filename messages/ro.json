@@ -473,7 +473,9 @@
     "colCareers": "Cariere",
     "gdpr": "GDPR",
     "cookiePolicy": "Politica de cookie-uri",
-    "foundersTitle": "Fondatori"
+    "foundersTitle": "Fondatori",
+    "simpleVersion": "Versiune simplă",
+    "simpleHint": "Fără animații 3D: o pagină obișnuită, de derulat."
   },
   "privacy": {
     "title": "Politica de confidențialitate",

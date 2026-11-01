@@ -169,7 +169,9 @@
     "colCareers": "Εργασία",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "Ιδρυτές"
+    "foundersTitle": "Ιδρυτές",
+    "simpleVersion": "Απλή έκδοση",
+    "simpleHint": "Χωρίς 3D κινούμενα σχέδια: μια απλή σελίδα κύλισης."
   },
   "problem": {
     "kicker": "The problem",

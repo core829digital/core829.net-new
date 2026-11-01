@@ -473,7 +473,9 @@
     "colCareers": "Vacatures",
     "gdpr": "AVG",
     "cookiePolicy": "Cookiebeleid",
-    "foundersTitle": "Oprichter"
+    "foundersTitle": "Oprichter",
+    "simpleVersion": "Eenvoudige versie",
+    "simpleHint": "Zonder 3D-animaties: een gewone pagina om doorheen te scrollen."
   },
   "privacy": {
     "title": "Privacybeleid",

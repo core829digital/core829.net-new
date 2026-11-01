@@ -213,7 +213,7 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
               </button>
             </div>
 
-            <div className="mt-4 flex min-h-0 flex-1 flex-col border border-border bg-surface">
+            <div className="mt-4 flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl border border-border bg-surface">
               <div className="flex items-center justify-between gap-3 border-b border-border px-4 py-3">
                 <button
                   type="button"

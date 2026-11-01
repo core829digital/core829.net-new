@@ -40,7 +40,7 @@ export default async function PrezziPage({
         </p>
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div className="flex flex-col rounded-xl border border-border bg-surface p-8">
+          <div className="flex flex-col rounded-3xl border border-border bg-surface p-8">
             <h3 className="text-lg font-semibold tracking-tight">
               {t("projectTitle")}
             </h3>
@@ -52,7 +52,7 @@ export default async function PrezziPage({
               {t("helloCta")}
             </a>
           </div>
-          <div className="flex flex-col rounded-xl border border-border bg-surface p-8">
+          <div className="flex flex-col rounded-3xl border border-border bg-surface p-8">
             <h3 className="text-lg font-semibold tracking-tight">
               {t("retainerTitle")}
             </h3>
@@ -64,7 +64,7 @@ export default async function PrezziPage({
               {t("contactSales")}
             </a>
           </div>
-          <div className="flex flex-col rounded-xl border border-border bg-surface p-8">
+          <div className="flex flex-col rounded-3xl border border-border bg-surface p-8">
             <h3 className="text-lg font-semibold tracking-tight">
               {t("partnershipTitle")}
             </h3>

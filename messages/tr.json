@@ -169,7 +169,9 @@
     "colCareers": "Kariyer",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "Kurucular"
+    "foundersTitle": "Kurucular",
+    "simpleVersion": "Basit sürüm",
+    "simpleHint": "3D animasyon yok: düz, kaydırılabilir bir sayfa."
   },
   "problem": {
     "kicker": "The problem",

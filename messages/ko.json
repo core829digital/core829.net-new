@@ -169,7 +169,9 @@
     "colCareers": "채용",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "설립자"
+    "foundersTitle": "설립자",
+    "simpleVersion": "간단한 버전",
+    "simpleHint": "3D 애니메이션 없음: 일반적인 스크롤 페이지."
   },
   "problem": {
     "kicker": "The problem",

@@ -39,7 +39,7 @@ export default async function CareersPage({
           {t("subtitle")}
         </p>
 
-        <div className="mt-16 max-w-2xl border border-border bg-surface p-8 sm:p-10">
+        <div className="mt-16 max-w-2xl rounded-3xl border border-border bg-surface p-8 sm:p-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted">
             {t("comingSoon")}
           </p>

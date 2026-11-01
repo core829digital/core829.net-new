@@ -169,7 +169,9 @@
     "colCareers": "Kariéra",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "Zakladatelia"
+    "foundersTitle": "Zakladatelia",
+    "simpleVersion": "Jednoduchá verzia",
+    "simpleHint": "Bez 3D animácií: bežná stránka na posúvanie."
   },
   "problem": {
     "kicker": "The problem",

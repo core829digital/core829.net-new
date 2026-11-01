@@ -146,7 +146,7 @@ export default function ServerServicePage() {
                 aria-hidden
                 className="absolute -left-6 -top-6 z-20 h-3 w-3 bg-accent"
               />
-              <div className="relative aspect-square overflow-hidden border border-border bg-surface">
+              <div className="relative aspect-square overflow-hidden rounded-3xl border border-border bg-surface">
                 <AnimatePresence initial={false}>
                   <MotionImage
                     key={index}
@@ -215,7 +215,7 @@ export default function ServerServicePage() {
       <section className="border-t border-border bg-background">
         <div className="container-core829 py-24 lg:py-32">
           <RevealOnScroll className="grid items-center gap-16 lg:grid-cols-[auto_1fr]">
-            <div className="flex h-40 w-40 shrink-0 items-center justify-center border border-border bg-surface p-8 sm:h-48 sm:w-48">
+            <div className="flex h-40 w-40 shrink-0 items-center justify-center rounded-3xl border border-border bg-surface p-8 sm:h-48 sm:w-48">
               <Image
                 src={DEPARTMENT_LOGO}
                 alt="CORE829 Servers"
@@ -257,7 +257,7 @@ export default function ServerServicePage() {
                 className="card-lift border border-border bg-background p-8"
               >
                 <div className="flex items-center justify-between">
-                  <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white">
+                  <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white rounded-2xl">
                     <span className="font-mono text-sm">{0}{i + 1}</span>
                   </span>
                   <span className="font-mono text-sm tracking-widest text-foreground-muted">
@@ -289,7 +289,7 @@ export default function ServerServicePage() {
         <RevealOnScroll stagger={0.1} className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-2">
           {/* Intel */}
           <div className="card-lift group flex flex-col border border-border bg-background p-6 sm:p-8 md:p-10">
-            <div className="flex h-16 w-16 items-center justify-center border border-border p-2">
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-border p-2">
               <Image
                 src={INTEL_LOGO}
                 alt="Intel"
@@ -307,7 +307,7 @@ export default function ServerServicePage() {
 
           {/* NVIDIA */}
           <div className="card-lift group flex flex-col border border-border bg-background p-6 sm:p-8 md:p-10">
-            <div className="flex h-16 w-16 items-center justify-center border border-border p-2">
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-border p-2">
               <Image
                 src={NVIDIA_LOGO}
                 alt="NVIDIA"
@@ -325,9 +325,9 @@ export default function ServerServicePage() {
         </RevealOnScroll>
 
         {/* Ecosistema a 360° */}
-        <RevealOnScroll className="mt-16 border border-border bg-surface p-6 sm:p-8 md:p-10">
+        <RevealOnScroll className="mt-16 rounded-3xl border border-border bg-surface p-6 sm:p-8 md:p-10">
           <div className="grid items-center gap-8 md:grid-cols-[auto_1fr]">
-            <span className="flex h-14 w-14 items-center justify-center bg-foreground text-white">
+            <span className="flex h-14 w-14 items-center justify-center bg-foreground text-white rounded-2xl">
               <span className="font-mono text-sm">360°</span>
             </span>
             <div>
@@ -346,7 +346,7 @@ export default function ServerServicePage() {
             {PARTNER_LOGOS.map((partner) => (
               <div
                 key={partner.src}
-                className="flex h-20 items-center justify-center border border-border bg-background p-4 grayscale transition-all duration-300 hover:grayscale-0"
+                className="flex h-20 items-center justify-center rounded-2xl border border-border bg-background p-4 grayscale transition-all duration-300 hover:grayscale-0"
               >
                 <Image
                   src={partner.src}
@@ -362,7 +362,7 @@ export default function ServerServicePage() {
         </RevealOnScroll>
 
         {/* Limite di spedizione */}
-        <RevealOnScroll className="mt-6 border border-border p-6 sm:p-8 md:p-10">
+        <RevealOnScroll className="mt-6 rounded-3xl border border-border p-6 sm:p-8 md:p-10">
           <div className="grid items-start gap-6 md:grid-cols-[auto_1fr]">
             <span className="flex h-10 items-center rounded-full border border-accent px-4">
               <span className="font-mono text-sm uppercase tracking-widest text-accent">
@@ -397,9 +397,9 @@ export default function ServerServicePage() {
             {DOCUMENTS.map((doc) => (
               <div
                 key={doc.key}
-                className="flex flex-col border border-border bg-background p-6 sm:p-8"
+                className="flex flex-col rounded-3xl border border-border bg-background p-6 sm:p-8"
               >
-                <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white">
+                <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white rounded-2xl">
                   <FileText className="h-5 w-5" aria-hidden />
                 </span>
                 <h3 className="mt-6 text-lg font-semibold tracking-tight">

@@ -66,7 +66,7 @@ export default async function ChiSiamoPage({
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
           <a
             href="mailto:hello@core829.net"
-            className="group border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent"
+            className="group rounded-3xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent"
           >
             <span className="block text-xs font-semibold uppercase tracking-widest text-accent">
               {tEmails("hello.label")}
@@ -80,7 +80,7 @@ export default async function ChiSiamoPage({
           </a>
           <a
             href="mailto:office@core829.net"
-            className="group border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent"
+            className="group rounded-3xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent"
           >
             <span className="block text-xs font-semibold uppercase tracking-widest text-accent">
               {tEmails("office.label")}

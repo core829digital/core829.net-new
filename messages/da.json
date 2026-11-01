@@ -169,7 +169,9 @@
     "colCareers": "Karriere",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "Grundlæggere"
+    "foundersTitle": "Grundlæggere",
+    "simpleVersion": "Enkel version",
+    "simpleHint": "Uden 3D-animationer: en almindelig side at rulle igennem."
   },
   "problem": {
     "kicker": "The problem",

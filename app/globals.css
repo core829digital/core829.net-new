@@ -228,6 +228,7 @@
   .card-lift {
     position: relative;
     overflow: hidden;
+    border-radius: 1.5rem; /* 24px: card grandi (raggi concentrici con icone 12–16px) */
     transition:
       transform 0.3s var(--ease-out-expo),
       border-color 0.3s ease,
@@ -733,6 +734,9 @@
   animation: core829-marquee var(--marquee-duration, 40s) linear infinite;
 }
 .marquee-track:hover {
+  animation-play-state: paused;
+}
+html[data-simple="1"] .marquee-track {
   animation-play-state: paused;
 }
 .marquee-track-reverse {

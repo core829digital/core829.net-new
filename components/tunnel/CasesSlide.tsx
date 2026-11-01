@@ -180,7 +180,7 @@ function CaseDialog({ project, onClose }: { project: Project; onClose: () => voi
         aria-modal="true"
         aria-label={project.name}
         data-lenis-prevent
-        className="scroll-core829 relative max-h-[92svh] w-full max-w-6xl overflow-y-auto bg-background text-foreground shadow-lift sm:max-h-[88svh]"
+        className="scroll-core829 relative max-h-[92svh] w-full max-w-6xl overflow-y-auto rounded-t-3xl bg-background text-foreground shadow-lift sm:max-h-[88svh] sm:rounded-3xl"
         initial={{ opacity: 0, y: 40, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 24, scale: 0.98 }}

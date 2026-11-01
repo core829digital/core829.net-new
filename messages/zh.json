@@ -169,7 +169,9 @@
     "colCareers": "招聘",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "创始人"
+    "foundersTitle": "创始人",
+    "simpleVersion": "简易版",
+    "simpleHint": "无 3D 动画：普通的可滚动页面。"
   },
   "problem": {
     "kicker": "The problem",

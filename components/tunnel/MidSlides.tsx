@@ -126,7 +126,7 @@ export function ServicesSlide({ index }: SlideProps) {
                 id={meta.anchorId}
                 className={cn(slideCard, "group flex h-full items-center gap-3 p-3 sm:flex-col sm:items-start sm:gap-5 sm:p-6 xl:gap-8 xl:p-8")}
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent sm:h-11 sm:w-11 xl:h-14 xl:w-14">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent sm:h-11 sm:w-11 xl:h-14 xl:w-14 rounded-xl">
                   <Icon className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden />
                 </span>
                 <span className="font-display text-[0.8rem] leading-snug tracking-tight sm:text-base xl:text-xl">
@@ -181,7 +181,7 @@ export function MethodSlide({ index }: SlideProps) {
             delay={i}
             className="relative"
           >
-            <span className="relative z-10 flex h-9 w-9 items-center justify-center bg-accent font-mono text-sm text-white xl:h-12 xl:w-12 xl:text-base">
+            <span className="relative z-10 flex h-9 w-9 items-center justify-center bg-accent font-mono text-sm text-white xl:h-12 xl:w-12 xl:text-base rounded-xl">
               {i + 1}
             </span>
             <p className="mt-4 font-display text-lg leading-tight tracking-tight sm:mt-6 sm:text-2xl xl:text-3xl">
@@ -220,7 +220,7 @@ export function FeaturesSlide({ index }: SlideProps) {
               className={cn(slideCard, "flex items-center gap-3 p-3.5 sm:p-5 xl:gap-5 xl:p-8")}
             >
               {Icon && (
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-foreground text-white sm:h-11 sm:w-11 xl:h-14 xl:w-14">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-foreground text-white sm:h-11 sm:w-11 xl:h-14 xl:w-14 rounded-xl">
                   <Icon className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden />
                 </span>
               )}

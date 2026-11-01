@@ -96,7 +96,7 @@ export default function CookiePreferencesModal() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 24 }}
             transition={{ duration: 0.2 }}
-            className="max-h-[90dvh] w-full max-w-2xl overflow-y-auto border border-border bg-background p-6 sm:p-8"
+            className="max-h-[90dvh] w-full max-w-2xl overflow-y-auto rounded-3xl border border-border bg-background p-6 sm:p-8"
           >
             <div className="flex items-start justify-between gap-4">
               <div>
@@ -119,7 +119,7 @@ export default function CookiePreferencesModal() {
               {categories.map((cat) => (
                 <div
                   key={cat.key}
-                  className="flex items-start justify-between gap-6 border border-border p-5"
+                  className="flex items-start justify-between gap-6 rounded-2xl border border-border p-5"
                 >
                   <div className="min-w-0">
                     <h3 className="text-sm font-semibold tracking-tight text-foreground">

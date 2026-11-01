@@ -474,7 +474,9 @@
     "colCareers": "Lavora con noi",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "Founders"
+    "foundersTitle": "Founders",
+    "simpleVersion": "Versione semplice",
+    "simpleHint": "Senza animazioni 3D: una pagina lineare da scorrere."
   },
   "privacy": {
     "title": "Informativa sulla Privacy",

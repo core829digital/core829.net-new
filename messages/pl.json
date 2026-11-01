@@ -169,7 +169,9 @@
     "colCareers": "Kariera",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "Założyciele"
+    "foundersTitle": "Założyciele",
+    "simpleVersion": "Wersja uproszczona",
+    "simpleHint": "Bez animacji 3D: zwykła, przewijana strona."
   },
   "problem": {
     "kicker": "The problem",

@@ -169,7 +169,9 @@
     "colCareers": "Karriere",
     "gdpr": "GDPR",
     "cookiePolicy": "Cookie Policy",
-    "foundersTitle": "Grunnleggere"
+    "foundersTitle": "Grunnleggere",
+    "simpleVersion": "Enkel versjon",
+    "simpleHint": "Uten 3D-animasjoner: en vanlig side å rulle gjennom."
   },
   "problem": {
     "kicker": "The problem",

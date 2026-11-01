@@ -14,17 +14,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--color-background)",
-        foreground: "var(--color-foreground)",
-        "foreground-muted": "var(--color-foreground-muted)",
-        accent: "var(--color-accent)",
-        "accent-hover": "var(--color-accent-hover)",
-        border: "var(--color-border)",
-        surface: "var(--color-surface)",
-        ink: "var(--color-ink)",
-        "ink-soft": "var(--color-ink-soft)",
-        "on-ink": "var(--color-on-ink)",
-        "on-ink-muted": "var(--color-on-ink-muted)",
+        // Canali RGB + <alpha-value>: abilitano i modificatori di opacità (/20).
+        background: "rgb(var(--rgb-background) / <alpha-value>)",
+        foreground: "rgb(var(--rgb-foreground) / <alpha-value>)",
+        "foreground-muted": "rgb(var(--rgb-foreground-muted) / <alpha-value>)",
+        accent: "rgb(var(--rgb-accent) / <alpha-value>)",
+        "accent-hover": "rgb(var(--rgb-accent-hover) / <alpha-value>)",
+        border: "rgb(var(--rgb-border) / <alpha-value>)",
+        surface: "rgb(var(--rgb-surface) / <alpha-value>)",
+        ink: "rgb(var(--rgb-ink) / <alpha-value>)",
+        "ink-soft": "rgb(var(--rgb-ink-soft) / <alpha-value>)",
+        "on-ink": "rgb(var(--rgb-on-ink) / <alpha-value>)",
+        "on-ink-muted": "rgb(var(--rgb-on-ink-muted) / <alpha-value>)",
       },
       boxShadow: {
         soft: "var(--shadow-soft)",

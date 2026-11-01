@@ -23,6 +23,11 @@ const variants: Record<Variant, string> = {
   ghost: "text-foreground hover:text-accent",
 };
 
+/** Classi del bottone, riusabili su elementi diversi (es. <Link> localizzato). */
+export function buttonClasses(variant: Variant = "primary", className?: string) {
+  return cn(base, variants[variant], className);
+}
+
 interface CommonProps {
   className?: string;
   variant?: Variant;

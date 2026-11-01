@@ -22,6 +22,20 @@
   --color-on-ink: #f5f5f5; /* Testo su scuro */
   --color-on-ink-muted: #a1a1a6; /* Testo secondario su scuro */
 
+  /* Stessi colori come canali RGB: servono a Tailwind per le classi con
+     opacità (bg-accent/20, border-border/60, bg-ink/70…). Tenere allineati. */
+  --rgb-background: 255 255 255;
+  --rgb-foreground: 26 26 26;
+  --rgb-foreground-muted: 74 74 74;
+  --rgb-accent: 225 29 46;
+  --rgb-accent-hover: 196 18 31;
+  --rgb-border: 229 229 229;
+  --rgb-surface: 247 247 247;
+  --rgb-ink: 11 11 12;
+  --rgb-ink-soft: 20 20 22;
+  --rgb-on-ink: 245 245 245;
+  --rgb-on-ink-muted: 161 161 166;
+
   --shadow-soft: 0 1px 2px rgba(10, 10, 10, 0.04), 0 8px 24px -12px rgba(10, 10, 10, 0.12);
   --shadow-lift: 0 2px 4px rgba(10, 10, 10, 0.05), 0 18px 40px -16px rgba(10, 10, 10, 0.2);
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -190,6 +204,11 @@
      i token foreground/border sono rimappati così i componenti esistenti
      funzionano senza modifiche. */
   .section-dark {
+    --rgb-background: var(--rgb-ink);
+    --rgb-foreground: var(--rgb-on-ink);
+    --rgb-foreground-muted: var(--rgb-on-ink-muted);
+    --rgb-border: 60 60 62;
+    --rgb-surface: var(--rgb-ink-soft);
     --color-background: var(--color-ink);
     --color-foreground: var(--color-on-ink);
     --color-foreground-muted: var(--color-on-ink-muted);
@@ -531,6 +550,7 @@
 .marquee-track {
   display: flex;
   width: max-content;
+  will-change: transform;
   animation: core829-marquee var(--marquee-duration, 40s) linear infinite;
 }
 .marquee-track:hover {

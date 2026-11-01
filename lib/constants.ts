@@ -122,19 +122,24 @@ export const CLIENT_LOGOS: Record<string, string> = {
 };
 
 /**
- * Filtro CSS per rendere ogni logo visibile come marcatura monocroma scura,
- * indipendentemente dal colore dell'originale. I loghi chiari/bianchi
- * (winex, revive) vengono invertiti su scuro; quelli già scuri
- * (doctor-haus, bidwyz) restano in scala di grigi.
+ * Dimensioni intrinseche (px) dei loghi in /public/logos, usate per riservare
+ * lo spazio prima del caricamento (nessun salto di layout nei marquee).
+ * I loghi sono già ritagliati e, tranne Doctor Haus, monocromi (#1a1a1a).
  */
-export const CLIENT_LOGO_FILTER: Record<string, string> = {
-  onespec: "grayscale(1)",
-  andromedia: "grayscale(1)",
-  "doctor-haus": "grayscale(1)",
-  winex: "invert(1) grayscale(1)",
-  revive: "invert(1) grayscale(1)",
-  bidwyz: "grayscale(1)",
+export const CLIENT_LOGO_SIZE: Record<string, { w: number; h: number }> = {
+  onespec: { w: 563, h: 160 },
+  andromedia: { w: 900, h: 133 },
+  "doctor-haus": { w: 402, h: 160 },
+  winex: { w: 447, h: 160 },
+  revive: { w: 206, h: 160 },
+  bidwyz: { w: 143, h: 160 },
 };
+
+/** Loghi solo-simbolo (senza testo): nei marquee si affianca il nome. */
+export const CLIENT_LOGO_ICON_ONLY = new Set(["revive", "bidwyz"]);
+
+/** Loghi a colori che si mostrano in grigio e tornano a colori all'hover. */
+export const CLIENT_LOGO_COLOR = new Set(["doctor-haus"]);
 
 /**
  * Dati societari CORE829 SRL (condivisi, non dipendono dalla lingua).

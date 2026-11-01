@@ -30,7 +30,7 @@ export default function AccordionItem({
         aria-expanded={open}
         aria-controls={`faq-panel-${index}`}
         id={`faq-button-${index}`}
-        className="flex min-h-11 w-full items-center justify-between gap-6 py-6 text-left"
+        className="flex min-h-11 w-full items-center justify-between gap-6 py-[clamp(0.8rem,2.6svh,1.5rem)] text-left"
       >
         <span className="flex items-baseline gap-4">
           <span className="font-mono text-xs uppercase tracking-widest text-accent">
@@ -52,13 +52,14 @@ export default function AccordionItem({
         id={`faq-panel-${index}`}
         role="region"
         aria-labelledby={`faq-button-${index}`}
+        aria-hidden={!open}
         className={cn(
           "grid transition-[grid-template-rows] duration-300 ease-out",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         )}
       >
         <div className="overflow-hidden">
-          <p className="max-w-2xl pb-6 pl-9 text-foreground-muted">{answer}</p>
+          <p className="max-w-2xl pb-5 pl-9 text-foreground-muted">{answer}</p>
         </div>
       </div>
     </div>

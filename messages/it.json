@@ -314,7 +314,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "Chiudi"
   },
   "features": {
     "kicker": "Capabilities",

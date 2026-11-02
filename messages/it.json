@@ -1072,5 +1072,185 @@
     "nextImage": "Immagine successiva",
     "showImage": "Mostra immagine {n}",
     "language": "Lingua"
+  },
+  "landingSoftware": {
+    "metaTitle": "Software su misura per aziende — CORE829",
+    "metaDescription": "Sviluppo di software su misura, gestionali e web app per aziende: progettiamo, sviluppiamo e manteniamo il software che serve ai tuoi processi.",
+    "kicker": "Sviluppo software su misura",
+    "title": "Software su misura per la tua azienda",
+    "intro": "Quando i fogli Excel, i gestionali standard e gli strumenti scollegati non bastano più, costruiamo il software che segue i tuoi processi, non il contrario. Un unico team, dal brief al rilascio.",
+    "cta": "Parla con noi del tuo progetto",
+    "ctaSecondary": "Vedi i progetti realizzati",
+    "whenTitle": "Quando ha senso un software su misura",
+    "when": [
+      "I tuoi processi sono diversi da quelli per cui è pensato un gestionale standard.",
+      "Lavori con fogli Excel, email e strumenti scollegati che nessuno riesce più a tenere allineati.",
+      "Ti servono integrazioni con sistemi esistenti (contabilità, magazzino, e-commerce, API di terzi).",
+      "Vuoi offrire ai tuoi clienti un portale, un configuratore o un preventivatore online."
+    ],
+    "buildTitle": "Cosa realizziamo",
+    "build": [
+      {
+        "t": "Gestionali e dashboard",
+        "d": "Strumenti interni per ordini, clienti, magazzino e report, con i permessi e i flussi della tua azienda."
+      },
+      {
+        "t": "Web app e portali clienti",
+        "d": "Aree riservate, richieste e preventivi online, con accesso per ruoli e aggiornamenti in tempo reale."
+      },
+      {
+        "t": "Configuratori e preventivatori",
+        "d": "Il cliente sceglie, il sistema calcola e ti arriva una richiesta completa e qualificata."
+      },
+      {
+        "t": "Integrazioni e automazioni",
+        "d": "Collegamenti tra i tuoi sistemi, API ed email automatiche che eliminano il lavoro manuale ripetitivo."
+      }
+    ],
+    "howTitle": "Come lavoriamo",
+    "how": [
+      {
+        "t": "Ascoltiamo",
+        "d": "Capiamo il processo reale, chi lo usa e quale problema deve sparire."
+      },
+      {
+        "t": "Progettiamo",
+        "d": "Definiamo ambito, schermate e priorità, con un preventivo chiaro prima di scrivere codice."
+      },
+      {
+        "t": "Sviluppiamo a tappe",
+        "d": "Rilasci brevi e verificabili: vedi il software crescere e correggi la rotta in corsa."
+      },
+      {
+        "t": "Rilasciamo e manteniamo",
+        "d": "Messa online, formazione e supporto continuo con un retainer mensile, se lo vuoi."
+      }
+    ],
+    "proofTitle": "Progetti reali",
+    "proof": [
+      {
+        "t": "OneSpec",
+        "d": "Piattaforma di preventivazione per serramentisti: configuratore incorporabile, motore di prezzi sul listino del cliente e dashboard delle richieste."
+      },
+      {
+        "t": "Doctor Haus",
+        "d": "Catalogo, configuratore a più passaggi, richieste di preventivo, area clienti e pannello amministrativo per strutture modulari prefabbricate."
+      },
+      {
+        "t": "Winex",
+        "d": "Sito multilingua per un produttore di finestre, con animazione allo scroll e configuratore OneSpec integrato."
+      }
+    ],
+    "faqTitle": "Domande frequenti",
+    "faq": [
+      {
+        "q": "Quanto costa un software su misura?",
+        "a": "Dipende da ambito e complessità. Dopo un primo incontro ti inviamo un preventivo chiaro con cosa è incluso. Puoi lavorare a progetto con consegna e costo definiti, oppure con un retainer mensile per sviluppo e manutenzione."
+      },
+      {
+        "q": "Quanto tempo serve?",
+        "a": "Dipende dal progetto. Lavoriamo a tappe brevi, così una prima versione utilizzabile arriva prima del rilascio completo; i tempi li concordiamo insieme dopo il brief."
+      },
+      {
+        "q": "Lavorate con aziende fuori dall'Italia?",
+        "a": "Sì. Siamo una società registrata in Romania e lavoriamo online con clienti in tutta Europa, in italiano, inglese e altre lingue."
+      },
+      {
+        "q": "Offrite manutenzione dopo il rilascio?",
+        "a": "Sì. Dopo il rilascio puoi affidarci manutenzione, supporto e nuove funzioni con un retainer mensile."
+      }
+    ],
+    "ctaTitle": "Raccontaci cosa deve fare il tuo software",
+    "ctaDesc": "Ti rispondiamo con un piano chiaro e un preventivo trasparente."
+  },
+  "landingAi": {
+    "metaTitle": "Intelligenza artificiale per aziende — CORE829",
+    "metaDescription": "Intelligenza artificiale per aziende: assistenti su dati aziendali, automazione dei processi e server AI dedicati. Partiamo da un caso d'uso misurabile.",
+    "kicker": "Intelligenza artificiale per aziende",
+    "title": "Intelligenza artificiale che lavora nei tuoi processi",
+    "intro": "Non vendiamo AI come moda: partiamo da un processo della tua azienda, scegliamo lo strumento più semplice che funziona e lo mettiamo al lavoro dentro i tuoi sistemi.",
+    "cta": "Parla con noi di AI",
+    "ctaSecondary": "Scopri i server AI e GPU",
+    "whenTitle": "Dove l'AI porta valore",
+    "when": [
+      "Rispondere a domande ripetitive di clienti o colleghi usando documenti e dati aziendali.",
+      "Leggere, classificare e smistare documenti, email e richieste.",
+      "Automatizzare passaggi manuali tra gestionale, CRM ed email.",
+      "Aggiungere funzioni intelligenti a un software o a un sito che già usi."
+    ],
+    "buildTitle": "Cosa realizziamo",
+    "build": [
+      {
+        "t": "Assistenti su dati aziendali",
+        "d": "Chatbot e assistenti interni che rispondono usando i tuoi documenti, con fonti citate."
+      },
+      {
+        "t": "Automazione dei processi",
+        "d": "Flussi che leggono, decidono e agiscono: dalla richiesta in arrivo all'aggiornamento del gestionale."
+      },
+      {
+        "t": "AI dentro i tuoi software",
+        "d": "Funzioni di AI integrate in web app, portali e strumenti che già usi."
+      },
+      {
+        "t": "Server AI e GPU dedicati",
+        "d": "Se i dati devono restare in casa o servono prestazioni elevate, progettiamo e gestiamo il server adatto."
+      }
+    ],
+    "howTitle": "Come lavoriamo",
+    "how": [
+      {
+        "t": "Scegliamo un caso d'uso",
+        "d": "Un processo concreto, con un risultato che si può misurare."
+      },
+      {
+        "t": "Proviamo in piccolo",
+        "d": "Un pilota rapido su dati reali per verificare che funzioni prima di investire di più."
+      },
+      {
+        "t": "Integriamo",
+        "d": "Colleghiamo la soluzione ai tuoi sistemi, con permessi e controlli."
+      },
+      {
+        "t": "Misuriamo e miglioriamo",
+        "d": "Controlliamo i risultati insieme e affiniamo, con supporto continuo."
+      }
+    ],
+    "proofTitle": "Dati e sicurezza",
+    "proof": [
+      {
+        "t": "Dati sotto controllo",
+        "d": "Decidiamo con te quali dati usare e dove devono restare, anche su server dedicati."
+      },
+      {
+        "t": "Risposte verificabili",
+        "d": "Quando possibile l'assistente cita le fonti, così puoi controllare ogni risposta."
+      },
+      {
+        "t": "Conformità",
+        "d": "Lavoriamo nel rispetto del GDPR; i dettagli del trattamento dei dati sono nell'informativa privacy."
+      }
+    ],
+    "faqTitle": "Domande frequenti",
+    "faq": [
+      {
+        "q": "Da dove si comincia con l'AI in azienda?",
+        "a": "Da un singolo processo ripetitivo e misurabile. Lo analizziamo insieme, proviamo una soluzione pilota e solo dopo decidiamo se estenderla."
+      },
+      {
+        "q": "I miei dati restano riservati?",
+        "a": "Definiamo insieme quali dati vengono usati e dove sono elaborati. Quando serve, possiamo usare server dedicati sotto il tuo controllo."
+      },
+      {
+        "q": "Serve un server dedicato?",
+        "a": "Non sempre. Per molti casi bastano servizi in cloud; un server AI o GPU dedicato ha senso con dati sensibili o carichi di lavoro intensi. Se serve, lo progettiamo e lo gestiamo noi."
+      },
+      {
+        "q": "Quanto costa?",
+        "a": "Dipende dal caso d'uso. Dopo un primo incontro ti inviamo un preventivo chiaro, a progetto oppure con un retainer mensile."
+      }
+    ],
+    "ctaTitle": "Raccontaci quale processo vuoi migliorare",
+    "ctaDesc": "Ti rispondiamo con una proposta chiara e un preventivo trasparente."
   }
 }

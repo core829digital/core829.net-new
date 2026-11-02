@@ -1,14 +1,20 @@
 {
   "metadata": {
-    "title": "CORE829 — Digital agency for custom software, web apps and AI",
-    "description": "CORE829 designs and builds custom web apps, B2B automations, AI systems and marketing for companies that need precision, not noise. Enterprise-grade quality, minimal design.",
+    "title": "CORE829 — Custom software, web apps and AI agency",
+    "description": "Custom web apps, B2B automations, AI systems and marketing for companies that need precision, not noise. Enterprise quality, minimal design.",
     "services": "Services",
     "contact": "Contact",
     "about": "About us",
     "method": "Method",
     "blog": "Blog",
     "careers": "Careers",
-    "pricing": "Pricing"
+    "pricing": "Pricing",
+    "descAbout": "CORE829 is a Romanian company building custom software, marketing and digital services: precision engineering with the eye of a creative studio.",
+    "descServices": "Custom software, automation, AI, digital marketing and dedicated servers: designed, built and run by a single team at CORE829.",
+    "descContact": "Tell us about your project. CORE829 replies with a clear plan and a transparent quote. Email, phone and registered office details.",
+    "descMethod": "How CORE829 works: discover your real needs, design the simplest solution that works and deliver it in short, verifiable steps.",
+    "descCareers": "Work with CORE829: we look for engineers, designers and creatives who care about craft. Send us a spontaneous application.",
+    "descPricing": "Transparent pricing at CORE829: fixed-scope projects, monthly retainers and long-term partnerships shaped around your goals."
   },
   "nav": {
     "services": "Services",

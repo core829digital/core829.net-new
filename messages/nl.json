@@ -1,14 +1,20 @@
 {
   "metadata": {
-    "title": "CORE829 — Digitaal bureau voor maatwerk software, webapps en AI",
-    "description": "CORE829 ontwerpt en ontwikkelt maatwerk webapps, B2B-automatiseringen, AI-systemen en marketing voor bedrijven die precisie willen, geen ruis. Enterprise-kwaliteit, minimalistisch design.",
+    "title": "CORE829 — Maatwerk software, webapps en AI",
+    "description": "Maatwerk webapps, B2B-automatisering, AI-systemen en marketing voor bedrijven die precisie willen, geen ruis. Enterprise-kwaliteit, minimaal ontwerp.",
     "services": "Diensten",
     "contact": "Contact",
     "about": "Over ons",
     "method": "Werkwijze",
     "blog": "Blog",
     "careers": "Vacatures",
-    "pricing": "Prijzen"
+    "pricing": "Prijzen",
+    "descAbout": "CORE829 is een Roemeens bedrijf voor maatwerksoftware, marketing en digitale diensten: engineeringprecisie met het oog van een creatieve studio.",
+    "descServices": "Maatwerksoftware, automatisering, AI, digitale marketing en dedicated servers: ontworpen, gebouwd en beheerd door één CORE829-team.",
+    "descContact": "Vertel ons over je project. CORE829 antwoordt met een duidelijk plan en transparante offerte. E-mail, telefoon en vestigingsadres.",
+    "descMethod": "Zo werkt CORE829: je echte behoeften begrijpen, de eenvoudigste werkende oplossing ontwerpen en die in korte, controleerbare stappen leveren.",
+    "descCareers": "Werk met CORE829: we zoeken ontwikkelaars, ontwerpers en creatievelingen met liefde voor het vak. Stuur een open sollicitatie.",
+    "descPricing": "Transparante prijzen bij CORE829: projecten met vaste scope, maandelijkse retainers en langetermijnpartnerschappen rond jouw doelen."
   },
   "nav": {
     "services": "Diensten",

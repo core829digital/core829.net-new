@@ -1,3 +1,6 @@
+import { GA_ID, googleTagBootstrap } from "@/lib/googleTag";
+import { CONSENT_STORAGE_KEY, CONSENT_VERSION } from "@/lib/cookieConsent";
+import GoogleConsentSync from "@/components/analytics/GoogleConsentSync";
 import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono, Space_Grotesk, Unbounded } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
@@ -15,7 +18,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import { CookieConsentProvider } from "@/components/cookies/CookieConsentContext";
 import CookieBanner from "@/components/cookies/CookieBanner";
 import TrustpilotConsentGate from "@/components/cookies/TrustpilotConsentGate";
-import { buildAlternates, SITE_URL } from "@/lib/seo";
+import { buildAlternates, clampDescription, SITE_URL } from "@/lib/seo";
 import { getSiteKeywords } from "@/lib/seoKeywords";
 import { VISIBLE_SERVICES_META } from "@/lib/constants";
 import "../globals.css";
@@ -67,6 +70,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "metadata" });
   const tServices = await getTranslations({ locale, namespace: "solution.services" });
   const siteUrl = SITE_URL;
+  const description = clampDescription(t("description"));
 
   const serviceTitles = VISIBLE_SERVICES_META.map((s) => ({
     key: s.key,
@@ -78,13 +82,13 @@ export async function generateMetadata({
       default: t("title"),
       template: "%s | CORE829",
     },
-    description: t("description"),
+    description: description,
     keywords: getSiteKeywords(locale, serviceTitles),
     metadataBase: new URL(siteUrl),
     alternates: buildAlternates(locale),
     openGraph: {
       title: t("title"),
-      description: t("description"),
+      description: description,
       url: `${siteUrl}/${locale}`,
       siteName: "CORE829",
       locale,
@@ -94,7 +98,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: t("title"),
-      description: t("description"),
+      description: description,
       images: [`${siteUrl}/og-image.png`],
     },
     robots: {
@@ -129,11 +133,21 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        {/* Google tag (gtag.js) — Consent Mode v2: negato finché l'utente non acconsente */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: googleTagBootstrap(CONSENT_STORAGE_KEY, CONSENT_VERSION),
+          }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${unbounded.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
           <CookieConsentProvider>
+            <GoogleConsentSync />
             <TrustpilotConsentGate />
             <VisualViewportProvider />
             <SmoothScrollProvider>

@@ -1,14 +1,20 @@
 {
   "metadata": {
-    "title": "CORE829 — Agence digitale pour logiciels sur mesure, webapps et IA",
-    "description": "CORE829 conçoit et développe des webapps sur mesure, des automatisations B2B, des systèmes IA et du marketing pour des entreprises qui veulent de la précision, pas du bruit. Qualité enterprise, design minimal.",
+    "title": "CORE829 — Logiciels sur mesure, webapps et IA",
+    "description": "Webapps sur mesure, automatisations B2B, systèmes IA et marketing pour les entreprises qui veulent de la précision, pas du bruit. Qualité enterprise.",
     "services": "Services",
     "contact": "Contact",
     "about": "À propos",
     "method": "Méthode",
     "blog": "Blog",
     "careers": "Carrières",
-    "pricing": "Tarifs"
+    "pricing": "Tarifs",
+    "descAbout": "CORE829 est une entreprise roumaine de logiciels sur mesure, marketing et services numériques : précision d'ingénieur et regard de studio créatif.",
+    "descServices": "Logiciels sur mesure, automatisation, IA, marketing digital et serveurs dédiés : conçus, réalisés et gérés par une seule équipe CORE829.",
+    "descContact": "Parlez-nous de votre projet. CORE829 répond avec un plan clair et un devis transparent. E-mail, téléphones et siège social.",
+    "descMethod": "Comment travaille CORE829 : comprendre vos besoins réels, concevoir la solution la plus simple qui fonctionne et la livrer par étapes courtes.",
+    "descCareers": "Travaillez avec CORE829 : nous cherchons développeurs, designers et créatifs passionnés par leur métier. Envoyez une candidature spontanée.",
+    "descPricing": "Tarifs transparents CORE829 : projets au périmètre défini, retainers mensuels et partenariats à long terme adaptés à vos objectifs."
   },
   "nav": {
     "services": "Services",

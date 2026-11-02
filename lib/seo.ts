@@ -27,3 +27,29 @@ export function buildOpenGraphUrl(locale: string, path: string = "") {
   const normalizedPath = path === "/" ? "" : path;
   return `${SITE_URL}/${locale}${normalizedPath}`;
 }
+
+/** Lingue per cui esistono descrizioni dedicate per ogni pagina interna. */
+const PAGE_DESC_LOCALES = new Set(["en", "it", "ro", "fr", "de", "es", "nl", "pl"]);
+
+/**
+ * Accorcia una meta description a max caratteri sul limite di parola
+ * (i motori di ricerca troncano comunque oltre ~160 caratteri).
+ */
+export function clampDescription(text: string, max = 160): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  const lastSpace = cut.lastIndexOf(" ");
+  return `${cut.slice(0, lastSpace > 60 ? lastSpace : cut.length).replace(/[\s,.;:—-]+$/, "")}…`;
+}
+
+/**
+ * Meta description di una pagina interna: testo dedicato (metadata.<key>) nelle
+ * lingue tradotte, altrimenti la descrizione generale del sito.
+ */
+export function pageDescription(
+  locale: string,
+  t: (key: string) => string,
+  key: string
+): string {
+  return clampDescription(PAGE_DESC_LOCALES.has(locale) ? t(key) : t("description"));
+}

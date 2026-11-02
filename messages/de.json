@@ -1,14 +1,20 @@
 {
   "metadata": {
-    "title": "CORE829 — Digitalagentur für maßgeschneiderte Software, Web-Apps und KI",
-    "description": "CORE829 entwirft und entwickelt maßgeschneiderte Web-Apps, B2B-Automatisierungen, KI-Systeme und Marketing für Unternehmen, die Präzision wollen, nicht Lärm. Enterprise-Qualität, minimalistisches Design.",
+    "title": "CORE829 — Maßgeschneiderte Software, Web-Apps, KI",
+    "description": "Maßgeschneiderte Web-Apps, B2B-Automatisierung, KI-Systeme und Marketing für Unternehmen, die Präzision statt Lärm wollen. Enterprise-Qualität.",
     "services": "Leistungen",
     "contact": "Kontakt",
     "about": "Über uns",
     "method": "Methode",
     "blog": "Blog",
     "careers": "Karriere",
-    "pricing": "Preise"
+    "pricing": "Preise",
+    "descAbout": "CORE829 ist ein rumänisches Unternehmen für maßgeschneiderte Software, Marketing und digitale Services: Ingenieurpräzision mit dem Blick eines Kreativstudios.",
+    "descServices": "Maßgeschneiderte Software, Automatisierung, KI, digitales Marketing und dedizierte Server: geplant, gebaut und betrieben von einem CORE829-Team.",
+    "descContact": "Erzählen Sie uns von Ihrem Projekt. CORE829 antwortet mit einem klaren Plan und transparentem Angebot. E-Mail, Telefon und Firmensitz.",
+    "descMethod": "So arbeitet CORE829: echten Bedarf verstehen, die einfachste funktionierende Lösung entwerfen und in kurzen, prüfbaren Schritten liefern.",
+    "descCareers": "Arbeiten Sie mit CORE829: Wir suchen Entwickler, Designer und Kreative, die ihr Handwerk lieben. Senden Sie eine Initiativbewerbung.",
+    "descPricing": "Transparente Preise bei CORE829: Projekte mit festem Umfang, monatliche Retainer und langfristige Partnerschaften nach Ihren Zielen."
   },
   "nav": {
     "services": "Leistungen",

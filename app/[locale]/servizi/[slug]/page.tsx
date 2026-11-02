@@ -30,8 +30,13 @@ export async function generateMetadata({
   }
 
   const serviceTitle = tServices(`${index}.title`);
-  const title = `${serviceTitle} — CORE829`;
-  const description = clampDescription(tServices(`${index}.desc`));
+  // Server: titolo e descrizione dedicati (parole chiave "server AI / GPU"), solo it/en.
+  const tMeta = await getTranslations({ locale, namespace: "metadata" });
+  const dedicated = slug === "server" && (locale === "it" || locale === "en");
+  const title = dedicated ? tMeta("serverTitle") : `${serviceTitle} — CORE829`;
+  const description = dedicated
+    ? tMeta("serverDescription")
+    : clampDescription(tServices(`${index}.desc`));
 
   return {
     title: { absolute: title },

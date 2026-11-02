@@ -14,7 +14,9 @@
     "descContact": "Raccontaci il tuo progetto. CORE829 risponde con un piano chiaro e un preventivo trasparente. Email, telefoni e sede legale.",
     "descMethod": "Come lavora CORE829: capiamo i bisogni reali, progettiamo la soluzione più semplice che funziona e la consegniamo in passi brevi e verificabili.",
     "descCareers": "Lavora con CORE829: cerchiamo sviluppatori, designer e creativi che amano il mestiere. Invia una candidatura spontanea.",
-    "descPricing": "Prezzi trasparenti CORE829: progetti a ambito definito, retainer mensili e partnership di lungo periodo costruiti sui tuoi obiettivi."
+    "descPricing": "Prezzi trasparenti CORE829: progetti a ambito definito, retainer mensili e partnership di lungo periodo costruiti sui tuoi obiettivi.",
+    "serverTitle": "Server AI e server GPU su misura — CORE829",
+    "serverDescription": "Server AI e server GPU su misura per il tuo carico di lavoro: training, inferenza, rendering, storage. Progettiamo la build e la gestiamo dall'inizio alla fine."
   },
   "nav": {
     "services": "Servizi",
@@ -682,7 +684,7 @@
   "serverPage": {
     "kicker": "Nuovo servizio",
     "title": "Server su misura, gestiti da noi dall'inizio alla fine",
-    "subtitle": "Hai bisogno di un server per AI, rendering, storage, gaming o hosting? Noi non produciamo né consegniamo direttamente: gestiamo l'intero processo per te. Su tua richiesta progettiamo la build, selezioniamo i componenti, ne curiamo la costruzione e ci assicuriamo che tu riceva esattamente il prodotto che desideri. È così che costruiamo fiducia.",
+    "subtitle": "Hai bisogno di un server AI, di un server GPU o di una macchina personalizzata per rendering, storage, gaming o hosting? Noi non produciamo né consegniamo direttamente: gestiamo l'intero processo per te. Su tua richiesta progettiamo la build, selezioniamo i componenti, ne curiamo la costruzione e ci assicuriamo che tu riceva esattamente il prodotto che desideri. È così che costruiamo fiducia.",
     "manageKicker": "Come funziona",
     "manageTitle": "Tu scegli, noi gestiamo tutto",
     "manageIntro": "Il nostro ruolo è garantire il risultato: non siamo una fabbrica, siamo il partner che orchestra ogni passaggio perché tu ottenga ciò che vuoi, senza sorprese.",

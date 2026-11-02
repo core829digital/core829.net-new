@@ -31,7 +31,7 @@ export default async function CareersPage({
   const t = await getTranslations({ locale, namespace: "careersPage" });
 
   return (
-    <main>
+    <div>
       <section className="container-core829 py-24 lg:py-32">
         <p className="kicker">{t("kicker")}</p>
         <h1 className="mt-4 text-section-title">{t("title")}</h1>
@@ -59,6 +59,6 @@ export default async function CareersPage({
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

@@ -62,7 +62,7 @@ export default function PinnedSteps() {
         });
         const bars = wrap.querySelectorAll<HTMLElement>("[data-step-bar]");
         bars.forEach((bar, i) => {
-          bar.style.opacity = i <= idx ? "1" : "0.25";
+          bar.style.opacity = i <= idx ? "1" : "0.6";
         });
       },
     });
@@ -88,11 +88,11 @@ export default function PinnedSteps() {
               </p>
               <div className="mt-12 space-y-3">
                 {steps.map((_, i) => (
-                  <div key={i} className="flex items-center gap-4">
+                  <div key={i} aria-hidden className="flex items-center gap-4">
                     <span
                       data-step-bar
                       className="font-mono text-sm tracking-widest transition-opacity duration-300"
-                      style={{ opacity: i === 0 ? 1 : 0.25 }}
+                      style={{ opacity: i === 0 ? 1 : 0.6 }}
                     >
                       0{i + 1}
                     </span>

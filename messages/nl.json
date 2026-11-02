@@ -1054,6 +1054,7 @@
     "nextPage": "Volgende pagina",
     "prevImage": "Vorige afbeelding",
     "nextImage": "Volgende afbeelding",
-    "showImage": "Afbeelding {n} tonen"
+    "showImage": "Afbeelding {n} tonen",
+    "language": "Taal"
   }
 }

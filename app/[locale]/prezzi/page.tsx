@@ -31,7 +31,7 @@ export default async function PrezziPage({
   const t = await getTranslations({ locale, namespace: "pricingPage" });
 
   return (
-    <main>
+    <div>
       <section className="container-core829 py-24 lg:py-32">
         <p className="kicker">{t("kicker")}</p>
         <h1 className="mt-4 text-section-title">{t("title")}</h1>
@@ -41,9 +41,9 @@ export default async function PrezziPage({
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="flex flex-col rounded-3xl border border-border bg-surface p-8">
-            <h3 className="text-lg font-semibold tracking-tight">
+            <h2 className="text-lg font-semibold tracking-tight">
               {t("projectTitle")}
-            </h3>
+            </h2>
             <p className="mt-4 flex-1 text-foreground-muted">{t("projectDesc")}</p>
             <a
               href="https://bookings.core829.net/book/intro-call"
@@ -53,9 +53,9 @@ export default async function PrezziPage({
             </a>
           </div>
           <div className="flex flex-col rounded-3xl border border-border bg-surface p-8">
-            <h3 className="text-lg font-semibold tracking-tight">
+            <h2 className="text-lg font-semibold tracking-tight">
               {t("retainerTitle")}
-            </h3>
+            </h2>
             <p className="mt-4 flex-1 text-foreground-muted">{t("retainerDesc")}</p>
             <a
               href="mailto:sales@core829.net?subject=Retainer%20%26%20large%20projects"
@@ -65,9 +65,9 @@ export default async function PrezziPage({
             </a>
           </div>
           <div className="flex flex-col rounded-3xl border border-border bg-surface p-8">
-            <h3 className="text-lg font-semibold tracking-tight">
+            <h2 className="text-lg font-semibold tracking-tight">
               {t("partnershipTitle")}
-            </h3>
+            </h2>
             <p className="mt-4 flex-1 text-foreground-muted">{t("partnershipDesc")}</p>
             <a
               href="mailto:partnerships@core829.net?subject=Partnership%20proposal"
@@ -80,9 +80,9 @@ export default async function PrezziPage({
 
         <div className="mt-16 max-w-xl">
           <div className="rounded-xl border border-accent bg-surface p-8">
-            <h3 className="text-lg font-semibold tracking-tight">
+            <h2 className="text-lg font-semibold tracking-tight">
               {t("contactSales")}
-            </h3>
+            </h2>
             <p className="mt-4 text-foreground-muted">{t("contactSalesHint")}</p>
             <a
               href="mailto:sales@core829.net"
@@ -93,6 +93,6 @@ export default async function PrezziPage({
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

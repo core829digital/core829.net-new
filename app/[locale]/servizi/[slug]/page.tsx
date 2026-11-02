@@ -67,7 +67,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   if (slug === "server") {
     return (
-      <main>
+      <div>
         <ServerServicePage />
         <section className="border-t border-border bg-surface">
           <div className="container-core829 flex flex-col gap-4 py-10 sm:flex-row sm:items-center sm:justify-between">
@@ -77,7 +77,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             >
               <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" aria-hidden />
               <span>
-                <span className="block text-xs uppercase tracking-widest text-foreground-muted/70">
+                <span className="block text-xs uppercase tracking-widest text-foreground-muted">
                   {t("previous")}
                 </span>
                 <span className="mt-1 block font-semibold">
@@ -90,7 +90,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               className="group inline-flex items-center justify-end gap-3 text-right text-sm text-foreground-muted transition-colors hover:text-foreground"
             >
               <span>
-                <span className="block text-xs uppercase tracking-widest text-foreground-muted/70">
+                <span className="block text-xs uppercase tracking-widest text-foreground-muted">
                   {t("next")}
                 </span>
                 <span className="mt-1 block font-semibold">
@@ -101,12 +101,12 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             </Link>
           </div>
         </section>
-      </main>
+      </div>
     );
   }
 
   return (
-    <main>
+    <div>
       <section className="container-core829 py-24 lg:py-32">
         <Link
           href="/servizi"
@@ -182,7 +182,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           >
             <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" aria-hidden />
             <span>
-              <span className="block text-xs uppercase tracking-widest text-foreground-muted/70">
+              <span className="block text-xs uppercase tracking-widest text-foreground-muted">
                 {t("previous")}
               </span>
               <span className="mt-1 block font-semibold">
@@ -195,7 +195,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             className="group inline-flex items-center justify-end gap-3 text-right text-sm text-foreground-muted transition-colors hover:text-foreground"
           >
             <span>
-              <span className="block text-xs uppercase tracking-widest text-foreground-muted/70">
+              <span className="block text-xs uppercase tracking-widest text-foreground-muted">
                 {t("next")}
               </span>
               <span className="mt-1 block font-semibold">
@@ -206,6 +206,6 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

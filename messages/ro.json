@@ -1054,6 +1054,7 @@
     "nextPage": "Pagina următoare",
     "prevImage": "Imaginea anterioară",
     "nextImage": "Imaginea următoare",
-    "showImage": "Afișează imaginea {n}"
+    "showImage": "Afișează imaginea {n}",
+    "language": "Limbă"
   }
 }

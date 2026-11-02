@@ -35,7 +35,7 @@ export default async function ContattiPage({
   const tFounders = await getTranslations({ locale, namespace: "founders" });
 
   return (
-    <main>
+    <div>
       <section className="container-core829 py-24 lg:py-32">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="max-w-xl">
@@ -160,6 +160,6 @@ export default async function ContattiPage({
           </ul>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

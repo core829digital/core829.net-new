@@ -1062,6 +1062,7 @@
     "nextPage": "Pagina successiva",
     "prevImage": "Immagine precedente",
     "nextImage": "Immagine successiva",
-    "showImage": "Mostra immagine {n}"
+    "showImage": "Mostra immagine {n}",
+    "language": "Lingua"
   }
 }

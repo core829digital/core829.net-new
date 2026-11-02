@@ -31,7 +31,7 @@ export default async function LegalDoc({
   });
 
   return (
-    <main>
+    <div>
       <div className="container-core829 py-24 lg:py-32">
         <div className="max-w-3xl">
           <p className="kicker">CORE829</p>
@@ -60,6 +60,6 @@ export default async function LegalDoc({
           ))}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

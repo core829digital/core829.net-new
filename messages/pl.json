@@ -1054,6 +1054,7 @@
     "nextPage": "Następna strona",
     "prevImage": "Poprzedni obraz",
     "nextImage": "Następny obraz",
-    "showImage": "Pokaż obraz {n}"
+    "showImage": "Pokaż obraz {n}",
+    "language": "Język"
   }
 }

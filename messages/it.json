@@ -1,14 +1,20 @@
 {
   "metadata": {
-    "title": "CORE829 — Agenzia digitale per software su misura, webapp e AI",
-    "description": "CORE829 progetta e sviluppa webapp su misura, automazioni B2B, sistemi AI e marketing per aziende che vogliono precisione, non rumore. Qualità enterprise, design minimale.",
+    "title": "CORE829 — Software su misura, webapp e AI",
+    "description": "Webapp su misura, automazioni B2B, sistemi AI e marketing per aziende che vogliono precisione, non rumore. Qualità enterprise, design minimale.",
     "services": "Servizi",
     "contact": "Contatti",
     "about": "Chi siamo",
     "method": "Metodo",
     "blog": "Blog",
     "careers": "Lavora con noi",
-    "pricing": "Prezzi"
+    "pricing": "Prezzi",
+    "descAbout": "CORE829 è una società rumena di software su misura, marketing e servizi digitali: la precisione di un team di ingegneri e l'occhio di uno studio creativo.",
+    "descServices": "Software su misura, automazione, AI, marketing digitale e server dedicati: progettati, realizzati e gestiti da un unico team CORE829.",
+    "descContact": "Raccontaci il tuo progetto. CORE829 risponde con un piano chiaro e un preventivo trasparente. Email, telefoni e sede legale.",
+    "descMethod": "Come lavora CORE829: capiamo i bisogni reali, progettiamo la soluzione più semplice che funziona e la consegniamo in passi brevi e verificabili.",
+    "descCareers": "Lavora con CORE829: cerchiamo sviluppatori, designer e creativi che amano il mestiere. Invia una candidatura spontanea.",
+    "descPricing": "Prezzi trasparenti CORE829: progetti a ambito definito, retainer mensili e partnership di lungo periodo costruiti sui tuoi obiettivi."
   },
   "nav": {
     "services": "Servizi",

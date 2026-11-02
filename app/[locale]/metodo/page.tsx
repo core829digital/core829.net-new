@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import PinnedSteps from "@/components/animations/PinnedSteps";
-import { buildAlternates } from "@/lib/seo";
+import { buildAlternates, pageDescription } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -12,12 +12,13 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
   const title = `${t("method")} — CORE829`;
+  const description = pageDescription(locale, t, "descMethod");
   return {
     title: { absolute: title },
-    description: t("description"),
+    description,
     alternates: buildAlternates(locale, "/metodo"),
-    openGraph: { title, description: t("description") },
-    twitter: { title, description: t("description") },
+    openGraph: { title, description },
+    twitter: { title, description },
   };
 }
 

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
 import { SERVICES_META, VISIBLE_SERVICES_META } from "@/lib/constants";
 import ServerServicePage from "@/components/services/ServerServicePage";
-import { buildAlternates } from "@/lib/seo";
+import { buildAlternates, clampDescription } from "@/lib/seo";
 import { getServiceKeywords } from "@/lib/seoKeywords";
 
 interface PageProps {
@@ -31,7 +31,7 @@ export async function generateMetadata({
 
   const serviceTitle = tServices(`${index}.title`);
   const title = `${serviceTitle} — CORE829`;
-  const description = tServices(`${index}.desc`);
+  const description = clampDescription(tServices(`${index}.desc`));
 
   return {
     title: { absolute: title },

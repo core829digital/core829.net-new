@@ -1,14 +1,20 @@
 {
   "metadata": {
-    "title": "CORE829 — Agenție digitală pentru software la comandă, webapp și AI",
-    "description": "CORE829 proiectează și dezvoltă webapp-uri la comandă, automatizări B2B, sisteme AI și marketing pentru companii care vor precizie, nu zgomot. Calitate enterprise, design minimal.",
+    "title": "CORE829 — Software la comandă, webapp și AI",
+    "description": "Webapp-uri la comandă, automatizări B2B, sisteme AI și marketing pentru companii care vor precizie, nu zgomot. Calitate enterprise, design minimal.",
     "services": "Servicii",
     "contact": "Contact",
     "about": "Despre noi",
     "method": "Metodă",
     "blog": "Blog",
     "careers": "Cariere",
-    "pricing": "Prețuri"
+    "pricing": "Prețuri",
+    "descAbout": "CORE829 este o companie românească de software personalizat, marketing și servicii digitale: precizie de inginerie și ochi de studio creativ.",
+    "descServices": "Software personalizat, automatizare, AI, marketing digital și servere dedicate: proiectate, construite și gestionate de o singură echipă CORE829.",
+    "descContact": "Spune-ne despre proiectul tău. CORE829 răspunde cu un plan clar și o ofertă transparentă. E-mail, telefoane și sediu social.",
+    "descMethod": "Cum lucrează CORE829: înțelegem nevoile reale, proiectăm cea mai simplă soluție care funcționează și o livrăm în pași scurți, verificabili.",
+    "descCareers": "Lucrează cu CORE829: căutăm dezvoltatori, designeri și creativi pasionați de meserie. Trimite o candidatură spontană.",
+    "descPricing": "Prețuri transparente CORE829: proiecte cu domeniu definit, retainer lunar și parteneriate pe termen lung, adaptate obiectivelor tale."
   },
   "nav": {
     "services": "Servicii",

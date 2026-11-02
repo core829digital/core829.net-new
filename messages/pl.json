@@ -1,14 +1,20 @@
 {
   "metadata": {
-    "title": "CORE829 — Agencja cyfrowa: oprogramowanie na zamówienie, webapp i AI",
-    "description": "CORE829 projektuje i rozwija webappy na zamówienie, automatyzacje B2B, systemy AI i marketing dla firm, które cenią precyzję, nie szum. Jakość klasy enterprise, minimalny design.",
+    "title": "CORE829 — Oprogramowanie na miarę, webapp i AI",
+    "description": "Webappy na zamówienie, automatyzacje B2B, systemy AI i marketing dla firm, które cenią precyzję, nie hałas. Jakość enterprise, minimalny design.",
     "services": "Usługi",
     "contact": "Kontakt",
     "about": "O nas",
     "method": "Metoda",
     "blog": "Blog",
     "careers": "Kariera",
-    "pricing": "Cennik"
+    "pricing": "Cennik",
+    "descAbout": "CORE829 to rumuńska firma tworząca oprogramowanie na miarę, marketing i usługi cyfrowe: inżynierska precyzja i oko studia kreatywnego.",
+    "descServices": "Oprogramowanie na miarę, automatyzacja, AI, marketing cyfrowy i serwery dedykowane: projektowane, budowane i prowadzone przez jeden zespół CORE829.",
+    "descContact": "Opowiedz nam o swoim projekcie. CORE829 odpowie jasnym planem i przejrzystą wyceną. E-mail, telefony i siedziba firmy.",
+    "descMethod": "Jak pracuje CORE829: poznajemy realne potrzeby, projektujemy najprostsze działające rozwiązanie i dostarczamy je krótkimi, weryfikowalnymi krokami.",
+    "descCareers": "Pracuj z CORE829: szukamy programistów, projektantów i kreatywnych z pasją do rzemiosła. Wyślij aplikację spontaniczną.",
+    "descPricing": "Przejrzyste ceny CORE829: projekty o określonym zakresie, miesięczne retainery i długoterminowe partnerstwa dopasowane do Twoich celów."
   },
   "nav": {
     "services": "Usługi",

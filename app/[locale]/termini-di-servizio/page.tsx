@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import LegalDoc from "@/components/layout/LegalDoc";
-import { buildAlternates } from "@/lib/seo";
+import { buildAlternates, clampDescription } from "@/lib/seo";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -15,7 +15,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "terms" });
   return {
     title: { absolute: `${t("title")} — CORE829` },
-    description: t("intro"),
+    description: clampDescription(t("intro")),
     alternates: buildAlternates(locale, "/termini-di-servizio"),
   };
 }

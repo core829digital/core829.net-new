@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import ServiceCard from "@/components/ui/ServiceCard";
 import { VISIBLE_SERVICES_META } from "@/lib/constants";
-import { buildAlternates } from "@/lib/seo";
+import { buildAlternates, pageDescription } from "@/lib/seo";
 import { getSiteKeywords } from "@/lib/seoKeywords";
 
 export async function generateMetadata({
@@ -15,17 +15,18 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "metadata" });
   const tServices = await getTranslations({ locale, namespace: "solution.services" });
   const title = `${t("services")} — CORE829`;
+  const description = pageDescription(locale, t, "descServices");
   const serviceTitles = VISIBLE_SERVICES_META.map((s) => ({
     key: s.key,
     title: tServices(`${s.index}.title`),
   }));
   return {
     title: { absolute: title },
-    description: t("description"),
+    description,
     keywords: getSiteKeywords(locale, serviceTitles),
     alternates: buildAlternates(locale, "/servizi"),
-    openGraph: { title, description: t("description") },
-    twitter: { title, description: t("description") },
+    openGraph: { title, description },
+    twitter: { title, description },
   };
 }
 

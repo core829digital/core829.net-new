@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { buttonClasses } from "@/components/ui/buttonStyles";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
-import { buildAlternates } from "@/lib/seo";
+import { buildAlternates, pageDescription } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -12,12 +12,13 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
   const title = `${t("pricing")} — CORE829`;
+  const description = pageDescription(locale, t, "descPricing");
   return {
     title: { absolute: title },
-    description: t("description"),
+    description,
     alternates: buildAlternates(locale, "/prezzi"),
-    openGraph: { title, description: t("description") },
-    twitter: { title, description: t("description") },
+    openGraph: { title, description },
+    twitter: { title, description },
   };
 }
 

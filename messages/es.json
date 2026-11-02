@@ -2,13 +2,13 @@
   "metadata": {
     "title": "CORE829 — Agencia digital de software a medida, webapps e IA",
     "description": "CORE829 diseña y desarrolla webapps a medida, automatizaciones B2B, sistemas de IA y marketing para empresas que quieren precisión, no ruido. Calidad enterprise, diseño minimalista.",
-    "services": "Services page",
-    "contact": "Contact page",
-    "about": "About page",
-    "method": "Method page",
-    "blog": "Blog page",
-    "careers": "Careers page",
-    "pricing": "Pricing page"
+    "services": "Servicios",
+    "contact": "Contacto",
+    "about": "Sobre nosotros",
+    "method": "Método",
+    "blog": "Blog",
+    "careers": "Empleo",
+    "pricing": "Precios"
   },
   "nav": {
     "services": "Servicios",
@@ -314,7 +314,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "Cerrar"
   },
   "features": {
     "kicker": "Capabilities",
@@ -592,26 +593,26 @@
     ]
   },
   "notFound": {
-    "title": "Page not found",
-    "desc": "The page you are looking for doesn't exist or has been moved.",
-    "back": "Back to home"
+    "title": "Página no encontrada",
+    "desc": "La página que buscas no existe o se ha movido.",
+    "back": "Volver al inicio"
   },
   "servicesPage": {
-    "kicker": "Services",
-    "title": "Our Services",
-    "subtitle": "Minimal-premium digital agency.",
-    "projectTitle": "Project",
-    "projectDesc": "Custom software development.",
+    "kicker": "Servicios",
+    "title": "Nuestros servicios",
+    "subtitle": "Software a medida, automatización, IA y marketing digital: diseñados, construidos y gestionados por un único equipo.",
+    "projectTitle": "Proyecto",
+    "projectDesc": "Desarrollo de software a medida con alcance y entrega definidos.",
     "retainerTitle": "Retainer",
-    "retainerDesc": "Ongoing partnership.",
-    "partnershipTitle": "Partnership",
-    "partnershipDesc": "Strategic collaboration.",
-    "cta": "Get in touch"
+    "retainerDesc": "Desarrollo, mantenimiento y soporte continuos, mes a mes.",
+    "partnershipTitle": "Alianza",
+    "partnershipDesc": "Una colaboración estratégica construida en torno a tus objetivos a largo plazo.",
+    "cta": "Contáctanos"
   },
   "contactPage": {
-    "kicker": "Contact",
-    "title": "Let's build together",
-    "subtitle": "Start your project with a consultation.",
+    "kicker": "Contacto",
+    "title": "Construyamos juntos",
+    "subtitle": "Cuéntanos tu proyecto: te respondemos con un plan claro y un presupuesto transparente.",
     "existingClient": "¿Ya eres cliente?",
     "projectsMail": "para comunicarte con el departamento de proyectos.",
     "companyAddress": "Domicilio social",
@@ -621,24 +622,25 @@
     "companyHours": "Horario"
   },
   "aboutPage": {
-    "kicker": "About",
-    "title": "Who we are",
-    "subtitle": "Enterprise-grade quality, minimal design.",
-    "missionTitle": "Our mission",
-    "mission": "Build precision software that solves real problems.",
-    "valuesTitle": "Our values",
+    "kicker": "Sobre nosotros",
+    "title": "Quiénes somos",
+    "subtitle": "Una empresa rumana de desarrollo de software, marketing y servicios digitales: la precisión de un equipo de ingeniería y la mirada de un estudio creativo.",
+    "missionTitle": "Nuestra misión",
+    "mission": "Construir software de precisión y experiencias digitales que resuelven problemas reales de negocio — desde aplicaciones web a medida y automatizaciones hasta la cobertura de foto y vídeo de tus eventos — con un único equipo responsable, del briefing a la entrega.",
+    "valuesTitle": "Nuestros valores",
     "values": [
-      "Precision",
-      "Minimalism",
-      "Quality"
+      "Precisión en cada detalle, del código a los textos",
+      "Minimalismo: menos palabras, menos pasos, resultados más claros",
+      "Calidad enterprise, entregada a tiempo",
+      "Transparencia: un único interlocutor, sin sorpresas"
     ]
   },
   "methodPage": {
-    "kicker": "Method",
-    "title": "How we work",
-    "subtitle": "No noise, just engineered clarity.",
-    "approachTitle": "Our approach",
-    "approach": "Discover, design, deliver with focus."
+    "kicker": "Método",
+    "title": "Cómo trabajamos",
+    "subtitle": "Sin ruido, solo claridad de ingeniería.",
+    "approachTitle": "Nuestro enfoque",
+    "approach": "Entendemos tus necesidades reales, diseñamos la solución más simple que funciona y la entregamos con foco, en pasos cortos y verificables."
   },
   "blogPage": {
     "kicker": "Blog",
@@ -647,25 +649,25 @@
     "comingSoon": "Coming soon"
   },
   "careersPage": {
-    "kicker": "Careers",
-    "title": "Join our team",
-    "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon",
+    "kicker": "Empleo",
+    "title": "Únete al equipo",
+    "subtitle": "Buscamos personas que aman su oficio: desarrolladores, diseñadores y creativos que quieren construir cosas que funcionan.",
+    "comingSoon": "Próximamente",
     "applyTitle": "Actualmente no hay vacantes",
     "applyDesc": "En este momento no estamos contratando activamente, pero siempre nos alegra conocer a personas que encajarían bien en nuestro equipo. Envíanos tu CV y unas líneas sobre ti.",
     "applyButton": "Enviar una candidatura espontánea"
   },
   "pricingPage": {
-    "kicker": "Pricing",
-    "title": "Transparent pricing",
-    "subtitle": "Simple, predictable plans for every need.",
-    "projectTitle": "Project",
-    "projectDesc": "One-time delivery.",
+    "kicker": "Precios",
+    "title": "Precios transparentes",
+    "subtitle": "Formas claras y previsibles de trabajar con nosotros, construidas en torno a tus objetivos y no a un catálogo rígido.",
+    "projectTitle": "Proyecto",
+    "projectDesc": "Alcance definido con entregable, plazos y presupuesto acordados.",
     "retainerTitle": "Retainer",
-    "retainerDesc": "Monthly engagement.",
-    "partnershipTitle": "Partnership",
-    "partnershipDesc": "Custom agreement.",
-    "cta": "Schedule a consultation",
+    "retainerDesc": "Colaboración mensual para desarrollo continuo, mantenimiento y crecimiento.",
+    "partnershipTitle": "Alianza",
+    "partnershipDesc": "Acuerdo a largo plazo a medida de tu empresa y objetivos compartidos.",
+    "cta": "Reservar una consulta",
     "contactSales": "Contactar Ventas",
     "contactSalesHint": "Para comprar nuestros productos o proyectos de gran escala, contacta directamente con nuestro equipo de ventas.",
     "partnershipCta": "Hazte partner",
@@ -1045,5 +1047,13 @@
     "desc": "Se produjo un error inesperado al cargar esta página. Puedes intentarlo de nuevo o volver al inicio.",
     "retry": "Intentar de nuevo",
     "back": "Volver al inicio"
+  },
+  "a11y": {
+    "close": "Cerrar",
+    "prevPage": "Página anterior",
+    "nextPage": "Página siguiente",
+    "prevImage": "Imagen anterior",
+    "nextImage": "Imagen siguiente",
+    "showImage": "Mostrar imagen {n}"
   }
 }

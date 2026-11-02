@@ -77,6 +77,7 @@ const MotionImage = motion.create(Image);
 export default function ServerServicePage() {
   const t = useTranslations("serverPage");
   const tDetail = useTranslations("servicesDetail");
+  const tA = useTranslations("a11y");
   const [index, setIndex] = useState(0);
   const [activeDoc, setActiveDoc] = useState<string | null>(null);
 
@@ -170,7 +171,7 @@ export default function ServerServicePage() {
                       <button
                         key={i}
                         type="button"
-                        aria-label={`Mostra immagine ${i + 1}`}
+                        aria-label={tA("showImage", { n: i + 1 })}
                         aria-current={i === index}
                         onClick={() => setIndex(i)}
                         className="group/dot flex h-11 min-w-8 items-center justify-center"
@@ -190,7 +191,7 @@ export default function ServerServicePage() {
                     <button
                       type="button"
                       onClick={prev}
-                      aria-label="Immagine precedente"
+                      aria-label={tA("prevImage")}
                       className="btn btn-secondary flex h-11 w-11 items-center justify-center rounded-full"
                     >
                       <ChevronLeft className="h-4 w-4" aria-hidden />
@@ -198,7 +199,7 @@ export default function ServerServicePage() {
                     <button
                       type="button"
                       onClick={next}
-                      aria-label="Immagine successiva"
+                      aria-label={tA("nextImage")}
                       className="btn btn-secondary flex h-11 w-11 items-center justify-center rounded-full"
                     >
                       <ChevronRight className="h-4 w-4" aria-hidden />

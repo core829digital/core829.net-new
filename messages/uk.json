@@ -344,7 +344,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "Закрити"
   },
   "features": {
     "kicker": "Capabilities",

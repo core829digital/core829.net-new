@@ -344,7 +344,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "Sulje"
   },
   "features": {
     "kicker": "Capabilities",

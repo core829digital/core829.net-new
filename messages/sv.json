@@ -344,7 +344,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "Stäng"
   },
   "features": {
     "kicker": "Capabilities",

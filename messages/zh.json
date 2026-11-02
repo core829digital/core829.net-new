@@ -344,7 +344,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "关闭"
   },
   "features": {
     "kicker": "Capabilities",

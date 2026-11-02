@@ -2,13 +2,13 @@
   "metadata": {
     "title": "CORE829 — Digital agency for custom software, web apps and AI",
     "description": "CORE829 designs and builds custom web apps, B2B automations, AI systems and marketing for companies that need precision, not noise. Enterprise-grade quality, minimal design.",
-    "services": "Services page",
-    "contact": "Contact page",
-    "about": "About page",
-    "method": "Method page",
-    "blog": "Blog page",
-    "careers": "Careers page",
-    "pricing": "Pricing page"
+    "services": "Services",
+    "contact": "Contact",
+    "about": "About us",
+    "method": "Method",
+    "blog": "Blog",
+    "careers": "Careers",
+    "pricing": "Pricing"
   },
   "nav": {
     "services": "Services",
@@ -599,20 +599,20 @@
   },
   "servicesPage": {
     "kicker": "Services",
-    "title": "Our Services",
-    "subtitle": "Minimal-premium digital agency.",
+    "title": "Our services",
+    "subtitle": "Custom software, automation, AI and digital marketing — designed, built and run by a single team.",
     "projectTitle": "Project",
-    "projectDesc": "Custom software development.",
+    "projectDesc": "Custom software development with a defined scope and delivery.",
     "retainerTitle": "Retainer",
-    "retainerDesc": "Ongoing partnership.",
+    "retainerDesc": "Ongoing development, maintenance and support, month after month.",
     "partnershipTitle": "Partnership",
-    "partnershipDesc": "Strategic collaboration.",
+    "partnershipDesc": "A strategic collaboration built around your long-term goals.",
     "cta": "Get in touch"
   },
   "contactPage": {
     "kicker": "Contact",
     "title": "Let's build together",
-    "subtitle": "Start your project with a consultation.",
+    "subtitle": "Tell us about your project: we reply with a clear plan and a transparent quote.",
     "existingClient": "Already a client?",
     "projectsMail": "to communicate with the projects department.",
     "companyAddress": "Registered office",
@@ -622,16 +622,17 @@
     "companyHours": "Hours"
   },
   "aboutPage": {
-    "kicker": "About",
+    "kicker": "About us",
     "title": "Who we are",
-    "subtitle": "Enterprise-grade quality, minimal design.",
+    "subtitle": "A Romanian company building software, marketing and digital services — with the precision of an engineering team and the eye of a creative studio.",
     "missionTitle": "Our mission",
-    "mission": "Build precision software that solves real problems.",
+    "mission": "Build precision software and digital experiences that solve real business problems — from custom web apps and automations to the photo and video coverage of your events — with one accountable team from brief to delivery.",
     "valuesTitle": "Our values",
     "values": [
-      "Precision",
-      "Minimalism",
-      "Quality"
+      "Precision in every detail, from code to copy",
+      "Minimalism: fewer words, fewer steps, clearer results",
+      "Enterprise-grade quality, delivered on time",
+      "Transparency: one point of contact, no surprises"
     ]
   },
   "methodPage": {
@@ -639,7 +640,7 @@
     "title": "How we work",
     "subtitle": "No noise, just engineered clarity.",
     "approachTitle": "Our approach",
-    "approach": "Discover, design, deliver with focus."
+    "approach": "We discover your real needs, design the simplest solution that works, and deliver it with focus — in short, verifiable steps."
   },
   "blogPage": {
     "kicker": "Blog",
@@ -650,7 +651,7 @@
   "careersPage": {
     "kicker": "Careers",
     "title": "Join our team",
-    "subtitle": "Build the future with us.",
+    "subtitle": "We look for people who care about craft: engineers, designers and creatives who like building things that work.",
     "comingSoon": "Coming soon",
     "applyTitle": "No open positions right now",
     "applyDesc": "We're not actively hiring at the moment, but we're always glad to hear from people who'd be a great fit. Send us your CV and a few lines about yourself.",
@@ -659,13 +660,13 @@
   "pricingPage": {
     "kicker": "Pricing",
     "title": "Transparent pricing",
-    "subtitle": "Simple, predictable plans for every need.",
+    "subtitle": "Clear, predictable ways to work with us — shaped around your goals, never around a rigid catalogue.",
     "projectTitle": "Project",
-    "projectDesc": "One-time delivery.",
+    "projectDesc": "A defined scope with a fixed deliverable, timeline and quote.",
     "retainerTitle": "Retainer",
-    "retainerDesc": "Monthly engagement.",
+    "retainerDesc": "A monthly engagement for continuous development, maintenance and growth.",
     "partnershipTitle": "Partnership",
-    "partnershipDesc": "Custom agreement.",
+    "partnershipDesc": "A long-term agreement tailored to your business and shared goals.",
     "cta": "Schedule a consultation",
     "contactSales": "Contact Sales",
     "contactSalesHint": "For the purchase of our products or large-scale projects, contact our sales team directly.",
@@ -1054,5 +1055,13 @@
     "desc": "An unexpected error occurred while loading this page. You can try again or go back home.",
     "retry": "Try again",
     "back": "Back to home"
+  },
+  "a11y": {
+    "close": "Close",
+    "prevPage": "Previous page",
+    "nextPage": "Next page",
+    "prevImage": "Previous image",
+    "nextImage": "Next image",
+    "showImage": "Show image {n}"
   }
 }

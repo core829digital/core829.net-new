@@ -349,20 +349,20 @@
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",
-        "sector": "Modular prefabricated structures — brand of Montaggi Srl",
-        "what": "A complete Next.js 15 site with green/orange palette, internationalization, GSAP scroll trail, 3D hero and a multi-step product configurator.",
-        "stack": "Next.js 15, Convex, React Three Fiber, Zustand, Resend",
+        "sector": "Modułowe konstrukcje prefabrykowane — marka Montaggi Srl",
+        "what": "Marka domów i kabin modułowych potrzebuje czegoś więcej niż katalogu: klienci chcą zobaczyć, wybrać i zapytać o cenę bez telefonu. Zbudowaliśmy całą ścieżkę — katalog, konfigurator krok po kroku, zapytania ofertowe i strefę klienta — oraz panel administracyjny, w którym zespół zarządza leadami, mediami i finansami.",
+        "stack": "Next.js 15, Convex, next-intl, GSAP, Resend",
         "details": [
-          "Internationalization with next-intl",
-          "GSAP scroll trail and 3D hero (React Three Fiber)",
-          "'Other Solutions' page with 6 product families",
-          "Multi-step product configurator backed by Convex schema",
-          "Email delivery via Resend"
+          "Katalog produktów i wieloetapowy konfigurator oparty na opcjach i układach zapisanych w Convex",
+          "Zapytania ofertowe ze statusem (nowe, w toku, zrealizowane) i prywatna strefa klienta",
+          "Panel admina: leady, biblioteka mediów, finanse, raporty z eksportem PDF, powiadomienia i dziennik e-maili",
+          "Automatyczne e-maile przez Resend i codzienne zadanie wysyłające prośby o opinie",
+          "2 języki (IT, EN) z SEO i danymi strukturalnymi zaplanowanymi od początku"
         ],
         "tags": [
           "Web Design",
           "Web App",
-          "3D/Motion"
+          "B2B Automations"
         ],
         "mockup": "3d"
       },

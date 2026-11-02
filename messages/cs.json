@@ -284,27 +284,6 @@
     "stackLabel": "Stack",
     "projects": [
       {
-        "id": "doctor-haus",
-        "name": "Doctor Haus",
-        "domain": "doctor-haus.com",
-        "sector": "Modular prefabricated structures — brand of Montaggi Srl",
-        "what": "A complete Next.js 15 site with green/orange palette, internationalization, GSAP scroll trail, 3D hero and a multi-step product configurator.",
-        "stack": "Next.js 15, Convex, React Three Fiber, Zustand, Resend",
-        "details": [
-          "Internationalization with next-intl",
-          "GSAP scroll trail and 3D hero (React Three Fiber)",
-          "'Other Solutions' page with 6 product families",
-          "Multi-step product configurator backed by Convex schema",
-          "Email delivery via Resend"
-        ],
-        "tags": [
-          "Web Design",
-          "Web App",
-          "3D/Motion"
-        ],
-        "mockup": "3d"
-      },
-      {
         "id": "revive",
         "name": "Revive App",
         "domain": "getrevive.app",

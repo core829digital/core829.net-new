@@ -2,7 +2,7 @@
 
 import { ArrowUpRight, Building2, Phone, Mail, MapPin, Clock, UserRound, MessageCircle } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useCookieConsent } from "@/components/cookies/CookieConsentContext";
 import { useGoToSection } from "@/lib/useGoToSection";
@@ -19,6 +19,9 @@ const CLIENT_ANCHORS = clientAnchorIds;
  */
 export default function Footer() {
   const t = useTranslations("footer");
+  const locale = useLocale();
+  // Pagine di destinazione con testi dedicati solo in italiano e inglese.
+  const showLanding = locale === "it" || locale === "en";
   const tFounders = useTranslations("founders");
   const tServices = useTranslations("solution.services");
   const tCaseStudies = useTranslations("caseStudies.projects");
@@ -84,6 +87,20 @@ export default function Footer() {
                     </Link>
                   </li>
                 )
+              )}
+              {showLanding && (
+                <>
+                  <li>
+                    <Link href="/software-su-misura" className={linkCls}>
+                      {t("landingSoftware")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/ai-per-aziende" className={linkCls}>
+                      {t("landingAi")}
+                    </Link>
+                  </li>
+                </>
               )}
               <li>
                 <Link href="/servizi" className={linkCls}>

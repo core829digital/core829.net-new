@@ -484,7 +484,9 @@
     "cookiePolicy": "Cookie Policy",
     "foundersTitle": "Founders",
     "simpleVersion": "Versione semplice",
-    "simpleHint": "Senza animazioni 3D: una pagina lineare da scorrere."
+    "simpleHint": "Senza animazioni 3D: una pagina lineare da scorrere.",
+    "landingSoftware": "Software su misura",
+    "landingAi": "AI per aziende"
   },
   "privacy": {
     "title": "Informativa sulla Privacy",

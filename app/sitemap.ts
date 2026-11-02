@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, LANDING_LOCALES, LANDING_PUBLISHED } from "@/lib/seo";
 import { VISIBLE_SERVICES_META } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -63,7 +63,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .map((locale) => buildEntry(locale, path))
   );
 
+  // Pagine di destinazione: solo nelle lingue per cui esistono testi dedicati.
+  const landingPaths = ["/software-su-misura", "/ai-per-aziende"];
+  const landingEntries = (LANDING_PUBLISHED ? landingPaths : []).flatMap((path) =>
+    LANDING_LOCALES.map((locale) => {
+      const url = buildUrl(locale, path);
+      const languages: Record<string, string> = {};
+      for (const l of LANDING_LOCALES) languages[l] = buildUrl(l, path);
+      languages["x-default"] = buildUrl(defaultLocale, path);
+      return {
+        url,
+        lastModified,
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+        alternates: { languages },
+      };
+    })
+  );
+
   return [
+    ...landingEntries,
     ...defaultEntries,
     ...defaultServiceEntries,
     ...localizedEntries,

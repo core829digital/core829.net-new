@@ -9,10 +9,14 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://core829.net
  * l'alternates del layout (home), producendo canonical/hreflang errati
  * su tutte le sotto-pagine.
  */
-export function buildAlternates(locale: string, path: string = "") {
+export function buildAlternates(
+  locale: string,
+  path: string = "",
+  onlyLocales?: readonly string[]
+) {
   const normalizedPath = path === "/" ? "" : path;
   const languages: Record<string, string> = {};
-  for (const l of routing.locales) {
+  for (const l of onlyLocales ?? routing.locales) {
     languages[l] = `${SITE_URL}/${l}${normalizedPath}`;
   }
   languages["x-default"] = `${SITE_URL}/${routing.defaultLocale}${normalizedPath}`;
@@ -53,3 +57,12 @@ export function pageDescription(
 ): string {
   return clampDescription(PAGE_DESC_LOCALES.has(locale) ? t(key) : t("description"));
 }
+
+/** Lingue con testi dedicati per le pagine di destinazione (software su misura, AI). */
+export const LANDING_LOCALES: readonly string[] = ["it", "en"];
+
+/**
+ * Bozza: finché è false le pagine di destinazione restano raggiungibili ma
+ * noindex e fuori dalla sitemap. Impostare a true dopo la revisione dei testi.
+ */
+export const LANDING_PUBLISHED = false;

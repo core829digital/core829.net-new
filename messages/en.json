@@ -1072,5 +1072,185 @@
     "nextImage": "Next image",
     "showImage": "Show image {n}",
     "language": "Language"
+  },
+  "landingSoftware": {
+    "metaTitle": "Custom software for businesses — CORE829",
+    "metaDescription": "Custom software, business systems and web apps: we design, build and maintain the software your processes need, with a single accountable team.",
+    "kicker": "Custom software development",
+    "title": "Custom software for your business",
+    "intro": "When spreadsheets, off-the-shelf systems and disconnected tools are no longer enough, we build software that follows your processes, not the other way round. One team, from brief to release.",
+    "cta": "Talk to us about your project",
+    "ctaSecondary": "See our projects",
+    "whenTitle": "When custom software makes sense",
+    "when": [
+      "Your processes differ from what a standard business system is designed for.",
+      "You rely on spreadsheets, email and disconnected tools that nobody can keep in sync.",
+      "You need integrations with existing systems (accounting, inventory, e-commerce, third-party APIs).",
+      "You want to give customers a portal, a configurator or an online quoting tool."
+    ],
+    "buildTitle": "What we build",
+    "build": [
+      {
+        "t": "Business systems and dashboards",
+        "d": "Internal tools for orders, customers, stock and reports, with your company's permissions and workflows."
+      },
+      {
+        "t": "Web apps and customer portals",
+        "d": "Private areas, online requests and quotes, role-based access and real-time updates."
+      },
+      {
+        "t": "Configurators and quoting tools",
+        "d": "The customer chooses, the system calculates and you receive a complete, qualified request."
+      },
+      {
+        "t": "Integrations and automations",
+        "d": "Connections between your systems, APIs and automatic emails that remove repetitive manual work."
+      }
+    ],
+    "howTitle": "How we work",
+    "how": [
+      {
+        "t": "We listen",
+        "d": "We understand the real process, who uses it and which problem has to disappear."
+      },
+      {
+        "t": "We design",
+        "d": "We define scope, screens and priorities, with a clear quote before writing code."
+      },
+      {
+        "t": "We build in steps",
+        "d": "Short, verifiable releases: you see the software grow and can change course along the way."
+      },
+      {
+        "t": "We release and maintain",
+        "d": "Go-live, training and ongoing support with a monthly retainer, if you want it."
+      }
+    ],
+    "proofTitle": "Real projects",
+    "proof": [
+      {
+        "t": "OneSpec",
+        "d": "Quoting platform for window fitters: an embeddable configurator, a pricing engine on the customer's own price list and a requests dashboard."
+      },
+      {
+        "t": "Doctor Haus",
+        "d": "Catalogue, multi-step configurator, quote requests, customer area and admin panel for modular prefabricated structures."
+      },
+      {
+        "t": "Winex",
+        "d": "Multilingual website for a window manufacturer, with scroll animation and the OneSpec configurator embedded."
+      }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "How much does custom software cost?",
+        "a": "It depends on scope and complexity. After a first meeting we send a clear quote that spells out what is included. You can work on a project basis with defined delivery and cost, or with a monthly retainer for development and maintenance."
+      },
+      {
+        "q": "How long does it take?",
+        "a": "It depends on the project. We work in short steps, so a first usable version arrives before the full release; we agree timelines together after the brief."
+      },
+      {
+        "q": "Do you work with companies outside Italy?",
+        "a": "Yes. We are a company registered in Romania and work online with clients across Europe, in Italian, English and other languages."
+      },
+      {
+        "q": "Do you offer maintenance after release?",
+        "a": "Yes. After release you can rely on us for maintenance, support and new features with a monthly retainer."
+      }
+    ],
+    "ctaTitle": "Tell us what your software needs to do",
+    "ctaDesc": "We reply with a clear plan and a transparent quote."
+  },
+  "landingAi": {
+    "metaTitle": "Artificial intelligence for businesses — CORE829",
+    "metaDescription": "Artificial intelligence for businesses: assistants on company data, process automation and dedicated AI servers. We start from a measurable use case.",
+    "kicker": "Artificial intelligence for businesses",
+    "title": "Artificial intelligence that works inside your processes",
+    "intro": "We don't sell AI as a trend: we start from one of your business processes, choose the simplest tool that works and put it to work inside your systems.",
+    "cta": "Talk to us about AI",
+    "ctaSecondary": "Discover AI and GPU servers",
+    "whenTitle": "Where AI adds value",
+    "when": [
+      "Answering repetitive customer or staff questions using company documents and data.",
+      "Reading, classifying and routing documents, emails and requests.",
+      "Automating manual steps between your business system, CRM and email.",
+      "Adding smart features to software or a website you already use."
+    ],
+    "buildTitle": "What we build",
+    "build": [
+      {
+        "t": "Assistants on company data",
+        "d": "Chatbots and internal assistants that answer using your documents, with sources cited."
+      },
+      {
+        "t": "Process automation",
+        "d": "Workflows that read, decide and act: from an incoming request to the update in your business system."
+      },
+      {
+        "t": "AI inside your software",
+        "d": "AI features integrated into web apps, portals and tools you already use."
+      },
+      {
+        "t": "Dedicated AI and GPU servers",
+        "d": "When data must stay in-house or you need high performance, we design and manage the right server."
+      }
+    ],
+    "howTitle": "How we work",
+    "how": [
+      {
+        "t": "We pick a use case",
+        "d": "A concrete process with a result you can measure."
+      },
+      {
+        "t": "We test small",
+        "d": "A quick pilot on real data to check it works before investing more."
+      },
+      {
+        "t": "We integrate",
+        "d": "We connect the solution to your systems, with permissions and controls."
+      },
+      {
+        "t": "We measure and improve",
+        "d": "We review results together and refine, with ongoing support."
+      }
+    ],
+    "proofTitle": "Data and security",
+    "proof": [
+      {
+        "t": "Data under control",
+        "d": "We decide with you which data is used and where it stays, including on dedicated servers."
+      },
+      {
+        "t": "Verifiable answers",
+        "d": "Where possible the assistant cites its sources, so you can check every answer."
+      },
+      {
+        "t": "Compliance",
+        "d": "We work in line with the GDPR; details on data processing are in the privacy policy."
+      }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "Where do we start with AI in the company?",
+        "a": "With a single repetitive, measurable process. We analyse it together, try a pilot and only then decide whether to extend it."
+      },
+      {
+        "q": "Does my data stay confidential?",
+        "a": "We agree with you which data is used and where it is processed. When needed, we can use dedicated servers under your control."
+      },
+      {
+        "q": "Do I need a dedicated server?",
+        "a": "Not always. Many cases work with cloud services; a dedicated AI or GPU server makes sense with sensitive data or heavy workloads. If needed, we design and manage it."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "It depends on the use case. After a first meeting we send a clear quote, on a project basis or with a monthly retainer."
+      }
+    ],
+    "ctaTitle": "Tell us which process you want to improve",
+    "ctaDesc": "We reply with a clear proposal and a transparent quote."
   }
 }

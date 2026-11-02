@@ -62,7 +62,7 @@ export function pageDescription(
 export const LANDING_LOCALES: readonly string[] = ["it", "en"];
 
 /**
- * Bozza: finché è false le pagine di destinazione restano raggiungibili ma
+ * Pubblicazione: se false le pagine di destinazione restano raggiungibili ma
  * noindex e fuori dalla sitemap. Impostare a true dopo la revisione dei testi.
  */
-export const LANDING_PUBLISHED = false;
+export const LANDING_PUBLISHED = true;

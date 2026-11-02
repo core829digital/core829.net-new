@@ -484,7 +484,9 @@
     "cookiePolicy": "Cookie Policy",
     "foundersTitle": "Founders",
     "simpleVersion": "Simple version",
-    "simpleHint": "No 3D animations: a plain, scrollable page."
+    "simpleHint": "No 3D animations: a plain, scrollable page.",
+    "landingSoftware": "Custom software",
+    "landingAi": "AI for businesses"
   },
   "privacy": {
     "title": "Privacy Policy",

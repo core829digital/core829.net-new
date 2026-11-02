@@ -14,7 +14,9 @@
     "descContact": "Tell us about your project. CORE829 replies with a clear plan and a transparent quote. Email, phone and registered office details.",
     "descMethod": "How CORE829 works: discover your real needs, design the simplest solution that works and deliver it in short, verifiable steps.",
     "descCareers": "Work with CORE829: we look for engineers, designers and creatives who care about craft. Send us a spontaneous application.",
-    "descPricing": "Transparent pricing at CORE829: fixed-scope projects, monthly retainers and long-term partnerships shaped around your goals."
+    "descPricing": "Transparent pricing at CORE829: fixed-scope projects, monthly retainers and long-term partnerships shaped around your goals.",
+    "serverTitle": "Custom AI & GPU servers — CORE829",
+    "serverDescription": "Custom AI servers and GPU servers built to your workload: training, inference, rendering, storage. We design the build and manage it end to end."
   },
   "nav": {
     "services": "Services",
@@ -682,7 +684,7 @@
   "serverPage": {
     "kicker": "New service",
     "title": "Custom servers, managed by us from start to finish",
-    "subtitle": "Need a server for AI, rendering, storage, gaming or hosting? We don't produce or ship directly: we manage the entire process for you. On your request we design the build, select components, oversee its construction and make sure you receive exactly the product you want. That's how we build trust.",
+    "subtitle": "Need an AI server, a GPU server or a custom machine for rendering, storage, gaming or hosting? We don't produce or ship directly: we manage the entire process for you. On your request we design the build, select components, oversee its construction and make sure you receive exactly the product you want. That's how we build trust.",
     "manageKicker": "How it works",
     "manageTitle": "You choose, we manage everything",
     "manageIntro": "Our job is to guarantee the outcome: we are not a factory, we are the partner who orchestrates every step so you get what you want, with no surprises.",

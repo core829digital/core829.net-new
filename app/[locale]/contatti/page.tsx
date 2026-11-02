@@ -15,7 +15,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "metadata" });
   const title = `${t("contact")} — CORE829`;
   return {
-    title,
+    title: { absolute: title },
     description: t("description"),
     alternates: buildAlternates(locale, "/contatti"),
     openGraph: { title, description: t("description") },

@@ -14,7 +14,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "cookiePolicy" });
   return {
-    title: `${t("title")} — CORE829`,
+    title: { absolute: `${t("title")} — CORE829` },
     description: t("intro"),
     alternates: buildAlternates(locale, "/cookie-policy"),
   };

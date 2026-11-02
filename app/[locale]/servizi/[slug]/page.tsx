@@ -26,7 +26,7 @@ export async function generateMetadata({
   const tServices = await getTranslations({ locale, namespace: "solution.services" });
 
   if (index === -1) {
-    return { title: `404 — CORE829`, robots: { index: false, follow: false } };
+    return { title: { absolute: "404 — CORE829" }, robots: { index: false, follow: false } };
   }
 
   const serviceTitle = tServices(`${index}.title`);
@@ -34,7 +34,7 @@ export async function generateMetadata({
   const description = tServices(`${index}.desc`);
 
   return {
-    title,
+    title: { absolute: title },
     description,
     keywords: getServiceKeywords(locale, slug, serviceTitle),
     alternates: buildAlternates(locale, `/servizi/${slug}`),

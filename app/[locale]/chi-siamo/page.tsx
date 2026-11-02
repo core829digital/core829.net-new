@@ -12,7 +12,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "metadata" });
   const title = `${t("about")} — CORE829`;
   return {
-    title,
+    title: { absolute: title },
     description: t("description"),
     alternates: buildAlternates(locale, "/chi-siamo"),
     openGraph: { title, description: t("description") },

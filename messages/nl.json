@@ -257,20 +257,20 @@
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",
-        "sector": "Modulaire geprefabriceerde bouwsystemen — merk van Montaggi Srl",
-        "what": "Een complete Next.js 15-website met groen/oranje palet, internationalisering, GSAP scroll trail, 3D-hero en een multi-step productconfigurator.",
-        "stack": "Next.js 15, Convex, React Three Fiber, Zustand, Resend",
+        "sector": "Modulaire prefab-bouw — merk van Montaggi Srl",
+        "what": "Een merk voor modulaire huizen en cabins heeft meer nodig dan een catalogus: klanten willen kijken, kiezen en een prijs aanvragen zonder te bellen. We bouwden het hele traject — catalogus, stapsgewijze configurator, offerteaanvragen en klantenomgeving — plus een adminpaneel waarin het team leads, media en financiën beheert.",
+        "stack": "Next.js 15, Convex, next-intl, GSAP, Resend",
         "details": [
-          "Internationalisering met next-intl",
-          "GSAP scroll trail en 3D-hero (React Three Fiber)",
-          "'Overige oplossingen'-pagina met 6 productfamilies",
-          "Multi-step productconfigurator op basis van Convex-schema",
-          "E-mailverzending via Resend"
+          "Productcatalogus en meerstapsconfigurator op basis van opties en indelingen in Convex",
+          "Offerteaanvragen met status (nieuw, in behandeling, afgehandeld) en een privé klantenomgeving",
+          "Adminpaneel: leads, mediabibliotheek, financiën, rapporten met pdf-export, meldingen en e-maillogboek",
+          "Geautomatiseerde e-mails via Resend en een dagelijkse taak voor reviewverzoeken",
+          "2 talen (IT, EN) met SEO en gestructureerde data vanaf dag één gepland"
         ],
         "tags": [
           "Webdesign",
           "Webapp",
-          "3D/Motion"
+          "B2B-automatiseringen"
         ],
         "mockup": "3d"
       },
@@ -1054,6 +1054,7 @@
     "nextPage": "Volgende pagina",
     "prevImage": "Vorige afbeelding",
     "nextImage": "Volgende afbeelding",
-    "showImage": "Afbeelding {n} tonen"
+    "showImage": "Afbeelding {n} tonen",
+    "language": "Taal"
   }
 }

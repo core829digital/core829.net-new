@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Globe } from "lucide-react";
 import { useParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { locales, localeNames, type Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
@@ -12,6 +13,7 @@ import { cn } from "@/lib/utils";
  * Mantiene la route corrente cambiando solo il prefisso di locale.
  */
 export default function LanguageSwitcher() {
+  const tA = useTranslations("a11y");
   const pathname = usePathname();
   const router = useRouter();
   const params = useParams();
@@ -43,6 +45,7 @@ export default function LanguageSwitcher() {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
+        aria-label={tA("language")}
         aria-haspopup="listbox"
         aria-expanded={open}
         className="flex h-11 items-center gap-2 rounded-full px-4 font-mono text-[11px] uppercase tracking-[0.14em] text-foreground-muted transition-colors hover:bg-foreground/5 hover:text-accent active:bg-foreground/10"

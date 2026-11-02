@@ -257,20 +257,20 @@
         "id": "doctor-haus",
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",
-        "sector": "Modulare Fertigbauten – Marke von Montaggi Srl",
-        "what": "Eine vollständige Next.js-15-Website mit Grün/Orange-Palette, Internationalisierung, GSAP-Scroll-Trail, 3D-Hero und Multi-Step-Produktkonfigurator.",
-        "stack": "Next.js 15, Convex, React Three Fiber, Zustand, Resend",
+        "sector": "Modulare Fertigbauten — Marke der Montaggi Srl",
+        "what": "Eine Marke für modulare Häuser und Cabins braucht mehr als einen Katalog: Kunden wollen ansehen, auswählen und einen Preis anfragen, ohne zu telefonieren. Wir haben den gesamten Weg gebaut — Katalog, schrittweiser Konfigurator, Angebotsanfragen und Kundenbereich — plus ein Admin-Panel, in dem das Team Leads, Medien und Finanzen verwaltet.",
+        "stack": "Next.js 15, Convex, next-intl, GSAP, Resend",
         "details": [
-          "Internationalisierung mit next-intl",
-          "GSAP-Scroll-Trail und 3D-Hero (React Three Fiber)",
-          "'Weitere Lösungen'-Seite mit 6 Produktfamilien",
-          "Multi-Step-Produktkonfigurator auf Convex-Schema",
-          "E-Mail-Versand über Resend"
+          "Produktkatalog und mehrstufiger Konfigurator, gesteuert durch in Convex gespeicherte Optionen und Layouts",
+          "Angebotsanfragen mit Status (neu, in Bearbeitung, erledigt) und privatem Kundenbereich",
+          "Admin-Panel: Leads, Medienbibliothek, Finanzen, Berichte mit PDF-Export, Benachrichtigungen und E-Mail-Protokoll",
+          "Automatische E-Mails über Resend und ein täglicher Job für Bewertungsanfragen",
+          "2 Sprachen (IT, EN) mit SEO und strukturierten Daten von Anfang an geplant"
         ],
         "tags": [
           "Webdesign",
           "Web-App",
-          "3D/Motion"
+          "B2B-Automatisierungen"
         ],
         "mockup": "3d"
       },
@@ -1054,6 +1054,7 @@
     "nextPage": "Nächste Seite",
     "prevImage": "Vorheriges Bild",
     "nextImage": "Nächstes Bild",
-    "showImage": "Bild {n} anzeigen"
+    "showImage": "Bild {n} anzeigen",
+    "language": "Sprache"
   }
 }

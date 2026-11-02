@@ -39,9 +39,9 @@ export default function ServiceCard({ index, displayNumber }: Props) {
         </span>
       </div>
 
-      <h3 className="mt-8 text-lg font-semibold tracking-tight">
+      <h2 className="mt-8 text-lg font-semibold tracking-tight">
         {t(`${index}.title`)}
-      </h3>
+      </h2>
       <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
         {t(`${index}.desc`)}
       </p>

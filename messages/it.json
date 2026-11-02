@@ -258,19 +258,19 @@
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",
         "sector": "Strutture prefabbricate modulari — brand di Montaggi Srl",
-        "what": "Sito Next.js 15 completo con palette verde/arancio, internazionalizzazione, scroll trail GSAP, hero 3D e configuratore prodotto multi-step.",
-        "stack": "Next.js 15, Convex, React Three Fiber, Zustand, Resend",
+        "what": "Un brand di case e cabin modulari ha bisogno di più di un catalogo: i clienti vogliono vedere, scegliere e chiedere un prezzo senza una telefonata. Abbiamo costruito tutto il percorso — catalogo, configuratore a passaggi, richieste di preventivo e area clienti — più un pannello admin dove il team gestisce lead, media e finanze.",
+        "stack": "Next.js 15, Convex, next-intl, GSAP, Resend",
         "details": [
-          "Internazionalizzazione con next-intl",
-          "Scroll trail GSAP e hero 3D (React Three Fiber)",
-          "Pagina 'Altre Soluzioni' con 6 famiglie di prodotto",
-          "Configuratore prodotto multi-step con schema Convex",
-          "Invio email via Resend"
+          "Catalogo prodotti e configuratore a più passaggi guidato da opzioni e layout salvati su Convex",
+          "Richieste di preventivo con stato (nuovo, in lavorazione, evaso) e area clienti riservata",
+          "Pannello admin: lead, libreria media, finanze, report con esportazione PDF, notifiche e registro email",
+          "Email automatiche via Resend e job giornaliero per le richieste di recensione",
+          "2 lingue (IT, EN) con SEO e dati strutturati pianificati fin dall'inizio"
         ],
         "tags": [
           "WebDesign",
           "WebApp",
-          "3D/Motion"
+          "Automazioni B2B"
         ],
         "mockup": "3d"
       },
@@ -1062,6 +1062,7 @@
     "nextPage": "Pagina successiva",
     "prevImage": "Immagine precedente",
     "nextImage": "Immagine successiva",
-    "showImage": "Mostra immagine {n}"
+    "showImage": "Mostra immagine {n}",
+    "language": "Lingua"
   }
 }

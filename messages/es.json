@@ -258,19 +258,19 @@
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",
         "sector": "Estructuras prefabricadas modulares — marca de Montaggi Srl",
-        "what": "Sitio Next.js 15 completo con paleta verde/naranja, internacionalización, scroll trail GSAP, hero 3D y configurador de producto multi-step.",
-        "stack": "Next.js 15, Convex, React Three Fiber, Zustand, Resend",
+        "what": "Una marca de casas y cabañas modulares necesita más que un catálogo: los clientes quieren ver, elegir y pedir un precio sin una llamada. Construimos todo el recorrido — catálogo, configurador paso a paso, solicitudes de presupuesto y área de cliente — más un panel de administración donde el equipo gestiona leads, medios y finanzas.",
+        "stack": "Next.js 15, Convex, next-intl, GSAP, Resend",
         "details": [
-          "Internacionalización con next-intl",
-          "Scroll trail GSAP y hero 3D (React Three Fiber)",
-          "Página 'Otras Soluciones' con 6 familias de producto",
-          "Configurador de producto multi-step con esquema Convex",
-          "Envío de email mediante Resend"
+          "Catálogo de productos y configurador de varios pasos guiado por opciones y diseños guardados en Convex",
+          "Solicitudes de presupuesto con estado (nuevo, en curso, completado) y área de cliente privada",
+          "Panel admin: leads, biblioteca de medios, finanzas, informes con exportación PDF, notificaciones y registro de emails",
+          "Emails automáticos con Resend y una tarea diaria para solicitar reseñas",
+          "2 idiomas (IT, EN) con SEO y datos estructurados planificados desde el inicio"
         ],
         "tags": [
           "WebDesign",
           "Webapp",
-          "3D/Motion"
+          "Automatizaciones B2B"
         ],
         "mockup": "3d"
       },
@@ -1054,6 +1054,7 @@
     "nextPage": "Página siguiente",
     "prevImage": "Imagen anterior",
     "nextImage": "Imagen siguiente",
-    "showImage": "Mostrar imagen {n}"
+    "showImage": "Mostrar imagen {n}",
+    "language": "Idioma"
   }
 }

@@ -9,7 +9,7 @@
   --color-background: #ffffff; /* Bianco — background primario */
   --color-foreground: #1a1a1a; /* Nero/Graphite — testo e elementi grafici */
   --color-foreground-muted: #4a4a4a; /* Graphite più chiaro — testo secondario */
-  --color-accent: #e11d2e; /* Rosso — accenti, CTA, hover, badge */
+  --color-accent: #dd1a2b; /* Rosso — accenti, CTA, hover, badge */
   --color-accent-hover: #c4121f; /* Rosso scuro — hover/active */
   --color-border: #e5e5e5; /* Grigio chiaro — separatori/bordi */
   --color-surface: #f7f7f7; /* Off-white — sezioni alternate / card */
@@ -27,7 +27,7 @@
   --rgb-background: 255 255 255;
   --rgb-foreground: 26 26 26;
   --rgb-foreground-muted: 74 74 74;
-  --rgb-accent: 225 29 46;
+  --rgb-accent: 221 26 43;
   --rgb-accent-hover: 196 18 31;
   --rgb-border: 229 229 229;
   --rgb-surface: 247 247 247;

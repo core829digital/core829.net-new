@@ -258,19 +258,19 @@
         "name": "Doctor Haus",
         "domain": "doctor-haus.com",
         "sector": "Structuri prefabricate modulare — brand al Montaggi Srl",
-        "what": "Site Next.js 15 complet cu paletă verde/portocaliu, internaționalizare, scroll trail GSAP, hero 3D și configurator de produs multi-step.",
-        "stack": "Next.js 15, Convex, React Three Fiber, Zustand, Resend",
+        "what": "Un brand de case și cabine modulare are nevoie de mai mult decât un catalog: clienții vor să vadă, să aleagă și să ceară un preț fără un telefon. Am construit tot parcursul — catalog, configurator pe pași, cereri de ofertă și zonă de client — plus un panou de administrare unde echipa gestionează lead-uri, media și finanțe.",
+        "stack": "Next.js 15, Convex, next-intl, GSAP, Resend",
         "details": [
-          "Internaționalizare cu next-intl",
-          "Scroll trail GSAP și hero 3D (React Three Fiber)",
-          "Pagină 'Alte Soluții' cu 6 familii de produse",
-          "Configurator de produs multi-step cu schema Convex",
-          "Trimitere email prin Resend"
+          "Catalog de produse și configurator în mai mulți pași, ghidat de opțiuni și layout-uri salvate în Convex",
+          "Cereri de ofertă cu status (nou, în lucru, finalizat) și zonă privată pentru clienți",
+          "Panou admin: lead-uri, bibliotecă media, finanțe, rapoarte cu export PDF, notificări și jurnal de e-mailuri",
+          "E-mailuri automate prin Resend și un job zilnic pentru cererile de recenzii",
+          "2 limbi (IT, EN) cu SEO și date structurate planificate de la început"
         ],
         "tags": [
           "WebDesign",
           "WebApp",
-          "3D/Motion"
+          "Automatizări B2B"
         ],
         "mockup": "3d"
       },
@@ -1054,6 +1054,7 @@
     "nextPage": "Pagina următoare",
     "prevImage": "Imaginea anterioară",
     "nextImage": "Imaginea următoare",
-    "showImage": "Afișează imaginea {n}"
+    "showImage": "Afișează imaginea {n}",
+    "language": "Limbă"
   }
 }

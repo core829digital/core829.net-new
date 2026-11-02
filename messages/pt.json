@@ -252,7 +252,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "Fechar"
   },
   "features": {
     "kicker": "Capabilities",

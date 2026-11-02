@@ -344,7 +344,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "Kapat"
   },
   "features": {
     "kicker": "Capabilities",

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import type { PDFDocumentProxy } from "pdfjs-dist";
 
@@ -22,6 +23,7 @@ type RenderStatus = "loading" | "ready" | "error";
  * lo rasterizza su <canvas> con PDF.js. Funziona su desktop e mobile.
  */
 export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps) {
+  const tA = useTranslations("a11y");
   const [status, setStatus] = useState<RenderStatus>("loading");
   const [pageCount, setPageCount] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
@@ -206,7 +208,7 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
               <button
                 type="button"
                 onClick={onClose}
-                aria-label="Chiudi"
+                aria-label={tA("close")}
                 className="btn btn-secondary flex h-11 w-11 shrink-0 items-center justify-center rounded-full"
               >
                 <X className="h-5 w-5" aria-hidden />
@@ -220,7 +222,7 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
                   onClick={() => goToPage(currentPage - 1)}
                   disabled={!hasPrev}
                   className="btn btn-secondary inline-flex min-h-11 items-center gap-1 rounded-full px-4 text-xs font-medium"
-                  aria-label="Pagina precedente"
+                  aria-label={tA("prevPage")}
                 >
                   <ChevronLeft className="h-4 w-4" aria-hidden />
                   <span className="hidden sm:inline">Prev</span>
@@ -233,7 +235,7 @@ export default function PdfViewer({ src, title, open, onClose }: PdfViewerProps)
                   onClick={() => goToPage(currentPage + 1)}
                   disabled={!hasNext}
                   className="btn btn-secondary inline-flex min-h-11 items-center gap-1 rounded-full px-4 text-xs font-medium"
-                  aria-label="Pagina successiva"
+                  aria-label={tA("nextPage")}
                 >
                   <span className="hidden sm:inline">Next</span>
                   <ChevronRight className="h-4 w-4" aria-hidden />

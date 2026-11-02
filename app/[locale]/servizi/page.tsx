@@ -20,7 +20,7 @@ export async function generateMetadata({
     title: tServices(`${s.index}.title`),
   }));
   return {
-    title,
+    title: { absolute: title },
     description: t("description"),
     keywords: getSiteKeywords(locale, serviceTitles),
     alternates: buildAlternates(locale, "/servizi"),

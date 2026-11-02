@@ -2,13 +2,13 @@
   "metadata": {
     "title": "CORE829 — Digitaal bureau voor maatwerk software, webapps en AI",
     "description": "CORE829 ontwerpt en ontwikkelt maatwerk webapps, B2B-automatiseringen, AI-systemen en marketing voor bedrijven die precisie willen, geen ruis. Enterprise-kwaliteit, minimalistisch design.",
-    "services": "Services page",
-    "contact": "Contact page",
-    "about": "About page",
-    "method": "Method page",
-    "blog": "Blog page",
-    "careers": "Careers page",
-    "pricing": "Pricing page"
+    "services": "Diensten",
+    "contact": "Contact",
+    "about": "Over ons",
+    "method": "Werkwijze",
+    "blog": "Blog",
+    "careers": "Vacatures",
+    "pricing": "Prijzen"
   },
   "nav": {
     "services": "Diensten",
@@ -314,7 +314,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "Sluiten"
   },
   "features": {
     "kicker": "Capabilities",
@@ -592,26 +593,26 @@
     ]
   },
   "notFound": {
-    "title": "Page not found",
-    "desc": "The page you are looking for doesn't exist or has been moved.",
-    "back": "Back to home"
+    "title": "Pagina niet gevonden",
+    "desc": "De pagina die je zoekt bestaat niet of is verplaatst.",
+    "back": "Terug naar home"
   },
   "servicesPage": {
-    "kicker": "Services",
-    "title": "Our Services",
-    "subtitle": "Minimal-premium digital agency.",
+    "kicker": "Diensten",
+    "title": "Onze diensten",
+    "subtitle": "Software op maat, automatisering, AI en digitale marketing: ontworpen, gebouwd en beheerd door één team.",
     "projectTitle": "Project",
-    "projectDesc": "Custom software development.",
+    "projectDesc": "Softwareontwikkeling op maat met vastgelegde scope en oplevering.",
     "retainerTitle": "Retainer",
-    "retainerDesc": "Ongoing partnership.",
-    "partnershipTitle": "Partnership",
-    "partnershipDesc": "Strategic collaboration.",
-    "cta": "Get in touch"
+    "retainerDesc": "Doorlopende ontwikkeling, onderhoud en support, maand na maand.",
+    "partnershipTitle": "Partnerschap",
+    "partnershipDesc": "Een strategische samenwerking rond jouw langetermijndoelen.",
+    "cta": "Neem contact op"
   },
   "contactPage": {
     "kicker": "Contact",
-    "title": "Let's build together",
-    "subtitle": "Start your project with a consultation.",
+    "title": "Laten we samen bouwen",
+    "subtitle": "Vertel ons over je project: we antwoorden met een duidelijk plan en een transparante offerte.",
     "existingClient": "Al klant?",
     "projectsMail": "om te communiceren met de projectafdeling.",
     "companyAddress": "Statutaire zetel",
@@ -621,24 +622,25 @@
     "companyHours": "Openingstijden"
   },
   "aboutPage": {
-    "kicker": "About",
-    "title": "Who we are",
-    "subtitle": "Enterprise-grade quality, minimal design.",
-    "missionTitle": "Our mission",
-    "mission": "Build precision software that solves real problems.",
-    "valuesTitle": "Our values",
+    "kicker": "Over ons",
+    "title": "Wie we zijn",
+    "subtitle": "Een Roemeens bedrijf voor softwareontwikkeling, marketing en digitale diensten: de precisie van een engineeringteam en het oog van een creatieve studio.",
+    "missionTitle": "Onze missie",
+    "mission": "Precisiesoftware en digitale ervaringen bouwen die echte bedrijfsproblemen oplossen — van webapps op maat en automatiseringen tot foto- en videoverslaggeving van je evenementen — met één verantwoordelijk team, van briefing tot oplevering.",
+    "valuesTitle": "Onze waarden",
     "values": [
-      "Precision",
-      "Minimalism",
-      "Quality"
+      "Precisie in elk detail, van code tot tekst",
+      "Minimalisme: minder woorden, minder stappen, duidelijkere resultaten",
+      "Enterprise-kwaliteit, op tijd geleverd",
+      "Transparantie: één aanspreekpunt, geen verrassingen"
     ]
   },
   "methodPage": {
-    "kicker": "Method",
-    "title": "How we work",
-    "subtitle": "No noise, just engineered clarity.",
-    "approachTitle": "Our approach",
-    "approach": "Discover, design, deliver with focus."
+    "kicker": "Werkwijze",
+    "title": "Hoe we werken",
+    "subtitle": "Geen ruis, alleen ontworpen helderheid.",
+    "approachTitle": "Onze aanpak",
+    "approach": "We achterhalen je echte behoeften, ontwerpen de eenvoudigste oplossing die werkt en leveren die gefocust op — in korte, controleerbare stappen."
   },
   "blogPage": {
     "kicker": "Blog",
@@ -647,25 +649,25 @@
     "comingSoon": "Coming soon"
   },
   "careersPage": {
-    "kicker": "Careers",
-    "title": "Join our team",
-    "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon",
+    "kicker": "Vacatures",
+    "title": "Word onderdeel van het team",
+    "subtitle": "We zoeken mensen met liefde voor het vak: ontwikkelaars, ontwerpers en creatievelingen die dingen willen bouwen die werken.",
+    "comingSoon": "Binnenkort",
     "applyTitle": "Op dit moment geen vacatures",
     "applyDesc": "We werven op dit moment niet actief, maar horen graag van mensen die goed bij ons team zouden passen. Stuur ons uw cv en een paar regels over uzelf.",
     "applyButton": "Stuur een open sollicitatie"
   },
   "pricingPage": {
-    "kicker": "Pricing",
-    "title": "Transparent pricing",
-    "subtitle": "Simple, predictable plans for every need.",
+    "kicker": "Prijzen",
+    "title": "Transparante prijzen",
+    "subtitle": "Duidelijke, voorspelbare manieren om met ons te werken, gebouwd rond jouw doelen en niet rond een star aanbod.",
     "projectTitle": "Project",
-    "projectDesc": "One-time delivery.",
+    "projectDesc": "Vastgelegde scope met afgesproken oplevering, planning en offerte.",
     "retainerTitle": "Retainer",
-    "retainerDesc": "Monthly engagement.",
-    "partnershipTitle": "Partnership",
-    "partnershipDesc": "Custom agreement.",
-    "cta": "Schedule a consultation",
+    "retainerDesc": "Maandelijkse samenwerking voor doorlopende ontwikkeling, onderhoud en groei.",
+    "partnershipTitle": "Partnerschap",
+    "partnershipDesc": "Langetermijnafspraak op maat van jouw bedrijf en gedeelde doelen.",
+    "cta": "Plan een gesprek",
     "contactSales": "Contacteer Sales",
     "contactSalesHint": "Voor de aankoop van onze producten of grootschalige projecten kunt u rechtstreeks contact opnemen met ons salesteam.",
     "partnershipCta": "Word partner",
@@ -1045,5 +1047,13 @@
     "desc": "Er is een onverwachte fout opgetreden bij het laden van deze pagina. U kunt het opnieuw proberen of terugkeren naar de startpagina.",
     "retry": "Opnieuw proberen",
     "back": "Terug naar home"
+  },
+  "a11y": {
+    "close": "Sluiten",
+    "prevPage": "Vorige pagina",
+    "nextPage": "Volgende pagina",
+    "prevImage": "Vorige afbeelding",
+    "nextImage": "Volgende afbeelding",
+    "showImage": "Afbeelding {n} tonen"
   }
 }

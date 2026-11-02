@@ -344,7 +344,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "閉じる"
   },
   "features": {
     "kicker": "Capabilities",

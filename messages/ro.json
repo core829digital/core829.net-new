@@ -2,13 +2,13 @@
   "metadata": {
     "title": "CORE829 — Agenție digitală pentru software la comandă, webapp și AI",
     "description": "CORE829 proiectează și dezvoltă webapp-uri la comandă, automatizări B2B, sisteme AI și marketing pentru companii care vor precizie, nu zgomot. Calitate enterprise, design minimal.",
-    "services": "Services page",
-    "contact": "Contact page",
-    "about": "About page",
-    "method": "Method page",
-    "blog": "Blog page",
-    "careers": "Careers page",
-    "pricing": "Pricing page"
+    "services": "Servicii",
+    "contact": "Contact",
+    "about": "Despre noi",
+    "method": "Metodă",
+    "blog": "Blog",
+    "careers": "Cariere",
+    "pricing": "Prețuri"
   },
   "nav": {
     "services": "Servicii",
@@ -314,7 +314,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "Închide"
   },
   "features": {
     "kicker": "Capabilități",
@@ -592,26 +593,26 @@
     ]
   },
   "notFound": {
-    "title": "Page not found",
-    "desc": "The page you are looking for doesn't exist or has been moved.",
-    "back": "Back to home"
+    "title": "Pagina nu a fost găsită",
+    "desc": "Pagina căutată nu există sau a fost mutată.",
+    "back": "Înapoi la prima pagină"
   },
   "servicesPage": {
-    "kicker": "Services",
-    "title": "Our Services",
-    "subtitle": "Minimal-premium digital agency.",
-    "projectTitle": "Project",
-    "projectDesc": "Custom software development.",
+    "kicker": "Servicii",
+    "title": "Serviciile noastre",
+    "subtitle": "Software personalizat, automatizare, AI și marketing digital: proiectate, construite și gestionate de o singură echipă.",
+    "projectTitle": "Proiect",
+    "projectDesc": "Dezvoltare software personalizată, cu domeniu și livrare definite.",
     "retainerTitle": "Retainer",
-    "retainerDesc": "Ongoing partnership.",
-    "partnershipTitle": "Partnership",
-    "partnershipDesc": "Strategic collaboration.",
-    "cta": "Get in touch"
+    "retainerDesc": "Dezvoltare, mentenanță și suport continuu, lună de lună.",
+    "partnershipTitle": "Parteneriat",
+    "partnershipDesc": "O colaborare strategică construită în jurul obiectivelor tale pe termen lung.",
+    "cta": "Contactează-ne"
   },
   "contactPage": {
     "kicker": "Contact",
-    "title": "Let's build together",
-    "subtitle": "Start your project with a consultation.",
+    "title": "Să construim împreună",
+    "subtitle": "Spune-ne despre proiectul tău: îți răspundem cu un plan clar și o ofertă transparentă.",
     "existingClient": "Ești deja client?",
     "projectsMail": "pentru a comunica cu departamentul de proiecte.",
     "companyAddress": "Sediu social",
@@ -621,24 +622,25 @@
     "companyHours": "Program"
   },
   "aboutPage": {
-    "kicker": "About",
-    "title": "Who we are",
-    "subtitle": "Enterprise-grade quality, minimal design.",
-    "missionTitle": "Our mission",
-    "mission": "Build precision software that solves real problems.",
-    "valuesTitle": "Our values",
+    "kicker": "Despre noi",
+    "title": "Cine suntem",
+    "subtitle": "O companie românească de dezvoltare software, marketing și servicii digitale: precizia unei echipe de ingineri și ochiul unui studio creativ.",
+    "missionTitle": "Misiunea noastră",
+    "mission": "Construim software de precizie și experiențe digitale care rezolvă probleme reale de business — de la aplicații web personalizate și automatizări până la acoperirea foto și video a evenimentelor tale — cu o singură echipă responsabilă, de la brief la livrare.",
+    "valuesTitle": "Valorile noastre",
     "values": [
-      "Precision",
-      "Minimalism",
-      "Quality"
+      "Precizie în fiecare detaliu, de la cod la texte",
+      "Minimalism: mai puține cuvinte, mai puțini pași, rezultate mai clare",
+      "Calitate enterprise, livrată la timp",
+      "Transparență: un singur interlocutor, fără surprize"
     ]
   },
   "methodPage": {
-    "kicker": "Method",
-    "title": "How we work",
-    "subtitle": "No noise, just engineered clarity.",
-    "approachTitle": "Our approach",
-    "approach": "Discover, design, deliver with focus."
+    "kicker": "Metodă",
+    "title": "Cum lucrăm",
+    "subtitle": "Fără zgomot, doar claritate inginerească.",
+    "approachTitle": "Abordarea noastră",
+    "approach": "Înțelegem nevoile tale reale, proiectăm cea mai simplă soluție care funcționează și o livrăm cu focus, în pași scurți și verificabili."
   },
   "blogPage": {
     "kicker": "Blog",
@@ -647,25 +649,25 @@
     "comingSoon": "Coming soon"
   },
   "careersPage": {
-    "kicker": "Careers",
-    "title": "Join our team",
-    "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon",
+    "kicker": "Cariere",
+    "title": "Alătură-te echipei",
+    "subtitle": "Căutăm oameni pasionați de meserie: dezvoltatori, designeri și creativi care vor să construiască lucruri care funcționează.",
+    "comingSoon": "În curând",
     "applyTitle": "Momentan nu avem posturi deschise",
     "applyDesc": "În prezent nu recrutăm activ, dar suntem mereu bucuroși să cunoaștem persoane potrivite pentru echipa noastră. Trimite-ne CV-ul tău și câteva rânduri despre tine.",
     "applyButton": "Trimite o candidatură spontană"
   },
   "pricingPage": {
-    "kicker": "Pricing",
-    "title": "Transparent pricing",
-    "subtitle": "Simple, predictable plans for every need.",
-    "projectTitle": "Project",
-    "projectDesc": "One-time delivery.",
+    "kicker": "Prețuri",
+    "title": "Prețuri transparente",
+    "subtitle": "Moduri clare și previzibile de a lucra cu noi, construite în jurul obiectivelor tale, nu al unui catalog rigid.",
+    "projectTitle": "Proiect",
+    "projectDesc": "Domeniu definit, cu livrabil, termene și ofertă stabilite.",
     "retainerTitle": "Retainer",
-    "retainerDesc": "Monthly engagement.",
-    "partnershipTitle": "Partnership",
-    "partnershipDesc": "Custom agreement.",
-    "cta": "Schedule a consultation",
+    "retainerDesc": "Colaborare lunară pentru dezvoltare continuă, mentenanță și creștere.",
+    "partnershipTitle": "Parteneriat",
+    "partnershipDesc": "Acord pe termen lung, adaptat afacerii tale și obiectivelor comune.",
+    "cta": "Programează o consultație",
     "contactSales": "Contactează Vânzările",
     "contactSalesHint": "Pentru achiziționarea produselor noastre sau a proiectelor la scară largă, contactează direct echipa de vânzări.",
     "partnershipCta": "Devino partener",
@@ -1045,5 +1047,13 @@
     "desc": "A apărut o eroare neașteptată la încărcarea acestei pagini. Poți încerca din nou sau te poți întoarce la pagina principală.",
     "retry": "Încearcă din nou",
     "back": "Înapoi la pagina principală"
+  },
+  "a11y": {
+    "close": "Închide",
+    "prevPage": "Pagina anterioară",
+    "nextPage": "Pagina următoare",
+    "prevImage": "Imaginea anterioară",
+    "nextImage": "Imaginea următoare",
+    "showImage": "Afișează imaginea {n}"
   }
 }

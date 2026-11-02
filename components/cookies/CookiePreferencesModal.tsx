@@ -11,6 +11,7 @@ import { useCookieConsent } from "./CookieConsentContext";
 
 export default function CookiePreferencesModal() {
   const t = useTranslations("cookieConsent");
+  const tA = useTranslations("a11y");
   const { consent, isPreferencesOpen, closePreferences, acceptAll, rejectAll, savePreferences } =
     useCookieConsent();
 
@@ -108,7 +109,7 @@ export default function CookiePreferencesModal() {
               <button
                 type="button"
                 onClick={closePreferences}
-                aria-label="Close"
+                aria-label={tA("close")}
                 className="btn btn-secondary flex h-11 w-11 shrink-0 items-center justify-center rounded-full"
               >
                 <X className="h-4 w-4" aria-hidden />

@@ -344,7 +344,8 @@
         ],
         "mockup": "auction"
       }
-    ]
+    ],
+    "close": "Bezár"
   },
   "features": {
     "kicker": "Capabilities",

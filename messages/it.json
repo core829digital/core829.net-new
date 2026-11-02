@@ -2,13 +2,13 @@
   "metadata": {
     "title": "CORE829 — Agenzia digitale per software su misura, webapp e AI",
     "description": "CORE829 progetta e sviluppa webapp su misura, automazioni B2B, sistemi AI e marketing per aziende che vogliono precisione, non rumore. Qualità enterprise, design minimale.",
-    "services": "Services page",
-    "contact": "Contact page",
-    "about": "About page",
-    "method": "Method page",
-    "blog": "Blog page",
-    "careers": "Careers page",
-    "pricing": "Pricing page"
+    "services": "Servizi",
+    "contact": "Contatti",
+    "about": "Chi siamo",
+    "method": "Metodo",
+    "blog": "Blog",
+    "careers": "Lavora con noi",
+    "pricing": "Prezzi"
   },
   "nav": {
     "services": "Servizi",
@@ -593,26 +593,26 @@
     ]
   },
   "notFound": {
-    "title": "Page not found",
-    "desc": "The page you are looking for doesn't exist or has been moved.",
-    "back": "Back to home"
+    "title": "Pagina non trovata",
+    "desc": "La pagina che cerchi non esiste o è stata spostata.",
+    "back": "Torna alla home"
   },
   "servicesPage": {
-    "kicker": "Services",
-    "title": "Our Services",
-    "subtitle": "Minimal-premium digital agency.",
-    "projectTitle": "Project",
-    "projectDesc": "Custom software development.",
+    "kicker": "Servizi",
+    "title": "I nostri servizi",
+    "subtitle": "Software su misura, automazione, AI e marketing digitale: progettati, realizzati e gestiti da un unico team.",
+    "projectTitle": "Progetto",
+    "projectDesc": "Sviluppo software su misura con ambito e consegna definiti.",
     "retainerTitle": "Retainer",
-    "retainerDesc": "Ongoing partnership.",
+    "retainerDesc": "Sviluppo, manutenzione e supporto continuativi, mese dopo mese.",
     "partnershipTitle": "Partnership",
-    "partnershipDesc": "Strategic collaboration.",
-    "cta": "Get in touch"
+    "partnershipDesc": "Una collaborazione strategica costruita sui tuoi obiettivi a lungo termine.",
+    "cta": "Contattaci"
   },
   "contactPage": {
-    "kicker": "Contact",
-    "title": "Let's build together",
-    "subtitle": "Start your project with a consultation.",
+    "kicker": "Contatti",
+    "title": "Costruiamo insieme",
+    "subtitle": "Raccontaci il tuo progetto: ti rispondiamo con un piano chiaro e un preventivo trasparente.",
     "existingClient": "Sei già un cliente?",
     "projectsMail": "per comunicare con il dipartimento progetti.",
     "companyAddress": "Sede legale",
@@ -622,24 +622,25 @@
     "companyHours": "Orari"
   },
   "aboutPage": {
-    "kicker": "About",
-    "title": "Who we are",
-    "subtitle": "Enterprise-grade quality, minimal design.",
-    "missionTitle": "Our mission",
-    "mission": "Build precision software that solves real problems.",
-    "valuesTitle": "Our values",
+    "kicker": "Chi siamo",
+    "title": "Chi siamo",
+    "subtitle": "Una società rumena di sviluppo software, marketing e servizi digitali: la precisione di un team di ingegneri e l'occhio di uno studio creativo.",
+    "missionTitle": "La nostra missione",
+    "mission": "Costruire software di precisione ed esperienze digitali che risolvono problemi reali di business — dalle web app su misura e le automazioni alla copertura foto e video dei tuoi eventi — con un unico team responsabile dal brief alla consegna.",
+    "valuesTitle": "I nostri valori",
     "values": [
-      "Precision",
-      "Minimalism",
-      "Quality"
+      "Precisione in ogni dettaglio, dal codice ai testi",
+      "Minimalismo: meno parole, meno passaggi, risultati più chiari",
+      "Qualità enterprise, consegnata nei tempi",
+      "Trasparenza: un unico referente, nessuna sorpresa"
     ]
   },
   "methodPage": {
-    "kicker": "Method",
-    "title": "How we work",
-    "subtitle": "No noise, just engineered clarity.",
-    "approachTitle": "Our approach",
-    "approach": "Discover, design, deliver with focus."
+    "kicker": "Metodo",
+    "title": "Come lavoriamo",
+    "subtitle": "Niente rumore, solo chiarezza ingegnerizzata.",
+    "approachTitle": "Il nostro approccio",
+    "approach": "Capiamo i tuoi bisogni reali, progettiamo la soluzione più semplice che funziona e la consegniamo con focus, in passi brevi e verificabili."
   },
   "blogPage": {
     "kicker": "Blog",
@@ -648,25 +649,25 @@
     "comingSoon": "Coming soon"
   },
   "careersPage": {
-    "kicker": "Careers",
-    "title": "Join our team",
-    "subtitle": "Build the future with us.",
-    "comingSoon": "Coming soon",
+    "kicker": "Lavora con noi",
+    "title": "Entra nel team",
+    "subtitle": "Cerchiamo persone che amano il mestiere: sviluppatori, designer e creativi che vogliono costruire cose che funzionano.",
+    "comingSoon": "Prossimamente",
     "applyTitle": "Nessuna posizione aperta al momento",
     "applyDesc": "Al momento non stiamo assumendo attivamente, ma siamo sempre felici di conoscere persone che potrebbero essere adatte al team. Inviaci il tuo CV e qualche riga su di te.",
     "applyButton": "Invia una candidatura spontanea"
   },
   "pricingPage": {
-    "kicker": "Pricing",
-    "title": "Transparent pricing",
-    "subtitle": "Simple, predictable plans for every need.",
-    "projectTitle": "Project",
-    "projectDesc": "One-time delivery.",
+    "kicker": "Prezzi",
+    "title": "Prezzi trasparenti",
+    "subtitle": "Modi chiari e prevedibili di lavorare con noi, costruiti sui tuoi obiettivi e non su un catalogo rigido.",
+    "projectTitle": "Progetto",
+    "projectDesc": "Ambito definito con consegna, tempi e preventivo concordati.",
     "retainerTitle": "Retainer",
-    "retainerDesc": "Monthly engagement.",
+    "retainerDesc": "Collaborazione mensile per sviluppo continuo, manutenzione e crescita.",
     "partnershipTitle": "Partnership",
-    "partnershipDesc": "Custom agreement.",
-    "cta": "Schedule a consultation",
+    "partnershipDesc": "Accordo di lungo periodo su misura per la tua azienda e obiettivi condivisi.",
+    "cta": "Prenota una consulenza",
     "contactSales": "Contatta le Vendite",
     "contactSalesHint": "Per l'acquisto dei nostri prodotti o progetti di grandi dimensioni, contatta direttamente il team vendite.",
     "partnershipCta": "Diventa partner",
@@ -1054,5 +1055,13 @@
     "desc": "Si è verificato un errore imprevisto durante il caricamento della pagina. Puoi riprovare o tornare alla home.",
     "retry": "Riprova",
     "back": "Torna alla home"
+  },
+  "a11y": {
+    "close": "Chiudi",
+    "prevPage": "Pagina precedente",
+    "nextPage": "Pagina successiva",
+    "prevImage": "Immagine precedente",
+    "nextImage": "Immagine successiva",
+    "showImage": "Mostra immagine {n}"
   }
 }

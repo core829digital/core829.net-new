@@ -319,6 +319,83 @@
           "Automatizaciones B2B"
         ],
         "mockup": "auction"
+      },
+      {
+        "id": "dbyoung",
+        "name": "DBYoung",
+        "domain": "dbyoung.it",
+        "sector": "Web y tienda online del artista y compositor Dimitri Boutourline",
+        "what": "Un artista que vende beats, sample packs y licencias de bandas sonoras necesita una tienda donde la música esté protegida y comprar sea sencillo. Construimos la web y la tienda: se escuchan las previsualizaciones, se paga online y se descargan los originales con un código de licencia, con área de cliente y panel de administración detrás.",
+        "stack": "Next.js 15, Convex, Stripe, Resend",
+        "details": [
+          "Tienda de beats, sample packs y bandas sonoras con previsualizaciones públicas de 30–45 segundos; los archivos originales nunca se exponen",
+          "Pago con Stripe con webhook firmado, certificado de licencia en PDF por email y biblioteca de cliente para descargar con el código de licencia",
+          "Panel admin con acceso de dos factores: estadísticas, productos, mensajes, emisión y revocación de licencias",
+          "Web bilingüe (IT, EN) con perfil del artista, música, catálogo de obras y formulario de contacto"
+        ],
+        "tags": [
+          "WebDesign",
+          "Webapp"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "events-dbyoung",
+        "name": "Eventi DBYoung",
+        "domain": "events.dbyoung.it",
+        "sector": "Eventos premium en una finca toscana (Fattoria Isola, Laterina)",
+        "what": "Dos formatos, eventos firmados por Dimitri y eventos privados organizados por terceros, necesitaban un único lugar para presentar la ubicación, vender entradas y dejar entrar a los invitados con un código QR. Construimos el portal: reserva por persona, pago con Stripe, entradas QR por email y un backoffice con escáner para el check-in.",
+        "stack": "Next.js 16, Convex, Stripe, Resend, Calendly",
+        "details": [
+          "Reserva por número de invitados, con nombre, apellidos, fecha de nacimiento y código fiscal de cada persona",
+          "Stripe Checkout y después una entrada con QR único por persona enviada por email; check-in a la entrada escaneado desde el backoffice, duplicados rechazados",
+          "Aforo reservado de forma atómica, con 45 minutos de gracia para los pagos pendientes",
+          "Roles cliente, admin y founder, backoffice para eventos, invitados y usuarios, reseñas de cinco estrellas tras el evento"
+        ],
+        "tags": [
+          "Webapp",
+          "Automatizaciones B2B",
+          "WebDesign"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "giemme-doors",
+        "name": "Giemme Doors & Service",
+        "domain": "giemmedoors.it",
+        "sector": "Puertas de interior y puertas blindadas certificadas en Foligno",
+        "what": "Un especialista local en puertas necesita un showroom que funcione online: mostrar los productos, explicar cómo se trabaja y facilitar pedir asesoramiento o presupuesto. Realizamos la web con el configurador OneSpec para presupuestos online y un camino de contacto que empieza por WhatsApp.",
+        "stack": "Next.js 15, Tailwind CSS 4, framer-motion, Convex, OneSpec",
+        "details": [
+          "Web one-page: productos, cómo trabajamos (asesoramiento, medición, suministro e instalación, asistencia), galería y contactos con mapa",
+          "Configurador OneSpec integrado para solicitudes de presupuesto, con ajuste automático de tamaño",
+          "Formulario de contacto con alternativa WhatsApp; las solicitudes pueden guardarse en Convex",
+          "Páginas legales RGPD, sitemap y robots para buscadores"
+        ],
+        "tags": [
+          "WebDesign",
+          "Webapp"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "recon",
+        "name": "Recon",
+        "domain": "recon",
+        "sector": "Producto CORE829 en desarrollo: conciliación de la contabilidad con datos de las autoridades UE",
+        "what": "Las autoridades fiscales ya tienen la otra mitad de los números de una empresa y los cruzan: una diferencia puede desencadenar una inspección. Estamos construyendo una API que concilia la contabilidad con la copia de cada autoridad y devuelve resultados que citan la norma, con pruebas fechadas y a prueba de manipulación. No ofrece asesoramiento fiscal.",
+        "stack": "Rust, PostgreSQL 18, Next.js, shadcn/ui",
+        "details": [
+          "Ocho controles candidatos sobre facturas electrónicas, SAF-T, declaraciones de IVA/OSS, datos aduaneros de importación y VIES; por ahora funciona uno, con datos sintéticos",
+          "Cada resultado indica qué dos fuentes no coinciden y según qué norma, con un paquete de pruebas a prueba de manipulación",
+          "Bases de datos separadas para escritura y lectura (PostgreSQL 18), con replicación y verificaciones de fidelidad",
+          "Estado: desarrollo inicial; todo lo que se muestra funciona con datos sintéticos y nada está aún conectado a un sistema real de una autoridad"
+        ],
+        "tags": [
+          "Webapp",
+          "Automatizaciones B2B"
+        ],
+        "mockup": "dashboard"
       }
     ],
     "close": "Cerrar"

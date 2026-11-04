@@ -49,7 +49,7 @@ export default function CasesSlide({ index }: { index?: number }) {
   return (
     <DepthSlide index={index} id="clienti">
       <SlideHeading kicker={t("kicker")} title={t("title")} />
-      <ul className="grid w-full max-w-6xl grid-cols-2 gap-2.5 sm:gap-4 lg:grid-cols-3 lg:gap-5">
+      <ul className="grid w-full max-w-6xl grid-cols-3 gap-2 sm:grid-cols-4 sm:gap-4 lg:grid-cols-5">
         {projects.map((p, i) => {
           const meta = CLIENTS_META.find((c) => c.key === p.id);
           const shot = CLIENT_SCREENSHOTS[p.domain]?.[0];
@@ -57,8 +57,8 @@ export default function CasesSlide({ index }: { index?: number }) {
             <DepthItem
               as="li"
               key={p.id}
-              dir={radial(i, projects.length, 3)}
-              delay={i % 3}
+              dir={radial(i, projects.length, 5)}
+              delay={i % 5}
               rotate={(i % 2 ? 1 : -1) * 4}
             >
               <button
@@ -85,7 +85,7 @@ export default function CasesSlide({ index }: { index?: number }) {
                 </span>
                 <span className="flex items-center justify-between gap-2 p-2.5 sm:p-4">
                   <span className="min-w-0">
-                    <span className="block truncate font-display text-[0.8rem] leading-tight tracking-tight sm:text-base">
+                    <span className="block line-clamp-2 font-display text-[0.72rem] leading-tight tracking-tight sm:truncate sm:text-base">
                       {p.name}
                     </span>
                     <span className="mt-0.5 hidden truncate font-mono text-[11px] uppercase tracking-[0.16em] text-foreground-muted sm:block">
@@ -93,7 +93,7 @@ export default function CasesSlide({ index }: { index?: number }) {
                     </span>
                   </span>
                   <ArrowUpRight
-                    className="h-4 w-4 shrink-0 text-foreground-muted transition-all duration-500 ease-out-expo group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent"
+                    className="hidden h-4 w-4 shrink-0 text-foreground-muted transition-all sm:block duration-500 ease-out-expo group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent"
                     aria-hidden
                   />
                 </span>
@@ -245,15 +245,17 @@ function CaseDialog({ project, onClose }: { project: Project; onClose: () => voi
                   </Badge>
                 ))}
               </div>
-              <a
-                href={meta?.url ?? `https://${project.domain}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={cn(buttonClasses("secondary"), "sm:ml-auto")}
-              >
-                {t("viewSite")}
-                <ArrowUpRight className="h-4 w-4" aria-hidden />
-              </a>
+              {meta?.url && (
+                <a
+                  href={meta.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(buttonClasses("secondary"), "sm:ml-auto")}
+                >
+                  {t("viewSite")}
+                  <ArrowUpRight className="h-4 w-4" aria-hidden />
+                </a>
+              )}
             </div>
           </div>
         </div>

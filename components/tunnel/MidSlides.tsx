@@ -10,7 +10,7 @@ import AccordionItem from "@/components/ui/AccordionItem";
 import { Button } from "@/components/ui/Button";
 import { buttonClasses } from "@/components/ui/buttonStyles";
 import { Link } from "@/i18n/navigation";
-import { FEATURE_ICON_MAP, SERVICES_META } from "@/lib/constants";
+import { FEATURE_ICON_MAP, REAL_CLIENTS_COUNT, SERVICES_META } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 type SlideProps = { index?: number };
@@ -22,8 +22,7 @@ export function TrustedSlide({ index }: SlideProps) {
   const messages = useMessages();
   const stats = (messages as unknown as { stats: { value: number; suffix: string; label: string }[] })
     .stats;
-  const clients = (messages as unknown as { caseStudies: { projects: { id: string }[] } })
-    .caseStudies.projects.length;
+  const clients = REAL_CLIENTS_COUNT;
 
   return (
     <DepthSlide index={index} id="partner">

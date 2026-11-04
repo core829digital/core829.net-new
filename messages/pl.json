@@ -411,6 +411,83 @@
           "B2B Automations"
         ],
         "mockup": "auction"
+      },
+      {
+        "id": "dbyoung",
+        "name": "DBYoung",
+        "domain": "dbyoung.it",
+        "sector": "Strona i sklep internetowy artysty i kompozytora Dimitriego Boutourline'a",
+        "what": "Artysta sprzedający bity, paczki sampli i licencje na ścieżki dźwiękowe potrzebuje sklepu, w którym muzyka jest chroniona, a kupowanie proste. Zbudowaliśmy stronę i sklep: odsłuch podglądów, płatność online i pobranie oryginałów z kodem licencji, a za kulisami strefa klienta i panel administracyjny.",
+        "stack": "Next.js 15, Convex, Stripe, Resend",
+        "details": [
+          "Sklep z bitami, paczkami sampli i ścieżkami dźwiękowymi z publicznymi podglądami 30–45 sekund; oryginalne pliki nigdy nie są udostępniane",
+          "Płatność Stripe z podpisanym webhookiem, certyfikat licencji w PDF wysyłany e-mailem i biblioteka klienta do pobierania z kodem licencji",
+          "Panel admina z logowaniem dwuskładnikowym: statystyki, produkty, wiadomości, wydawanie i unieważnianie licencji",
+          "Dwujęzyczna strona (IT, EN) z profilem artysty, muzyką, katalogiem dzieł i formularzem kontaktowym"
+        ],
+        "tags": [
+          "Web Design",
+          "Web App"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "events-dbyoung",
+        "name": "Eventi DBYoung",
+        "domain": "events.dbyoung.it",
+        "sector": "Wydarzenia premium w toskańskiej posiadłości (Fattoria Isola, Laterina)",
+        "what": "Dwa formaty, wydarzenia sygnowane przez Dimitriego i prywatne wydarzenia organizowane przez innych, potrzebowały jednego miejsca, by zaprezentować lokalizację, sprzedawać bilety i wpuszczać gości z kodem QR. Zbudowaliśmy portal: rezerwacja na osobę, płatność Stripe, bilety QR e-mailem i backoffice ze skanerem do check-inu.",
+        "stack": "Next.js 16, Convex, Stripe, Resend, Calendly",
+        "details": [
+          "Rezerwacja według liczby gości, z imieniem, nazwiskiem, datą urodzenia i kodem podatkowym każdej osoby",
+          "Stripe Checkout, potem bilet z unikalnym kodem QR na osobę wysyłany e-mailem; check-in przy wejściu skanowany z backoffice, duplikaty odrzucane",
+          "Pojemność rezerwowana atomowo, z 45 minutami tolerancji dla oczekujących płatności",
+          "Role klient, admin i founder, backoffice dla wydarzeń, gości i użytkowników, pięciogwiazdkowe opinie po wydarzeniu"
+        ],
+        "tags": [
+          "Web App",
+          "B2B Automations",
+          "Web Design"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "giemme-doors",
+        "name": "Giemme Doors & Service",
+        "domain": "giemmedoors.it",
+        "sector": "Drzwi wewnętrzne i certyfikowane drzwi antywłamaniowe w Foligno",
+        "what": "Lokalny specjalista od drzwi potrzebuje salonu, który działa online: pokazać produkty, wyjaśnić sposób pracy i ułatwić prośbę o doradztwo lub wycenę. Zrealizowaliśmy stronę z konfiguratorem OneSpec do wycen online i ścieżką kontaktu zaczynającą się od WhatsApp.",
+        "stack": "Next.js 15, Tailwind CSS 4, framer-motion, Convex, OneSpec",
+        "details": [
+          "Strona jednostronicowa: produkty, jak pracujemy (doradztwo, pomiar, dostawa i montaż, serwis), galeria i kontakt z mapą",
+          "Wbudowany konfigurator OneSpec do próśb o wycenę, z automatycznym dopasowaniem rozmiaru",
+          "Formularz kontaktowy z alternatywą WhatsApp; zgłoszenia można zapisywać w Convex",
+          "Strony prawne RODO, sitemap i robots dla wyszukiwarek"
+        ],
+        "tags": [
+          "Web Design",
+          "Web App"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "recon",
+        "name": "Recon",
+        "domain": "recon",
+        "sector": "Produkt CORE829 w rozwoju: uzgadnianie księgowości z danymi organów UE",
+        "what": "Organy podatkowe mają dziś drugą połowę liczb firmy i je porównują: rozbieżność może wywołać kontrolę. Budujemy API, które uzgadnia księgowość z kopią każdego organu i zwraca ustalenia z powołaniem na przepis, wraz z opatrzonymi czasem, odpornymi na manipulację dowodami. Nie udziela porad podatkowych.",
+        "stack": "Rust, PostgreSQL 18, Next.js, shadcn/ui",
+        "details": [
+          "Osiem kandydujących kontroli na e-fakturach, SAF-T, deklaracjach VAT/OSS, danych celnych importu i VIES; na razie działa jedna, na danych syntetycznych",
+          "Każde ustalenie wskazuje, które dwa źródła się różnią i na podstawie jakiego przepisu, z odpornym na manipulację pakietem dowodów",
+          "Oddzielne bazy do zapisu i odczytu (PostgreSQL 18), z replikacją i kontrolami wierności",
+          "Status: wczesny rozwój; wszystko, co widać, działa na danych syntetycznych, a nic nie jest jeszcze połączone z prawdziwym systemem organu"
+        ],
+        "tags": [
+          "Web App",
+          "B2B Automations"
+        ],
+        "mockup": "dashboard"
       }
     ],
     "close": "Zamknij"

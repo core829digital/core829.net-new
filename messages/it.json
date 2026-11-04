@@ -800,7 +800,8 @@
     "viewPdf": "Visualizza PDF",
     "downloadPdf": "Scarica PDF",
     "scopeDocsNote": "Per gli altri paesi, consulta la documentazione Advanced IC Certifications qui sotto.",
-    "partnersLogosLabel": "Partner ufficiali"
+    "partnersLogosLabel": "Partner ufficiali",
+    "callButton": "Chiama {number}"
   },
   "servicesDetail": {
     "back": "Tutti i servizi",
@@ -1331,5 +1332,32 @@
     ],
     "ctaTitle": "Raccontaci quale processo vuoi migliorare",
     "ctaDesc": "Ti rispondiamo con una proposta chiara e un preventivo trasparente."
+  },
+  "homeServers": {
+    "kicker": "Server personalizzati",
+    "title": "Il server giusto per il tuo carico di lavoro",
+    "cases": [
+      {
+        "t": "AI e GPU",
+        "d": "Training e inferenza"
+      },
+      {
+        "t": "Rendering",
+        "d": "3D, video, lavoro creativo"
+      },
+      {
+        "t": "Storage e backup",
+        "d": "Dati che restano tuoi"
+      },
+      {
+        "t": "Gaming",
+        "d": "Server privati e community"
+      },
+      {
+        "t": "Hosting web",
+        "d": "Siti, app e database"
+      }
+    ],
+    "cta": "Scopri i server personalizzati"
   }
 }

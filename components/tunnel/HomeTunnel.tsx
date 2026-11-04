@@ -11,6 +11,7 @@ import {
   MethodSlide,
   PricingSlide,
   ProblemSlide,
+  ServerSlide,
   ServicesSlide,
   TrustedSlide,
 } from "@/components/tunnel/MidSlides";
@@ -25,6 +26,7 @@ export default function HomeTunnel() {
     useTranslations("trustedBy")("label"),
     useTranslations("problem")("kicker"),
     useTranslations("solution")("kicker"),
+    useTranslations("homeServers")("kicker"),
     useTranslations("process")("kicker"),
     useTranslations("caseStudies")("kicker"),
     useTranslations("features")("kicker"),
@@ -39,6 +41,7 @@ export default function HomeTunnel() {
       <TrustedSlide />
       <ProblemSlide />
       <ServicesSlide />
+      <ServerSlide />
       <MethodSlide />
       <CasesSlide />
       <FeaturesSlide />

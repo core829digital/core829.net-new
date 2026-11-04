@@ -796,7 +796,8 @@
     "viewPdf": "Vizualizează PDF",
     "downloadPdf": "Descarcă PDF",
     "scopeDocsNote": "Pentru alte țări, consultați documentația Advanced IC Certifications de mai jos.",
-    "partnersLogosLabel": "Parteneri oficiali"
+    "partnersLogosLabel": "Parteneri oficiali",
+    "callButton": "Sună {number}"
   },
   "servicesDetail": {
     "back": "Toate serviciile",
@@ -1139,5 +1140,32 @@
     "nextImage": "Imaginea următoare",
     "showImage": "Afișează imaginea {n}",
     "language": "Limbă"
+  },
+  "homeServers": {
+    "kicker": "Servere personalizate",
+    "title": "Serverul potrivit pentru sarcina ta",
+    "cases": [
+      {
+        "t": "AI și GPU",
+        "d": "Antrenare și inferență"
+      },
+      {
+        "t": "Randare",
+        "d": "3D, video, muncă creativă"
+      },
+      {
+        "t": "Stocare și backup",
+        "d": "Date care rămân ale tale"
+      },
+      {
+        "t": "Gaming",
+        "d": "Servere private și de comunitate"
+      },
+      {
+        "t": "Hosting web",
+        "d": "Site-uri, aplicații și baze de date"
+      }
+    ],
+    "cta": "Descoperă serverele personalizate"
   }
 }

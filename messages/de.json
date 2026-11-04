@@ -796,7 +796,8 @@
     "viewPdf": "PDF ansehen",
     "downloadPdf": "PDF herunterladen",
     "scopeDocsNote": "Für andere Länder konsultieren Sie bitte die Advanced IC Certifications Dokumentation unten.",
-    "partnersLogosLabel": "Offizielle Partner"
+    "partnersLogosLabel": "Offizielle Partner",
+    "callButton": "{number} anrufen"
   },
   "servicesDetail": {
     "back": "Alle Leistungen",
@@ -1139,5 +1140,32 @@
     "nextImage": "Nächstes Bild",
     "showImage": "Bild {n} anzeigen",
     "language": "Sprache"
+  },
+  "homeServers": {
+    "kicker": "Individuelle Server",
+    "title": "Der richtige Server für Ihre Arbeitslast",
+    "cases": [
+      {
+        "t": "KI & GPU",
+        "d": "Training und Inferenz"
+      },
+      {
+        "t": "Rendering",
+        "d": "3D, Video, kreative Arbeit"
+      },
+      {
+        "t": "Speicher & Backup",
+        "d": "Daten, die Ihnen gehören"
+      },
+      {
+        "t": "Gaming",
+        "d": "Private und Community-Server"
+      },
+      {
+        "t": "Webhosting",
+        "d": "Websites, Apps und Datenbanken"
+      }
+    ],
+    "cta": "Individuelle Server entdecken"
   }
 }

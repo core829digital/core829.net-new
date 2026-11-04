@@ -796,7 +796,8 @@
     "viewPdf": "Ver PDF",
     "downloadPdf": "Descargar PDF",
     "scopeDocsNote": "Para los demás países, consulta la documentación de Advanced IC Certifications a continuación.",
-    "partnersLogosLabel": "Socios oficiales"
+    "partnersLogosLabel": "Socios oficiales",
+    "callButton": "Llamar al {number}"
   },
   "servicesDetail": {
     "back": "Todos los servicios",
@@ -1139,5 +1140,32 @@
     "nextImage": "Imagen siguiente",
     "showImage": "Mostrar imagen {n}",
     "language": "Idioma"
+  },
+  "homeServers": {
+    "kicker": "Servidores a medida",
+    "title": "El servidor adecuado para tu carga de trabajo",
+    "cases": [
+      {
+        "t": "IA y GPU",
+        "d": "Entrenamiento e inferencia"
+      },
+      {
+        "t": "Renderizado",
+        "d": "3D, vídeo, trabajo creativo"
+      },
+      {
+        "t": "Almacenamiento y copias",
+        "d": "Datos que siguen siendo tuyos"
+      },
+      {
+        "t": "Gaming",
+        "d": "Servidores privados y de comunidad"
+      },
+      {
+        "t": "Alojamiento web",
+        "d": "Sitios, apps y bases de datos"
+      }
+    ],
+    "cta": "Descubre los servidores a medida"
   }
 }

@@ -796,7 +796,8 @@
     "viewPdf": "PDF bekijken",
     "downloadPdf": "PDF downloaden",
     "scopeDocsNote": "Raadpleeg voor andere landen de Advanced IC Certifications-documentatie hieronder.",
-    "partnersLogosLabel": "Officiële partners"
+    "partnersLogosLabel": "Officiële partners",
+    "callButton": "Bel {number}"
   },
   "servicesDetail": {
     "back": "Alle diensten",
@@ -1139,5 +1140,32 @@
     "nextImage": "Volgende afbeelding",
     "showImage": "Afbeelding {n} tonen",
     "language": "Taal"
+  },
+  "homeServers": {
+    "kicker": "Servers op maat",
+    "title": "De juiste server voor jouw workload",
+    "cases": [
+      {
+        "t": "AI & GPU",
+        "d": "Training en inferentie"
+      },
+      {
+        "t": "Rendering",
+        "d": "3D, video, creatief werk"
+      },
+      {
+        "t": "Opslag & back-up",
+        "d": "Data die van jou blijft"
+      },
+      {
+        "t": "Gaming",
+        "d": "Privé- en communityservers"
+      },
+      {
+        "t": "Webhosting",
+        "d": "Sites, apps en databases"
+      }
+    ],
+    "cta": "Ontdek servers op maat"
   }
 }

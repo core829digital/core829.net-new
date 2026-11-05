@@ -3,6 +3,7 @@ import { buttonClasses } from "@/components/ui/buttonStyles";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import { buildAlternates, pageDescription } from "@/lib/seo";
+import { bookingUrl } from "@/lib/booking";
 
 export async function generateMetadata({
   params,
@@ -47,7 +48,7 @@ export default async function PrezziPage({
             </h2>
             <p className="mt-4 flex-1 text-foreground-muted">{t("projectDesc")}</p>
             <a
-              href="https://bookings.core829.net/book/intro-call"
+              href={bookingUrl(locale)}
               className={buttonClasses("primary", "mt-6")}
             >
               {t("helloCta")}

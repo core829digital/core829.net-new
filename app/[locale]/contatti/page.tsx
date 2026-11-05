@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/Button";
 import ContactForm from "@/components/forms/ContactForm";
 import { COMPANY, EMAILS, FOUNDERS } from "@/lib/constants";
 import { buildAlternates, pageDescription } from "@/lib/seo";
+import { bookingUrl } from "@/lib/booking";
 
 export async function generateMetadata({
   params,
@@ -44,7 +45,7 @@ export default async function ContattiPage({
             <h1 className="mt-3 text-section-title">{t("title")}</h1>
             <p className="mt-4 text-foreground-muted">{t("subtitle")}</p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Button href="https://bookings.core829.net/book/intro-call" variant="primary">
+              <Button href={bookingUrl(locale)} variant="primary">
                 {t("ctaButton")}
               </Button>
               <a

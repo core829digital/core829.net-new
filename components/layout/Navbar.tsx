@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { Link, useRouter } from "@/i18n/navigation";
 import { useGoToSection } from "@/lib/useGoToSection";
@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/Button";
 import { SERVICES_META } from "@/lib/constants";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { SocialLinks } from "@/components/SocialIcons";
+import { bookingUrl } from "@/lib/booking";
 
 /**
  * Navbar sticky con hide-on-scroll-down / show-on-scroll-up.
@@ -21,6 +22,7 @@ import { SocialLinks } from "@/components/SocialIcons";
  */
 export default function Navbar() {
   const t = useTranslations("nav");
+  const locale = useLocale();
   const tServices = useTranslations("solution.services");
   const serverIndex = SERVICES_META.findIndex((s) => s.key === "server");
   const serverMeta = SERVICES_META[serverIndex];
@@ -116,7 +118,7 @@ export default function Navbar() {
             <LanguageSwitcher />
             <div className="hidden items-center gap-1 pl-1 xl:flex">
               <Button
-                href="https://bookings.core829.net/book/intro-call"
+                href={bookingUrl(locale)}
                 variant="secondary"
                 className={pillCta}
               >
@@ -191,7 +193,7 @@ export default function Navbar() {
                 className="space-y-6 pt-8 md:grid md:grid-cols-2 md:gap-4 md:space-y-0"
               >
                 <Button
-                  href="https://bookings.core829.net/book/intro-call"
+                  href={bookingUrl(locale)}
                   variant="secondary"
                   className="w-full"
                   onClick={() => setMenuOpen(false)}

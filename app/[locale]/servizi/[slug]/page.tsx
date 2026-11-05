@@ -9,6 +9,7 @@ import { SERVICES_META, VISIBLE_SERVICES_META } from "@/lib/constants";
 import ServerServicePage from "@/components/services/ServerServicePage";
 import { buildAlternates, clampDescription } from "@/lib/seo";
 import { getServiceKeywords } from "@/lib/seoKeywords";
+import { bookingUrl } from "@/lib/booking";
 
 interface PageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -157,7 +158,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
 
         <div className="mt-14 flex flex-wrap gap-4">
-          <Button href="https://bookings.core829.net/book/intro-call" variant="primary">
+          <Button href={bookingUrl(locale)} variant="primary">
             {t("cta")}
           </Button>
           <Button href="/servizi" variant="secondary">

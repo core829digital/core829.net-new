@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useMessages, useTranslations } from "next-intl";
+import { useLocale, useMessages, useTranslations } from "next-intl";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -20,6 +20,7 @@ import { buttonClasses } from "@/components/ui/buttonStyles";
 import { Link } from "@/i18n/navigation";
 import { FEATURE_ICON_MAP, REAL_CLIENTS_COUNT, SERVICES_META } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { bookingUrl } from "@/lib/booking";
 
 type SlideProps = { index?: number };
 
@@ -379,6 +380,7 @@ export function FaqSlide({ index }: SlideProps) {
 
 export function CtaSlide({ index }: SlideProps) {
   const t = useTranslations("finalCta");
+  const locale = useLocale();
 
   return (
     <DepthSlide index={index} id="contatti-cta">
@@ -389,7 +391,7 @@ export function CtaSlide({ index }: SlideProps) {
       />
       <DepthItem dir={[0, 1]} depth={0.8}>
         <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
-          <Button href="https://bookings.core829.net/book/intro-call" variant="primary">
+          <Button href={bookingUrl(locale)} variant="primary">
             {t("cta")}
             <ArrowRight className="h-4 w-4" aria-hidden />
           </Button>

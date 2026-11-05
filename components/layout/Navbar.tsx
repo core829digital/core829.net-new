@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown, LogIn } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { Link, useRouter } from "@/i18n/navigation";
 import { useGoToSection } from "@/lib/useGoToSection";
@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/Button";
 import { PORTAL_URL, SERVICES_META } from "@/lib/constants";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { SocialLinks } from "@/components/SocialIcons";
+import { bookingUrl } from "@/lib/booking";
 
 /**
  * Navbar sticky con hide-on-scroll-down / show-on-scroll-up.
@@ -21,6 +22,7 @@ import { SocialLinks } from "@/components/SocialIcons";
  */
 export default function Navbar() {
   const t = useTranslations("nav");
+  const locale = useLocale();
   const tServices = useTranslations("solution.services");
   const serverIndex = SERVICES_META.findIndex((s) => s.key === "server");
   const serverMeta = SERVICES_META[serverIndex];
@@ -126,7 +128,7 @@ export default function Navbar() {
                 <span className="sr-only 2xl:not-sr-only">{t("clientArea")}</span>
               </Button>
               <Button
-                href="https://bookings.core829.net/book/intro-call"
+                href={bookingUrl(locale)}
                 variant="secondary"
                 className={pillCta}
               >
@@ -211,7 +213,7 @@ export default function Navbar() {
                   {t("clientArea")}
                 </Button>
                 <Button
-                  href="https://bookings.core829.net/book/intro-call"
+                  href={bookingUrl(locale)}
                   variant="secondary"
                   className="w-full"
                   onClick={() => setMenuOpen(false)}

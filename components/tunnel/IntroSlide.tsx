@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useMessages, useTranslations } from "next-intl";
+import { useLocale, useMessages, useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { DepthItem, DepthSlide } from "@/components/tunnel/DepthStage";
 import NeuralNoise from "@/components/ui/neural-noise";
 import { Button } from "@/components/ui/Button";
+import { bookingUrl } from "@/lib/booking";
 
 /**
  * Intro: flusso neurale rosso a tutto schermo, loghi CORE829 e CORE829 Servers
@@ -14,6 +15,7 @@ import { Button } from "@/components/ui/Button";
  */
 export default function IntroSlide({ index }: { index?: number }) {
   const t = useTranslations("hero");
+  const locale = useLocale();
   const messages = useMessages();
   const headline = (messages.hero as unknown as { headline: string[] }).headline.join(" ");
 
@@ -65,7 +67,7 @@ export default function IntroSlide({ index }: { index?: number }) {
         <DepthItem dir={[0, 1]} depth={0.6} delay={3}>
           <div className="mt-7 sm:mt-9">
             <Button
-              href="https://bookings.core829.net/book/intro-call"
+              href={bookingUrl(locale)}
               variant="primary"
               tone="dark"
             >

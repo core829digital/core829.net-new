@@ -319,6 +319,83 @@
           "Automatizări B2B"
         ],
         "mockup": "auction"
+      },
+      {
+        "id": "dbyoung",
+        "name": "DBYoung",
+        "domain": "dbyoung.it",
+        "sector": "Site și magazin online pentru artistul și compozitorul Dimitri Boutourline",
+        "what": "Un artist care vinde beat-uri, sample pack-uri și licențe pentru coloane sonore are nevoie de un magazin în care muzica rămâne protejată, iar cumpărarea e simplă. Am construit site-ul și magazinul: se ascultă previzualizările, se plătește online și se descarcă originalele cu un cod de licență, cu zonă de client și panou de administrare în spate.",
+        "stack": "Next.js 15, Convex, Stripe, Resend",
+        "details": [
+          "Magazin de beat-uri, sample pack-uri și coloane sonore, cu previzualizări publice de 30–45 de secunde; fișierele originale nu sunt niciodată expuse",
+          "Checkout Stripe cu webhook semnat, certificat de licență PDF trimis prin e-mail și bibliotecă de client pentru descărcare cu codul de licență",
+          "Panou admin cu autentificare în doi pași: statistici, produse, mesaje, emiterea și revocarea licențelor",
+          "Site bilingv (IT, EN) cu profilul artistului, muzică, catalogul lucrărilor și formular de contact"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "events-dbyoung",
+        "name": "Eventi DBYoung",
+        "domain": "events.dbyoung.it",
+        "sector": "Evenimente premium într-o proprietate toscană (Fattoria Isola, Laterina)",
+        "what": "Două formate, evenimente semnate de Dimitri și evenimente private organizate de terți, aveau nevoie de un singur loc pentru a prezenta locația, a vinde bilete și a primi invitații cu un cod QR. Am construit portalul: rezervare pe persoană, plată Stripe, bilete QR prin e-mail și un backoffice cu scaner pentru check-in.",
+        "stack": "Next.js 16, Convex, Stripe, Resend, Calendly",
+        "details": [
+          "Rezervare după numărul de invitați, cu nume, prenume, data nașterii și cod fiscal pentru fiecare persoană",
+          "Stripe Checkout, apoi un bilet cu QR unic pe persoană trimis prin e-mail; check-in la intrare scanat din backoffice, duplicatele sunt respinse",
+          "Capacitate rezervată atomic, cu 45 de minute de grație pentru plățile în așteptare",
+          "Roluri client, admin și founder, backoffice pentru evenimente, invitați și utilizatori, recenzii cu cinci stele după eveniment"
+        ],
+        "tags": [
+          "WebApp",
+          "Automatizări B2B",
+          "WebDesign"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "giemme-doors",
+        "name": "Giemme Doors & Service",
+        "domain": "giemmedoors.it",
+        "sector": "Uși de interior și uși blindate certificate în Foligno",
+        "what": "Un specialist local în uși are nevoie de un showroom care funcționează online: să prezinte produsele, să explice cum se lucrează și să facă ușoară cererea de consultanță sau de ofertă. Am realizat site-ul cu configuratorul OneSpec pentru oferte online și un traseu de contact care pornește de la WhatsApp.",
+        "stack": "Next.js 15, Tailwind CSS 4, framer-motion, Convex, OneSpec",
+        "details": [
+          "Site one-page: produse, cum lucrăm (consultanță, măsurători, furnizare și montaj, asistență), galerie și contact cu hartă",
+          "Configurator OneSpec încorporat pentru cereri de ofertă, cu redimensionare automată",
+          "Formular de contact cu alternativă WhatsApp; cererile pot fi salvate în Convex",
+          "Pagini legale GDPR, sitemap și robots pentru motoarele de căutare"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "recon",
+        "name": "Recon",
+        "domain": "recon",
+        "sector": "Produs CORE829 în dezvoltare: reconcilierea contabilității cu datele autorităților UE",
+        "what": "Autoritățile fiscale dețin acum cealaltă jumătate a cifrelor unei companii și le încrucișează: o diferență poate declanșa un control. Construim un API care reconciliază contabilitatea cu copia fiecărei autorități și returnează rezultate care citează norma, cu probe datate și protejate la modificări. Nu oferă consultanță fiscală.",
+        "stack": "Rust, PostgreSQL 18, Next.js, shadcn/ui",
+        "details": [
+          "Opt verificări candidate pe facturi electronice, SAF-T, declarații TVA/OSS, date vamale de import și VIES; deocamdată funcționează una, pe date sintetice",
+          "Fiecare rezultat arată ce două surse nu coincid și după ce normă, cu un pachet de probe protejat la modificări",
+          "Baze de date separate pentru scriere și citire (PostgreSQL 18), cu replicare și verificări de fidelitate",
+          "Stare: dezvoltare timpurie; tot ce se vede rulează pe date sintetice și nimic nu este încă conectat la un sistem real al unei autorități"
+        ],
+        "tags": [
+          "WebApp",
+          "Automatizări B2B"
+        ],
+        "mockup": "dashboard"
       }
     ],
     "close": "Închide"
@@ -719,7 +796,8 @@
     "viewPdf": "Vizualizează PDF",
     "downloadPdf": "Descarcă PDF",
     "scopeDocsNote": "Pentru alte țări, consultați documentația Advanced IC Certifications de mai jos.",
-    "partnersLogosLabel": "Parteneri oficiali"
+    "partnersLogosLabel": "Parteneri oficiali",
+    "callButton": "Sună {number}"
   },
   "servicesDetail": {
     "back": "Toate serviciile",
@@ -1062,5 +1140,32 @@
     "nextImage": "Imaginea următoare",
     "showImage": "Afișează imaginea {n}",
     "language": "Limbă"
+  },
+  "homeServers": {
+    "kicker": "Servere personalizate",
+    "title": "Serverul potrivit pentru sarcina ta",
+    "cases": [
+      {
+        "t": "AI și GPU",
+        "d": "Antrenare și inferență"
+      },
+      {
+        "t": "Randare",
+        "d": "3D, video, muncă creativă"
+      },
+      {
+        "t": "Stocare și backup",
+        "d": "Date care rămân ale tale"
+      },
+      {
+        "t": "Gaming",
+        "d": "Servere private și de comunitate"
+      },
+      {
+        "t": "Hosting web",
+        "d": "Site-uri, aplicații și baze de date"
+      }
+    ],
+    "cta": "Descoperă serverele personalizate"
   }
 }

@@ -48,7 +48,10 @@ export const VISIBLE_SERVICES_META = SERVICES_META.map((s, index) => ({
 export interface ClientMeta {
   key: string;
   anchorId: string;
-  url: string;
+  /** Sito pubblico. Assente se il progetto non ha (ancora) un indirizzo pubblico confermato. */
+  url?: string;
+  /** Raggruppa progetti dello stesso cliente (conteggio dei clienti distinti). */
+  clientGroup?: string;
   /** Prodotto proprio di CORE829 (non un cliente): resta nei case study ma non conta come cliente. */
   ownProduct?: boolean;
 }
@@ -73,10 +76,31 @@ export const CLIENTS_META: ClientMeta[] = [
   },
   { key: "revive", anchorId: "cliente-revive", url: "https://getrevive.app" },
   { key: "bidwyz", anchorId: "cliente-bidwyz", url: "https://bidwyz.com" },
+  {
+    key: "dbyoung",
+    anchorId: "cliente-dbyoung",
+    url: "https://www.dbyoung.it",
+    clientGroup: "dbyoung",
+  },
+  {
+    key: "events-dbyoung",
+    anchorId: "cliente-events-dbyoung",
+    url: "https://events.dbyoung.it",
+    clientGroup: "dbyoung",
+  },
+  // Dominio di produzione non ancora definitivo: nessun link pubblico.
+  { key: "giemme-doors", anchorId: "cliente-giemme-doors" },
+  // Prodotto proprio in sviluppo (non ancora in produzione): nessun link.
+  { key: "recon", anchorId: "cliente-recon", ownProduct: true },
 ];
 
 /** Solo i clienti reali (esclude i prodotti propri): stats e "Con chi abbiamo lavorato". */
 export const REAL_CLIENTS_META = CLIENTS_META.filter((c) => !c.ownProduct);
+
+/** Numero di clienti distinti (progetti dello stesso cliente contano una volta). */
+export const REAL_CLIENTS_COUNT = new Set(
+  REAL_CLIENTS_META.map((c) => c.clientGroup ?? c.key)
+).size;
 
 export const clientAnchorIds = CLIENTS_META.map((c) => ({ id: c.anchorId }));
 
@@ -105,6 +129,22 @@ export const CLIENT_SCREENSHOTS: Record<string, string[]> = {
   "doctor-haus.com": ["/core829-client-ss/doctor-haus.com.webp"],
   "getrevive.app": ["/core829-client-ss/getrevive.app.webp"],
   "bidwyz.com": ["/core829-client-ss/bidwyz.com.webp"],
+  // Hero di dbyoung.it: video di sfondo ospitato su CDN esterna, quindi non catturabile.
+  "dbyoung.it": [
+    "/core829-client-ss/dbyoung.it.webp",
+    "/core829-client-ss/dbyoung.it-2.webp",
+  ],
+  recon: [
+    "/core829-client-ss/recon.webp",
+    "/core829-client-ss/recon-2.webp",
+    "/core829-client-ss/recon-3.webp",
+  ],
+  "events.dbyoung.it": ["/core829-client-ss/events.dbyoung.it.webp"],
+  "giemmedoors.it": [
+    "/core829-client-ss/giemmedoors.it.webp",
+    "/core829-client-ss/giemmedoors.it-2.webp",
+    "/core829-client-ss/giemmedoors.it-3.webp",
+  ],
 };
 
 /**
@@ -119,6 +159,10 @@ export const CLIENT_LOGOS: Record<string, string> = {
   winex: "/logos/winex.webp",
   revive: "/logos/revive.webp",
   bidwyz: "/logos/bidwyz.webp",
+  dbyoung: "/logos/dbyoung.webp",
+  "events-dbyoung": "/logos/events-dbyoung.webp",
+  "giemme-doors": "/logos/giemme-doors.webp",
+  // recon: nessun logo (prodotto in sviluppo): nei marquee compare solo il nome.
 };
 
 /**
@@ -133,13 +177,27 @@ export const CLIENT_LOGO_SIZE: Record<string, { w: number; h: number }> = {
   winex: { w: 447, h: 160 },
   revive: { w: 206, h: 160 },
   bidwyz: { w: 143, h: 160 },
+  dbyoung: { w: 177, h: 160 },
+  "events-dbyoung": { w: 160, h: 160 },
+  "giemme-doors": { w: 470, h: 160 },
 };
 
 /** Loghi solo-simbolo (senza testo): nei marquee si affianca il nome. */
-export const CLIENT_LOGO_ICON_ONLY = new Set(["revive", "bidwyz", "doctor-haus"]);
+export const CLIENT_LOGO_ICON_ONLY = new Set([
+  "revive",
+  "bidwyz",
+  "doctor-haus",
+  "dbyoung",
+  "events-dbyoung",
+]);
 
 /** Loghi a colori che si mostrano in grigio e tornano a colori all'hover. */
-export const CLIENT_LOGO_COLOR = new Set(["doctor-haus"]);
+export const CLIENT_LOGO_COLOR = new Set([
+  "doctor-haus",
+  "dbyoung",
+  "events-dbyoung",
+  "giemme-doors",
+]);
 
 /**
  * Dati societari CORE829 SRL (condivisi, non dipendono dalla lingua).

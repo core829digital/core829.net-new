@@ -321,6 +321,83 @@
           "B2B Automations"
         ],
         "mockup": "auction"
+      },
+      {
+        "id": "dbyoung",
+        "name": "DBYoung",
+        "domain": "dbyoung.it",
+        "sector": "Website and online store for the artist and composer Dimitri Boutourline",
+        "what": "An artist who sells beats, sample packs and soundtrack licences needs a store where the music stays protected and buying is simple. We built the website and the store: listen to previews, pay online, download the originals with a licence code, with a customer library and an admin dashboard behind it.",
+        "stack": "Next.js 15, Convex, Stripe, Resend",
+        "details": [
+          "Shop for beats, sample packs and soundtracks with 30–45 second public previews; the original files are never exposed",
+          "Stripe checkout with a signed webhook, a PDF licence certificate sent by email and a customer library to download with the licence code",
+          "Admin dashboard with two-factor login: statistics, products, messages, issuing and revoking licences",
+          "Bilingual site (IT, EN) with artist profile, music, works catalogue and contact form"
+        ],
+        "tags": [
+          "Web Design",
+          "Web App"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "events-dbyoung",
+        "name": "Eventi DBYoung",
+        "domain": "events.dbyoung.it",
+        "sector": "Premium events at a Tuscan estate (Fattoria Isola, Laterina)",
+        "what": "Two formats, events signed by Dimitri and private events organised by others, needed one place to present the venue, sell tickets and let guests walk in with a QR code. We built the portal: booking per person, Stripe payment, QR tickets by email and a backoffice with a scanner for check-in.",
+        "stack": "Next.js 16, Convex, Stripe, Resend, Calendly",
+        "details": [
+          "Booking by number of guests, with name, surname, date of birth and tax code for each person",
+          "Stripe Checkout, then one ticket with a unique QR code per person sent by email; entrance check-in scanned from the backoffice, duplicates rejected",
+          "Capacity booked atomically, with a 45-minute grace period for pending payments",
+          "Client, admin and founder roles, a backoffice for events, guests and users, and five-star reviews after the event"
+        ],
+        "tags": [
+          "Web App",
+          "B2B Automations",
+          "Web Design"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "giemme-doors",
+        "name": "Giemme Doors & Service",
+        "domain": "giemmedoors.it",
+        "sector": "Interior doors and certified security doors in Foligno",
+        "what": "A local door specialist needs a showroom that works online: show the products, explain how the work is done and make it easy to ask for advice or a quote. We built the site with the OneSpec configurator for online quotes and a WhatsApp-first contact path.",
+        "stack": "Next.js 15, Tailwind CSS 4, framer-motion, Convex, OneSpec",
+        "details": [
+          "One-page site: products, how we work (advice, survey, supply and fitting, after-sales), gallery and contacts with map",
+          "OneSpec configurator embedded for quote requests, with automatic resizing",
+          "Contact form with WhatsApp fallback; requests can be saved on Convex",
+          "GDPR legal pages, sitemap and robots for search engines"
+        ],
+        "tags": [
+          "Web Design",
+          "Web App"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "recon",
+        "name": "Recon",
+        "domain": "recon",
+        "sector": "CORE829 product in development: reconciling company books with EU authority data",
+        "what": "Tax authorities now hold the other side of a company's numbers and cross-match them; a mismatch can trigger an audit. We are building an API that reconciles the books against each authority's copy and returns findings that cite the rule, with time-stamped evidence packs. It does not give tax advice.",
+        "stack": "Rust, PostgreSQL 18, Next.js, shadcn/ui",
+        "details": [
+          "Eight candidate checks across e-invoice clearance data, SAF-T, VAT/OSS returns, customs import data and VIES; so far one runs, on synthetic data",
+          "Each finding states which two sources disagree and under which rule, with a tamper-evident evidence pack",
+          "Separate write and read databases (PostgreSQL 18), with replication and fidelity checks",
+          "Status: early development; everything shown runs on synthetic data and nothing is connected to a real authority system yet"
+        ],
+        "tags": [
+          "Web App",
+          "B2B Automations"
+        ],
+        "mockup": "dashboard"
       }
     ],
     "close": "Close"
@@ -723,7 +800,8 @@
     "viewPdf": "View PDF",
     "downloadPdf": "Download PDF",
     "scopeDocsNote": "For other countries, consult the Advanced IC Certifications documentation below.",
-    "partnersLogosLabel": "Official partners"
+    "partnersLogosLabel": "Official partners",
+    "callButton": "Call {number}"
   },
   "servicesDetail": {
     "back": "All services",
@@ -1254,5 +1332,32 @@
     ],
     "ctaTitle": "Tell us which process you want to improve",
     "ctaDesc": "We reply with a clear proposal and a transparent quote."
+  },
+  "homeServers": {
+    "kicker": "Custom servers",
+    "title": "The right server for your workload",
+    "cases": [
+      {
+        "t": "AI & GPU",
+        "d": "Training and inference"
+      },
+      {
+        "t": "Rendering",
+        "d": "3D, video, creative work"
+      },
+      {
+        "t": "Storage & backup",
+        "d": "Data that stays yours"
+      },
+      {
+        "t": "Gaming",
+        "d": "Private and community servers"
+      },
+      {
+        "t": "Web hosting",
+        "d": "Sites, apps and databases"
+      }
+    ],
+    "cta": "Discover custom servers"
   }
 }

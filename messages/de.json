@@ -319,6 +319,83 @@
           "B2B-Automatisierungen"
         ],
         "mockup": "auction"
+      },
+      {
+        "id": "dbyoung",
+        "name": "DBYoung",
+        "domain": "dbyoung.it",
+        "sector": "Website und Online-Shop für den Künstler und Komponisten Dimitri Boutourline",
+        "what": "Ein Künstler, der Beats, Sample Packs und Soundtrack-Lizenzen verkauft, braucht einen Shop, in dem die Musik geschützt bleibt und das Kaufen einfach ist. Wir haben Website und Shop gebaut: Vorschau anhören, online bezahlen, Originale mit Lizenzcode herunterladen, dahinter Kundenbereich und Admin-Dashboard.",
+        "stack": "Next.js 15, Convex, Stripe, Resend",
+        "details": [
+          "Shop für Beats, Sample Packs und Soundtracks mit öffentlichen 30–45-Sekunden-Vorschauen; die Originaldateien werden nie offengelegt",
+          "Stripe-Checkout mit signiertem Webhook, Lizenzzertifikat als PDF per E-Mail und Kundenbibliothek zum Download mit dem Lizenzcode",
+          "Admin-Dashboard mit Zwei-Faktor-Login: Statistiken, Produkte, Nachrichten, Ausstellen und Widerrufen von Lizenzen",
+          "Zweisprachige Website (IT, EN) mit Künstlerprofil, Musik, Werkverzeichnis und Kontaktformular"
+        ],
+        "tags": [
+          "Webdesign",
+          "Web-App"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "events-dbyoung",
+        "name": "Eventi DBYoung",
+        "domain": "events.dbyoung.it",
+        "sector": "Premium-Events auf einem toskanischen Landgut (Fattoria Isola, Laterina)",
+        "what": "Zwei Formate, von Dimitri signierte Events und private Events Dritter, brauchten einen Ort, um die Location zu zeigen, Tickets zu verkaufen und Gäste per QR-Code einzulassen. Wir haben das Portal gebaut: Buchung pro Person, Stripe-Zahlung, QR-Tickets per E-Mail und ein Backoffice mit Scanner fürs Check-in.",
+        "stack": "Next.js 16, Convex, Stripe, Resend, Calendly",
+        "details": [
+          "Buchung nach Gästezahl, mit Vor- und Nachname, Geburtsdatum und Steuernummer jeder Person",
+          "Stripe Checkout, dann ein Ticket mit eindeutigem QR-Code pro Person per E-Mail; Check-in am Eingang per Scanner im Backoffice, Doppelte werden abgewiesen",
+          "Kapazität wird atomar gebucht, mit 45 Minuten Kulanz für ausstehende Zahlungen",
+          "Rollen Kunde, Admin und Founder, Backoffice für Events, Gäste und Nutzer, Fünf-Sterne-Bewertungen nach dem Event"
+        ],
+        "tags": [
+          "Web-App",
+          "B2B-Automatisierungen",
+          "Webdesign"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "giemme-doors",
+        "name": "Giemme Doors & Service",
+        "domain": "giemmedoors.it",
+        "sector": "Innentüren und zertifizierte Sicherheitstüren in Foligno",
+        "what": "Ein lokaler Türenspezialist braucht einen Showroom, der online funktioniert: Produkte zeigen, die Arbeitsweise erklären und Beratung oder Angebot leicht anfragen lassen. Wir haben die Website mit dem OneSpec-Konfigurator für Online-Angebote und einem WhatsApp-zuerst-Kontaktweg umgesetzt.",
+        "stack": "Next.js 15, Tailwind CSS 4, framer-motion, Convex, OneSpec",
+        "details": [
+          "One-Page-Website: Produkte, Arbeitsweise (Beratung, Aufmaß, Lieferung und Montage, Service), Galerie und Kontakt mit Karte",
+          "OneSpec-Konfigurator für Angebotsanfragen eingebettet, mit automatischer Größenanpassung",
+          "Kontaktformular mit WhatsApp-Alternative; Anfragen können in Convex gespeichert werden",
+          "DSGVO-Rechtsseiten, Sitemap und Robots für Suchmaschinen"
+        ],
+        "tags": [
+          "Webdesign",
+          "Web-App"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "recon",
+        "name": "Recon",
+        "domain": "recon",
+        "sector": "CORE829-Produkt in Entwicklung: Abgleich der Buchhaltung mit Daten der EU-Behörden",
+        "what": "Steuerbehörden halten heute die andere Hälfte der Zahlen eines Unternehmens und gleichen sie ab: Eine Abweichung kann eine Prüfung auslösen. Wir bauen eine API, die die Buchhaltung mit der Kopie jeder Behörde abgleicht und Ergebnisse mit Regelverweis sowie zeitgestempelte, manipulationssichere Nachweise liefert. Sie gibt keine Steuerberatung.",
+        "stack": "Rust, PostgreSQL 18, Next.js, shadcn/ui",
+        "details": [
+          "Acht Prüfkandidaten über E-Rechnungsdaten, SAF-T, USt/OSS-Meldungen, Zoll-Importdaten und VIES; bisher läuft eine, auf synthetischen Daten",
+          "Jedes Ergebnis nennt, welche zwei Quellen abweichen und nach welcher Regel, mit manipulationssicherem Nachweispaket",
+          "Getrennte Datenbanken für Schreiben und Lesen (PostgreSQL 18), mit Replikation und Treueprüfungen",
+          "Status: frühe Entwicklung; alles Gezeigte läuft auf synthetischen Daten, und nichts ist bisher mit einem echten Behördensystem verbunden"
+        ],
+        "tags": [
+          "Web-App",
+          "B2B-Automatisierungen"
+        ],
+        "mockup": "dashboard"
       }
     ],
     "close": "Schließen"
@@ -719,7 +796,8 @@
     "viewPdf": "PDF ansehen",
     "downloadPdf": "PDF herunterladen",
     "scopeDocsNote": "Für andere Länder konsultieren Sie bitte die Advanced IC Certifications Dokumentation unten.",
-    "partnersLogosLabel": "Offizielle Partner"
+    "partnersLogosLabel": "Offizielle Partner",
+    "callButton": "{number} anrufen"
   },
   "servicesDetail": {
     "back": "Alle Leistungen",
@@ -1062,5 +1140,32 @@
     "nextImage": "Nächstes Bild",
     "showImage": "Bild {n} anzeigen",
     "language": "Sprache"
+  },
+  "homeServers": {
+    "kicker": "Individuelle Server",
+    "title": "Der richtige Server für Ihre Arbeitslast",
+    "cases": [
+      {
+        "t": "KI & GPU",
+        "d": "Training und Inferenz"
+      },
+      {
+        "t": "Rendering",
+        "d": "3D, Video, kreative Arbeit"
+      },
+      {
+        "t": "Speicher & Backup",
+        "d": "Daten, die Ihnen gehören"
+      },
+      {
+        "t": "Gaming",
+        "d": "Private und Community-Server"
+      },
+      {
+        "t": "Webhosting",
+        "d": "Websites, Apps und Datenbanken"
+      }
+    ],
+    "cta": "Individuelle Server entdecken"
   }
 }

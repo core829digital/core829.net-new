@@ -2,7 +2,15 @@
 
 import { useState } from "react";
 import { useMessages, useTranslations } from "next-intl";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Cpu,
+  Film,
+  Gamepad2,
+  Globe,
+  HardDrive,
+} from "lucide-react";
 import { DepthItem, DepthSlide, radial } from "@/components/tunnel/DepthStage";
 import { DepthCount, SlideHeading, slideCard } from "@/components/tunnel/parts";
 import LogoMarquee from "@/components/ui/LogoMarquee";
@@ -10,7 +18,7 @@ import AccordionItem from "@/components/ui/AccordionItem";
 import { Button } from "@/components/ui/Button";
 import { buttonClasses } from "@/components/ui/buttonStyles";
 import { Link } from "@/i18n/navigation";
-import { FEATURE_ICON_MAP, SERVICES_META } from "@/lib/constants";
+import { FEATURE_ICON_MAP, REAL_CLIENTS_COUNT, SERVICES_META } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 type SlideProps = { index?: number };
@@ -22,8 +30,7 @@ export function TrustedSlide({ index }: SlideProps) {
   const messages = useMessages();
   const stats = (messages as unknown as { stats: { value: number; suffix: string; label: string }[] })
     .stats;
-  const clients = (messages as unknown as { caseStudies: { projects: { id: string }[] } })
-    .caseStudies.projects.length;
+  const clients = REAL_CLIENTS_COUNT;
 
   return (
     <DepthSlide index={index} id="partner">
@@ -154,6 +161,68 @@ export function ServicesSlide({ index }: SlideProps) {
           </DepthItem>
         )}
       </ul>
+    </DepthSlide>
+  );
+}
+
+/* ─────────── Server personalizzati ─────────── */
+
+const SERVER_CASE_ICONS = [Cpu, Film, HardDrive, Gamepad2, Globe];
+
+/**
+ * Casi d'uso dei server su misura: poche parole per scheda e una CTA verso la
+ * pagina dedicata, dove il cliente può anche chiamare.
+ */
+export function ServerSlide({ index }: SlideProps) {
+  const t = useTranslations("homeServers");
+  const messages = useMessages();
+  const cases = (messages.homeServers as unknown as { cases: { t: string; d: string }[] }).cases;
+
+  return (
+    <DepthSlide index={index} id="server">
+      <SlideHeading kicker={t("kicker")} title={t("title")} />
+      <ul className="grid w-full max-w-6xl grid-cols-2 gap-2.5 sm:gap-4 lg:grid-cols-5 2xl:max-w-7xl">
+        {cases.map((c, i) => {
+          const Icon = SERVER_CASE_ICONS[i] ?? Cpu;
+          const last = i === cases.length - 1 && cases.length % 2 === 1;
+          return (
+            <DepthItem
+              as="li"
+              key={i}
+              dir={radial(i, cases.length, 5)}
+              delay={i % 5}
+              rotate={(i % 2 ? 1 : -1) * 3}
+              className={cn("min-h-0", last && "col-span-2 lg:col-span-1")}
+            >
+              <Link
+                href="/servizi/server"
+                className={cn(
+                  slideCard,
+                  "group flex h-full items-center gap-3 p-3 sm:flex-col sm:items-start sm:gap-4 sm:p-5 xl:p-7"
+                )}
+              >
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-foreground text-white transition-colors duration-300 group-hover:bg-accent sm:h-11 sm:w-11">
+                  <Icon className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden />
+                </span>
+                <span>
+                  <span className="block font-display text-[0.8rem] leading-snug tracking-tight sm:text-base xl:text-lg">
+                    {c.t}
+                  </span>
+                  <span className="mt-1 hidden text-sm leading-snug text-foreground-muted sm:block">
+                    {c.d}
+                  </span>
+                </span>
+              </Link>
+            </DepthItem>
+          );
+        })}
+      </ul>
+      <DepthItem dir={[0, 1]} delay={2}>
+        <Link href="/servizi/server" className={buttonClasses("primary")}>
+          {t("cta")}
+          <ArrowRight className="h-4 w-4" aria-hidden />
+        </Link>
+      </DepthItem>
     </DepthSlide>
   );
 }

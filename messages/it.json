@@ -321,6 +321,83 @@
           "Automazioni B2B"
         ],
         "mockup": "auction"
+      },
+      {
+        "id": "dbyoung",
+        "name": "DBYoung",
+        "domain": "dbyoung.it",
+        "sector": "Sito e negozio online dell'artista e compositore Dimitri Boutourline",
+        "what": "Un artista che vende beat, sample pack e licenze per colonne sonore ha bisogno di un negozio dove la musica resti protetta e comprare sia semplice. Abbiamo costruito il sito e lo shop: si ascoltano le anteprime, si paga online e si scaricano gli originali con un codice di licenza, con area clienti e pannello admin dietro le quinte.",
+        "stack": "Next.js 15, Convex, Stripe, Resend",
+        "details": [
+          "Shop di beat, sample pack e colonne sonore con anteprime pubbliche di 30–45 secondi; i file originali non vengono mai esposti",
+          "Checkout Stripe con webhook firmato, certificato di licenza in PDF inviato via email e libreria clienti per scaricare con il codice di licenza",
+          "Pannello admin con accesso a due fattori: statistiche, prodotti, messaggi, emissione e revoca delle licenze",
+          "Sito bilingue (IT, EN) con profilo dell'artista, musica, catalogo delle opere e modulo contatti"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "events-dbyoung",
+        "name": "Eventi DBYoung",
+        "domain": "events.dbyoung.it",
+        "sector": "Eventi premium in una tenuta toscana (Fattoria Isola, Laterina)",
+        "what": "Due formati, eventi firmati da Dimitri ed eventi privati organizzati da terzi, avevano bisogno di un unico posto per presentare la location, vendere i biglietti e far entrare gli ospiti con un QR code. Abbiamo costruito il portale: prenotazione per persona, pagamento Stripe, biglietti QR via email e un backoffice con scanner per il check-in.",
+        "stack": "Next.js 16, Convex, Stripe, Resend, Calendly",
+        "details": [
+          "Prenotazione per numero di ospiti, con nome, cognome, data di nascita e codice fiscale di ogni persona",
+          "Stripe Checkout, poi un biglietto con QR univoco per persona inviato via email; check-in all'ingresso con scanner dal backoffice, doppioni rifiutati",
+          "Capienza prenotata in modo atomico, con 45 minuti di tolleranza per i pagamenti in sospeso",
+          "Ruoli cliente, admin e founder, backoffice per eventi, ospiti e utenti, recensioni a cinque stelle dopo l'evento"
+        ],
+        "tags": [
+          "WebApp",
+          "Automazioni B2B",
+          "WebDesign"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "giemme-doors",
+        "name": "Giemme Doors & Service",
+        "domain": "giemmedoors.it",
+        "sector": "Porte da interno e porte blindate certificate a Foligno",
+        "what": "Uno specialista locale di porte ha bisogno di uno showroom che funzioni online: mostrare i prodotti, spiegare come si lavora e rendere facile chiedere una consulenza o un preventivo. Abbiamo realizzato il sito con il configuratore OneSpec per i preventivi online e un percorso di contatto che parte da WhatsApp.",
+        "stack": "Next.js 15, Tailwind CSS 4, framer-motion, Convex, OneSpec",
+        "details": [
+          "Sito one-page: prodotti, come lavoriamo (consulenza, sopralluogo, fornitura e posa, assistenza), galleria e contatti con mappa",
+          "Configuratore OneSpec incorporato per le richieste di preventivo, con ridimensionamento automatico",
+          "Modulo contatti con ripiego su WhatsApp; le richieste possono essere salvate su Convex",
+          "Pagine legali GDPR, sitemap e robots per i motori di ricerca"
+        ],
+        "tags": [
+          "WebDesign",
+          "WebApp"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "recon",
+        "name": "Recon",
+        "domain": "recon",
+        "sector": "Prodotto CORE829 in sviluppo: riconciliazione della contabilità con i dati delle autorità UE",
+        "what": "Le autorità fiscali oggi hanno l'altra metà dei numeri di un'azienda e li incrociano: una differenza può far scattare un controllo. Stiamo costruendo un'API che riconcilia la contabilità con la copia di ogni autorità e restituisce risultati che citano la norma, con prove datate e a prova di manomissione. Non fornisce consulenza fiscale.",
+        "stack": "Rust, PostgreSQL 18, Next.js, shadcn/ui",
+        "details": [
+          "Otto controlli candidati su fatture elettroniche, SAF-T, dichiarazioni IVA/OSS, dati doganali di importazione e VIES; per ora ne funziona uno, su dati sintetici",
+          "Ogni risultato indica quali due fonti non coincidono e in base a quale norma, con un pacchetto di prove a prova di manomissione",
+          "Database separati per scrittura e lettura (PostgreSQL 18), con replica e verifiche di fedeltà",
+          "Stato: sviluppo iniziale; tutto ciò che si vede gira su dati sintetici e nulla è ancora collegato a un sistema reale di un'autorità"
+        ],
+        "tags": [
+          "WebApp",
+          "Automazioni B2B"
+        ],
+        "mockup": "dashboard"
       }
     ],
     "close": "Chiudi"
@@ -723,7 +800,8 @@
     "viewPdf": "Visualizza PDF",
     "downloadPdf": "Scarica PDF",
     "scopeDocsNote": "Per gli altri paesi, consulta la documentazione Advanced IC Certifications qui sotto.",
-    "partnersLogosLabel": "Partner ufficiali"
+    "partnersLogosLabel": "Partner ufficiali",
+    "callButton": "Chiama {number}"
   },
   "servicesDetail": {
     "back": "Tutti i servizi",
@@ -1254,5 +1332,32 @@
     ],
     "ctaTitle": "Raccontaci quale processo vuoi migliorare",
     "ctaDesc": "Ti rispondiamo con una proposta chiara e un preventivo trasparente."
+  },
+  "homeServers": {
+    "kicker": "Server personalizzati",
+    "title": "Il server giusto per il tuo carico di lavoro",
+    "cases": [
+      {
+        "t": "AI e GPU",
+        "d": "Training e inferenza"
+      },
+      {
+        "t": "Rendering",
+        "d": "3D, video, lavoro creativo"
+      },
+      {
+        "t": "Storage e backup",
+        "d": "Dati che restano tuoi"
+      },
+      {
+        "t": "Gaming",
+        "d": "Server privati e community"
+      },
+      {
+        "t": "Hosting web",
+        "d": "Siti, app e database"
+      }
+    ],
+    "cta": "Scopri i server personalizzati"
   }
 }

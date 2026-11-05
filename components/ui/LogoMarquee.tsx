@@ -44,39 +44,54 @@ export default function LogoMarquee({
       {items.map((client) => {
         const size = CLIENT_LOGO_SIZE[client.key];
         const logo = CLIENT_LOGOS[client.key];
-        const w = Math.round((LOGO_H * size.w) / size.h);
-        const iconOnly = CLIENT_LOGO_ICON_ONLY.has(client.key);
-        return (
+        const name = names[client.key] ?? client.key;
+        const w = size ? Math.round((LOGO_H * size.w) / size.h) : 0;
+        // Senza logo (es. prodotto in sviluppo) o con logo solo-simbolo compare il nome.
+        const showName = !logo || CLIENT_LOGO_ICON_ONLY.has(client.key);
+        const content = (
+          <>
+            {logo && size && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={logo}
+                alt=""
+                width={w}
+                height={LOGO_H}
+                loading="eager"
+                decoding="async"
+                draggable={false}
+                className={cn(
+                  "block shrink-0 object-contain opacity-70 transition duration-300 group-hover:opacity-100",
+                  CLIENT_LOGO_COLOR.has(client.key) &&
+                    "grayscale group-hover:grayscale-0"
+                )}
+                style={{ width: w, height: LOGO_H }}
+              />
+            )}
+            {showName && (
+              <span className="whitespace-nowrap font-display text-lg tracking-tight text-foreground-muted transition-colors duration-300 group-hover:text-foreground">
+                {name}
+              </span>
+            )}
+          </>
+        );
+        const itemClass = "group flex min-h-11 shrink-0 items-center gap-3 px-8 sm:px-12";
+        // Senza sito pubblico l'elemento non è un link.
+        return client.url ? (
           <a
             key={client.key}
             href={client.url}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={names[client.key] ?? client.key}
-            className="group flex min-h-11 shrink-0 items-center gap-3 px-8 sm:px-12"
+            aria-label={name}
+            className={itemClass}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={logo}
-              alt=""
-              width={w}
-              height={LOGO_H}
-              loading="eager"
-              decoding="async"
-              draggable={false}
-              className={cn(
-                "block shrink-0 object-contain opacity-70 transition duration-300 group-hover:opacity-100",
-                CLIENT_LOGO_COLOR.has(client.key) &&
-                  "grayscale group-hover:grayscale-0"
-              )}
-              style={{ width: w, height: LOGO_H }}
-            />
-            {iconOnly && (
-              <span className="whitespace-nowrap font-display text-lg tracking-tight text-foreground-muted transition-colors duration-300 group-hover:text-foreground">
-                {names[client.key] ?? client.key}
-              </span>
-            )}
+            {content}
           </a>
+        ) : (
+          <span key={client.key} className={itemClass}>
+            {content}
+          </span>
         );
       })}
     </Marquee>

@@ -319,6 +319,83 @@
           "B2B-automatiseringen"
         ],
         "mockup": "auction"
+      },
+      {
+        "id": "dbyoung",
+        "name": "DBYoung",
+        "domain": "dbyoung.it",
+        "sector": "Website en webshop voor de artiest en componist Dimitri Boutourline",
+        "what": "Een artiest die beats, sample packs en soundtracklicenties verkoopt, heeft een winkel nodig waar de muziek beschermd blijft en kopen eenvoudig is. We bouwden de website en de shop: previews beluisteren, online betalen en de originelen downloaden met een licentiecode, met klantenomgeving en beheerdashboard erachter.",
+        "stack": "Next.js 15, Convex, Stripe, Resend",
+        "details": [
+          "Shop voor beats, sample packs en soundtracks met openbare previews van 30–45 seconden; de originele bestanden worden nooit blootgesteld",
+          "Stripe-checkout met ondertekende webhook, licentiecertificaat als pdf per e-mail en klantenbibliotheek om te downloaden met de licentiecode",
+          "Beheerdashboard met tweefactorlogin: statistieken, producten, berichten, uitgeven en intrekken van licenties",
+          "Tweetalige site (IT, EN) met artiestenprofiel, muziek, werkcatalogus en contactformulier"
+        ],
+        "tags": [
+          "Webdesign",
+          "Webapp"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "events-dbyoung",
+        "name": "Eventi DBYoung",
+        "domain": "events.dbyoung.it",
+        "sector": "Premium evenementen op een Toscaans landgoed (Fattoria Isola, Laterina)",
+        "what": "Twee formats, evenementen onder naam van Dimitri en privé-evenementen van derden, hadden één plek nodig om de locatie te tonen, tickets te verkopen en gasten met een QR-code binnen te laten. We bouwden het portaal: boeking per persoon, Stripe-betaling, QR-tickets per e-mail en een backoffice met scanner voor de check-in.",
+        "stack": "Next.js 16, Convex, Stripe, Resend, Calendly",
+        "details": [
+          "Boeken per aantal gasten, met voor- en achternaam, geboortedatum en fiscaal nummer van elke persoon",
+          "Stripe Checkout, daarna een ticket met unieke QR-code per persoon per e-mail; check-in bij de ingang gescand vanuit de backoffice, dubbele tickets geweigerd",
+          "Capaciteit wordt atomisch geboekt, met 45 minuten coulance voor openstaande betalingen",
+          "Rollen klant, admin en founder, backoffice voor evenementen, gasten en gebruikers, vijfsterrenreviews na het evenement"
+        ],
+        "tags": [
+          "Webapp",
+          "B2B-automatiseringen",
+          "Webdesign"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "giemme-doors",
+        "name": "Giemme Doors & Service",
+        "domain": "giemmedoors.it",
+        "sector": "Binnendeuren en gecertificeerde veiligheidsdeuren in Foligno",
+        "what": "Een lokale deurspecialist heeft een showroom nodig die online werkt: de producten tonen, uitleggen hoe er gewerkt wordt en advies of een offerte makkelijk aanvragen. We maakten de site met de OneSpec-configurator voor online offertes en een contactroute die begint bij WhatsApp.",
+        "stack": "Next.js 15, Tailwind CSS 4, framer-motion, Convex, OneSpec",
+        "details": [
+          "One-pagesite: producten, onze werkwijze (advies, opmeting, levering en montage, service), galerij en contact met kaart",
+          "OneSpec-configurator ingebed voor offerteaanvragen, met automatische formaataanpassing",
+          "Contactformulier met WhatsApp-alternatief; aanvragen kunnen in Convex worden opgeslagen",
+          "AVG-juridische pagina's, sitemap en robots voor zoekmachines"
+        ],
+        "tags": [
+          "Webdesign",
+          "Webapp"
+        ],
+        "mockup": "3d"
+      },
+      {
+        "id": "recon",
+        "name": "Recon",
+        "domain": "recon",
+        "sector": "CORE829-product in ontwikkeling: boekhouding afstemmen met gegevens van EU-autoriteiten",
+        "what": "Belastingautoriteiten hebben nu de andere helft van de cijfers van een bedrijf en kruisen die: een verschil kan een controle uitlokken. We bouwen een API die de boekhouding afstemt met de kopie van elke autoriteit en bevindingen teruggeeft die de regel noemen, met getimestampte, manipulatiebestendige bewijzen. Ze geeft geen fiscaal advies.",
+        "stack": "Rust, PostgreSQL 18, Next.js, shadcn/ui",
+        "details": [
+          "Acht kandidaat-controles op e-facturen, SAF-T, btw/OSS-aangiften, douane-importgegevens en VIES; tot nu toe draait er één, op synthetische data",
+          "Elke bevinding noemt welke twee bronnen verschillen en volgens welke regel, met een manipulatiebestendig bewijspakket",
+          "Aparte databases voor schrijven en lezen (PostgreSQL 18), met replicatie en betrouwbaarheidscontroles",
+          "Status: vroege ontwikkeling; alles wat getoond wordt draait op synthetische data en niets is al gekoppeld aan een echt systeem van een autoriteit"
+        ],
+        "tags": [
+          "Webapp",
+          "B2B-automatiseringen"
+        ],
+        "mockup": "dashboard"
       }
     ],
     "close": "Sluiten"
@@ -719,7 +796,8 @@
     "viewPdf": "PDF bekijken",
     "downloadPdf": "PDF downloaden",
     "scopeDocsNote": "Raadpleeg voor andere landen de Advanced IC Certifications-documentatie hieronder.",
-    "partnersLogosLabel": "Officiële partners"
+    "partnersLogosLabel": "Officiële partners",
+    "callButton": "Bel {number}"
   },
   "servicesDetail": {
     "back": "Alle diensten",
@@ -1062,5 +1140,32 @@
     "nextImage": "Volgende afbeelding",
     "showImage": "Afbeelding {n} tonen",
     "language": "Taal"
+  },
+  "homeServers": {
+    "kicker": "Servers op maat",
+    "title": "De juiste server voor jouw workload",
+    "cases": [
+      {
+        "t": "AI & GPU",
+        "d": "Training en inferentie"
+      },
+      {
+        "t": "Rendering",
+        "d": "3D, video, creatief werk"
+      },
+      {
+        "t": "Opslag & back-up",
+        "d": "Data die van jou blijft"
+      },
+      {
+        "t": "Gaming",
+        "d": "Privé- en communityservers"
+      },
+      {
+        "t": "Webhosting",
+        "d": "Sites, apps en databases"
+      }
+    ],
+    "cta": "Ontdek servers op maat"
   }
 }

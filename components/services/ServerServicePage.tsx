@@ -4,11 +4,12 @@ import { useState, useEffect, useCallback } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, ArrowRight, ArrowUpRight, FileText, Download, Eye } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight, ArrowUpRight, FileText, Download, Eye, Phone } from "lucide-react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
 import { Button } from "@/components/ui/Button";
 import { buttonClasses } from "@/components/ui/buttonStyles";
 import PdfViewer from "@/components/ui/PdfViewer";
+import { COMPANY } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 const DOCUMENTS = [
@@ -452,6 +453,19 @@ export default function ServerServicePage() {
                 <Button href="#partner" variant="secondary" tone="dark">
                   {t("partnersTitle")}
                 </Button>
+              </div>
+              {/* Chiamata diretta: due linee (Italia e Romania) */}
+              <div className="mt-4 flex flex-wrap items-center gap-4">
+                {[COMPANY.phoneIt, COMPANY.phoneRo].map((phone) => (
+                  <a
+                    key={phone}
+                    href={`tel:${phone.replace(/\s/g, "")}`}
+                    className={buttonClasses("ghost", undefined, "dark")}
+                  >
+                    <Phone className="h-4 w-4" aria-hidden />
+                    {t("callButton", { number: phone })}
+                  </a>
+                ))}
               </div>
             </div>
           </RevealOnScroll>

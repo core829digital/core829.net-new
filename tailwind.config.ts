@@ -40,7 +40,7 @@ const config: Config = {
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       fontSize: {
-        // Scala fluida pensata per Unbounded (largo): più contenuta dell'Inter di prima.
+        // Scala fluida dei titoli (stack Saans / Inter come Andromedia Web).
         "display-sm": ["clamp(1.75rem, 1.2rem + 2.6vw, 3rem)", { lineHeight: "1.1", letterSpacing: "-0.025em" }],
         display: ["clamp(1.9rem, 0.9rem + 3.1vw, 4.1rem)", { lineHeight: "1.06", letterSpacing: "-0.03em" }],
         "section-title": ["clamp(1.65rem, 1rem + 2.4vw, 3.25rem)", { lineHeight: "1.1", letterSpacing: "-0.025em" }],

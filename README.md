@@ -34,7 +34,7 @@ Variabili d'ambiente: `NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY`, `CONTACT_FROM_EM
 - **Hero** (`components/ui/neural-noise.tsx`): shader WebGL a risoluzione ridotta, in pausa
   fuori schermo e a tab nascosta, con fallback CSS.
 - **Design system** (`app/globals.css`, `tailwind.config.ts`): token colore con canali RGB
-  (`rgb(var(--rgb-x) / <alpha>)`), font Unbounded / Space Grotesk / Inter / JetBrains Mono,
+  (`rgb(var(--rgb-x) / <alpha>)`), font Saans (se installato) → Inter + JetBrains Mono (stack identico ad Andromedia Web),
   pulsanti capsula in vetro (`.btn*`), pannelli (`.glass-panel`), card a raggio 24px.
   Regole Apple HIG: vetro solo su controlli/navigazione, area di tocco ≥44px, testo ≥11px,
   fallback per reduced transparency/contrast.

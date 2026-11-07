@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Saans (Displaay) e' un font commerciale: se e' installato sul dispositivo viene usato direttamente,
+   altrimenti si usa Inter (self-hosted da next/font). Configurazione identica ad Andromedia Web. */
+@font-face {
+  font-family: "Saans";
+  src: local("Saans"), local("Saans Regular"), local("Saans-Regular");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saans Display";
+  src: local("Saans Display"), local("SaansDisplay-Regular"), local("Saans Display Regular"), local("Saans");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saans Text";
+  src: local("Saans Text"), local("SaansText-Regular"), local("Saans Text Regular"), local("Saans");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ============================================================
    CORE829 — DESIGN TOKEN (vincolante, nessuna deviazione)
    ============================================================ */
@@ -40,11 +64,10 @@
   --shadow-lift: 0 2px 4px rgba(10, 10, 10, 0.05), 0 18px 40px -16px rgba(10, 10, 10, 0.2);
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Testo: Space Grotesk → Inter (greco/cirillico) → sistema (CJK ecc.) */
-  --font-sans: var(--font-space), var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
-  /* Titoli: Unbounded → Inter → sistema */
-  --font-display: var(--font-unbounded), var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: var(--font-jetbrains), ui-monospace, "SFMono-Regular", monospace;
+  /* Stack identico ad Andromedia Web: Saans (se installato) → Inter → sistema. */
+  --font-sans: "Saans Text", "Saans", var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Saans Display", "Saans", var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, "SFMono-Regular", monospace;
 }
 
 /* Proprietà registrata per l'animazione del gradiente neon (angolo rotante). */
@@ -109,7 +132,7 @@
   h2,
   h3,
   h4 {
-    /* Unbounded è largo: a capo naturale con sillabazione (lang impostato su <html>),
+    /* A capo naturale con sillabazione (lang impostato su <html>),
        break-word solo come rete di sicurezza contro l'overflow. */
     overflow-wrap: break-word;
     hyphens: auto;
@@ -131,8 +154,8 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    font-weight: 500;
-    letter-spacing: -0.025em;
+    font-weight: 560; /* come Andromedia Web */
+    letter-spacing: -0.03em;
   }
 
   body {
@@ -141,15 +164,6 @@
 }
 
 @layer components {
-  /* Unbounded è molto pesante: i titoli restano a 500 anche dove una classe
-     di peso (font-semibold) era pensata per Inter. */
-  h1.font-semibold,
-  h2.font-semibold,
-  h3.font-semibold,
-  h4.font-semibold {
-    font-weight: 500;
-  }
-
   /* Full width: nessun tetto di larghezza, margini fluidi (20px → 112px).
      Le misure di lettura sono limitate dai singoli blocchi di testo (max-w-*). */
   .container-core829 {

@@ -119,10 +119,11 @@ export default function Navbar() {
                 href={PORTAL_URL}
                 target="_self"
                 variant="ghost"
-                className={pillCta}
+                className={`${pillCta} !px-3 2xl:!px-5`}
               >
                 <LogIn aria-hidden className="h-3.5 w-3.5" />
-                {t("clientArea")}
+                {/* Tra 1280 e 1535 px solo l'icona (la capsula e' stretta); l'etichetta resta per gli screen reader. */}
+                <span className="sr-only 2xl:not-sr-only">{t("clientArea")}</span>
               </Button>
               <Button
                 href="https://bookings.core829.net/book/intro-call"

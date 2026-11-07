@@ -954,6 +954,7 @@
     "successDesc": "谢谢——我们会尽快与您联系。",
     "errorTitle": "出现错误",
     "errorDesc": "请重试，或直接发邮件至 hello@core829.net。",
+    "errorMailCta": "改用电子邮件联系",
     "validationRequired": "此字段为必填项",
     "validationEmail": "请输入有效的电子邮箱地址"
   },

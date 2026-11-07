@@ -1122,6 +1122,7 @@
     "successDesc": "Mulțumim — îți vom răspunde în curând.",
     "errorTitle": "A apărut o eroare",
     "errorDesc": "Te rugăm să încerci din nou sau să ne scrii direct la hello@core829.net.",
+    "errorMailCta": "Scrie-ne prin e-mail",
     "validationRequired": "Acest câmp este obligatoriu",
     "validationEmail": "Introdu o adresă de email validă"
   },

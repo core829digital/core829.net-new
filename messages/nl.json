@@ -1122,6 +1122,7 @@
     "successDesc": "Bedankt — we nemen binnenkort contact met u op.",
     "errorTitle": "Er is iets misgegaan",
     "errorDesc": "Probeer het opnieuw of schrijf ons rechtstreeks op hello@core829.net.",
+    "errorMailCta": "Stuur ons een e-mail",
     "validationRequired": "Dit veld is verplicht",
     "validationEmail": "Voer een geldig e-mailadres in"
   },

@@ -954,6 +954,7 @@
     "successDesc": "Teşekkürler — kısa süre içinde size döneceğiz.",
     "errorTitle": "Bir şeyler ters gitti",
     "errorDesc": "Lütfen tekrar deneyin veya doğrudan hello@core829.net adresine yazın.",
+    "errorMailCta": "Bize e-posta gönderin",
     "validationRequired": "Bu alan zorunludur",
     "validationEmail": "Geçerli bir e-posta adresi girin"
   },

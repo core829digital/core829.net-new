@@ -1122,6 +1122,7 @@
     "successDesc": "Dziękujemy — wkrótce się odezwiemy.",
     "errorTitle": "Coś poszło nie tak",
     "errorDesc": "Spróbuj ponownie lub napisz bezpośrednio na hello@core829.net.",
+    "errorMailCta": "Napisz do nas e-mail",
     "validationRequired": "To pole jest wymagane",
     "validationEmail": "Podaj prawidłowy adres e-mail"
   },

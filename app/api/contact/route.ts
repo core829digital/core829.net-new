@@ -84,8 +84,11 @@ export async function POST(request: NextRequest) {
 
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
-    console.error("[contact] RESEND_API_KEY is not configured");
-    return NextResponse.json({ ok: false, error: "not_configured" }, { status: 500 });
+    // Configurazione mancante sul server (variabile d'ambiente RESEND_API_KEY non impostata su Vercel):
+    // non e' un errore del visitatore ne' un guasto casuale. 503 = servizio non disponibile; il form propone
+    // all'utente di scrivere via email, cosi' il contatto non va perso.
+    console.error("[contact] RESEND_API_KEY is not configured: set it in the hosting environment variables (Production)");
+    return NextResponse.json({ ok: false, error: "not_configured" }, { status: 503 });
   }
 
   const resend = new Resend(apiKey);

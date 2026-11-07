@@ -954,6 +954,7 @@
     "successDesc": "Kiitos — olemme sinuun pian yhteydessä.",
     "errorTitle": "Jokin meni pieleen",
     "errorDesc": "Yritä uudelleen tai kirjoita suoraan osoitteeseen hello@core829.net.",
+    "errorMailCta": "Lähetä meille sähköpostia",
     "validationRequired": "Tämä kenttä on pakollinen",
     "validationEmail": "Anna kelvollinen sähköpostiosoite"
   },

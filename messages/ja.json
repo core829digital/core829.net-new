@@ -954,6 +954,7 @@
     "successDesc": "ありがとうございます。まもなくご連絡いたします。",
     "errorTitle": "エラーが発生しました",
     "errorDesc": "もう一度お試しいただくか、hello@core829.net まで直接ご連絡ください。",
+    "errorMailCta": "メールで送信する",
     "validationRequired": "この項目は必須です",
     "validationEmail": "有効なメールアドレスを入力してください"
   },

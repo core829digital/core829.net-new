@@ -954,6 +954,7 @@
     "successDesc": "Köszönjük — hamarosan válaszolunk.",
     "errorTitle": "Hiba történt",
     "errorDesc": "Kérjük, próbálja újra, vagy írjon közvetlenül a hello@core829.net címre.",
+    "errorMailCta": "Írjon nekünk e-mailt",
     "validationRequired": "Ez a mező kötelező",
     "validationEmail": "Adjon meg egy érvényes e-mail-címet"
   },

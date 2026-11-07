@@ -954,6 +954,7 @@
     "successDesc": "Děkujeme — brzy se vám ozveme.",
     "errorTitle": "Něco se pokazilo",
     "errorDesc": "Zkuste to prosím znovu, nebo nám napište přímo na hello@core829.net.",
+    "errorMailCta": "Napište nám e-mail",
     "validationRequired": "Toto pole je povinné",
     "validationEmail": "Zadejte platnou e-mailovou adresu"
   },

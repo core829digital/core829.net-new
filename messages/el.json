@@ -954,6 +954,7 @@
     "successDesc": "Ευχαριστούμε — θα επικοινωνήσουμε σύντομα μαζί σας.",
     "errorTitle": "Κάτι πήγε στραβά",
     "errorDesc": "Δοκιμάστε ξανά ή γράψτε μας απευθείας στο hello@core829.net.",
+    "errorMailCta": "Στείλτε μας email",
     "validationRequired": "Αυτό το πεδίο είναι υποχρεωτικό",
     "validationEmail": "Εισαγάγετε έγκυρη διεύθυνση email"
   },

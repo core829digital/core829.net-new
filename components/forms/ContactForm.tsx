@@ -5,18 +5,27 @@ import { useTranslations } from "next-intl";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
-import { VISIBLE_SERVICES_META } from "@/lib/constants";
+import { LEAD_EMAIL, VISIBLE_SERVICES_META } from "@/lib/constants";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
 const inputClasses =
   "w-full rounded-2xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-foreground-muted/60 transition-colors duration-300 focus:border-accent focus:outline-none";
 
+/** Email gia' compilata (destinatario, oggetto e testo scritto dall'utente), limitata per non superare i limiti dei programmi di posta. */
+function mailtoFallback({ name, email, message }: { name: string; email: string; message: string }): string {
+  const body = `${message.trim()}\n\n—\n${name.trim()}${email.trim() ? ` <${email.trim()}>` : ""}`.slice(0, 1500);
+  const subject = `Contatto dal sito${name.trim() ? ` — ${name.trim().slice(0, 80)}` : ""}`;
+  return `mailto:${LEAD_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
 export default function ContactForm() {
   const t = useTranslations("contactForm");
   const tServices = useTranslations("solution.services");
   const [status, setStatus] = useState<Status>("idle");
   const [consent, setConsent] = useState(false);
+  // Copia di quanto scritto dall'utente: se l'invio fallisce si propone un'email gia' compilata, senza perdere il testo.
+  const [draft, setDraft] = useState<{ name: string; email: string; message: string } | null>(null);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -24,6 +33,11 @@ export default function ContactForm() {
     const data = new FormData(form);
 
     setStatus("submitting");
+    setDraft({
+      name: String(data.get("name") ?? ""),
+      email: String(data.get("email") ?? ""),
+      message: String(data.get("message") ?? ""),
+    });
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -42,6 +56,7 @@ export default function ContactForm() {
 
       if (!res.ok) throw new Error("request_failed");
       setStatus("success");
+      setDraft(null);
       form.reset();
       setConsent(false);
     } catch {
@@ -197,6 +212,14 @@ export default function ContactForm() {
           <div>
             <p className="text-sm font-semibold text-foreground">{t("errorTitle")}</p>
             <p className="mt-1 text-xs leading-relaxed text-foreground-muted">{t("errorDesc")}</p>
+            {draft ? (
+              <a
+                href={mailtoFallback(draft)}
+                className="mt-3 inline-flex min-h-11 items-center rounded-full border border-border px-4 text-xs font-semibold uppercase tracking-widest text-foreground transition-colors hover:text-accent"
+              >
+                {t("errorMailCta")}
+              </a>
+            ) : null}
           </div>
         </div>
       )}

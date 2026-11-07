@@ -954,6 +954,7 @@
     "successDesc": "Obrigado — responderemos em breve.",
     "errorTitle": "Algo correu mal",
     "errorDesc": "Tente novamente ou escreva-nos diretamente para hello@core829.net.",
+    "errorMailCta": "Escreva-nos por e-mail",
     "validationRequired": "Este campo é obrigatório",
     "validationEmail": "Introduza um endereço de email válido"
   },

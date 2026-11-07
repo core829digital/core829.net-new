@@ -954,6 +954,7 @@
     "successDesc": "Tack — vi återkommer inom kort.",
     "errorTitle": "Något gick fel",
     "errorDesc": "Försök igen eller skriv direkt till hello@core829.net.",
+    "errorMailCta": "Skicka e-post till oss",
     "validationRequired": "Detta fält är obligatoriskt",
     "validationEmail": "Ange en giltig e-postadress"
   },

@@ -954,6 +954,7 @@
     "successDesc": "Tak — vi vender tilbage snarest.",
     "errorTitle": "Noget gik galt",
     "errorDesc": "Prøv igen, eller skriv direkte til hello@core829.net.",
+    "errorMailCta": "Send os en e-mail",
     "validationRequired": "Dette felt er påkrævet",
     "validationEmail": "Indtast en gyldig e-mailadresse"
   },

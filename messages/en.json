@@ -1134,6 +1134,7 @@
     "successDesc": "Thanks — we'll get back to you shortly.",
     "errorTitle": "Something went wrong",
     "errorDesc": "Please try again, or write to us directly at hello@core829.net.",
+    "errorMailCta": "Email us instead",
     "validationRequired": "This field is required",
     "validationEmail": "Enter a valid email address"
   },

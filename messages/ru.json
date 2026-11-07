@@ -954,6 +954,7 @@
     "successDesc": "Спасибо — мы скоро свяжемся с вами.",
     "errorTitle": "Что-то пошло не так",
     "errorDesc": "Попробуйте ещё раз или напишите нам напрямую на hello@core829.net.",
+    "errorMailCta": "Написать на email",
     "validationRequired": "Это поле обязательно",
     "validationEmail": "Введите корректный адрес электронной почты"
   },

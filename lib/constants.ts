@@ -262,3 +262,9 @@ export const FEATURE_ICON_MAP: Record<string, LucideIcon> = {
   Gauge,
   Zap,
 };
+
+/**
+ * Indirizzo del portale clienti (app separata, con login e link personali).
+ * Sovrascrivibile con NEXT_PUBLIC_PORTAL_URL (es. per prove su un dominio provvisorio).
+ */
+export const PORTAL_URL = process.env.NEXT_PUBLIC_PORTAL_URL ?? "https://portal.core829.net";

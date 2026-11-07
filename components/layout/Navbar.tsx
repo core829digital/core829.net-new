@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, LogIn } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 import { Link, useRouter } from "@/i18n/navigation";
 import { useGoToSection } from "@/lib/useGoToSection";
 import { Button } from "@/components/ui/Button";
-import { SERVICES_META } from "@/lib/constants";
+import { PORTAL_URL, SERVICES_META } from "@/lib/constants";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { SocialLinks } from "@/components/SocialIcons";
 
@@ -116,6 +116,15 @@ export default function Navbar() {
             <LanguageSwitcher />
             <div className="hidden items-center gap-1 pl-1 xl:flex">
               <Button
+                href={PORTAL_URL}
+                target="_self"
+                variant="ghost"
+                className={pillCta}
+              >
+                <LogIn aria-hidden className="h-3.5 w-3.5" />
+                {t("clientArea")}
+              </Button>
+              <Button
                 href="https://bookings.core829.net/book/intro-call"
                 variant="secondary"
                 className={pillCta}
@@ -190,6 +199,16 @@ export default function Navbar() {
                 transition={{ delay: 0.35 }}
                 className="space-y-6 pt-8 md:grid md:grid-cols-2 md:gap-4 md:space-y-0"
               >
+                <Button
+                  href={PORTAL_URL}
+                  target="_self"
+                  variant="ghost"
+                  className="w-full md:col-span-2"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  <LogIn aria-hidden className="h-4 w-4" />
+                  {t("clientArea")}
+                </Button>
                 <Button
                   href="https://bookings.core829.net/book/intro-call"
                   variant="secondary"

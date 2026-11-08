@@ -33,7 +33,7 @@ export default function GlobalError({
           fontFamily:
             "'Saans Text', Saans, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
           backgroundColor: "#ffffff",
-          color: "#0a0a0a",
+          color: "#111217",
         }}
       >
         <div style={{ maxWidth: "28rem", textAlign: "center" }}>
@@ -54,7 +54,7 @@ export default function GlobalError({
           </h1>
           <p style={{ marginTop: "0.75rem", color: "#555555", lineHeight: 1.6 }}>
             An unexpected error occurred. Please try again, or contact us at{" "}
-            <a href="mailto:hello@core829.net" style={{ color: "#0a0a0a" }}>
+            <a href="mailto:hello@core829.net" style={{ color: "#111217" }}>
               hello@core829.net
             </a>
             .
@@ -68,7 +68,7 @@ export default function GlobalError({
                 fontSize: "0.875rem",
                 fontWeight: 500,
                 color: "#ffffff",
-                backgroundColor: "#e11d2e",
+                backgroundColor: "#e52139",
                 border: "none",
                 borderRadius: "9999px",
                 minHeight: "44px",
@@ -84,7 +84,7 @@ export default function GlobalError({
                 padding: "0.625rem 1.5rem",
                 fontSize: "0.875rem",
                 fontWeight: 500,
-                color: "#0a0a0a",
+                color: "#111217",
                 border: "1px solid #d4d4d4",
                 borderRadius: "9999px",
                 minHeight: "44px",

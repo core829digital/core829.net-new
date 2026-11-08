@@ -31,7 +31,7 @@ export default function GlobalError({
           justifyContent: "center",
           padding: "2rem",
           fontFamily:
-            "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+            "'Saans Text', Saans, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
           backgroundColor: "#ffffff",
           color: "#0a0a0a",
         }}

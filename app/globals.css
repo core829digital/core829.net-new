@@ -771,3 +771,22 @@ html[data-simple="1"] .marquee-track {
     scroll-behavior: auto;
   }
 }
+
+/* Riflesso morbido che segue il cursore sulle schede dei servizi (solo mouse, mai con "riduci animazioni"). */
+.spotlight {
+  position: relative;
+  --mx: 50%;
+  --my: 0%;
+}
+.spotlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: radial-gradient(380px circle at var(--mx) var(--my), rgb(225 29 46 / 0.07), transparent 60%);
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .spotlight:hover::before { opacity: 1; }
+}

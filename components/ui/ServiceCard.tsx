@@ -28,7 +28,14 @@ export default function ServiceCard({ index, displayNumber }: Props) {
   return (
     <Link
       href={`/servizi/${slug}`}
-      className="card-lift group flex h-full flex-col border border-border bg-background p-8"
+      className="card-lift spotlight group flex h-full flex-col border border-border bg-background p-8"
+      onPointerMove={(e) => {
+        // Riflesso che segue il cursore (solo mouse: il CSS lo mostra solo con hover e puntatore preciso).
+        if (e.pointerType !== "mouse") return;
+        const r = e.currentTarget.getBoundingClientRect();
+        e.currentTarget.style.setProperty("--mx", `${e.clientX - r.left}px`);
+        e.currentTarget.style.setProperty("--my", `${e.clientY - r.top}px`);
+      }}
     >
       <div className="flex items-start justify-between">
         <span className="flex h-12 w-12 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent rounded-2xl">

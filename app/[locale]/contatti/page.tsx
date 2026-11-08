@@ -4,9 +4,10 @@ import { setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/Button";
 import ContactForm from "@/components/forms/ContactForm";
 import { COMPANY, EMAILS, FOUNDERS } from "@/lib/constants";
+import { withSeoOverride } from "@/lib/seoOverride";
 import { buildAlternates, pageDescription } from "@/lib/seo";
 
-export async function generateMetadata({
+async function baseMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -22,6 +23,11 @@ export async function generateMetadata({
     openGraph: { title, description },
     twitter: { title, description },
   };
+}
+
+export async function generateMetadata(props: Parameters<typeof baseMetadata>[0]): Promise<Metadata> {
+  const { locale } = await props.params;
+  return withSeoOverride(await baseMetadata(props), locale, "contatti");
 }
 
 export default async function ContattiPage({

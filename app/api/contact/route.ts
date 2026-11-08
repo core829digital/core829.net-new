@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { LEAD_EMAIL } from "@/lib/constants";
 import { getClientIp, isRateLimited } from "@/lib/rateLimit";
+import { bridgeConfigured, postToPortal } from "@/lib/portalBridge";
 
 export const runtime = "nodejs";
 
@@ -82,11 +83,18 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false, error: "consent_required" }, { status: 400 });
   }
 
+  // Copia nel backoffice del portale (firmata). Non blocca mai l'invio: se il portale non risponde, resta l'email.
+  const storedInPortal = bridgeConfigured()
+    ? await postToPortal("/site/contact", { name, email, company, service, budget, message, locale: typeof body.locale === "string" ? body.locale : undefined })
+    : false;
+
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     // Configurazione mancante sul server (variabile d'ambiente RESEND_API_KEY non impostata su Vercel):
     // non e' un errore del visitatore ne' un guasto casuale. 503 = servizio non disponibile; il form propone
     // all'utente di scrivere via email, cosi' il contatto non va perso.
+    // Se pero' la richiesta e' gia' nel backoffice del portale, il contatto non e' perso: si risponde ok.
+    if (storedInPortal) return NextResponse.json({ ok: true });
     console.error("[contact] RESEND_API_KEY is not configured: set it in the hosting environment variables (Production)");
     return NextResponse.json({ ok: false, error: "not_configured" }, { status: 503 });
   }
@@ -127,10 +135,12 @@ export async function POST(request: NextRequest) {
 
     if (error) {
       console.error("[contact] Resend error", error);
+      if (storedInPortal) return NextResponse.json({ ok: true });
       return NextResponse.json({ ok: false, error: "send_failed" }, { status: 502 });
     }
   } catch (err) {
     console.error("[contact] Unexpected error", err);
+    if (storedInPortal) return NextResponse.json({ ok: true });
     return NextResponse.json({ ok: false, error: "send_failed" }, { status: 502 });
   }
 

@@ -2,9 +2,10 @@ import { Metadata } from "next";
 import { buttonClasses } from "@/components/ui/buttonStyles";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
+import { withSeoOverride } from "@/lib/seoOverride";
 import { buildAlternates, pageDescription } from "@/lib/seo";
 
-export async function generateMetadata({
+async function baseMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -20,6 +21,11 @@ export async function generateMetadata({
     openGraph: { title, description },
     twitter: { title, description },
   };
+}
+
+export async function generateMetadata(props: Parameters<typeof baseMetadata>[0]): Promise<Metadata> {
+  const { locale } = await props.params;
+  return withSeoOverride(await baseMetadata(props), locale, "prezzi");
 }
 
 export default async function PrezziPage({

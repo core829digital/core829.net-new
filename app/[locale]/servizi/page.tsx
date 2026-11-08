@@ -3,10 +3,11 @@ import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import ServiceCard from "@/components/ui/ServiceCard";
 import { VISIBLE_SERVICES_META } from "@/lib/constants";
+import { withSeoOverride } from "@/lib/seoOverride";
 import { buildAlternates, pageDescription } from "@/lib/seo";
 import { getSiteKeywords } from "@/lib/seoKeywords";
 
-export async function generateMetadata({
+async function baseMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -28,6 +29,11 @@ export async function generateMetadata({
     openGraph: { title, description },
     twitter: { title, description },
   };
+}
+
+export async function generateMetadata(props: Parameters<typeof baseMetadata>[0]): Promise<Metadata> {
+  const { locale } = await props.params;
+  return withSeoOverride(await baseMetadata(props), locale, "servizi");
 }
 
 export default async function ServiziPage({

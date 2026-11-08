@@ -17,6 +17,9 @@ import Footer from "@/components/layout/Footer";
 import JsonLd from "@/components/seo/JsonLd";
 import { CookieConsentProvider } from "@/components/cookies/CookieConsentContext";
 import CookieBanner from "@/components/cookies/CookieBanner";
+import PageViewTracker from "@/components/analytics/PageViewTracker";
+import AnnouncementPill from "@/components/layout/AnnouncementPill";
+import { getPortalConfig } from "@/lib/portalBridge";
 import TrustpilotConsentGate from "@/components/cookies/TrustpilotConsentGate";
 import { buildAlternates, clampDescription, SITE_URL } from "@/lib/seo";
 import { getSiteKeywords } from "@/lib/seoKeywords";
@@ -123,6 +126,7 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
+  const { announcement } = await getPortalConfig();
 
   return (
     <html lang={locale} className={`${inter.variable} ${jetbrainsMono.variable}`}>
@@ -141,6 +145,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <CookieConsentProvider>
             <GoogleConsentSync />
+            <PageViewTracker />
             <TrustpilotConsentGate />
             <VisualViewportProvider />
             <SmoothScrollProvider>
@@ -148,6 +153,7 @@ export default async function LocaleLayout({
               <ResolvePendingHash />
               <ScrollProgress />
               <Navbar />
+              {announcement ? <AnnouncementPill text={announcement.text} href={announcement.href} cta={announcement.cta} /> : null}
               <main>{children}</main>
               <Footer />
             </SmoothScrollProvider>

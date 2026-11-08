@@ -1,11 +1,12 @@
 import { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LandingPage from "@/components/landing/LandingPage";
+import { withSeoOverride } from "@/lib/seoOverride";
 import { buildAlternates, LANDING_LOCALES, LANDING_PUBLISHED } from "@/lib/seo";
 
 const PATH = "/software-su-misura";
 
-export async function generateMetadata({
+async function baseMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -24,6 +25,11 @@ export async function generateMetadata({
     // Bozza (LANDING_PUBLISHED) e lingue senza testi dedicati: non indicizzare.
     robots: indexable ? undefined : { index: false, follow: true },
   };
+}
+
+export async function generateMetadata(props: Parameters<typeof baseMetadata>[0]): Promise<Metadata> {
+  const { locale } = await props.params;
+  return withSeoOverride(await baseMetadata(props), locale, "software-su-misura");
 }
 
 export default async function SoftwareSuMisuraPage({

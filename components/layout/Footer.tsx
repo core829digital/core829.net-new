@@ -77,7 +77,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:col-span-8 lg:pl-12">
           {/* Servizi */}
           <div>
-            <p className="tech-label">{t("colServices")}</p>
+            <p className="text-sm font-semibold text-foreground">{t("colServices")}</p>
             <ul className="mt-3 space-y-0">
               {SERVICES_META.map((s, i) =>
                 s.hidden ? null : (
@@ -117,7 +117,7 @@ export default function Footer() {
 
           {/* Clienti */}
           <div>
-            <p className="tech-label">{t("colClients")}</p>
+            <p className="text-sm font-semibold text-foreground">{t("colClients")}</p>
             <ul className="mt-3 space-y-0">
               {CLIENT_ANCHORS.map((c, i) => (
                 <li key={c.id}>
@@ -131,7 +131,7 @@ export default function Footer() {
 
           {/* Azienda */}
           <div>
-            <p className="tech-label">{t("colCompany")}</p>
+            <p className="text-sm font-semibold text-foreground">{t("colCompany")}</p>
             <ul className="mt-3 space-y-0">
               <li>
                 <a href="#hero" onClick={goTo("#hero")} className={linkCls}>

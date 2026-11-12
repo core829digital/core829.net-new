@@ -379,6 +379,111 @@
         "mockup": "3d"
       },
       {
+        "id": "dottor-canapa",
+        "name": "Dottor Canapa",
+        "domain": "dottorcanapa.com",
+        "sector": "Tienda online de cáñamo legal y CBD",
+        "what": "Una tienda de cáñamo legal vive de la confianza y de la visibilidad online. Hemos acompañado el proyecto desde la tienda online hasta la comunicación: comercio electrónico, sesión fotográfica de productos, gráficas e impresión, redes sociales, SEO y consultoría de marketing dedicada.",
+        "stack": "E-commerce, SEO, IA",
+        "details": [
+          "Tienda online con catálogo por categorías y envío gratuito a partir de 39 €",
+          "Sesión fotográfica de productos",
+          "Gráficas e impresión, redes sociales",
+          "SEO y herramientas de inteligencia artificial",
+          "Proyecto realizado con Andromedia Web"
+        ],
+        "tags": [
+          "E-commerce",
+          "SEO",
+          "Marketing",
+          "Setup IA"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "sara-calligrafia",
+        "name": "Sara Calligrafia",
+        "domain": "saracalligrafia.com",
+        "sector": "Caligrafía artística para bodas y eventos",
+        "what": "Una artista de la caligrafía necesita un sitio que muestre la delicadeza de su trabajo y facilite el contacto. Hemos creado el sitio con secciones sobre ella, bodas, servicios, galería y journal, adaptado el logo y activado el correo profesional, con SEO para ser encontrada.",
+        "stack": "WebDesign, SEO",
+        "details": [
+          "Sitio con portada deslizante, bodas, servicios, galería y journal",
+          "Logo adaptado al nuevo sitio",
+          "Correo profesional con dominio propio",
+          "SEO para ser encontrada por quien busca caligrafía para bodas",
+          "Proyecto realizado con Andromedia Web"
+        ],
+        "tags": [
+          "WebDesign",
+          "SEO"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "the-office-agency",
+        "name": "The Office Agency",
+        "domain": "theofficeagency.it",
+        "sector": "Agencia de soluciones para empresas",
+        "what": "Una agencia que ofrece soluciones a las empresas necesita un sitio claro y creíble. Hemos desarrollado el sitio con quiénes somos, servicios, trabaja con nosotros y contacto, y nos hemos ocupado de la consultoría de marca, el SEO y el correo profesional, con herramientas de inteligencia artificial.",
+        "stack": "WebDesign, SEO, IA",
+        "details": [
+          "Sitio con quiénes somos, servicios, trabaja con nosotros y contacto",
+          "Consultoría de marca",
+          "Correo profesional con dominio propio",
+          "SEO y herramientas de inteligencia artificial",
+          "Proyecto realizado con Andromedia Web"
+        ],
+        "tags": [
+          "WebDesign",
+          "SEO",
+          "Setup IA"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "quartoatto",
+        "name": "QuartoAtto",
+        "domain": "quartoatto.com",
+        "sector": "Marca de moda: pantalones Made in Italy",
+        "what": "Una marca de pantalones Made in Italy necesita una tienda que cuente la marca tanto como la vende. Nos hemos ocupado del comercio electrónico, la consultoría de marketing dedicada, las gráficas, el correo profesional y las herramientas de inteligencia artificial.",
+        "stack": "E-commerce, Marketing, IA",
+        "details": [
+          "Tienda online con colecciones, historia de la marca y journal",
+          "Consultoría de marketing dedicada",
+          "Gráficas y correo profesional",
+          "Herramientas de inteligencia artificial de apoyo al trabajo",
+          "Proyecto realizado con Andromedia Web"
+        ],
+        "tags": [
+          "E-commerce",
+          "Marketing",
+          "Setup IA"
+        ],
+        "mockup": "fashion"
+      },
+      {
+        "id": "cera-una-volta",
+        "name": "C'era Una Volta",
+        "domain": "gelateriaceraunavolta.com",
+        "sector": "Heladería artesanal — Lucignano (AR), Italia",
+        "what": "Una heladería artesanal necesita un sitio que dé ganas de entrar. Hemos creado el sitio con productos, gelato cart, barquillos artesanales, affogato y galería, además de redes sociales, gráficas e impresión.",
+        "stack": "WebDesign, Redes sociales",
+        "details": [
+          "Sitio con productos, gelato cart, barquillos artesanales, affogato y galería",
+          "Página para trabajar con ellos y contacto",
+          "Gestión de las redes sociales",
+          "Gráficas e impresión",
+          "Proyecto realizado con Andromedia Web"
+        ],
+        "tags": [
+          "WebDesign",
+          "Redes sociales",
+          "Marketing"
+        ],
+        "mockup": "dashboard"
+      },
+      {
         "id": "recon",
         "name": "Recon",
         "domain": "recon",

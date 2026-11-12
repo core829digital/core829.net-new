@@ -379,6 +379,111 @@
         "mockup": "3d"
       },
       {
+        "id": "dottor-canapa",
+        "name": "Dottor Canapa",
+        "domain": "dottorcanapa.com",
+        "sector": "Boutique en ligne de chanvre légal et CBD",
+        "what": "Une boutique de chanvre légal vit de confiance et de visibilité en ligne. Nous avons suivi le projet de la boutique en ligne à la communication : e-commerce, shooting photo des produits, graphisme et impression, réseaux sociaux, SEO et conseil marketing dédié.",
+        "stack": "E-commerce, SEO, IA",
+        "details": [
+          "Boutique en ligne avec catalogue par catégories et livraison gratuite dès 39 €",
+          "Shooting photo des produits",
+          "Graphisme et impression, réseaux sociaux",
+          "SEO et outils d'intelligence artificielle",
+          "Projet réalisé avec Andromedia Web"
+        ],
+        "tags": [
+          "E-commerce",
+          "SEO",
+          "Marketing",
+          "Setup IA"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "sara-calligrafia",
+        "name": "Sara Calligrafia",
+        "domain": "saracalligrafia.com",
+        "sector": "Calligraphie artistique pour mariages et événements",
+        "what": "Une artiste calligraphe a besoin d'un site qui montre la délicatesse de son travail et facilite le contact. Nous avons réalisé le site avec des rubriques sur elle, mariages, services, galerie et journal, adapté le logo et mis en place l'e-mail professionnel, avec le SEO pour être trouvée.",
+        "stack": "WebDesign, SEO",
+        "details": [
+          "Site avec accueil à défilement, mariages, services, galerie et journal",
+          "Logo adapté au nouveau site",
+          "E-mail professionnel sur son propre domaine",
+          "SEO pour être trouvée par celles et ceux qui cherchent une calligraphie de mariage",
+          "Projet réalisé avec Andromedia Web"
+        ],
+        "tags": [
+          "WebDesign",
+          "SEO"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "the-office-agency",
+        "name": "The Office Agency",
+        "domain": "theofficeagency.it",
+        "sector": "Agence de solutions pour les entreprises",
+        "what": "Une agence qui propose des solutions aux entreprises a besoin d'un site clair et crédible. Nous avons développé le site avec qui nous sommes, services, travailler avec nous et contacts, assuré le conseil de marque, le SEO et l'e-mail professionnel, avec des outils d'intelligence artificielle.",
+        "stack": "WebDesign, SEO, IA",
+        "details": [
+          "Site avec qui nous sommes, services, travailler avec nous et contacts",
+          "Conseil de marque",
+          "E-mail professionnel sur son propre domaine",
+          "SEO et outils d'intelligence artificielle",
+          "Projet réalisé avec Andromedia Web"
+        ],
+        "tags": [
+          "WebDesign",
+          "SEO",
+          "Setup IA"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "quartoatto",
+        "name": "QuartoAtto",
+        "domain": "quartoatto.com",
+        "sector": "Marque de mode : pantalons Made in Italy",
+        "what": "Une marque de pantalons Made in Italy a besoin d'une boutique qui raconte la marque autant qu'elle la vend. Nous avons géré l'e-commerce, le conseil marketing dédié, le graphisme, l'e-mail professionnel et les outils d'intelligence artificielle.",
+        "stack": "E-commerce, Marketing, IA",
+        "details": [
+          "Boutique en ligne avec collections, histoire de la marque et journal",
+          "Conseil marketing dédié",
+          "Graphisme et e-mail professionnel",
+          "Outils d'intelligence artificielle au service du travail",
+          "Projet réalisé avec Andromedia Web"
+        ],
+        "tags": [
+          "E-commerce",
+          "Marketing",
+          "Setup IA"
+        ],
+        "mockup": "fashion"
+      },
+      {
+        "id": "cera-una-volta",
+        "name": "C'era Una Volta",
+        "domain": "gelateriaceraunavolta.com",
+        "sector": "Glacier artisanal — Lucignano (AR), Italie",
+        "what": "Un glacier artisanal a besoin d'un site qui donne envie d'entrer. Nous avons réalisé le site avec produits, gelato cart, gaufres artisanales, affogato et galerie, plus réseaux sociaux, graphisme et impression.",
+        "stack": "WebDesign, Réseaux sociaux",
+        "details": [
+          "Site avec produits, gelato cart, gaufres artisanales, affogato et galerie",
+          "Page recrutement et contacts",
+          "Gestion des réseaux sociaux",
+          "Graphisme et impression",
+          "Projet réalisé avec Andromedia Web"
+        ],
+        "tags": [
+          "WebDesign",
+          "Réseaux sociaux",
+          "Marketing"
+        ],
+        "mockup": "dashboard"
+      },
+      {
         "id": "recon",
         "name": "Recon",
         "domain": "recon",

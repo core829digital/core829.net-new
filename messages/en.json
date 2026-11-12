@@ -381,6 +381,111 @@
         "mockup": "3d"
       },
       {
+        "id": "dottor-canapa",
+        "name": "Dottor Canapa",
+        "domain": "dottorcanapa.com",
+        "sector": "Online shop for legal hemp and CBD",
+        "what": "A legal hemp shop lives on trust and online visibility. We followed the project from the online store to the communication: e-commerce, product photo set, graphics and print, social media, SEO and dedicated marketing consulting.",
+        "stack": "E-Commerce, SEO, AI",
+        "details": [
+          "Online shop with category catalogue and free shipping over €39",
+          "Product photo set",
+          "Graphics and print, social media",
+          "SEO and artificial-intelligence tools",
+          "Project delivered with Andromedia Web"
+        ],
+        "tags": [
+          "E-Commerce",
+          "SEO",
+          "Marketing",
+          "AI Setup"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "sara-calligrafia",
+        "name": "Sara Calligrafia",
+        "domain": "saracalligrafia.com",
+        "sector": "Artistic calligraphy for weddings and events",
+        "what": "A calligraphy artist needs a website that shows the delicacy of her work and makes it easy to get in touch. We built the site with sections about her, weddings, services, gallery and journal, adapted the logo and set up professional email, with SEO to be found.",
+        "stack": "Web Design, SEO",
+        "details": [
+          "Site with a sliding home page, weddings, services, gallery and journal",
+          "Logo adapted to the new site",
+          "Professional email on her own domain",
+          "SEO to be found by people searching for wedding calligraphy",
+          "Project delivered with Andromedia Web"
+        ],
+        "tags": [
+          "Web Design",
+          "SEO"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "the-office-agency",
+        "name": "The Office Agency",
+        "domain": "theofficeagency.it",
+        "sector": "Agency offering business solutions",
+        "what": "An agency that offers solutions to companies needs a clear and credible website. We developed the site with about us, services, careers and contacts, handled brand consulting, SEO and professional email, with artificial-intelligence tools.",
+        "stack": "Web Design, SEO, AI",
+        "details": [
+          "Site with about us, services, careers and contacts",
+          "Brand consulting",
+          "Professional email on its own domain",
+          "SEO and artificial-intelligence tools",
+          "Project delivered with Andromedia Web"
+        ],
+        "tags": [
+          "Web Design",
+          "SEO",
+          "AI Setup"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "quartoatto",
+        "name": "QuartoAtto",
+        "domain": "quartoatto.com",
+        "sector": "Fashion brand: Made in Italy trousers",
+        "what": "A Made in Italy trousers brand needs a shop that tells the brand as much as it sells it. We handled the e-commerce, dedicated marketing consulting, graphics, professional email and artificial-intelligence tools.",
+        "stack": "E-Commerce, Marketing, AI",
+        "details": [
+          "Online shop with collections, brand story and journal",
+          "Dedicated marketing consulting",
+          "Graphics and professional email",
+          "Artificial-intelligence tools supporting the work",
+          "Project delivered with Andromedia Web"
+        ],
+        "tags": [
+          "E-Commerce",
+          "Marketing",
+          "AI Setup"
+        ],
+        "mockup": "fashion"
+      },
+      {
+        "id": "cera-una-volta",
+        "name": "C'era Una Volta",
+        "domain": "gelateriaceraunavolta.com",
+        "sector": "Artisan gelateria — Lucignano (AR), Italy",
+        "what": "An artisan gelateria needs a website that makes people want to walk in. We built the site with products, gelato cart, artisan wafers, affogato and gallery, plus social media, graphics and print.",
+        "stack": "Web Design, Social Media",
+        "details": [
+          "Site with products, gelato cart, artisan wafers, affogato and gallery",
+          "Careers page and contacts",
+          "Social media management",
+          "Graphics and print",
+          "Project delivered with Andromedia Web"
+        ],
+        "tags": [
+          "Web Design",
+          "Social Media",
+          "Marketing"
+        ],
+        "mockup": "dashboard"
+      },
+      {
         "id": "recon",
         "name": "Recon",
         "domain": "recon",

@@ -199,7 +199,13 @@ function CaseDialog({ project, onClose }: { project: Project; onClose: () => voi
         <div className="grid gap-6 p-5 pt-14 sm:gap-8 sm:p-8 sm:pt-8 lg:grid-cols-2 lg:gap-12 lg:p-12">
           <div className="min-w-0 self-start">
             {shots ? (
-              <ClientScreenshot srcs={shots} alt={`${project.name} — ${project.domain}`} domain={project.domain} />
+              meta?.url ? (
+                <a href={meta.url} target="_blank" rel="noopener noreferrer" aria-label={`${t("viewSite")}: ${project.name}`} className="block">
+                  <ClientScreenshot srcs={shots} alt={`${project.name} — ${project.domain}`} domain={project.domain} />
+                </a>
+              ) : (
+                <ClientScreenshot srcs={shots} alt={`${project.name} — ${project.domain}`} domain={project.domain} />
+              )
             ) : (
               <ProjectMockup variant={project.mockup} />
             )}

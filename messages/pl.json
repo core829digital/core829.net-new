@@ -471,6 +471,111 @@
         "mockup": "3d"
       },
       {
+        "id": "dottor-canapa",
+        "name": "Dottor Canapa",
+        "domain": "dottorcanapa.com",
+        "sector": "Sklep internetowy z legalną konopią i CBD",
+        "what": "Sklep z legalną konopią żyje zaufaniem i widocznością w sieci. Prowadziliśmy projekt od sklepu internetowego po komunikację: e-commerce, sesja zdjęciowa produktów, grafika i druk, media społecznościowe, SEO i dedykowane doradztwo marketingowe.",
+        "stack": "E-commerce, SEO, AI",
+        "details": [
+          "Sklep internetowy z katalogiem kategorii i darmową wysyłką powyżej 39 €",
+          "Sesja zdjęciowa produktów",
+          "Grafika i druk, media społecznościowe",
+          "SEO i narzędzia sztucznej inteligencji",
+          "Projekt zrealizowany z Andromedia Web"
+        ],
+        "tags": [
+          "E-commerce",
+          "SEO",
+          "Marketing",
+          "AI Setup"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "sara-calligrafia",
+        "name": "Sara Calligrafia",
+        "domain": "saracalligrafia.com",
+        "sector": "Artystyczna kaligrafia na śluby i wydarzenia",
+        "what": "Artystka kaligrafii potrzebuje strony, która pokaże subtelność jej pracy i ułatwi kontakt. Zrealizowaliśmy stronę z sekcjami o niej, ślubami, usługami, galerią i dziennikiem, dostosowaliśmy logo i uruchomiliśmy profesjonalną pocztę, z SEO, by była łatwo znajdowana.",
+        "stack": "Web Design, SEO",
+        "details": [
+          "Strona z przewijaną stroną główną, ślubami, usługami, galerią i dziennikiem",
+          "Logo dostosowane do nowej strony",
+          "Profesjonalna poczta na własnej domenie",
+          "SEO, by znajdowały ją osoby szukające kaligrafii ślubnej",
+          "Projekt zrealizowany z Andromedia Web"
+        ],
+        "tags": [
+          "Web Design",
+          "SEO"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "the-office-agency",
+        "name": "The Office Agency",
+        "domain": "theofficeagency.it",
+        "sector": "Agencja rozwiązań dla firm",
+        "what": "Agencja oferująca firmom rozwiązania potrzebuje jasnej i wiarygodnej strony. Opracowaliśmy stronę z sekcjami o nas, usługi, praca u nas i kontakt, zajęliśmy się doradztwem w zakresie marki, SEO i profesjonalną pocztą, z narzędziami sztucznej inteligencji.",
+        "stack": "Web Design, SEO, AI",
+        "details": [
+          "Strona z sekcjami o nas, usługi, praca u nas i kontakt",
+          "Doradztwo w zakresie marki",
+          "Profesjonalna poczta na własnej domenie",
+          "SEO i narzędzia sztucznej inteligencji",
+          "Projekt zrealizowany z Andromedia Web"
+        ],
+        "tags": [
+          "Web Design",
+          "SEO",
+          "AI Setup"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "quartoatto",
+        "name": "QuartoAtto",
+        "domain": "quartoatto.com",
+        "sector": "Marka modowa: spodnie Made in Italy",
+        "what": "Marka spodni Made in Italy potrzebuje sklepu, który opowiada o marce tak samo dobrze, jak ją sprzedaje. Zajęliśmy się e-commerce, dedykowanym doradztwem marketingowym, grafiką, profesjonalną pocztą i narzędziami sztucznej inteligencji.",
+        "stack": "E-commerce, Marketing, AI",
+        "details": [
+          "Sklep internetowy z kolekcjami, historią marki i dziennikiem",
+          "Dedykowane doradztwo marketingowe",
+          "Grafika i profesjonalna poczta",
+          "Narzędzia sztucznej inteligencji wspierające pracę",
+          "Projekt zrealizowany z Andromedia Web"
+        ],
+        "tags": [
+          "E-commerce",
+          "Marketing",
+          "AI Setup"
+        ],
+        "mockup": "fashion"
+      },
+      {
+        "id": "cera-una-volta",
+        "name": "C'era Una Volta",
+        "domain": "gelateriaceraunavolta.com",
+        "sector": "Rzemieślnicza lodziarnia — Lucignano (AR), Włochy",
+        "what": "Rzemieślnicza lodziarnia potrzebuje strony, która zachęca do wejścia. Zrealizowaliśmy stronę z produktami, gelato cart, rzemieślniczymi wafelkami, affogato i galerią, a także media społecznościowe, grafikę i druk.",
+        "stack": "Web Design, Social Media",
+        "details": [
+          "Strona z produktami, gelato cart, rzemieślniczymi wafelkami, affogato i galerią",
+          "Strona dla chcących z nimi pracować i kontakt",
+          "Prowadzenie mediów społecznościowych",
+          "Grafika i druk",
+          "Projekt zrealizowany z Andromedia Web"
+        ],
+        "tags": [
+          "Web Design",
+          "Social Media",
+          "Marketing"
+        ],
+        "mockup": "dashboard"
+      },
+      {
         "id": "recon",
         "name": "Recon",
         "domain": "recon",

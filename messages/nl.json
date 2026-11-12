@@ -379,6 +379,111 @@
         "mockup": "3d"
       },
       {
+        "id": "dottor-canapa",
+        "name": "Dottor Canapa",
+        "domain": "dottorcanapa.com",
+        "sector": "Webshop voor legale hennep en CBD",
+        "what": "Een winkel in legale hennep leeft van vertrouwen en online zichtbaarheid. We volgden het project van webshop tot communicatie: e-commerce, productfotografie, grafisch werk en drukwerk, sociale media, SEO en gerichte marketingadvisering.",
+        "stack": "E-commerce, SEO, AI",
+        "details": [
+          "Webshop met catalogus per categorie en gratis verzending vanaf € 39",
+          "Productfotografie",
+          "Grafisch werk en drukwerk, sociale media",
+          "SEO en AI-hulpmiddelen",
+          "Project uitgevoerd met Andromedia Web"
+        ],
+        "tags": [
+          "E-commerce",
+          "SEO",
+          "Marketing",
+          "AI Setup"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "sara-calligrafia",
+        "name": "Sara Calligrafia",
+        "domain": "saracalligrafia.com",
+        "sector": "Artistieke kalligrafie voor bruiloften en evenementen",
+        "what": "Een kalligrafe heeft een website nodig die de fijnheid van haar werk toont en contact makkelijk maakt. We bouwden de site met onderdelen over haar, bruiloften, diensten, galerie en journal, pasten het logo aan en richtten het zakelijke e-mailadres in, met SEO om gevonden te worden.",
+        "stack": "Webdesign, SEO",
+        "details": [
+          "Site met schuivende homepage, bruiloften, diensten, galerie en journal",
+          "Logo aangepast aan de nieuwe site",
+          "Zakelijke e-mail op een eigen domein",
+          "SEO om gevonden te worden door wie zoekt naar bruiloftskalligrafie",
+          "Project uitgevoerd met Andromedia Web"
+        ],
+        "tags": [
+          "Webdesign",
+          "SEO"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "the-office-agency",
+        "name": "The Office Agency",
+        "domain": "theofficeagency.it",
+        "sector": "Bureau voor oplossingen voor bedrijven",
+        "what": "Een bureau dat bedrijven oplossingen biedt, heeft een duidelijke en geloofwaardige website nodig. We ontwikkelden de site met over ons, diensten, werken bij en contact, verzorgden merkadvies, SEO en zakelijke e-mail, met AI-hulpmiddelen.",
+        "stack": "Webdesign, SEO, AI",
+        "details": [
+          "Site met over ons, diensten, werken bij en contact",
+          "Merkadvies",
+          "Zakelijke e-mail op een eigen domein",
+          "SEO en AI-hulpmiddelen",
+          "Project uitgevoerd met Andromedia Web"
+        ],
+        "tags": [
+          "Webdesign",
+          "SEO",
+          "AI Setup"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "quartoatto",
+        "name": "QuartoAtto",
+        "domain": "quartoatto.com",
+        "sector": "Modemerk: broeken Made in Italy",
+        "what": "Een merk voor broeken Made in Italy heeft een shop nodig die het merk even goed vertelt als verkoopt. We verzorgden de e-commerce, gerichte marketingadvisering, grafisch werk, zakelijke e-mail en AI-hulpmiddelen.",
+        "stack": "E-commerce, Marketing, AI",
+        "details": [
+          "Webshop met collecties, merkverhaal en journal",
+          "Gerichte marketingadvisering",
+          "Grafisch werk en zakelijke e-mail",
+          "AI-hulpmiddelen ter ondersteuning van het werk",
+          "Project uitgevoerd met Andromedia Web"
+        ],
+        "tags": [
+          "E-commerce",
+          "Marketing",
+          "AI Setup"
+        ],
+        "mockup": "fashion"
+      },
+      {
+        "id": "cera-una-volta",
+        "name": "C'era Una Volta",
+        "domain": "gelateriaceraunavolta.com",
+        "sector": "Ambachtelijke ijssalon — Lucignano (AR), Italië",
+        "what": "Een ambachtelijke ijssalon heeft een website nodig die zin geeft om binnen te lopen. We bouwden de site met producten, gelato cart, ambachtelijke wafels, affogato en galerie, plus sociale media, grafisch werk en drukwerk.",
+        "stack": "Webdesign, Social media",
+        "details": [
+          "Site met producten, gelato cart, ambachtelijke wafels, affogato en galerie",
+          "Pagina om bij hen te werken en contact",
+          "Beheer van sociale media",
+          "Grafisch werk en drukwerk",
+          "Project uitgevoerd met Andromedia Web"
+        ],
+        "tags": [
+          "Webdesign",
+          "Social media",
+          "Marketing"
+        ],
+        "mockup": "dashboard"
+      },
+      {
         "id": "recon",
         "name": "Recon",
         "domain": "recon",

@@ -379,6 +379,111 @@
         "mockup": "3d"
       },
       {
+        "id": "dottor-canapa",
+        "name": "Dottor Canapa",
+        "domain": "dottorcanapa.com",
+        "sector": "Onlineshop für legalen Hanf und CBD",
+        "what": "Ein Shop für legalen Hanf lebt von Vertrauen und Sichtbarkeit im Netz. Wir haben das Projekt vom Onlineshop bis zur Kommunikation begleitet: E-Commerce, Produktfotos, Grafik und Druck, Social Media, SEO und individuelle Marketingberatung.",
+        "stack": "E-Commerce, SEO, KI",
+        "details": [
+          "Onlineshop mit Kategorien-Katalog und kostenlosem Versand ab 39 €",
+          "Produktfotoshooting",
+          "Grafik und Druck, Social Media",
+          "SEO und KI-Werkzeuge",
+          "Projekt umgesetzt mit Andromedia Web"
+        ],
+        "tags": [
+          "E-Commerce",
+          "SEO",
+          "Marketing",
+          "KI-Setup"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "sara-calligrafia",
+        "name": "Sara Calligrafia",
+        "domain": "saracalligrafia.com",
+        "sector": "Künstlerische Kalligrafie für Hochzeiten und Events",
+        "what": "Eine Kalligrafin braucht eine Website, die die Feinheit ihrer Arbeit zeigt und die Kontaktaufnahme erleichtert. Wir haben die Seite mit Bereichen über sie, Hochzeiten, Leistungen, Galerie und Journal umgesetzt, das Logo angepasst und die professionelle E-Mail eingerichtet, mit SEO, um gefunden zu werden.",
+        "stack": "Webdesign, SEO",
+        "details": [
+          "Website mit Slider-Startseite, Hochzeiten, Leistungen, Galerie und Journal",
+          "Logo an die neue Website angepasst",
+          "Professionelle E-Mail mit eigener Domain",
+          "SEO, um von Suchenden nach Hochzeitskalligrafie gefunden zu werden",
+          "Projekt umgesetzt mit Andromedia Web"
+        ],
+        "tags": [
+          "Webdesign",
+          "SEO"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "the-office-agency",
+        "name": "The Office Agency",
+        "domain": "theofficeagency.it",
+        "sector": "Agentur für Lösungen für Unternehmen",
+        "what": "Eine Agentur, die Unternehmen Lösungen anbietet, braucht eine klare und glaubwürdige Website. Wir haben die Seite mit Über uns, Leistungen, Karriere und Kontakt entwickelt, die Markenberatung, SEO und die professionelle E-Mail übernommen, mit KI-Werkzeugen.",
+        "stack": "Webdesign, SEO, KI",
+        "details": [
+          "Website mit Über uns, Leistungen, Karriere und Kontakt",
+          "Markenberatung",
+          "Professionelle E-Mail mit eigener Domain",
+          "SEO und KI-Werkzeuge",
+          "Projekt umgesetzt mit Andromedia Web"
+        ],
+        "tags": [
+          "Webdesign",
+          "SEO",
+          "KI-Setup"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "quartoatto",
+        "name": "QuartoAtto",
+        "domain": "quartoatto.com",
+        "sector": "Modemarke: Hosen Made in Italy",
+        "what": "Eine Marke für Hosen Made in Italy braucht einen Shop, der die Marke ebenso erzählt, wie er sie verkauft. Wir haben E-Commerce, individuelle Marketingberatung, Grafik, professionelle E-Mail und KI-Werkzeuge umgesetzt.",
+        "stack": "E-Commerce, Marketing, KI",
+        "details": [
+          "Onlineshop mit Kollektionen, Markengeschichte und Journal",
+          "Individuelle Marketingberatung",
+          "Grafik und professionelle E-Mail",
+          "KI-Werkzeuge zur Unterstützung der Arbeit",
+          "Projekt umgesetzt mit Andromedia Web"
+        ],
+        "tags": [
+          "E-Commerce",
+          "Marketing",
+          "KI-Setup"
+        ],
+        "mockup": "fashion"
+      },
+      {
+        "id": "cera-una-volta",
+        "name": "C'era Una Volta",
+        "domain": "gelateriaceraunavolta.com",
+        "sector": "Handwerkliche Eisdiele — Lucignano (AR), Italien",
+        "what": "Eine handwerkliche Eisdiele braucht eine Website, die Lust macht, hereinzukommen. Wir haben die Seite mit Produkten, Gelato Cart, handgemachten Waffeln, Affogato und Galerie umgesetzt, dazu Social Media, Grafik und Druck.",
+        "stack": "Webdesign, Social Media",
+        "details": [
+          "Website mit Produkten, Gelato Cart, handgemachten Waffeln, Affogato und Galerie",
+          "Seite für Bewerbungen und Kontakt",
+          "Betreuung der Social-Media-Kanäle",
+          "Grafik und Druck",
+          "Projekt umgesetzt mit Andromedia Web"
+        ],
+        "tags": [
+          "Webdesign",
+          "Social Media",
+          "Marketing"
+        ],
+        "mockup": "dashboard"
+      },
+      {
         "id": "recon",
         "name": "Recon",
         "domain": "recon",

@@ -381,6 +381,111 @@
         "mockup": "3d"
       },
       {
+        "id": "dottor-canapa",
+        "name": "Dottor Canapa",
+        "domain": "dottorcanapa.com",
+        "sector": "Negozio online di canapa legale e CBD",
+        "what": "Un negozio di canapa legale vive di fiducia e di visibilità online. Abbiamo seguito il progetto dal negozio online alla comunicazione: e-commerce, set fotografico dei prodotti, grafiche e stampe, social, SEO e consulenza marketing dedicata.",
+        "stack": "E-Commerce, SEO, AI",
+        "details": [
+          "Shop online con catalogo per categorie e spedizione gratuita sopra i 39 €",
+          "Set fotografico dei prodotti",
+          "Grafiche e stampe, social media",
+          "SEO e strumenti di intelligenza artificiale",
+          "Progetto realizzato con Andromedia Web"
+        ],
+        "tags": [
+          "E-Commerce",
+          "SEO",
+          "Marketing",
+          "Setup AI"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "sara-calligrafia",
+        "name": "Sara Calligrafia",
+        "domain": "saracalligrafia.com",
+        "sector": "Calligrafia artistica per matrimoni ed eventi",
+        "what": "Un'artista della calligrafia ha bisogno di un sito che mostri la delicatezza del suo lavoro e renda facile contattarla. Abbiamo realizzato il sito con le sezioni su di lei, matrimoni, servizi, gallery e journal, adattato il logo e attivato la mail professionale, con la SEO per farsi trovare.",
+        "stack": "WebDesign, SEO",
+        "details": [
+          "Sito con home a scorrimento, matrimoni, servizi, gallery e journal",
+          "Adattamento del logo al nuovo sito",
+          "Mail professionale con dominio proprio",
+          "SEO per farsi trovare da chi cerca calligrafia per matrimoni",
+          "Progetto realizzato con Andromedia Web"
+        ],
+        "tags": [
+          "WebDesign",
+          "SEO"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "the-office-agency",
+        "name": "The Office Agency",
+        "domain": "theofficeagency.it",
+        "sector": "Agenzia di soluzioni per le imprese",
+        "what": "Un'agenzia che offre soluzioni alle imprese ha bisogno di un sito chiaro e credibile. Abbiamo sviluppato il sito con chi siamo, servizi, lavora con noi e contatti, curato la consulenza sul marchio, la SEO e l'email professionale, con strumenti di intelligenza artificiale.",
+        "stack": "WebDesign, SEO, AI",
+        "details": [
+          "Sito con chi siamo, servizi, lavora con noi e contatti",
+          "Consulenza sul marchio",
+          "Email professionale con dominio proprio",
+          "SEO e strumenti di intelligenza artificiale",
+          "Progetto realizzato con Andromedia Web"
+        ],
+        "tags": [
+          "WebDesign",
+          "SEO",
+          "Setup AI"
+        ],
+        "mockup": "dashboard"
+      },
+      {
+        "id": "quartoatto",
+        "name": "QuartoAtto",
+        "domain": "quartoatto.com",
+        "sector": "Brand di moda: pantaloni Made in Italy",
+        "what": "Un brand di pantaloni Made in Italy ha bisogno di uno shop che racconti il marchio quanto lo vende. Abbiamo seguito l'e-commerce, la consulenza marketing dedicata, le grafiche, la mail professionale e gli strumenti di intelligenza artificiale.",
+        "stack": "E-Commerce, Marketing, AI",
+        "details": [
+          "Shop online con collezioni, storia del brand e journal",
+          "Consulenza marketing dedicata",
+          "Grafiche e mail professionale",
+          "Strumenti di intelligenza artificiale a supporto del lavoro",
+          "Progetto realizzato con Andromedia Web"
+        ],
+        "tags": [
+          "E-Commerce",
+          "Marketing",
+          "Setup AI"
+        ],
+        "mockup": "fashion"
+      },
+      {
+        "id": "cera-una-volta",
+        "name": "C'era Una Volta",
+        "domain": "gelateriaceraunavolta.com",
+        "sector": "Gelateria artigianale — Lucignano (AR)",
+        "what": "Una gelateria artigianale ha bisogno di un sito che faccia venire voglia di entrare. Abbiamo realizzato il sito con prodotti, gelato cart, cialde artigianali, affogato e gallery, più social media, grafiche e stampe.",
+        "stack": "WebDesign, Social Media",
+        "details": [
+          "Sito con prodotti, gelato cart, cialde artigianali, affogato e gallery",
+          "Pagina per chi vuole lavorare con loro e contatti",
+          "Gestione dei social media",
+          "Grafiche e stampe",
+          "Progetto realizzato con Andromedia Web"
+        ],
+        "tags": [
+          "WebDesign",
+          "Social Media",
+          "Marketing"
+        ],
+        "mockup": "dashboard"
+      },
+      {
         "id": "recon",
         "name": "Recon",
         "domain": "recon",

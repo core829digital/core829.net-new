@@ -90,6 +90,11 @@ export const CLIENTS_META: ClientMeta[] = [
   },
   // Dominio di produzione non ancora definitivo: nessun link pubblico.
   { key: "giemme-doors", anchorId: "cliente-giemme-doors" },
+  { key: "dottor-canapa", anchorId: "cliente-dottor-canapa", url: "https://dottorcanapa.com/" },
+  { key: "sara-calligrafia", anchorId: "cliente-sara-calligrafia", url: "https://saracalligrafia.com/" },
+  { key: "the-office-agency", anchorId: "cliente-the-office-agency", url: "https://theofficeagency.it/" },
+  { key: "quartoatto", anchorId: "cliente-quartoatto", url: "https://quartoatto.com/" },
+  { key: "cera-una-volta", anchorId: "cliente-cera-una-volta", url: "https://gelateriaceraunavolta.com/" },
   // Prodotto proprio in sviluppo (non ancora in produzione): nessun link.
   { key: "recon", anchorId: "cliente-recon", ownProduct: true },
 ];
@@ -112,6 +117,11 @@ export const clientAnchorIds = CLIENTS_META.map((c) => ({ id: c.anchorId }));
  * mockup astratto.
  */
 export const CLIENT_SCREENSHOTS: Record<string, string[]> = {
+  "dottorcanapa.com": ["/core829-client-ss/dottorcanapa.com.webp"],
+  "saracalligrafia.com": ["/core829-client-ss/saracalligrafia.com.webp"],
+  "theofficeagency.it": ["/core829-client-ss/theofficeagency.it.webp"],
+  "quartoatto.com": ["/core829-client-ss/quartoatto.com.webp"],
+  "gelateriaceraunavolta.com": ["/core829-client-ss/gelateriaceraunavolta.com.webp"],
   "onespec.eu": [
     "/core829-client-ss/onespec.eu.webp",
     "/core829-client-ss/onespec.eu-2.webp",
@@ -162,6 +172,11 @@ export const CLIENT_LOGOS: Record<string, string> = {
   dbyoung: "/logos/dbyoung.webp",
   "events-dbyoung": "/logos/events-dbyoung.webp",
   "giemme-doors": "/logos/giemme-doors.webp",
+  "dottor-canapa": "/logos/dottor-canapa.webp",
+  "sara-calligrafia": "/logos/sara-calligrafia.webp",
+  "the-office-agency": "/logos/the-office-agency.webp",
+  "quartoatto": "/logos/quartoatto.webp",
+  "cera-una-volta": "/logos/cera-una-volta.webp",
   // recon: nessun logo (prodotto in sviluppo): nei marquee compare solo il nome.
 };
 
@@ -180,6 +195,11 @@ export const CLIENT_LOGO_SIZE: Record<string, { w: number; h: number }> = {
   dbyoung: { w: 177, h: 160 },
   "events-dbyoung": { w: 160, h: 160 },
   "giemme-doors": { w: 470, h: 160 },
+  "dottor-canapa": { w: 600, h: 160 },
+  "sara-calligrafia": { w: 547, h: 160 },
+  "the-office-agency": { w: 226, h: 160 },
+  "quartoatto": { w: 919, h: 160 },
+  "cera-una-volta": { w: 168, h: 160 },
 };
 
 /** Loghi solo-simbolo (senza testo): nei marquee si affianca il nome. */

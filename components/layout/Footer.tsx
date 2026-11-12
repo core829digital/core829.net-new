@@ -162,7 +162,7 @@ export default function Footer() {
       <div className="border-t border-border bg-surface">
         <div className="container-core829 grid grid-cols-1 gap-10 py-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           {/* Dati societari */}
-          <div className="space-y-3 font-mono text-[11px] uppercase leading-relaxed tracking-widest text-foreground-muted lg:col-span-3">
+          <div className="space-y-3 text-sm leading-relaxed text-foreground-muted lg:col-span-3">
             <p className="flex items-start gap-2">
               <Building2 className={metaIcon} aria-hidden />
               <span>
@@ -182,7 +182,7 @@ export default function Footer() {
           </div>
 
           {/* Contatti */}
-          <div className="space-y-0 font-mono text-[11px] uppercase leading-relaxed tracking-widest text-foreground-muted lg:col-span-3">
+          <div className="space-y-0 text-sm leading-relaxed text-foreground-muted lg:col-span-3">
             <p className="flex items-center gap-2">
               <Phone className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
               <span className="flex flex-wrap items-center gap-x-1.5">
@@ -199,7 +199,7 @@ export default function Footer() {
               <Mail className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
               <a
                 href={`mailto:${COMPANY.email}`}
-                className="inline-flex min-h-11 items-center break-all lowercase transition-colors hover:text-accent"
+                className="inline-flex min-h-11 items-center break-all transition-colors hover:text-accent"
               >
                 {COMPANY.email}
               </a>
@@ -209,7 +209,7 @@ export default function Footer() {
                 <ArrowUpRight className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
                 <a
                   href={`mailto:${address}`}
-                  className="inline-flex min-h-11 items-center break-all lowercase transition-colors hover:text-accent"
+                  className="inline-flex min-h-11 items-center break-all transition-colors hover:text-accent"
                 >
                   {address}
                 </a>
@@ -219,7 +219,7 @@ export default function Footer() {
 
           {/* Founder / Co-founder */}
           <div className="md:col-span-2 lg:col-span-6">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-foreground">
+            <p className="text-sm font-semibold text-foreground">
               {t("foundersTitle")}
             </p>
             <ul className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -227,7 +227,7 @@ export default function Footer() {
                 <li key={person.key} className="border-l border-border pl-4">
                   <p className="flex items-center gap-2">
                     <UserRound className="h-3.5 w-3.5 shrink-0 text-accent" aria-hidden />
-                    <span className="font-mono text-[11px] uppercase tracking-widest text-foreground-muted">
+                    <span className="text-sm text-foreground-muted">
                       {tFounders(person.key)}
                     </span>
                   </p>

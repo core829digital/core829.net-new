@@ -1,3 +1,5 @@
+import { GLASS } from "@/lib/glass";
+import { GlassScene } from "@/components/ui/LiquidGlass";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
@@ -39,7 +41,7 @@ export default async function ChiSiamoPage({
 
   return (
     <div>
-      <section className="container-core829 py-24 lg:py-32">
+      <GlassScene className="container-core829 py-24 lg:py-32 glass-light" backdrop="/brand/glass-light.webp">
         <p className="kicker">{t("kicker")}</p>
         <h1 className="mt-4 text-section-title">{t("title")}</h1>
         <p className="mt-6 max-w-2xl text-lg text-foreground-muted">
@@ -71,9 +73,9 @@ export default async function ChiSiamoPage({
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
-          <a
+          <a {...GLASS}
             href="mailto:hello@core829.net"
-            className="group rounded-3xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent"
+            className="glass-card group rounded-3xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent"
           >
             <span className="block text-xs font-semibold uppercase tracking-widest text-accent">
               {tEmails("hello.label")}
@@ -85,9 +87,9 @@ export default async function ChiSiamoPage({
               {tEmails("hello.desc")}
             </span>
           </a>
-          <a
+          <a {...GLASS}
             href="mailto:office@core829.net"
-            className="group rounded-3xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent"
+            className="glass-card group rounded-3xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent"
           >
             <span className="block text-xs font-semibold uppercase tracking-widest text-accent">
               {tEmails("office.label")}
@@ -100,7 +102,7 @@ export default async function ChiSiamoPage({
             </span>
           </a>
         </div>
-      </section>
+      </GlassScene>
     </div>
   );
 }

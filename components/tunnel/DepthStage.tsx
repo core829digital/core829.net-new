@@ -24,7 +24,9 @@ import {
   type MotionValue,
 } from "framer-motion";
 import { GlassScene } from "@/components/ui/LiquidGlass";
-import { GLASS, NO_GLASS } from "@/lib/glass";
+import { GlassGateContext } from "@/lib/glassGate";
+import NeuralNoise from "@/components/ui/neural-noise";
+import { tunnelNav } from "@/lib/tunnelNav";
 import { scrollToSlide } from "@/lib/scrollTo";
 import { useSimpleMode } from "@/lib/simpleMode";
 import { cn } from "@/lib/utils";
@@ -47,21 +49,14 @@ import { cn } from "@/lib/utils";
 
 export type StageMode = "tunnel" | "flat";
 
-/** Indice della slide attiva e se la slide corrente lo è: il vetro (max 16 elementi per scena) va solo su quella. */
-const SlideActiveContext = createContext(false);
-
-/**
- * Attributi `glass` per un elemento della slide: attivi solo quando la slide è quella corrente, così la scena
- * non supera mai i 16 elementi vetro. Fuori dal tunnel (modalità flat) restituisce un oggetto vuoto.
- */
-export function useGlassAttr(): Record<string, string> {
-  return useContext(SlideActiveContext) ? GLASS : NO_GLASS;
-}
+export { useGlassAttr } from "@/lib/glassGate";
 
 /** Altezza di scroll (in svh) tra una slide e la successiva. */
 export const SEG = 115;
 /** Distanza Z (px) tra due slide consecutive. */
 const GAP = 900;
+/** Nero Pista (#141416) in componenti 0-1: fondo opaco del flusso neurale. */
+const NOISE_BG = [0.0784, 0.0784, 0.0863] as const;
 const PERSPECTIVE = 1200;
 /** Sotto questa altezza di viewport le slide non entrano: modalità flat. */
 const MIN_HEIGHT = 560;
@@ -377,6 +372,38 @@ function Stage({
   slides: ReactElement<{ index?: number }>[];
 }) {
   const [active, setActive] = useState(0);
+  const [noiseCanvas, setNoiseCanvas] = useState<HTMLCanvasElement | null>(null);
+  const navSlotRef = useRef<HTMLDivElement>(null);
+
+  // La barra di navigazione vive nella scena finché questa sta sotto di lei (inizio e corpo del tunnel).
+  useEffect(() => {
+    const slot = navSlotRef.current;
+    const host = slot?.parentElement;
+    if (!slot || !host) return;
+    tunnelNav.setSlot(slot);
+    let raf = 0;
+    const update = () => {
+      raf = 0;
+      const r = host.getBoundingClientRect();
+      tunnelNav.setActive(r.top <= 1 && r.bottom >= 96);
+      tunnelNav.setPast(r.bottom < 96);
+    };
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (raf) cancelAnimationFrame(raf);
+      tunnelNav.setActive(false);
+      tunnelNav.setPast(false);
+      tunnelNav.setSlot(null);
+    };
+  }, []);
+
   useMotionValueEvent(camera, "change", (c) => {
     setActive(Math.round(c));
   });
@@ -399,10 +426,21 @@ function Stage({
   return (
     <GlassScene
       className="tunnel-dark tunnel-scene"
-      backdrop="/brand/neural-flow.mp4"
-      dim={0.08}
+      backdrop="/brand/neural-flow-poster.jpg"
+      source={noiseCanvas}
+      dim={0.12}
       style={{ "--image": "url(/brand/neural-flow-poster.jpg)" } as CSSProperties}
     >
+      {/* Sfondo: il flusso neurale originale, interattivo (segue il puntatore), disegnato dal canvas e rifratto dal vetro. */}
+      <NeuralNoise
+        background={NOISE_BG}
+        onCanvas={setNoiseCanvas}
+        resolution={0.8}
+        maxDpr={1.5}
+        className="opacity-0"
+      />
+      {/* Slot della barra di navigazione: la barra è un elemento `glass` della stessa scena (vedi lib/tunnelNav.ts). */}
+      <div ref={navSlotRef} className="contents" />
 
       <div
         className="absolute inset-0"
@@ -414,9 +452,9 @@ function Stage({
         >
           <TunnelRings camera={camera} />
           {slides.map((s, i) => (
-            <SlideActiveContext.Provider key={i} value={active === i}>
+            <GlassGateContext.Provider key={i} value={active === i}>
               {cloneElement(s, { index: i })}
-            </SlideActiveContext.Provider>
+            </GlassGateContext.Provider>
           ))}
         </motion.div>
       </div>

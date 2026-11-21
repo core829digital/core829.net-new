@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
+import { createPortal } from "react-dom";
 import { Menu, X, ChevronDown, LogIn } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
@@ -9,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import { GlassScene } from "@/components/ui/LiquidGlass";
 import { GLASS } from "@/lib/glass";
+import { tunnelNav } from "@/lib/tunnelNav";
 import { useGoToSection } from "@/lib/useGoToSection";
 import { Button } from "@/components/ui/Button";
 import { PORTAL_URL, SERVICES_META } from "@/lib/constants";
@@ -47,7 +49,10 @@ export default function Navbar() {
     mo.observe(document.documentElement, { attributes: true, attributeFilter: ["data-stage"] });
     return () => mo.disconnect();
   }, []);
-  const dark = onHome && !flat;
+  const past = useSyncExternalStore(tunnelNav.subscribe, tunnelNav.getPast, tunnelNav.getServerPast);
+  const dark = onHome && !flat && !past;
+  // Nella home a tunnel la barra è un elemento `glass` della scena del tunnel (stesso sfondo animato dietro e nel vetro).
+  const tunnelSlot = useSyncExternalStore(tunnelNav.subscribe, tunnelNav.getSnapshot, tunnelNav.getServerSnapshot);
 
   useEffect(() => {
     if (menuOpen) {
@@ -83,19 +88,7 @@ export default function Navbar() {
   const pillCta =
     "h-11 whitespace-nowrap px-4 font-mono text-[10px] uppercase tracking-[0.08em] 2xl:px-5";
 
-  return (
-    <>
-      <header
-        data-home={onHome ? "" : undefined}
-        className="nav-root fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-[max(0.75rem,env(safe-area-inset-top))] sm:px-6"
-      >
-        {/* Capsula flottante sempre visibile: nessun contorno, solo ombra
-            morbida e sfondo traslucido su layer proprio. */}
-        <GlassScene
-          className={cn("nav-scene h-14 w-full rounded-full xl:w-auto", !dark && "glass-light")}
-          backdrop={dark ? "/brand/glass-dark.webp" : "/brand/glass-light.webp"}
-          dim={dark ? 0.3 : 0}
-        >
+  const pill = (
         <div {...GLASS} className="glass-bar relative flex h-14 w-full items-center justify-between gap-1 rounded-full pl-4 pr-1.5 xl:w-auto xl:justify-start xl:pl-3">
 
           {/* Logo → home */}
@@ -186,8 +179,29 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-        </GlassScene>
-      </header>
+  );
+
+  const headerClass =
+    "nav-root fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-[max(0.75rem,env(safe-area-inset-top))] sm:px-6";
+  const header = tunnelSlot ? (
+    <header data-dark="" className={headerClass}>
+      {pill}
+    </header>
+  ) : (
+    <header data-dark={dark ? "" : undefined} className={headerClass}>
+      <GlassScene
+        className={cn("nav-scene h-14 w-full rounded-full xl:w-auto", !dark && "glass-light")}
+        backdrop={dark ? "/brand/glass-flat-dark.png" : "/brand/glass-flat-light.png"}
+        lazy={false}
+      >
+        {pill}
+      </GlassScene>
+    </header>
+  );
+
+  return (
+    <>
+      {tunnelSlot ? createPortal(header, tunnelSlot) : header}
 
       {/* Menu a tutto schermo (mobile/tablet) */}
       <AnimatePresence>

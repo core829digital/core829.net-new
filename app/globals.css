@@ -657,25 +657,6 @@ html[data-simple="1"] .marquee-track {
   }
 }
 
-/* Riflesso morbido che segue il cursore sulle schede dei servizi (solo mouse, mai con "riduci animazioni"). */
-.spotlight {
-  position: relative;
-  --mx: 50%;
-  --my: 0%;
-}
-.spotlight::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  background: radial-gradient(380px circle at var(--mx) var(--my), rgb(255 39 67 / 0.06), transparent 60%);
-}
-@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .spotlight:hover::before { opacity: 1; }
-}
-
 /* Il testo rosso piccolo usa la variante AA (#D92037): leggibile anche sulle sezioni Ice Grey. Fondi, bordi e CTA restano Racing Red. */
 .text-accent {
   color: rgb(var(--rgb-accent-text) / var(--tw-text-opacity, 1));
@@ -687,7 +668,7 @@ html[data-simple="1"] .marquee-track {
    La barra di navigazione prende lo stesso tema finché il tunnel è attivo (html[data-stage="tunnel"]).
    ============================================================ */
 .tunnel-dark,
-:is(html[data-stage="tunnel"] .nav-root, html:not([data-stage]) .nav-root[data-home]) {
+.nav-root[data-dark] {
   --color-background: #141416;
   --color-foreground: #f8f8f8;
   --color-foreground-muted: #a8a8ad;
@@ -703,13 +684,13 @@ html[data-simple="1"] .marquee-track {
   color: var(--color-foreground);
 }
 .tunnel-dark .glass-bar,
-:is(html[data-stage="tunnel"] .nav-root, html:not([data-stage]) .nav-root[data-home]) .glass-bar {
+.nav-root[data-dark] .glass-bar {
   background-color: rgb(20 20 22 / 0.55);
   border-color: rgb(248 248 248 / 0.2);
   box-shadow: 0 10px 28px -16px rgb(0 0 0 / 0.6);
 }
 .tunnel-dark .glass-panel,
-:is(html[data-stage="tunnel"] .nav-root, html:not([data-stage]) .nav-root[data-home]) .glass-panel {
+.nav-root[data-dark] .glass-panel {
   background-color: #1d1d20;
   border-color: rgb(248 248 248 / 0.16);
 }
@@ -724,7 +705,7 @@ html[data-simple="1"] .marquee-track {
 }
 /* Pulsanti secondari nel tema scuro: contorno chiaro su Nero Pista (come .btn-on-dark). */
 .tunnel-dark .btn-secondary:not(.btn-on-dark),
-:is(html[data-stage="tunnel"] .nav-root, html:not([data-stage]) .nav-root[data-home]) .btn-secondary:not(.btn-on-dark) {
+.nav-root[data-dark] .btn-secondary:not(.btn-on-dark) {
   --btn-bg: transparent;
   --btn-bg-hover: var(--color-paper);
   --btn-bg-active: #e2e2e4;
@@ -733,17 +714,17 @@ html[data-simple="1"] .marquee-track {
   --btn-border: rgb(248 248 248 / 0.7);
 }
 .tunnel-dark .btn-ghost:not(.btn-on-dark),
-:is(html[data-stage="tunnel"] .nav-root, html:not([data-stage]) .nav-root[data-home]) .btn-ghost:not(.btn-on-dark) {
+.nav-root[data-dark] .btn-ghost:not(.btn-on-dark) {
   --btn-bg-hover: rgb(248 248 248 / 0.14);
   --btn-bg-active: rgb(248 248 248 / 0.22);
 }
 .logo-on-dark {
   display: none;
 }
-:is(html[data-stage="tunnel"] .nav-root, html:not([data-stage]) .nav-root[data-home]) .logo-on-dark {
+.nav-root[data-dark] .logo-on-dark {
   display: block;
 }
-:is(html[data-stage="tunnel"] .nav-root, html:not([data-stage]) .nav-root[data-home]) .logo-on-light {
+.nav-root[data-dark] .logo-on-light {
   display: none;
 }
 
@@ -772,7 +753,8 @@ liquid-glass[data-renderer="webgl"][data-ready] [glass] {
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
 }
-/* Barra di navigazione: scena grande quanto la capsula (il menu a tendina può uscirne). */
+/* Barra di navigazione: scena grande quanto la capsula (il menu a tendina può uscirne). Vale quando la barra non sta
+   dentro la scena del tunnel (pagine interne e fine della home). */
 liquid-glass.nav-scene {
   overflow: visible;
   border-radius: 9999px;
@@ -781,12 +763,7 @@ liquid-glass.nav-scene::part(canvas),
 liquid-glass.nav-scene::part(fallback) {
   border-radius: 9999px;
 }
-liquid-glass.nav-scene .glass-bar {
-  --glass-tint: rgba(248, 248, 248, 0.62);
-  --glass-frost: 0.2;
-  --glass-pull: 0;
-}
-/* Tunnel della home: la scena è lo stage a tutta altezza. */
+/* Tunnel della home: la scena è lo stage a tutta altezza; lo sfondo è il flusso neurale interattivo (canvas live). */
 liquid-glass.tunnel-scene {
   position: sticky;
   top: 0;
@@ -794,36 +771,89 @@ liquid-glass.tunnel-scene {
   height: 100svh;
   overflow: hidden;
 }
-liquid-glass.tunnel-scene [glass].card-lift {
-  --glass-tint: rgba(29, 29, 32, 0.5);
-  --glass-frost: 0.18;
+
+/* ── Colore del testo sul vetro (costante: normale, hover e pressione restano leggibili) ── */
+liquid-glass {
+  --glass-fg: #f8f8f8; /* scene scure: Bianco Polare */
 }
-liquid-glass.tunnel-scene [glass].btn-primary {
-  --glass-tint: rgba(255, 39, 67, 0.9);
-  --glass-frost: 0.1;
+liquid-glass.glass-light {
+  --glass-fg: #141416; /* scene chiare: Nero Pista */
 }
-liquid-glass.tunnel-scene [glass].btn-secondary {
-  --glass-tint: rgba(248, 248, 248, 0.1);
-  --glass-frost: 0.1;
+liquid-glass.glass-red {
+  --glass-fg: #141416;
 }
-/* Pagine interne: sezioni su sfondo chiaro. */
-liquid-glass.glass-light [glass].card-lift,
-liquid-glass.glass-light [glass].glass-card {
-  --glass-tint: rgba(255, 255, 255, 0.55);
-  --glass-frost: 0.3;
+liquid-glass.glass-dark {
+  --image: url(/brand/glass-dark.webp);
+}
+
+/* ── Pulsanti: sempre vetro, mai un colore piatto. Il Rosso Racing è solo una tinta del vetro. ── */
+liquid-glass [glass].btn {
+  --btn-fg: var(--glass-fg);
+  --btn-fg-hover: var(--glass-fg);
+  --btn-border: transparent;
+  --btn-bg-hover: transparent;
+  --btn-bg-active: transparent;
+  --glass-shadow: 0.12;
+  color: var(--glass-fg);
+}
+liquid-glass [glass].btn:hover,
+liquid-glass [glass].btn:active,
+liquid-glass [glass].btn:focus-visible {
+  color: var(--glass-fg);
+}
+liquid-glass [glass].btn-primary {
+  --glass-tint: rgba(255, 39, 67, 0.42);
+  --glass-frost: 0.22;
+}
+liquid-glass [glass].btn-secondary,
+liquid-glass [glass].btn-ghost {
+  --glass-tint: rgba(20, 20, 22, 0.3);
+  --glass-frost: 0.2;
 }
 liquid-glass.glass-light [glass].btn-primary {
-  --glass-tint: rgba(255, 39, 67, 0.9);
-  --glass-frost: 0.1;
+  --glass-tint: rgba(255, 39, 67, 0.32);
 }
-liquid-glass.glass-light [glass].btn-secondary {
-  --glass-tint: rgba(255, 255, 255, 0.6);
+liquid-glass.glass-light [glass].btn-secondary,
+liquid-glass.glass-light [glass].btn-ghost {
+  --glass-tint: rgba(255, 255, 255, 0.55);
+  --glass-frost: 0.2;
+}
+liquid-glass.glass-red [glass].btn-primary {
+  --glass-tint: rgba(248, 248, 248, 0.45);
+}
+liquid-glass.glass-red [glass].btn-secondary {
+  --glass-tint: rgba(255, 255, 255, 0.25);
+}
+
+/* ── Card: vetro traslucido pulito. Nessun punto di luce, nessuna barra rossa, nessun colore piatto. ── */
+liquid-glass [glass].card-lift,
+liquid-glass [glass].glass-card {
+  --glass-tint: rgba(20, 20, 22, 0.3);
+  --glass-frost: 0.2;
+  color: var(--glass-fg);
+}
+liquid-glass.glass-light [glass].card-lift,
+liquid-glass.glass-light [glass].glass-card {
+  --glass-tint: rgba(255, 255, 255, 0.45);
   --glass-frost: 0.25;
 }
-:is(html[data-stage="tunnel"] .nav-root, html:not([data-stage]) .nav-root[data-home]) liquid-glass.nav-scene .glass-bar {
-  --glass-tint: rgba(20, 20, 22, 0.45);
-  --glass-frost: 0.15;
+liquid-glass [glass].card-lift::before {
+  display: none;
 }
-liquid-glass.glass-light [glass].btn {
-  --glass-shadow: 0.06;
+liquid-glass [glass].card-lift:hover,
+liquid-glass [glass].card-lift:focus-visible {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+/* ── Barra di navigazione ── */
+liquid-glass [glass].glass-bar {
+  --glass-tint: rgba(248, 248, 248, 0.5);
+  --glass-frost: 0.18;
+  --glass-pull: 0;
+}
+.nav-root[data-dark] liquid-glass [glass].glass-bar,
+.tunnel-scene [glass].glass-bar {
+  --glass-tint: rgba(20, 20, 22, 0.52);
+  --glass-frost: 0.28;
 }

@@ -1,3 +1,4 @@
+import { GlassScene } from "@/components/ui/LiquidGlass";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
@@ -39,17 +40,17 @@ export default async function MetodoPage({
 
   return (
     <div>
-      <section className="container-core829 py-24 lg:py-32">
+      <GlassScene className="container-core829 py-24 lg:py-32 glass-light" backdrop="/brand/glass-light.webp">
         <p className="kicker">{t("kicker")}</p>
         <h1 className="mt-4 text-section-title">{t("title")}</h1>
         <p className="mt-6 max-w-2xl text-lg text-foreground-muted">
           {t("subtitle")}
         </p>
-      </section>
+      </GlassScene>
 
       <PinnedSteps />
 
-      <section className="container-core829 py-24">
+      <GlassScene className="container-core829 py-24 glass-light" backdrop="/brand/glass-light.webp">
         <div className="max-w-2xl">
           <h2 className="text-xl font-semibold tracking-tight">
             {t("approachTitle")}
@@ -58,7 +59,7 @@ export default async function MetodoPage({
             {t("approach")}
           </p>
         </div>
-      </section>
+      </GlassScene>
     </div>
   );
 }

@@ -10,11 +10,11 @@ export function bookingUrl(locale: string): string {
   return `${BASE}/book/${SLUG}?lang=${encodeURIComponent(locale)}`;
 }
 
-/** Widget incorporato (iframe): colore d'accento del sito, font Inter, lingua del sito. */
+/** Widget incorporato (iframe): colore d'accento del sito (Rosso Racing), font DM Sans, lingua del sito. */
 export function bookingEmbedUrl(locale: string): string {
   const params = new URLSearchParams({
-    accent: "#dd1a2b",
-    font: "Inter",
+    accent: "#FF2743",
+    font: "DM Sans",
     lang: locale,
   });
   return `${BASE}/embed/${SLUG}?${params.toString()}`;

@@ -67,7 +67,7 @@ export default function Navbar() {
   };
 
   const pillCta =
-    "h-11 px-5 font-mono text-[11px] uppercase tracking-[0.14em]";
+    "h-11 whitespace-nowrap px-4 font-mono text-[10px] uppercase tracking-[0.08em] 2xl:px-5";
 
   return (
     <>
@@ -86,11 +86,12 @@ export default function Navbar() {
             aria-label="CORE829"
           >
             <Image
-              src="/core829-logo/829black%20trsp.webp"
+              src="/brand/symbol-red.svg"
               alt="CORE829"
-              width={120}
-              height={32}
+              width={44}
+              height={30}
               priority
+              unoptimized
               className="h-7 w-auto"
             />
           </Link>
@@ -241,7 +242,7 @@ export default function Navbar() {
 }
 
 const navItemCls =
-  "flex min-h-11 items-center gap-1.5 whitespace-nowrap rounded-full px-3 font-mono text-[11px] uppercase tracking-[0.12em] text-foreground-muted transition-colors duration-300 hover:text-accent";
+  "flex min-h-11 items-center gap-1.5 whitespace-nowrap rounded-full px-2.5 font-mono text-[10px] uppercase tracking-[0.08em] text-foreground-muted transition-colors duration-300 hover:text-accent";
 
 function NavLink({
   href,

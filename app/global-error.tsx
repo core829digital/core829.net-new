@@ -31,9 +31,9 @@ export default function GlobalError({
           justifyContent: "center",
           padding: "2rem",
           fontFamily:
-            "'Saans Text', Saans, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
-          backgroundColor: "#ffffff",
-          color: "#111217",
+            "'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+          backgroundColor: "#f8f8f8",
+          color: "#141416",
         }}
       >
         <div style={{ maxWidth: "28rem", textAlign: "center" }}>
@@ -52,9 +52,9 @@ export default function GlobalError({
           <h1 style={{ fontSize: "1.5rem", fontWeight: 600, margin: 0 }}>
             Something went wrong
           </h1>
-          <p style={{ marginTop: "0.75rem", color: "#555555", lineHeight: 1.6 }}>
+          <p style={{ marginTop: "0.75rem", color: "#58585d", lineHeight: 1.6 }}>
             An unexpected error occurred. Please try again, or contact us at{" "}
-            <a href="mailto:hello@core829.net" style={{ color: "#111217" }}>
+            <a href="mailto:hello@core829.net" style={{ color: "#141416" }}>
               hello@core829.net
             </a>
             .
@@ -67,8 +67,8 @@ export default function GlobalError({
                 padding: "0.625rem 1.5rem",
                 fontSize: "0.875rem",
                 fontWeight: 500,
-                color: "#ffffff",
-                backgroundColor: "#e52139",
+                color: "#141416",
+                backgroundColor: "#ff2743",
                 border: "none",
                 borderRadius: "9999px",
                 minHeight: "44px",
@@ -84,8 +84,8 @@ export default function GlobalError({
                 padding: "0.625rem 1.5rem",
                 fontSize: "0.875rem",
                 fontWeight: 500,
-                color: "#111217",
-                border: "1px solid #d4d4d4",
+                color: "#141416",
+                border: "1px solid #c8c8cb",
                 borderRadius: "9999px",
                 minHeight: "44px",
                 display: "inline-flex",

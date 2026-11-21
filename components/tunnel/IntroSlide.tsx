@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useLocale, useMessages, useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
-import { DepthItem, DepthSlide } from "@/components/tunnel/DepthStage";
+import { DepthItem, DepthSlide, useGlassAttr } from "@/components/tunnel/DepthStage";
 import NeuralNoise from "@/components/ui/neural-noise";
 import { Button } from "@/components/ui/Button";
 import { bookingUrl } from "@/lib/booking";
@@ -17,6 +17,7 @@ export default function IntroSlide({ index }: { index?: number }) {
   const t = useTranslations("hero");
   const locale = useLocale();
   const messages = useMessages();
+  const g = useGlassAttr();
   const headline = (messages.hero as unknown as { headline: string[] }).headline.join(" ");
 
   return (
@@ -68,6 +69,7 @@ export default function IntroSlide({ index }: { index?: number }) {
         <DepthItem dir={[0, 1]} depth={0.6} delay={3}>
           <div className="mt-7 sm:mt-9">
             <Button
+              {...g}
               href={bookingUrl(locale)}
               variant="primary"
               tone="dark"

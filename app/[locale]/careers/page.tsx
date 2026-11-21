@@ -1,3 +1,5 @@
+import { GLASS } from "@/lib/glass";
+import { GlassScene } from "@/components/ui/LiquidGlass";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
@@ -39,14 +41,14 @@ export default async function CareersPage({
 
   return (
     <div>
-      <section className="container-core829 py-24 lg:py-32">
+      <GlassScene className="container-core829 py-24 lg:py-32 glass-light" backdrop="/brand/glass-light.webp">
         <p className="kicker">{t("kicker")}</p>
         <h1 className="mt-4 text-section-title">{t("title")}</h1>
         <p className="mt-6 max-w-2xl text-lg text-foreground-muted">
           {t("subtitle")}
         </p>
 
-        <div className="mt-16 max-w-2xl rounded-3xl border border-border bg-surface p-8 sm:p-10">
+        <div {...GLASS} className="glass-card mt-16 max-w-2xl rounded-3xl border border-border bg-surface p-8 sm:p-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted">
             {t("comingSoon")}
           </p>
@@ -65,7 +67,7 @@ export default async function CareersPage({
             </Button>
           </div>
         </div>
-      </section>
+      </GlassScene>
     </div>
   );
 }

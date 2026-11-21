@@ -9,6 +9,7 @@ import type {
   Ref,
 } from "react";
 import { useGoToSection } from "@/lib/useGoToSection";
+import { useGlassAttr } from "@/lib/glassGate";
 
 import { buttonClasses, type ButtonVariant as Variant, type ButtonTone as Tone } from "@/components/ui/buttonStyles";
 
@@ -38,6 +39,7 @@ export const Button = forwardRef<
 ) {
   const classes = buttonClasses(variant, className, tone);
   const goToSection = useGoToSection();
+  const glass = useGlassAttr();
 
   if (isAnchor(props)) {
     const { href, target, onClick, children, ...rest } = props;
@@ -57,6 +59,7 @@ export const Button = forwardRef<
           onClick?.(e);
         }}
         className={classes}
+        {...(variant === "ghost" ? {} : glass)}
         {...rest}
       >
         {children}
@@ -77,6 +80,7 @@ export const Button = forwardRef<
       onClick={onClick as MouseEventHandler<HTMLButtonElement> | undefined}
       className={classes}
       aria-busy={loading || undefined}
+      {...(variant === "ghost" ? {} : glass)}
       {...rest}
       disabled={loading || rest.disabled}
     >

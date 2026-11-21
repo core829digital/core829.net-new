@@ -1,3 +1,4 @@
+import { GlassScene } from "@/components/ui/LiquidGlass";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
@@ -75,7 +76,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     return (
       <div>
         <ServerServicePage />
-        <section className="border-t border-border bg-surface">
+        <GlassScene className="border-t border-border glass-light" backdrop="/brand/glass-light.webp">
           <div className="container-core829 flex flex-col gap-4 py-10 sm:flex-row sm:items-center sm:justify-between">
             <Link
               href={`/servizi/${prev.key}`}
@@ -106,14 +107,14 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden />
             </Link>
           </div>
-        </section>
+        </GlassScene>
       </div>
     );
   }
 
   return (
     <div>
-      <section className="container-core829 py-24 lg:py-32">
+      <GlassScene className="container-core829 py-24 lg:py-32 glass-light" backdrop="/brand/glass-light.webp">
         <Link
           href="/servizi"
           className="inline-flex items-center gap-2 text-sm text-foreground-muted transition-colors hover:text-accent"
@@ -178,9 +179,9 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           </a>{" "}
           — {t("projectsMail")}
         </p>
-      </section>
+      </GlassScene>
 
-      <section className="border-t border-border bg-surface">
+      <GlassScene className="border-t border-border glass-light" backdrop="/brand/glass-light.webp">
         <div className="container-core829 flex flex-col gap-4 py-10 sm:flex-row sm:items-center sm:justify-between">
           <Link
             href={`/servizi/${prev.key}`}
@@ -211,7 +212,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden />
           </Link>
         </div>
-      </section>
+      </GlassScene>
     </div>
   );
 }

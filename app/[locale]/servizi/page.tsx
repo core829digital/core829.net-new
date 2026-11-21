@@ -1,3 +1,4 @@
+import { GlassScene } from "@/components/ui/LiquidGlass";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
@@ -47,7 +48,7 @@ export default async function ServiziPage({
 
   return (
     <div>
-      <section className="container-core829 py-24 lg:py-32">
+      <GlassScene className="container-core829 glass-light py-24 lg:py-32" backdrop="/brand/glass-light.webp">
         <p className="kicker">{t("kicker")}</p>
         <h1 className="mt-4 text-section-title">{t("title")}</h1>
         <p className="mt-6 max-w-2xl text-lg text-foreground-muted">
@@ -59,7 +60,7 @@ export default async function ServiziPage({
             <ServiceCard key={s.key} index={s.index} displayNumber={visibleIndex + 1} />
           ))}
         </div>
-      </section>
+      </GlassScene>
     </div>
   );
 }

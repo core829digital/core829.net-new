@@ -11,7 +11,7 @@ import {
   Globe,
   HardDrive,
 } from "lucide-react";
-import { DepthItem, DepthSlide, radial } from "@/components/tunnel/DepthStage";
+import { DepthItem, DepthSlide, radial, useGlassAttr } from "@/components/tunnel/DepthStage";
 import { DepthCount, SlideHeading, slideCard } from "@/components/tunnel/parts";
 import LogoMarquee from "@/components/ui/LogoMarquee";
 import AccordionItem from "@/components/ui/AccordionItem";
@@ -100,6 +100,7 @@ export function ProblemSlide({ index }: SlideProps) {
 /* ─────────── Servizi ─────────── */
 
 export function ServicesSlide({ index }: SlideProps) {
+  const g = useGlassAttr();
   const t = useTranslations("solution");
   const tCta = useTranslations("finalCta");
   const messages = useMessages();
@@ -130,6 +131,7 @@ export function ServicesSlide({ index }: SlideProps) {
               className="min-h-0"
             >
               <Link
+                {...g}
                 href={`/servizi/${meta.key}`}
                 id={meta.anchorId}
                 className={cn(slideCard, "group flex h-full items-center gap-3 p-3 sm:flex-col sm:items-start sm:gap-5 sm:p-6 xl:gap-8 xl:p-8")}
@@ -175,6 +177,7 @@ const SERVER_CASE_ICONS = [Cpu, Film, HardDrive, Gamepad2, Globe];
  * pagina dedicata, dove il cliente può anche chiamare.
  */
 export function ServerSlide({ index }: SlideProps) {
+  const g = useGlassAttr();
   const t = useTranslations("homeServers");
   const messages = useMessages();
   const cases = (messages.homeServers as unknown as { cases: { t: string; d: string }[] }).cases;
@@ -196,6 +199,7 @@ export function ServerSlide({ index }: SlideProps) {
               className={cn("min-h-0", last && "col-span-2 lg:col-span-1")}
             >
               <Link
+                {...g}
                 href="/servizi/server"
                 className={cn(
                   slideCard,
@@ -219,7 +223,7 @@ export function ServerSlide({ index }: SlideProps) {
         })}
       </ul>
       <DepthItem dir={[0, 1]} delay={2}>
-        <Link href="/servizi/server" className={buttonClasses("primary")}>
+        <Link {...g} href="/servizi/server" className={buttonClasses("primary")}>
           {t("cta")}
           <ArrowRight className="h-4 w-4" aria-hidden />
         </Link>
@@ -309,6 +313,7 @@ export function FeaturesSlide({ index }: SlideProps) {
 /* ─────────── Modelli di collaborazione ─────────── */
 
 export function PricingSlide({ index }: SlideProps) {
+  const g = useGlassAttr();
   const t = useTranslations("pricing");
   const messages = useMessages();
   const models = (messages.pricing as unknown as { models: { title: string; desc: string; points: string[] }[] })
@@ -338,7 +343,7 @@ export function PricingSlide({ index }: SlideProps) {
         ))}
       </ul>
       <DepthItem dir={[0, 1]} delay={3}>
-        <Button href="mailto:sales@core829.net?subject=Request%20a%20quote" variant="primary">
+        <Button {...g} href="mailto:sales@core829.net?subject=Request%20a%20quote" variant="primary">
           {t("cta")}
           <ArrowRight className="h-4 w-4" aria-hidden />
         </Button>
@@ -379,6 +384,7 @@ export function FaqSlide({ index }: SlideProps) {
 /* ─────────── Contatto finale ─────────── */
 
 export function CtaSlide({ index }: SlideProps) {
+  const g = useGlassAttr();
   const t = useTranslations("finalCta");
   const locale = useLocale();
 
@@ -391,11 +397,11 @@ export function CtaSlide({ index }: SlideProps) {
       />
       <DepthItem dir={[0, 1]} depth={0.8}>
         <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
-          <Button href={bookingUrl(locale)} variant="primary">
+          <Button {...g} href={bookingUrl(locale)} variant="primary">
             {t("cta")}
             <ArrowRight className="h-4 w-4" aria-hidden />
           </Button>
-          <Link href="/contatti" className={buttonClasses("secondary")}>
+          <Link {...g} href="/contatti" className={buttonClasses("secondary")}>
             {t("kicker")}
           </Link>
         </div>

@@ -87,6 +87,15 @@ interface NeuralNoiseProps {
   style?: React.CSSProperties;
   /** Ferma il rendering (es. quando l'hero non è più visibile). */
   paused?: boolean;
+  /**
+   * Colore di fondo opaco (0-1). Se presente il canvas è opaco (flusso composto sul fondo) e può essere usato come
+   * sorgente live di una scena liquid-glass.
+   */
+  background?: RGB;
+  /** Riceve il canvas WebGL (per usarlo come sorgente live). Con questo il buffer di disegno viene conservato. */
+  onCanvas?: (canvas: HTMLCanvasElement | null) => void;
+  /** Tetto del rapporto pixel del dispositivo (default 2). */
+  maxDpr?: number;
 }
 
 function compile(gl: WebGLRenderingContext, type: number, src: string) {
@@ -110,12 +119,18 @@ export function NeuralNoise({
   className,
   style,
   paused = false,
+  background,
+  onCanvas,
+  maxDpr = 2,
 }: NeuralNoiseProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [failed, setFailed] = useState(false);
   // Valori correnti letti dal loop senza riavviare l'effetto
   const live = useRef({ paused, color, speed });
   live.current = { paused, color, speed };
+  const onCanvasRef = useRef(onCanvas);
+  onCanvasRef.current = onCanvas;
+  const bgKey = background ? background.join(",") : "";
   const colorKey = color.join(",");
 
   useEffect(() => {
@@ -123,12 +138,12 @@ export function NeuralNoise({
     if (!canvas) return;
 
     const gl = (canvas.getContext("webgl", {
-      alpha: true,
+      alpha: !background,
       antialias: false,
       depth: false,
       stencil: false,
-      powerPreference: "low-power",
-      preserveDrawingBuffer: false,
+      powerPreference: "high-performance",
+      preserveDrawingBuffer: !!onCanvasRef.current,
     }) || canvas.getContext("experimental-webgl")) as WebGLRenderingContext | null;
     if (!gl) {
       setFailed(true);
@@ -181,7 +196,7 @@ export function NeuralNoise({
     let destroyed = false;
 
     const resize = () => {
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const dpr = Math.min(window.devicePixelRatio || 1, maxDpr);
       const scale = Math.max(0.3, Math.min(1, resolution)) * dpr;
       const w = Math.max(2, Math.round(canvas.clientWidth * scale));
       const h = Math.max(2, Math.round(canvas.clientHeight * scale));
@@ -199,8 +214,15 @@ export function NeuralNoise({
       gl.uniform1f(u.speed, live.current.speed);
       gl.uniform1f(u.time, elapsed);
       gl.uniform2f(u.pointer, pointer.x, 1 - pointer.y);
-      gl.clearColor(0, 0, 0, 0);
-      gl.clear(gl.COLOR_BUFFER_BIT);
+      if (background) {
+        gl.clearColor(background[0], background[1], background[2], 1);
+        gl.clear(gl.COLOR_BUFFER_BIT);
+        gl.enable(gl.BLEND);
+        gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA); // il flusso (premoltiplicato) si compone sul fondo: canvas opaco
+      } else {
+        gl.clearColor(0, 0, 0, 0);
+        gl.clear(gl.COLOR_BUFFER_BIT);
+      }
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
     };
 
@@ -224,6 +246,7 @@ export function NeuralNoise({
       raf = requestAnimationFrame(loop);
     };
 
+    onCanvasRef.current?.(canvas);
     resize();
     elapsed = 4000; // fotogramma iniziale già "sviluppato"
     draw();
@@ -262,6 +285,7 @@ export function NeuralNoise({
 
     return () => {
       destroyed = true;
+      onCanvasRef.current?.(null);
       if (raf) cancelAnimationFrame(raf);
       ro.disconnect();
       io.disconnect();
@@ -276,7 +300,8 @@ export function NeuralNoise({
       // contesto; forzarlo romperebbe il doppio mount di React StrictMode.
     };
     // colorKey/resolution: ricreano il contesto solo se cambiano davvero
-  }, [colorKey, resolution]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- background e onCanvas sono letti tramite bgKey e ref
+  }, [colorKey, resolution, bgKey, maxDpr]);
 
   return (
     <div

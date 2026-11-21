@@ -1,5 +1,6 @@
 "use client";
 
+import { GlassScene } from "@/components/ui/LiquidGlass";
 import { ArrowUpRight, Building2, Phone, Mail, MapPin, Clock, UserRound, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
@@ -44,7 +45,8 @@ export default function Footer() {
   const metaIcon = "mt-0.5 h-3.5 w-3.5 shrink-0 text-accent";
 
   return (
-    <footer className="border-t border-border bg-background">
+    <footer className="border-t border-border">
+    <GlassScene className="glass-light" backdrop="/brand/glass-light.webp">
       {/* Livello 1: brand + navigazione */}
       <div className="container-core829 grid grid-cols-1 gap-12 py-16 lg:grid-cols-12 lg:gap-8 lg:py-20">
         {/* Brand */}
@@ -309,6 +311,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+    </GlassScene>
     </footer>
   );
 }

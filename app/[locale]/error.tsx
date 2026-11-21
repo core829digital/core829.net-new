@@ -1,5 +1,6 @@
 "use client";
 
+import { GlassScene } from "@/components/ui/LiquidGlass";
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -19,7 +20,7 @@ export default function LocaleError({
   }, [error]);
 
   return (
-    <section className="container-core829 flex min-h-[70vh] flex-col items-center justify-center text-center">
+    <GlassScene className="container-core829 flex min-h-[70vh] flex-col items-center justify-center text-center glass-light" backdrop="/brand/glass-light.webp">
       <p className="kicker mb-4">{t("kicker")}</p>
       <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
         {t("title")}
@@ -33,6 +34,6 @@ export default function LocaleError({
           {t("back")}
         </Link>
       </div>
-    </section>
+    </GlassScene>
   );
 }

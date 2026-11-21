@@ -1,5 +1,6 @@
 "use client";
 
+import { GlassScene } from "@/components/ui/LiquidGlass";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "@/i18n/navigation";
@@ -23,9 +24,13 @@ export default function CookieBanner() {
             role="dialog"
             aria-modal="false"
             aria-label={t("bannerTitle")}
-            className="container-core829 fixed inset-x-0 bottom-0 z-[85] border-t border-border bg-background/95 py-4 backdrop-blur-md sm:py-6"
-            style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}
+            className="fixed inset-x-0 bottom-0 z-[85] border-t border-border"
           >
+           <GlassScene
+            className="container-core829 glass-light py-4 sm:py-6"
+            backdrop="/brand/glass-light.webp"
+            style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}
+           >
             <div className="flex w-full flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-2xl">
                 <p className="text-sm font-semibold tracking-tight text-foreground">
@@ -53,6 +58,7 @@ export default function CookieBanner() {
                 </Button>
               </div>
             </div>
+           </GlassScene>
           </motion.div>
         )}
       </AnimatePresence>

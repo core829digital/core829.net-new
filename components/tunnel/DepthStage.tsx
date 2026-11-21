@@ -10,6 +10,7 @@ import {
   useMemo,
   useRef,
   useState,
+  type CSSProperties,
   type ReactElement,
   type ReactNode,
 } from "react";
@@ -22,7 +23,10 @@ import {
   useTransform,
   type MotionValue,
 } from "framer-motion";
+import { GlassScene } from "@/components/ui/LiquidGlass";
+import { GlassGateContext } from "@/lib/glassGate";
 import NeuralNoise from "@/components/ui/neural-noise";
+import { tunnelNav } from "@/lib/tunnelNav";
 import { scrollToSlide } from "@/lib/scrollTo";
 import { useSimpleMode } from "@/lib/simpleMode";
 import { cn } from "@/lib/utils";
@@ -45,10 +49,14 @@ import { cn } from "@/lib/utils";
 
 export type StageMode = "tunnel" | "flat";
 
+export { useGlassAttr } from "@/lib/glassGate";
+
 /** Altezza di scroll (in svh) tra una slide e la successiva. */
 export const SEG = 115;
 /** Distanza Z (px) tra due slide consecutive. */
 const GAP = 900;
+/** Nero Pista (#141416) in componenti 0-1: fondo opaco del flusso neurale. */
+const NOISE_BG = [0.0784, 0.0784, 0.0863] as const;
 const PERSPECTIVE = 1200;
 /** Sotto questa altezza di viewport le slide non entrano: modalità flat. */
 const MIN_HEIGHT = 560;
@@ -129,6 +137,13 @@ function useStageMode() {
 
   // La scelta esplicita dell'utente (versione semplice) vince sul rilevamento automatico.
   const mode: StageMode = simple ? "flat" : auto;
+  // Segnala alla pagina (barra di navigazione) quale modalità è attiva: "tunnel" = home su fondo scuro.
+  useEffect(() => {
+    document.documentElement.dataset.stage = mode;
+    return () => {
+      delete document.documentElement.dataset.stage;
+    };
+  }, [mode]);
   return { mode, dimsRef };
 }
 
@@ -336,9 +351,7 @@ export default function DepthStage({ children, labels, className }: DepthStagePr
           className={cn("relative", className)}
           style={{ height: `calc(100svh + ${(count - 1) * SEG}svh)` }}
         >
-          <Stage camera={camera} count={count} labels={labels} sectionRef={sectionRef}>
-            {slides.map((s, i) => cloneElement(s, { index: i, key: i }))}
-          </Stage>
+          <Stage camera={camera} count={count} labels={labels} sectionRef={sectionRef} slides={slides} />
         </section>
       )}
     </StageContext.Provider>
@@ -350,26 +363,50 @@ function Stage({
   count,
   labels,
   sectionRef,
-  children,
+  slides,
 }: {
   camera: MotionValue<number>;
   count: number;
   labels: string[];
   sectionRef: React.RefObject<HTMLElement | null>;
-  children: ReactNode;
+  slides: ReactElement<{ index?: number }>[];
 }) {
   const [active, setActive] = useState(0);
+  const [noiseCanvas, setNoiseCanvas] = useState<HTMLCanvasElement | null>(null);
+  const navSlotRef = useRef<HTMLDivElement>(null);
+
+  // La barra di navigazione vive nella scena finché questa sta sotto di lei (inizio e corpo del tunnel).
+  useEffect(() => {
+    const slot = navSlotRef.current;
+    const host = slot?.parentElement;
+    if (!slot || !host) return;
+    tunnelNav.setSlot(slot);
+    let raf = 0;
+    const update = () => {
+      raf = 0;
+      const r = host.getBoundingClientRect();
+      tunnelNav.setActive(r.top <= 1 && r.bottom >= 96);
+      tunnelNav.setPast(r.bottom < 96);
+    };
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (raf) cancelAnimationFrame(raf);
+      tunnelNav.setActive(false);
+      tunnelNav.setPast(false);
+      tunnelNav.setSlot(null);
+    };
+  }, []);
+
   useMotionValueEvent(camera, "change", (c) => {
     setActive(Math.round(c));
   });
-
-  // Segnala alla pagina (barra di navigazione) che il tunnel scuro è attivo.
-  useEffect(() => {
-    document.documentElement.dataset.tunnel = "";
-    return () => {
-      delete document.documentElement.dataset.tunnel;
-    };
-  }, []);
 
   // Look-around con il puntatore (solo dispositivi con mouse)
   const px = useMotionValue(0);
@@ -387,11 +424,23 @@ function Stage({
   }, [px, py]);
 
   return (
-    <div className="tunnel-dark sticky top-0 h-[100svh] w-full overflow-hidden bg-ink">
-      {/* Lo sfondo animato dell'hero accompagna tutto il tunnel (tutte le sezioni sono su Nero Pista). */}
-      <div aria-hidden className="absolute inset-0">
-        <NeuralNoise />
-      </div>
+    <GlassScene
+      className="tunnel-dark tunnel-scene"
+      backdrop="/brand/neural-flow-poster.jpg"
+      source={noiseCanvas}
+      dim={0.12}
+      style={{ "--image": "url(/brand/neural-flow-poster.jpg)" } as CSSProperties}
+    >
+      {/* Sfondo: il flusso neurale originale, interattivo (segue il puntatore), disegnato dal canvas e rifratto dal vetro. */}
+      <NeuralNoise
+        background={NOISE_BG}
+        onCanvas={setNoiseCanvas}
+        resolution={0.8}
+        maxDpr={1.5}
+        className="opacity-0"
+      />
+      {/* Slot della barra di navigazione: la barra è un elemento `glass` della stessa scena (vedi lib/tunnelNav.ts). */}
+      <div ref={navSlotRef} className="contents" />
 
       <div
         className="absolute inset-0"
@@ -402,12 +451,16 @@ function Stage({
           style={{ transformStyle: "preserve-3d", rotateX: rotX, rotateY: rotY }}
         >
           <TunnelRings camera={camera} />
-          {children}
+          {slides.map((s, i) => (
+            <GlassGateContext.Provider key={i} value={active === i}>
+              {cloneElement(s, { index: i })}
+            </GlassGateContext.Provider>
+          ))}
         </motion.div>
       </div>
 
       <StageNav labels={labels} active={active} count={count} sectionRef={sectionRef} />
-    </div>
+    </GlassScene>
   );
 }
 

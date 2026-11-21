@@ -1,3 +1,5 @@
+import { GLASS } from "@/lib/glass";
+import { GlassScene } from "@/components/ui/LiquidGlass";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { buttonClasses } from "@/components/ui/buttonStyles";
@@ -51,14 +53,14 @@ export default async function LandingPage({
 
   return (
     <div>
-      <section className="container-core829 py-24 lg:py-32">
+      <GlassScene className="container-core829 py-24 lg:py-32 glass-light" backdrop="/brand/glass-light.webp">
         <p className="kicker">{t("kicker")}</p>
         <h1 className="mt-4 max-w-4xl text-section-title">{t("title")}</h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground-muted">
           {t("intro")}
         </p>
         <div className="mt-10 flex flex-wrap items-center gap-4">
-          <a
+          <a {...GLASS}
             href={bookingUrl(locale)}
             target="_blank"
             rel="noopener noreferrer"
@@ -67,18 +69,18 @@ export default async function LandingPage({
             {t("cta")}
           </a>
           {secondaryHref.startsWith("#") ? (
-            <a href={secondaryHref} className={secondaryClass}>
+            <a {...GLASS} href={secondaryHref} className={secondaryClass}>
               {t("ctaSecondary")}
             </a>
           ) : (
-            <Link href={secondaryHref} className={secondaryClass}>
+            <Link {...GLASS} href={secondaryHref} className={secondaryClass}>
               {t("ctaSecondary")}
             </Link>
           )}
         </div>
-      </section>
+      </GlassScene>
 
-      <section className="border-t border-border bg-surface">
+      <GlassScene className="border-t border-border glass-light" backdrop="/brand/glass-light.webp">
         <div className="container-core829 py-20">
           <h2 className="max-w-3xl text-3xl font-semibold tracking-tight">
             {t("whenTitle")}
@@ -92,25 +94,25 @@ export default async function LandingPage({
             ))}
           </ul>
         </div>
-      </section>
+      </GlassScene>
 
-      <section>
+      <GlassScene className="glass-light" backdrop="/brand/glass-light.webp">
         <div className="container-core829 py-20">
           <h2 className="max-w-3xl text-3xl font-semibold tracking-tight">
             {t("buildTitle")}
           </h2>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
             {build.map((item, i) => (
-              <article key={i} className="card-lift border border-border bg-background p-8">
+              <article {...GLASS} key={i} className="glass-card card-lift border border-border bg-background p-8">
                 <h3 className="text-xl font-semibold tracking-tight">{item.t}</h3>
                 <p className="mt-3 leading-relaxed text-foreground-muted">{item.d}</p>
               </article>
             ))}
           </div>
         </div>
-      </section>
+      </GlassScene>
 
-      <section className="border-t border-border bg-surface">
+      <GlassScene className="border-t border-border glass-light" backdrop="/brand/glass-light.webp">
         <div className="container-core829 py-20">
           <h2 className="max-w-3xl text-3xl font-semibold tracking-tight">
             {t("howTitle")}
@@ -127,25 +129,25 @@ export default async function LandingPage({
             ))}
           </ol>
         </div>
-      </section>
+      </GlassScene>
 
-      <section id="progetti">
+      <GlassScene id="progetti" className="glass-light" backdrop="/brand/glass-light.webp">
         <div className="container-core829 py-20">
           <h2 className="max-w-3xl text-3xl font-semibold tracking-tight">
             {t("proofTitle")}
           </h2>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
             {proof.map((item, i) => (
-              <article key={i} className="card-lift border border-border bg-background p-8">
+              <article {...GLASS} key={i} className="glass-card card-lift border border-border bg-background p-8">
                 <h3 className="text-lg font-semibold tracking-tight">{item.t}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-foreground-muted">{item.d}</p>
               </article>
             ))}
           </div>
         </div>
-      </section>
+      </GlassScene>
 
-      <section className="border-t border-border bg-surface">
+      <GlassScene className="border-t border-border glass-light" backdrop="/brand/glass-light.webp">
         <div className="container-core829 py-20">
           <h2 className="max-w-3xl text-3xl font-semibold tracking-tight">
             {t("faqTitle")}
@@ -167,14 +169,14 @@ export default async function LandingPage({
             ))}
           </div>
         </div>
-      </section>
+      </GlassScene>
 
-      <section>
+      <GlassScene className="glass-light" backdrop="/brand/glass-light.webp">
         <div className="container-core829 py-24 text-center">
           <h2 className="mx-auto max-w-3xl text-section-title">{t("ctaTitle")}</h2>
           <p className="mx-auto mt-4 max-w-xl text-foreground-muted">{t("ctaDesc")}</p>
           <div className="mt-8 flex justify-center">
-            <a
+            <a {...GLASS}
               href={bookingUrl(locale)}
               target="_blank"
               rel="noopener noreferrer"
@@ -184,7 +186,7 @@ export default async function LandingPage({
             </a>
           </div>
         </div>
-      </section>
+      </GlassScene>
 
       <script
         type="application/ld+json"

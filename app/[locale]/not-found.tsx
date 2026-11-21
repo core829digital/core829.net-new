@@ -1,3 +1,4 @@
+import { GlassScene } from "@/components/ui/LiquidGlass";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
@@ -5,7 +6,7 @@ export default async function LocaleNotFound() {
   const t = await getTranslations("notFound");
 
   return (
-    <section className="container-core829 flex min-h-[70vh] flex-col items-center justify-center text-center">
+    <GlassScene className="container-core829 flex min-h-[70vh] flex-col items-center justify-center text-center glass-light" backdrop="/brand/glass-light.webp">
       <p className="kicker mb-4">404</p>
       <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
         {t("title")}
@@ -14,6 +15,6 @@ export default async function LocaleNotFound() {
       <Link href="/" className="link-ghost mt-8">
         {t("back")}
       </Link>
-    </section>
+    </GlassScene>
   );
 }

@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { buttonClasses } from "@/components/ui/buttonStyles";
+import { bookingUrl } from "@/lib/booking";
 
 type Namespace = "landingSoftware" | "landingAi";
 
@@ -13,7 +14,6 @@ interface Faq {
   a: string;
 }
 
-const BOOKING_URL = "https://bookings.core829.net/book/intro-call";
 
 /**
  * Pagina di destinazione SEO (server component, nessun JS client):
@@ -59,7 +59,7 @@ export default async function LandingPage({
         </p>
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <a
-            href={BOOKING_URL}
+            href={bookingUrl(locale)}
             target="_blank"
             rel="noopener noreferrer"
             className={buttonClasses("primary")}
@@ -175,7 +175,7 @@ export default async function LandingPage({
           <p className="mx-auto mt-4 max-w-xl text-foreground-muted">{t("ctaDesc")}</p>
           <div className="mt-8 flex justify-center">
             <a
-              href={BOOKING_URL}
+              href={bookingUrl(locale)}
               target="_blank"
               rel="noopener noreferrer"
               className={buttonClasses("primary")}

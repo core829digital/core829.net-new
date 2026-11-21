@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown, LogIn } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { Link, useRouter } from "@/i18n/navigation";
 import { useGoToSection } from "@/lib/useGoToSection";
@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/Button";
 import { PORTAL_URL, SERVICES_META } from "@/lib/constants";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { SocialLinks } from "@/components/SocialIcons";
+import { bookingUrl } from "@/lib/booking";
 
 /**
  * Navbar sticky con hide-on-scroll-down / show-on-scroll-up.
@@ -21,6 +22,7 @@ import { SocialLinks } from "@/components/SocialIcons";
  */
 export default function Navbar() {
   const t = useTranslations("nav");
+  const locale = useLocale();
   const tServices = useTranslations("solution.services");
   const serverIndex = SERVICES_META.findIndex((s) => s.key === "server");
   const serverMeta = SERVICES_META[serverIndex];
@@ -65,7 +67,7 @@ export default function Navbar() {
   };
 
   const pillCta =
-    "h-11 px-5 font-mono text-[11px] uppercase tracking-[0.14em]";
+    "h-11 whitespace-nowrap px-4 font-mono text-[10px] uppercase tracking-[0.08em] 2xl:px-5";
 
   return (
     <>
@@ -84,11 +86,12 @@ export default function Navbar() {
             aria-label="CORE829"
           >
             <Image
-              src="/core829-logo/829black%20trsp.webp"
+              src="/brand/symbol-red.svg"
               alt="CORE829"
-              width={120}
-              height={32}
+              width={44}
+              height={30}
               priority
+              unoptimized
               className="h-7 w-auto"
             />
           </Link>
@@ -126,7 +129,7 @@ export default function Navbar() {
                 <span className="sr-only 2xl:not-sr-only">{t("clientArea")}</span>
               </Button>
               <Button
-                href="https://bookings.core829.net/book/intro-call"
+                href={bookingUrl(locale)}
                 variant="secondary"
                 className={pillCta}
               >
@@ -211,7 +214,7 @@ export default function Navbar() {
                   {t("clientArea")}
                 </Button>
                 <Button
-                  href="https://bookings.core829.net/book/intro-call"
+                  href={bookingUrl(locale)}
                   variant="secondary"
                   className="w-full"
                   onClick={() => setMenuOpen(false)}
@@ -239,7 +242,7 @@ export default function Navbar() {
 }
 
 const navItemCls =
-  "flex min-h-11 items-center gap-1.5 whitespace-nowrap rounded-full px-3 font-mono text-[11px] uppercase tracking-[0.12em] text-foreground-muted transition-colors duration-300 hover:text-accent";
+  "flex min-h-11 items-center gap-1.5 whitespace-nowrap rounded-full px-2.5 font-mono text-[10px] uppercase tracking-[0.08em] text-foreground-muted transition-colors duration-300 hover:text-accent";
 
 function NavLink({
   href,

@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useMessages, useTranslations } from "next-intl";
+import { useLocale, useMessages, useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { DepthItem, DepthSlide } from "@/components/tunnel/DepthStage";
 import NeuralNoise from "@/components/ui/neural-noise";
 import { Button } from "@/components/ui/Button";
+import { bookingUrl } from "@/lib/booking";
 
 /**
  * Intro: flusso neurale rosso a tutto schermo, loghi CORE829 e CORE829 Servers
@@ -14,6 +15,7 @@ import { Button } from "@/components/ui/Button";
  */
 export default function IntroSlide({ index }: { index?: number }) {
   const t = useTranslations("hero");
+  const locale = useLocale();
   const messages = useMessages();
   const headline = (messages.hero as unknown as { headline: string[] }).headline.join(" ");
 
@@ -35,11 +37,12 @@ export default function IntroSlide({ index }: { index?: number }) {
         <div className="flex items-center justify-center gap-5 sm:gap-10">
           <DepthItem dir={[-1, 0.2]} depth={1.2}>
             <Image
-              src="/core829-logo/829white.webp"
+              src="/brand/symbol-white.svg"
               alt="CORE829"
-              width={589}
-              height={400}
+              width={1022}
+              height={692}
               priority
+              unoptimized
               className="h-[clamp(4.5rem,15vmin,10rem)] w-auto select-none"
             />
           </DepthItem>
@@ -57,7 +60,7 @@ export default function IntroSlide({ index }: { index?: number }) {
         </div>
 
         <DepthItem dir={[0, 1]} depth={0.8} delay={2}>
-          <h1 className="mt-7 max-w-[22ch] font-display text-xl font-medium leading-tight tracking-tight text-white sm:mt-10 sm:max-w-3xl sm:text-3xl">
+          <h1 className="mt-7 max-w-[22ch] font-brand text-lg leading-tight text-white sm:mt-10 sm:max-w-3xl sm:text-2xl">
             {headline}
           </h1>
         </DepthItem>
@@ -65,7 +68,7 @@ export default function IntroSlide({ index }: { index?: number }) {
         <DepthItem dir={[0, 1]} depth={0.6} delay={3}>
           <div className="mt-7 sm:mt-9">
             <Button
-              href="https://bookings.core829.net/book/intro-call"
+              href={bookingUrl(locale)}
               variant="primary"
               tone="dark"
             >

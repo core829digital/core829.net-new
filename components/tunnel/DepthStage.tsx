@@ -358,7 +358,7 @@ function Stage({
   sectionRef: React.RefObject<HTMLElement | null>;
   children: ReactNode;
 }) {
-  const bg = useTransform(camera, [0, 0.55], ["#0b0b0c", "#ffffff"]);
+  const bg = useTransform(camera, [0, 0.55], ["#141416", "#f8f8f8"]);
   const noiseOpacity = useTransform(camera, [0, 0.5], [1, 0]);
   const dotsOpacity = useTransform(camera, [0.3, 0.9], [0, 0.55]);
   const [noisePaused, setNoisePaused] = useState(false);

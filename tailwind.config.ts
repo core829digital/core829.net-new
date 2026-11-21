@@ -38,12 +38,13 @@ const config: Config = {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         display: ["var(--font-display)", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+        brand: ["var(--font-brand)", "system-ui", "sans-serif"],
       },
       fontSize: {
-        // Scala fluida dei titoli (stack Saans / Inter come Andromedia Web).
-        "display-sm": ["clamp(1.75rem, 1.2rem + 2.6vw, 3rem)", { lineHeight: "1.1", letterSpacing: "-0.025em" }],
-        display: ["clamp(1.9rem, 0.9rem + 3.1vw, 4.1rem)", { lineHeight: "1.06", letterSpacing: "-0.03em" }],
-        "section-title": ["clamp(1.65rem, 1rem + 2.4vw, 3.25rem)", { lineHeight: "1.1", letterSpacing: "-0.025em" }],
+        // Scala fluida dei titoli: Michroma è un carattere largo, quindi corpi più contenuti.
+        "display-sm": ["clamp(1.35rem, 1rem + 1.8vw, 2.25rem)", { lineHeight: "1.18", letterSpacing: "0" }],
+        display: ["clamp(1.5rem, 0.8rem + 2.3vw, 3.1rem)", { lineHeight: "1.14", letterSpacing: "0" }],
+        "section-title": ["clamp(1.3rem, 0.9rem + 1.7vw, 2.4rem)", { lineHeight: "1.18", letterSpacing: "0" }],
         "section-subtitle": ["clamp(1.15rem, 0.9rem + 1vw, 1.75rem)", { lineHeight: "1.3", letterSpacing: "-0.01em" }],
       },
       maxWidth: {

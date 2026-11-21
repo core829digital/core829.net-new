@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 /** Titolo di slide: scala con la larghezza ma non supera il 5.4% dell'altezza (schermi bassi). */
 export const SLIDE_TITLE =
-  "text-[clamp(1.4rem,min(1rem+2.4vw,5.4svh),3.25rem)] leading-[1.1] tracking-[-0.025em]";
+  "font-brand text-[clamp(1.1rem,min(0.8rem+1.7vw,4.4svh),2.4rem)] leading-[1.2]";
 
 /** Intestazione di slide: kicker mono + titolo display (poche parole). */
 export function SlideHeading({

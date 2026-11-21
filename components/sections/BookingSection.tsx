@@ -1,7 +1,8 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import { bookingEmbedUrl } from "@/lib/booking";
 
 /**
  * Prenotazione in tempo reale: widget incorporato, in flusso normale tra la
@@ -10,6 +11,7 @@ import RevealOnScroll from "@/components/animations/RevealOnScroll";
  */
 export default function BookingSection() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <section id="prenota" className="relative border-t border-border bg-surface">
@@ -22,9 +24,11 @@ export default function BookingSection() {
           <h2 className="mt-4 text-section-subtitle">{t("hero.ctaPrimary")}</h2>
           <div className="mt-8 overflow-hidden rounded-3xl border border-border bg-background">
             <iframe
-              src="https://bookings.core829.net/embed/intro-call?accent=%23e11d2e&font=Inter"
+              // key: al cambio lingua il widget si ricarica con la nuova lingua
+              key={locale}
+              src={bookingEmbedUrl(locale)}
               width="100%"
-              height={700}
+              height={720}
               loading="lazy"
               style={{ border: 0, display: "block" }}
               title={t("nav.bookCta")}

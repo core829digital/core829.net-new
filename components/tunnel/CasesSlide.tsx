@@ -49,7 +49,7 @@ export default function CasesSlide({ index }: { index?: number }) {
   return (
     <DepthSlide index={index} id="clienti">
       <SlideHeading kicker={t("kicker")} title={t("title")} />
-      <ul className="grid w-full max-w-6xl grid-cols-3 gap-2 sm:grid-cols-4 sm:gap-4 lg:grid-cols-5">
+      <ul className="grid w-full max-w-6xl grid-cols-4 gap-1.5 sm:grid-cols-5 sm:gap-3 lg:gap-4">
         {projects.map((p, i) => {
           const meta = CLIENTS_META.find((c) => c.key === p.id);
           const shot = CLIENT_SCREENSHOTS[p.domain]?.[0];
@@ -68,7 +68,7 @@ export default function CasesSlide({ index }: { index?: number }) {
                 onClick={() => setOpenId(p.id)}
                 className={cn(slideCard, "group block w-full overflow-hidden text-left")}
               >
-                <span className="relative block aspect-[2/1] overflow-hidden bg-surface">
+                <span className="relative block aspect-[2/1] overflow-hidden bg-surface lg:aspect-[5/2]">
                   {shot ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
@@ -83,7 +83,7 @@ export default function CasesSlide({ index }: { index?: number }) {
                     <ProjectMockup variant={p.mockup} />
                   )}
                 </span>
-                <span className="flex items-center justify-between gap-2 p-2.5 sm:p-4">
+                <span className="flex items-center justify-between gap-2 p-2 sm:p-3 lg:p-3.5">
                   <span className="min-w-0">
                     <span className="block line-clamp-2 font-display text-[0.72rem] leading-tight tracking-tight sm:truncate sm:text-base">
                       {p.name}

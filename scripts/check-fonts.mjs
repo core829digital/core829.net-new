@@ -7,7 +7,7 @@ import { join, relative } from "node:path";
 const ROOTS = ["src", "app", "convex", "components"].filter((d) => { try { return statSync(d).isDirectory(); } catch { return false; } });
 const IGNORE = new Set(["node_modules", ".next", "_generated", "messages"]);
 // Famiglie ammesse: lo stack del brand (token o nomi del brand) e i generici di sistema come ultimo ripiego.
-const ALLOWED = /^(\$\{[A-Z_]+\}?|var\(--font-[a-z-]+\)|inherit|"?Saans( Text| Display)?"?|'Saans( Text| Display)?'|Inter|"?JetBrains Mono"?|ui-sans-serif|ui-monospace|system-ui|-apple-system|BlinkMacSystemFont|"?Segoe UI"?|'Segoe UI'|Roboto|Arial|Helvetica|sans-serif|monospace|SFMono-Regular)$/i;
+const ALLOWED = /^(\$\{[A-Z_]+\}?|var\(--font-[a-z-]+\)|inherit|"?Michroma"?|"?DM Sans"?|ui-sans-serif|ui-monospace|system-ui|-apple-system|BlinkMacSystemFont|"?Segoe UI"?|'Segoe UI'|Roboto|Arial|Helvetica|sans-serif|monospace|SFMono-Regular)$/i;
 const ALLOWED_FILES = [/globals\.css$/, /tailwind\.config\.(ts|js)$/, /layout\.tsx$/];
 
 const problems = [];
@@ -37,4 +37,4 @@ if (problems.length) {
   console.error("Font non uniformi:\n- " + [...new Set(problems)].join("\n- "));
   process.exit(1);
 }
-console.log("Font OK: nessuna famiglia fuori dallo stack del brand (Saans → Inter, JetBrains Mono per i dettagli tecnici).");
+console.log("Font OK: nessuna famiglia fuori dallo stack del brand (Michroma per titoli ed etichette, DM Sans per i testi).");

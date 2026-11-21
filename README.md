@@ -34,8 +34,11 @@ Variabili d'ambiente: `NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY`, `CONTACT_FROM_EM
 - **Hero** (`components/ui/neural-noise.tsx`): shader WebGL a risoluzione ridotta, in pausa
   fuori schermo e a tab nascosta, con fallback CSS.
 - **Design system** (`app/globals.css`, `tailwind.config.ts`): token colore con canali RGB
-  (`rgb(var(--rgb-x) / <alpha>)`), font Saans (se installato) → Inter + JetBrains Mono (stack identico ad Andromedia Web),
-  pulsanti capsula in vetro (`.btn*`), pannelli (`.glass-panel`), card a raggio 24px.
+  (`rgb(var(--rgb-x) / <alpha>)`). **Brand Guidelines 1.0 (novembre 2026)**: Rosso Racing `#FF2743`,
+  Bianco Polare `#F8F8F8`, Nero Pista `#141416`, tinta piatta (nessuna sfumatura); font Michroma (H1, titoli di sezione,
+  etichette, in maiuscolo) e DM Sans (testi, titoli di scheda, interfacce); simbolo in `public/brand/` (SVG ufficiali).
+  Il bianco su rosso (3,5:1) è ammesso solo per testi grandi: i pulsanti usano testo Nero Pista su rosso (4,9:1) e il
+  rosso scurito `#D31B37` per il testo piccolo rosso su fondo chiaro. Pulsanti capsula (`.btn*`), card a raggio 24px.
   Regole Apple HIG: vetro solo su controlli/navigazione, area di tocco ≥44px, testo ≥11px,
   fallback per reduced transparency/contrast.
 - **i18n** (`messages/*.json`, `i18n/request.ts`): EN è la lingua di fallback; i case study

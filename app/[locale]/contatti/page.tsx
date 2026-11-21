@@ -1,3 +1,5 @@
+import { GlassScene } from "@/components/ui/LiquidGlass";
+import { GLASS } from "@/lib/glass";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
@@ -44,7 +46,7 @@ export default async function ContattiPage({
 
   return (
     <div>
-      <section className="container-core829 py-24 lg:py-32">
+      <GlassScene className="container-core829 glass-light py-24 lg:py-32" backdrop="/brand/glass-light.webp">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="max-w-xl">
             <p className="kicker">{t("kicker")}</p>
@@ -77,12 +79,12 @@ export default async function ContattiPage({
             </div>
           </div>
 
-          <div className="rounded-3xl border border-border bg-surface p-8">
+          <div {...GLASS} className="glass-card rounded-3xl border border-border bg-surface p-8">
             <ContactForm />
           </div>
         </div>
 
-        <div className="mt-16 rounded-3xl border border-border bg-surface p-8 md:max-w-3xl">
+        <div {...GLASS} className="glass-card mt-16 rounded-3xl border border-border bg-surface p-8 md:max-w-3xl">
           <p className="tech-label">{COMPANY.legalName}</p>
           <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div>
@@ -167,7 +169,7 @@ export default async function ContattiPage({
             ))}
           </ul>
         </div>
-      </section>
+      </GlassScene>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useMessages, useTranslations } from "next-intl";
 import { ArrowUpRight, X } from "lucide-react";
-import { DepthItem, DepthSlide, radial } from "@/components/tunnel/DepthStage";
+import { DepthItem, DepthSlide, radial, useGlassAttr } from "@/components/tunnel/DepthStage";
 import { SlideHeading, slideCard } from "@/components/tunnel/parts";
 import Badge from "@/components/ui/Badge";
 import ClientScreenshot from "@/components/ui/ClientScreenshot";
@@ -37,6 +37,7 @@ interface Project {
  * un dialog accessibile.
  */
 export default function CasesSlide({ index }: { index?: number }) {
+  const g = useGlassAttr();
   const t = useTranslations("caseStudies");
   const messages = useMessages();
   const projects = (messages.caseStudies as unknown as { projects: Project[] }).projects;
@@ -62,6 +63,7 @@ export default function CasesSlide({ index }: { index?: number }) {
               rotate={(i % 2 ? 1 : -1) * 4}
             >
               <button
+                {...g}
                 type="button"
                 id={meta?.anchorId}
                 aria-haspopup="dialog"

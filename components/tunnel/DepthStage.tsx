@@ -10,6 +10,7 @@ import {
   useMemo,
   useRef,
   useState,
+  type CSSProperties,
   type ReactElement,
   type ReactNode,
 } from "react";
@@ -22,7 +23,8 @@ import {
   useTransform,
   type MotionValue,
 } from "framer-motion";
-import NeuralNoise from "@/components/ui/neural-noise";
+import { GlassScene } from "@/components/ui/LiquidGlass";
+import { GLASS, NO_GLASS } from "@/lib/glass";
 import { scrollToSlide } from "@/lib/scrollTo";
 import { useSimpleMode } from "@/lib/simpleMode";
 import { cn } from "@/lib/utils";
@@ -44,6 +46,17 @@ import { cn } from "@/lib/utils";
  */
 
 export type StageMode = "tunnel" | "flat";
+
+/** Indice della slide attiva e se la slide corrente lo è: il vetro (max 16 elementi per scena) va solo su quella. */
+const SlideActiveContext = createContext(false);
+
+/**
+ * Attributi `glass` per un elemento della slide: attivi solo quando la slide è quella corrente, così la scena
+ * non supera mai i 16 elementi vetro. Fuori dal tunnel (modalità flat) restituisce un oggetto vuoto.
+ */
+export function useGlassAttr(): Record<string, string> {
+  return useContext(SlideActiveContext) ? GLASS : NO_GLASS;
+}
 
 /** Altezza di scroll (in svh) tra una slide e la successiva. */
 export const SEG = 115;
@@ -129,6 +142,13 @@ function useStageMode() {
 
   // La scelta esplicita dell'utente (versione semplice) vince sul rilevamento automatico.
   const mode: StageMode = simple ? "flat" : auto;
+  // Segnala alla pagina (barra di navigazione) quale modalità è attiva: "tunnel" = home su fondo scuro.
+  useEffect(() => {
+    document.documentElement.dataset.stage = mode;
+    return () => {
+      delete document.documentElement.dataset.stage;
+    };
+  }, [mode]);
   return { mode, dimsRef };
 }
 
@@ -336,9 +356,7 @@ export default function DepthStage({ children, labels, className }: DepthStagePr
           className={cn("relative", className)}
           style={{ height: `calc(100svh + ${(count - 1) * SEG}svh)` }}
         >
-          <Stage camera={camera} count={count} labels={labels} sectionRef={sectionRef}>
-            {slides.map((s, i) => cloneElement(s, { index: i, key: i }))}
-          </Stage>
+          <Stage camera={camera} count={count} labels={labels} sectionRef={sectionRef} slides={slides} />
         </section>
       )}
     </StageContext.Provider>
@@ -350,26 +368,18 @@ function Stage({
   count,
   labels,
   sectionRef,
-  children,
+  slides,
 }: {
   camera: MotionValue<number>;
   count: number;
   labels: string[];
   sectionRef: React.RefObject<HTMLElement | null>;
-  children: ReactNode;
+  slides: ReactElement<{ index?: number }>[];
 }) {
   const [active, setActive] = useState(0);
   useMotionValueEvent(camera, "change", (c) => {
     setActive(Math.round(c));
   });
-
-  // Segnala alla pagina (barra di navigazione) che il tunnel scuro è attivo.
-  useEffect(() => {
-    document.documentElement.dataset.tunnel = "";
-    return () => {
-      delete document.documentElement.dataset.tunnel;
-    };
-  }, []);
 
   // Look-around con il puntatore (solo dispositivi con mouse)
   const px = useMotionValue(0);
@@ -387,11 +397,12 @@ function Stage({
   }, [px, py]);
 
   return (
-    <div className="tunnel-dark sticky top-0 h-[100svh] w-full overflow-hidden bg-ink">
-      {/* Lo sfondo animato dell'hero accompagna tutto il tunnel (tutte le sezioni sono su Nero Pista). */}
-      <div aria-hidden className="absolute inset-0">
-        <NeuralNoise />
-      </div>
+    <GlassScene
+      className="tunnel-dark tunnel-scene"
+      backdrop="/brand/neural-flow.mp4"
+      dim={0.08}
+      style={{ "--image": "url(/brand/neural-flow-poster.jpg)" } as CSSProperties}
+    >
 
       <div
         className="absolute inset-0"
@@ -402,12 +413,16 @@ function Stage({
           style={{ transformStyle: "preserve-3d", rotateX: rotX, rotateY: rotY }}
         >
           <TunnelRings camera={camera} />
-          {children}
+          {slides.map((s, i) => (
+            <SlideActiveContext.Provider key={i} value={active === i}>
+              {cloneElement(s, { index: i })}
+            </SlideActiveContext.Provider>
+          ))}
         </motion.div>
       </div>
 
       <StageNav labels={labels} active={active} count={count} sectionRef={sectionRef} />
-    </div>
+    </GlassScene>
   );
 }
 

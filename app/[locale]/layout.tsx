@@ -17,7 +17,6 @@ import Footer from "@/components/layout/Footer";
 import JsonLd from "@/components/seo/JsonLd";
 import { CookieConsentProvider } from "@/components/cookies/CookieConsentContext";
 import CookieBanner from "@/components/cookies/CookieBanner";
-import GlassLayer from "@/components/ui/GlassLayer";
 import PageViewTracker from "@/components/analytics/PageViewTracker";
 import AnnouncementPill from "@/components/layout/AnnouncementPill";
 import { getPortalConfig } from "@/lib/portalBridge";
@@ -147,7 +146,6 @@ export default async function LocaleLayout({
           <CookieConsentProvider>
             <GoogleConsentSync />
             <PageViewTracker />
-            <GlassLayer />
             <TrustpilotConsentGate />
             <VisualViewportProvider />
             <SmoothScrollProvider>

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { ArrowUpRight, Check } from "lucide-react";
+import { GLASS } from "@/lib/glass";
 import { Link } from "@/i18n/navigation";
 import { SERVICES_META } from "@/lib/constants";
 
@@ -27,6 +28,7 @@ export default function ServiceCard({ index, displayNumber }: Props) {
 
   return (
     <Link
+      {...GLASS}
       href={`/servizi/${slug}`}
       className="card-lift spotlight group flex h-full flex-col border border-border bg-background p-8"
       onPointerMove={(e) => {

@@ -6,7 +6,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
-import { Link, useRouter } from "@/i18n/navigation";
+import { Link, useRouter, usePathname } from "@/i18n/navigation";
+import { GlassScene } from "@/components/ui/LiquidGlass";
+import { GLASS } from "@/lib/glass";
 import { useGoToSection } from "@/lib/useGoToSection";
 import { Button } from "@/components/ui/Button";
 import { PORTAL_URL, SERVICES_META } from "@/lib/constants";
@@ -34,6 +36,18 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const goToSection = useGoToSection();
   const router = useRouter();
+  const pathname = usePathname();
+  const onHome = pathname === "/";
+  // Home in modalità tunnel = fondo scuro; in modalità piatta (versione semplice, riduci animazioni) la pagina è chiara.
+  const [flat, setFlat] = useState(false);
+  useEffect(() => {
+    const read = () => setFlat(document.documentElement.dataset.stage === "flat");
+    read();
+    const mo = new MutationObserver(read);
+    mo.observe(document.documentElement, { attributes: true, attributeFilter: ["data-stage"] });
+    return () => mo.disconnect();
+  }, []);
+  const dark = onHome && !flat;
 
   useEffect(() => {
     if (menuOpen) {
@@ -72,17 +86,23 @@ export default function Navbar() {
   return (
     <>
       <header
+        data-home={onHome ? "" : undefined}
         className="nav-root fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-[max(0.75rem,env(safe-area-inset-top))] sm:px-6"
       >
         {/* Capsula flottante sempre visibile: nessun contorno, solo ombra
             morbida e sfondo traslucido su layer proprio. */}
-        <div className="glass-bar relative flex h-14 w-full items-center justify-between gap-1 rounded-full pl-4 pr-1.5 xl:w-auto xl:justify-start xl:pl-2">
+        <GlassScene
+          className={cn("nav-scene h-14 w-full rounded-full xl:w-auto", !dark && "glass-light")}
+          backdrop={dark ? "/brand/glass-dark.webp" : "/brand/glass-light.webp"}
+          dim={dark ? 0.3 : 0}
+        >
+        <div {...GLASS} className="glass-bar relative flex h-14 w-full items-center justify-between gap-1 rounded-full pl-4 pr-1.5 xl:w-auto xl:justify-start xl:pl-3">
 
           {/* Logo → home */}
           <Link
             href="/"
             onClick={() => setMenuOpen(false)}
-            className="flex min-h-11 min-w-11 shrink-0 items-center justify-center xl:px-3"
+            className="flex min-h-11 min-w-11 shrink-0 items-center justify-center px-2 xl:px-4"
             aria-label="CORE829"
           >
             <Image
@@ -92,7 +112,7 @@ export default function Navbar() {
               height={41}
               priority
               unoptimized
-              className="logo-on-light h-10 w-auto"
+              className="logo-on-light h-7 w-auto"
             />
             <Image
               src="/brand/symbol-white.svg"
@@ -102,7 +122,7 @@ export default function Navbar() {
               height={41}
               priority
               unoptimized
-              className="logo-on-dark h-10 w-auto"
+              className="logo-on-dark h-7 w-auto"
             />
           </Link>
 
@@ -166,6 +186,7 @@ export default function Navbar() {
             </button>
           </div>
         </div>
+        </GlassScene>
       </header>
 
       {/* Menu a tutto schermo (mobile/tablet) */}

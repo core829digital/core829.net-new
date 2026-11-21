@@ -825,5 +825,5 @@ liquid-glass.glass-light [glass].btn-secondary {
   --glass-frost: 0.15;
 }
 liquid-glass.glass-light [glass].btn {
-  --glass-shadow: 0.3;
+  --glass-shadow: 0.06;
 }

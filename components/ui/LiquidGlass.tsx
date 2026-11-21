@@ -39,6 +39,7 @@ export function GlassScene({
   colors = AURORA_DARK,
   dim = 0,
   backdrop = "aurora",
+  id,
 }: {
   children: ReactNode;
   className?: string;
@@ -49,13 +50,14 @@ export function GlassScene({
   dim?: number;
   /** "aurora" (animato) oppure URL di un'immagine/video. */
   backdrop?: string;
+  id?: string;
 }) {
   useEffect(() => {
     void loadLiquidGlass();
   }, []);
   return createElement(
     "liquid-glass",
-    { class: className, style, backdrop, colors, dim: String(dim) },
+    { id, class: className, style, backdrop, colors, dim: String(dim) },
     children
   );
 }

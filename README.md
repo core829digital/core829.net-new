@@ -35,12 +35,16 @@ Variabili d'ambiente: `NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY`, `CONTACT_FROM_EM
   fuori schermo e a tab nascosta, con fallback CSS.
 - **Design system** (`app/globals.css`, `tailwind.config.ts`): token colore con canali RGB
   (`rgb(var(--rgb-x) / <alpha>)`). **Brand Guidelines 1.0 (novembre 2026)**: Rosso Racing `#FF2743`,
-  Bianco Polare `#F8F8F8`, Nero Pista `#141416`, tinta piatta (nessuna sfumatura); font Michroma (H1, titoli di sezione,
-  etichette, in maiuscolo) e DM Sans (testi, titoli di scheda, interfacce); simbolo in `public/brand/` (SVG ufficiali).
+  Bianco Polare `#F8F8F8`, Nero Pista `#141416`, tinta piatta (nessuna sfumatura); font Saans (se installato) → Inter self-hosted + JetBrains Mono per i dettagli tecnici
+  (Michroma/DM Sans valutati e scartati: non coprono cirillico e greco, che il sito usa in 4 lingue); simbolo in `public/brand/` (SVG ufficiali).
   Il bianco su rosso (3,5:1) è ammesso solo per testi grandi: i pulsanti usano testo Nero Pista su rosso (4,9:1) e il
   rosso scurito `#D31B37` per il testo piccolo rosso su fondo chiaro. Pulsanti capsula (`.btn*`), card a raggio 24px.
   Regole Apple HIG: vetro solo su controlli/navigazione, area di tocco ≥44px, testo ≥11px,
   fallback per reduced transparency/contrast.
+- **Liquid glass** (`components/ui/LiquidGlass.tsx`, libreria MIT inclusa in `lib/vendor/`): `<GlassScene>` + `{...GLASS}` rendono
+  vetro tracciato a raggi i pulsanti principali sopra uno sfondo in tinte di Rosso Racing. Il vetro rifrange solo lo sfondo
+  della propria scena (non la pagina), quindi si usa su CTA e controlli, non su blocchi di testo. Senza WebGL, con
+  "riduci animazioni" o in "versione semplice" restano elementi HTML normali.
 - **i18n** (`messages/*.json`, `i18n/request.ts`): EN è la lingua di fallback; i case study
   hanno fallback per singolo progetto. Lingue con testi completi: it, en, ro, fr, de, es, nl, pl.
 - **Case study** (`lib/constants.ts` + `caseStudies.projects`): loghi, screenshot e ordine

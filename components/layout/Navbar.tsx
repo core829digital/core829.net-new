@@ -86,13 +86,13 @@ export default function Navbar() {
             aria-label="CORE829"
           >
             <Image
-              src="/brand/symbol-red.svg"
+              src="/brand/app-icon.svg"
               alt="CORE829"
-              width={44}
-              height={30}
+              width={40}
+              height={40}
               priority
               unoptimized
-              className="h-7 w-auto"
+              className="h-9 w-9 rounded-[22%]"
             />
           </Link>
 

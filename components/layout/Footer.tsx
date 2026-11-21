@@ -51,12 +51,12 @@ export default function Footer() {
         <div className="lg:col-span-4">
           <div className="flex flex-wrap items-center gap-4">
             <Image
-              src="/brand/symbol-red.svg"
+              src="/brand/app-icon.svg"
               alt="CORE829"
-              width={83}
+              width={56}
               height={56}
               unoptimized
-              className="h-14 w-auto"
+              className="h-14 w-14 rounded-[22%]"
             />
             <span className="h-10 w-px bg-border" aria-hidden />
             <Image

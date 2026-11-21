@@ -2,7 +2,7 @@ import { GA_ID, googleTagBootstrap } from "@/lib/googleTag";
 import { CONSENT_STORAGE_KEY, CONSENT_VERSION } from "@/lib/cookieConsent";
 import GoogleConsentSync from "@/components/analytics/GoogleConsentSync";
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, Michroma } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -26,22 +26,24 @@ import { getSiteKeywords } from "@/lib/seoKeywords";
 import { VISIBLE_SERVICES_META } from "@/lib/constants";
 import "../globals.css";
 
-// Tipografia del brand CORE829 (Brand Guidelines 1.0): Michroma per titoli, payoff ed etichette
-// (preferibilmente in maiuscolo) e DM Sans per testi e interfacce. Entrambi sono self-hosted da next/font.
+// Stesso stack di Andromedia Web (repo andromediaweb.it): "Saans" se installato sul dispositivo,
+// altrimenti Inter self-hosted da next/font (font variabile: normale, bold e ogni peso intermedio),
+// più JetBrains Mono per i dettagli tecnici. Vedi --font-sans / --font-display in globals.css.
 // IMPORTANTE: le classi delle variabili dei font stanno su <html> (non su <body>): i token --font-* sono
-// definiti su :root e li leggono; se le variabili stessero sul body, sul :root risulterebbero vuote.
-// DM Sans copre latino esteso e cirillico non è incluso: le lingue con altri alfabeti ricadono sui font di
-// sistema (stack in globals.css).
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin", "latin-ext"],
+// definiti su :root e li leggono; se le variabili stessero sul body, sul :root risulterebbero vuote e
+// l'intero sito ricadrebbe su Times New Roman (era il comportamento precedente).
+// Rispetto ad Andromedia (solo italiano) qui i subset sono ampliati: il sito ha 24 lingue e
+// latin-ext / cirillico / greco evitano caratteri mancanti. CJK ecc. ricadono sui font di sistema.
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin", "latin-ext", "cyrillic", "greek"],
   display: "swap",
 });
 
-const michroma = Michroma({
-  variable: "--font-michroma",
-  subsets: ["latin", "latin-ext"],
-  weight: "400",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin", "cyrillic"],
+  weight: ["400", "500"],
   display: "swap",
 });
 
@@ -127,7 +129,7 @@ export default async function LocaleLayout({
   const { announcement } = await getPortalConfig();
 
   return (
-    <html lang={locale} className={`${dmSans.variable} ${michroma.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <head>
         {/* Google tag (gtag.js) — Consent Mode v2: negato finché l'utente non acconsente */}
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />

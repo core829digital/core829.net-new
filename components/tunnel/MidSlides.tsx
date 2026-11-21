@@ -387,7 +387,7 @@ export function CtaSlide({ index }: SlideProps) {
       <SlideHeading
         kicker={t("kicker")}
         title={t("title")}
-        titleClassName="font-brand text-display-sm lg:text-[clamp(1.75rem,0.8rem+2.2vw,3.1rem)]"
+        titleClassName="text-display-sm lg:text-[clamp(2.25rem,1rem+3vw,4rem)]"
       />
       <DepthItem dir={[0, 1]} depth={0.8}>
         <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-4">

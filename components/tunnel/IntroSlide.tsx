@@ -7,6 +7,8 @@ import { DepthItem, DepthSlide } from "@/components/tunnel/DepthStage";
 import NeuralNoise from "@/components/ui/neural-noise";
 import { Button } from "@/components/ui/Button";
 import { bookingUrl } from "@/lib/booking";
+import { GlassScene, GLASS } from "@/components/ui/LiquidGlass";
+import { useSimpleMode } from "@/lib/simpleMode";
 
 /**
  * Intro: flusso neurale rosso a tutto schermo, loghi CORE829 e CORE829 Servers
@@ -17,6 +19,7 @@ export default function IntroSlide({ index }: { index?: number }) {
   const t = useTranslations("hero");
   const locale = useLocale();
   const messages = useMessages();
+  const simple = useSimpleMode();
   const headline = (messages.hero as unknown as { headline: string[] }).headline.join(" ");
 
   return (
@@ -60,14 +63,15 @@ export default function IntroSlide({ index }: { index?: number }) {
         </div>
 
         <DepthItem dir={[0, 1]} depth={0.8} delay={2}>
-          <h1 className="mt-7 max-w-[22ch] font-brand text-lg leading-tight text-white sm:mt-10 sm:max-w-3xl sm:text-2xl">
+          <h1 className="mt-7 max-w-[22ch] font-display text-xl font-medium leading-tight tracking-tight text-white sm:mt-10 sm:max-w-3xl sm:text-3xl">
             {headline}
           </h1>
         </DepthItem>
 
         <DepthItem dir={[0, 1]} depth={0.6} delay={3}>
-          <div className="mt-7 sm:mt-9">
+          <GlassScene disabled={simple} className="mt-7 overflow-hidden rounded-full p-2 sm:mt-9">
             <Button
+              {...GLASS}
               href={bookingUrl(locale)}
               variant="primary"
               tone="dark"
@@ -75,7 +79,7 @@ export default function IntroSlide({ index }: { index?: number }) {
               {t("ctaPrimary")}
               <ArrowRight className="h-4 w-4" aria-hidden />
             </Button>
-          </div>
+          </GlassScene>
         </DepthItem>
       </div>
 

@@ -112,7 +112,7 @@ export async function POST(request: NextRequest) {
   ];
 
   const html = `
-    <table cellpadding="0" cellspacing="0" style="font-family:'DM Sans',Arial,Helvetica,sans-serif;font-size:14px;color:#141416">
+    <table cellpadding="0" cellspacing="0" style="font-family:'Saans Text',Saans,Inter,Arial,Helvetica,sans-serif;font-size:14px;color:#141416">
       ${fields
         .map(
           ([label, value]) =>

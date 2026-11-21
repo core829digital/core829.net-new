@@ -45,7 +45,7 @@ export default function LanguageSwitcher() {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        aria-label={tA("language")}
+        aria-label={`${tA("language")}: ${localeNames[currentLocale as Locale] ?? currentLocale}`}
         aria-haspopup="listbox"
         aria-expanded={open}
         className="flex h-11 items-center gap-2 rounded-full px-4 font-mono text-[11px] uppercase tracking-[0.14em] text-foreground-muted transition-colors hover:bg-foreground/5 hover:text-accent active:bg-foreground/10"

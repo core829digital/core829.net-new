@@ -60,6 +60,7 @@ export default function LogoMarquee({
                 loading="eager"
                 decoding="async"
                 draggable={false}
+                data-client-logo=""
                 className={cn(
                   "block shrink-0 object-contain opacity-70 transition duration-300 group-hover:opacity-100",
                   CLIENT_LOGO_COLOR.has(client.key) &&

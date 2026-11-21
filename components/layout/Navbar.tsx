@@ -72,7 +72,7 @@ export default function Navbar() {
   return (
     <>
       <header
-        className="fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-[max(0.75rem,env(safe-area-inset-top))] sm:px-6"
+        className="nav-root fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-[max(0.75rem,env(safe-area-inset-top))] sm:px-6"
       >
         {/* Capsula flottante sempre visibile: nessun contorno, solo ombra
             morbida e sfondo traslucido su layer proprio. */}
@@ -92,7 +92,17 @@ export default function Navbar() {
               height={41}
               priority
               unoptimized
-              className="h-10 w-auto"
+              className="logo-on-light h-10 w-auto"
+            />
+            <Image
+              src="/brand/symbol-white.svg"
+              alt=""
+              aria-hidden
+              width={61}
+              height={41}
+              priority
+              unoptimized
+              className="logo-on-dark h-10 w-auto"
             />
           </Link>
 

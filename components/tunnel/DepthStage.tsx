@@ -358,15 +358,18 @@ function Stage({
   sectionRef: React.RefObject<HTMLElement | null>;
   children: ReactNode;
 }) {
-  const bg = useTransform(camera, [0, 0.55], ["#141416", "#f8f8f8"]);
-  const noiseOpacity = useTransform(camera, [0, 0.5], [1, 0]);
-  const dotsOpacity = useTransform(camera, [0.3, 0.9], [0, 0.55]);
-  const [noisePaused, setNoisePaused] = useState(false);
   const [active, setActive] = useState(0);
   useMotionValueEvent(camera, "change", (c) => {
-    setNoisePaused(c > 0.75);
     setActive(Math.round(c));
   });
+
+  // Segnala alla pagina (barra di navigazione) che il tunnel scuro è attivo.
+  useEffect(() => {
+    document.documentElement.dataset.tunnel = "";
+    return () => {
+      delete document.documentElement.dataset.tunnel;
+    };
+  }, []);
 
   // Look-around con il puntatore (solo dispositivi con mouse)
   const px = useMotionValue(0);
@@ -384,16 +387,11 @@ function Stage({
   }, [px, py]);
 
   return (
-    <div className="sticky top-0 h-[100svh] w-full overflow-hidden">
-      <motion.div aria-hidden className="absolute inset-0" style={{ backgroundColor: bg }} />
-      <motion.div style={{ opacity: noiseOpacity }} className="absolute inset-0">
-        <NeuralNoise paused={noisePaused} />
-      </motion.div>
-      <motion.div
-        aria-hidden
-        style={{ opacity: dotsOpacity }}
-        className="pointer-events-none absolute inset-0 [background-image:radial-gradient(#d4d4d8_1px,transparent_1px)] [background-size:28px_28px] [mask-image:radial-gradient(ellipse_75%_75%_at_50%_50%,#000_55%,transparent_100%)]"
-      />
+    <div className="tunnel-dark sticky top-0 h-[100svh] w-full overflow-hidden bg-ink">
+      {/* Lo sfondo animato dell'hero accompagna tutto il tunnel (tutte le sezioni sono su Nero Pista). */}
+      <div aria-hidden className="absolute inset-0">
+        <NeuralNoise />
+      </div>
 
       <div
         className="absolute inset-0"

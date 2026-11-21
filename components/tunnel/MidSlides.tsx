@@ -134,7 +134,7 @@ export function ServicesSlide({ index }: SlideProps) {
                 id={meta.anchorId}
                 className={cn(slideCard, "group flex h-full items-center gap-3 p-3 sm:flex-col sm:items-start sm:gap-5 sm:p-6 xl:gap-8 xl:p-8")}
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-foreground text-white transition-colors duration-300 group-hover:bg-accent sm:h-11 sm:w-11 xl:h-14 xl:w-14 rounded-xl">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-foreground text-background transition-colors duration-300 group-hover:bg-accent sm:h-11 sm:w-11 xl:h-14 xl:w-14 rounded-xl">
                   <Icon className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden />
                 </span>
                 <span className="font-display text-[0.8rem] leading-snug tracking-tight sm:text-base xl:text-xl">
@@ -149,7 +149,7 @@ export function ServicesSlide({ index }: SlideProps) {
           <DepthItem as="li" dir={radial(visible.length, total, 4)} delay={3} rotate={3}>
             <Link
               href="/contatti"
-              className="card-lift group flex h-full items-center justify-between gap-3 border border-foreground bg-foreground p-3 text-white sm:flex-col sm:items-start sm:justify-between sm:p-6 xl:p-8"
+              className="card-lift group flex h-full items-center justify-between gap-3 border border-foreground bg-foreground p-3 text-background sm:flex-col sm:items-start sm:justify-between sm:p-6 xl:p-8"
             >
               <span className="font-display text-[0.8rem] leading-snug tracking-tight sm:text-base xl:text-xl">
                 {tCta("title")}
@@ -202,7 +202,7 @@ export function ServerSlide({ index }: SlideProps) {
                   "group flex h-full items-center gap-3 p-3 sm:flex-col sm:items-start sm:gap-4 sm:p-5 xl:p-7"
                 )}
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-foreground text-white transition-colors duration-300 group-hover:bg-accent sm:h-11 sm:w-11">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-foreground text-background transition-colors duration-300 group-hover:bg-accent sm:h-11 sm:w-11">
                   <Icon className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden />
                 </span>
                 <span>
@@ -290,7 +290,7 @@ export function FeaturesSlide({ index }: SlideProps) {
               className={cn(slideCard, "flex items-center gap-3 p-3.5 sm:p-5 xl:gap-5 xl:p-8")}
             >
               {Icon && (
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-foreground text-white sm:h-11 sm:w-11 xl:h-14 xl:w-14 rounded-xl">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-foreground text-background sm:h-11 sm:w-11 xl:h-14 xl:w-14 rounded-xl">
                   <Icon className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden />
                 </span>
               )}

@@ -41,6 +41,7 @@
   --color-surface: #efeff0; /* sezioni alternate / card */
 
   /* Superfici scure: Nero Pista. */
+  --color-paper: #f8f8f8; /* Bianco Polare fisso: non cambia nei temi scuri (pulsanti su scuro) */
   --color-ink: #141416; /* Nero Pista */
   --color-ink-soft: #1d1d20; /* card su sezione scura */
   --color-ink-border: rgba(248, 248, 248, 0.14); /* bordi su scuro */
@@ -321,18 +322,18 @@
     --btn-bg-hover: var(--color-ink);
     --btn-bg-active: #2c2c30;
     --btn-fg: var(--color-ink);
-    --btn-fg-hover: var(--color-background);
+    --btn-fg-hover: var(--color-paper);
     --btn-border: var(--color-accent);
     --btn-sheen: none;
     --btn-shadow: none;
   }
   /* Secondario: contorno Nero Pista su Bianco Polare */
   .btn-secondary {
-    --btn-bg: var(--color-background);
+    --btn-bg: var(--color-paper);
     --btn-bg-hover: var(--color-ink);
     --btn-bg-active: #2c2c30;
     --btn-fg: var(--color-foreground);
-    --btn-fg-hover: var(--color-background);
+    --btn-fg-hover: var(--color-paper);
     --btn-border: rgb(20 20 22 / 0.28);
     --btn-sheen: none;
     --btn-shadow: none;
@@ -351,28 +352,28 @@
 
   /* Su sfondo scuro o rosso (hero): Bianco Polare / Nero Pista */
   .btn-on-dark.btn-primary {
-    --btn-bg: var(--color-background);
+    --btn-bg: var(--color-paper);
     --btn-bg-hover: var(--color-ink);
     --btn-bg-active: #2c2c30;
     --btn-fg: var(--color-ink);
-    --btn-fg-hover: var(--color-background);
-    --btn-border: var(--color-background);
+    --btn-fg-hover: var(--color-paper);
+    --btn-border: var(--color-paper);
     --btn-sheen: none;
     --btn-shadow: none;
   }
   .btn-on-dark.btn-secondary {
     --btn-bg: transparent;
-    --btn-bg-hover: var(--color-background);
+    --btn-bg-hover: var(--color-paper);
     --btn-bg-active: #e2e2e4;
-    --btn-fg: var(--color-background);
+    --btn-fg: var(--color-paper);
     --btn-fg-hover: var(--color-ink);
     --btn-border: rgb(248 248 248 / 0.7);
     --btn-sheen: none;
     --btn-shadow: none;
   }
   .btn-on-dark.btn-ghost {
-    --btn-fg: var(--color-background);
-    --btn-fg-hover: var(--color-background);
+    --btn-fg: var(--color-paper);
+    --btn-fg-hover: var(--color-paper);
     --btn-bg-hover: rgb(248 248 248 / 0.14);
     --btn-bg-active: rgb(248 248 248 / 0.22);
   }
@@ -678,6 +679,75 @@ html[data-simple="1"] .marquee-track {
 /* Il testo rosso piccolo usa la variante AA (#D92037): leggibile anche sulle sezioni Ice Grey. Fondi, bordi e CTA restano Racing Red. */
 .text-accent {
   color: rgb(var(--rgb-accent-text) / var(--tw-text-opacity, 1));
+}
+
+/* ============================================================
+   Tema scuro del tunnel (home): lo sfondo animato dell'hero accompagna tutte le sezioni.
+   Si rimappano i token: ogni classe (text-foreground, bg-surface, border-border…) segue da sola.
+   La barra di navigazione prende lo stesso tema finché il tunnel è attivo (html[data-tunnel]).
+   ============================================================ */
+.tunnel-dark,
+html[data-tunnel] .nav-root {
+  --color-background: #141416;
+  --color-foreground: #f8f8f8;
+  --color-foreground-muted: #a8a8ad;
+  --color-border: rgb(248 248 248 / 0.16);
+  --color-surface: #1d1d20;
+  --color-accent-hover: #ff5b72;
+  --rgb-background: 20 20 22;
+  --rgb-foreground: 248 248 248;
+  --rgb-foreground-muted: 168 168 173;
+  --rgb-accent-text: 255 91 114; /* rosso chiaro per testo piccolo su Nero Pista (≥5:1) */
+  --rgb-border: 58 58 62;
+  --rgb-surface: 29 29 32;
+  color: var(--color-foreground);
+}
+.tunnel-dark .glass-bar,
+html[data-tunnel] .nav-root .glass-bar {
+  background-color: rgb(20 20 22 / 0.55);
+  border-color: rgb(248 248 248 / 0.2);
+  box-shadow: 0 10px 28px -16px rgb(0 0 0 / 0.6);
+}
+.tunnel-dark .glass-panel,
+html[data-tunnel] .nav-root .glass-panel {
+  background-color: #1d1d20;
+  border-color: rgb(248 248 248 / 0.16);
+}
+/* Loghi dei clienti: sagome chiare su Nero Pista (i marchi scuri sarebbero invisibili). */
+.tunnel-dark [data-client-logo] {
+  filter: grayscale(1) invert(1) contrast(1.15);
+  mix-blend-mode: screen; /* i fondi bianchi dei loghi diventano neri e quindi trasparenti */
+  opacity: 0.8;
+}
+.tunnel-dark .group:hover [data-client-logo] {
+  opacity: 1;
+}
+html[data-tunnel] body {
+  background-color: #141416; /* dietro alla barra fissa c'è sempre il tunnel scuro */
+}
+/* Pulsanti secondari nel tema scuro: contorno chiaro su Nero Pista (come .btn-on-dark). */
+.tunnel-dark .btn-secondary:not(.btn-on-dark),
+html[data-tunnel] .nav-root .btn-secondary:not(.btn-on-dark) {
+  --btn-bg: transparent;
+  --btn-bg-hover: var(--color-paper);
+  --btn-bg-active: #e2e2e4;
+  --btn-fg: var(--color-paper);
+  --btn-fg-hover: var(--color-ink);
+  --btn-border: rgb(248 248 248 / 0.7);
+}
+.tunnel-dark .btn-ghost:not(.btn-on-dark),
+html[data-tunnel] .nav-root .btn-ghost:not(.btn-on-dark) {
+  --btn-bg-hover: rgb(248 248 248 / 0.14);
+  --btn-bg-active: rgb(248 248 248 / 0.22);
+}
+.logo-on-dark {
+  display: none;
+}
+html[data-tunnel] .nav-root .logo-on-dark {
+  display: block;
+}
+html[data-tunnel] .nav-root .logo-on-light {
+  display: none;
 }
 
 /* ============================================================

@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Saans (Displaay) e' un font commerciale: se e' installato sul dispositivo viene usato direttamente,
+   altrimenti si usa Inter (self-hosted da next/font). Configurazione identica ad Andromedia Web. */
+@font-face {
+  font-family: "Saans";
+  src: local("Saans"), local("Saans Regular"), local("Saans-Regular");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saans Display";
+  src: local("Saans Display"), local("SaansDisplay-Regular"), local("Saans Display Regular"), local("Saans");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saans Text";
+  src: local("Saans Text"), local("SaansText-Regular"), local("Saans Text Regular"), local("Saans");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ============================================================
    CORE829 — DESIGN TOKEN (vincolante, nessuna deviazione)
    ============================================================ */
@@ -42,11 +66,10 @@
   --shadow-lift: 0 2px 4px rgba(20, 20, 22, 0.05), 0 18px 40px -16px rgba(20, 20, 22, 0.2);
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Tipografia del brand: Michroma (titoli, payoff, etichette) e DM Sans (testi, interfacce). */
-  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-brand: var(--font-michroma), "Arial Black", ui-sans-serif, system-ui, sans-serif; /* Michroma: H1, titoli di sezione, payoff, etichette */
-  --font-display: var(--font-sans); /* titoli di scheda (H2 e sotto): DM Sans SemiBold */
-  --font-mono: var(--font-brand); /* etichette tecniche: Michroma maiuscolo */
+  /* Tipografia: Saans (se installato) → Inter self-hosted; JetBrains Mono per i dettagli tecnici. */
+  --font-sans: "Saans Text", "Saans", var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Saans Display", "Saans", var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, "SFMono-Regular", monospace;
 }
 
 @layer base {
@@ -121,20 +144,13 @@
     outline-offset: 3px;
   }
 
-  /* Gerarchia del brand: H1 Michroma maiuscolo; H2 e sotto DM Sans SemiBold. */
-  h1 {
-    font-family: var(--font-brand);
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    line-height: 1.12;
-  }
+  h1,
   h2,
   h3,
   h4 {
-    font-family: var(--font-sans);
-    font-weight: 600;
-    letter-spacing: -0.015em;
+    font-family: var(--font-display);
+    font-weight: 560;
+    letter-spacing: -0.03em;
   }
 
   body {
@@ -664,26 +680,27 @@ html[data-simple="1"] .marquee-track {
   color: rgb(var(--rgb-accent-text) / var(--tw-text-opacity, 1));
 }
 
-/* Michroma: carattere largo, preferibilmente in maiuscolo con interlinea stretta (Brand Guidelines, tipografia).
-   Lo usano solo H1, titoli di sezione (text-section-title / text-display) ed etichette: i titoli di scheda sono DM Sans. */
-@layer utilities {
-  .font-display {
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    overflow-wrap: break-word;
-    hyphens: auto;
-  }
-  .font-brand {
-    font-family: var(--font-brand);
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.01em;
-  }
-  .text-section-title,
-  .text-display,
-  .text-display-sm {
-    font-family: var(--font-brand);
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+/* ============================================================
+   Liquid glass (components/ui/LiquidGlass.tsx)
+   Prima del caricamento (o senza JavaScript) la scena è un riquadro rosso piatto con i pulsanti normali;
+   a libreria pronta l'elemento custom prende il controllo e i pulsanti diventano vetro.
+   ============================================================ */
+.glass-scene {
+  display: block;
+  position: relative;
+  min-height: 0;
+  background: var(--color-accent);
+}
+.glass-scene:defined {
+  background: transparent;
+}
+/* Elemento vetro: lo sfondo lo disegna la libreria, qui solo testo, forma e area di tocco. */
+.glass-scene:defined [glass] {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--color-ink);
+  --glass-tint: rgba(255, 39, 67, 0.28);
+  --glass-frost: 0.12;
+  --glass-shadow: 0.35;
 }

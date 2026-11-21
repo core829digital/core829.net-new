@@ -25,7 +25,7 @@ export default async function JsonLd() {
         "@type": "Organization",
         name: "CORE829",
         url: siteUrl,
-        logo: `${siteUrl}/brand/symbol-red-512.png`,
+        logo: `${siteUrl}/brand/app-icon-512.png`,
       },
       areaServed: "Europe",
     };
@@ -36,7 +36,7 @@ export default async function JsonLd() {
     "@type": "Organization",
     name: "CORE829",
     url: siteUrl,
-    logo: `${siteUrl}/brand/symbol-red-512.png`,
+    logo: `${siteUrl}/brand/app-icon-512.png`,
     email: COMPANY.email,
     description: tMeta("description"),
     legalName: COMPANY.legalName,
